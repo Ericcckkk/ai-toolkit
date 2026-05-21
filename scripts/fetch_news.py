@@ -28,7 +28,7 @@ MINIMAX_OPENAI_URL = "https://api.minimax.chat/v1/chat/completions"
 MINIMAX_MODEL = "MiniMax-M2.7"  # Token Plan 支持的旗舰编程/文本模型
 
 NEWS_COUNT = 20  # 每天输出条数
-MAX_RAW_ARTICLES = 80  # 最多抓取原始文章数（供 AI 筛选）
+MAX_RAW_ARTICLES = 50  # 最多发给 AI 的原始文章数（控制输入长度防超时）
 
 # 新闻标签优先级（与现有数据一致）
 TAG_PRIORITY = [
@@ -304,7 +304,7 @@ def call_minimax(messages, temperature=0.3, max_tokens=8000):
     )
 
     try:
-        with urllib.request.urlopen(req, timeout=120) as resp:
+        with urllib.request.urlopen(req, timeout=300) as resp:
             result = json.loads(resp.read().decode("utf-8"))
             return result["choices"][0]["message"]["content"]
     except urllib.error.HTTPError as e:
@@ -319,13 +319,13 @@ def call_minimax(messages, temperature=0.3, max_tokens=8000):
 def generate_news_digest(raw_articles, target_date):
     """使用 MiniMax 从原始文章中筛选并生成高质量资讯"""
 
-    # 将原始文章整理为文本
+    # 将原始文章整理为文本（精简格式，控制 token）
     articles_text = ""
     for i, article in enumerate(raw_articles, 1):
-        articles_text += f"\n[{i}] {article['title']}\n"
-        articles_text += f"    来源: {article['source']} | 链接: {article['url']}\n"
-        if article['description']:
-            articles_text += f"    内容: {article['description'][:200]}\n"
+        desc = article['description'][:120] if article['description'] else ""
+        articles_text += f"[{i}] {article['title']} | {article['source']} | {article['url']}\n"
+        if desc:
+            articles_text += f"    {desc}\n"
 
     system_prompt = """你是一位资深 AI 行业分析师和科技新闻编辑，为一个面向 AI 从业者和创业者的个人知识工具（AI Toolkit）撰写每日资讯。
 
