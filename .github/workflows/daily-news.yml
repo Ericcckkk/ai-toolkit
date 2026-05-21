@@ -1,0 +1,63 @@
+name: Daily AI News Update
+
+# 每天北京时间早 8:00 自动运行（UTC 0:00）
+# 也支持手动触发
+on:
+  schedule:
+    - cron: '0 0 * * *'  # UTC 00:00 = 北京时间 08:00
+  workflow_dispatch:  # 手动触发按钮
+    inputs:
+      target_date:
+        description: '指定日期（格式 YYYY-MM-DD，留空则自动取今天）'
+        required: false
+        default: ''
+
+permissions:
+  contents: write  # 需要写权限来 push 更新
+
+jobs:
+  fetch-and-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10  # 超时保护
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Run news fetch script
+        env:
+          MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
+          GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}  # 可选
+          TARGET_DATE: ${{ github.event.inputs.target_date }}
+        run: python scripts/fetch_news.py
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          if git diff --quiet data/news.js; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in data/news.js"
+          fi
+
+      - name: Commit and push
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config user.name "AI Toolkit Bot"
+          git config user.email "bot@ai-toolkit.local"
+          
+          # 获取今天日期
+          TODAY=$(TZ='Asia/Shanghai' date +%Y-%m-%d)
+          
+          git add data/news.js
+          git commit -m "📰 每日资讯自动更新 ${TODAY}"
+          git push
