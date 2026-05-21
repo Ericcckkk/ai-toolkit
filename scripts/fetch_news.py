@@ -398,6 +398,9 @@ def generate_news_digest(raw_articles, target_date):
         {"role": "user", "content": user_prompt}
     ], temperature=0.3, max_tokens=8000)
 
+    # 剥离 <think>...</think> 思考标签（M2.7 可能输出）
+    response = re.sub(r'<think>[\s\S]*?</think>', '', response).strip()
+
     # 提取 JSON
     json_match = re.search(r'\[[\s\S]*\]', response)
     if json_match:
