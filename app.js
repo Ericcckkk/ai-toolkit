@@ -576,7 +576,7 @@ function renderDailyCards() {
         btnCheckin.classList.remove('ready');
         btnContinue.style.display = 'block';
     } else if (done >= total && total > 0) {
-        btnCheckin.textContent = '✅ 完成打卡';
+        btnCheckin.textContent = '完成打卡';
         btnCheckin.disabled = false;
         btnCheckin.classList.add('ready');
         btnContinue.style.display = 'none';
@@ -661,7 +661,7 @@ function showExtraRewardToast(xp) {
     // 轻量级toast提示
     const toast = document.createElement('div');
     toast.className = 'xp-toast';
-    toast.innerHTML = `<span>✨ +${xp} XP 额外学习奖励！</span>`;
+    toast.innerHTML = `<span>+${xp} XP 额外学习奖励！</span>`;
     document.body.appendChild(toast);
     setTimeout(() => toast.classList.add('show'), 10);
     setTimeout(() => {
@@ -705,7 +705,7 @@ function showSuccessModal(totalXP, streakBonus) {
         <div class="xp-gain">+${totalXP} XP</div>
         <div>基础奖励 30 XP${streakBonus > 0 ? ` + 连续打卡加成 ${streakBonus} XP` : ''}</div>
         <br>
-        <div class="streak-info">🔥 连续打卡 ${checkinData.streak} 天</div>
+        <div class="streak-info">连续打卡 ${checkinData.streak} 天</div>
         <div>当前等级：${level.name}</div>
     `;
 
@@ -934,28 +934,28 @@ function showCaseDetail(id) {
             <div class="modal-body case-detail-body">
                 <h4 class="case-detail-title">${c.title}</h4>
                 <div class="case-detail-meta">
-                    <span>🏷️ ${c.stage}</span>
-                    <span>📅 创立 ${c.founded}</span>
-                    <span>💰 ${c.valuation}</span>
+                    <span>${c.stage}</span>
+                    <span>创立 ${c.founded}</span>
+                    <span>${c.valuation}</span>
                 </div>
                 <div class="case-detail-section">
-                    <div class="case-detail-label">📖 概述</div>
+                    <div class="case-detail-label">概述</div>
                     <p>${c.summary}</p>
                 </div>
                 <div class="case-detail-section">
-                    <div class="case-detail-label">💵 商业模式</div>
+                    <div class="case-detail-label">商业模式</div>
                     <p>${c.businessModel}</p>
                 </div>
                 <div class="case-detail-section">
-                    <div class="case-detail-label">✅ 为什么成功</div>
+                    <div class="case-detail-label">为什么成功</div>
                     <p>${c.whyItWorks}</p>
                 </div>
                 <div class="case-detail-section">
-                    <div class="case-detail-label">💡 经验教训</div>
+                    <div class="case-detail-label">经验教训</div>
                     <p>${c.lessonsLearned}</p>
                 </div>
                 <div class="case-detail-section">
-                    <div class="case-detail-label">📈 发展时间线</div>
+                    <div class="case-detail-label">发展时间线</div>
                     <div class="case-timeline">
                         ${c.timeline.map(t => `
                             <div class="timeline-item">
@@ -996,8 +996,8 @@ function renderLab() {
                 <div class="lab-title">${lab.title}</div>
                 <div class="lab-desc">${lab.description}</div>
                 <div class="lab-footer">
-                    <span class="lab-duration">⏱️ ${lab.duration}</span>
-                    <span class="lab-exercises">📋 ${lab.exercises.length} 个练习</span>
+                    <span class="lab-duration">${lab.duration}</span>
+                    <span class="lab-exercises">${lab.exercises.length} 个练习</span>
                 </div>
             </div>
         </div>
@@ -1024,30 +1024,30 @@ function showLabDetail(id) {
             <div class="modal-body lab-detail-body">
                 <div class="lab-detail-meta">
                     <span class="lab-difficulty ${lab.difficulty === '入门' ? 'easy' : 'medium'}">${lab.difficulty}</span>
-                    <span>⏱️ ${lab.duration}</span>
-                    <span>📋 ${lab.exercises.length} 个练习</span>
+                    <span>${lab.duration}</span>
+                    <span>${lab.exercises.length} 个练习</span>
                 </div>
                 <div class="lab-detail-section">
-                    <div class="lab-detail-label">🎯 你将学到</div>
+                    <div class="lab-detail-label">你将学到</div>
                     <ul class="lab-learn-list">
                         ${lab.whatYouLearn.map(item => `<li>${item}</li>`).join('')}
                     </ul>
                 </div>
                 <div class="lab-detail-section">
-                    <div class="lab-detail-label">🔬 动手练习</div>
+                    <div class="lab-detail-label">动手练习</div>
                     ${lab.exercises.map((ex, i) => `
                         <div class="lab-exercise">
                             <div class="lab-exercise-name">练习 ${i + 1}：${ex.name}</div>
                             <div class="lab-exercise-task">${ex.task}</div>
                             <div class="lab-exercise-meta">
-                                <span class="lab-exercise-tool">🛠️ ${ex.tool}</span>
+                                <span class="lab-exercise-tool">${ex.tool}</span>
                             </div>
-                            <div class="lab-exercise-tip">💡 Tips：${ex.tip}</div>
+                            <div class="lab-exercise-tip">Tips：${ex.tip}</div>
                         </div>
                     `).join('')}
                 </div>
                 <div class="lab-detail-section">
-                    <div class="lab-detail-label">📚 参考资源</div>
+                    <div class="lab-detail-label">参考资源</div>
                     <div class="lab-resources">
                         ${lab.resources.map(r => `<a class="lab-resource-link" href="${r.url}" target="_blank">${r.name} →</a>`).join('')}
                     </div>
@@ -1112,36 +1112,36 @@ function showIdeaDetail(id) {
                 <div class="idea-detail-meta">
                     <span class="idea-opportunity opp-${idea.opportunity === '大' ? 'high' : 'medium'}">机会：${idea.opportunity}</span>
                     <span>难度：${idea.difficulty}</span>
-                    <span>💰 ${idea.investment}</span>
+                    <span>${idea.investment}</span>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">📐 市场规模</div>
+                    <div class="idea-detail-label">市场规模</div>
                     <p>${idea.marketSize}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">😤 痛点</div>
+                    <div class="idea-detail-label">痛点</div>
                     <p>${idea.painPoint}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">💡 解决方案</div>
+                    <div class="idea-detail-label">解决方案</div>
                     <p>${idea.solution}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">🏰 竞争壁垒</div>
+                    <div class="idea-detail-label">竞争壁垒</div>
                     <p>${idea.moat}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">⚔️ 竞争对手</div>
+                    <div class="idea-detail-label">竞争对手</div>
                     <p>${idea.competitors}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">🚀 下一步行动</div>
+                    <div class="idea-detail-label">下一步行动</div>
                     <ol class="idea-steps">
                         ${idea.nextSteps.map(s => `<li>${s}</li>`).join('')}
                     </ol>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">✨ 灵感来源</div>
+                    <div class="idea-detail-label">灵感来源</div>
                     <p class="idea-inspiration">${idea.inspiration}</p>
                 </div>
             </div>
@@ -1162,85 +1162,120 @@ renderCases();
 renderLab();
 renderIdeas();
 
-// ========== Feature 1: 数据导出/导入 ==========
+// ========== Feature 1: 数据导出/导入 + 云同步 ==========
 function openSettingsModal() {
     const overlay = document.createElement('div');
     overlay.className = 'modal-overlay active';
+
+    const syncPanelHTML = (typeof SyncModule !== 'undefined') ? SyncModule.renderSyncPanel() : '';
+
     overlay.innerHTML = `
         <div class="modal" style="max-width:400px;">
             <div class="modal-header">
-                <h3>⚙️ 设置</h3>
+                <h3>设置</h3>
                 <button class="modal-close settings-close">✕</button>
             </div>
             <div class="modal-body" style="padding:20px;">
-                <div style="display:flex;flex-direction:column;gap:12px;">
-                    <button id="btn-export-data" style="padding:12px 16px;border:0.5px solid #ddd;background:#fff;border-radius:6px;font-size:14px;cursor:pointer;text-align:left;transition:background 0.2s;">📤 导出数据<br><span style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.5px;">将所有学习进度、收藏等数据导出为 JSON 文件</span></button>
-                    <button id="btn-import-data" style="padding:12px 16px;border:0.5px solid #ddd;background:#fff;border-radius:6px;font-size:14px;cursor:pointer;text-align:left;transition:background 0.2s;">📥 导入数据<br><span style="font-size:11px;color:#888;text-transform:uppercase;letter-spacing:0.5px;">从 JSON 文件恢复数据</span></button>
-                    <button id="btn-reset-data" style="padding:12px 16px;border:0.5px solid #e74c3c;background:#fff;border-radius:6px;font-size:14px;cursor:pointer;text-align:left;color:#e74c3c;transition:background 0.2s;">🗑️ 重置数据<br><span style="font-size:11px;opacity:0.7;text-transform:uppercase;letter-spacing:0.5px;">清除所有本地数据（不可恢复）</span></button>
+                <!-- Cloud Sync Section -->
+                <div style="margin-bottom:20px;">
+                    <div style="font-size:10px;font-weight:600;color:var(--gray-400,#a3a3a0);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;">云同步</div>
+                    <div id="sync-panel-container">${syncPanelHTML}</div>
+                </div>
+
+                <div style="height:1px;background:var(--gray-100,#efefee);margin:16px 0;"></div>
+
+                <!-- Local Data Section -->
+                <div>
+                    <div style="font-size:10px;font-weight:600;color:var(--gray-400,#a3a3a0);text-transform:uppercase;letter-spacing:0.08em;margin-bottom:10px;">本地数据</div>
+                    <div style="display:flex;flex-direction:column;gap:8px;">
+                        <button id="btn-export-data" style="padding:12px 16px;border:1px solid var(--gray-200,#e0e0de);background:var(--white,#fafaf9);border-radius:8px;font-size:13px;cursor:pointer;text-align:left;transition:background 0.2s;font-family:var(--font,Inter,sans-serif);">导出数据<br><span style="font-size:11px;color:var(--gray-400,#a3a3a0);">将所有学习进度导出为 JSON 文件</span></button>
+                        <button id="btn-import-data" style="padding:12px 16px;border:1px solid var(--gray-200,#e0e0de);background:var(--white,#fafaf9);border-radius:8px;font-size:13px;cursor:pointer;text-align:left;transition:background 0.2s;font-family:var(--font,Inter,sans-serif);">导入数据<br><span style="font-size:11px;color:var(--gray-400,#a3a3a0);">从 JSON 文件恢复数据</span></button>
+                        <button id="btn-reset-data" style="padding:12px 16px;border:1px solid rgba(220,38,38,0.3);background:var(--white,#fafaf9);border-radius:8px;font-size:13px;cursor:pointer;text-align:left;color:#dc2626;transition:background 0.2s;font-family:var(--font,Inter,sans-serif);">重置数据<br><span style="font-size:11px;opacity:0.6;">清除所有本地数据（不可恢复）</span></button>
+                    </div>
                 </div>
             </div>
         </div>
     `;
     document.body.appendChild(overlay);
 
+    // Bind sync panel events
+    const syncContainer = overlay.querySelector('#sync-panel-container');
+    if (syncContainer && typeof SyncModule !== 'undefined') {
+        SyncModule.bindSyncEvents(syncContainer);
+    }
+
     overlay.querySelector('.settings-close').addEventListener('click', () => overlay.remove());
     overlay.addEventListener('click', (e) => { if (e.target === overlay) overlay.remove(); });
 
     overlay.querySelector('#btn-export-data').addEventListener('click', () => {
-        const exportData = {
-            version: 1,
-            exportDate: new Date().toISOString(),
-            userData: JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'),
-            checkinData: JSON.parse(localStorage.getItem(CHECKIN_KEY) || '{}'),
-            favorites: JSON.parse(localStorage.getItem('ai-toolkit-favorites') || '{}'),
-            ideaValidations: {}
-        };
-        // Collect all idea validations
-        for (let i = 0; i < localStorage.length; i++) {
-            const key = localStorage.key(i);
-            if (key.startsWith('ai-toolkit-idea-validation-')) {
-                exportData.ideaValidations[key] = JSON.parse(localStorage.getItem(key));
+        if (typeof SyncModule !== 'undefined') {
+            SyncModule.exportToFile();
+        } else {
+            // Fallback export
+            const exportData = {
+                version: 1,
+                exportDate: new Date().toISOString(),
+                userData: JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'),
+                checkinData: JSON.parse(localStorage.getItem(CHECKIN_KEY) || '{}'),
+                favorites: JSON.parse(localStorage.getItem('ai-toolkit-favorites') || '{}'),
+                ideaValidations: {}
+            };
+            for (let i = 0; i < localStorage.length; i++) {
+                const key = localStorage.key(i);
+                if (key.startsWith('ai-toolkit-idea-validation-')) {
+                    exportData.ideaValidations[key] = JSON.parse(localStorage.getItem(key));
+                }
             }
+            const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
+            const url = URL.createObjectURL(blob);
+            const a = document.createElement('a');
+            a.href = url;
+            a.download = `ai-toolkit-backup-${getToday()}.json`;
+            a.click();
+            URL.revokeObjectURL(url);
         }
-        const blob = new Blob([JSON.stringify(exportData, null, 2)], { type: 'application/json' });
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        a.download = `ai-toolkit-backup-${getToday()}.json`;
-        a.click();
-        URL.revokeObjectURL(url);
     });
 
     overlay.querySelector('#btn-import-data').addEventListener('click', () => {
         const input = document.createElement('input');
         input.type = 'file';
         input.accept = '.json';
-        input.addEventListener('change', (e) => {
+        input.addEventListener('change', async (e) => {
             const file = e.target.files[0];
             if (!file) return;
-            const reader = new FileReader();
-            reader.onload = (ev) => {
-                try {
-                    const data = JSON.parse(ev.target.result);
-                    if (!data.version || !data.userData) {
-                        alert('文件格式不正确');
-                        return;
-                    }
-                    if (data.userData) localStorage.setItem(STORAGE_KEY, JSON.stringify(data.userData));
-                    if (data.checkinData) localStorage.setItem(CHECKIN_KEY, JSON.stringify(data.checkinData));
-                    if (data.favorites) localStorage.setItem('ai-toolkit-favorites', JSON.stringify(data.favorites));
-                    if (data.ideaValidations) {
-                        Object.keys(data.ideaValidations).forEach(key => {
-                            localStorage.setItem(key, JSON.stringify(data.ideaValidations[key]));
-                        });
-                    }
-                    alert('导入成功，页面即将刷新');
+            if (typeof SyncModule !== 'undefined') {
+                const result = await SyncModule.importFromFile(file);
+                if (result.success) {
+                    alert(result.message);
                     location.reload();
-                } catch (err) {
-                    alert('导入失败：文件解析错误');
+                } else {
+                    alert(result.message);
                 }
-            };
-            reader.readAsText(file);
+            } else {
+                const reader = new FileReader();
+                reader.onload = (ev) => {
+                    try {
+                        const data = JSON.parse(ev.target.result);
+                        if (!data.version || !data.userData) {
+                            alert('文件格式不正确');
+                            return;
+                        }
+                        if (data.userData) localStorage.setItem(STORAGE_KEY, JSON.stringify(data.userData));
+                        if (data.checkinData) localStorage.setItem(CHECKIN_KEY, JSON.stringify(data.checkinData));
+                        if (data.favorites) localStorage.setItem('ai-toolkit-favorites', JSON.stringify(data.favorites));
+                        if (data.ideaValidations) {
+                            Object.keys(data.ideaValidations).forEach(key => {
+                                localStorage.setItem(key, JSON.stringify(data.ideaValidations[key]));
+                            });
+                        }
+                        alert('导入成功，页面即将刷新');
+                        location.reload();
+                    } catch (err) {
+                        alert('导入失败：文件解析错误');
+                    }
+                };
+                reader.readAsText(file);
+            }
         });
         input.click();
     });
@@ -1263,7 +1298,7 @@ if (!header) return;
 header.style.position = 'relative';
 // Knowledge Feed button
 const kfBtn = document.createElement('button');
-kfBtn.innerHTML = '🧠';
+kfBtn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/><path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/></svg>';
 kfBtn.title = '知识灌注';
 kfBtn.style.cssText = 'position:absolute;right:44px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:18px;cursor:pointer;padding:4px 8px;opacity:0.6;transition:opacity 0.2s;';
 kfBtn.addEventListener('mouseenter', () => kfBtn.style.opacity = '1');
@@ -1273,7 +1308,7 @@ header.appendChild(kfBtn);
 // Settings button
 const btn = document.createElement('button');
 btn.className = 'settings-btn';
-btn.innerHTML = '⚙️';
+btn.innerHTML = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 00.33 1.82l.06.06a2 2 0 010 2.83 2 2 0 01-2.83 0l-.06-.06a1.65 1.65 0 00-1.82-.33 1.65 1.65 0 00-1 1.51V21a2 2 0 01-4 0v-.09A1.65 1.65 0 009 19.4a1.65 1.65 0 00-1.82.33l-.06.06a2 2 0 01-2.83-2.83l.06-.06A1.65 1.65 0 004.68 15 1.65 1.65 0 003 14.08V14a2 2 0 014 0v.09c0 .67.44 1.26 1.09 1.49z"/></svg>';
 btn.style.cssText = 'position:absolute;right:12px;top:50%;transform:translateY(-50%);background:none;border:none;font-size:18px;cursor:pointer;padding:4px 8px;opacity:0.6;transition:opacity 0.2s;';
 btn.addEventListener('mouseenter', () => btn.style.opacity = '1');
 btn.addEventListener('mouseleave', () => btn.style.opacity = '0.6');
@@ -1609,7 +1644,7 @@ function openFavoritesModal() {
     overlay.innerHTML = `
         <div class="modal" style="max-width:420px;">
             <div class="modal-header">
-                <h3>♥ 我的收藏</h3>
+                <h3>我的收藏</h3>
                 <button class="modal-close fav-modal-close">✕</button>
             </div>
             <div class="modal-body" style="padding:16px;max-height:60vh;overflow-y:auto;">
@@ -1730,7 +1765,7 @@ function renderWeeklyDigest() {
     digestCard.innerHTML = `
         <div class="weekly-digest-header" style="padding:14px 16px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;background:#fafafa;">
             <div style="display:flex;align-items:center;gap:8px;">
-                <span style="font-size:16px;">📊</span>
+                <span style="font-size:14px;">%</span>
                 <span style="font-size:13px;font-weight:600;letter-spacing:0.3px;">本周速览</span>
                 <span style="font-size:11px;color:#999;background:#f0f0f0;padding:2px 6px;border-radius:3px;">${totalCount} 条 · ${newsData.length} 天</span>
             </div>
@@ -1868,7 +1903,7 @@ function renderRecommendations() {
             const node = learningNodes[0];
             recommendations.push({
                 type: 'continue',
-                icon: '📖',
+                icon: '■',
                 title: `继续学习「${node.name}」`,
                 subtitle: `${category.name} · 还有 ${learningNodes.length} 个在学`,
                 action: () => openLearnModal(node)
@@ -1882,7 +1917,7 @@ function renderRecommendations() {
                 if (lab) {
                     recommendations.push({
                         type: 'lab',
-                        icon: '🧪',
+                        icon: '◆',
                         title: `开始实验「${lab.title}」`,
                         subtitle: `${category.name} 已全部掌握，进入实战`,
                         action: () => {
@@ -1897,7 +1932,7 @@ function renderRecommendations() {
             const firstNode = leaves[0];
             recommendations.push({
                 type: 'start',
-                icon: '🚀',
+                icon: '▲',
                 title: `开始学习「${category.name}」`,
                 subtitle: `共 ${leaves.length} 个知识点，从基础开始`,
                 action: () => openLearnModal(firstNode)
@@ -1912,7 +1947,7 @@ function renderRecommendations() {
         if (notStarted.length > 0) {
             recommendations.push({
                 type: 'start',
-                icon: '🌟',
+                icon: '♦',
                 title: '开始你的 AI 学习之旅',
                 subtitle: `还有 ${notStarted.length} 个知识点等你探索`,
                 action: () => openLearnModal(notStarted[0])
@@ -1985,40 +2020,40 @@ showIdeaDetail = function(id) {
                 <div class="idea-detail-meta">
                     <span class="idea-opportunity opp-${idea.opportunity === '大' ? 'high' : 'medium'}">机会：${idea.opportunity}</span>
                     <span>难度：${idea.difficulty}</span>
-                    <span>💰 ${idea.investment}</span>
+                    <span>${idea.investment}</span>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">📐 市场规模</div>
+                    <div class="idea-detail-label">市场规模</div>
                     <p>${idea.marketSize}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">😤 痛点</div>
+                    <div class="idea-detail-label">痛点</div>
                     <p>${idea.painPoint}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">💡 解决方案</div>
+                    <div class="idea-detail-label">解决方案</div>
                     <p>${idea.solution}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">🏰 竞争壁垒</div>
+                    <div class="idea-detail-label">竞争壁垒</div>
                     <p>${idea.moat}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">⚔️ 竞争对手</div>
+                    <div class="idea-detail-label">竞争对手</div>
                     <p>${idea.competitors}</p>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">🚀 下一步行动</div>
+                    <div class="idea-detail-label">下一步行动</div>
                     <ol class="idea-steps">
                         ${idea.nextSteps.map(s => `<li>${s}</li>`).join('')}
                     </ol>
                 </div>
                 <div class="idea-detail-section">
-                    <div class="idea-detail-label">✨ 灵感来源</div>
+                    <div class="idea-detail-label">灵感来源</div>
                     <p class="idea-inspiration">${idea.inspiration}</p>
                 </div>
                 <div style="padding:16px 0;border-top:0.5px solid #eee;margin-top:16px;">
-                    <button class="idea-validate-btn" style="width:100%;padding:14px;background:#000;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;transition:opacity 0.2s;font-family:Inter,system-ui,sans-serif;letter-spacing:0.3px;">🔬 开始验证</button>
+                    <button class="idea-validate-btn" style="width:100%;padding:14px;background:#000;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;transition:opacity 0.2s;font-family:Inter,system-ui,sans-serif;letter-spacing:0.3px;">开始验证</button>
                 </div>
             </div>
         </div>
@@ -2109,7 +2144,7 @@ function openIdeaValidation(id) {
     overlay.innerHTML = `
         <div class="modal" style="max-width:500px;max-height:85vh;">
             <div class="modal-header">
-                <h3>🔬 验证工作台</h3>
+                <h3>验证工作台</h3>
                 <button class="modal-close validation-close">✕</button>
             </div>
             <div class="modal-body" style="padding:16px;overflow-y:auto;max-height:calc(85vh - 60px);">
@@ -2119,7 +2154,7 @@ function openIdeaValidation(id) {
                 </div>
 
                 <div class="validation-section" style="margin-bottom:20px;">
-                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:10px;font-weight:500;">📐 可行性评分</div>
+                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:10px;font-weight:500;">可行性评分</div>
                     <div id="val-scoring" style="display:flex;flex-direction:column;gap:10px;">
                         ${scoringHTML}
                     </div>
@@ -2127,13 +2162,13 @@ function openIdeaValidation(id) {
                 </div>
 
                 <div class="validation-section" style="margin-bottom:20px;">
-                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:4px;font-weight:500;">⚔️ 竞争分析</div>
+                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:4px;font-weight:500;">竞争分析</div>
                     <div style="font-size:11px;color:#bbb;margin-bottom:8px;">市场上有谁在做类似的事？他们的弱点？你的差异化切入点？</div>
                     <textarea id="val-competitors" placeholder="1. [竞品名] 优势 / 弱点&#10;2. [竞品名] 优势 / 弱点&#10;&#10;我的差异化：..." style="width:100%;min-height:90px;border:0.5px solid #ddd;border-radius:6px;padding:10px;font-size:13px;font-family:Inter,system-ui,sans-serif;resize:vertical;outline:none;box-sizing:border-box;transition:border-color 0.2s;">${savedData.competitors || ''}</textarea>
                 </div>
 
                 <div class="validation-section" style="margin-bottom:20px;">
-                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:8px;font-weight:500;">📊 TAM 估算 <span style="font-weight:400;text-transform:none;">(输入后自动计算)</span></div>
+                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:8px;font-weight:500;">TAM 估算 <span style="font-weight:400;text-transform:none;">(输入后自动计算)</span></div>
                     <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;">
                         <div>
                             <label style="font-size:11px;color:#888;">目标用户数 (万人)</label>
@@ -2156,7 +2191,7 @@ function openIdeaValidation(id) {
                 </div>
 
                 <div class="validation-section" style="margin-bottom:20px;">
-                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:4px;font-weight:500;">🎯 MVP 范围</div>
+                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:4px;font-weight:500;">MVP 范围</div>
                     <div style="font-size:11px;color:#bbb;margin-bottom:8px;">能验证核心假设的最小功能集，不超过 5 个。</div>
                     <div id="val-mvp-list" style="display:flex;flex-direction:column;gap:6px;">
                         ${mvpHTML}
@@ -2165,19 +2200,19 @@ function openIdeaValidation(id) {
                 </div>
 
                 <div class="validation-section" style="margin-bottom:20px;">
-                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:8px;font-weight:500;">📅 30天行动计划</div>
+                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:8px;font-weight:500;">30天行动计划</div>
                     <div style="display:flex;flex-direction:column;gap:8px;">
                         ${weeksHTML}
                     </div>
                 </div>
 
                 <div class="validation-section" style="margin-bottom:20px;">
-                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:4px;font-weight:500;">🚫 放弃标准</div>
+                    <div style="font-size:11px;text-transform:uppercase;letter-spacing:0.5px;color:#999;margin-bottom:4px;font-weight:500;">放弃标准</div>
                     <div style="font-size:11px;color:#bbb;margin-bottom:8px;">什么情况下果断止损？提前想清楚避免沉没成本。</div>
                     <textarea id="val-kill-criteria" placeholder="例：&#10;- 调研 10 人中少于 3 人愿意付费&#10;- Landing Page 转化率低于 2%&#10;- 4 周内找不到技术方案" style="width:100%;min-height:70px;border:0.5px solid #ddd;border-radius:6px;padding:10px;font-size:13px;font-family:Inter,system-ui,sans-serif;resize:vertical;outline:none;box-sizing:border-box;transition:border-color 0.2s;">${savedData.killCriteria || ''}</textarea>
                 </div>
 
-                <button id="val-save-btn" style="width:100%;padding:14px;background:#000;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;transition:opacity 0.2s;font-family:Inter,system-ui,sans-serif;letter-spacing:0.3px;">💾 保存验证数据</button>
+                <button id="val-save-btn" style="width:100%;padding:14px;background:#000;color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;transition:opacity 0.2s;font-family:Inter,system-ui,sans-serif;letter-spacing:0.3px;">保存验证数据</button>
             </div>
         </div>
     `;
@@ -2208,10 +2243,10 @@ function openIdeaValidation(id) {
         totalEl.style.color = avg >= 4 ? '#16a34a' : avg >= 3 ? '#000' : '#dc2626';
 
         verdictEl.style.display = 'block';
-        if (avg >= 4.5) verdictEl.textContent = '🟢 极强信号！值得 All-in，立刻开始第一周行动。';
-        else if (avg >= 3.5) verdictEl.textContent = '🟡 有潜力。重点关注低分项，想清楚再动手。';
-        else if (avg >= 2.5) verdictEl.textContent = '🟠 风险较高。建议做更多调研，或考虑 pivot。';
-        else verdictEl.textContent = '🔴 信号偏弱。建议暂缓，除非你对某个维度有独特洞察。';
+if (avg >= 4.5) verdictEl.textContent = '极强信号！值得 All-in，立刻开始第一周行动。';
+    else if (avg >= 3.5) verdictEl.textContent = '有潜力。重点关注低分项，想清楚再动手。';
+    else if (avg >= 2.5) verdictEl.textContent = '风险较高。建议做更多调研，或考虑 pivot。';
+    else verdictEl.textContent = '信号偏弱。建议暂缓，除非你对某个维度有独特洞察。';
     }
 
     // Attach score dot clicks
@@ -2258,11 +2293,11 @@ function openIdeaValidation(id) {
             resultEl.textContent = '¥' + formatted;
 
             // Market tier assessment
-            if (revenue >= 1000000000) tierEl.textContent = '💰 超大市场（10亿+），适合 VC 融资路线';
-            else if (revenue >= 100000000) tierEl.textContent = '📈 大市场（1-10亿），可考虑风险投资';
-            else if (revenue >= 10000000) tierEl.textContent = '🏪 中等市场（1000万-1亿），适合精益创业';
-            else if (revenue >= 1000000) tierEl.textContent = '🎯 小市场（100-1000万），适合个人/小团队';
-            else tierEl.textContent = '⚠️ 市场偏小，建议重新评估定价或用户规模';
+            if (revenue >= 1000000000) tierEl.textContent = '超大市场（10亿+），适合 VC 融资路线';
+            else if (revenue >= 100000000) tierEl.textContent = '大市场（1-10亿），可考虑风险投资';
+            else if (revenue >= 10000000) tierEl.textContent = '中等市场（1000万-1亿），适合精益创业';
+            else if (revenue >= 1000000) tierEl.textContent = '小市场（100-1000万），适合个人/小团队';
+            else tierEl.textContent = '市场偏小，建议重新评估定价或用户规模';
         } else {
             resultEl.textContent = '等待输入...';
             tierEl.textContent = '';
@@ -2303,8 +2338,8 @@ function openIdeaValidation(id) {
             lastSaved: new Date().toISOString()
         };
         localStorage.setItem(storageKey, JSON.stringify(data));
-        saveBtn.textContent = '✓ 已保存';
-        setTimeout(() => { saveBtn.textContent = '💾 保存验证数据'; }, 1500);
+saveBtn.textContent = '✓ 已保存';
+setTimeout(() => { saveBtn.textContent = '保存验证数据'; }, 1500);
     });
 
     // Focus styles
@@ -3182,10 +3217,10 @@ menu.innerHTML = '<div class="at-menu-item" data-action="search"><span class="at
     }
 
     function getTypeIcon(type) {
-        if (type === 'book') return '📚';
-        if (type === 'podcast') return '🎙️';
-        if (type === 'video') return '🎬';
-        return '📖';
+        if (type === 'book') return '◇';
+        if (type === 'podcast') return '○';
+        if (type === 'video') return '△';
+        return '□';
     }
 
     function getTypeLabel(type) {
@@ -3264,7 +3299,7 @@ menu.innerHTML = '<div class="at-menu-item" data-action="search"><span class="at
             '<div class="kf-panel">' +
                 '<div class="kf-header">' +
                     '<div class="kf-header-top">' +
-                        '<h2 class="kf-title">🧠 知识灌注</h2>' +
+                        '<h2 class="kf-title">知识灌注</h2>' +
                         '<button class="modal-close kf-close">✕</button>' +
                     '</div>' +
                     '<div class="kf-subtitle">精选书籍 · 播客 · 视频的精华提炼，帮你快速建立 AI 认知</div>' +
@@ -3274,9 +3309,9 @@ menu.innerHTML = '<div class="at-menu-item" data-action="search"><span class="at
                     '<div class="kf-progress-text">已消化 ' + digestedCount + ' / ' + totalCount + ' 个资源</div>' +
                     '<div class="kf-filters">' +
                         '<button class="kf-filter active" data-filter="all">全部</button>' +
-                        '<button class="kf-filter" data-filter="book">📚 书籍</button>' +
-                        '<button class="kf-filter" data-filter="podcast">🎙️ 播客</button>' +
-                        '<button class="kf-filter" data-filter="video">🎬 视频</button>' +
+                        '<button class="kf-filter" data-filter="book">书籍</button>' +
+                        '<button class="kf-filter" data-filter="podcast">播客</button>' +
+                        '<button class="kf-filter" data-filter="video">视频</button>' +
                     '</div>' +
                 '</div>' +
                 '<div class="kf-list">' + renderFeedList('all') + '</div>' +
@@ -3336,12 +3371,12 @@ menu.innerHTML = '<div class="at-menu-item" data-action="search"><span class="at
                     '</div>' +
 
                     '<div class="kf-detail-section">' +
-                        '<div class="kf-section-title">📝 概述</div>' +
+                        '<div class="kf-section-title">概述</div>' +
                         '<div class="kf-section-content">' + item.summary + '</div>' +
                     '</div>' +
 
                     '<div class="kf-detail-section">' +
-                        '<div class="kf-section-title">💡 核心要点</div>' +
+                        '<div class="kf-section-title">核心要点</div>' +
                         '<div class="kf-takeaways">' +
                             item.keyTakeaways.map(function(t, i) {
                                 return '<div class="kf-takeaway"><span class="kf-takeaway-num">' + (i+1) + '</span><span class="kf-takeaway-text">' + t + '</span></div>';
@@ -3350,31 +3385,31 @@ menu.innerHTML = '<div class="at-menu-item" data-action="search"><span class="at
                     '</div>' +
 
                     '<div class="kf-detail-section">' +
-                        '<div class="kf-section-title">🔑 关键概念</div>' +
+                        '<div class="kf-section-title">关键概念</div>' +
                         '<div class="kf-concepts">' +
                             item.concepts.map(function(c) { return '<span class="kf-concept-chip">' + c + '</span>'; }).join('') +
                         '</div>' +
                     '</div>' +
 
                     '<div class="kf-detail-section">' +
-                        '<div class="kf-section-title">✨ 金句</div>' +
+                        '<div class="kf-section-title">金句</div>' +
                         '<div class="kf-quotes">' +
                             item.goldQuotes.map(function(q) { return '<div class="kf-quote">' + q + '</div>'; }).join('') +
                         '</div>' +
                     '</div>' +
 
                     '<div class="kf-detail-section">' +
-                        '<div class="kf-section-title">🎯 行动建议</div>' +
+                        '<div class="kf-section-title">行动建议</div>' +
                         '<div class="kf-actions">' +
                             item.actionItems.map(function(a) { return '<div class="kf-action-item">→ ' + a + '</div>'; }).join('') +
                         '</div>' +
                     '</div>' +
 
-                    (item.url ? '<div class="kf-detail-section"><a class="kf-source-link" href="' + item.url + '" target="_blank">🔗 查看原始资源</a></div>' : '') +
+                    (item.url ? '<div class="kf-detail-section"><a class="kf-source-link" href="' + item.url + '" target="_blank">查看原始资源 →</a></div>' : '') +
 
                     '<div class="kf-detail-footer">' +
                         '<button class="kf-digest-btn ' + (isDigested ? 'digested' : '') + '">' +
-                            (isDigested ? '✓ 已消化' : '📥 标记为已消化') +
+                            (isDigested ? '✓ 已消化' : '标记为已消化') +
                         '</button>' +
                     '</div>' +
                 '</div>' +
