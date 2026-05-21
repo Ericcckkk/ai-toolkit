@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="AI Toolkit">
+    <link rel="apple-touch-icon" href="icon-192.png">
+    <link rel="manifest" href="manifest.json">
+    <title>AI Toolkit</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <!-- 底部导航栏 -->
+        <nav class="tab-bar">
+            <div class="tab-item active" data-tab="knowledge-map">
+                <div class="tab-icon">🗺️</div>
+                <div class="tab-label">知识地图</div>
+            </div>
+            <div class="tab-item" data-tab="daily-news">
+                <div class="tab-icon">📰</div>
+                <div class="tab-label">每日资讯</div>
+            </div>
+            <div class="tab-item" data-tab="cases">
+                <div class="tab-icon">💼</div>
+                <div class="tab-label">案例库</div>
+            </div>
+            <div class="tab-item" data-tab="lab">
+                <div class="tab-icon">🧪</div>
+                <div class="tab-label">实验室</div>
+            </div>
+            <div class="tab-item" data-tab="ideas">
+                <div class="tab-icon">💡</div>
+                <div class="tab-label">Idea池</div>
+            </div>
+        </nav>
+
+        <!-- 页面内容区 -->
+        <main class="content">
+            <!-- 知识地图页 -->
+            <section id="knowledge-map" class="page active">
+                <header class="page-header">
+                    <h1>AI 知识地图</h1>
+                    <div class="progress-summary">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="overall-progress"></div>
+                        </div>
+                        <span class="progress-text" id="progress-text">0%</span>
+                    </div>
+                    <!-- 术语搜索入口 -->
+                    <div class="glossary-search-bar">
+                        <input type="text" id="glossary-search" placeholder="🔍 搜索术语 / Search terms...">
+                    </div>
+                </header>
+                <!-- 术语搜索结果（默认隐藏） -->
+                <div class="glossary-results hidden" id="glossary-results">
+                    <div class="glossary-results-header">
+                        <span id="glossary-results-count"></span>
+                        <button class="glossary-results-close" id="glossary-results-close">✕ 关闭</button>
+                    </div>
+                    <div class="glossary-list" id="glossary-list"></div>
+                </div>
+
+                <!-- 每日打卡入口 -->
+                <div class="checkin-banner" id="checkin-banner">
+                    <div class="checkin-left">
+                        <div class="checkin-streak">
+                            <span class="streak-fire">🔥</span>
+                            <span class="streak-count" id="streak-count">0</span>
+                            <span class="streak-label">天连续</span>
+                        </div>
+                        <div class="checkin-xp">
+                            <span class="xp-icon">⭐</span>
+                            <span id="xp-count">0</span> XP
+                            <span class="level-badge" id="level-badge">AI 小白</span>
+                        </div>
+                    </div>
+                    <button class="checkin-btn" id="checkin-btn">
+                        <span class="checkin-btn-text">今日学习</span>
+                        <span class="checkin-btn-sub" id="checkin-btn-sub">3个知识点等你</span>
+                    </button>
+                </div>
+
+                <div class="tree-container" id="tree-container">
+                    <!-- 动态渲染 -->
+                </div>
+            </section>
+
+            <!-- 每日资讯页 -->
+            <section id="daily-news" class="page">
+                <header class="page-header">
+                    <h1>每日 AI 资讯</h1>
+                </header>
+                <div class="news-list" id="news-list">
+                    <!-- 动态渲染 -->
+                </div>
+            </section>
+            <!-- 商业案例库 -->
+            <section id="cases" class="page">
+                <header class="page-header">
+                    <h1>💼 商业案例库</h1>
+                    <p class="page-subtitle">AI 创业成功路径拆解</p>
+                </header>
+                <div class="cases-filter" id="cases-filter"></div>
+                <div class="cases-list" id="cases-list"></div>
+            </section>
+
+            <!-- 应用实验室 -->
+            <section id="lab" class="page">
+                <header class="page-header">
+                    <h1>🧪 应用实验室</h1>
+                    <p class="page-subtitle">动手体验 AI 能力</p>
+                </header>
+                <div class="lab-list" id="lab-list"></div>
+            </section>
+
+            <!-- 创业 Idea 池 -->
+            <section id="ideas" class="page">
+                <header class="page-header">
+                    <h1>💡 创业 Idea 池</h1>
+                    <p class="page-subtitle">发现下一个 AI 创业机会</p>
+                </header>
+                <div class="ideas-list" id="ideas-list"></div>
+            </section>
+        </main>
+
+        <!-- 知识学习卡片弹窗 -->
+        <div class="modal-overlay" id="learn-modal">
+            <div class="modal learn-modal">
+                <div class="modal-header">
+                    <h3 id="learn-title">知识点名称</h3>
+                    <div class="learn-fullname" id="learn-fullname"></div>
+                    <button class="modal-close" id="learn-close">✕</button>
+                </div>
+                <div class="modal-body learn-body">
+                    <!-- 知识卡片：翻卡片式 -->
+                    <div class="learn-card" id="learn-card">
+                        <div class="learn-section">
+                            <div class="learn-section-icon">💡</div>
+                            <div class="learn-section-title">是什么</div>
+                            <div class="learn-section-content" id="learn-what"></div>
+                        </div>
+                        <div class="learn-section">
+                            <div class="learn-section-icon">🎯</div>
+                            <div class="learn-section-title">为什么重要</div>
+                            <div class="learn-section-content" id="learn-why"></div>
+                        </div>
+                        <div class="learn-section">
+                            <div class="learn-section-icon">📌</div>
+                            <div class="learn-section-title">一句话记住</div>
+                            <div class="learn-section-content highlight" id="learn-remember"></div>
+                        </div>
+                        <div class="learn-section">
+                            <div class="learn-section-icon">🌰</div>
+                            <div class="learn-section-title">举个例子</div>
+                            <div class="learn-section-content" id="learn-example"></div>
+                        </div>
+                    </div>
+
+                    <!-- 状态和笔记 -->
+                    <div class="learn-actions">
+                        <div class="status-selector">
+                            <div class="status-options">
+                                <button class="status-btn" data-status="not-started">未学</button>
+                                <button class="status-btn" data-status="learning">在学</button>
+                                <button class="status-btn" data-status="mastered">已掌握</button>
+                            </div>
+                        </div>
+                        <div class="note-toggle" id="note-toggle">
+                            <span>📝</span> 写笔记
+                        </div>
+                        <div class="note-area hidden" id="note-area">
+                            <textarea id="note-input" placeholder="记录你的理解、心得..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn-save" id="btn-save">保存</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 每日学习弹窗 -->
+        <div class="modal-overlay" id="daily-modal">
+            <div class="modal daily-modal">
+                <div class="modal-header">
+                    <h3>🎯 今日学习任务</h3>
+                    <button class="modal-close" id="daily-close">✕</button>
+                </div>
+                <div class="modal-body">
+                    <div class="daily-progress-bar">
+                        <div class="daily-progress-fill" id="daily-progress-fill"></div>
+                    </div>
+                    <div class="daily-progress-label" id="daily-progress-label">完成 0/3</div>
+                    <div class="daily-cards" id="daily-cards">
+                        <!-- 每日 3 个知识卡片 -->
+                    </div>
+                </div>
+                <div class="modal-footer daily-footer">
+                    <div class="daily-reward" id="daily-reward">
+                        完成今日学习可获得 <strong>+30 XP</strong>
+                    </div>
+                    <button class="btn-checkin" id="btn-checkin" disabled>
+                        ✅ 完成打卡
+                    </button>
+                    <button class="btn-continue" id="btn-continue" style="display:none">
+                        📚 继续学习下一组
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- 打卡成功弹窗 -->
+        <div class="modal-overlay" id="success-modal">
+            <div class="modal success-modal">
+                <div class="success-content">
+                    <div class="success-emoji">🎉</div>
+                    <h2 class="success-title" id="success-title">打卡成功！</h2>
+                    <div class="success-detail" id="success-detail"></div>
+                    <button class="btn-success-close" id="success-close">太棒了！</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="data/fundamentals.js"></script>
+    <script src="data/llm.js"></script>
+    <script src="data/applications.js"></script>
+    <script src="data/business.js"></script>
+    <script src="data/tools.js"></script>
+    <script src="data/frontier.js"></script>
+    <script src="data/news.js"></script>
+    <script src="data/cases.js"></script>
+    <script src="data/lab.js"></script>
+    <script src="data/ideas.js"></script>
+    <script src="knowledge-data.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+{
+    "name": "AI Toolkit - AI知识成长系统",
+    "short_name": "AI Toolkit",
+    "description": "成为懂AI、会用AI、能用AI创业的人",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#f9fafb",
+    "theme_color": "#6366f1",
+    "orientation": "portrait",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}
