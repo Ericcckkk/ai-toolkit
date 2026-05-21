@@ -25,7 +25,7 @@ from pathlib import Path
 # ============ 配置 ============
 MINIMAX_API_KEY = os.environ.get("MINIMAX_API_KEY", "")
 MINIMAX_OPENAI_URL = "https://api.minimax.chat/v1/chat/completions"
-MINIMAX_MODEL = "MiniMax-Text-01"  # MiniMax 旗舰文本模型
+MINIMAX_MODEL = "MiniMax-M2.7"  # Token Plan 支持的旗舰编程/文本模型
 
 NEWS_COUNT = 20  # 每天输出条数
 MAX_RAW_ARTICLES = 80  # 最多抓取原始文章数（供 AI 筛选）
