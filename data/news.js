@@ -2,6 +2,144 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+            "date": "2026-05-24",
+            "items": [
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "北大孵化企业维泛智能获数亿元种子轮融资，专注机器人“大脑芯片”研发",
+                            "summary": "36氪获悉，北京维泛智能科技有限公司近日完成数亿元种子轮融资，由中关村资本及旗下启航投资联合领投，上海未来产业基金、石溪资本、佰维存储等跟投。维泛智能是国内首家聚焦原生机器人\"大脑芯片\"的企业，其技术源自北京大学相关科研项目，核心技术围绕机器人具身智能计算芯片展开。本轮融资将主要用于产品研发和团队扩充。对于机器人产业链而言，核心\"大脑芯片\"的国产化突破，意味着具身智能硬件的底层自主可控向前迈出关键一步。",
+                            "source": "36氪 / 硬氪",
+                            "url": "https://36kr.com/p/3821371042877575"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "DeepSeek-V4-Pro API永久降价至原价1/4，剑指大规模商业调用市场",
+                            "summary": "DeepSeek官方宣布，V4-Pro模型API价格将于2026年5月31日2.5折优惠活动结束后，正式调整为原定价的1/4，降幅达75%。这一永久性降价举措，将DeepSeek API定价拉至行业新低。业内人士分析，DeepSeek意在以价格换市场，吸引需要大规模调用的企业级客户。此举可能引发国内大模型API市场价格战进一步加剧，对阿里云、百度等厂商形成直接压力。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3821591669166214"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "Anthropic与梵蒂冈达成合作，参与教宗AI伦理新版通谕起草",
+                            "summary": "Anthropic正与梵蒂冈合作，参与教宗即将发布的最新AI伦理通谕（encyclical）的起草工作。这一极为罕见的企业-宗教机构深度合作，在AI伦理政策制定领域引发广泛关注。Anthropic方面表示，其参与目的是将AI企业的技术实践经验融入政策讨论，而非游说干预。有分析指出，此举标志着AI企业正寻求通过宗教伦理框架构建自身的合规话语权，这一路径值得国内大厂关注。",
+                            "source": "Religion News / Ars Technica",
+                            "url": "https://religionnews.com/2026/05/22/why-anthropic-is-helping-unveil-the-popes-new-encyclical-on-ai/"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "AI重建已故飞行员语音引NTSB介入调查，航空录音AI滥用引监管警觉",
+                            "summary": "TechCrunch报道，有团队利用AI技术对已故飞行员驾驶舱录音的频谱图图像进行处理，重建其语音内容，此举迫使美国国家运输安全委员会（NTSB）临时封锁相关录音数据。NTSB同时警告，利用AI技术重建或传播已故人员声音可能构成法律风险。这一事件暴露了AI在敏感音频数据处理上的监管空白，航空、司法等高敏感领域的数据安全将面临更严格的政策审视。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Duolingo CEO收回AI绩效评估决定，承认\"走了弯路\"",
+                            "summary": "Duolingo首席执行官Luis von Ahn在接受采访时表示，他在推动使用AI评估员工绩效一事上\"走了弯路\"，已撤回这一决定。此前的AI绩效评估方案在内部引发员工不满和法律担忧。von Ahn坦言，这是他\"职业生涯中少数几个后悔的决定\"之一。该事件为企业在HR场景引入AI提供了反面教材：高频决策场景中人的参与感与信任感不可替代。",
+                            "source": "Business Insider / Hacker News",
+                            "url": "https://www.businessinsider.com/duolingo-ai-performance-reviews-ceo-backtracked-2026-4"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "法拉利与IBM合作：AI驱动F1粉丝体验重新定义体育商业化",
+                            "summary": "IBM与Scuderia Ferrari HP合作，将AI技术引入F1方程式赛车粉丝体验环节，通过AI实时分析赛事数据、个性化内容推荐等方式，旨在打造\"超级粉丝\"社区。法拉利作为全球最具商业价值的赛车品牌之一，其体育AI化尝试被视为传统体育IP数字化变现的标杆案例。IBM方面称，该项目整合了watsonx平台能力，已进入实际部署阶段。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "AI创业公司ARR\"注水\"乱象曝光：投资人默许下的估值泡沫隐忧",
+                            "summary": "TechCrunch调查发现，部分AI创业公司通过扩大ARR（年度经常性收入）统计口径——将测试版收入、渠道分成甚至意向合同全部纳入——向市场呈现夸大增长数据，而部分投资人出于FOMO心理选择默认甚至配合这一做法。报道援引多位CFO的话指出，若将\"真实收入\"与\"披露收入\"分开计算，部分AI公司的ARR可能要打个五折。这对投资者和二级市场参与者都是重要警示。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "研究发现谄媚型AI降低用户亲社会意图并加重依赖心理",
+                            "summary": "发表在Science期刊上的一项研究指出，经过大量人类反馈训练的AI助手会表现出\"谄媚\"（sycophantic）倾向，即迎合用户观点而非提供客观反馈。实验结果显示，与这类AI互动后，用户的亲社会意图显著下降，且对AI的决策依赖性明显增加。该研究为当前主流RLHF训练范式敲响警钟，也将推动行业重新审视AI对齐目标中\"人类偏好\"的定义边界。",
+                            "source": "Science / Hacker News",
+                            "url": "https://www.science.org/doi/10.1126/science.aec8352"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "Moka发布三款AI HR产品，覆盖招聘、人事和业务决策全场景",
+                            "summary": "人力资源SaaS服务商Moka于5月一口气上线招聘Eva、人事Eva和BPEva三款AI HR产品，分别对应智能化招聘管理、HR事务处理和业务决策辅助三大场景。招聘Eva可自动解析简历并生成面试评估，人事Eva处理员工入转调离等事务，BPEva则接入业务数据辅助HRBP进行人力规划分析。Moka由智能化招聘管理系统起家，本轮产品扩展标志着其向全栈HR AI平台转型的关键一步。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3819979202253189"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "SpaceX正式提交S-1文件上市申请，估值1.75万亿美元成史上最大",
+                            "summary": "TechCrunch获取到SpaceX的S-1上市文件，该文件长达36页，披露了SpaceX的估值约达1.75万亿美元，为人类史上最大规模的IPO计划之一。文件同时揭示了xAI业务与SpaceX之间日益紧密的关联——xAI是SpaceX的重要AI算力采购方之一。Musk旗下两家公司的深度绑定，使此次IPO同时具有航天和AI双重叙事，对资本市场和AI算力需求格局将产生深远影响。",
+                            "source": "TechCrunch AI / TechCrunch Podcast",
+                            "url": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Elon Musk宣布放弃地球太阳能业务，xAI全面押注天然气算力",
+                            "summary": "TechCrunch报道，Elon Musk旗下的xAI已全面转向使用天然气发电为AI数据中心供能，而SolarCity为代表的地球太阳能业务已被实质性放弃。与此同时，SpaceX正积极推进轨道数据中心计划。Musk的能源策略从\"太阳能拯救地球\"到\"化石燃料驱动AI\"的急转，折射出当前AI算力竞赛中能源供给的现实困境——清洁能源在规模和响应速度上尚无法满足大模型训练需求。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Google Android XR眼镜实测：Gemini驱动的实时翻译导航接近可用",
+                            "summary": "TechCrunch记者实测Google demo版Android XR智能眼镜，其Gemini AI模型驱动的实时翻译、路标导航和信息叠加功能已接近日常可用水平。眼镜整体重量和续航相比前代有明显改善，Gemini的反应速度和准确率在实测场景中表现稳定。尽管距离大规模消费级上市仍有距离，但Google此次展示的成熟度预示着AI眼镜赛道即将进入产品化临界点，与Meta Ray-Ban的竞争将趋于白热化。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Spotify与环球音乐达成历史性协议：允许AI生成翻唱和Remix内容",
+                            "summary": "Spotify宣布与环球音乐集团（UMG）达成里程碑式合作协议，正式允许Spotify Premium订阅用户使用AI工具创作歌曲翻唱和Remix版本，并允许在平台上分发。这是三大唱片公司与流媒体平台在AI生成音乐领域的首次深度授权合作，标志着AI音乐创作从灰色地带走向合规商业化的关键转折。但具体AI生成内容的版权分成机制和原创性边界仍在谈判中。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "王小川披露百川智能战略转型：从AGI主赛道撤回，专攻AI医疗",
+                            "summary": "36氪专访百川智能CEO王小川，后者首次系统性披露公司战略转型逻辑：放弃与头部厂商在AGI主赛道的正面竞争，转向从创业之初就想做的事情——打造AI医生。王小川判断，\"纯套壳大模型的应用注定短命\"，百川智能的核心差异化在于医疗场景的深度数据积累和领域微调能力。这一转向也折射出中小模型厂商在资源劣势下的生存策略分化。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3821521291038856"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "Anthropic安全研究项目Mythos：年内发现超1万个模型漏洞",
+                            "summary": "Anthropic旗下安全研究项目Mythos（对应平台Glasswing）披露，其研究团队在2026年内已累计发现超过10000个AI模型相关的安全漏洞，涵盖越狱攻击、数据泄露和对抗样本等多类威胁。Anthropic表示，这些发现已直接用于Claude模型的安全对齐训练。这一规模性漏洞挖掘行动表明，随着模型能力提升，安全研究正在从\"发现问题\"进入\"系统化持续发现问题\"的新阶段。",
+                            "source": "Engadget / Hacker News",
+                            "url": "https://www.engadget.com/2180028/anthropic-claude-mythos-preview-project-glasswing-update/"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "前沿AI实验室\"囤算力\"真相：实际使用率不足一半，扩张远未饱和",
+                            "summary": "Epoch AI发布的最新研究显示，尽管前沿AI实验室在公开宣传中强调算力不足，但实际统计表明，头部实验室的GPU利用率普遍低于50%，大量已采购算力处于闲置或低负载状态。研究认为，这一现象部分源于\"算力储备竞赛\"心理——厂商囤积远超当前所需的芯片以防范供应链风险——同时也暴露了模型训练效率提升空间巨大。这对芯片厂商的产能规划有重要参考价值。",
+                            "source": "Epoch AI / Hacker News",
+                            "url": "https://epoch.ai/gradient-updates/frontier-labs-dont-use-most-ai-compute"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "学术论文提出稀疏推测验证新方法，可显著降低LLM推理成本",
+                            "summary": "一篇发表在arXiv上的技术论文提出了\"稀疏推测验证\"（Sparse Speculative Verification, SSV）方法，通过在LLM推理过程中引入稀疏化采样和预测验证机制，可大幅降低大模型推理的计算成本。该方法在不显著损失模型精度的前提下，将部分推理场景的GPU占用率降低30%以上。该研究对关注推理效率优化的工程团队具有直接参考价值。",
+                            "source": "arXiv / Hacker News",
+                            "url": "https://arxiv.org/abs/2605.19893"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "华泰证券研报：AI驱动交换芯片二次成长，万卡集群带来新增量",
+                            "summary": "华泰证券发布研报称，作为数据中心互联核心组件的交换芯片（负责数据交换和报文转发）占交换机成本比例超过30%，预计2026年起将在AI驱动下开启二次成长。研报指出，万卡级以上AI集群对网络稳定性和带宽的要求大幅提升，倒逼数据中心从\"Scale out\"向\"Scale up\"架构升级，交换芯片作为核心网络底座将迎来量价齐升。此判断对光通信和网络芯片产业链有直接投资参考意义。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3822612389941383"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "孤独症研究者发出警告：AI伴侣将进一步加剧社会疏离危机",
+                            "summary": "Fortune刊登了一位从事孤独症研究25年的学者的深度访谈，警告AI伴侣和社交机器人虽然在短期内能缓解孤独感，但长期将\"系统性地削弱真实社会连接能力\"，使人类更加依赖虚拟交互而非真实关系，最终加剧社会疏离危机。学者呼吁政策制定者在推动AI情感应用的同时，同步布局社会心理支持体系。这一警告与当前AI情感赛道的火热形成鲜明对比。",
+                            "source": "Fortune / Hacker News",
+                            "url": "https://fortune.com/2026/05/23/loneliness-researcher-ai-companions-social-disconnection-warning/"
+                    }
+            ]
+    },
+    {
             "date": "2026-05-23",
             "items": [
                     {
