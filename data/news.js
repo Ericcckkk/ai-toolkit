@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+            "date": "2026-05-27",
+            "items": [
+                    {
+                            "tag": "政策监管",
+                            "title": "国务院将加快人工智能综合性立法进程",
+                            "summary": "国务院新闻办公室宣布，\"十五五\"期间将加快研究推进人工智能健康发展综合性立法，同时推进低空经济立法等重要领域立法工作。司法部副部长武增表示，政府立法将重点保障经济社会高质量发展、推进中国式现代化。这一动向标志着中国AI监管体系正从分散式治理向系统化顶层设计转型，为AI产业划定清晰合规边界。",
+                            "source": "36氪 / 司法部官网",
+                            "url": "https://36kr.com/newsflashes/3826943472947847"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "最高法将制定涉AI案件和数据产权司法保护规范性文件",
+                            "summary": "最高人民法院审判委员会副部级专职委员刘贵祥在发布会上表示，人民法院将研究制定涉人工智能案件和数据产权司法保护规范性文件，依法平等保护各类经营主体合法权益。这标志着司法体系开始系统性回应AI时代产权保护诉求，为技术创新提供明确的司法预期。",
+                            "source": "36氪 / 最高人民法院官网",
+                            "url": "https://36kr.com/newsflashes/3826929999434370"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Sam Altman：AI不太可能导致\"就业末日\"",
+                            "summary": "OpenAI CEO Sam Altman在最新采访中明确表示，AI不太可能导致大规模失业，\"就业末日\"的担忧被过度放大。此前Anthropic CEO Amodei也发出类似信号，两位AI巨头掌门人在各自IPO前同步\"降调\"，被认为是在政策制定者和公众面前为行业争取更宽松舆论空间。",
+                            "source": "Reuters / Fortune",
+                            "url": "https://www.reuters.com/world/asia-pacific/openais-altman-says-ai-unlikely-lead-jobs-apocalypse-2026-05-26/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "高通与字节跳动达成AI芯片合作协议",
+                            "summary": "据Bloomberg报道，高通已与字节跳动签署AI芯片合作协议，具体条款尚未披露。此举正值美国对华科技出口管制持续收紧之际，字节跳动正寻求多元化芯片供应以支撑其在AI领域的高速扩张。高通作为美国本土芯片厂商参与其中，显示双方均在复杂的监管环境中寻找合作空间。",
+                            "source": "Reuters / Bloomberg",
+                            "url": "https://www.reuters.com/business/qualcomm-strikes-ai-chip-deal-with-tiktok-owner-bytedance-bloomberg-news-reports-2026-05-26/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "OpenRouter完成1.13亿美元B轮融资，估值一年翻两倍至13亿美元",
+                            "summary": "AI模型聚合平台OpenRouter宣布完成1.13亿美元B轮融资，由CapitalG领投。OpenRouter在六个月内使用量增长5倍，已成为连接开发者与多家人工智能模型的\"中立层\"基础设施。本轮融资表明，在闭源与开源模型激烈竞争格局下，中间层平台的价值正获资本持续认可。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Anthropic宣布任命崔基永为韩国区代表董事",
+                            "summary": "Anthropic正式宣布任命崔基永（KiYoung Choi）为韩国代表董事，负责韩国市场战略规划与政府关系维护。随着Claude在企业市场渗透加速，Anthropic正加大在亚太重点市场布局力度，填补此前在韩国的组织空白。此举被视为Anthropic应对OpenAI、Google在该区域竞争的关键人事动作。",
+                            "source": "Anthropic官网",
+                            "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "字节跳动首次对Seed部门员工开放股票期权认购",
+                            "summary": "四位知情人士透露，字节跳动正为其Seed人工智能部门员工提供与该部门表现挂钩的低价股票期权，这是字节跳动首次针对特定业务单元发行股权。该激励计划旨在应对AI人才被竞争对手密集挖角的压力，以绑定核心研发团队。知情人士称，本月将正式开放认购权。",
+                            "source": "36氪 / Financial Times",
+                            "url": "https://www.ft.com/content/0b05e1dd-04c7-4925-be6f-7dc63717cbce"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "教皇利奥十四世呼吁通过监管与透明度应对AI挑战",
+                            "summary": "教皇利奥十四世在其首份通谕《Magnifica Humanitas》中发出警告：AI带来的挑战必须通过监管和透明度来应对，而非放任技术自行发展。他呼吁各国政府、科技公司和宗教机构合作建立AI伦理框架，防止AI被用于操控舆论、削弱人类尊严。这一表态被视为梵蒂冈正式介入全球AI治理的标志性事件。",
+                            "source": "CBC",
+                            "url": "https://www.cbc.ca/news/world/pope-leo-magnifica-humanitas-encylical-9.7210842"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "研究人员发现Meta和Google AI安全控制可在数分钟内被绕过",
+                            "summary": "安全研究人员在一项深度研究中揭示，Meta的Llama系列和Google的Gemini等主流AI模型的安全护栏可在数分钟内通过提示注入技术被有效移除。这意味着攻击者可能利用开源模型的灵活性绕过内容政策限制。该发现对依赖\"开源即安全\"假设的企业安全策略敲响警钟。",
+                            "source": "CryptoBriefing / Hacker News",
+                            "url": "https://cryptobriefing.com/meta-google-ai-safety-controls-removable/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Uber一个季度烧完AI预算，CIO呼吁重新评估AI投入产出",
+                            "summary": "Uber COO在内部会议上透露，公司在单一季度内耗尽了全年AI预算，主要投入在Claude Code等AI编程工具上。这一案例正在引发硅谷企业C-suite对AI支出的重新审视——当Token成本从实验走向大规模部署时，如何量化ROI成为CIO的核心焦虑。",
+                            "source": "Fortune / Hacker News",
+                            "url": "https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "SK海力士发布自冷却iHBM芯片解决AI过热难题",
+                            "summary": "SK海力士在仁川发布全球首款自带冷却机制的高带宽内存芯片iHBM，可有效解决AI数据中心因算力密度攀升导致的散热瓶颈。与传统HBM需配合复杂液冷系统不同，iHBM将散热功能集成于芯片内部，将于2026年下半年进入量产，有望显著降低AI服务器基础设施成本。",
+                            "source": "Korea Times",
+                            "url": "https://www.koreatimes.co.kr/business/companies/20260526/sk-hynix-unveils-self-cooling-ihbm-chips-to-combat-ai-overheating"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "环球音乐与TikTok续签AI音乐内容保护协议",
+                            "summary": "环球音乐集团（UMG）与TikTok正式续签多年合作协议，重点强化针对未授权AI生成音乐的内容管控机制。UMG近年来持续推动流媒体平台和AI公司部署更严格的内容审核政策，此次续约标志着平台方在AI音乐侵权问题上承担更大责任，对整个数字音乐生态具有示范效应。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "DuckDuckGo安装量激增30%，用户抵制Google强制推送AI搜索",
+                            "summary": "DuckDuckGo安装量在过去一个月内增长30%，直接受益于Google在I/O 2026上对搜索的大规模改造——将传统蓝链接全面替换为AI生成内容。用户普遍反馈被\"强制投喂\"AI搜索结果，怀念经典链接体验。这表明用户对AI搜索激进替代策略的反弹正在重塑搜索市场格局。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "杉岩数据完成亿元级D轮融资，加码AI原生数据基础设施",
+                            "summary": "AI数据基础设施公司杉岩数据宣布完成亿元级D轮融资，由福田资本运营集团旗下长胜产业基金领投，达晨财智跟投。杉岩数据本轮资金将主要用于AI原生数据基础设施升级和行业数智解决方案拓展。在国产替代和AI算力需求双轮驱动下，数据基础设施赛道正持续吸引头部资本关注。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3826910909092480"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "三星电子将于下月允许员工使用外部AI模型",
+                            "summary": "三星电子宣布从下月开始允许员工在工作中使用外部AI模型，包括OpenAI的ChatGPT和Google Gemini等此前受限的服务。此举标志着三星在AI使用政策上的重大转向——从最初的严格封禁（2023年因泄密事件禁用ChatGPT）到如今主动拥抱，折射出企业AI政策的务实化趋势。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3825928694846085"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "淘宝闪购推出\"城盟\"AI智能体系赋能城市合作伙伴",
+                            "summary": "淘宝闪购在成立一周年之际正式发布\"城盟\"系统，为城市经营合作伙伴打造专属AI智能体，提供定制化经营辅助，建立\"经营指挥中心+AI+Agent\"的全新工作模式。该系统将AI能力下沉到本地生活细分场景，标志着外卖及即时零售领域AI运营工具竞争进入新阶段。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3826970472796807"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "Human Archive用印度零工经济数据训练物理AI机器人",
+                            "summary": "Human Archive由UC Berkeley和斯坦福大学研究人员创立，正在招募印度零工经济工作者穿戴摄像头记录日常工作场景，将真实世界的物理操作数据用于训练机器人AI。与传统采集方式不同，这种众包模式能以更低成本获取多样化的真实动作数据，有望突破机器人泛化能力瓶颈。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "新研究揭示主流AI模型存在系统性宗教偏见",
+                            "summary": "由多所基于信仰的大学组成的研究联盟发布报告，指出OpenAI、Google和Anthropic的主流模型存在系统性宗教偏见：在测试中模型对特定宗教内容的响应显著区别于其他信仰群体。研究人员呼吁模型开发商在训练数据选择和微调阶段纳入更多元的宗教视角，避免AI系统无意中强化宗教歧视。",
+                            "source": "Deseret / Hacker News",
+                            "url": "https://www.deseret.com/faith/2026/05/26/studies-find-religious-bias-in-ai-models/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "NBBOSS发布全球首款老板专属AI决策机器人R1",
+                            "summary": "NBBOSS于5月26日发布专为商业决策者设计的AI决策机器人R1，采用\"智能基座+可分离机身\"双形态设计。创始人童楚格指出，当前AI工具让员工效率大幅提升，但企业决策者反而被边缘化，R1正是为填补这一空白。R1具备实时商业数据分析和主动决策建议功能，开启了AI从\"员工工具\"到\"高管助手\"的场景跨越。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3826958517113731"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "我国人形机器人全球市场份额突破八成",
+                            "summary": "行业数据显示，中国人形机器人企业已占据全球市场超过80%的份额，供应链、整机制造和场景落地速度均领先全球。从特斯拉Optimus到国内优必选、智元机器人，产业链上下游协同效应正快速转化为商业化能力，中国在该赛道的先发优势正在演变为结构性护城河。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3825928694846085"
+                    }
+            ]
+    },
+    {
             "date": "2026-05-26",
             "items": [
                     {
