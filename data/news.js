@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+            "date": "2026-05-28",
+            "items": [
+                    {
+                            "tag": "政策监管",
+                            "title": "教皇方济各发布首份AI通谕：从\"Magnifica Humanitas\"到主权国家与科技公司的三方共治",
+                            "summary": "教皇方济各（利奥十四世）于5月26日发布通谕，系统阐述AI对社会的影响，要求限制自动化武器、确保AI教育用途，并提出AI开发需 \"服务人类整体\"。分析指出通谕部分段落可能由AI辅助撰写。梵蒂冈正在成为AI伦理议题的重要全球声音，对立法和科技公司政策形成潜在影响。",
+                            "source": "The Verge / 36氪",
+                            "url": "https://www.theverge.com/ai-artificial-intelligence/937933/pope-ai-encyclical-tech-industry-reactions"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "AI编程公司Cognition融资10亿美元，估值达25亿美元ARR超5亿美元",
+                            "summary": "AI编程初创公司Cognition完成10亿美元融资，投前估值250亿美元，8个月内估值翻倍有余。公司年化收入运行率（ARR）已达4.92亿美元，主要产品为AI代码助手Devin。在AI编程赛道竞争日趋激烈的背景下，这一估值远超同行，反映出头部效应正加速形成。",
+                            "source": "TechCrunch AI / 36氪",
+                            "url": "https://techcrunch.com/2026/05/27/ai-coding-startup-cognition-raises-1b-at-25b-pre-money-valuation/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Snowflake与AWS签署60亿美元五年协议，确保AI芯片供应",
+                            "summary": "Snowflake与亚马逊签署价值60亿美元的五年期芯片供应协议，确保AI工作负载所需的计算资源。英伟达再次成为关键芯片供应商，云计算巨头间的AI基础设施争夺持续白热化。对于Snowflake而言，该协议意味着在IPO前锁定核心资源供给。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Meta全球上线Instagram、Facebook、WhatsApp付费订阅，AI服务纳入订阅体系",
+                            "summary": "Meta正式在全球范围内推出Instagram、Facebook和WhatsApp付费订阅服务，并同时测试全新AI功能。这一举动标志着Meta从纯广告商业模式向订阅+AI混合模式转型迈出关键一步，预计将对社交平台商业化路径产生深远影响。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/27/meta-officially-launches-instagram-facebook-and-whatsapp-subscriptions-with-more-to-come-including-ai-plans/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "ClickHouse年化收入翻三倍至2.5亿美元，筹备IPO",
+                            "summary": "数据库提供商ClickHouse年化收入同比增长两倍至2.5亿美元，明确表示计划在数年内公开上市。该公司专注于实时分析数据库，在AI数据处理需求激增的背景下收入增速惊人，正成为数据分析赛道中最接近IPO的候选者之一。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/27/clickhouse-triples-annualized-revenue-to-250m-charting-a-path-toward-an-ipo/"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "阿里语音大模型登顶Speech Arena国产第一，全球排名第五",
+                            "summary": "阿里巴巴语音大模型Fun-Realtime-TTS-Preview在Artificial Analysis语音排行榜上以1190分Elo评分位列全球第五、国产第一。这是国产语音AI模型在语音合成领域的重大突破，表明中国AI团队在多模态语音赛道已接近国际领先水平。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3828374878769792"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Robinhood开放AI Agent美股交易功能，用户可授权AI代理执行买卖",
+                            "summary": "Robinhood宣布开放AI Agent美股交易功能，用户可授权AI代理读取分析投资组合、制定交易策略并执行买卖。这一功能将AI投资顾问概念真正落地为可自主执行的投资行为，意味着AI Agent从辅助建议升级为可直接影响用户资产配置的工具。",
+                            "source": "The Verge AI / TechCrunch AI",
+                            "url": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "OpenRouter完成1.13亿美元B轮融资，估值飙升至13亿美元",
+                            "summary": "AI模型聚合平台OpenRouter完成1.13亿美元B轮融资，由CapitalG领投，估值达13亿美元，在一年内翻了一倍多。公司6个月内使用量增长5倍，证明了多模型路由在AI基础设施层的市场需求旺盛，但也面临AI军备竞赛下盈利能力不确定性的质疑。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "快手可灵AI 3月ARR近5亿美元，同比增长4倍",
+                            "summary": "快手科技CEO程一笑在Q1业绩电话会上披露，2026年3月可灵AI年化收入运行率（ARR）近5亿美元，较去年同期的1亿美元增长4倍。该数据表明中国AI视频生成产品已跨过商业化门槛，头部产品的企业采纳速度远超市场预期。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3827497128465287?f=rss"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "ElevenLabs发布可中途切换风格的AI音乐生成模型",
+                            "summary": "ElevenLabs推出新一代音乐生成模型，支持用户在不改变整首曲目其余部分的前提下，对歌曲某一段落进行重新生成并切换风格。该技术突破解决了AI音乐生成中局部编辑的难题，标志着AI音乐工具从全曲生成向精细化创作迈进。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/27/elevenlabss-new-music-generation-model-can-switch-genres-mid-track/"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "YouTube强制自动标记AI生成逼真视频，\"AI\"标签正式落地",
+                            "summary": "YouTube宣布将自动为包含高度逼真AI生成内容的视频添加\"AI\"标签，不再完全依赖创作者主动申报。新标签更加醒目，直接标注\"AI\"字样。继Google I/O全面推行AI搜索之后，YouTube的内容标识政策代表平台层面对AI生成内容治理迈出实质一步。",
+                            "source": "The Verge AI / TechCrunch AI",
+                            "url": "https://www.theverge.com/streaming/937915/youtube-ai-labels-shorts-automatic-identification-updates"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "中国AI人才回流加速：北京限制顶尖人才流向海外",
+                            "summary": "外媒报道称，中国AI行业的蓬勃发展正在培养世界级人才，而北京方面正越来越多地限制顶尖AI人才流向海外。中国本土AI生态的快速成熟为研究人员提供了不逊于硅谷的待遇和发展机会，这正在改变全球AI人才的流动格局。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/27/china-is-increasingly-keeping-its-best-ai-talent-to-itself/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "DuckDuckGo下载量激增30%，用户抵制Google强制推送AI搜索",
+                            "summary": "DuckDuckGo应用安装量较此前增长30%，主要受益于用户对Google在I/O大会上将AI生成答案置于搜索结果中心的不满。自Google全面改革搜索体验、取代传统蓝链后，用户对\"被强制投喂AI结果\"的反弹正在推动隐私搜索引擎的用户增长。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "郭明錤：联发科或成Terafab合作方，预计2028年为马斯克团队生产芯片",
+                            "summary": "知名分析师郭明錤发文称，在数家ASIC厂商中，联发科最有可能成为马斯克芯片设计公司Terafab的代工合作方，联发科将全面支持Intel 14A先进制程与先进封装，预计2028年开始小量生产。这将标志着联发科首次进入AI芯片定制代工领域。",
+                            "source": "36氪 / 财联社",
+                            "url": "https://36kr.com/newsflashes/3828315640222600"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "AI战争悄然成真：联合国CCW论坛讨论致命性自主武器系统红线",
+                            "summary": "联合国《特定常规武器公约》（CCW）论坛正在召开会议聚焦致命性自主武器系统（LAWS）的监管问题。AI战争已不再是理论假设，多国已在实战中部署AI辅助决策系统，国际社会对LAWS红线的划定谈判进入关键阶段。",
+                            "source": "The Verge AI",
+                            "url": "https://www.theverge.com/ai-artificial-intelligence/937028/military-ai-warfare-red-lines"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "Human Archive用印度零工经济数据训练物理AI机器人",
+                            "summary": "Human Archive由UC Berkeley和斯坦福研究人员创立，正在支付印度零工工人穿戴摄像头收集家务数据，用于训练物理AI机器人。该模式将印度庞大的服务业零工资源转化为机器人训练资产，开辟了低成本获取高质量物理世界数据的新路径。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "环球音乐与TikTok续约：联手打击未经授权的AI音乐内容",
+                            "summary": "环球音乐集团（UMG）与TikTok宣布续约，并承诺联手打击未经授权的AI音乐内容。UMG近年来持续推动各大平台、流媒体服务和AI公司实施更严格的内容审核政策，此次续约标志着唱片公司与短视频平台在AI生成内容治理上达成共识。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "《纽约时报》工会谈判中引入AI监控条款：人机协作边界成焦点",
+                            "summary": "《纽约时报》技术工会正在合同谈判中推动设立AI监控条款，限制雇主使用AI系统评估员工绩效。工会认为过度依赖AI监控会损害员工权益。这一事件反映出新闻业正成为AI劳动力关系变革的前沿阵地，可能为其他行业提供判例。",
+                            "source": "The Verge AI",
+                            "url": "https://www.theverge.com/ai-artificial-intelligence/937689/new-york-times-tech-guild-ai-monitoring-performance-union-contract"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "金山办公入选《财富》2026最受赞赏中国公司，成唯一上榜办公软件企业",
+                            "summary": "金山办公入选《财富》（中文版）2026年最受赞赏的中国公司榜单，成为唯一入选的办公软件企业。近年来金山办公持续将WPS AI能力深度融入个人办公场景，以WPS 365的文档、协作、AI三大能力服务企业级用户，市场认可度持续提升。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3828344500540040"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "皮查伊反思Google AI搜索转型：Sundar Pichai首次公开回应搜索革命",
+                            "summary": "Google CEO桑达尔·皮查伊在Google I/O后首次接受深度采访，系统阐述Google AI搜索战略。他承认搜索体验的彻底重塑引发了用户反弹，但强调\"AI优先\"是正确方向，同时回应了关于搜索结果质量下降和web生态恶化的批评。",
+                            "source": "The Verge AI",
+                            "url": "https://www.theverge.com/podcast/936445/sundar-pichai-ai-search-google-zero-youtube-web"
+                    }
+            ]
+    },
+    {
             "date": "2026-05-27",
             "items": [
                     {
