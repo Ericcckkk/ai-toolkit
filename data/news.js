@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+            "date": "2026-05-29",
+            "items": [
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "Anthropic完成650亿美元融资，估值9650亿美元首次反超OpenAI",
+                            "summary": "Anthropic已完成650亿美元H轮融资，估值达9650亿美元，首次超越OpenAI，成为AI领域史上最大规模单轮融资。同期黄仁勋被曝加入清华大学经管学院担任顾问。此轮融资反映出市场对其AI安全研究及Claude系列模型的强烈信心，预示着AI竞争格局正从\"规模竞赛\"转向\"安全与能力并重\"的新阶段。",
+                            "source": "36氪 / TechCrunch AI",
+                            "url": "https://36kr.com/p/3829622140593288?f=rss"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Apple Intelligence重大升级：iOS 27将实现Siri十年最大变革",
+                            "summary": "苹果公司将于iOS 27中推出全面重新设计的Siri，集成更先进的多模态AI能力，类似ChatGPT风格的交互界面将成核心亮点。这是Siri自2011年发布以来最大幅度的交互升级。苹果正加速将Apple Intelligence嵌入硬件生态，对OpenAI、Google形成直接挑战，同时也为开发者带来更强大的系统级AI API。",
+                            "source": "TechCrunch AI / The Verge AI",
+                            "url": "https://techcrunch.com/2026/05/28/sneak-peek-at-new-siri-app-reveals-apples-plans-to-take-on-chatgpt-and-more/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Anthropic发布Claude Opus 4.8，主打\"诚实度\"和动态工作流",
+                            "summary": "Anthropic发布Claude Opus 4.8，新模型引入\"Dynamic Workflows\"工具，支持协调多个子代理协同工作，并大幅提升对错误的\"诚实\"表达能力。The Verge评价其\"在犯错时更坦诚\"是此次升级的核心亮点。Claude 4.8的发布将进一步巩固Anthropic在企业级AI市场的竞争力，并与GPT系列正面交锋。",
+                            "source": "TechCrunch AI / The Verge AI",
+                            "url": "https://techcrunch.com/2026/05/28/anthropic-releases-opus-4-8-with-new-dynamic-workflow-tool/"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "YouTube推出AI定制视频流和播客Auto Speed功能",
+                            "summary": "YouTube面向Premium订阅用户推出自定义AI视频流功能，用户可通过prompt或推荐选项定制内容流，同时新增\"Auto Speed\"播客播放功能。这是YouTube与Spotify等播客平台竞争的关键一步。AI驱动的内容发现正从被动推荐向主动生成转变，将深刻改变视频平台的用户体验和创作者变现逻辑。",
+                            "source": "TechCrunch AI / The Verge AI",
+                            "url": "https://techcrunch.com/2026/05/28/youtube-adds-new-podcast-features-including-an-ai-recommendation-tool-and-auto-speed/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Snowflake与AWS签署60亿美元五年合同，剑指AI算力",
+                            "summary": "Snowflake已与亚马逊签订价值60亿美元、为期五年的芯片供应协议，锁定AI算力资源，Nvidia芯片再度被排除在交易之外。这笔巨额合同反映出数据平台与云基础设施深度绑定的趋势，Snowflake正通过AWS强化AI工作负载能力。与巨头合作而非自研芯片，是数据公司AI转型的主流路径。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/27/in-more-good-news-for-amazon-snowflake-signs-6b-deal-with-aws-for-ai-cpu-chips/"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "快手Q1营收337亿元，可灵AI成第二增长曲线",
+                            "summary": "快手2026年一季度实现营收337亿元，同比增长3.4%，符合市场预期，AI已真正成为推动收入增长的核心引擎。可灵AI视频模型从技术储备转化为商业化产品，其商业化进程值得持续跟踪。快手的案例证明，AI对内容平台的收入贡献已从概念验证进入规模化创收阶段。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3828915666441090?f=rss"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "比亚迪发布4nm智驾芯片璇玑A3，算力超2100TOPS支持L4",
+                            "summary": "比亚迪发布自研4nm智驾芯片璇玑A3，已开启规模化量产，支持L3/L4自动驾驶，三颗芯片总算力超2100TOPS。这是中国车企在关键智驾芯片上实现自研突破的标志性事件。比亚迪此举意味着头部车企正加速将AI算力自主化，未来智驾芯片战场将进一步白热化。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3829790739358849?f=rss"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "微软365 Copilot重新设计：更简洁界面、更快响应速度",
+                            "summary": "微软发布重新设计的Microsoft 365 Copilot，采用更清晰的界面布局，官方声称响应速度大幅提升，用户体验更为统一。这是微软将AI深度嵌入核心办公套件的关键一步。随着Copilot功能的完善，企业用户采用率有望加速提升，但同时也对Google Workspace的AI功能形成直接冲击。",
+                            "source": "The Verge AI",
+                            "url": "https://www.theverge.com/tech/939273/microsoft-365-copilot-redesign"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Visa投资Replit超千万美元，推开发者端Agentic支付",
+                            "summary": "Visa对AI编程平台Replit进行投资，以推动开发者端的Agentic支付功能，逾1000名Visa员工已使用Replit进行原型开发和编程工作。AI辅助编程工具正加速进入主流企业市场。随着AI Agent承担更多开发任务，支付和计费场景的重新设计将成为金融科技的新增长点。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/28/visa-invests-in-replit-to-power-agentic-payments-for-developers/"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "Robinhood向AI Agent开放股票交易平台，自主理财风险引关注",
+                            "summary": "Robinhood宣布正式向AI Agent开放其交易平台，用户可授权AI代理自主执行股票买卖操作。这是AI Agent进入金融领域的里程碑事件。虽然自主交易将为用户带来便利，但也引发对AI Agent金融风险的广泛担忧，平台方需建立更严格的风控机制。",
+                            "source": "The Verge AI",
+                            "url": "https://www.theverge.com/ai-artificial-intelligence/938095/robinhood-ai-agent-stock-trading"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "CNN起诉Perplexity\"逐字复制\"新闻，AI搜索版权争议升温",
+                            "summary": "CNN正式对Perplexity提起版权侵权诉讼，指控其AI工具直接复制CNN报道内容生成\"逐字\"相似的文章。这是首批针对AI搜索引擎的版权诉讼之一。Perplexity等AI搜索工具的商业模式正面临内容版权的合规大考，此案结果将深刻影响AI搜索行业的未来走向。",
+                            "source": "The Verge AI",
+                            "url": "https://www.theverge.com/ai-artificial-intelligence/938893/cnn-perplexity-ai-copyright-lawsuit"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "企业AI搜索Glean ARR突破3亿美元，用户超1000家",
+                            "summary": "企业AI搜索公司Glean的年度经常性收入突破3亿美元，企业客户超过1000家，尽管科技巨头纷纷入局，其收入仍翻三倍。Glean证明了AI搜索在企业市场的实际价值。随着企业AI需求从\"试点\"转向\"规模化部署\"，垂直AI搜索平台仍存差异化生存空间。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "SentinelOne裁员8%押注AI，网络安全行业结构性重塑",
+                            "summary": "网络安全公司SentinelOne宣布裁员约8%，同时加大对AI、数据和云计算等增长领域的投资。网络安全行业正面临AI带来的结构性重塑，传统威胁检测的市场空间正在被AI原生安全工具蚕食。这波裁员折射出网络安全赛道从\"防御\"向\"智能检测\"的深刻转型。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3829722234086784?f=rss"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "SpaceX将IPO估值目标下调至1.8万亿美元，仍远超同行",
+                            "summary": "SpaceX在与顾问和投资者磋商后，将其IPO目标估值从逾2万亿美元下调至至少1.8万亿美元，但仍远超任何已上市的航空航天公司。作为一家集火箭、数据和AI能力于一体的公司，SpaceX的高估值反映了资本市场对AI与航天融合的高度期待。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3829710858544513?f=rss"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "欧盟与Anthropic洽谈Mythos模型访问权限，AI安全风险引关注",
+                            "summary": "欧盟委员会官员正计划与Anthropic会面，寻求获取Mythos模型的更多信息。Anthropic此前透露该模型极度擅长寻找网络漏洞并可能构成重大网络安全风险。欧盟的主动接洽预示着AI安全监管正从事后追责向事前预防转变，这将成为AI安全监管的关键案例。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3829767695443078?f=rss"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "科大讯飞发布AI眼镜，AI可穿戴设备竞争加剧",
+                            "summary": "科大讯飞发布讯飞AI眼镜，这是继Meta Ray-Ban智能眼镜之后又一家科技公司入局AI可穿戴设备。随着AI大模型向端侧迁移，AI眼镜正成为硬件落地的新战场。讯飞若能在语音交互和翻译场景中建立差异化体验，有望在教育、办公等垂直场景打开市场。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3828874222555782?f=rss"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "光帆科技与腾讯出行服务达成战略合作，接入AI穿戴设备",
+                            "summary": "光帆科技宣布与腾讯出行服务达成战略合作，腾讯出行服务将接入光帆AI全感穿戴设备出行服务能力。光帆在AI可穿戴设备领域的技术积累结合腾讯在用户触达和场景覆盖方面的优势，有望在出行服务智能化赛道形成新的竞争格局。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3829777610744961?f=rss"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Asana收购无代码Agent构建平台StackAI，强化AI工作流",
+                            "summary": "Asana宣布收购无代码AI Agent构建平台StackAI，将其整合至Asana日益壮大的AI工作流工具套件中。StackAI的加入将使非技术用户也能通过无代码方式构建AI Agent，降低了企业AI落地的技术门槛。此收购预示着\"人人都是AI开发者\"的时代正在到来。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/28/asana-acquires-no-code-agent-builder-stack-ai/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "雷神联合AMD发布三大形态AI工作站产品矩阵，覆盖塔式到移动端",
+                            "summary": "雷神联合AMD发布覆盖塔式、迷你PC和移动端三大形态的AI工作站全场景产品矩阵，这是业内首批完成三大形态全覆盖的AI工作站发布。雷神此举瞄准的是AI算力下沉到边缘场景的趋势，随着本地化AI推理需求增长，AI工作站赛道将从专业用户向更广泛群体渗透。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3828898785858185?f=rss"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "AWS、Cloudflare等为AI代理重建云基础设施",
+                            "summary": "随着AI Agent从实验走向生产，AWS、Cloudflare等云服务商正在重新设计面向AI时代的云基础设施架构，从机器可读性接口到自动化部署全面升级。\"机器优先\"的互联网重建浪潮已经开启，这不仅影响底层架构，也将重塑整个应用生态的开发范式。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/28/the-internet-is-being-rebuilt-for-machines/"
+                    }
+            ]
+    },
+    {
             "date": "2026-05-28",
             "items": [
                     {
