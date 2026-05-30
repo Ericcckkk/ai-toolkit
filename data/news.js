@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+            "date": "2026-05-30",
+            "items": [
+                    {
+                            "tag": "政策监管",
+                            "title": "中国限制DeepSeek、阿里巴巴等头部私企AI人才出境",
+                            "summary": "据Bloomberg报道，中国已将出境旅行限制扩大至DeepSeek、阿里巴巴等头部私企的核心AI人才。此前限制主要针对国企和高校科研人员，现延伸至掌握关键技术的私有AI企业员工。此举旨在防止核心技术外泄，但对人才国际交流和技术引进形成阻力。对国内AI企业而言，技术封闭将进一步加大与全球开源社区的割裂程度。",
+                            "source": "Hacker News / Bloomberg",
+                            "url": "https://www.bloomberg.com/news/articles/2026-05-26/china-expands-travel-curbs-to-top-ai-talent-at-private-firms"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "阿里巴巴与欧足联达成多年AI云合作，覆盖欧冠至2033年",
+                            "summary": "5月29日，阿里巴巴集团与欧洲足球协会联盟在布达佩斯宣布达成合作，成为2027/28至2032/33赛季欧冠、欧联及欧协联，以及2028年欧洲杯的官方独家AI云服务合作伙伴。合作涵盖赛事数据分析、粉丝互动体验及基础设施现代化改造。这是中国科技企业首次系统性切入欧洲顶级体育赛事的技术运营。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3831187716941441"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "Meta下半年可穿戴设备销量目标1000万台，年底月活目标680万",
+                            "summary": "Meta正通过推出新品和拓展销售市场等举措，计划今年下半年售出1000万台可穿戴设备，目标年底实现可穿戴设备月活跃用户680万人。此外，Meta将于明年启动一款AI吊坠产品的测试工作。此举标志着Meta在Ray-Ban智能眼镜之外的又一人工智能可穿戴品类加速商业化。",
+                            "source": "36氪 / 界面新闻",
+                            "url": "https://36kr.com/newsflashes/3831107976013700"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "宇树科技具身智能体验馆亚洲首店5月31日登陆上海",
+                            "summary": "宇树科技宣布，具身智能体验馆亚洲首店将于5月31日在上海开业，门店将汇聚G1人形机器人、R1人形机器人及Go2机器狗全系列C端产品。此次开店意味着宇树从B端方案商向消费级人形机器人零售市场迈出关键一步，国内人形机器人C端商业化正式启动。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3830319466522496"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "AI服务器需求强劲，戴尔股价大涨近33%创历史最大单日涨幅",
+                            "summary": "5月29日收盘，戴尔股价大涨近33%创历史最大单日涨幅，超微电脑涨超11%，慧与科技涨近13%，AI服务器制造商涨幅居前。三家公司在AI服务器市场的出货量持续攀升，反映出企业级AI算力基础设施采购热潮仍在加速，GPU服务器以外的CPU服务器需求同样旺盛。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3831088984057732"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "苹果WWDC预计重点展示端侧AI能力，强化本地智能体验",
+                            "summary": "据报道，苹果将在即将举行的WWDC全球开发者大会上重点展示端侧AI能力，进一步推动Apple Intelligence在iPhone、iPad和Mac全产品线的深度整合。苹果自研芯片的神经引擎为本地大模型推理提供算力支撑，端侧AI战略将重新定义隐私与个性化智能的边界。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3830194503526277"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "OPPO Reno16系列发布，\"3D悬浮星球+实况随心贴\"引领AI潮流手机",
+                            "summary": "5月25日，OPPO发布Reno16系列潮流手机，搭载\"3D悬浮星球+实况随心贴\"等AI功能，并同步推出Pad 6平板和Pad Air5学习平板。Reno系列历来定位年轻潮流市场，AI影像和AI交互功能的下沉普及，将推动中端智能手机市场全面进入AI竞争阶段。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3830038913558147"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "穿越者载人航天完成Pre-A轮亿元融资，某头部互联网战投领投",
+                            "summary": "北京穿越者载人航天科技完成Pre-A轮亿元融资，由某头部互联网战投领投，探路者集团跟投，老股东中天汇富、彬复资本持续加注，光源资本担任独家财务顾问。资金将重点用于\"穿越者壹号\"研发。商业载人航天结合AI辅助设计控制系统，赛道正吸引越来越多互联网资本布局。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3830254963517318"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "AI芯片独角兽Groq正在寻求6.5亿美元新一轮融资",
+                            "summary": "据TechCrunch报道，AI推理芯片公司Groq正寻求6.5亿美元内部融资，公司正在进行从硬件向AI推理服务商的战略转型。此前Nvidia以约200亿美元完成对另一AI芯片公司（Run:ai）的\"非收购式\"人才整合，Groq在此时融资有望趁势抬高估值。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "内存壁垒AI芯片公司XCENA融资1.35亿美元，估值5.7亿美元",
+                            "summary": "韩国AI芯片初创公司XCENA完成1.35亿美元融资，估值达5.7亿美元。XCENA押注AI算力的真正瓶颈不是计算能力而是内存带宽，其差异化路线吸引了资本关注。此轮融资表明，内存墙问题正从学术讨论转化为创业公司和风险资本的重点押注方向。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "中富电路定增8.5亿元，加码AI用PCB产线改扩建",
+                            "summary": "中富电路公告，拟定增募资不超8.5亿元，用于鹤山中富AI用PCB产线改扩建项目、数字化升级建设项目及补充流动资金。随着AI服务器和智算中心需求激增，高频高速PCB成为算力基础设施的关键配套器件，扩产竞赛已在PCB行业全面打响。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3830344040589188"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "联想创投等入股诺仕机器人，加码具身智能赛道",
+                            "summary": "36氪获悉，联想创投等机构战略入股诺仕机器人，布局具身智能领域。诺仕机器人专注于高精度力控机器人解决方案，在工业精密装配和医疗机器人场景有深厚积累。联想系资本的入局，意味着头部CVC对具身智能商业化节奏的预判正从观望转向加速下注。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3830194503526277"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Cognition创始人Scott Wu：AI编码代理不会取代人类程序员",
+                            "summary": "Cognition创始人Scott Wu接受TechCrunch采访时表示，旗下产品Devin等AI编码代理的设计初衷是辅助而非替代人类开发者。Wu指出，当前AI在复杂系统设计和需求理解上仍有明显局限，过度依赖自动化可能导致代码质量下降和系统性风险积累，引发行业对AI工具定位的深度反思。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "Gartner报告：40%企业将降级或停用AI代理，因治理失当",
+                            "summary": "Gartner在5月26日发布的报告中指出，到2027年约40%的企业将因统一治理政策不适配而降低AI代理优先级或直接停用。报告强调一刀切的AI管控方式正在制造系统性失败，企业需要针对不同业务场景设计差异化AI治理框架。AI代理的落地困境首次被量化预警。",
+                            "source": "Hacker News / Gartner",
+                            "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "SpaceX完成v1.0版自研AI训练栈，采用C语言开发",
+                            "summary": "马斯克透露，SpaceX已基本完成自研AI训练栈v1.0版本的开发，该训练栈完全采用C语言编写，用于支撑星舰导航、火箭回收优化及星链网络调度等核心任务的自研AI模型训练。C语言训练栈的选择表明，在超低延迟和硬件极致利用的场景下，传统系统编程语言正在AI基础设施层发挥关键作用。",
+                            "source": "Hacker News / Elon Musk (X)",
+                            "url": "https://xcancel.com/elonmusk/status/2059884150187053488"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "奥地利科学院联合Mistral AI开发古希腊语LLM，用于解读古代纸莎草",
+                            "summary": "奥地利科学院宣布与Mistral AI合作，开发名为\"APOLLO\"的专用大语言模型，用于自动阅读和转录古代希腊语纸莎草文献。该项目旨在加速历史学家整理海量未解读的古希腊手稿，AI+古典学的跨学科合作开辟了专用垂直领域LLM应用的新方向。",
+                            "source": "Hacker News / 奥地利科学院",
+                            "url": "https://www.oeaw.ac.at/en/news/austrian-academy-of-sciences-is-developing-the-ancient-greek-ai-apollo-with-mistral-ai-and-reply"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "非程序员用5000美元和7个AI代理，21天搭建人才招聘平台",
+                            "summary": "一位无编程背景的创业者分享了使用7个AI Agent、历时21天、花费约5000美元完成一个人才市场平台原型的全过程。该案例揭示了当前多Agent协作系统的成熟度已足以支撑完整商业应用构建，AI原生应用开发的门槛正以超预期速度降低。",
+                            "source": "Hacker News",
+                            "url": "https://www.bearhugrecruiting.com/startup-recruiting/bearhug-network-origin-story"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "程序员拒不用AI工作现象蔓延，专家警告技能退化风险",
+                            "summary": "TechCrunch报道，越来越多程序员明确要求新雇主必须提供AI编程工具，否则拒绝入职。与此同时，研究人员警告长期依赖AI辅助可能带来基础编码能力退化和系统性思维弱化。AI与人类程序员之间的关系正从\"辅助\"滑向\"依赖\"，这对整个技术行业的人才结构提出了深层挑战。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "Flathub宣布封禁所有生成式AI制作的应用提交",
+                            "summary": "开源Linux应用商店Flathub近日宣布，禁止所有使用生成式AI制作的应用上架和提交。该社区认为AI生成内容存在质量不可控、版权归属模糊等问题，社区信任体系受到冲击。此举与Linux内核等主流开源项目对AI贡献的相对开放态度形成鲜明对比，开源社区对AI工具的主流立场正在分化。",
+                            "source": "Hacker News / GamingOnLinux",
+                            "url": "https://www.gamingonlinux.com/2026/05/flathub-moves-to-ban-nearly-all-apps-and-submissions-made-with-generative-ai/"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "AI编程支出流向：48%用于代码生成，40%用于推理思考",
+                            "summary": "一份针对企业AI编程工具使用数据的分析报告显示，AI辅助编程的企业支出中，约48%流向代码自动生成任务，40%用于推理思考和调试分析，其余用于文档和代码审查。这一数据表明，当前AI在编程中最核心的价值仍是\"加速输出\"而非\"提升质量\"，与行业对AI编程工具的期望存在不小落差。",
+                            "source": "Hacker News",
+                            "url": "https://codeburn.app/blog/where-ai-coding-spend-goes"
+                    }
+            ]
+    },
+    {
             "date": "2026-05-29",
             "items": [
                     {
