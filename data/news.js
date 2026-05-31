@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+            "date": "2026-05-31",
+            "items": [
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "软银将投资750亿欧元在法国建设数据中心，对标美国AI基础设施竞争",
+                            "summary": "软银5月30日宣布将投资高达750亿欧元（约820亿美元）在法国建设数据中心，目标是开发和运营高达5吉瓦的额外数据中心容量。此举正值欧洲 AI 基础设施竞争加剧之际，该投资将使法国成为欧洲 AI 数据中心的重要枢纽。对 AI 从业者和云服务商而言，这意味着算力资源供给将显著增加，成本有望进一步下降。",
+                            "source": "TechCrunch AI / TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "AI芯片公司Groq正洽谈6.5亿美元融资，从硬件转向AI推理服务",
+                            "summary": "在英伟达提出200亿美元收购要约被拒绝后，AI芯片初创公司Groq正在寻求6.5亿美元内部融资。Groq正从硬件芯片销售向AI推理服务提供商转型，这一战略调整反映了AI芯片行业从训练向推理侧倾斜的趋势。推理芯片市场竞争将更加激烈，Groq能否在转型中找到差异化优势值得关注。",
+                            "source": "TechCrunch AI / TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "GitHub Copilot推出token计费模式，开发者社区表示强烈不满",
+                            "summary": "GitHub Copilot于5月30日推出全新的基于token的计费模式，引发开发者社区广泛争议。开发者抱怨新计费方式成本不透明，有人称之为\"笑话\"。此前Copilot采用按用户月费模式，新的token计费可能使实际使用成本大幅上升。这对开发团队的AI工具预算规划产生直接影响，开发者正在评估替代方案。",
+                            "source": "TechCrunch AI / TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Anthropic七位联合创始人财富翻倍至166亿美元每人，Claude企业市场竞争力凸显",
+                            "summary": "据福布斯5月29日报道，Anthropic七位联合创始人个人财富已翻倍至每人166亿美元，总身家超过116亿美元。Anthropic估值已超越OpenAI成为全球最具价值AI公司。Claude在企业市场的强劲表现和Claude Code等产品的成功推动了估值大幅增长。这一变化正在重塑AI行业竞争格局。",
+                            "source": "Hacker News / Forbes",
+                            "url": "https://www.forbes.com/sites/richardnieva/2026/05/29/anthropics-cofounders-worth/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "乐奇AI眼镜日本众筹突破6.24亿日元，创Makuake平台13年全品类最高纪录",
+                            "summary": "北京时间5月30日，乐奇AI眼镜（Rokid）在日本最大众筹平台Makuake累计销售额突破6.24亿日元，创下平台成立13年以来的全品类最高众筹纪录。该AI眼镜集成摄像头和语音交互功能，众筹破纪录表明消费级AI硬件存在真实市场需求，中国AI硬件厂商正加速出海。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3831673401190273"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "乘物机器人获台湾自动化龙头和椿科技战略投资，半年服务富士康营收超两千万",
+                            "summary": "乘物机器人（深圳）有限公司近日完成天使轮融资，由台湾工业自动化与智能机器人解决方案龙头企业和椿科技战略投资。该公司专注于机器人智能解决方案，半年内服务富士康等客户营收已超2000万元人民币。台湾自动化龙头的战略投资将助力其拓展工业机器人市场。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3831135917107075"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "联想创投等入股诺仕机器人，智能协作机器人赛道获产业资本加持",
+                            "summary": "36氪5月28日报道，联想创投等机构入股诺仕机器人，后者专注于智能协作机器人研发。产业资本的进入将为诺仕带来更丰富的产业资源和商业化渠道。协作机器人赛道正在成为工业自动化的核心方向，联想的布局显示其对机器人领域的长期看好。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3830194503526277"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "穿越者载人航天科技完成亿元Pre-A轮融资，头部互联网战投领投",
+                            "summary": "北京穿越者载人航天科技有限公司完成Pre-A轮亿元融资，由某头部互联网战投领投，探路者集团跟投，老股东持续加注。本轮资金将重点用于可复用运载火箭\"穿越者壹号\"的研发。商业航天与AI技术的结合正在成为新风口，吸引互联网产业资本加速布局。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3830254963517318"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "智元机器人海外收入占比突破20%，北美欧洲日韩成为核心市场",
+                            "summary": "BEYOND Expo 2026上，智元机器人合伙人姚卯青透露，公司海外收入占比从去年不到10%升至今年上半年的近20%。北美、欧洲、日韩是重点拓展市场。出海正在成为国产机器人企业的重要增长方向，海外市场的成功验证了中国机器人产品的国际竞争力。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3832506045818500"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "小米MiMo-V2.5实现KVCache双池等五大核心突破，API永久降价后仍可收支平衡",
+                            "summary": "小米MiMo大模型团队发布技术文章，首次公开MiMo-V2.5 API永久降价背后的技术路径。该模型实现KVCache双池+SWA-aware前缀树、GCache分布式缓存、KVCaching稀疏量化等五大核心突破，在降低成本的同时实现了收支平衡。大模型价格战持续，技术优化成为竞争关键。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3832525007284097"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "传OpenAI正在开发iPhone竞品ProjectD，配备定制AI芯片和语音优先交互",
+                            "summary": "据MacRumors 5月29日报道，OpenAI正在开发代号ProjectD的iPhone竞品设备，配备定制AI芯片和语音优先交互界面。该产品预计2026年发布，目标是重新定义消费电子的AI入口。继AI软件竞赛后，科技巨头开始向AI硬件入口延伸，竞争边界进一步扩大。",
+                            "source": "Hacker News / MacRumors",
+                            "url": "https://www.macrumors.com/2026/05/29/everything-we-know-about-openai-iphone-rival/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Meta正在开发AI吊坠产品，可穿戴设备布局持续推进",
+                            "summary": "据TechCrunch 5月30日报道，Meta正在开发一款AI吊坠可穿戴设备，这是继Ray-Ban Meta智能眼镜后的又一硬件尝试。该设备将具备摄像头和语音交互功能。扎克伯格押注AI硬件，Meta的可穿戴设备布局正在从音频向多模态交互延伸。",
+                            "source": "TechCrunch AI / TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Google推出24/7 Gemini Spark AI助手，实现全天候任务自动化",
+                            "summary": "Google推出名为Gemini Spark的全天候AI助手，可在设备上24/7运行。该助手可自动处理邮件摘要、本地事件规划等日常任务，展示了Google在端侧AI和持续感知方面的技术实力。端侧AI助手正成为大厂竞争的新焦点。",
+                            "source": "TechCrunch AI / TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "苹果WWDC26将重点展示端侧AI能力，设备端智能化战略浮出水面",
+                            "summary": "据36氪5月28日报道，苹果将在WWDC26全球开发者大会上重点展示端侧AI能力。苹果在AI领域采取差异化策略，强调设备端本地化AI处理而非云端计算。此举显示苹果正在将AI能力深度整合进iOS和macOS生态，端侧AI或成苹果反击的关键。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3830194503526277"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "星巴克放弃失败AI库存工具，无法准确统计纸杯数量导致项目终止",
+                            "summary": "据Gizmodo报道，星巴克已放弃一款存在严重缺陷的AI库存工具，该工具甚至无法准确统计纸杯数量。该AI系统的失败导致星巴克在库存管理上投入大量额外成本。企业级AI应用存在重大风险，此案例警示AI落地需充分验证，不能盲目上线。",
+                            "source": "Hacker News / Gizmodo",
+                            "url": "https://gizmodo.com/starbucks-abandons-borked-ai-inventory-tool-that-couldnt-count-report-2000762252"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "贝恩报告：AI生成的合成买家正在改变产品测试方式",
+                            "summary": "贝恩公司最新报告显示，越来越多的企业开始使用AI生成的合成买家进行产品测试和市场调研。合成买家可降低调研成本、加速测试周期，但也存在真实性存疑的局限性。该报告揭示了AI正在重塑企业决策流程的趋势。",
+                            "source": "Hacker News / Bain & Company",
+                            "url": "https://www.bain.com/insights/synthetic-customers-earn-their-stripes/"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "科学家警告AI程序员依赖风险：不产生更好代码，反而降低程序员技能",
+                            "summary": "研究人员发出警告，AI编程工具虽然提升了代码产出速度，但并不一定产生更好的代码。更令人担忧的是，程序员对AI的过度依赖可能削弱其自身技能，形成\"技能退化\"风险。AI辅助编程需把握适度原则，培养核心能力仍是关键。",
+                            "source": "TechCrunch AI / TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "奥地利科学院联手Mistral AI开发古希腊文翻译AI，100万古代残片将被解读",
+                            "summary": "奥地利科学院正在开发名为Apollo的AI系统，联合Mistral AI共同推进百万古希腊文残片的翻译工作。这些残片已有数千年历史，此前无法被解读。该项目展示了AI在文化遗产保护和学术研究领域的巨大潜力。",
+                            "source": "Hacker News / Austrian Academy of Sciences",
+                            "url": "https://www.oeaw.ac.at/en/news/austrian-academy-of-sciences-is-developing-the-ancient-greek-ai-apollo-with-mistral-ai-and-reply"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "开源Llama本地应用Gemma 4命名截图工具诞生，无需云端保护隐私",
+                            "summary": "一款基于Google开源模型Gemma 4的macOS截图命名应用Snapname问世，所有处理均在本地完成，无需上传云端。该应用展示了开源模型在本地部署和隐私保护方面的优势，AI应用正朝着去中心化和隐私优先的方向发展。",
+                            "source": "Hacker News / Snapname",
+                            "url": "https://snapname.app"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "单张768GB Intel Optane内存条实现1万亿参数LLM推理，每秒4 tokens",
+                            "summary": "有发烧友使用768GB Intel Optane内存条成功运行了1万亿参数大模型，实现约4 tokens/秒的推理速度。Optane persistent memory的特性使超大模型本地推理成为可能。该实验为边缘AI部署提供了新的内存架构思路。",
+                            "source": "Hacker News / Tom's Hardware",
+                            "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-runs-1-trillion-parameter-llm-from-768gb-of-intel-optane-dimm-memory-sticks-local-kimi-k2-5-install-achieved-roughly-4-tokens-per-second"
+                    }
+            ]
+    },
+    {
             "date": "2026-05-30",
             "items": [
                     {
