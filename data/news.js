@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+            "date": "2026-06-02",
+            "items": [
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "Anthropic正式提交IPO招股书，AI独角兽冲刺公开市场",
+                            "summary": "Anthropic已于2026年6月1日向SEC秘密提交IPO招股书，标志着这家估值曾达数百亿美元的AI公司正式启动上市进程。该公司凭借Claude系列大模型已成功拿下多家顶级企业客户，从行业追赶者蜕变为AI领域头部玩家。市场正关注其招股规模及定价策略，同时《经济学人》刊文探讨\"股市能否消化Anthropic、SpaceX与OpenAI\"，反映出市场对AI超级独角兽IPO潮的高度期待。",
+                            "source": "Financial Times / TechCrunch / The Economist",
+                            "url": "https://www.ft.com/content/4f82f41c-24e7-4323-899a-17a04badd29e"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "Alphabet宣布融资800亿美元加码AI，超市场预期一倍",
+                            "summary": "Alphabet于2026年6月1日宣布将通过增发股票和债券融资至多800亿美元（约5800亿人民币），以支撑其在AI领域的激进扩张。这是美国科技公司有史以来规模最大的融资计划之一，超出市场预期的400亿美元近一倍。公司表示，企业和消费者对AI解决方案的需求正以史无前例的速度增长，Gemini系列模型和Google Cloud AI服务成为核心增长引擎。",
+                            "source": "Reuters / TechCrunch",
+                            "url": "https://www.reuters.com/legal/transactional/alphabet-raise-80-billion-equity-capital-ai-spending-2026-06-01/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "英伟达联手微软戴尔惠普，推AI Agent PC剑指200亿美元CPU市场",
+                            "summary": "英伟达于2026年6月1日宣布与微软、戴尔、惠普达成战略合作，共同推出搭载其AI技术的Agent PC产品线，正式进军规模达200亿美元的AI PC市场。这些设备内置英伟达AI加速能力，可安全、便捷地在消费级硬件上运行本地AI代理任务，被视为将AI能力普及至大众市场的关键一步。若成功推广，将深刻重塑PC产业格局。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "佛罗里达州起诉OpenAI及Altman，称AI与暴力事件存在关联",
+                            "summary": "佛罗里达州于2026年6月1日正式对OpenAI及CEO Sam Altman提起诉讼，指控ChatGPT在佛罗里达州立大学枪击案等暴力事件中扮演了角色，开创了针对AI公司诉讼的先例。诉讼核心争议在于生成式AI是否对用户行为负有责任，以及平台在内容安全方面应承担何种法律义务。此案可能成为AI产品责任界定的里程碑式判例。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "伯克希尔·哈撒韦增持Alphabet 100亿美元，深化AI赛道押注",
+                            "summary": "巴菲特麾下伯克希尔·哈撒韦公司在原有持仓基础上追加约100亿美元投资Alphabet，刷新近年来单次增持纪录。作为\"奥马哈先知\"近年罕见的大手笔科技股加仓动作，此举被市场解读为对Alphabet AI战略（尤其是Gemini和Google Cloud）投下的信任票。Alphabet同日宣布融资800亿美元，二者形成叠加效应，Alphabet股价单日涨超3%。",
+                            "source": "CNBC",
+                            "url": "https://www.cnbc.com/2026/06/01/berkshire-hathaway-alphabet-investment.html"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "科罗拉多州废除标志性AI治理法案，科技行业监管收紧",
+                            "summary": "科罗拉多州政府正式宣布废除此前通过的具有里程碑意义的AI治理法案，成为美国AI监管立法的重大逆转。该法案原计划对高风险AI系统实施强制透明度要求和第三方审计，在科技行业游说后被废除。这一结果反映出AI监管在全球范围内的分歧正在加剧：一边是欧盟AI法案的持续推进，一边是美国地方层面的主动后退。",
+                            "source": "Bank Info Security",
+                            "url": "https://www.bankinfosecurity.com/colorado-rolls-back-landmark-ai-governance-law-a-31804"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "GitHub Copilot全面转向Token计费模式，开发者社区争议激烈",
+                            "summary": "微软GitHub宣布其GitHub Copilot产品线全面升级为基于Token消耗量的新计费体系，替代此前固定月费模式，引发开发者社区广泛不满，多人直呼\"简直是笑话\"。新模式下重度用户成本可能显著上升，而轻度用户有望受益。Ars Technica分析指出，这一转变标志着微软Copilot\"黄金时代\"的终结，开始追求更高变现效率。",
+                            "source": "Ars Technica / TechCrunch",
+                            "url": "https://arstechnica.com/ai/2026/06/ai-costs-how-much-github-copilot-users-react-to-new-usage-based-pricing-system/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "OpenAI GPT-5.5与Codex正式登陆AWS Bedrock，企业接入门槛降低",
+                            "summary": "OpenAI最新旗舰模型GPT-5.5及其编程专用版本Codex已于2026年6月在AWS Bedrock平台全面开放商用，成为继Anthropic Claude和Google Gemini之后入驻主流云市场的又一顶级大模型。此举意味着企业客户可通过标准化API直接调用GPT-5.5，降低了从零部署LLM的门槛，预计将加剧云端AI模型服务的市场竞争。",
+                            "source": "AWS官方公告",
+                            "url": "https://aws.amazon.com/about-aws/whats-new/2026/06/amazon-bedrock-openai-models-codex-generally-available/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "软银宣布投资750亿欧元在法建设数据中心，欧洲AI基建竞赛升温",
+                            "summary": "软银宣布将在法国投资至多750亿欧元（约5800亿人民币），建设容量高达5GW的数据中心群，成为欧洲AI基础设施领域有史以来最大的单笔外资承诺。该计划旨在支撑软银旗下AI资产的算力需求，并服务于欧洲本地AI企业的云端需求。法国政府将此视为推动本国AI产业跃升的关键政策红利，全球数据 center建设热潮从北美蔓延至欧洲。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-75-billion-to-build-french-data-centers/"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "中国企业被曝研发AI预测民众异议，纽约时报获机密文件",
+                            "summary": "《纽约时报》披露，一家中国科技企业正在开发基于AI的民众异议预测系统，并获得了相关机密文件的独家报道。文件显示，该系统可通过对社交媒体数据、行为模式等多维度信息进行大规模分析，预判个人或群体的抗议倾向。该技术引发美国政府高度关注，成为中美AI治理博弈的又一焦点议题，可能推动美国进一步收紧对华AI技术出口限制。",
+                            "source": "New York Times",
+                            "url": "https://www.nytimes.com/2026/06/01/us/politics/china-ai-predicting-dissent.html"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "微信AI助手推出在即，腾讯控股股价单日涨超3%",
+                            "summary": "腾讯控股股价于2026年6月2日盘中快速拉升，涨幅一度超3%。市场消息指腾讯即将正式推出集成在微信生态内的AI助手产品，该产品预计将深度整合微信支付、社群和内容生态，首批功能覆盖智能客服、内容摘要和多轮对话。这一动作将使微信从超级App进一步升级为AI原生平台，触达超13亿月活用户，引发资本市场对腾讯AI商业化潜力的重新定价。",
+                            "source": "36氪 / 彭博",
+                            "url": "https://36kr.com/newsflashes/3835395233920131"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "星巴克AI客服上线数月即遭停用，企业级AI落地遭遇挫折",
+                            "summary": "星巴克在其App中部署的AI客服代理在上线短短数月后即被悄然下线，成为大型企业AI应用失败的最新案例。尽管星巴克未公布具体停用原因，但外界推测与回答准确率不足、用户投诉率上升及运营成本高企有关。该事件为当前火热的\"AI Agent\"浪潮敲响警钟：消费级AI产品的落地挑战远超demo演示，企业在实际部署中需要更审慎的评估框架。",
+                            "source": "Yahoo Finance",
+                            "url": "https://finance.yahoo.com/sectors/technology/articles/starbucks-quietly-retired-ai-agent-192259096.html"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "Meta正研发AI吊坠，硬件入口争夺进入新阶段",
+                            "summary": "Meta被曝正在开发一款搭载AI能力的可穿戴吊坠设备，这是继Ray-Ban智能眼镜之后Meta在AI硬件领域的又一次重要探索。该设备预计可实现实时语音交互、视觉理解和信息流推送等功能，定位为AI时代的新型随身计算终端。在苹果Vision Pro市场表现平淡的背景下，Meta选择从轻量级可穿戴设备切入，意图抢占AI交互的硬件入口。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "宇树科技IPO过会，王兴兴或成最年轻百亿级机器人富豪",
+                            "summary": "宇树科技IPO（首发上市）申请已获证监会审核通过，公司创始人王兴兴凭借持有的大量股份，上市后身家预计突破140亿元人民币。宇树科技以四足机器人和人形机器人闻名，其产品已广泛应用于工业巡检、科研教育和消费市场。此举标志着中国机器人产业正式进入资本化快车道，也反映出监管层对硬科技企业上市的积极态度。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3835278829008257"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "开源项目43天完成58万行Verilog代码，AI编程能力获验证",
+                            "summary": "初创公司Normal Computing宣布其团队利用AI辅助编程，仅用43天便完成了拥有58万行代码的开源Verilog模拟器开发。该项目完全开源，展示了当前LLM在复杂系统工程任务中的实际可用性，相比传统方式提速约10倍。这一案例为\"AI将颠覆软件开发\"的论断提供了实证支撑，同时也引发关于AI生成代码质量与安全性的讨论。",
+                            "source": "Hacker News / Normal Computing",
+                            "url": "https://normalcomputing.com/blog/building-an-open-source-verilog-simulator-with-ai-580k-lines-in-43-days"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "量坤科技完成数亿元天使轮融资，量子计算切入AI4S",
+                            "summary": "量子计算公司量坤科技完成数亿元人民币天使轮及天使+轮系列融资，由英诺天使基金领投，百度风投、国汽投资、明势创投等十余家机构跟投。量坤科技聚焦量子计算在AI for Science（AI4S）场景的应用，为药物研发、材料科学等领域提供量子级精度数据模拟能力。本轮融资规模在量子计算赛道位居前列，反映出AI与量子融合的正统化趋势。",
+                            "source": "暗涌Waves / 36氪",
+                            "url": "https://36kr.com/p/3826034537223043"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "Aippy完成数千万美元首轮融资，估值2.5亿美元打造AI游戏社区",
+                            "summary": "NADA AI团队开发的AI游戏社区产品Aippy完成数千万美元首轮融资，由歌未资本（Glowill Capital）投资，投后估值达2.5亿美元。本轮资金将主要用于引进顶尖AI/游戏人才及欧美市场用户规模化增长。Aippy将生成式AI深度融入游戏社区互动体验，目标成为\"下一代AI游戏社区\"，该赛道目前尚处蓝海，差异化竞争优势明显。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3834400181741440"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "DuckDuckGo推出\"无AI\"搜索引擎插件，隐私搜索流量逆势增长",
+                            "summary": "以隐私保护著称的搜索引擎DuckDuckGo宣布简化其\"无AI搜索\"功能的访问入口，为Chrome和Firefox用户推出专属插件。在Google Bing全面集成AI摘要的背景下，越来越多用户主动选择避开AI生成内容、以传统链接形式呈现结果的搜索体验，DuckDuckGo流量因此出现逆势增长。这一现象折射出AI搜索并非对所有用户群体具有普适吸引力。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "SpaceX IPO风险披露：数据center水耗成为投资者关注焦点",
+                            "summary": "SpaceX在IPO招股文件中首次将\"水资源获取\"列为重大风险因素，称其大规模数据center需要\"大量\"冷却用水，而稳定、廉价的水资源获取面临挑战。随着AI算力需求爆发式增长，电力和水资源正成为数据center选址和扩张的核心约束条件，这一变化可能影响SpaceX未来估值逻辑和IPO定价，投资人需重新评估AI驱动的算力基础设施的真实成本结构。",
+                            "source": "TechCrunch",
+                            "url": "https://techcrunch.com/2026/06/01/water-access-is-now-a-risk-factor-in-spacexs-ipo/"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "CHSE项目实现Rust下LLM压缩器每秒处理115万行代码",
+                            "summary": "开发者社区开源项目CHSE推出一款基于Rust语言的高性能LLM Token压缩工具，在消费级硬件上实现了每秒115万行的代码处理速度，可节省69%-91%的Token消耗。该工具针对编程场景专项优化，被视为降低AI编程工具推理成本的关键基础设施。当前GitHub Copilot转向使用量计费后，此类成本优化工具的商业价值有望显著提升。",
+                            "source": "Hacker News",
+                            "url": "https://news.ycombinator.com/item?id=48364338"
+                    }
+            ]
+    },
+    {
             "date": "2026-05-31",
             "items": [
                     {
