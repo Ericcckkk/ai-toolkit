@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+            "date": "2026-06-03",
+            "items": [
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "Anthropic递交上市申请，AI行业格局生变",
+                            "summary": "Anthropic已正式提交上市申请，这家曾经被视为行业追赶者的AI公司，如今已赢得顶级企业客户的信赖。继OpenAI之后，又一家头部AI企业冲刺资本市场，标志着头部AI公司从投资驱动向公众市场转型的关键节点。对投资者而言，这意味着纯VC视角下的AI估值逻辑将接受公开市场审视。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/01/anthropic-files-to-go-public/"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "特朗普签署新版AI监管行政令，仅要求自愿预披露",
+                            "summary": "在行业强烈反对后，特朗普总统签署修订版AI行政令，将强制预披露要求改为自愿框架。这一妥协反映了AI行业对过度监管的抵制力度，也预示着美国短期内不会建立硬性AI合规机制。对全球AI监管格局而言，美国的\"宽松路线\"将与欧盟AI法案形成鲜明对比，监管套利空间将进一步扩大。",
+                            "source": "TechCrunch AI / The Verge AI",
+                            "url": "https://techcrunch.com/2026/06/02/trump-signs-narrower-executive-order-on-ai-oversight-after-industry-objections/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "Alphabet宣布融资800亿美元用于AI基础设施建设",
+                            "summary": "Alphabet宣布计划融资800亿美元用于AI基础设施扩建，市场对其AI解决方案的需求无论是企业端还是消费端均处于历史高位。这表明AI算力军备竞赛远未结束，头部科技公司的资本开支将成为GPU和数据 center产业链持续景气的核心驱动力。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/01/alphabet-plans-to-raise-80-billion-to-pay-for-ai-buildout/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Microsoft Build 2026开幕，发布MAI-Thinking-1旗舰推理模型等重磅新品",
+                            "summary": "Microsoft在Build 2026大会上正式发布旗舰推理模型MAI-Thinking-1，并同步推出Scout个人助手、Adaptive Spec行为测试工具等多款产品。CEO纳德拉强调微软正在成为AI基础设施的核心供应商。系列发布显示微软已从\"AI集成\"转向\"AI原生平台\"战略。",
+                            "source": "The Verge AI / TechCrunch AI",
+                            "url": "https://www.theverge.com/tech/941664/microsoft-ai-model-reasoning-mai-thinking-1-build-2026"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Project Solara：微软发布首个AI智能体设备专用操作系统",
+                            "summary": "微软在Build 2026上推出Project Solara，这是专为运行AI智能体的硬件设备设计的操作系统，定位为AI Agent时代的Android。该系统标志着微软在AI硬件生态上的卡位野心，从软件层向上延伸至设备层，对物联网和边缘AI格局有深远影响。",
+                            "source": "The Verge AI",
+                            "url": "https://www.theverge.com/news/941830/microsoft-project-solara-os-ai-agent-gadgets"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "英伟达联手微软、戴尔、惠普入局AI Agent PC，剑指2000亿美元CPU市场",
+                            "summary": "英伟达宣布与微软、戴尔、惠普合作推出搭载RTX Spark的AI Agent PC，正式进军消费笔记本芯片市场。此举意在打破英特尔、AMD和高通在PC芯片领域的主导地位，若成功将重塑PC硬件竞争格局，并为英伟达打开又一个千亿美元级别的增量市场。",
+                            "source": "TechCrunch AI / The Verge AI",
+                            "url": "https://techcrunch.com/2026/06/01/nvidia-chases-200b-cpu-market-with-ai-agent-pcs-from-microsoft-dell-and-hp/"
+                    },
+                    {
+                            "tag": "技术突破",
+                            "title": "中国批准全球首个侵入式脑机接口芯片，脑机融合进入新时代",
+                            "summary": "中国监管机构批准了全球首个侵入式脑机接口芯片，Neuralink之后又一个国家级脑机竞赛正式拉开序幕。该芯片已完成首例患者植入测试，在信号采集精度上实现突破。这不仅是神经科学的里程碑，也将为AI与大腦直接交互的下一代人机界面奠定基础。",
+                            "source": "MIT Technology Review",
+                            "url": "https://www.technologyreview.com/2026/06/01/1138133/china-world-first-brain-chip/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "星尘智能三个月内完成三轮B轮融资，累计金额超10亿元估值破百亿",
+                            "summary": "绳驱AI机器人公司星尘智能（Astribot）在三个月内完成三轮累计超10亿元B轮系列融资，估值突破百亿人民币。投资方涵盖博华资本、中科创达、科德教育等知名机构。本轮融资刷新了具身智能赛道年内最大规模记录，资本正加速向物理世界AI载体集中。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3836068296209537"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Gemini Spark：Google推出全场景AI智能体规划工具",
+                            "summary": "Google在I/O大会上发布Gemini Spark，这是其面向所有场景的AI智能体解决方案，主打一键式行程规划与跨应用任务执行。与以往AI助手不同，Spark具备真正的自主规划能力和工具调用能力，被评测者形容为\"令人印象最深也最令人不安的AI体验\"。",
+                            "source": "The Verge AI",
+                            "url": "https://www.theverge.com/ai-artificial-intelligence/941388/gemini-spark-ai-agent-trip-planning"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Google Phone应用上线AI仿声诈骗检测功能",
+                            "summary": "Google为其Phone应用推出fake call detection功能，当来电者AI模拟冒充用户通讯录中的联系人时，系统自动发出警报。随着用户越来越拒绝接听陌生来电，诈骗者转向仿声技术冒充熟人行骗，此功能直击这一新型AI诈骗痛点。隐私倡导者同时提醒，该功能需收集通话语音数据，隐私权衡值得关注。",
+                            "source": "TechCrunch AI / The Verge AI",
+                            "url": "https://techcrunch.com/2026/06/02/google-rolls-out-fake-call-detection-to-protect-against-ai-deepfake-impersonation-scams/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Anthropic将Claude Mythos安全项目扩展至15国150家关键基础设施",
+                            "summary": "Anthropic扩大Project Glasswing安全漏洞项目，将Mythos访问权限扩展至15个以上国家的150家关键基础设施机构，涵盖能源、金融和医疗等高风险领域。继与微软、AWS达成企业级合作后，Anthropic正快速切入关键行业安全市场，AI安全合规正在成为新的赛道入口。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "OpenAI发布Codex六大白领插件，剑指知识工作者自动化市场",
+                            "summary": "OpenAI发布六款针对特定白领岗位的Codex插件，覆盖数据分析、创意制作、销售、产品设计、客服和法律文档等领域。这标志着GPT系列从通用对话工具向垂直岗位渗透的实质性一步。知识工作自动化赛道竞争加剧，Salesforce、Microsoft等企业办公巨头将面临直接冲击。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "微信AI智能体最快本月启动合规审批，14亿用户生态面临变革",
+                            "summary": "媒体报道微信正在推进AI智能体产品，最快本月启动公开上线前的合规审批流程。腾讯内部人士确认具体时间取决于监管审批进度。微信14亿月活用户的体量决定了任何AI功能叠加都将产生行业级影响，监管如何为超级APP的AI化设立边界将成为看点。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3836820673574024"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "Uber四个月内AI预算耗尽，主动暂停员工AI支出",
+                            "summary": "Uber在员工AI使用无限制政策下，四个月内耗尽全年AI预算，随即主动暂停相关支出。据报道，Uber此前鼓励员工尽可能多地使用AI工具。这一案例揭示了企业在AI规模化部署时面临的成本失控风险，也将引发更多公司重新审视\"AI无所不能\"的盲目乐观预期。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Microsoft推出Adaptive Spec：用自然语言描述即可生成AI行为测试",
+                            "summary": "Microsoft在Build 2026上发布Adaptive Spec-driven Scoring for Evaluation and Regression Testing开源工具，允许开发者用自然语言描述AI代理的预期行为，即可自动生成行为测试用例。开发团队、合规团队和安全团队均可自定义代理策略，解决了AI代理测试标准化难题。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/new-microsoft-tool-lets-devs-spin-up-ai-behavior-tests-using-text-descriptions/"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "佛罗里达州起诉OpenAI及Altman：首例涉AI暴力事件民事诉讼",
+                            "summary": "佛罗里达州对OpenAI及CEO Altman提起开创性民事诉讼，案件部分涉及去年佛罗里达州立大学枪击案及ChatGPT在其中的角色。此案将AI产品的责任边界问题首次推入司法审判视野，可能为未来AI相关诉讼建立重要判例基础，并对AI企业在高风险场景的合规披露提出更严格要求。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/01/florida-sues-openai-sam-altman-in-first-of-its-kind-lawsuit-over-violent-incidents/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "Cyera融资3亿美元瞄准120亿美元估值，剑指AI数据安全",
+                            "summary": "网络安全AI公司Cyera正接近完成由Evolution Equity Partners领投的3亿美元融资轮，估值瞄准120亿美元，以80倍ARR倍数计算。虽处于运营亏损状态，但高估值反映了市场对AI时代数据安全基础设施的强烈看好，网络安全正在成为AI投资的新风口。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/cyera-eyes-12b-valuation-at-80x-arr-multiple-despite-operating-losses/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "火箭发动机初创公司Impulse融资5亿美元：物理工程仍依赖人类人才",
+                            "summary": "火箭发动机初创公司Impulse Space完成5亿美元融资，公司总裁Eric Romo明确表示这笔资金主要用于招募人才而非AI，显示在物理系统工程领域人类专业知识仍不可替代。这一表态在AI狂飙时代显得独特，也提醒行业：AI并非万能，硬件工程的人才缺口依然是硬科技发展的核心瓶颈。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/rocket-engine-startup-impulse-raises-500-million-to-hire-people-not-ai/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "浙大教授团队获财通、商汤投资，进军高危场景具身机器人大脑",
+                            "summary": "杭州旷行科技完成数千万元Pre-A轮融资，由财通资本和商汤国香联合投资。该公司由浙大教授团队创立，聚焦高危作业场景的具身智能\"机器人大脑\"研发。本轮资金将用于算法研发及产品矩阵完善。商汤的战略投资显示头部AI企业正加速具身智能生态布局。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3836744788014208"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "DuckDuckGo反AI搜索流量激增，无AI搜索引擎插件全面上线",
+                            "summary": "DuckDuckGo为其广受欢迎的\"无AI搜索\"功能推出Chrome和Firefox浏览器插件，用户无需改变默认设置即可快速切换无AI搜索模式。平台流量同期出现显著增长，显示在主流AI搜索狂飙之际，相当规模用户对AI生成内容的可靠性和隐私问题存在深度顾虑，小众搜索引擎的差异化空间正在扩大。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/01/duckduckgo-makes-its-no-ai-search-engine-easier-to-access-as-its-traffic-booms/"
+                    }
+            ]
+    },
+    {
             "date": "2026-06-02",
             "items": [
                     {
