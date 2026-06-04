@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+            "date": "2026-06-04",
+            "items": [
+                    {
+                            "tag": "政策监管",
+                            "title": "英国监管机构勒令Google允许出版商退出AI搜索功能",
+                            "summary": "英国竞争与市场管理局6月3日裁定，要求Google向英国网站运营商提供退出AI概览模式的工具，避免内容和链接被自动抓取。此前Google被指利用AI搜索无偿使用出版商内容，新规将倒逼平台与内容方重新谈判授权模式，这对内容产业的商业模式将产生深远影响。",
+                            "source": "36氪 / TechCrunch AI / The Verge AI",
+                            "url": "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "Alphabet创纪录融资850亿美元投向Google AI业务",
+                            "summary": "Alphabet完成破纪录的850亿美元股票增发，专门用于Google AI业务发展，这一规模远超市场预期。此轮融资的完成表明投资者对AI驱动的搜索、广告及云服务长期增长高度看好，将显著增强Google在AI基础设施方面的投入能力。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal/"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "台积电魏哲家：预计今年全年营收增长仍将超过30%",
+                            "summary": "台积电董事长魏哲家在股东会上表示，AI需求正从生成式AI、查询模式转向代理式AI与指令行动模式，大型语言模型的token消耗量持续攀升，先进半导体的运算能力需求保持强劲。公司客户对先进制程的订单依然饱满，AI芯片短缺预计将持续至2027年。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3838242373667077"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "星尘智能完成超10亿B轮融资，估值突破百亿",
+                            "summary": "绳驱AI机器人公司星尘智能（Astribot）三个月内完成三轮融资，累计金额超10亿元，投资方包括梁溪科创产业二期母基金、扬州龙投芯粒、中博聚力、中科创达等。本轮融资后公司估值突破百亿，成为具身智能赛道的头部玩家，资金将用于产品研发与量产加速。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3836068296209537"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "博通AI营收展望不及预期，第三财季AI芯片销售160亿美元",
+                            "summary": "博通6月3日发布财报指引，预计第三财季AI芯片销售额为160亿美元，全年AI芯片收入560亿美元，均低于华尔街预期。尽管博通已向OpenAI交付芯片，但AI基础设施投资增速放缓的信号令市场担忧，半导体板块股价承压。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3838269370829058"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "微软发布MAI-Thinking-1推理模型，剑指GPT-5",
+                            "summary": "微软在Build 2026大会上发布旗舰推理模型MAI-Thinking-1，以及AI行为测试工具Adaptive Spec-driven Scoring等六项新工具。MAI-Thinking-1定位对标OpenAI最新模型，将集成至Azure AI平台并开放API接口。微软同时推出Scout个人助手，正式进军AI助手市场。",
+                            "source": "The Verge AI / TechCrunch AI",
+                            "url": "https://www.theverge.com/tech/941664/microsoft-ai-model-reasoning-mai-thinking-1-build-2026"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "特朗普签署修订版AI行政命令，建立自愿性预发布审查框架",
+                            "summary": "在行业强烈反对后，特朗普政府签署修订版AI行政命令，将强制性的预发布政府审查改为自愿性框架，允许AI公司在发布前自主决定是否与政府分享信息。该命令被批评为“象征性大于实质”，未能对前沿AI模型形成实质性监管约束。",
+                            "source": "The Verge AI / TechCrunch AI",
+                            "url": "https://www.theverge.com/policy/941775/trump-ai-executive-order"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "香港发布首个生产力级超级智能体HKGAIV3",
+                            "summary": "香港生成式人工智能研发中心正式发布本地大模型HKGAIV3，并同步推出香港首个生产力级超级智能体。该智能体针对政务、金融、法律等场景优化，支持粤语与普通话双语交互，首批已与多家香港本地企业及政府机构达成合作意向。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3838218104604936"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "中文在线：AI短剧成为第一大Token消耗场景，占比55%",
+                            "summary": "中文在线在机构交流中披露，AI短剧与视频生成已超越电商营销，成为国内Token消耗最大的应用场景，占比高达55%。其次是电商与营销（24%），此前占比最高的代码生成场景已退居第三。AI短剧的爆发式增长正在重塑算力需求结构。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3838316766071045"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Uber在4个月内耗尽AI预算后限制员工支出",
+                            "summary": "据TechCrunch报道，Uber在鼓励员工大规模使用AI工具后，仅用4个月就耗尽了全年AI预算，现已实施支出上限。知情人士透露，公司此前曾强制要求员工每周使用AI工具完成至少5项任务，但并未建立成本监控机制。该案例暴露了企业AI部署中的财务管理盲区。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "OpenAI发布六款白领Codex工具，直指企业自动化",
+                            "summary": "OpenAI发布面向白领工作的Codex工具包，包含数据分析师、创意制作、销售、产品设计等六种垂直插件。这些工具可深度集成至企业CRM、ERP和数据分析平台，瞄准法律、金融、咨询等高价值白领场景，单企业客户报价较消费级订阅高3倍以上。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/openai-launches-new-codex-tools-for-white-collar-work/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "戴盟机器人完成亿元A轮融资，汇川与中国电信联合注资",
+                            "summary": "具身智能公司戴盟机器人完成由汇川技术旗下汇川产投与中国电信联合投资的亿元A轮融资。该公司“视触觉”传感器出货量行业第一，本轮资金将用于打造超大规模含物理交互信息数据集，加速物理世界模型研发及商业场景落地。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/p/3837269482091656"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "现代汽车与英伟达商讨在韩设立AI研发中心，选址新万金",
+                            "summary": "韩国经济日报援引知情人士称，现代汽车联合韩国政府正与英伟达就落地韩国AI技术中心进入最终磋商阶段，新万金为首选选址。该中心将是英伟达在亚太地区的首个顶级研发基地，级别对标其在新加坡和中国台湾的布局，目标是开发自动驾驶及机器人AI能力。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3838197819672840"
+                    },
+                    {
+                            "tag": "重要产品发布",
+                            "title": "Meta WhatsApp Business AI代理全球上线，按Token收费",
+                            "summary": "Meta宣布WhatsApp Business AI代理面向全球企业开放，企业可基于Token用量付费。该AI代理支持自动客服、订单追踪、个性化推荐等场景，已在巴西、印度等市场完成试点。目前WhatsApp Business月活企业用户超5000万，AI代理有望成为Meta新的营收增长点。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Lovable与Google Cloud扩大合作，目标5倍增长",
+                            "summary": "瑞典AI应用公司Lovable与Google Cloud签署扩大版多年期合作协议，将整合Gemini模型及AI优化基础设施，目标用户量增长5倍。Lovable主要面向欧洲市场提供无代码AI应用构建平台，此轮合作将进一步强化Google Cloud在欧洲企业AI市场的渗透能力。",
+                            "source": "36氪 / TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/"
+                    },
+                    {
+                            "tag": "行业格局",
+                            "title": "Anthropic将Claude Mythos扩展至15+国家150个组织",
+                            "summary": "Anthropic宣布将其安全漏洞发现项目Project Glasswing及Mythos模型访问权限扩展至15个以上国家的150个关键基础设施组织。该项目此前仅向美国部分企业提供，此次扩张标志着Claude在关键基础设施安全领域的商业化进入新阶段。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/anthropic-scales-claude-mythos-to-critical-infrastructure-in-15-countries/"
+                    },
+                    {
+                            "tag": "大额融资/IPO",
+                            "title": "Coralogix融资2亿美元，瞄准AI代理监控基础设施",
+                            "summary": "AI可观测性平台Coralogix完成2亿美元融资，由Evolution Equity Partners领投，估值逼近独角兽级别。随着AI代理进入生产环境，企业对AgentOps（代理运维）工具的需求激增，Coralogix定位为AI时代的Datadog，竞品包括Arize、PagerDuty等传统监控厂商的新兴AI产品线。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/03/coralogix-raises-200m-in-race-to-build-the-monitoring-layer-for-ai-agents/"
+                    },
+                    {
+                            "tag": "应用落地",
+                            "title": "Amazon搜索栏将展示AI生成产品图片，支持语音描述搜索",
+                            "summary": "Amazon升级搜索功能，将根据用户文字或语音描述实时生成AI产品概念图展示在搜索结果中。这些图片为AI合成，不代表实际在售商品，用户点击后可跳转至相关品类。该功能目前仅在移动端开放，Amazon表示旨在帮助用户更直观地发现需求，但引发部分商家对“AI抢流量”的担忧。",
+                            "source": "TechCrunch AI / The Verge AI",
+                            "url": "https://techcrunch.com/2026/06/03/amazon-will-show-ai-product-images-when-you-search-for-some-reason/"
+                    },
+                    {
+                            "tag": "研究/报告",
+                            "title": "中国信通院启动高质量Token服务能力攀登计划",
+                            "summary": "中国信通院人工智能研究所联合AIIA联盟宣布将于近期召开研讨会，正式启动“高质量Token服务能力攀登计划”。该计划旨在建立中文语料Token的质量分级标准，推动大模型训练数据的规范化，成员单位包括国内主要云厂商、AI独角兽及头部互联网平台。",
+                            "source": "36氪",
+                            "url": "https://36kr.com/newsflashes/3838303496342019"
+                    },
+                    {
+                            "tag": "政策监管",
+                            "title": "Amazon面临Ring面部识别功能集体诉讼，指控隐私泄露",
+                            "summary": "弗吉尼亚州居民Charles Sigwalt在西雅图联邦法院提起集体诉讼，指控Amazon旗下Ring的Familiar Faces功能未经用户同意收集并使用用户生物识别数据，违反伊利诺伊州《生物识别信息隐私法》。诉讼寻求集体赔偿，金额可能达数亿美元，这将成为AI消费硬件隐私合规的里程碑案例。",
+                            "source": "TechCrunch AI",
+                            "url": "https://techcrunch.com/2026/06/02/amazon-faces-class-action-lawsuit-over-ring-facial-recognition-feature/"
+                    }
+            ]
+    },
+    {
             "date": "2026-06-03",
             "items": [
                     {
