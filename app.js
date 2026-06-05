@@ -77,6 +77,49 @@ function isYesterday(dateStr) {
     return dateStr === yesterday.toISOString().split('T')[0];
 }
 
+// ========== 每日资讯缓存处理 ==========
+let freshNewsData = null;
+let newsRefreshPromise = null;
+
+function getNewsData() {
+    if (freshNewsData) return freshNewsData;
+    return (typeof AI_NEWS_DATA !== 'undefined') ? AI_NEWS_DATA : [];
+}
+
+function parseNewsDataFile(text) {
+    const match = text.match(/const\s+AI_NEWS_DATA\s*=\s*(\[[\s\S]*\])\s*;?\s*$/);
+    if (!match) return null;
+    return JSON.parse(match[1]);
+}
+
+function refreshNewsData() {
+    if (!window.fetch) return Promise.resolve(false);
+    if (newsRefreshPromise) return newsRefreshPromise;
+
+    newsRefreshPromise = fetch('data/news.js?fresh=' + Date.now(), { cache: 'no-store' })
+        .then(response => {
+            if (!response.ok) throw new Error('news data fetch failed');
+            return response.text();
+        })
+        .then(text => {
+            const data = parseNewsDataFile(text);
+            if (!Array.isArray(data) || data.length === 0) return false;
+
+            const currentLatest = getNewsData()[0]?.date || '';
+            freshNewsData = data;
+            if (data[0]?.date !== currentLatest) {
+                renderNews();
+            }
+            return true;
+        })
+        .catch(() => false)
+        .finally(() => {
+            newsRefreshPromise = null;
+        });
+
+    return newsRefreshPromise;
+}
+
 // ========== 知识树组装 ==========
 const KNOWLEDGE_TREE = [
     DATA_FUNDAMENTALS,
@@ -199,6 +242,9 @@ document.querySelectorAll('.tab-item').forEach(tab => {
         const targetId = tab.dataset.tab;
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
         document.getElementById(targetId).classList.add('active');
+        if (targetId === 'daily-news') {
+            refreshNewsData();
+        }
     });
 });
 
@@ -805,8 +851,7 @@ function renderNews() {
     if (!container) return;
     container.innerHTML = '';
 
-    // 使用外部数据文件
-    const newsData = (typeof AI_NEWS_DATA !== 'undefined') ? AI_NEWS_DATA : [];
+    const newsData = getNewsData();
 
     if (newsData.length === 0) {
         container.innerHTML = '<div class="news-empty">暂无资讯数据</div>';
@@ -1158,6 +1203,7 @@ generateDailyTasks();
 updateCheckinBanner();
 renderTree(KNOWLEDGE_TREE, document.getElementById('tree-container'));
 renderNews();
+refreshNewsData();
 renderCases();
 renderLab();
 renderIdeas();
@@ -1395,7 +1441,7 @@ header.appendChild(btn);
         });
 
         // Search news
-        const newsData = (typeof AI_NEWS_DATA !== 'undefined') ? AI_NEWS_DATA : [];
+        const newsData = getNewsData();
         newsData.forEach(day => {
             day.items.forEach(item => {
                 if (item.title.toLowerCase().includes(lower)) {
@@ -1707,7 +1753,7 @@ function renderWeeklyDigest() {
     const container = document.getElementById('news-list');
     if (!container) return;
 
-    const newsData = (typeof AI_NEWS_DATA !== 'undefined') ? AI_NEWS_DATA : [];
+    const newsData = getNewsData();
     if (newsData.length === 0) return;
 
     const totalCount = newsData.reduce((sum, day) => sum + day.items.length, 0);

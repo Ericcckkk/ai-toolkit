@@ -1,5 +1,5 @@
 // Service Worker - 离线缓存
-const CACHE_NAME = 'ai-toolkit-v7';
+const CACHE_NAME = 'ai-toolkit-v8';
 const ASSETS = [
     './',
     './index.html',
@@ -39,6 +39,12 @@ self.addEventListener('activate', event => {
 
 // 拦截请求：网络优先，回退缓存（确保能获取最新文件）
 self.addEventListener('fetch', event => {
+    const url = new URL(event.request.url);
+    if (url.pathname.endsWith('/data/news.js')) {
+        event.respondWith(fetch(event.request, { cache: 'no-store' }));
+        return;
+    }
+
     event.respondWith(
         fetch(event.request)
             .then(response => {

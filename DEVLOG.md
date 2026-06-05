@@ -49,6 +49,7 @@
 - 本地仓库最初停在 `2026-05-24` 是因为未 pull；已执行 `git pull --rebase origin main`，本地同步到远端最新
 - 当前本机时间为 `2026-06-06 02:06 CST`，workflow 定时是北京时间 08:00，因此 `2026-06-06` 资讯尚未到触发时间
 - 已确认历史缺失日期：`2026-05-22`、`2026-05-25`、`2026-06-01`；由于未认证 REST Actions 查询被 rate limit，暂未拉取这些日期的 workflow 日志
+- 修复每日资讯前端缓存问题：页面启动和点击“每日资讯”时会以 `no-store` 重新拉取 `data/news.js`；service worker 升级到 `ai-toolkit-v8`，且不再缓存 `data/news.js`
 
 ### 2026-05-26
 
