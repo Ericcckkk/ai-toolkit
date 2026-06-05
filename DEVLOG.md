@@ -43,9 +43,15 @@
 
 ## 变更历史
 
+### 2026-06-06
+
+- 排查每日 AI 资讯更新状态：GitHub raw、Vercel 线上和 GitHub Pages 线上 `data/news.js` 均已更新到 `2026-06-05`
+- 本地仓库最初停在 `2026-05-24` 是因为未 pull；已执行 `git pull --rebase origin main`，本地同步到远端最新
+- 当前本机时间为 `2026-06-06 02:06 CST`，workflow 定时是北京时间 08:00，因此 `2026-06-06` 资讯尚未到触发时间
+- 已确认历史缺失日期：`2026-05-22`、`2026-05-25`、`2026-06-01`；由于未认证 REST Actions 查询被 rate limit，暂未拉取这些日期的 workflow 日志
+
 ### 2026-05-26
 
 - 接手项目并按 agent-guide 规则补齐 `README.md` / `DEVLOG.md`
 - 确认本地目录最初只有空 Git 仓库，已关联 `https://github.com/Ericcckkk/ai-toolkit.git` 并拉取 `main`
 - 确认项目缺少标准 README/DEVLOG，后续接手以本文件为状态来源
-
