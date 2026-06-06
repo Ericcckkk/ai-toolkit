@@ -29,6 +29,7 @@ MINIMAX_MODEL = "MiniMax-M2.7"  # Token Plan 支持的旗舰编程/文本模型
 
 NEWS_COUNT = 20  # 每天输出条数
 MAX_RAW_ARTICLES = 50  # 最多发给 AI 的原始文章数（控制输入长度防超时）
+NEWS_RETENTION_DAYS = 30  # 保留最近 30 天资讯
 
 # 新闻标签优先级（与现有数据一致）
 TAG_PRIORITY = [
@@ -431,15 +432,19 @@ def generate_news_digest(raw_articles, target_date):
 
 # ============ 文件更新 ============
 def update_news_js(news_items, target_date):
-    """将新生成的资讯写入 data/news.js（追加到最前面）"""
+    """将新生成的资讯写入 data/news.js，并只保留最近 30 天"""
 
     news_js_path = Path(__file__).parent.parent / "data" / "news.js"
+    header = (
+        "// 每日 AI 资讯数据\n"
+        "// 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告\n"
+    )
 
     # 读取现有文件
     if news_js_path.exists():
         content = news_js_path.read_text(encoding="utf-8")
     else:
-        content = "// 每日 AI 资讯数据\n// 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告\nconst AI_NEWS_DATA = [\n];\n"
+        content = header + "const AI_NEWS_DATA = [\n];\n"
 
     # 检查是否已有当天数据 → 如果有则跳过（防止重复运行）
     if f'"date": "{target_date}"' in content:
@@ -452,36 +457,38 @@ def update_news_js(news_items, target_date):
         "items": news_items
     }
 
-    # 格式化为 JS（4空格缩进）
-    new_day_json = json.dumps(new_day, ensure_ascii=False, indent=8)
-    # 将最外层缩进调整为 4 空格
-    lines = new_day_json.split("\n")
-    adjusted_lines = []
-    for line in lines:
-        # 去掉多余的4空格（因为我们用了8空格缩进来产生内部的4空格效果）
-        adjusted_lines.append("    " + line)
-    new_day_block = "\n".join(adjusted_lines)
-
-    # 找到 AI_NEWS_DATA = [ 后的位置插入
-    # 匹配 "const AI_NEWS_DATA = [\n" 之后的位置
-    match = re.search(r'(const AI_NEWS_DATA = \[\s*\n)', content)
-    if match:
-        insert_pos = match.end()
-        # 检查后面是否有已有数据
-        rest = content[insert_pos:].lstrip()
-        if rest.startswith('{') or rest.startswith('//'):
-            # 已有数据，加逗号
-            new_content = content[:insert_pos] + new_day_block + ",\n" + content[insert_pos:]
-        else:
-            # 空数组
-            new_content = content[:insert_pos] + new_day_block + "\n" + content[insert_pos:]
-    else:
+    match = re.search(r'const AI_NEWS_DATA = (\[[\s\S]*\]);?\s*$', content)
+    if not match:
         log("  [ERROR] 无法定位 AI_NEWS_DATA 数组")
         return False
 
+    try:
+        existing_days = json.loads(match.group(1))
+    except json.JSONDecodeError as e:
+        log(f"  [ERROR] 现有 news.js 解析失败: {e}")
+        return False
+
+    cutoff_date = datetime.strptime(target_date, "%Y-%m-%d").date() - timedelta(days=NEWS_RETENTION_DAYS - 1)
+
+    retained_days = [new_day]
+    for day in existing_days:
+        try:
+            day_date = datetime.strptime(day.get("date", ""), "%Y-%m-%d").date()
+        except ValueError:
+            continue
+        if day_date >= cutoff_date:
+            retained_days.append(day)
+
+    new_content = (
+        header
+        + "const AI_NEWS_DATA = "
+        + json.dumps(retained_days, ensure_ascii=False, indent=4)
+        + ";\n"
+    )
+
     # 写入文件
     news_js_path.write_text(new_content, encoding="utf-8")
-    log(f"  ✓ 已写入 {news_js_path.name}: +{len(news_items)} 条 [{target_date}]")
+    log(f"  ✓ 已写入 {news_js_path.name}: +{len(news_items)} 条 [{target_date}]，保留 {len(retained_days)} 天")
     return True
 
 
