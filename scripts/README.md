@@ -44,6 +44,24 @@ export MINIMAX_API_KEY="your-key-here"
 python scripts/fetch_news.py
 ```
 
+## backfill_news.py - 批量回补缺失日期
+
+适合补 `2026-05-22`、`2026-05-25` 这种漏掉的历史日期，不需要手动一次次触发 workflow。
+
+### 用法
+
+```bash
+python scripts/backfill_news.py --dates 2026-05-22,2026-05-25,2026-06-01
+python scripts/backfill_news.py --start 2026-05-22 --end 2026-06-01
+python scripts/backfill_news.py --dates 2026-05-22,2026-05-25 --dry-run
+```
+
+### GitHub Actions 手动触发
+
+- `target_date`：单日补跑
+- `backfill_dates`：逗号分隔的多日期回补
+- `backfill_start` + `backfill_end`：按日期范围回补
+
 ### 费用
 
 - GitHub Actions：免费（公开仓库无限制，私有仓库 2000 分钟/月）
@@ -55,4 +73,4 @@ python scripts/fetch_news.py
 
 - 如果某天抓取失败（网络问题/API 限流），当天不会更新，次日自动恢复
 - 不会覆盖已有数据（同日数据已存在则跳过）
-- GitHub Actions 有邮件通知功能，可在 Settings 中开启失败通知
+- workflow 失败时会自动创建/更新一个 GitHub issue，成功恢复后自动关闭

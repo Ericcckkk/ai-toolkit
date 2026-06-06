@@ -80,6 +80,18 @@ function isYesterday(dateStr) {
 // ========== 每日资讯缓存处理 ==========
 let freshNewsData = null;
 let newsRefreshPromise = null;
+const NEWS_RETENTION_DAYS = 30;
+const NEWS_TAG_ORDER = ['all', '政策监管', '应用落地', '重要产品发布', '行业格局', '行业格局变动', '大额融资/IPO', '技术突破', '研究/报告'];
+const newsMeta = {
+    latestDate: '',
+    remoteUpdatedAt: '',
+    lastCheckedAt: '',
+    refreshMessage: '等待检查更新'
+};
+const newsUIState = {
+    filterTag: 'all',
+    collapsedDays: {}
+};
 
 function getNewsData() {
     if (freshNewsData) return freshNewsData;
@@ -92,27 +104,99 @@ function parseNewsDataFile(text) {
     return JSON.parse(match[1]);
 }
 
+function formatNewsMetaTime(value) {
+    if (!value) return '未知';
+    const date = new Date(value);
+    if (Number.isNaN(date.getTime())) return '未知';
+    return date.toLocaleString('zh-CN', {
+        month: 'numeric',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+    });
+}
+
+function getNewsAvailableTags(newsData) {
+    const tags = new Set();
+    newsData.forEach(day => {
+        day.items.forEach(item => tags.add(item.tag));
+    });
+
+    return ['all'].concat(
+        Array.from(tags).sort((a, b) => {
+            const ai = NEWS_TAG_ORDER.indexOf(a);
+            const bi = NEWS_TAG_ORDER.indexOf(b);
+            if (ai === -1 && bi === -1) return a.localeCompare(b, 'zh-CN');
+            if (ai === -1) return 1;
+            if (bi === -1) return -1;
+            return ai - bi;
+        })
+    );
+}
+
+function getFilteredNewsData(newsData) {
+    if (newsUIState.filterTag === 'all') return newsData;
+    return newsData
+        .map(day => ({
+            date: day.date,
+            items: day.items.filter(item => item.tag === newsUIState.filterTag)
+        }))
+        .filter(day => day.items.length > 0);
+}
+
+function isNewsPageVisible() {
+    const page = document.getElementById('daily-news');
+    return !!(page && page.classList.contains('active'));
+}
+
+function isNewsDayCollapsed(day, index) {
+    if (Object.prototype.hasOwnProperty.call(newsUIState.collapsedDays, day.date)) {
+        return newsUIState.collapsedDays[day.date];
+    }
+    return index > 1;
+}
+
+function setAllNewsDaysCollapsed(days, collapsed) {
+    days.forEach(day => {
+        newsUIState.collapsedDays[day.date] = collapsed;
+    });
+}
+
 function refreshNewsData() {
     if (!window.fetch) return Promise.resolve(false);
     if (newsRefreshPromise) return newsRefreshPromise;
+    newsMeta.refreshMessage = '正在检查更新';
+    if (isNewsPageVisible()) renderNews();
+
+    const checkedAt = new Date().toISOString();
 
     newsRefreshPromise = fetch('data/news.js?fresh=' + Date.now(), { cache: 'no-store' })
         .then(response => {
             if (!response.ok) throw new Error('news data fetch failed');
-            return response.text();
+            const lastModified = response.headers.get('last-modified') || '';
+            return response.text().then(text => ({ text, lastModified }));
         })
-        .then(text => {
+        .then(({ text, lastModified }) => {
             const data = parseNewsDataFile(text);
             if (!Array.isArray(data) || data.length === 0) return false;
 
             const currentLatest = getNewsData()[0]?.date || '';
             freshNewsData = data;
-            if (data[0]?.date !== currentLatest) {
+            newsMeta.latestDate = data[0]?.date || '';
+            newsMeta.remoteUpdatedAt = lastModified ? new Date(lastModified).toISOString() : newsMeta.remoteUpdatedAt;
+            newsMeta.lastCheckedAt = checkedAt;
+            newsMeta.refreshMessage = data[0]?.date !== currentLatest ? '已发现并载入最新资讯' : '已是最新数据';
+            if (isNewsPageVisible() || data[0]?.date !== currentLatest) {
                 renderNews();
             }
-            return true;
+            return data[0]?.date !== currentLatest;
         })
-        .catch(() => false)
+        .catch(() => {
+            newsMeta.lastCheckedAt = checkedAt;
+            newsMeta.refreshMessage = '更新检查失败';
+            if (isNewsPageVisible()) renderNews();
+            return false;
+        })
         .finally(() => {
             newsRefreshPromise = null;
         });
@@ -852,30 +936,107 @@ function renderNews() {
     container.innerHTML = '';
 
     const newsData = getNewsData();
+    const filteredNewsData = getFilteredNewsData(newsData);
+    const availableTags = getNewsAvailableTags(newsData);
+    const hasCollapsedDays = filteredNewsData.some((day, index) => isNewsDayCollapsed(day, index));
+
+    if (!newsMeta.latestDate && newsData[0]?.date) {
+        newsMeta.latestDate = newsData[0].date;
+    }
+
+    const statusCard = document.createElement('div');
+    statusCard.className = 'news-status-card';
+    statusCard.innerHTML = `
+        <div class="news-status-main">
+            <div>
+                <div class="news-status-label">最新日期</div>
+                <div class="news-status-value">${newsMeta.latestDate || '暂无数据'}</div>
+            </div>
+            <div>
+                <div class="news-status-label">数据更新时间</div>
+                <div class="news-status-sub">${formatNewsMetaTime(newsMeta.remoteUpdatedAt)}</div>
+            </div>
+            <div>
+                <div class="news-status-label">上次检查</div>
+                <div class="news-status-sub">${formatNewsMetaTime(newsMeta.lastCheckedAt)}</div>
+            </div>
+            <div>
+                <div class="news-status-label">归档窗口</div>
+                <div class="news-status-sub">${newsData.length}/${NEWS_RETENTION_DAYS} 天</div>
+            </div>
+        </div>
+        <div class="news-status-actions">
+            <button class="news-action-btn" id="news-refresh-btn" ${newsRefreshPromise ? 'disabled' : ''}>
+                ${newsRefreshPromise ? '检查中...' : '检查更新'}
+            </button>
+            <button class="news-action-btn secondary" id="news-collapse-btn" ${filteredNewsData.length === 0 ? 'disabled' : ''}>
+                ${hasCollapsedDays ? '展开全部' : '折叠旧闻'}
+            </button>
+        </div>
+        <div class="news-status-note">${newsMeta.refreshMessage}</div>
+    `;
+    container.appendChild(statusCard);
+
+    if (newsUIState.filterTag !== 'all' || availableTags.length > 2) {
+        const filterBar = document.createElement('div');
+        filterBar.className = 'news-filter-bar';
+        filterBar.innerHTML = availableTags.map(tag => `
+            <button class="news-filter-chip ${newsUIState.filterTag === tag ? 'active' : ''}" data-tag="${tag}">
+                ${tag === 'all' ? '全部' : tag}
+            </button>
+        `).join('');
+        container.appendChild(filterBar);
+    }
 
     if (newsData.length === 0) {
-        container.innerHTML = '<div class="news-empty">暂无资讯数据</div>';
+        const emptyState = document.createElement('div');
+        emptyState.className = 'news-empty';
+        emptyState.textContent = '暂无资讯数据';
+        container.appendChild(emptyState);
         return;
     }
 
-    newsData.forEach(day => {
+    const digestCard = buildWeeklyDigestCard(newsData);
+    if (newsUIState.filterTag === 'all' && digestCard) {
+        container.appendChild(digestCard);
+    }
+
+    if (filteredNewsData.length === 0) {
+        const emptyState = document.createElement('div');
+        emptyState.className = 'news-empty';
+        emptyState.textContent = '当前标签下暂无资讯';
+        container.appendChild(emptyState);
+    }
+
+    filteredNewsData.forEach((day, index) => {
         const daySection = document.createElement('div');
         daySection.className = 'news-day';
+        const collapsed = isNewsDayCollapsed(day, index);
 
-        const dateLabel = document.createElement('div');
+        const dateLabel = document.createElement('button');
+        dateLabel.type = 'button';
         dateLabel.className = 'news-date';
         const isToday_ = day.date === getToday();
         const dayOfWeek = ['日','一','二','三','四','五','六'][new Date(day.date).getDay()];
-        dateLabel.innerHTML = isToday_
-            ? `<span class="news-date-today">今日资讯</span> <span class="news-date-sub">${day.date} 周${dayOfWeek}</span>`
-            : `${day.date} 周${dayOfWeek}`;
+        dateLabel.innerHTML = `
+            <span class="news-date-left">
+                ${isToday_
+                    ? `<span class="news-date-today">今日资讯</span> <span class="news-date-sub">${day.date} 周${dayOfWeek}</span>`
+                    : `<span>${day.date} 周${dayOfWeek}</span>`}
+            </span>
+            <span class="news-date-right">
+                <span class="news-count-inline">${day.items.length} 条</span>
+                <span class="news-day-arrow ${collapsed ? '' : 'expanded'}">›</span>
+            </span>
+        `;
         daySection.appendChild(dateLabel);
+        dateLabel.addEventListener('click', () => {
+            newsUIState.collapsedDays[day.date] = !collapsed;
+            renderNews();
+        });
 
-        // 资讯数量统计
-        const countLabel = document.createElement('div');
-        countLabel.className = 'news-count';
-        countLabel.textContent = `${day.items.length} 条资讯`;
-        daySection.appendChild(countLabel);
+        const dayBody = document.createElement('div');
+        dayBody.className = 'news-day-body' + (collapsed ? ' collapsed' : '');
 
         day.items.forEach((news, index) => {
             const card = document.createElement('div');
@@ -908,10 +1069,33 @@ function renderNews() {
                 card.classList.toggle('expanded');
             });
 
-            daySection.appendChild(card);
+            dayBody.appendChild(card);
         });
 
+        daySection.appendChild(dayBody);
         container.appendChild(daySection);
+    });
+
+    const refreshBtn = document.getElementById('news-refresh-btn');
+    if (refreshBtn) {
+        refreshBtn.addEventListener('click', async () => {
+            await refreshNewsData();
+        });
+    }
+
+    const collapseBtn = document.getElementById('news-collapse-btn');
+    if (collapseBtn) {
+        collapseBtn.addEventListener('click', () => {
+            setAllNewsDaysCollapsed(filteredNewsData, !hasCollapsedDays);
+            renderNews();
+        });
+    }
+
+    container.querySelectorAll('.news-filter-chip').forEach(btn => {
+        btn.addEventListener('click', () => {
+            newsUIState.filterTag = btn.dataset.tag;
+            renderNews();
+        });
     });
 }
 
@@ -1749,12 +1933,8 @@ function initFavorites() {
 initFavorites();
 
 // ========== Feature 4: AI 新闻周报 ==========
-function renderWeeklyDigest() {
-    const container = document.getElementById('news-list');
-    if (!container) return;
-
-    const newsData = getNewsData();
-    if (newsData.length === 0) return;
+function buildWeeklyDigestCard(newsData) {
+    if (!newsData || newsData.length === 0) return null;
 
     const totalCount = newsData.reduce((sum, day) => sum + day.items.length, 0);
 
@@ -1863,7 +2043,7 @@ function renderWeeklyDigest() {
         }
     });
 
-    container.insertBefore(digestCard, container.firstChild);
+    return digestCard;
 }
 
 function generateEditorSummary(newsData, headlines, topMentions) {
@@ -1910,9 +2090,6 @@ function generateEditorSummary(newsData, headlines, topMentions) {
 
     return summary;
 }
-
-// Call after renderNews
-renderWeeklyDigest();
 
 // ========== Feature 5: 互动式学习路径推荐 ==========
 function renderRecommendations() {

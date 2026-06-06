@@ -51,6 +51,11 @@
 - 已确认历史缺失日期：`2026-05-22`、`2026-05-25`、`2026-06-01`；由于未认证 REST Actions 查询被 rate limit，暂未拉取这些日期的 workflow 日志
 - 修复每日资讯前端缓存问题：页面启动和点击“每日资讯”时会以 `no-store` 重新拉取 `data/news.js`；service worker 升级到 `ai-toolkit-v8`，且不再缓存 `data/news.js`
 - 调整每日资讯存储策略：`scripts/fetch_news.py` 现在会在写入新一天资讯后，只保留最近 30 天的数据窗口；老数据不再无限累计
+- 新增每日资讯页状态条与交互：展示最新日期、数据更新时间、上次检查时间、30 天归档窗口，并增加“检查更新”、标签筛选、按天折叠/展开
+- 新增 `scripts/backfill_news.py`：支持按离散日期或日期范围批量回补缺失资讯，可在本地或 GitHub Actions 手动触发
+- 扩展 `.github/workflows/daily-news.yml`：支持 `target_date`、`backfill_dates`、`backfill_start`、`backfill_end` 四类手动输入；自动化失败会创建/更新 issue，恢复成功后自动关闭
+- 修正回补与 30 天窗口的边界逻辑：回补旧日期时，保留窗口现在以数据中的最新日期为准，不会因为补历史而误删更近的资讯
+- 本地验证通过：`node --check app.js`、`scripts/fetch_news.py` / `scripts/backfill_news.py` AST 解析、workflow YAML 解析、`curl -I http://localhost:8787/`
 
 ### 2026-05-26
 

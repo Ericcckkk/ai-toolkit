@@ -8,12 +8,25 @@ on:
   workflow_dispatch:  # 手动触发按钮
     inputs:
       target_date:
-        description: '指定日期（格式 YYYY-MM-DD，留空则自动取今天）'
+        description: '单日补跑，格式 YYYY-MM-DD；留空则默认今天'
+        required: false
+        default: ''
+      backfill_dates:
+        description: '批量回补日期列表，逗号分隔，例如 2026-05-22,2026-05-25'
+        required: false
+        default: ''
+      backfill_start:
+        description: '批量回补起始日期 YYYY-MM-DD'
+        required: false
+        default: ''
+      backfill_end:
+        description: '批量回补结束日期 YYYY-MM-DD'
         required: false
         default: ''
 
 permissions:
   contents: write  # 需要写权限来 push 更新
+  issues: write
 
 jobs:
   fetch-and-update:
@@ -36,7 +49,14 @@ jobs:
           MINIMAX_API_KEY: ${{ secrets.MINIMAX_API_KEY }}
           GNEWS_API_KEY: ${{ secrets.GNEWS_API_KEY }}  # 可选
           TARGET_DATE: ${{ github.event.inputs.target_date }}
-        run: python scripts/fetch_news.py
+        run: |
+          if [ -n "${{ github.event.inputs.backfill_dates }}" ]; then
+            python scripts/backfill_news.py --dates "${{ github.event.inputs.backfill_dates }}"
+          elif [ -n "${{ github.event.inputs.backfill_start }}" ] && [ -n "${{ github.event.inputs.backfill_end }}" ]; then
+            python scripts/backfill_news.py --start "${{ github.event.inputs.backfill_start }}" --end "${{ github.event.inputs.backfill_end }}"
+          else
+            python scripts/fetch_news.py
+          fi
 
       - name: Check for changes
         id: check_changes
@@ -61,3 +81,82 @@ jobs:
           git add data/news.js
           git commit -m "📰 每日资讯自动更新 ${TODAY}"
           git push
+
+      - name: Create or update failure issue
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = '[Automation] Daily AI News Update failed';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const inputs = context.payload.inputs || {};
+            const mode = (inputs.backfill_dates || (inputs.backfill_start && inputs.backfill_end)) ? 'backfill' : 'single';
+            const body = [
+              '每日 AI 资讯自动化运行失败。',
+              '',
+              `- 时间: ${new Date().toISOString()}`,
+              `- 模式: ${mode}`,
+              `- target_date: ${inputs.target_date || 'today'}`,
+              `- backfill_dates: ${inputs.backfill_dates || 'n/a'}`,
+              `- backfill_range: ${inputs.backfill_start && inputs.backfill_end ? `${inputs.backfill_start} -> ${inputs.backfill_end}` : 'n/a'}`,
+              `- run: ${runUrl}`,
+            ].join('\n');
+
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const existing = issues.find(issue => issue.title === title);
+
+            if (existing) {
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body
+              });
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: existing.number,
+                body: `新的失败记录：${runUrl}`
+              });
+            } else {
+              await github.rest.issues.create({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                title,
+                body
+              });
+            }
+
+      - name: Close failure issue on success
+        if: success()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const title = '[Automation] Daily AI News Update failed';
+            const runUrl = `${context.serverUrl}/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}`;
+            const { data: issues } = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: 'open',
+              per_page: 100
+            });
+            const existing = issues.find(issue => issue.title === title);
+            if (!existing) return;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existing.number,
+              body: `自动化已恢复成功：${runUrl}`
+            });
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: existing.number,
+              state: 'closed'
+            });

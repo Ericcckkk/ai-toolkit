@@ -432,7 +432,7 @@ def generate_news_digest(raw_articles, target_date):
 
 # ============ 文件更新 ============
 def update_news_js(news_items, target_date):
-    """将新生成的资讯写入 data/news.js，并只保留最近 30 天"""
+    """将新生成的资讯写入 data/news.js，并只保留相对最新日期最近 30 天"""
 
     news_js_path = Path(__file__).parent.parent / "data" / "news.js"
     header = (
@@ -468,16 +468,26 @@ def update_news_js(news_items, target_date):
         log(f"  [ERROR] 现有 news.js 解析失败: {e}")
         return False
 
-    cutoff_date = datetime.strptime(target_date, "%Y-%m-%d").date() - timedelta(days=NEWS_RETENTION_DAYS - 1)
-
-    retained_days = [new_day]
+    merged_days = {}
     for day in existing_days:
+        day_date_raw = day.get("date", "")
         try:
-            day_date = datetime.strptime(day.get("date", ""), "%Y-%m-%d").date()
+            datetime.strptime(day_date_raw, "%Y-%m-%d")
         except ValueError:
             continue
-        if day_date >= cutoff_date:
-            retained_days.append(day)
+        merged_days[day_date_raw] = day
+    merged_days[target_date] = new_day
+
+    sorted_dates = sorted(merged_days.keys(), reverse=True)
+    latest_date = datetime.strptime(sorted_dates[0], "%Y-%m-%d").date()
+    cutoff_date = latest_date - timedelta(days=NEWS_RETENTION_DAYS - 1)
+
+    retained_days = []
+    for day_date_raw in sorted_dates:
+        day_date = datetime.strptime(day_date_raw, "%Y-%m-%d").date()
+        if day_date < cutoff_date:
+            continue
+        retained_days.append(merged_days[day_date_raw])
 
     new_content = (
         header

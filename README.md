@@ -66,7 +66,13 @@ workflow：
 | `MINIMAX_API_KEY` | 是 | MiniMax Token Plan API Key |
 | `GNEWS_API_KEY` | 否 | 增强英文新闻源覆盖 |
 
-脚本会从 RSS、Google/Bing News 和可选 GNews 收集素材，用 MiniMax 生成结构化摘要，并把新日期的数据追加到 `data/news.js` 顶部。
+脚本会从 RSS、Google/Bing News 和可选 GNews 收集素材，用 MiniMax 生成结构化摘要，并把新日期的数据写入 `data/news.js` 顶部。
+
+当前策略：
+
+- 前端/PWA 会在进入“每日 AI 资讯”时主动以 `no-store` 检查 `data/news.js` 最新内容，避免长期命中旧缓存
+- `data/news.js` 只保留最近 30 天的数据窗口，避免静态数据文件无限增长
+- 支持在 GitHub Actions 中手动补跑单日，或批量回补缺失日期/日期范围
 
 ## 数据同步
 
@@ -92,4 +98,3 @@ workflow：
 - 真实数据放在 `data/` 或接口中，不要硬编码到 HTML
 - 完成独立任务后更新 `DEVLOG.md`
 - commit message 使用英文 `type: description`
-
