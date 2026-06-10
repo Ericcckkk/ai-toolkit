@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-06-10",
+        "items": [
+            {
+                "tag": "重要产品发布",
+                "title": "苹果发布「Siri AI」全面升级版：大模型驱动，更懂用户意图",
+                "summary": "苹果在WWDC 2026上发布全新「Siri AI」，基于大语言模型重构，用户可与Siri进行更自然的对话，并实现跨App执行复杂任务。这是苹果在AI助手领域迟到但重量级的反击，被视为苹果迄今最激进的Siri升级，标志着端侧AI助手进入全面竞争阶段。对开发者而言，支持Siri AI的API生态将带来新的交互范式机会。",
+                "source": "Apple Newsroom / TechCrunch",
+                "url": "https://www.apple.com/newsroom/2026/06/apple-introduces-siri-ai-a-profoundly-more-capable-and-personal-assistant/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI洽谈租赁俄亥俄州10GW数据中心，20年期租约破纪录",
+                "summary": "OpenAI正在洽谈租赁俄亥俄州一处容量高达10GW的数据中心，拟签20年期租约，这将是该公司迄今规模最大的基础设施投资。英伟达已就为该项目提供信贷支持进行磋商。10GW相当于约800万家庭同时用电的峰值负荷，意味着OpenAI正在为下一代模型训练与推理做超大规模算力储备，显示AI军备竞赛进入新阶段。",
+                "source": "36氪 / 界面新闻",
+                "url": "https://36kr.com/newsflashes/3846737561012742"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Meta与信实集团合作在印度共建168兆瓦AI数据中心",
+                "summary": "Facebook母公司Meta与印度信实工业集团达成合作，将在古吉拉特邦贾姆纳加尔建设容量168兆瓦的数据中心，Meta将租用该设施。这是大型科技公司深化印度市场布局的又一信号，也反映了AI算力基础设施正在从北美向新兴市场延伸。对亚太AI基础设施赛道而言，这一合作将加速区域数据中心的竞争格局重塑。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3846756486793728"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic发布Claude Fable 5：能一键生成可玩游戏的新模型",
+                "summary": "Anthropic正式发布Claude Fable 5，该模型具备一键生成可运行视频游戏的能力，引发开发者社区广泛讨论，被形容为「更像是AI平等的预览而非模型发布」。TechCrunch评价其将成为网页「氛围程序员」的热销工具。Fable 5在创意生成与代码生成上的突破，再次拉高了行业对多模态生成能力的期待阈值。",
+                "source": "36氪 / TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/09/anthropics-fable-5-can-make-weirdly-fun-video-games-with-the-click-of-a-button/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "中国计划投资2950亿美元建设AI数据中心，采用国产芯片",
+                "summary": "据Quartz报道，中国正规划一项规模达2950亿美元的AI数据中心建设计划，重点采用华为等国产芯片。这将是全球最大规模的AI基础设施投资之一，旨在构建独立于美国芯片限制的算力体系。知情人士称该计划涵盖多个省份的数据中心集群，目标是在2030年前实现算力自主可控。此举将深刻影响全球AI芯片竞争格局。",
+                "source": "Quartz / Hacker News",
+                "url": "https://qz.com/china-ai-data-center-buildout-295-billion-huawei-chips-060926"
+            },
+            {
+                "tag": "行业格局",
+                "title": "腾讯、阿里等入股脑机接口研发商阶梯医疗",
+                "summary": "36氪获悉，阶梯医疗完成新一轮融资，腾讯、阿里等头部大厂联合入股。阶梯医疗专注于脑机接口技术研发，此次大厂联合注资显示科技巨头正加速布局下一代人机交互技术。脑机接口被视为AI与医疗深度融合的关键方向，此次融资将推动国产脑机接口商业化进程加速。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3845899768760580"
+            },
+            {
+                "tag": "政策监管",
+                "title": "德国法院裁定Google须为AI Overviews中的错误答案承担法律责任",
+                "summary": "德国法院作出里程碑式裁决，认定Google须为其AI Overviews功能中的错误答案承担法律责任。这一判决将AI生成内容的责任归属首次纳入法律框架，对所有提供AI搜索功能的科技公司敲响警钟。律师认为，这意味着AI服务商不能以「AI生成内容非原创」为由规避责任，内容审核合规成本将显著上升。",
+                "source": "The Decoder / Hacker News",
+                "url": "https://the-decoder.com/landmark-german-ruling-declares-googles-ai-overviews-are-googles-own-words-and-make"
+            },
+            {
+                "tag": "政策监管",
+                "title": "加拿大拟立法对社交媒体和AI平台引入年龄限制",
+                "summary": "加拿大政府即将出台的在线危害法案预计将包含针对社交媒体平台和AI系统的年龄限制条款。这是继欧盟AI法案之后，又一主要经济体通过监管框架约束AI应用。该立法若通过，将影响在加拿大运营的所有AI产品和服务，相关企业需提前调整合规策略。",
+                "source": "CBC News / Hacker News",
+                "url": "https://www.cbc.ca/news/politics/online-harms-social-media-ban-youth-teens-9.7228651"
+            },
+            {
+                "tag": "行业格局",
+                "title": "微软AI负责人公开批评Anthropic，称Claude宣传误导公众",
+                "summary": "微软AI负责人Mustafa Suleyman公开点名批评Anthropic，称其对外宣传中暗示Claude具有意识，这是对公众的误导。他强调AI系统不具备真正的感知能力，业界不应过度拟人化AI。这一罕见公开炮轰发生在AI安全信任危机加剧的背景下，凸显了大厂之间围绕AI伦理话语权的竞争正趋于激烈。",
+                "source": "The Verge / Hacker News",
+                "url": "https://www.theverge.com/tech/947197/microsoft-ai-mustafa-suleyman-anthropic-claude-conscious"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "联合国科学家警告：AI正在威胁数十亿人的自然资源",
+                "summary": "联合国科学家发布报告，揭示AI对环境的重大影响：数据中心的能源消耗、水资源使用和土地占用已对全球可持续发展构成威胁。报告呼吁在AI快速扩张的背景下建立更严格的环境监管机制。AI算力的环境代价正从边缘话题进入主流政策讨论，这对数据中心选址和能源采购策略将产生深远影响。",
+                "source": "UN News / The Independent / Hacker News",
+                "url": "https://unu.edu/inweh/news/environmental-cost-of-AIs-Enrgy-use-carbon-water-and-land-footprints"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "千诀科技完成数亿元A轮融资，具身智能世界模型落地终端超十万台",
+                "summary": "具身智能世界模型公司千诀科技完成数亿元A轮融资，由京铭资本领投，山东新动能、山东财金资本等多家机构跟投。千诀科技专注分布式预测世界模型研发，其技术已落地终端设备达十万量级。本轮融资规模在具身智能赛道属头部级别，显示资本市场对物理世界AI建模方向的持续看好。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3844720012151040"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "微面科技获顺为资本数百万美元融资，聚焦人类感知理解基座模型",
+                "summary": "北京微面科技完成数百万美元融资，由顺为资本独家投资。微面科技自研人类感知理解基座模型，目标是打造新一代人机交互硬件。这是顺为资本在感知AI领域的又一布局，该赛道因Vision Pro等空间计算设备的兴起而受到关注，但商业化路径仍有待验证。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3846789531404549"
+            },
+            {
+                "tag": "行业格局",
+                "title": "钉钉AI产品负责人马锐拉离职，曾主导AI助理产品战略",
+                "summary": "钉钉副总裁、AI产品负责人马锐拉于5月15日正式离职，结束三年阿里生涯。他在个人公众号发文回顾了钉钉AI战略的探索过程。马锐拉的离开正值钉钉AI从产品化迈向商业化的关键阶段，短期内可能影响钉钉AI产品的迭代节奏，也引发业内对大厂AI产品负责人频繁流动的关注。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3846753323157766"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "赛豆科技发布AI汽车品牌AIVA，携手火山引擎共建智能座舱",
+                "summary": "赛豆科技正式发布AI先锋生态出行品牌AIVA，并宣布与火山引擎联合定义、联合设计AI汽车体验。火山引擎为AIVA提供豆包大模型等技术支持，聚焦智能座舱交互体验。这是豆包大模型在汽车场景落地的重要案例，标志着大模型在车载场景的商业化应用正在从概念走向产品化。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3846729007630601"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Google下调AI订阅服务价格，掀起订阅价格战",
+                "summary": "Google大幅下调其平价AI订阅服务的定价，此举被视为在AI订阅市场向OpenAI和Anthropic发起价格战的关键一步。TechCrunch指出，Google此举意在扩大用户基数，以数据和使用量驱动模型迭代。随着头部玩家纷纷降价，AI订阅市场格局正在快速重塑，中小厂商的生存空间进一步被压缩。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/09/google-just-fired-a-warning-shot-in-the-ai-subscription-price-wars/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "Cognition报告：AI软件工程师生产力约为初级工程师的35倍",
+                "summary": "Cognition发布报告，首次量化了自主AI软件工程师的生产力水平。数据显示，在基准测试中，AI软件工程师的工作效率约为初级工程师的35倍。这一数据若属实，将对软件工程团队构成和科技公司招聘策略产生深远影响，意味着大量基础编码工作将加速自动化。",
+                "source": "Cognition Blog / Hacker News",
+                "url": "https://cognition.ai/blog/ai-productivity"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国男子因AI面部识别误判遭不当逮捕，起诉寻求司法救济",
+                "summary": "美国北卡罗来纳州一名男子因AI面部识别技术误判被不当逮捕，目前正在寻求司法救济。此案再次将AI在执法场景中的准确性和公民权利保护问题推上风口浪尖。随着AI在司法和安全领域的应用扩大，相关法律框架的建立已迫在眉睫。",
+                "source": "WSOCTV / Hacker News",
+                "url": "https://www.wsoctv.com/news/local/ai-misidentification-results-wrongful-arrest-man-seeks-justice/I7UQJWV33FBN3LMKHCSXI6FIVA/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "法官因双方律师提交AI撰写文件且未阅读，取消整个案件审理",
+                "summary": "一起案件审理中，双方律师均提交了由AI生成的法律文书且承认未曾阅读，法官因此直接取消整个案件审理。这一事件暴露了法律从业者过度依赖AI撰写文本的风险，同时也引发对律师职业责任边界的讨论。随着AI文书在法律行业的普及，监管机构可能出台相应审查规范。",
+                "source": "Gizmodo / Hacker News",
+                "url": "https://gizmodo.com/judge-cancels-whole-case-after-lawyers-admit-they-didnt-read-ai-generated-filings-2000769668"
+            },
+            {
+                "tag": "技术突破",
+                "title": "开源项目context-mode发布：AI编程上下文成本降低98%",
+                "summary": "一款名为context-mode的开源MCP插件登顶GitHubTrending，该项目专为解决AI编程中「模型失忆」与「Token溢出」问题而设计，可将上下文优化成本降低98%。这对于需要长时间开发复杂项目的团队而言是实质性工具升级，也反映出AI编程辅助工具正从模型层向工具层快速渗透。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3845645258541319"
+            },
+            {
+                "tag": "行业格局",
+                "title": "24岁AI创业者获Jane Street投资，融资规模接近5000万美元",
+                "summary": "一位年仅24岁的AI创业者获得Jane Street等知名机构投资，融资规模接近5000万美元。与传统VC路径不同，该创始人通过LP关系网络快速完成融资，展现了AI领域年轻创始人的新型资本获取模式。这一案例再次印证AI赛道对年轻创业者的强烈吸引力，也反映私募资本对AI早期项目日益激进的布局策略。",
+                "source": "MSN / Hacker News",
+                "url": "https://www.msn.com/en-us/money/markets/the-24-year-old-ai-wiz-who-counts-jane-street-as-an-investor/ar-AA256QfS"
+            }
+        ]
+    },
+    {
         "date": "2026-06-07",
         "items": [
             {
