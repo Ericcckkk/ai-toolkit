@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-06-14",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "美国政府下令Anthropic全球停用Claude 5，AI出口管制风暴来袭",
+                "summary": "美国政府6月13日下令Anthropic停止向所有外国国民提供其最新AI模型Claude 5（原名Fable/Mythos），理由是安全担忧。这是美国首次对本土AI公司实施如此广泛的出口限制。据Politico报道，整个决策过程仅在24小时内完成。Amazon CEO Andy Jassy据报在决策前提出了安全担忧。Anthropic发表声明表示强烈反对，称这一决定基于“狭隘的越狱可能性”。分析认为，此举将重塑全球AI竞争格局， Frontier AI的获取将按国籍进行分层。",
+                "source": "Al Jazeera / The Verge / TechCrunch / Politico",
+                "url": "https://www.aljazeera.com/news/2026/6/13/us-orders-anthropic-to-disable-ai-models-for-all-foreign-nationals"
+            },
+            {
+                "tag": "政策监管",
+                "title": "英国宣布15亿英镑AI硬件计划，含超级计算机与芯片投资",
+                "summary": "英国政府6月8日正式公布总额15亿英镑（约19亿美元）的AI基础设施投资计划，重点包括超级计算机建设和芯片基金。该计划旨在增强英国在AI领域的自主能力，减少对海外算力的依赖。这是英国在脱欧后最大规模的AI战略投资，标志着欧洲主要经济体加速布局AI主权基础设施。",
+                "source": "Reuters / Hacker News",
+                "url": "https://www.reuters.com/world/uk/uk-sets-out-15-billion-ai-hardware-plan-with-supercomputer-chip-funding-2026-06-08/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Meta被迫撤销20亿美元Manus交易，因北京监管要求",
+                "summary": "据TechCrunch 6月13日报道，Meta已开始拆除其20亿美元收购的Manus交易此前置基础设施，此前北京下达了要求该交易撤销的命令。Manus是中国AI agent初创公司，其收购案引发中国监管机构关注。这笔交易的终止反映了中美科技脱钩背景下，中国对关键技术外流的高度警惕，也为中国AI公司的国际化路径蒙上阴影。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国多州总检察长对OpenAI展开调查，涉广告政策与数据处理",
+                "summary": "据TechCrunch 6月13日援引纽约时报报道，多个美国州的总检察长正在对OpenAI展开调查，调查范围涵盖OpenAI的广告政策、数据处理方式以及AI模型安全性等关键问题。目前尚不清楚具体涉及哪些州，但调查反映了监管机构对AI行业日益严格的审查趋势，可能对OpenAI的商业模式产生深远影响。",
+                "source": "The New York Times / TechCrunch AI",
+                "url": "https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Mistral据传融资30亿欧元，估值约230亿美元",
+                "summary": "据TechCrunch 6月12日报道，法国AI独角兽Mistral正在进行一轮约30亿欧元（约35亿美元）的融资，估值将达到约200亿欧元（约230亿美元）。这一估值几乎是Mistral上次C轮融资时的两倍。Mistral以其开源模型著称，若此次融资完成，将成为欧洲有史以来最大规模的AI融资事件之一，也将进一步巩固欧洲在全球AI竞争中的地位。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20b-valuation/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "SpaceX创纪录IPO融资750亿美元，市值突破2.1万亿美元",
+                "summary": "6月12日，SpaceX正式以750亿美元融资规模挂牌上市，成为史上最大IPO。马斯克当天亲赴得州星舰基地远程敲钟。上市首日进入流通的股份仅占总股本4.2%，股价短期冲高。SpaceX市销率超过112倍，远超特斯拉的15倍和英伟达的20倍。公司业务呈“一极盈利、两极亏损”格局。",
+                "source": "36氪 / TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/12/spacex-ipo-live-updates-on-everything-you-need-to-know/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Meta AI部门6500名员工内部动荡，被指“令人窒息”",
+                "summary": "据TechCrunch 6月12日报道，Meta旗下运营仅数月的AI部门正面临严峻内部危机。该部门拥有6500名员工，内部工程师形容工作环境“令人窒息”，团队濒临造反。报道披露了Mark Zuckerberg在员工会议中被AI部门员工打断的场景。这一事件反映了大型科技公司在快速扩张AI团队时面临的管理与文化挑战。",
+                "source": "Wired / TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic发布指数级AI增长政策框架，系统阐述安全立场",
+                "summary": "Anthropic于6月发布了其经济政策框架和AI指数增长政策框架文件，系统阐述了公司对前沿AI安全问题的立场。文件详细讨论了AI能力快速提升带来的风险，以及 Anthropic 在模型安全方面的思考。与此同时，Anthropic还发布了针对AI agent的零信任安全框架文件，为行业提供了重要的安全参考标准。",
+                "source": "Anthropic / Hacker News",
+                "url": "https://www.anthropic.com/policy-on-the-ai-exponential/epf"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "KPMG因AI幻觉撤回AI使用报告，审计行业AI应用蒙阴影",
+                "summary": "据TechCrunch 6月13日报道，四大会计师事务所KPMG撤回了一份关于AI使用情况的内部报告，原因是报告内容存在明显的AI幻觉问题。这是AI在专业领域应用的又一次翻车事件，再次证明当前AI技术尚无法可靠地处理需要精确性的工作任务。审计行业对AI的采用将面临更严格的内部审核。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Google起诉中国AI诈骗团伙，发送2.5亿条AI生成诈骗信息",
+                "summary": "据TechCrunch 6月12日报道，Google对名为\"Outsider Enterprise\"的中国网络犯罪组织提起诉讼，指控其使用AI技术诈骗“数十万受害者”，并发送超过2.5亿条AI生成的诈骗信息。这是科技巨头首次针对AI驱动的网络犯罪采取法律行动，标志着AI安全问题已上升至企业诉讼层面。",
+                "source": "The Register / TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "ClawMoat发布Fable 5后首个AI Agent运行时安全隔离方案",
+                "summary": "ClawMoat于Claude 5被禁后发布了一款针对AI agent的运行时隔离解决方案，旨在防止AI agent执行过程中的越狱和安全风险。该工具解决了AI agent在生产环境中面临的核心安全挑战，可实现对agent行为的细粒度控制和审计。",
+                "source": "Hacker News",
+                "url": "https://clawmoat.com/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "高瓴创投投资消费级柔性机器人公司SoulX，数千万元天使轮",
+                "summary": "36氪获悉，消费级柔性机器人公司SoulX完成数千万元天使轮融资，投资方为高瓴创投，向阳资本担任独家财务顾问。资金将用于产品持续迭代、技术研发及供应链建设。首款机器人产品MoY定位家庭场景，目标是将科幻电影中的“大白”带入现实。这标志着中国VC开始系统性布局消费级AI硬件赛道。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3851572421432324"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Kimi与国有银行合作，全球首张AI原生信用卡开放预约",
+                "summary": "据36氪9点1氪报道，Kimi与某国有银行达成合作，推出全球首张AI原生信用卡并开放预约。该卡深度集成AI能力，可实现智能账单管理、消费洞察和个性化金融服务。这是国产AI大模型在金融场景落地的里程碑事件，也预示着AI与金融的融合将进入新阶段。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3850898430989577"
+            },
+            {
+                "tag": "应用落地",
+                "title": "鲸鸿动能发布“主动式营销”框架，AI加持行业解决方案",
+                "summary": "在HDC 2026鸿蒙生态商业化峰会上，鲸鸿动能系统发布了“主动式营销”框架，通过数据科学洞察广告主痛点，聚合全场景生态资源，构建AI加持的行业解决方案。该框架已在汽车、金融、文旅、快消等行业落地，帮助广告主实现确定性增长，标志着鸿蒙生态商业化进入实质阶段。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3851524397536515"
+            },
+            {
+                "tag": "技术突破",
+                "title": "QodFlow发布AI Agent可直驱的看板工具，填补MCP生态空白",
+                "summary": "初创公司QodFlow发布了一款专为AI agent设计的看板工具，可让AI agent直接操控看板任务流，而非传统的对话式交互。该工具填补了AI agent与EVM（以太坊虚拟机）之间基础设施的空白，为多agent协作提供了新的执行框架。",
+                "source": "Hacker News",
+                "url": "https://www.qodflow.com"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Lime 2.0实现AI Agent零人工认证",
+                "summary": "Lime发布2.0版本，实现了AI agent的零人工认证功能。该工具可让AI agent自主完成身份验证、授权和管理流程，大幅降低了AI agent在企业环境中部署的门槛。这是AI agent自动化能力的重要突破。",
+                "source": "Hacker News",
+                "url": "https://lime.pics"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "36氪研究院发布AI时代留学就业白皮书：传统留学路径溢价失效",
+                "summary": "36氪研究院发布《中国留学生全球就业趋势与人才价值重塑》白皮书，指出在AI浪潮重塑全球产业逻辑的当下，传统留学路径所依赖的学历溢价与信息差正在系统性失效。大量高薪专业的基础性任务面临被AI批量化替代的风险。报告建议05后年轻一代聚焦人机协同时代的不可替代价值。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3846972367866119"
+            },
+            {
+                "tag": "技术突破",
+                "title": "江丰电子先端存储芯片用300mm硅靶批量供货",
+                "summary": "江丰电子在互动平台表示，公司是全球少数几家同时具备技术领先优势与规模化供应能力的高纯金属溅射靶材制造商。其先端存储芯片用高纯300mm硅靶已实现批量供货，超高纯钨靶、铜锰合金靶等高端品类已应用于先进存储芯片制造。这是AI算力基础设施上游的关键材料突破。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3851370635334919"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI CEO奥特曼推迟访韩计划",
+                "summary": "据36氪报道，OpenAI CEO山姆·奥特曼因个人原因推迟原定于6月14日至15日的访韩行程。该行程原计划会见三星电子、Kakao、NAVER等韩国企业负责人。奥特曼访韩的推迟可能影响OpenAI与韩国科技企业的潜在合作，但也为OpenAI在亚洲的布局增添了不确定性。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3849942472512769"
+            },
+            {
+                "tag": "技术突破",
+                "title": "LLM Token价格指数上线，实时追踪大模型API成本",
+                "summary": "LLM Token价格指数网站上线，提供主流大模型API的实时价格追踪服务。该工具为开发者和企业选择AI模型提供了透明的比价参考，有助于降低AI应用开发成本。目前已收录GPT、Claude、DeepSeek等主流模型的token定价数据。",
+                "source": "Hacker News",
+                "url": "https://tokenpriceindex.com"
+            }
+        ]
+    },
+    {
         "date": "2026-06-11",
         "items": [
             {
