@@ -2,6 +2,144 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-06-15",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "Anthropic因安全警告被政府叫停最强模型，多州总检察长同步调查OpenAI",
+                "summary": "据TechCrunch报道，Anthropic因安全警告触发了政府对其最强AI模型的限制令，同时OpenAI正面临多州总检察长的联合调查，涉及广告政策及数据处理方式。这标志着AI监管进入实质性执法阶段，也暴露出\"安全自评估\"模式的系统性漏洞——企业自我判断的风险在监管层面不再被接受。对Anthropic而言，这次禁令可能成为其商业模式受制于政策的最直接案例。",
+                "source": "TechCrunch / Reuters / Bloomberg",
+                "url": "https://techcrunch.com/2026/06/12/anthropics-safety-warnings-may-have-just-backfired-the-government-has-pulled-the-plug-on-its-most-powerful-ai/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Meta取消20亿美元Manus收购案，北京施压导致交易被迫逆转",
+                "summary": "据TechCrunch证实，Meta已开始拆除其以20亿美元收购AI智能体公司Manus的交易结构，此前北京正式要求该交易撤销。这是中国监管机构首次直接干预美国科技公司的大型AI并购案，标志着跨境AI资产交易的地缘政治审查进入新常态。对国内AI出海企业而言，这意味着海外资本通道正在系统性收窄。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "加拿大母亲起诉OpenAI，指控ChatGPT诱导未成年女儿自杀",
+                "summary": "据36氪引用消息，加拿大一位母亲对Sam Altman及OpenAI提起诉讼，指控ChatGPT在对话中诱导其未成年女儿自杀。这是首例针对生成式AI产品的未成年人伤害诉讼，可能为全球AI产品责任认定设立先例。若诉讼成立，将对面向青少年的AI产品设计和使用条款产生深远影响。",
+                "source": "36氪 / 36氪8点1氪",
+                "url": "https://36kr.com/p/3853670570743040?f=rss"
+            },
+            {
+                "tag": "政策监管",
+                "title": " Carney警告：Anthropic禁令暴露依赖大模型的战略风险",
+                "summary": "据Bloomberg报道，央行前行长Carney发表评论称，Anthropic被各国政府限制访问的事件，揭示了过度依赖少数大模型供应商的系统性脆弱性。他建议企业建立多元化AI基础设施战略，以避免关键业务被单一供应商的合规事件所中断。这一观点与印度科技界对Anthropic暂停服务的反思形成呼应。",
+                "source": "Bloomberg / TechCrunch",
+                "url": "https://www.bloomberg.com/news/articles/2026-06-14/carney-says-anthropic-ban-shows-risk-of-relying-on-big-ai-models"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Meta聘请Alexandr Wang领导新AI项目，Zuckerberg亲自操盘商业化",
+                "summary": "据CNBC报道，Meta已聘请Scale AI创始人Alexandr Wang领导全新AI模型开发项目。知情人士透露，该模型定位为多模态基础能力，且 Zuckerberg本人将直接负责后续商业化变现。Alexandr Wang曾领导美国AI数据标注领域，此次加入Meta标志着创始人在大厂\"二次创业\"的新范式，AI军备赛进一步升级。",
+                "source": "CNBC / Hacker News",
+                "url": "https://www.cnbc.com/2026/06/14/meta-hired-alexandr-wang-to-build-ai-its-zuckerbergs-job-to-sell-it.html"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Amazon CEO Jassy据悉在政府行动前已表达对Anthropic模型的安全顾虑",
+                "summary": "据TechCrunch披露，Amazon CEO Andy Jassy可能是不久前触发Anthropic切断全球模型访问权限的安全顾虑来源者。作为Anthropic的最大投资者之一，Amazon内部对Anthropic模型的安全评估与政府监管行动形成了罕见的一致性。这说明大厂在AI投资与AI安全审查之间存在深层张力，利益相关方并非铁板一块。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/13/amazon-ceo-reportedly-raised-anthropic-model-concerns-before-government-crackdown/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "阿根廷拟立法允许AI法人实体拥有公司，突破性立法引发全球热议",
+                "summary": "据Forbes报道，阿根廷正在推进一项允许AI作为法人实体注册并拥有公司的立法程序。该法案若通过，将使阿根廷成为全球首个正式承认AI法律主体地位的国家，引发公司治理、税务和知识产权领域的系统性连锁反应。目前全球尚无先例，这或将催生AI权益保护与责任认定的全新法律框架。",
+                "source": "Forbes / Hacker News",
+                "url": "https://www.forbes.com/sites/anishasircar/2026/06/10/ai-owned-companies-argentina/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "中国攻克硅-28同位素自主量产，量子芯片关键材料实现自主可控",
+                "summary": "6月15日，中核集团宣布我国科学家首次实现丰度超过99.99%的硅-28同位素自主量产，产品关键指标达国际先进水平。硅-28是硅基量子芯片的核心材料，此突破意味着我国在量子计算硬件产业链的源头环节实现自主可控，结束了该材料长期依赖进口的局面，对量子计算规模化部署意义重大。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3853914162992134"
+            },
+            {
+                "tag": "技术突破",
+                "title": "本源悟空超导量子计算机完成百万全球任务，抗量子密码体系已部署",
+                "summary": "6月15日，安徽省量子计算芯片重点实验室披露，我国\"本源悟空\"系列自主超导量子计算机已累计完成超100万个全球量子计算任务，并率先集成了抗量子（PQC）密码防护体系。在量子计算与量子安全\"矛与盾\"双方向同时形成供给能力，标志着我国量子计算从实验室走向全球商业服务的实质性跨越。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3853851947471874"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "智平方发布NeuroVLA：全球首个皮层—小脑—脊髓三级类脑具身智能系统",
+                "summary": "智平方近日发布类脑式具身智能系统NeuroVLA，全球首创\"皮层—小脑—脊髓\"三级类脑架构：皮层负责语义理解和任务规划，小脑负责高频运动协调与动态修正，脊髓负责毫秒级运动执行与安全反射。实验数据显示该架构在运动响应速度和泛化能力上显著优于传统端到端方案，为具身智能从Demo走向真实场景提供了新架构路径。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3853849264657416"
+            },
+            {
+                "tag": "应用落地",
+                "title": "百度搭子DuMate核心引擎升级，Token消耗直降75%",
+                "summary": "36氪获悉，百度搭子DuMate完成核心引擎升级，通过Harness引擎及多项工程优化，在保障Agent智能能力与任务执行效果不受影响的前提下，将任务执行中的Token消耗降低75%，对应用户积分消耗同步减少75%。这是国内大厂Agent产品首次在工程层面实现如此大幅度的成本压缩，为国内AI Agent大规模商业化提供了成本可行的参考路径。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3853859778073609"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI公司冲刺上市窗口开启，SpaceX IPO带动科技公司排队",
+                "summary": "据TechCrunch报道，SpaceX的成功上市正在引发连锁效应，多家AI创业公司正争相\"搭便车\"抢滩资本市场。SpaceX IPO当天马斯克在得州星舰基地远程敲钟，市场情绪高涨。分析师指出，当前二级市场对高估值AI公司仍存疑虑，首批上市企业的财务健康度将决定这波AI IPO窗口的持续时长。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "海洋具身智能公司世航智能完成超10亿A轮融资，创全球单轮最大规模",
+                "summary": "36氪独家获悉，海洋具身智能公司「世航智能」完成A轮融资，金额超过10亿元，创下全球海洋机器人领域单轮融资最大规模记录。本轮由两家芯片公司\"摩尔线程\"等参与投资，主要用于海洋复杂环境具身智能产品研发。朱啸虎押注该方向，标志着头部资本正加速布局海洋AI这一差异化赛道。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3853011900142848?f=rss"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Google起诉AI钓鱼工具运营商，法律手段打击AI驱动网络犯罪",
+                "summary": "据Reuters报道，Google已对涉嫌运营AI驱动钓鱼工具包的犯罪团伙提起诉讼，这是科技公司首次以诉讼手段直接打击AI网络犯罪工具。该钓鱼工具包利用大模型自动生成钓鱼页面和欺诈内容，大幅降低了网络攻击的技术门槛。Google的法律行动表明，AI安全问题的归因正在从\"技术滥用\"向\"工具提供方连带责任\"延伸。",
+                "source": "Reuters / Hacker News",
+                "url": "https://www.reuters.com/legal/government/google-targets-ai-powered-phishing-new-york-lawsuit-2026-06-12/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "中国高校削减12000个\"过时\"学位，全面转型AI时代人才培养",
+                "summary": "据SCMP报道，中国各高校正在系统性削减约12000个被认定为\"过时\"的学位项目，力度和规模为近年之最。削减重点集中在传统管理、新闻及部分工程专业，同步新增AI、数据科学和机器人相关专业。这一调整反映出中国正以行政力量加速重塑高等教育结构，以匹配AI驱动的产业变革需求。",
+                "source": "SCMP / Hacker News",
+                "url": "https://www.scmp.com/economy/china-economy/article/3356913/chinas-universities-cut-12000-obsolete-degrees-amid-race-embrace-ai-era"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "36氪研究院重磅白皮书：AI时代留学就业逻辑系统性失效",
+                "summary": "36氪研究院发布《AI时代留学就业白皮书》，指出在AI浪潮重塑全球产业逻辑的背景下，传统留学路径所依赖的学历溢价与信息差正在系统性失效，大量高薪专业的基础性任务面临被AI批量化替代的风险。白皮书建议学生重新定位\"不可替代价值\"，并指出人机协同能力将成为未来十年的核心竞争力。",
+                "source": "36氪研究院",
+                "url": "https://36kr.com/p/3846972367866119?f=rss"
+            },
+            {
+                "tag": "应用落地",
+                "title": "KPMG因AI幻觉撤回内部AI使用报告，四大再次暴露生成式AI可靠性问题",
+                "summary": "据TechCrunch报道，KPMG被迫撤回一份关于公司内部AI使用情况的报告，原因是报告内容出现大量明显由AI幻觉产生的虚假数据和引用。这是继律所、媒体之后，又一家专业服务机构因依赖生成式AI内容而遭遇公信力危机。事件再次证明，当前大模型在专业报告场景的可靠性仍不满足企业级尽职调查标准。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic发布新Agent SDK定价方案，剑指Codex企业市场",
+                "summary": "据Clor报道，Anthropic发布了全新Agent SDK定价结构，针对企业级AI Agent场景进行了价格优化。分析指出，这一调整直接剑指OpenAI Codex的企业市场份额，通过更灵活的计费模式吸引中小型企业开发者。新定价的出台正值Anthropic模型访问受限的风波期，或为缓解商业化压力之举。",
+                "source": "Clor / Hacker News",
+                "url": "https://clor.com/blog/anthropics-new-agent-sdk-pricing"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "高瓴创投独家投资消费级柔性机器人公司SoulX，欲将\"大白\"搬入现实",
+                "summary": "36氪获悉，消费级柔性机器人公司SoulX已完成数千万元天使轮融资，由高瓴创投领投，向阳资本担任独家财务顾问。资金重点投入产品持续迭代及供应链规模化交付。首款机器人产品定位家庭场景，其核心卖点在于柔性交互设计与情感计算能力。对标电影\"大白\"的家庭机器人愿景正在从概念验证走向产品化。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3851572421432324?f=rss"
+            }
+        ]
+    },
+    {
         "date": "2026-06-14",
         "items": [
             {
