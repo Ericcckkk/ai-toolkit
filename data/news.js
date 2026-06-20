@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-06-20",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "诺贝尔奖得主约翰·江珀离开谷歌DeepMind，加盟Anthropic",
+                "summary": "6月19日，2024年诺贝尔化学奖得主、AlphaFold核心开发者约翰·江珀（John Jumper）在社交平台宣布，将离开工作近九年的谷歌DeepMind，加入AI初创公司Anthropic。这是继Transformer合著者Noam Shazeer之后，又一位顶级AI科学家从谷歌出走。江珀的加盟将显著增强Anthropic在蛋白质结构预测和AI基础研究领域的竞争力，AI安全研究的人才竞争进入新阶段。",
+                "source": "36氪 / Business Insider / Hacker News",
+                "url": "https://36kr.com/p/3855480467543042"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI IPO前引入Transformer合著者Noam Shazeer及前特朗普官员",
+                "summary": "OpenAI正在为其IPO做最后的团队充实工作，将Transformer架构的共同发明人Noam Shazeer从Google DeepMind招致麾下，同时聘请了前特朗普政府官员。此前的IPO筹备中，OpenAI CEO Sam Altman已表示公司预计在2026年完成上市。在Anthropic和谷歌DeepMind持续争夺顶级AI研究人才的当下，OpenAI选择双管齐下补齐政府关系和技术短板，IPO后竞争格局将更加复杂。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI推理初创公司Baseten融资15亿美元，估值130亿美元",
+                "summary": "AI推理基础设施公司Baseten在短短数月内再次完成巨额融资轮，金额达15亿美元，估值推至130亿美元。在\"推理淘金热\"的市场环境下，推理成本优化成为企业部署大模型的核心痛点，资本市场对推理层的热情已不亚于训练层。Baseten的高估值反映出一个明确信号：推理侧的效率竞争将成为下一阶段AI商业化的主战场。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "谷歌自建AI芯片业务挑战英伟达，WSJ披露战略细节",
+                "summary": "《华尔街日报》报道，谷歌正借鉴英伟达的成功路径，将内部自研TPU芯片从仅供自用转向商业化销售，试图打造从芯片到云服务的垂直整合闭环。谷歌既是英伟达GPU的最大客户之一，也是潜在竞争者，这种竞合关系将使AI芯片市场格局面临重塑，云厂商自研芯片的趋势已不可逆转。",
+                "source": "Hacker News / WSJ",
+                "url": "https://www.wsj.com/tech/ai/google-is-using-nvidias-playbook-to-build-a-rival-ai-chip-business-1eac86f9"
+            },
+            {
+                "tag": "行业格局",
+                "title": "亚马逊AWS对外销售AI芯片，剑指500亿美元市场机会",
+                "summary": "亚马逊AWS正在与英伟达和AMD正面竞争，计划向其他数据中心客户销售其自研Trainium和Inferentia芯片。CEO安迪·贾西表示这是一个500亿美元的市场机会。此前AWS芯片仅供内部使用，此次战略转向标志着三大云厂商（谷歌、亚马逊、微软）全面进入AI芯片商业化赛道，芯片市场的多极格局正在形成。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国政府强制Anthropic下架Fable 5，禁令反而引发关注度激增",
+                "summary": "美国政府以安全风险为由，强制Anthropic撤下其最新旗舰模型Fable 5和Fable 5.1。然而TechCrunch分析显示，禁令消息传出后，Anthropic网站访问量不降反升，部分用户通过VPN等手段尝试访问相关模型。这一现象暴露了政府监管AI模型发布的执行困境：强制下架反而成为最有力的\"广告\"，政策效果存疑。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/19/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "具身智能企业穹彻智能再融数亿元，上交深度参与",
+                "summary": "具身智能企业穹彻智能（Noematrix）完成新一轮数亿元融资，无锡数据集团领投，上海交通大学AI未来基金和上海创智学院跟投。穹彻自2023年成立以来持续获得融资，致力于具身智能大模型和机器人产品研发。本轮引入地方数据集团和高校基金，显示具身智能正从纯技术研发进入产业协同阶段，落地路径日益清晰。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3856708724315400"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Snap将AI视频团队分拆为Dotmo独立公司，以减轻成本压力",
+                "summary": "Snap将旗下AI视频生成团队拆分成立独立公司Dotmo，团队成员将从Snap离职加入新公司。Snap曾是AI视频赛道的先驱之一，但高额的AI研发成本迫使大厂选择分拆轻资产运营。这是继Meta、Google之后，又一互联网巨头通过分拆方式应对AI高投入压力的案例，也意味着AI视频生成领域的独立玩家竞争将更加激烈。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "芯生视界完成近亿元种子轮，北大团队入局侵入式脑机接口",
+                "summary": "侵入式脑机接口公司芯生视界完成近亿元人民币种子轮融资，由经纬创投领投，北大科研团队主导研发。侵入式脑机接口在治疗瘫痪、神经退行性疾病等领域已有临床验证，本轮融资将加速其从实验室向产品化跃迁。脑机接口已成为AI与生命科学交叉领域的最新投资热点，学术团队下场正成为该赛道的标志性特征。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3855480467543042"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "中国AI模型token消耗量超越美国，FT揭示产业格局转变",
+                "summary": "《金融时报》披露，中国AI模型在token消耗量上已超越美国竞争对手，显示中国AI产业规模扩张速度惊人。尽管在模型性能最前沿仍有差距，但中国AI厂商正通过海量应用场景和用户基础实现追赶。这一数据改变了业界对中国AI\"跟随者\"的固有认知，中美AI竞争已进入全面拉锯阶段。",
+                "source": "Hacker News / FT",
+                "url": "https://www.ft.com/content/2567877b-9acc-4cf3-a9e5-5f46c1abd13e"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Elastic收购Deductive AI，交易金额最高达8500万美元",
+                "summary": "搜索和数据库公司Elastic已同意收购AI编程辅助初创公司Deductive AI，后者利用AI技术自动检测和修复软件bug，收购价格最高达8500万美元。Deductive AI成立仅三年便获大型企业收购，显示AI编程工具赛道已进入收获期，企业软件巨头正加速通过收购补齐AI能力短板。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "印度首富安巴尼推动AI渗透5亿用户，电信+AI模式全球瞩目",
+                "summary": "印度首富穆克什·安巴尼旗下的Reliance正全面将AI整合进其服务超过5亿用户的电信生态，从通话到应用程序再到家庭场景，AI无处不在。在全球AI落地仍在探索商业模式的当下，Reliance的实践提供了一个新兴市场的大规模AI应用范本，其影响力可能远超欧美市场的小众AI产品。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "澳大利亚AI创业公司CEO因虚构AI收入被判入狱9年",
+                "summary": "澳大利亚一家AI创业公司CEO因伪造AI技术收入欺骗投资者，被判处9年监禁，成为全球首例因AI泡沫化诈骗受到重刑判决的案例。在AI投资热潮中，此类判例对打着\"AI\"旗号圈钱的行为具有强烈震慑作用，也将推动各国监管机构加强对AI企业信息披露真实性的审查。",
+                "source": "Hacker News / SMH",
+                "url": "https://www.smh.com.au/technology/australian-start-up-boss-who-faked-revenue-gets-nine-years-jail-20260618-p60847.html"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国质疑ASML最先进光刻机可能已在中国，出口管制效力再受质疑",
+                "summary": "美国政府公开质疑ASML最先进光刻机可能已被转移至中国，尽管ASML表示否认。这一事件再度暴露了美国对华芯片设备出口管制的执行漏洞。TechCrunch历史分析显示，过去30年加密软件、间谍软件等网络相关出口管制均告失败，最先进芯片制造设备的管控同样面临类似困境。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "蔚来向18款在售车型推送世界模型智驾系统，实现跨平台部署",
+                "summary": "蔚来在6月18日向其全部18款在售车型（含NT2.0、NT2.5、NT3.0三个代际平台）同步推送自研世界模型智驾系统，首次实现同一套复杂智驾代码在完全不同代际芯片上的流畅运行。这是国内车企在全栈智驾自研和跨平台适配能力上的标志性突破，智驾竞争正从单点技术转向系统工程能力的全面较量。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3858329994875908"
+            },
+            {
+                "tag": "应用落地",
+                "title": "滴滴自动驾驶亮相伦敦MOVE 2026，展示L4级全栈技术",
+                "summary": "滴滴自动驾驶团队在伦敦MOVE 2026大会上分享了来自中国的自动驾驶落地实践，已实现L4级全栈核心技术的自主可控。此次是中国自动驾驶企业首次在欧洲顶级行业大会上系统性展示技术成果，标志着中国自动驾驶方案正式开启海外拓展进程，将与Waymo、Cruise等欧美玩家正面竞争。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3858015526704129"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "企业AI助手成为下一个产品主战场，行业格局深度分析",
+                "summary": "行业分析指出，微软Copilot、谷歌Gemini、OpenAI以及AWS和Salesforce等企业软件巨头正在企业AI助手领域展开激烈竞争。AI聊天机器人只是起点，真正的战场已转向能够自动化复杂业务流程的AI Agent产品。企业AI助手市场规模估算已达数百亿美元，谁能在企业工作流中深度嵌入AI，谁就将主导下一代企业软件格局。",
+                "source": "Hacker News / RNZ",
+                "url": "https://www.rnz.co.nz/news/science-and-technology/600928/more-than-chatbots-why-business-ai-agents-are-big-tech-s-next-product-battleground"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "Match调查显示47%美国单身用户对AI约会持负面态度",
+                "summary": "约会应用Match发布的调研数据显示，约47%的美国单身用户对在约会场景中使用AI持负面态度，但多数用户并不排斥AI辅助撰写个人简介和聊天建议。AI在约会场景的应用面临\"真实性\"与\"效率\"的根本矛盾，用户接受度远低于其他AI工具类别。对于约会应用厂商而言，如何在AI辅助与保持真实感之间找到平衡，将是产品设计的核心挑战。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "挪威宣布禁止在K-12教育中使用生成式AI工具，全球最严厉立场",
+                "summary": "挪威政府宣布在K-12教育体系中全面禁止使用ChatGPT等生成式AI工具，成为全球对AI教育应用立场最明确、监管最严厉的国家。不同于多数国家采取\"引导使用\"的策略，挪威选择了最保守的路径。该决定将引发国际社会对AI教育边界的激烈讨论，并为其他国家制定AI教育政策提供重要参考。",
+                "source": "Hacker News / Gizmodo",
+                "url": "https://gizmodo.com/norway-says-ai-aint-for-education-2000774320"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "ZuzuZoos完成数千万元Pre-A轮融资，进军AI-Native科技潮玩赛道",
+                "summary": "AI-Native科技潮玩品牌ZuzuZoos（杭州多蓝艾梦智能科技）完成数千万元Pre-A轮融资，锦秋基金领投，复容资本跟投。创始团队来自Moody前高管与大疆技术骨干，本轮融资将用于AI大模型迭代、硬件产品扩建和全球市场拓展。科技潮玩作为AI硬件落地的新场景，正在获得资本关注，但市场验证仍需时间。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3859926114161665"
+            }
+        ]
+    },
+    {
         "date": "2026-06-19",
         "items": [
             {
@@ -2884,151 +3029,6 @@ const AI_NEWS_DATA = [
                 "summary": "2026AI Partner·北京亦庄AI+产业大会报告指出，AI与硬件融合正在从深度融合走向生态化阶段，手机端AI渗透率已从15%增长至40%。报告强调AI不是某个超级单品的故事，而是多端协同的生态故事，为硬件厂商的AI战略布局提供行业基准。",
                 "source": "36氪",
                 "url": "https://36kr.com/p/3820318177841541"
-            }
-        ]
-    },
-    {
-        "date": "2026-05-21",
-        "items": [
-            {
-                "tag": "应用落地",
-                "title": "英伟达Q1净利润暴增，AI芯片需求未见顶",
-                "summary": "英伟达2026财年第一财季实现净利润583亿美元，同比大幅增长，数据中心业务持续爆发。CEO黄仁勋透露，AI智能体CPU新市场价值达2000亿美元，成为下一个增长引擎。与此同时，英伟达披露持有初创公司43亿美元股权，生态布局深化。对行业而言，AI算力需求仍处于上升通道，但竞争加剧将压缩中小玩家的生存空间。",
-                "source": "36氪 / TechCrunch",
-                "url": "https://techcrunch.com/2026/05/20/nvidia-posts-another-record-quarter-reveals-43-billion-of-holdings-in-startups/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "《经济学人》：谷歌正在取代OpenAI成为消费者AI霸主",
-                "summary": "《经济学人》分析指出，谷歌凭借Gemini的9亿月活用户、全面整合的产品生态和DeepMind研究实力，正在消费级AI市场实现对OpenAI的反超。谷歌将AI功能深度嵌入搜索、Workspace和Android系统，形成了OpenAI难以复制的分发优势。这标志着AI竞争从模型能力比拼，进入生态系统和产品整合能力的综合较量阶段。",
-                "source": "The Economist / TechCrunch",
-                "url": "https://www.economist.com/business/2026/05/20/google-is-dethroning-openai-as-the-king-of-consumer-ai"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "SpaceX IPO文件曝光：xAI 2025年亏损64亿美元，算力支出无放缓迹象",
-                "summary": "SpaceX周二向SEC递交的IPO文件披露，xAI 2025年净亏损64亿美元，且计划斥资28亿美元采购天然气涡轮发电机用于数据中心扩建。这意味着马斯克正通过SpaceX资金支持其AI野心，同时也预示着xAI的Grok大模型扩张将持续烧钱。分析师指出，高达数十亿美元的年亏损意味着xAI短期内仍依赖外部输血而非独立盈利能力。",
-                "source": "Reuters / TechCrunch",
-                "url": "https://www.reuters.com/legal/transactional/bound-mars-elon-musks-spacex-unveils-filing-blockbuster-ipo-2026-05-20/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Anthropic Q2营收预计超10亿美元，即将实现首个盈利季度",
-                "summary": "Anthropic向投资者透露，2026年第二季度营收将突破109亿美元，同比翻倍以上增长，并即将迎来公司史上首个盈利季度。同时，Anthropic还与xAI达成重大合作，将向后者支付每月12.5亿美元租用算力基础设施。这一合作暴露了Anthropic对算力的巨额需求，也使xAI成为AI算力市场的重要供应商。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/20/anthropic-says-its-about-to-have-its-first-profitable-quarter/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Alphabet投入150亿美元在密苏里州建设超大规模数据中心",
-                "summary": "谷歌母公司Alphabet宣布斥资150亿美元在美国密苏里州新弗洛伦斯建造全新数据中心，这是该州史上规模最大的科技基建项目。谷歌已锁定超10亿瓦新增发电装机容量，并与公用事业公司合作以保障能源供应。此举反映AI驱动云端需求激增，头部科技公司正以超大规模投资锁定算力竞争优势。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3818799926707329"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta正式启动AI转型裁员，数以千计员工受影响",
-                "summary": "Meta正式启动以AI为核心的企业转型裁员计划，数千名员工受影响。《华尔街日报》披露，这是扎克伯格全面押注AI战略的一部分，Meta正用AI系统替代部分内容审核、广告优化和工程岗位。对从业者而言，大厂以\"AI转型\"为名的裁员趋势正在从实验阶段进入规模化执行阶段，职能型岗位的替代压力已真实到来。",
-                "source": "The Wall Street Journal / Hacker News",
-                "url": "https://www.wsj.com/tech/ai/meta-begins-laying-off-thousands-of-employees-as-it-transforms-around-ai-3c31a9eb"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "谷歌搜索AI Mode重大更新，AI搜索体验全面升级",
-                "summary": "谷歌宣布对搜索产品中的AI Mode进行重大更新，大幅提升生成式搜索的响应速度、准确性和多模态理解能力。这是谷歌搜索历史上最重要的AI功能迭代之一，将直接影响数十亿用户的搜索体验，也将进一步巩固谷歌在搜索广告市场的绝对主导地位，同时给Perplexity等AI搜索新锐带来更大压力。",
-                "source": "USA Today / Hacker News",
-                "url": "https://www.usatoday.com/story/tech/2026/05/20/google-search-ai-mode-biggest-update/90180507007/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "OpenAI推理模型证明1946年几何猜想，数学里程碑获验证",
-                "summary": "OpenAI宣布其推理模型o系列成功证明了一个自1946年以来悬而未决的几何猜想，且该证明已获合作数学家验证。这是有史以来AI在纯数学领域最具说服力的突破之一，尽管AI\"解决数学问题\"的声称此前多次被证伪，但此次有明确的人类数学家背书。对AI用于科研辅助的可行性而言，这一成果具有标志性意义。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/20/openai-claims-it-solved-an-80-year-old-math-problem-for-real-this-time/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "英伟达将在新加坡设立亚太首个AI芯片研发中心",
-                "summary": "英伟达宣布将在新加坡设立全新AI芯片研发中心，这是其在亚太地区的首个研发据点，也是新加坡集中公布的一系列AI战略举措的核心。该中心将聚焦下一代AI芯片和数据中心解决方案的本土化研发。新加坡借此进一步巩固其作为亚太AI基础设施枢纽的地位，对东南亚AI生态具有辐射效应。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3816942423000196"
-            },
-            {
-                "tag": "应用落地",
-                "title": "谷歌CEO确认Gemini月活跃用户突破9亿",
-                "summary": "谷歌CEO皮查伊确认Gemini月活跃用户已达9亿，较此前披露数据增长显著。Gemini已深度整合进安卓系统、谷歌搜索和Workspace，成为全球覆盖用户规模最大的AI产品之一。9亿月活意味着谷歌在消费者AI市场的渗透率已远超竞争对手，这对评估AI商业化进程具有重要参考价值。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3818280989443202"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Dust获4000万美元B轮融资，押注人机协作多人AI赛道",
-                "summary": "AI协作平台Dust宣布完成4000万美元B轮融资，致力于打造多人场景下的人类与AI智能体协作产品。区别于单人或单一AI助手的传统范式，Dust专注于解决多人与多个AI Agent同步协作时的通信、上下文共享和冲突处理问题。本轮融资显示，人机混合工作流正在从概念验证走向产品化，细分赛道竞争升温。",
-                "source": "TechCrunch / Hacker News",
-                "url": "https://dust.tt/blog/series-b-multiplayer-ai"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "腾讯会议上线AI同传功能，中英双向翻译时延低于3秒",
-                "summary": "腾讯会议正式上线AI同传功能，支持中英双向实时语音识别、翻译和语音合成，翻译时延低于3秒。该功能面向企业会议场景，解决了跨国沟通和会议记录的实际痛点。腾讯会议拥有数亿用户基础，AI同传的加入将进一步强化其在企业协作市场的壁垒，也标志着国内视频会议AI化进入实用阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3818773604352901"
-            },
-            {
-                "tag": "政策监管",
-                "title": "中国发布全球首个代理AI治理框架，明确定义与监管规则",
-                "summary": "中国正式发布代理AI（Agentic AI）治理框架，成为全球首个对该技术形态进行系统性定义和立法规制的国家。该框架明确了AI智能体在自主决策、工具调用和数据使用方面的合规要求，对国内外AI企业的在华产品设计产生直接影响。在AI监管规则制定权竞争加剧的背景下，这一框架有望成为其他国家的参考蓝本。",
-                "source": "The Wire.in / Hacker News",
-                "url": "https://thewire.in/tech/chinas-landmark-framework-for-agentic-ai-and-why-it-matters"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "阿里云发布金融级通用智能体平台\"点金\"，直连市场数据",
-                "summary": "阿里云在2026阿里云峰会上正式推出金融级智能体平台\"点金\"，该平台直连行情数据和市场行情，并原生支持Wind万得、东方财富、恒生聚源等主流金融数据源，内置全链路审计与三重合规防线，支持零代码配置。点金的发布标志着国内头部云厂商正式进入金融AI智能体这一高价值垂直赛道。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3818802171921538"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "MIT研究：AI与历史上技术革命对就业影响的根本性差异",
-                "summary": "MIT最新研究深入分析了AI对劳动力市场的影响，发现AI对就业的冲击模式与以往技术革命存在根本差异——AI更倾向于替代而非增强高技能认知工作，而非传统技术革命中的体力劳动受影响最大。报告指出，政策制定者需要重新思考技能培训体系的重建方向，且时间窗口可能比预期更短。",
-                "source": "MIT News / Hacker News",
-                "url": "https://news.mit.edu/2026/technology-creates-jobs-young-skilled-workers-ai-0521"
-            },
-            {
-                "tag": "应用落地",
-                "title": "斯坦福银行CEO宣布AI替代8000个\"低价值\"岗位",
-                "summary": "斯坦福银行（Standard Chartered）CEO宣布，计划到2030年前通过AI技术削减7000至8000个岗位，约占现有人力的15%，主要针对重复性强、决策复杂度低的\"低价值\"职能岗位。这是有公开可查数据以来，全球大型银行中涉及AI替代岗位规模最大的单次宣布。对金融服务业而言，AI替代已从概念验证进入规模化落地的临界点。",
-                "source": "Channel News Asia / Hacker News",
-                "url": "https://www.channelnewsasia.com/business/standard-chartered-reduce-7000-roles-2030-6129761"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "视频剪辑AI创业公司Clouted获700万美元种子轮融资",
-                "summary": "AI视频剪辑初创公司Clouted宣布获得700万美元种子轮融资，由Slow Ventures领投。Clouted专注于帮助创作者和品牌预测短视频的病毒式传播潜力，通过AI分析内容特征、受众行为和平台算法。该融资规模在种子轮中属于较高水平，反映AI赋能内容营销赛道的持续热度和资本信心。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/20/clouted-wants-to-take-the-guesswork-out-of-making-short-videos-go-viral/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic与xAI达成每月12.5亿美元算力供应协议",
-                "summary": "Anthropic与马斯克的xAI达成算力供应协议，Anthropic将每月向xAI支付12.5亿美元，租用后者数据中心算力资源。这一安排既缓解了Anthropic算力短缺的燃眉之急，也让xAI获得了稳定的收入来源，意外地将两个竞争对手深度绑定。业内人士指出，这种\"竞合\"关系正在重塑AI行业竞争格局。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Gemini Omni支持笔记访问及AI视频生成，能力边界持续拓展",
-                "summary": "Google推出Gemini Omni的重大更新，新增原生笔记访问和AI视频生成功能，大幅拓展了Gemini在多模态任务中的能力边界。用户现可让Gemini直接阅读、总结和搜索个人笔记内容，并完成视频生成任务。功能升级意味着谷歌将个人AI助手的交互深度从对话推进到任务执行的下一阶段。",
-                "source": "Hacker News",
-                "url": "https://omnigemini.video"
-            },
-            {
-                "tag": "行业格局",
-                "title": "谷歌AI Pro计划悄然降级，用户权益引发社区争议",
-                "summary": "谷歌悄然降低AI Pro订阅计划的权益，引发付费用户不满。Android Central等媒体确认，新计划的功能范围较此前有所缩减，引发用户对谷歌\"先圈地后减配\"策略的批评。在AI订阅市场竞争加剧的背景下，大厂订阅产品的服务稳定性和定价策略的透明度，正成为影响用户留存的关键因素。",
-                "source": "Android Central / Hacker News",
-                "url": "https://www.androidcentral.com/apps-software/ai/google-ai-pro-plan-just-got-a-quiet-downgrade"
             }
         ]
     }
