@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-06-22",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "诺贝尔奖得主约翰·江珀离开DeepMind加盟Anthropic，AI人才战升级",
+                "summary": "AlphaFold缔造者、诺贝尔化学奖得主约翰·江珀（John Jumper）宣布离开Google DeepMind，加入竞争对手Anthropic。这已是近几个月来第三位离开谷歌AI团队投奔Anthropic的重量级人物。江珀的离开对DeepMind是重大打击，其主导的AlphaFold项目被视为近十年最具影响力的科学突破之一。对行业而言，头部科学家的流向往往预示着技术重心的迁移，Anthropic正在系统性地补强基础研究能力。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "特朗普政府封禁Anthropic最新模型，Claude史诗级危机震荡AI行业",
+                "summary": "美国政府上周五强制Anthropic下架Fable 5和Mythos两款最新模型，成为AI行业有史以来最严厉的监管行动。Anthropic随后全力游说试图让模型重新上线，但截至目前政府尚未给出明确解释。此次封禁反而让Anthropic在社交媒体上获得了前所未有的品牌曝光，有观点认为禁令意外成了\"免费营销\"。对从业者而言，这标志着政府对前沿模型的监管已从呼吁变为实质性干预。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI推理独角兽Baseten正融资15亿美元，估值或达130亿美元",
+                "summary": "据TechCrunch报道，AI推理基础设施公司Baseten在上一轮大额融资后仅数月，正在洽谈新一轮15亿美元融资，估值达130亿美元。报道称其为\"推理淘金热\"的典型受益者。随着大模型部署需求爆发，推理侧（即模型实际运行阶段）的算力需求正成为下一个资本密集战场。对投资者而言，推理层的高估值融资意味着行业泡沫正在向应用层蔓延。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "iOS 27将带来Siri在内的一系列实用AI功能，苹果AI战略全面落地",
+                "summary": "WWDC上Siri的AI大改版抢占了头条，但iOS 27中真正实用的AI功能分布在多个系统应用里。苹果正在将生成式AI能力下沉到日历、照片、备忘录等日常工具中，试图让AI\"无感\"融入用户工作流。这标志着苹果从\"功能演示\"转向\"实用落地\"的策略调整。值得关注的是，这些功能的本地化程度和隐私保护方式将成为与云端AI竞争的核心差异点。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI冲刺IPO前密集招兵买马，Transformer共发明人Noam Shazeer加入",
+                "summary": "OpenAI正在IPO前大规模扩充高管团队，Transformer架构的共发明人Noam Shazeer从前东家Google DeepMind跳槽而来，同时前特朗普政府官员也加入担任政策顾问。Shazeer是Google最资深的AI研究员之一，其离开被视为Google人才流失的又一标志性事件。IPO压力下，OpenAI正在同时应对技术竞争与监管审查的双重挑战。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI云平台Railway融资1亿美元，剑指AWS统治地位",
+                "summary": "Railway宣布获得1亿美元融资，挑战AWS在云计算领域的主导地位。这家旧金山公司声称已积累200万开发者用户，且从未花一分钱在获客上。Railway主打\"AI原生\"基础设施概念，瞄准被传统云厂商高成本困扰的AI公司。对AWS等巨头而言，垂直化的AI云平台正在蚕食其利润最丰厚的AI工作负载市场。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Subquadratic宣称突破LLM推理瓶颈，速度提升100倍引争议",
+                "summary": "总部位于迈阿密的AI创业公司Subquadratic在上月走出隐匿模式后，声称已解决制约大语言模型发展的核心瓶颈问题，可实现推理速度100倍的提升。如果该 claim 经独立验证成立，将对整个AI行业产生深远影响。但鉴于该公司成立时间短且缺乏同行评审，业界普遍持谨慎观望态度。内存与计算效率的突破，将是2026年AI基础设施层最关键的竞争维度。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Midjourney从图像生成拓展至医疗超声AI诊断领域",
+                "summary": "以AI生成艺术闻名的Midjourney正在低调拓展医疗成像领域，首次尝试用其图像生成技术分析超声扫描数据。公司发布的成像幻影扫描图显示，AI已能清晰分离超声影像中的不同结构。这一动向表明，头部生成式AI公司正在寻求从消费娱乐向专业医疗的高价值场景迁移，但监管合规和数据安全将是最大障碍。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Reliance计划在印度全境铺开AI服务，覆盖超5亿用户",
+                "summary": "印度首富穆克什·安巴尼执掌的Reliance集团正在将AI能力深度嵌入其电信服务生态，目标是让超5亿印度用户在使用通话、应用和智能家居时均能接触到AI功能。安巴尼在公开演讲中表示，希望AI\"存在于每一次通话、每一个应用、每一个家庭\"。这意味着全球最大规模之一的AI消费级应用即将在印度落地，将深刻改变新兴市场AI普及的路径。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Elastic收购AI代码审查创企Deductive AI，交易金额最高8500万美元",
+                "summary": "搜索和分析数据库公司Elastic已同意收购成立仅三年的初创公司Deductive AI，收购价最高达8500万美元。Deductive AI专注于用AI自动发现并修复软件代码中的bug，契合DevOps领域的自动化趋势。此举显示，AI代码工具正在从通用IDE插件向企业级平台整合，DevOps赛道正成为AI infra并购的热门标的。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Adobe全面推AI助手功能，Photoshop Premiere新增对话式编辑能力",
+                "summary": "Adobe宣布在Photoshop、Premiere Pro和Illustrator等Creative Cloud核心应用中全面引入对话式AI助手功能，用户可通过自然语言指令完成修图、剪辑等操作。同时新版Firefly AI工作室新增\"记忆\"功能，可记住用户创建的角色、物体和背景风格，方便在不同项目中复用。对专业创作者而言，这意味着工作流自动化的实质性升级而非噱头。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch"
+            },
+            {
+                "tag": "技术突破",
+                "title": "脑机接口临床试验密集展开，首批植入者实现高难度交互",
+                "summary": "脑机接口（BCI）领域本周迎来重要进展——ALS患者Casey Harrell成为Synchron植入物的\"首位超级用户\"，能够通过脑信号高准度控制电脑进行复杂操作。与此同时，Precision Neuroscience等多家公司的BCI临床试验也在加速推进。AI算法在脑信号解码中的角色日益关键，神经科技与生成式AI的交叉正开辟全新的计算范式。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/06/19/1139270/brain-computer-interface-trials-are-taking-off/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google 25年来首次重塑搜索框界面，AI整合进入核心入口",
+                "summary": "Google发布了25年来首次重大搜索框改版，新界面将Gemini AI深度整合到搜索体验的核心位置。这一改动的影响远超视觉层面——它标志着Google正式将\"AI优先\"从口号变为产品战略底层逻辑。搜索框的重新设计意味着用户查询与AI响应之间的边界正在消失，对SEO行业和内容生态将产生深远影响。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
+            },
+            {
+                "tag": "行业格局",
+                "title": "亚马逊AWS计划对外销售AI芯片，目标市场规模达500亿美元",
+                "summary": "AWS正在与外部数据中心洽谈销售自研AI芯片的事宜，CEO安迪·贾西表示这代表了高达500亿美元的市场机会。此举将使亚马逊在AI芯片领域直接挑战Nvidia的主导地位，同时为AWS客户提供更具性价比的训练和推理选项。芯片自研+对外销售模式一旦跑通，将重塑AI基础设施的成本结构。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Snap拆分AI视频团队为独立公司Dotmo，以控制烧钱速度",
+                "summary": "Snapchat母公司Snap宣布将内部AI视频团队分拆为独立公司Dotmo，该实体由即将离职的Snap员工组成。拆分的主要原因是AI视频开发和运营成本过高，Snap希望在不影响主业的情况下让AI业务独立融资。此举折射出大公司AI创新与财务可持续性之间的结构性矛盾，也预示更多科技巨头将采用\"分拆求生\"策略。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI高管再次出走，Barret Zoph入职仅五个月后离职",
+                "summary": "OpenAI企业AI销售负责人Barret Zoph在回归公司仅五个月后再次离职，这是近半年来OpenAI高管的最新一起人事变动。Zoph曾在2024年短暂离开OpenAI，此次回归后负责企业级AI产品商业化。管理层持续动荡与OpenAI的IPO冲刺形成鲜明对比，治理结构稳定性将成为投资者评估其长期价值的关键变量。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国监管机构要求电网为AI数据中心开快速通道",
+                "summary": "美国联邦能源监管委员会（FERC）指示电网运营商为数据中心建立电力并网快速通道，以满足AI产业爆发式增长的能源需求。但该指令未涉及电力供应不足的根本性问题，被批评为\"只给绿灯不解决堵车\"。AI数据中心的能源消耗已引发环保组织和地方政府的不满，能源瓶颈正成为制约AI扩张的隐性天花板。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "皮尤调查：63%美国人认为AI发展过快，近半数对AI约会持负面态度",
+                "summary": "皮尤研究中心最新调查显示，63%的美国成年人认为AI正在\"过快\"发展，同时49%的人表示至少偶尔使用过聊天机器人。在婚恋场景中，47%的单身人士对AI介入约会持负面态度，但相当比例的用户接受AI辅助撰写个人资料。这组数据揭示了AI渗透率与公众接受度之间的持续割裂，对面向消费者的AI产品设计具有重要参考价值。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "The Atlantic建立可搜索音乐数据库，揭示AI训练数据版权黑洞",
+                "summary": "大西洋月刊记者Alex Reisner构建了一个可搜索的音乐数据集，揭示了至少四个被用于训练AI模型的音乐数据集正在被大规模使用，涵盖无数艺术家的作品。这一发现将为针对AI公司的版权诉讼提供关键证据，也将推动监管部门对AI训练数据透明度提出更严格要求。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Claude Code月费200美元，AI编程工具价格战悄然开打",
+                "summary": "Anthropic的AI编程工具Claude Code月费高达200美元，而竞品Goose提供相同功能完全免费，引发行业对AI工具定价策略的广泛讨论。高定价代表Anthropic走高端企业路线，免费策略则是以用户规模换取数据飞轮。对开发者而言，这场竞争将带来更多低价或免费的选择，但也意味着市场正在快速整合。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free"
+            }
+        ]
+    },
+    {
         "date": "2026-06-21",
         "items": [
             {
@@ -3029,151 +3174,6 @@ const AI_NEWS_DATA = [
                 "summary": "Fortune刊登了一位从事孤独症研究25年的学者的深度访谈，警告AI伴侣和社交机器人虽然在短期内能缓解孤独感，但长期将\"系统性地削弱真实社会连接能力\"，使人类更加依赖虚拟交互而非真实关系，最终加剧社会疏离危机。学者呼吁政策制定者在推动AI情感应用的同时，同步布局社会心理支持体系。这一警告与当前AI情感赛道的火热形成鲜明对比。",
                 "source": "Fortune / Hacker News",
                 "url": "https://fortune.com/2026/05/23/loneliness-researcher-ai-companions-social-disconnection-warning/"
-            }
-        ]
-    },
-    {
-        "date": "2026-05-23",
-        "items": [
-            {
-                "tag": "大额融资/IPO",
-                "title": "Anthropic估值突破900亿美元，最快下周完成超300亿美元融资",
-                "summary": "Anthropic PBC最快将于下周完成最新一轮融资，融资额可能超过300亿美元，公司估值超过900亿美元，从而超越竞争对手OpenAI，成为全球估值最高的人工智能初创公司。红杉资本、Dragoneer Investment Group等顶级机构参投。此轮融资完成后将显著改变全球AI创企格局，对整个行业的资本聚集效应产生深远影响。",
-                "source": "36氪 / 华尔街日报",
-                "url": "https://36kr.com/newsflashes/3821194878947715"
-            },
-            {
-                "tag": "政策监管",
-                "title": "特朗普推迟AI安全行政令，称措辞\"可能成为阻碍\"",
-                "summary": "美国总统特朗普推迟签署一项要求AI模型发布前进行政府安全审查的行政命令。特朗普表示，该行政令的部分措辞\"可能成为阻碍\"，不想\"挡路\"。这一决定被视为在国家安全与AI创新之间寻求平衡的信号，预计将影响美国AI监管框架的最终形态，对AI企业的合规策略具有重要参考价值。",
-                "source": "TechCrunch AI / 36氪",
-                "url": "https://techcrunch.com/2026/05/21/trump-delays-ai-security-executive-order-i-dont-want-to-get-in-the-way-of-that-leading/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Spotify与环球音乐达成协议，允许用户创建AI生成歌曲混音",
-                "summary": "Spotify与环球音乐集团达成里程碑式合作，Premium订阅用户可使用AI技术创建歌曲混音和翻唱版本。此举标志着音乐产业首次系统性接纳用户生成AI内容，为行业开辟了新的商业模式，同时也为版权保护和艺术家权益补偿机制提出新挑战。",
-                "source": "TechCrunch AI / 36氪",
-                "url": "https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI初创公司Hark完成7亿美元融资，NVIDIA/AMD/英特尔联合参投",
-                "summary": "AI初创公司Hark宣布完成7亿美元融资，由英伟达、AMD、英特尔三大芯片巨头联合参投。本轮融资表明算力厂商正在通过投资布局AI应用层，构建更完整的AI生态闭环。对从业者而言，三大厂同时投资一家公司的现象极为罕见，Hark的核心技术方向值得重点关注。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3816943010071427"
-            },
-            {
-                "tag": "行业格局",
-                "title": "SpaceX提交IPO文件，估值1.75万亿美元瞄准AI数据中心",
-                "summary": "SpaceX正式提交S-1文件，估值达1.75万亿美元，计划将AI数据中心作为核心增长引擎。公司将投资28亿美元购买燃气轮机为数据中心供电，这是继xAI之后，马斯克在AI基础设施领域的再次重磅布局，标志着SpaceX从航天公司向综合科技集团转型的关键一步。",
-                "source": "TechCrunch AI / Wired",
-                "url": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Google AI代理仅用916美元构建完整操作系统",
-                "summary": "一项测试显示，Google AI代理仅需916美元成本即可构建完整操作系统，引发业界对AI编程能力的重新评估。这一低成本突破意味着AI辅助开发正在快速走向普及，未来软件开发门槛可能大幅降低，对传统软件外包行业构成直接冲击。",
-                "source": "Hacker News / TechCrunch AI",
-                "url": "https://www.normaltech.ai/p/did-googles-ai-agents-really-build"
-            },
-            {
-                "tag": "技术突破",
-                "title": "AI技术重建死亡飞行员声音，引发NTSB数据安全危机",
-                "summary": "用户通过AI技术利用坠机调查文件中的频谱图像重建死亡飞行员声音，迫使美国国家运输安全委员会（NTSB）临时封锁数据库。此事件暴露了AI在语音重建领域的伦理风险和安全隐患，为AI安全研究敲响警钟，监管机构需尽快建立相关防范机制。",
-                "source": "Ars Technica / TechCrunch AI",
-                "url": "https://arstechnica.com/ai/2026/05/ai-users-re-create-dead-pilots-voices-from-crash-investigation-docs/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "京东618推出全网首档AI数字人直播购物晚会",
-                "summary": "京东宣布将于6月1日晚8点推出《京东618·赛博联欢会》，以AI数字人形象演绎多个经典IP，开创全网首档AI购物直播晚会先河。这标志着AI数字人技术从概念展示进入规模化商业应用阶段，直播电商行业或迎来新一轮内容形态革命。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3820427661398407"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "英特尔推出SuperClaw混合AI方案，降低云端Token消耗达70%",
-                "summary": "当地时间5月21日，英特尔AI超级构建团队推出专为AI PC及边缘设备打造的混合智能体AI解决方案SuperClaw。该方案采用本地优先架构，能以99%准确率识别敏感信息，云端Token消耗降低达70%。Beta测试版将于6月开放，这一方案有望重新定义AI PC的隐私安全标准。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3821197146722696"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Moka发布三款AI HR产品，覆盖招聘/人事/BP全场景",
-                "summary": "AI人力资源软件服务商Moka于5月一口气上线招聘Eva、人事Eva和BPEva三款AI产品，从智能化招聘管理系统扩展至完整HR管理生态。这标志着AI HR赛道从单点工具向全流程覆盖演进，对企业级HR市场格局将产生深远影响。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3819979202253189"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta内部反AI视频流传，前员工揭露AI训练真相",
-                "summary": "一位即将离职的Meta员工在内部发布尖锐的反AI视频，批评公司AI训练方式及大规模裁员政策。视频在社交媒体引发热议，反映了AI行业高速扩张下员工与企业之间的深层矛盾。该事件对AI公司企业文化和公共形象管理具有警示意义。",
-                "source": "Hacker News / Mother Jones",
-                "url": "https://www.motherjones.com/politics/2026/05/meta-video-ai-training-layoffs-video-exclusive-mci-bosworth-frenk/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Cloudflare CEO表示AI已导致一类工作者彻底过时",
-                "summary": "Cloudflare首席执行官Matthew Prince在采访中表示，AI已经使一类工作者\"彻底过时\"，公司裁员主要源于自动化替代而非经济周期。这一表态揭示了AI对劳动力市场的影响已进入实质性阶段，对从业者职业规划具有重要参考价值。",
-                "source": "Fortune / Hacker News",
-                "url": "https://fortune.com/2026/05/21/cloudflare-ceo-matthew-prince-layoffs-ai-automation-measurers/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "廉价AI可能破坏OpenAI和Anthropic的IPO进程",
-                "summary": "分析指出，廉价AI技术的普及可能对OpenAI和Anthropic的IPO计划构成威胁。随着开源模型性能快速提升和推理成本持续下降，一级市场对闭源AI公司的高估值逻辑正在受到挑战。这对AI投资人的退出策略和估值判断有重要警示意义。",
-                "source": "CNBC / Hacker News",
-                "url": "https://www.cnbc.com/2026/05/20/cheap-ai-could-derail-openai-and-anthropics-ipos.html"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "Spotify推出AI播客问答和摘要生成功能",
-                "summary": "Spotify宣布推出AI驱动的播客问答和简报生成功能，用户可基于提示词生成每日或每周播客摘要。这一功能将AI交互深度融入音频内容消费场景，标志着Spotify从音乐平台向综合性AI内容平台的战略升级。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/21/spotify-adds-ai-powered-qa-and-briefing-generation-features-to-podcasts/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "报告显示94%公司即使AI投资失败也会继续投入",
-                "summary": "一项针对企业AI投资的调研显示，94%的公司表示即使AI投资未能达到预期效果，仍将继续追加投入。这一数据表明AI已经进入\"不可逆\"投资阶段，企业对AI的依赖程度远超实际回报表现，对AI泡沫论构成反驳。",
-                "source": "Hacker News / Read Uncut",
-                "url": "https://readuncut.com/94-will-keep-spending-on-ai-even-when-it-fails/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "美国国会报告：中国开放AI战略强化工业主导地位",
-                "summary": "美国国会中美经济与安全审查委员会发布报告，指出中国\"开放AI战略\"正通过双循环模式强化工业主导地位。报告分析了中国开源模型对全球AI竞争格局的影响，为美国政策制定者提供了新的战略参考，对全球AI治理博弈具有重要影响。",
-                "source": "Hacker News / 美国国会",
-                "url": "https://www.uscc.gov/sites/default/files/2026-03/Two_Loops--How_Chinas_Open_AI_Strategy_Reinforces_Its_Industrial_Dominance.pdf"
-            },
-            {
-                "tag": "行业格局",
-                "title": "WiseTech AI裁员引发中澳员工争议，中国团队指控违规",
-                "summary": "全球物流软件巨头WiseTech因AI相关业务重组而裁员，引发中国团队指控公司存在违规行为。这场跨国劳动争议反映出AI转型过程中企业员工安置问题的复杂性，对科技公司全球化裁员策略具有案例参考价值。",
-                "source": "Australian Financial Review / Hacker News",
-                "url": "https://www.afr.com/technology/wisetech-ai-redundancy-fight-worsens-with-china-accusations-20260521-p5zzm8"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Pizza Hut加盟商起诉公司厨房AI系统性能糟糕",
-                "summary": "一位Pizza Hut加盟商正式起诉公司，指控其部署的厨房AI系统性能不达标，严重影响运营效率。这是餐饮业AI应用失败引发法律纠纷的首批案例之一，对AI供应商的产品质量和服务承诺提出挑战，也为行业AI落地敲响警钟。",
-                "source": "The Register / Hacker News",
-                "url": "https://www.theregister.com/ai-ml/2026/05/19/franchisee-sues-pizza-hut-over-crappy-kitchen-ai/5242899"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Google展示AI眼镜原型，Gemini驱动翻译导航功能",
-                "summary": "Google演示了基于Android XR的AI眼镜原型，可实现Gemini驱动的实时翻译、导航和信息叠加功能。评测显示产品已\"接近完成\"，距离大规模商用仅一步之遥。AI眼镜赛道的竞争正在加速，苹果和其他厂商的跟进将决定这一形态的未来。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "AI时代终端生态洞察：手机AI渗透率从15%增至40%",
-                "summary": "2026AI Partner·北京亦庄AI+产业大会报告指出，AI与硬件融合正在从深度融合走向生态化阶段，手机端AI渗透率已从15%增长至40%。报告强调AI不是某个超级单品的故事，而是多端协同的生态故事，为硬件厂商的AI战略布局提供行业基准。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3820318177841541"
             }
         ]
     }
