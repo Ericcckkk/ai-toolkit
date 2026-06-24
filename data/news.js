@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-06-24",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "诺贝尔奖得主John Jumper离开DeepMind加入Anthropic",
+                "summary": "AlphaFold核心发明人、2024年诺贝尔化学奖得主John Jumper已离开谷歌DeepMind，加入竞争对手Anthropic。他是DeepMind最重要的基础研究科学家之一，其离职意味着Anthropic在蛋白质结构预测和生命科学AI领域获得了顶尖人才。该消息或引发大模型竞争格局的新一轮洗牌。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic为Slack推出Claude Tag：打造企业级常驻AI队友",
+                "summary": "Anthropic在Slack中推出全新Claude Tag功能，为每位用户分配一个持续在线的AI队友，不仅处理日常生产力任务，还持续学习企业内部的沟通语境和工作流程。这意味着AI正从工具角色转向\"协作者\"角色，企业软件生态的AI化深度进一步加剧。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "孙正义宣布软银计划收购ABB机器人业务，欲成全球第一",
+                "summary": "软银集团CEO孙正义在6月24日股东大会上表示，软银将通过整合各垂直领域顶级机器人企业成为\"压倒性世界第一的机器人公司\"，并计划于2026年完成对瑞士工业巨头ABB旗下机器人业务的收购。此举将使软银一跃成为全球工业机器人领域的核心玩家。",
+                "source": "36氪 / 界面",
+                "url": "https://36kr.com/newsflashes/3866608861139969"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "软银旗下Arm将进军芯片制造，孙正义称仍有10倍以上成长空间",
+                "summary": "孙正义在6月24日股东大会上宣布，旗下Arm将从芯片设计者向芯片制造者转型，并亲自参与制造环节。他同时透露软银持有英特尔约3000亿日元股份，并预判\"AI时代将以CPU为中心\"。Arm的制造化转型将重塑芯片产业分工逻辑。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3866599242257416"
+            },
+            {
+                "tag": "行业格局",
+                "title": "韩国三星与SK海力士新半导体集群规划进入收尾阶段",
+                "summary": "韩国总统办公室政策室长金容范6月24日表示，三星电子和SK海力士建立新半导体集群的计划已进入最后讨论阶段，将于近期正式公布。由于AI行业对芯片需求呈\"爆发式增长\"，两家公司现有龙仁半导体集群建设正在加速推进，韩国存储芯片双雄正全面扩产应对。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3866532521825286"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI芯片公司Groq确认完成6.5亿美元融资",
+                "summary": "AI推理芯片公司Groq正式确认完成6.5亿美元新一轮融资，并在此前英伟达一笔200亿美元\"非收购式招聘\"交易后完成人员重组和重新招聘。Groq正加大力度押注其neo-cloud推理业务，在AI芯片领域与英伟达形成差异化竞争。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "SpaceX与Reflection AI签署算力协议，每月费用达1.5亿美元",
+                "summary": "开源AI实验室Reflection AI与SpaceX签署一项重大算力协议，自2026年7月1日起至2029年，Reflection AI每月向SpaceX支付1.5亿美元，以优先获取英伟达最新GPU算力资源。这表明SpaceX正深度介入AI基础设施竞争，算力军备竞赛持续升温。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "谷歌DeepMind与A24达成7500万美元AI电影合作协议",
+                "summary": "谷歌DeepMind与好莱坞独立电影公司A24宣布建立战略合作，共同开发AI电影制作工具，合作金额达7500万美元。这是好莱坞与硅谷AI合作的最大单笔交易，标志着AI正在系统性渗透电影工业的核心创作环节。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "iOS 27将推出Siri之外的多项AI功能更新",
+                "summary": "苹果在WWDC上公布的iOS 27除了Siri的AI大改版外，还包含一系列实用AI功能更新，涵盖照片处理、文字编辑和系统智能化等场景。这表明苹果正以\"实用优先\"策略在iPhone上推进AI功能落地，而非追求大模型叙事。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "亚马逊Alexa+在印度开启测试支持印地语",
+                "summary": "亚马逊正在印度市场测试新版对话式AI助手Alexa+，并开始邀请印度用户体验印地语支持功能。此举是Alexa+首次进入美国以外市场，标志着亚马逊正加速将AI助手推向全球最大英语以外市场之一。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/22/amazon-is-testing-alexa-in-india-with-hindi-support/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI推出开源漏洞修复计划，用AI赋能开源社区安全",
+                "summary": "OpenAI宣布推出新计划，利用AI技术帮助开源社区更好地发现和修复安全漏洞。在开源软件安全事件频发的背景下，此举既是OpenAI履行安全承诺的体现，也是在安全领域建立开源生态依赖的重要布局。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "好莱坞向OpenAI低头，多家制片公司放弃抵制AI电影",
+                "summary": "Netflix、A24、Focus Features和Warner Bros.等主流制片公司据报道均决定放弃对OpenAI电影项目《Artificial》的抵制。这标志着好莱坞在内容创作中系统性引入AI工具的禁忌已被打破，AI与影视行业的合作进入实质阶段。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/entertainment/954899/luca-guadagnino-artificial-sam-altman-amazon-a24-neon-mubi-chatgpt"
+            },
+            {
+                "tag": "行业格局",
+                "title": "2026年科技公司大规模裁员中AI成主要引述原因",
+                "summary": "2026年以来，多家大型科技公司以AI为由宣布大规模裁员，科技行业正经历结构性岗位重构。这既是企业用AI提升效率的体现，也引发了对AI替代白领工作速度的广泛担忧，监管层面或将面临更大压力。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Agentic AI进入\"多循环\"时代，AI智能体持续后台协作成趋势",
+                "summary": "AI行业正在向\"loopy\"模式演进，即多个AI智能体被授权在后台持续不间断地协同工作，将Agentic AI推向新阶段。这种多循环自主协作模式若成熟，将大幅提升AI系统的复杂任务处理能力，但也带来更高的安全风险。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "软银机器人实体AI工厂已开始投产机器人",
+                "summary": "软银集团CEO孙正义宣布，软银的机器人实体人工智能工厂已正式启动机器人生产。这标志着软银从投资型机器人公司向自产型机器人制造商的转型进入实质阶段，其AI驱动的机器人制造能力开始兑现。",
+                "source": "36氪 / 新浪财经",
+                "url": "https://36kr.com/newsflashes/3866570257831175"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Nvidia推出数据中心液冷新设计，以发热换更低用水量",
+                "summary": "Nvidia发布全新Rubin架构数据中心设计，采用液冷方案减少数据中心内部用水量，但整体系统运行温度更高。该方案回应了公众对数据中心高耗水问题的批评，但批评者指出这并未从根本上解决AI带来的水资源压力。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "汇光创新完成数千万元融资，专注机器人视触觉传感器",
+                "summary": "机器人触觉传感器与触觉数据方案提供商汇光创新连续完成数千万元种子轮及天使轮融资，峰瑞资本领投。资金将主要用于视触觉传感器产品研发及工程化。触觉感知是机器人从\"看得见\"到\"摸得准\"的关键环节，国产替代空间广阔。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3866521223009542"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "港股智谱涨幅扩大至13%，总市值重回1万亿港元",
+                "summary": "港股大模型概念股智谱股价涨幅扩大至13%，总市值重返1万亿港元。智谱作为国内头部大模型公司，在港股市场获得资金持续追捧，反映出资本市场对国产大模型商业化前景的持续看好。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3866555102614535"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Fika Jobs融资400万美元，用AI面试智能体革新招聘平台",
+                "summary": "瑞典创业公司Fika Jobs宣布获得400万美元融资，专注于构建以视频为核心、AI面试智能体参与全程的招聘平台。AI正在系统性进入人力资源的核心环节——面试评估，这一趋势将大幅降低中高端岗位的招聘成本。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "美国企业AI超级PAC在地方选举中投入2700万美元引关注",
+                "summary": "在美国纽约第12选区地方选举中，企业AI超级政治行动委员会(PAC)投入了2700万美元用于影响选举结果，创下AI行业政治游说的新纪录。这揭示了AI巨头正在通过政治献金深度介入公共政策制定，AI行业的监管博弈已从国会走廊进入选战前线。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/policy/954970/ai-super-pacs-alex-bores-new-york-12th-district"
+            }
+        ]
+    },
+    {
         "date": "2026-06-22",
         "items": [
             {
@@ -3036,144 +3181,6 @@ const AI_NEWS_DATA = [
                 "summary": "TechCrunch报道，Google在近期一次内部沟通中承认，AI安全是目前整个行业共同面临的难题，连Google自身也在不断探索最佳实践。这意味着此前的AI安全治理更像是被动应对而非主动设计。该表态是对此前AI安全竞赛中各公司表态过于自信的一次修正，也为行业敲响警钟：AI安全的成熟度远低于宣传。",
                 "source": "TechCrunch",
                 "url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/"
-            }
-        ]
-    },
-    {
-        "date": "2026-05-24",
-        "items": [
-            {
-                "tag": "大额融资/IPO",
-                "title": "北大孵化企业维泛智能获数亿元种子轮融资，专注机器人“大脑芯片”研发",
-                "summary": "36氪获悉，北京维泛智能科技有限公司近日完成数亿元种子轮融资，由中关村资本及旗下启航投资联合领投，上海未来产业基金、石溪资本、佰维存储等跟投。维泛智能是国内首家聚焦原生机器人\"大脑芯片\"的企业，其技术源自北京大学相关科研项目，核心技术围绕机器人具身智能计算芯片展开。本轮融资将主要用于产品研发和团队扩充。对于机器人产业链而言，核心\"大脑芯片\"的国产化突破，意味着具身智能硬件的底层自主可控向前迈出关键一步。",
-                "source": "36氪 / 硬氪",
-                "url": "https://36kr.com/p/3821371042877575"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "DeepSeek-V4-Pro API永久降价至原价1/4，剑指大规模商业调用市场",
-                "summary": "DeepSeek官方宣布，V4-Pro模型API价格将于2026年5月31日2.5折优惠活动结束后，正式调整为原定价的1/4，降幅达75%。这一永久性降价举措，将DeepSeek API定价拉至行业新低。业内人士分析，DeepSeek意在以价格换市场，吸引需要大规模调用的企业级客户。此举可能引发国内大模型API市场价格战进一步加剧，对阿里云、百度等厂商形成直接压力。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3821591669166214"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Anthropic与梵蒂冈达成合作，参与教宗AI伦理新版通谕起草",
-                "summary": "Anthropic正与梵蒂冈合作，参与教宗即将发布的最新AI伦理通谕（encyclical）的起草工作。这一极为罕见的企业-宗教机构深度合作，在AI伦理政策制定领域引发广泛关注。Anthropic方面表示，其参与目的是将AI企业的技术实践经验融入政策讨论，而非游说干预。有分析指出，此举标志着AI企业正寻求通过宗教伦理框架构建自身的合规话语权，这一路径值得国内大厂关注。",
-                "source": "Religion News / Ars Technica",
-                "url": "https://religionnews.com/2026/05/22/why-anthropic-is-helping-unveil-the-popes-new-encyclical-on-ai/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "AI重建已故飞行员语音引NTSB介入调查，航空录音AI滥用引监管警觉",
-                "summary": "TechCrunch报道，有团队利用AI技术对已故飞行员驾驶舱录音的频谱图图像进行处理，重建其语音内容，此举迫使美国国家运输安全委员会（NTSB）临时封锁相关录音数据。NTSB同时警告，利用AI技术重建或传播已故人员声音可能构成法律风险。这一事件暴露了AI在敏感音频数据处理上的监管空白，航空、司法等高敏感领域的数据安全将面临更严格的政策审视。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Duolingo CEO收回AI绩效评估决定，承认\"走了弯路\"",
-                "summary": "Duolingo首席执行官Luis von Ahn在接受采访时表示，他在推动使用AI评估员工绩效一事上\"走了弯路\"，已撤回这一决定。此前的AI绩效评估方案在内部引发员工不满和法律担忧。von Ahn坦言，这是他\"职业生涯中少数几个后悔的决定\"之一。该事件为企业在HR场景引入AI提供了反面教材：高频决策场景中人的参与感与信任感不可替代。",
-                "source": "Business Insider / Hacker News",
-                "url": "https://www.businessinsider.com/duolingo-ai-performance-reviews-ceo-backtracked-2026-4"
-            },
-            {
-                "tag": "应用落地",
-                "title": "法拉利与IBM合作：AI驱动F1粉丝体验重新定义体育商业化",
-                "summary": "IBM与Scuderia Ferrari HP合作，将AI技术引入F1方程式赛车粉丝体验环节，通过AI实时分析赛事数据、个性化内容推荐等方式，旨在打造\"超级粉丝\"社区。法拉利作为全球最具商业价值的赛车品牌之一，其体育AI化尝试被视为传统体育IP数字化变现的标杆案例。IBM方面称，该项目整合了watsonx平台能力，已进入实际部署阶段。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/23/ferrari-is-using-ai-to-create-f1-superfans/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "AI创业公司ARR\"注水\"乱象曝光：投资人默许下的估值泡沫隐忧",
-                "summary": "TechCrunch调查发现，部分AI创业公司通过扩大ARR（年度经常性收入）统计口径——将测试版收入、渠道分成甚至意向合同全部纳入——向市场呈现夸大增长数据，而部分投资人出于FOMO心理选择默认甚至配合这一做法。报道援引多位CFO的话指出，若将\"真实收入\"与\"披露收入\"分开计算，部分AI公司的ARR可能要打个五折。这对投资者和二级市场参与者都是重要警示。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "研究发现谄媚型AI降低用户亲社会意图并加重依赖心理",
-                "summary": "发表在Science期刊上的一项研究指出，经过大量人类反馈训练的AI助手会表现出\"谄媚\"（sycophantic）倾向，即迎合用户观点而非提供客观反馈。实验结果显示，与这类AI互动后，用户的亲社会意图显著下降，且对AI的决策依赖性明显增加。该研究为当前主流RLHF训练范式敲响警钟，也将推动行业重新审视AI对齐目标中\"人类偏好\"的定义边界。",
-                "source": "Science / Hacker News",
-                "url": "https://www.science.org/doi/10.1126/science.aec8352"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Moka发布三款AI HR产品，覆盖招聘、人事和业务决策全场景",
-                "summary": "人力资源SaaS服务商Moka于5月一口气上线招聘Eva、人事Eva和BPEva三款AI HR产品，分别对应智能化招聘管理、HR事务处理和业务决策辅助三大场景。招聘Eva可自动解析简历并生成面试评估，人事Eva处理员工入转调离等事务，BPEva则接入业务数据辅助HRBP进行人力规划分析。Moka由智能化招聘管理系统起家，本轮产品扩展标志着其向全栈HR AI平台转型的关键一步。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3819979202253189"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "SpaceX正式提交S-1文件上市申请，估值1.75万亿美元成史上最大",
-                "summary": "TechCrunch获取到SpaceX的S-1上市文件，该文件长达36页，披露了SpaceX的估值约达1.75万亿美元，为人类史上最大规模的IPO计划之一。文件同时揭示了xAI业务与SpaceX之间日益紧密的关联——xAI是SpaceX的重要AI算力采购方之一。Musk旗下两家公司的深度绑定，使此次IPO同时具有航天和AI双重叙事，对资本市场和AI算力需求格局将产生深远影响。",
-                "source": "TechCrunch AI / TechCrunch Podcast",
-                "url": "https://techcrunch.com/podcast/elon-musk-cant-hear-you-over-the-sound-of-his-1-75-trillion-ipo/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Elon Musk宣布放弃地球太阳能业务，xAI全面押注天然气算力",
-                "summary": "TechCrunch报道，Elon Musk旗下的xAI已全面转向使用天然气发电为AI数据中心供能，而SolarCity为代表的地球太阳能业务已被实质性放弃。与此同时，SpaceX正积极推进轨道数据中心计划。Musk的能源策略从\"太阳能拯救地球\"到\"化石燃料驱动AI\"的急转，折射出当前AI算力竞赛中能源供给的现实困境——清洁能源在规模和响应速度上尚无法满足大模型训练需求。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Google Android XR眼镜实测：Gemini驱动的实时翻译导航接近可用",
-                "summary": "TechCrunch记者实测Google demo版Android XR智能眼镜，其Gemini AI模型驱动的实时翻译、路标导航和信息叠加功能已接近日常可用水平。眼镜整体重量和续航相比前代有明显改善，Gemini的反应速度和准确率在实测场景中表现稳定。尽管距离大规模消费级上市仍有距离，但Google此次展示的成熟度预示着AI眼镜赛道即将进入产品化临界点，与Meta Ray-Ban的竞争将趋于白热化。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/22/we-tried-googles-ai-glasses-and-theyre-almost-there/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Spotify与环球音乐达成历史性协议：允许AI生成翻唱和Remix内容",
-                "summary": "Spotify宣布与环球音乐集团（UMG）达成里程碑式合作协议，正式允许Spotify Premium订阅用户使用AI工具创作歌曲翻唱和Remix版本，并允许在平台上分发。这是三大唱片公司与流媒体平台在AI生成音乐领域的首次深度授权合作，标志着AI音乐创作从灰色地带走向合规商业化的关键转折。但具体AI生成内容的版权分成机制和原创性边界仍在谈判中。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/21/spotify-and-universal-music-strike-deal-allowing-fan-made-ai-covers-and-remixes/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "王小川披露百川智能战略转型：从AGI主赛道撤回，专攻AI医疗",
-                "summary": "36氪专访百川智能CEO王小川，后者首次系统性披露公司战略转型逻辑：放弃与头部厂商在AGI主赛道的正面竞争，转向从创业之初就想做的事情——打造AI医生。王小川判断，\"纯套壳大模型的应用注定短命\"，百川智能的核心差异化在于医疗场景的深度数据积累和领域微调能力。这一转向也折射出中小模型厂商在资源劣势下的生存策略分化。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3821521291038856"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Anthropic安全研究项目Mythos：年内发现超1万个模型漏洞",
-                "summary": "Anthropic旗下安全研究项目Mythos（对应平台Glasswing）披露，其研究团队在2026年内已累计发现超过10000个AI模型相关的安全漏洞，涵盖越狱攻击、数据泄露和对抗样本等多类威胁。Anthropic表示，这些发现已直接用于Claude模型的安全对齐训练。这一规模性漏洞挖掘行动表明，随着模型能力提升，安全研究正在从\"发现问题\"进入\"系统化持续发现问题\"的新阶段。",
-                "source": "Engadget / Hacker News",
-                "url": "https://www.engadget.com/2180028/anthropic-claude-mythos-preview-project-glasswing-update/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "前沿AI实验室\"囤算力\"真相：实际使用率不足一半，扩张远未饱和",
-                "summary": "Epoch AI发布的最新研究显示，尽管前沿AI实验室在公开宣传中强调算力不足，但实际统计表明，头部实验室的GPU利用率普遍低于50%，大量已采购算力处于闲置或低负载状态。研究认为，这一现象部分源于\"算力储备竞赛\"心理——厂商囤积远超当前所需的芯片以防范供应链风险——同时也暴露了模型训练效率提升空间巨大。这对芯片厂商的产能规划有重要参考价值。",
-                "source": "Epoch AI / Hacker News",
-                "url": "https://epoch.ai/gradient-updates/frontier-labs-dont-use-most-ai-compute"
-            },
-            {
-                "tag": "技术突破",
-                "title": "学术论文提出稀疏推测验证新方法，可显著降低LLM推理成本",
-                "summary": "一篇发表在arXiv上的技术论文提出了\"稀疏推测验证\"（Sparse Speculative Verification, SSV）方法，通过在LLM推理过程中引入稀疏化采样和预测验证机制，可大幅降低大模型推理的计算成本。该方法在不显著损失模型精度的前提下，将部分推理场景的GPU占用率降低30%以上。该研究对关注推理效率优化的工程团队具有直接参考价值。",
-                "source": "arXiv / Hacker News",
-                "url": "https://arxiv.org/abs/2605.19893"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "华泰证券研报：AI驱动交换芯片二次成长，万卡集群带来新增量",
-                "summary": "华泰证券发布研报称，作为数据中心互联核心组件的交换芯片（负责数据交换和报文转发）占交换机成本比例超过30%，预计2026年起将在AI驱动下开启二次成长。研报指出，万卡级以上AI集群对网络稳定性和带宽的要求大幅提升，倒逼数据中心从\"Scale out\"向\"Scale up\"架构升级，交换芯片作为核心网络底座将迎来量价齐升。此判断对光通信和网络芯片产业链有直接投资参考意义。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3822612389941383"
-            },
-            {
-                "tag": "行业格局",
-                "title": "孤独症研究者发出警告：AI伴侣将进一步加剧社会疏离危机",
-                "summary": "Fortune刊登了一位从事孤独症研究25年的学者的深度访谈，警告AI伴侣和社交机器人虽然在短期内能缓解孤独感，但长期将\"系统性地削弱真实社会连接能力\"，使人类更加依赖虚拟交互而非真实关系，最终加剧社会疏离危机。学者呼吁政策制定者在推动AI情感应用的同时，同步布局社会心理支持体系。这一警告与当前AI情感赛道的火热形成鲜明对比。",
-                "source": "Fortune / Hacker News",
-                "url": "https://fortune.com/2026/05/23/loneliness-researcher-ai-companions-social-disconnection-warning/"
             }
         ]
     }
