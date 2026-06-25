@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-06-25",
+        "items": [
+            {
+                "tag": "大额融资/IPO",
+                "title": "瑞为技术通过港交所聆讯，冲刺港股\"视觉具身智能第一股\"",
+                "summary": "港交所文件显示，瑞为技术已于6月24日通过主板上市聆讯，联席保荐人为华泰国际、建银国际、农银国际。瑞为技术以视觉感知为起点，经视觉智能体逐步延伸至依托自研VTFLA技术的具身机器人产品。这是港股18C特专上市通道的又一重量级选手，将成为市场首个纯视觉驱动的具身智能标的。对于AI从业者而言，瑞为的上市路径验证了\"视觉感知+具身智能\"融合赛道的商业化可行性。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3868021691929861"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic指控阿里巴巴\"非法\"获取其Claude模型能力",
+                "summary": "Anthropic于6月24日向媒体证实，已指控阿里巴巴通过某种方式\"非法\"提取其Claude AI模型的关键能力。这一指控涉及核心模型权重和技术泄露问题，中美AI竞争已从单纯的技术竞赛延伸到知识产权保护层面。这对全球AI公司的安全防护体系提出了更高要求，也预示着模型安全将成为下一个监管焦点。",
+                "source": "Bloomberg / Reuters / Hacker News",
+                "url": "https://www.bloomberg.com/news/articles/2026-06-24/anthropic-accuses-alibaba-of-illicitly-accessing-its-ai-models"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "百度文心网站全面升级，整合为统一AI服务入口",
+                "summary": "6月25日，百度宣布对百度文心相关网站进行合并升级，统一整合为全新的百度文心网站，打造一站式AI服务入口。升级后，用户可在一个平台内便捷使用全部AI功能，大幅降低使用门槛，提升交互效率。这是百度对旗下AI产品矩阵的首次系统性整合，标志着中国头部AI厂商从单点突破转向平台化运营。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3867935531046151"
+            },
+            {
+                "tag": "技术突破",
+                "title": "影眸科技Hyper3D发布，3D生成进入\"思考时代\"",
+                "summary": "影眸科技于2026年开年发布首个3D编辑模型Rodin Gen-2 Edit，让AI 3D模型第一次可编辑；随后6月VAST跟进，Hyper3D将3D生成带入\"思考时代\"。今年第一季度该领域已获数亿元新融资。3D生成正从\"快速生成\"向\"智能编辑\"演进，这为游戏、影视、工业设计等领域的内容创作打开新可能。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3865060112438533"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Cerebras股价暴跌，CEO称市场误解其利润率展望",
+                "summary": "AI芯片公司Cerebras在上市后首份财报中预测其核心业务毛利率将收窄，消息一出股价应声下跌。这是继SXM后又一AI芯片新贵的财报\"翻车\"事件。尽管Cerebras在超大模型训练场景有独特优势，但市场对其商业化路径的质疑正在升温，AI芯片泡沫论再度浮现。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/cerebras-stock-plunges-after-earnings-as-ceo-says-margin-outlook-was-misunderstood/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "AI研究人员持续流失，Google顶级科学家转投Anthropic",
+                "summary": "继Google多位顶尖科学家离职后，Jonas Adler和Alexander Pritzel两位重量级AI研究员近日也宣布离开Google加入Anthropic。Anthropic正在成为AI研究人才的\"蓄水池\"，而Google则面临持续的人才流失压力。这一趋势反映出AI安全公司对顶尖研究者的吸引力正在超越传统互联网巨头。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/ai-researchers-continue-to-leave-google-for-its-rivals/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Agility Robotics计划通过SPAC上市，估值25亿美元",
+                "summary": "人形机器人初创公司Agility Robotics预计通过SPAC方式上市，估值达25亿美元。该公司源自俄勒冈州立大学，2015年分拆独立，预计2026年将产生6亿美元营收。在Figure AI和Tesla Optimus之后，又一人形机器人公司走向二级市场，资本化进程显著加速。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/agility-robotics-plans-to-go-public-via-spac-in-a-2-5b-deal/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "前Infosys CEO创立新公司，挑战传统IT服务业",
+                "summary": "前Infosys CEO Vishal Sikka创立新创业公司，获得Mayfield和Aramco Ventures投资，目标是挑战IT服务行业现状。该公司汇集了来自SAP、Infosys和Vianai的资深人士。Vishal Sikka的再次创业表明，AI正在从根本上重构IT服务业的商业模式。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/former-infosys-chief-has-a-new-startup-that-wants-to-challenge-the-it-services-world/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "蚂蚁阿福推出\"科学减重1亿斤\"行动，AI健康功能升级",
+                "summary": "6月25日，蚂蚁阿福发起的\"科学减重1亿斤\"健康行动正式上线，用户只需付1分钱即可领取体脂秤，支持18项身体数据测量。阿福App同步升级AI解读功能，将健康管理与AI结合。继金融支付后，蚂蚁正在将AI能力向健康管理场景延伸，争夺高频C端入口。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3867998223520768"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Figma新增代码层、动画支持及更多AI功能",
+                "summary": "Figma在最新更新中新增代码层支持、动画和着色器功能，以及创建自定义插件的能力。设计工具与AI的融合正在深化，Figma此举旨在将AI能力下沉到设计工作流的每个环节。Adobe遭遇激烈竞争的同时，设计软件市场正迎来AI原生工具的挑战。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/figma-adds-code-layers-support-for-animations-more-ai-features-in-new-update/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "欧洲正抵制华盛顿的芯片战策略",
+                "summary": "ASML CEO Christophe Fouquet此前表示，中国目前可购买的是较旧一代深紫外光刻设备。欧洲芯片设备厂商对美国对华芯片出口管制政策的不满正在升温。全球半导体产业链正面临地缘政治撕裂，这将加速中国在成熟制程芯片领域的自主可控进程。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/europe-is-pushing-back-on-washingtons-chip-war/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "内存芯片需求激增，美光季度营收同比翻四倍",
+                "summary": "美光科技季度营收达414.5亿美元，同比增长4倍，净利润大幅增长。HBM芯片和AI服务器存储需求是主要驱动力。存储器芯片的超级周期验证了AI基础设施投资的持续性，但也预示着算力成本压力将长期存在。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/the-memory-chip-crunch-is-paying-off-for-this-u-s-company/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "企业开始限制员工\"过度使用\"AI处理小任务",
+                "summary": "随着AI调用成本不断攀升，企业正从\"AI自由使用\"时代转向\"AI配给\"时代。员工用AI处理简单任务的习惯导致Token消耗激增，迫使企业建立审批和监控机制。\"Tokenmaxxing\"时代已经结束，AI成本控制将成为企业CTO的新课题。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/companies-are-scrambling-to-stop-employees-from-maxing-out-ai-budgets-with-small-tasks/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "AI并未取代工程师，数据显示工程岗位最具韧性",
+                "summary": "据招聘平台数据显示，在AI裁员叙事甚嚣尘上之际，工程师在新招聘中的占比反而持续上升。尽管AI辅助编程工具大行其道，但复杂系统设计、业务理解和跨团队协作等能力仍是人类工程师的护城河。AI淘汰工程师的预言被数据证伪，但这并不意味着工程师可以高枕无忧。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/ai-was-supposed-to-kill-engineering-jobs-but-new-data-suggests-theyre-the-most-resilient/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "日本数据中心快速扩张引发城市居民反对",
+                "summary": "随着AI数据中心在日本城区大规模建设，当地居民对电力消耗、噪音和环境影响的不满情绪日益加剧。从东京到大阪，数据中心选址争议频发。这为全球AI基础设施扩张敲响警钟，能源可持续性将成为AI公司ESG报告的核心议题。",
+                "source": "Japan Times / Hacker News",
+                "url": "https://www.japantimes.co.jp/environment/2026/06/21/data-center-pushback/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Facebook推出面向创作者的AI伴侣应用",
+                "summary": "Facebook正在测试一款全新的AI创作者伴侣应用，整合了其近期推出的AI创作者助手功能。用户可通过AI应用与粉丝互动、生成内容创意并自动回复评论。Meta此举意在将AI能力嵌入创作者经济核心场景，与TikTok和YouTube的创作者工具直接竞争。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/06/24/facebook-rolls-out-an-ai-companion-app-for-creators/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI Codex被曝存在SSD写入漏洞，每年浪费数百万美元",
+                "summary": "工程师发现OpenAI Codex在执行代码任务时会产生大量冗余的SSD写入操作，造成每年数百万美元的硬件损耗。Codex的\"暴力写盘\"模式揭示了AI代码生成在资源效率上的严重缺陷。这对追求绿色计算的企业而言是不可忽视的成本隐患。",
+                "source": "The Register / Hacker News",
+                "url": "https://www.theregister.com/ai-and-ml/2026/06/23/openai-codex-bombards-ssds-with-needless-write-operations-costing-millions/5260402"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Promptctl：AI提示词的Git式版本管理工具",
+                "summary": "开发者社区推出Promptctl，一个类似Git的AI提示词版本管理和协作工具，支持提示词的分支、合并和回滚。随着AI应用开发规模扩大，提示词工程正成为独立的技术工种，Promptctl填补了AI开发工具链的关键空白。",
+                "source": "Hacker News",
+                "url": "https://github.com/naya-ai/promptctl"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Halyard：面向开发者的开源AI工作账本",
+                "summary": "Halyard是一个开源AI工作账本工具，帮助开发者追踪AI调用时间、Token消耗、成本和开具发票。在企业AI预算管控趋严的背景下，这类成本可见性工具正成为刚需，开源方案为中小企业提供了零成本替代商业软件的选项。",
+                "source": "Hacker News",
+                "url": "https://github.com/Kormiloio/Halyard"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "smolfs：面向AI Agent的持久化文件系统层",
+                "summary": "开发者推出smolfs，为AI Agent提供跨平台记忆同步能力。用户可在笔记本和云端AI Agent之间无缝同步记忆文件，解决了多终端AI Agent协作的碎片化问题。随着AI Agent从单点工具走向工作流编排，持久化和状态管理正成为新的基础设施需求。",
+                "source": "Hacker News",
+                "url": "https://github.com/CelestoAI/smolfs"
+            }
+        ]
+    },
+    {
         "date": "2026-06-24",
         "items": [
             {
@@ -3036,151 +3181,6 @@ const AI_NEWS_DATA = [
                 "summary": "行业数据显示，中国人形机器人企业已占据全球市场超过80%的份额，供应链、整机制造和场景落地速度均领先全球。从特斯拉Optimus到国内优必选、智元机器人，产业链上下游协同效应正快速转化为商业化能力，中国在该赛道的先发优势正在演变为结构性护城河。",
                 "source": "36氪",
                 "url": "https://36kr.com/p/3825928694846085"
-            }
-        ]
-    },
-    {
-        "date": "2026-05-26",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "教皇利奥十四世发布首部AI通谕，警告AI不应成为权力集中工具",
-                "summary": "梵蒂冈第279任教皇利奥十四世发布了首部关于AI的通谕《Magnifica humanitas》，明确指出AI必须服务于全人类，而非用于集中权力或侵蚀民主。通谕引用了《指环王》中甘道夫关于解除武器的桥段，呼吁建立强有力的AI监管框架。这份通谕被视为梵蒂冈近年来对技术伦理最全面的阐述，也标志着宗教界正式将AI治理纳入核心议程。对AI行业而言，这意味着来自超国家机构的合规压力将持续加大。",
-                "source": "Vatican News / AP News / Axios",
-                "url": "https://www.vaticannews.va/en/pope/news/2026-05/pope-leo-xiv-encyclical-magnifica-humanitas-ai.html"
-            },
-            {
-                "tag": "行业格局",
-                "title": "ClickUp宣布大规模裁员，用数千个AI代理替换数百名员工",
-                "summary": "成立九年的独角兽公司ClickUp宣布裁员，用数千个AI代理替代数百名员工。这是继Meta裁员1.1万人、Intuit裁减8000人之后，又一主流科技公司以AI为由进行大规模人员调整。ClickUp的案例表明，AI对白领工作的替代已从预测变为现实，且替代比率呈数量级跃升（数百人→数千代理）。这将成为其他SaaS公司裁员措辞的新范本。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/25/what-clickups-mass-layoff-tells-us-about-the-future-of-work/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "AI扫描40万条Reddit帖子，发现Ozempic隐藏副作用",
-                "summary": "研究人员利用AI技术分析40万条Reddit帖子，成功发现了Ozempic等GLP-1药物此前未被识别的隐藏副作用。这项研究发表在Science Daily上，展示了AI在药物安全和真实世界数据挖掘方面的巨大潜力。与传统临床试验相比，AI驱动的社交媒体分析能够以更低成本发现罕见不良反应，这对制药行业和监管部门具有重要意义。",
-                "source": "Science Daily",
-                "url": "https://www.sciencedaily.com/releases/2026/05/260523103914.htm"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic协助教皇发布AI通谕，重塑AI伦理话语权格局",
-                "summary": "据Religion News报道，AI安全公司Anthropic深度参与了教皇利奥十四世最新AI通谕的起草工作。这一合作意味着AI行业头部企业正试图在宗教伦理框架中占据话语权位置。梵蒂冈作为全球13亿天主教徒的精神权威，其AI立场将影响欧美政策制定者和企业董事会的决策逻辑。Anthropic的参与表明，AI公司的公共政策策略已从游说转向构建伦理合法性。",
-                "source": "Religion News",
-                "url": "https://religionnews.com/2026/05/22/why-anthropic-is-helping-unveil-the-popes-new-encyclical-on-ai/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta、Intuit大裁员后，星巴克宣布放弃AI语音点单",
-                "summary": "继Meta裁减1.1万人、Intuit裁减8000人之后，星巴克宣布放弃此前部署的AI语音点单系统，回归人工柜台服务。三起大裁员/调整均发生在AI工具可用性大幅提升的背景下，揭示了一个被忽视的行业真相：AI落地失败率远高于宣传所示。星巴克的撤退尤其值得关注，因为它是快消行业AI应用的标杆案例。",
-                "source": "Forbes",
-                "url": "https://www.forbes.com/sites/sandycarter/2026/05/22/starbucks-drops-ai-as-meta-and-intuit-cut-11000-jobs/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "光轮智能完成新一轮融资，蚂蚁集团领投多机构参与",
-                "summary": "AI数据合成公司光轮智能完成新一轮融资，由蚂蚁集团领投，建投投资、大湾区共同家园基金、森马方道基金、山东孚弘（工业富联参与管理）、芯能投资、临芯投资等国资和产业资本跟投。这家成立不到两年的公司已汇聚阿里系、产业资本和地方国资三方资源，其数据合成技术被广泛认为是训练下一代AI模型的关键基础设施。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3825488754267014"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "思特威与紫光展锐达成战略合作，布局MicroLED高速光互连",
-                "summary": "CMOS图像传感器厂商思特威与芯片设计公司紫光展锐正式达成战略合作，共同布局MicroLED高速光互连领域。双方将围绕光互连芯片设计与系统解决方案展开深度协同，瞄准AI算力集群内部短距高速互连这一关键瓶颈。随着AI大模型对算力的需求爆发，GPU/ASIC之间的互连带宽正成为制约算力扩展的核心因素，该合作直指这一卡脖子环节。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3825499233817224"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "桥田智能获国家工业母机基金亿元投资，加速机器人智能化",
-                "summary": "工业机器人末端及周边设备厂商桥田智能完成A+轮亿元级融资，由国家工业母机产业投资基金独家出资。这是继首支国家级工业母机基金设立后，首次向机器人产业链中游设备商进行战略投资。桥田智能主要面向汽车主机厂提供机器人末端执行器和周边设备，本轮融资将用于高端产能扩建和核心技术研发，其客户覆盖国内外头部车企。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3825527430025856"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "学术研究证实AI技能退化是结构性系统问题",
-                "summary": "发表在Springer学术期刊上的研究论文指出，AI辅助编程导致的技能退化是一个结构性而非偶发性问题。研究发现，长期依赖AI代码补全的开发者，在脱离AI工具后的问题解决能力显著下降，且这种退化在资深工程师中同样存在。这意味着企业和教育机构需要重新设计人才培养体系，而非简单地将AI工具分发给员工或学生。",
-                "source": "Springer / Hacker News",
-                "url": "https://link.springer.com/article/10.1007/s00146-025-02686-z"
-            },
-            {
-                "tag": "政策监管",
-                "title": "加州州立大学拥抱AI引发师生反弹，暴露机构AI转型困境",
-                "summary": "美国加州州立大学系统（CSU）宣布全面拥抱AI教学辅助工具，但遭到学生和教职员工的强烈抵制。这是美国最大公立大学系统首次在全校范围内强制推广AI工具，引发了关于学术诚信、教师就业保障和学生隐私的广泛质疑。CSU拥有48万在校生，其AI政策走向将成为全美高校AI治理的风向标。",
-                "source": "NPR",
-                "url": "https://www.npr.org/2026/05/25/nx-s1-5772820/artificial-intelligence-education-technology-california-state-university"
-            },
-            {
-                "tag": "行业格局",
-                "title": "AI被用于重建已故飞行员语音，黑匣子录音引发NTSB介入",
-                "summary": "研究人员利用AI技术分析已故飞行员的 cockpit 录音光谱图，成功重建了其语音内容，迫使美国国家运输安全委员会（NTSB）临时封存了相关录音资料。这起事件揭示了AI在逝者数字遗产保护方面的能力边界问题，也引发了关于音频证据完整性和隐私权的法律讨论。NTSB的介入预示着AI重建内容可能在未来法庭上被挑战。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/22/ai-is-being-used-to-resurrect-the-voices-of-dead-pilots/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "AI安全法案新提案：为企业AI安全责任提供避风港保护",
-                "summary": "一份关于AI安全避风港的新法案草案在网上流传，该提案旨在为企业善意部署AI安全措施提供法律免责保护。这份由William Rinehart发布的提案分析了当前AI责任框架的缺失，指出企业因担心监管风险而过度保守于AI部署。避风港条款若能通过，将显著降低企业AI创新的合规成本，但也可能引发安全标准放松的担忧。",
-                "source": "Hacker News",
-                "url": "https://www.williamrinehart.com/data/An_AI_Safety_Safety_Harbor.pdf"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "亚马逊推出Bee可穿戴设备，进军AI助手硬件赛道",
-                "summary": "亚马逊正式推出AI可穿戴助手Bee，能够持续监听用户环境并提供实时AI辅助。该设备定位为轻量级AI助手，提供语音交互和情境感知功能，但同时引发了用户对隐私的强烈担忧。Bee的发布标志着亚马逊正式进入AI硬件战场，与苹果AirPods、Meta智能眼镜形成三角竞争态势。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/24/i-tried-amazons-bee-wearable-and-am-both-intrigued-and-slightly-creeped-out/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "xAI全面转向天然气数据中心，放弃地球太阳能战略",
-                "summary": "马斯克的AI公司xAI已全面放弃在地球部署太阳能数据中心的计划，转而押注天然气发电为AI训练供能。与此同时SpaceX却在推进轨道数据中心项目。这一反差揭示了AI基础设施当前的能源困境：可再生能源无法满足GPU集群的瞬时电力需求。xAI的能源选择将与环保承诺产生持续冲突。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/23/elon-musk-has-given-up-on-solar-power-on-earth/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "TechCrunch深度调查：AI初创公司ARR数据膨胀成风",
-                "summary": "TechCrunch对多家AI初创公司的财务数据进行分析，发现ARR（年度经常性收入）存在系统性膨胀现象。部分公司将非经常性的一次性项目、增值服务甚至渠道过路费都计入经常性收入，对外展示虚高的增长曲线。投资者对此心知肚明但选择沉默，因为这有助于推高估值和吸引后续资金。这一调查揭示了AI泡沫的另一面——数据造假正在成为行业潜规则。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/22/how-vcs-and-founders-use-inflated-arr-to-kingmake-ai-startups/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "集思科技三年服务60亿GMV，揭秘品牌从“用AI”到“管AI”的转型",
-                "summary": "AI营销公司集思科技在2026AI Partner大会上透露，其已服务LVMH、欧莱雅、宝洁等全球集团，三年累计实现超60亿元GMV。创始人指出2023年是Agent元年，但2026年才是营销内容Agent真正落地应用的节点。品牌最核心的资产正在从静态标签转向动态情感洞察。该案例表明AI营销已从实验阶段进入规模化生产阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3824179485233541"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "水母智能AI竖屏剧集入围戛纳，AI影视工业化迈出关键一步",
-                "summary": "水母智能旗下水母映画出品的两部AI竖屏剧集《摸金之天机入梦》（The Golden Tomb Seeker）和水母星作品成功入围第79届戛纳国际电影节Fantastic Pavilion单元。这是中国AI影视内容首次进入国际A类电影节展映，标志着AI辅助内容创作从工具层面向IP层面跃升。戛纳的背书将加速AI影视与传统影视工业的融合。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3823033729061253"
-            },
-            {
-                "tag": "技术突破",
-                "title": "DwarfStar开源项目实现LLM推理去中心化分发",
-                "summary": "开源项目DwarfStar发布了一种新的LLM推理分发方案，允许在非中心化架构下实现模型推理的负载均衡。该方案针对边缘计算场景优化，能够在多节点间动态分配推理计算资源，降低单个节点的内存和算力门槛。这是继vLLM、TensorRT-LLM之后又一个有影响力的推理优化开源项目，对私有化部署场景有重要价值。",
-                "source": "Hacker News",
-                "url": "https://antirez.com/news/167"
-            },
-            {
-                "tag": "行业格局",
-                "title": "加密货币代码提交量暴跌75%，开发者加速流向AI领域",
-                "summary": "据CoinDesk报道，加密货币开发者活动已降至多年低点，GitHub上的代码提交量较峰值下降75%。与此同时，AI相关项目的开发者增长却呈现爆发态势。这一此消彼长反映了技术人才市场的结构性转移：AI的高薪酬和资本吸引力正在虹吸Web3人才。对加密货币行业而言，开发者流失意味着创新动力的持续衰减。",
-                "source": "CoinDesk / Hacker News",
-                "url": "https://www.coindesk.com/tech/2026/03/12/crypto-developer-activity-sinks-to-multi-year-low-as-ai-absorbs-gi"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Google承认AI安全是行业共同难题，连自身也在摸索",
-                "summary": "TechCrunch报道，Google在近期一次内部沟通中承认，AI安全是目前整个行业共同面临的难题，连Google自身也在不断探索最佳实践。这意味着此前的AI安全治理更像是被动应对而非主动设计。该表态是对此前AI安全竞赛中各公司表态过于自信的一次修正，也为行业敲响警钟：AI安全的成熟度远低于宣传。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/24/everyone-is-navigating-ai-security-in-real-time-even-google/"
             }
         ]
     }
