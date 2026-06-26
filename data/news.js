@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-06-26",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "特朗普政府要求OpenAI推迟GPT 5.6发布，称存在国家安全风险",
+                "summary": "据Axios、CNN等多家媒体6月25日报道，白宫已要求OpenAI放缓其下一代模型GPT 5.6的发布节奏。报道称政府官员对模型的安全性表示担忧，要求该公司仅与\"特定合作伙伴\"分享模型，而非向公众全面发布。这已是本周内第二次传出白宫关注OpenAI新模型发布的消息。AI安全已成为大国博弈的焦点议题，随着模型能力逼近关键阈值，监管介入将成常态，企业的发布时间表不再完全由商业利益决定。",
+                "source": "Axios / CNN / TechCrunch",
+                "url": "https://www.axios.com/2026/06/25/trump-administration-openai-gpt-model-release"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic指控阿里巴巴实施史上最大规模AI蒸馏攻击，涉及2880万次欺诈请求",
+                "summary": "Anthropic于6月26日发布安全报告，指控阿里巴巴通过其API平台实施了针对Claude的史上最大规模蒸馏攻击，非法获取训练数据。攻击涉及2880万次虚假API调用。Anthropic已将证据提交相关机构。这标志着头部AI公司之间的数据主权争夺战正式白热化，蒸馏攻击将成为未来行业诉讼和监管的重点领域。",
+                "source": "YipZap / TechCrunch",
+                "url": "https://yipzap.com/anthropic-accuses-alibaba-of-largest-ai-distillation-attack-28-8m-fraudulent-exchanges/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "国家能源局\"十五五\"规划首次将AI算力纳入能源战略，西部要\"向外送Token\"",
+                "summary": "6月26日，国新办发布会公布\"十五五\"能源规划，国家能源局副局长万劲松表示，西部地区不仅要向外送电、送煤、送气，还要\"向外送产品、送Token（词元）\"。这标志着AI算力正式纳入国家能源战略顶层设计。随着大模型训练和推理用电激增，能源供给将成为制约AI发展的核心瓶颈，西电东送将升级为\"西算东送\"。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3869422174737672"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Adobe宣布收购Topaz Labs，强化AI图像视频增强能力",
+                "summary": "Adobe于6月25日宣布收购AI图像和视频增强工具开发商Topaz Labs，交易金额未披露。Topaz Labs以其AI降噪、超分辨率等产品闻名，拥有数百万用户。Adobe计划将Topaz的技术整合至Photoshop、Premiere Pro等产品线。在生成式AI重塑创意工具格局的当下，Adobe正通过收购快速补齐AI能力短板，创意软件战场正在被彻底改写。",
+                "source": "TechCrunch / 36氪",
+                "url": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "挪威宣布在小学全面禁止AI应用，系全球首个此类立法",
+                "summary": "挪威政府近日宣布在小学阶段全面禁止使用AI应用此前该国已禁止学生在校使用智能手机。首相索尔贝格表示，AI工具对儿童认知发展和创造力构成潜在威胁，建议中学和成人阶段审慎使用。这是全球首个针对K12阶段的AI禁令，将为其他国家青少年AI监管提供参考范本。",
+                "source": "Hacker News / AP News",
+                "url": "https://news.ycombinator.com/item?id=48680504"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Oracle因推进AI自动化裁员约21000人，员工数创三年新低",
+                "summary": "Oracle在最新财报中披露，员工总数已从约14万缩减至约12万，净减少约21000人。公司CEO表示裁员主要源于AI自动化带来的效率提升。Oracle正将大量后台工作交由AI系统处理，标志着企业级AI替代已进入实质性阶段。分析师预计更多传统软件公司将跟进裁员，AI带来的就业结构性冲击正在从科技公司向传统行业蔓延。",
+                "source": "Yahoo Finance / TechCrunch",
+                "url": "https://finance.yahoo.com/technology/ai/articles/oracle-workforce-shrinks-13-204431510.html"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "美光Q3营收415亿美元同比激增346%，AI芯片需求持续井喷",
+                "summary": "存储芯片巨头美光科技6月24日发布2026财年Q3财报，营收达415亿美元，环比增长74%，同比暴涨346%，连续第五个季度刷新历史记录，毛利率高达84.9%。HBM内存和AI服务器用存储芯片是增长核心驱动力。财报公布后投资者重拾对AI赛道的信心，多只AI概念股应声上涨。AI基础设施的军备竞赛仍在加速，上游芯片厂商率先受益。",
+                "source": "36氪 / CNN",
+                "url": "https://36kr.com/p/3868523068298499"
+            },
+            {
+                "tag": "应用落地",
+                "title": "北京头部大模型累计注册用户突破20.5亿，API服务近5万家机构",
+                "summary": "据北京市政府6月25日在全球数字经济大会发布会上披露，北京头部大模型累计注册用户已达20.5亿，面向全国近5万家机构提供API接口服务。百度AI志愿助手高考期间服务2.5亿用户、12亿人次。北京已形成大模型企业示范引领、辐射带动的产业生态，AI应用正从尝鲜走向大规模刚需。",
+                "source": "36氪 / 网信北京",
+                "url": "https://36kr.com/newsflashes/3869383394170112"
+            },
+            {
+                "tag": "应用落地",
+                "title": "腾讯云4.5个月助力印尼XLSMART完成AI全链路云转型",
+                "summary": "6月26日，印尼运营商XLSMART宣布完成大规模公有云转型，腾讯云作为核心云战略合作伙伴，将AI融入迁移全链路，4.5个月内实现平稳迁移。腾讯云团队基于代码助手CodeBuddy等工具，大幅提升迁移效率。东南亚运营商数字化进程加速，中国云厂商正成为亚太AI出海的重要载体。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3869433547216130"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "RoboScience发布Visics通用具身大模型，实现跨本体跨任务泛化",
+                "summary": "通用具身智能企业RoboScience于6月24日发布Visics大模型，首次完整披露自研VLOA（Vision-Language-Object-Action）技术架构。该模型实现了跨机器人本体、跨物体、跨任务的泛化能力，可同时操控机械臂、人形机器人等多种形态。这标志着国产具身智能在通用性上取得关键突破，工业和服务场景落地进程有望加速。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3868276479710466"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Claude付费用户份额持续攀升，Anthropic蚕食ChatGPT消费者市场",
+                "summary": "TechCrunch分析显示，尽管ChatGPT在整体用户数上保持领先，但在付费订阅用户群体中，Anthropic的Claude正赢得越来越多消费者的选择。Claude在编程、写作等专业场景的口碑优势逐渐转化为商业转化。随着两家公司的IPO临近，消费者AI市场的竞争格局正在重塑，垂直场景深耕或成破局关键。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI以铂金会员身份加入Rust基金会，并捐赠项目资金",
+                "summary": "Rust基金会宣布OpenAI正式成为铂金会员，并同步向Rust项目捐赠资金。铂金会员是基金会最高级别席位，此前主要成员包括AWS、Google、Microsoft等。OpenAI此举意在加强与Rust生态的深度绑定，为其高性能AI基础设施储备底层技术能力。",
+                "source": "Rust Foundation / Hacker News",
+                "url": "https://rustfoundation.org/media/rust-foundation-welcomes-openai-as-platinum-member-announces-donation-to-rust-project/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "General Intuition获3.2亿美元融资，用游戏数据训练AI物理世界决策",
+                "summary": "AI初创公司General Intuition宣布获得3.2亿美元新一轮融资，计划用这笔资金扩展基于游戏视频训练的AI系统。该公司押注于游戏产生的大规模动作数据可用于训练机器人在真实物理世界中的决策能力，已累计融资2.3亿美元。此轮融资表明AI训练数据来源正从互联网文本向视频游戏、模拟环境等多元形态扩展。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic成全球价值最高AI独角兽，DeepSeek跻身全球前15",
+                "summary": "据36氪6月26日汇总，Anthropic在最新一轮融资后估值突破600亿美元，成为全球价值最高的AI独角兽。与此同时，中国AI公司DeepSeek跻身全球独角兽企业前15名，估值约50亿美元。中美AI双雄格局进一步稳固，但两国企业之间的技术竞争和人才争夺也将持续加剧。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3869243269387269"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Databricks前AI负责人创立Un-0，目标削减AI算力成本1000倍",
+                "summary": "Databricks前AI主管离开后创立Un-0，宣称其技术可将AI推理的电力消耗削减1000倍。Un-0是一套图像生成系统，首次展示了其技术可复制传统扩散模型的输出质量，但能效大幅提升。如果该技术可规模化，AI推理成本将迎来数量级下降，推动AI应用真正普惠化。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI智能体测试平台Patronus AI获5000万美元B轮融资",
+                "summary": "由前Meta AI研究员创立的AI智能体测试平台Patronus AI宣布获得5000万美元B轮融资，由Sequoia领投。该公司正在构建\"数字世界\"平台，用于对AI智能体进行压力测试和安全性评估。随着企业级AI智能体部署加速，测试和合规市场正成为新的投资风口。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Netris获a16z领投1500万美元A轮融资，帮助AI云厂商快速部署网络",
+                "summary": "网络基础设施软件公司Netris宣布完成1500万美元A轮融资，由a16z领投。Netris提供运行在网络交换机上的软件平台，帮助AI云厂商（neoclouds）缩短网络部署时间、降低运维成本。随着AI算力需求爆发，新兴云服务商的基础设施建设正成为资本关注的新蓝海。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "IPO前夕竞争白热化，Anthropic与OpenAI争夺AI安全标准话语权",
+                "summary": "据FT报道，Anthropic和OpenAI均在筹备IPO，但在上市前两家公司竞争日趋激烈。Anthropic正推动AI安全评估的行业标准，而OpenAI则强调模型能力突破，双方在技术路线和商业叙事上呈现明显分歧。IPO将检验资本市场对AI公司\"安全\"与\"能力\"两条路线的真实偏好。",
+                "source": "Financial Times / Hacker News",
+                "url": "https://www.ft.com/content/8c02de04-5516-405b-941d-289e586d8eb8"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "国家能源局：\"十五五\"年均用电增量将达6000亿度，AI用电激增是主因",
+                "summary": "国家能源局电力司司长杜忠明在国新办发布会上表示，\"十五五\"时期全国年均用电增量预计达6000亿度左右，约等于每年新增一个中等经济体的全国用电量。算力用电激增、电动充电设施需求快速增长是核心驱动因素。AI基础设施的能源需求正成为影响国家能源规划和电网投资的关键变量。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3869409424823299"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "专注非侵入式神经接口的念象科技完成近千万元天使轮融资",
+                "summary": "神经接口技术研发商念象科技宣布完成近千万元天使轮融资，由永珺星芒领投，浦东创投、一村资本跟投。资金将用于产品研发、团队扩建及本土sEMG（表面肌电）数据集建设。念象科技专注于非侵入式神经接口技术，为AI人机交互提供新型数据入口，资本提前布局下一代交互入口的意图明显。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3867943030395913"
+            }
+        ]
+    },
+    {
         "date": "2026-06-25",
         "items": [
             {
@@ -3036,151 +3181,6 @@ const AI_NEWS_DATA = [
                 "summary": "Google CEO桑达尔·皮查伊在Google I/O后首次接受深度采访，系统阐述Google AI搜索战略。他承认搜索体验的彻底重塑引发了用户反弹，但强调\"AI优先\"是正确方向，同时回应了关于搜索结果质量下降和web生态恶化的批评。",
                 "source": "The Verge AI",
                 "url": "https://www.theverge.com/podcast/936445/sundar-pichai-ai-search-google-zero-youtube-web"
-            }
-        ]
-    },
-    {
-        "date": "2026-05-27",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "国务院将加快人工智能综合性立法进程",
-                "summary": "国务院新闻办公室宣布，\"十五五\"期间将加快研究推进人工智能健康发展综合性立法，同时推进低空经济立法等重要领域立法工作。司法部副部长武增表示，政府立法将重点保障经济社会高质量发展、推进中国式现代化。这一动向标志着中国AI监管体系正从分散式治理向系统化顶层设计转型，为AI产业划定清晰合规边界。",
-                "source": "36氪 / 司法部官网",
-                "url": "https://36kr.com/newsflashes/3826943472947847"
-            },
-            {
-                "tag": "政策监管",
-                "title": "最高法将制定涉AI案件和数据产权司法保护规范性文件",
-                "summary": "最高人民法院审判委员会副部级专职委员刘贵祥在发布会上表示，人民法院将研究制定涉人工智能案件和数据产权司法保护规范性文件，依法平等保护各类经营主体合法权益。这标志着司法体系开始系统性回应AI时代产权保护诉求，为技术创新提供明确的司法预期。",
-                "source": "36氪 / 最高人民法院官网",
-                "url": "https://36kr.com/newsflashes/3826929999434370"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Sam Altman：AI不太可能导致\"就业末日\"",
-                "summary": "OpenAI CEO Sam Altman在最新采访中明确表示，AI不太可能导致大规模失业，\"就业末日\"的担忧被过度放大。此前Anthropic CEO Amodei也发出类似信号，两位AI巨头掌门人在各自IPO前同步\"降调\"，被认为是在政策制定者和公众面前为行业争取更宽松舆论空间。",
-                "source": "Reuters / Fortune",
-                "url": "https://www.reuters.com/world/asia-pacific/openais-altman-says-ai-unlikely-lead-jobs-apocalypse-2026-05-26/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "高通与字节跳动达成AI芯片合作协议",
-                "summary": "据Bloomberg报道，高通已与字节跳动签署AI芯片合作协议，具体条款尚未披露。此举正值美国对华科技出口管制持续收紧之际，字节跳动正寻求多元化芯片供应以支撑其在AI领域的高速扩张。高通作为美国本土芯片厂商参与其中，显示双方均在复杂的监管环境中寻找合作空间。",
-                "source": "Reuters / Bloomberg",
-                "url": "https://www.reuters.com/business/qualcomm-strikes-ai-chip-deal-with-tiktok-owner-bytedance-bloomberg-news-reports-2026-05-26/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "OpenRouter完成1.13亿美元B轮融资，估值一年翻两倍至13亿美元",
-                "summary": "AI模型聚合平台OpenRouter宣布完成1.13亿美元B轮融资，由CapitalG领投。OpenRouter在六个月内使用量增长5倍，已成为连接开发者与多家人工智能模型的\"中立层\"基础设施。本轮融资表明，在闭源与开源模型激烈竞争格局下，中间层平台的价值正获资本持续认可。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/26/openrouter-more-than-doubles-valuation-to-1-3b-in-a-year/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic宣布任命崔基永为韩国区代表董事",
-                "summary": "Anthropic正式宣布任命崔基永（KiYoung Choi）为韩国代表董事，负责韩国市场战略规划与政府关系维护。随着Claude在企业市场渗透加速，Anthropic正加大在亚太重点市场布局力度，填补此前在韩国的组织空白。此举被视为Anthropic应对OpenAI、Google在该区域竞争的关键人事动作。",
-                "source": "Anthropic官网",
-                "url": "https://www.anthropic.com/news/kiyoung-choi-representative-director-anthropic-korea"
-            },
-            {
-                "tag": "行业格局",
-                "title": "字节跳动首次对Seed部门员工开放股票期权认购",
-                "summary": "四位知情人士透露，字节跳动正为其Seed人工智能部门员工提供与该部门表现挂钩的低价股票期权，这是字节跳动首次针对特定业务单元发行股权。该激励计划旨在应对AI人才被竞争对手密集挖角的压力，以绑定核心研发团队。知情人士称，本月将正式开放认购权。",
-                "source": "36氪 / Financial Times",
-                "url": "https://www.ft.com/content/0b05e1dd-04c7-4925-be6f-7dc63717cbce"
-            },
-            {
-                "tag": "政策监管",
-                "title": "教皇利奥十四世呼吁通过监管与透明度应对AI挑战",
-                "summary": "教皇利奥十四世在其首份通谕《Magnifica Humanitas》中发出警告：AI带来的挑战必须通过监管和透明度来应对，而非放任技术自行发展。他呼吁各国政府、科技公司和宗教机构合作建立AI伦理框架，防止AI被用于操控舆论、削弱人类尊严。这一表态被视为梵蒂冈正式介入全球AI治理的标志性事件。",
-                "source": "CBC",
-                "url": "https://www.cbc.ca/news/world/pope-leo-magnifica-humanitas-encylical-9.7210842"
-            },
-            {
-                "tag": "技术突破",
-                "title": "研究人员发现Meta和Google AI安全控制可在数分钟内被绕过",
-                "summary": "安全研究人员在一项深度研究中揭示，Meta的Llama系列和Google的Gemini等主流AI模型的安全护栏可在数分钟内通过提示注入技术被有效移除。这意味着攻击者可能利用开源模型的灵活性绕过内容政策限制。该发现对依赖\"开源即安全\"假设的企业安全策略敲响警钟。",
-                "source": "CryptoBriefing / Hacker News",
-                "url": "https://cryptobriefing.com/meta-google-ai-safety-controls-removable/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Uber一个季度烧完AI预算，CIO呼吁重新评估AI投入产出",
-                "summary": "Uber COO在内部会议上透露，公司在单一季度内耗尽了全年AI预算，主要投入在Claude Code等AI编程工具上。这一案例正在引发硅谷企业C-suite对AI支出的重新审视——当Token成本从实验走向大规模部署时，如何量化ROI成为CIO的核心焦虑。",
-                "source": "Fortune / Hacker News",
-                "url": "https://fortune.com/2026/05/26/uber-coo-ai-spending-tokens-claude-code/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "SK海力士发布自冷却iHBM芯片解决AI过热难题",
-                "summary": "SK海力士在仁川发布全球首款自带冷却机制的高带宽内存芯片iHBM，可有效解决AI数据中心因算力密度攀升导致的散热瓶颈。与传统HBM需配合复杂液冷系统不同，iHBM将散热功能集成于芯片内部，将于2026年下半年进入量产，有望显著降低AI服务器基础设施成本。",
-                "source": "Korea Times",
-                "url": "https://www.koreatimes.co.kr/business/companies/20260526/sk-hynix-unveils-self-cooling-ihbm-chips-to-combat-ai-overheating"
-            },
-            {
-                "tag": "行业格局",
-                "title": "环球音乐与TikTok续签AI音乐内容保护协议",
-                "summary": "环球音乐集团（UMG）与TikTok正式续签多年合作协议，重点强化针对未授权AI生成音乐的内容管控机制。UMG近年来持续推动流媒体平台和AI公司部署更严格的内容审核政策，此次续约标志着平台方在AI音乐侵权问题上承担更大责任，对整个数字音乐生态具有示范效应。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/26/universal-music-group-and-tiktok-renew-agreement-to-combat-unauthorized-ai-music/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "DuckDuckGo安装量激增30%，用户抵制Google强制推送AI搜索",
-                "summary": "DuckDuckGo安装量在过去一个月内增长30%，直接受益于Google在I/O 2026上对搜索的大规模改造——将传统蓝链接全面替换为AI生成内容。用户普遍反馈被\"强制投喂\"AI搜索结果，怀念经典链接体验。这表明用户对AI搜索激进替代策略的反弹正在重塑搜索市场格局。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/26/duckduckgo-installs-are-up-30-as-users-reject-being-force-fed-googles-ai-search/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "杉岩数据完成亿元级D轮融资，加码AI原生数据基础设施",
-                "summary": "AI数据基础设施公司杉岩数据宣布完成亿元级D轮融资，由福田资本运营集团旗下长胜产业基金领投，达晨财智跟投。杉岩数据本轮资金将主要用于AI原生数据基础设施升级和行业数智解决方案拓展。在国产替代和AI算力需求双轮驱动下，数据基础设施赛道正持续吸引头部资本关注。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3826910909092480"
-            },
-            {
-                "tag": "应用落地",
-                "title": "三星电子将于下月允许员工使用外部AI模型",
-                "summary": "三星电子宣布从下月开始允许员工在工作中使用外部AI模型，包括OpenAI的ChatGPT和Google Gemini等此前受限的服务。此举标志着三星在AI使用政策上的重大转向——从最初的严格封禁（2023年因泄密事件禁用ChatGPT）到如今主动拥抱，折射出企业AI政策的务实化趋势。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3825928694846085"
-            },
-            {
-                "tag": "应用落地",
-                "title": "淘宝闪购推出\"城盟\"AI智能体系赋能城市合作伙伴",
-                "summary": "淘宝闪购在成立一周年之际正式发布\"城盟\"系统，为城市经营合作伙伴打造专属AI智能体，提供定制化经营辅助，建立\"经营指挥中心+AI+Agent\"的全新工作模式。该系统将AI能力下沉到本地生活细分场景，标志着外卖及即时零售领域AI运营工具竞争进入新阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3826970472796807"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Human Archive用印度零工经济数据训练物理AI机器人",
-                "summary": "Human Archive由UC Berkeley和斯坦福大学研究人员创立，正在招募印度零工经济工作者穿戴摄像头记录日常工作场景，将真实世界的物理操作数据用于训练机器人AI。与传统采集方式不同，这种众包模式能以更低成本获取多样化的真实动作数据，有望突破机器人泛化能力瓶颈。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/05/26/human-archive-taps-into-indias-services-startups-to-collect-data-for-physical-ai/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "新研究揭示主流AI模型存在系统性宗教偏见",
-                "summary": "由多所基于信仰的大学组成的研究联盟发布报告，指出OpenAI、Google和Anthropic的主流模型存在系统性宗教偏见：在测试中模型对特定宗教内容的响应显著区别于其他信仰群体。研究人员呼吁模型开发商在训练数据选择和微调阶段纳入更多元的宗教视角，避免AI系统无意中强化宗教歧视。",
-                "source": "Deseret / Hacker News",
-                "url": "https://www.deseret.com/faith/2026/05/26/studies-find-religious-bias-in-ai-models/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "NBBOSS发布全球首款老板专属AI决策机器人R1",
-                "summary": "NBBOSS于5月26日发布专为商业决策者设计的AI决策机器人R1，采用\"智能基座+可分离机身\"双形态设计。创始人童楚格指出，当前AI工具让员工效率大幅提升，但企业决策者反而被边缘化，R1正是为填补这一空白。R1具备实时商业数据分析和主动决策建议功能，开启了AI从\"员工工具\"到\"高管助手\"的场景跨越。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3826958517113731"
-            },
-            {
-                "tag": "应用落地",
-                "title": "我国人形机器人全球市场份额突破八成",
-                "summary": "行业数据显示，中国人形机器人企业已占据全球市场超过80%的份额，供应链、整机制造和场景落地速度均领先全球。从特斯拉Optimus到国内优必选、智元机器人，产业链上下游协同效应正快速转化为商业化能力，中国在该赛道的先发优势正在演变为结构性护城河。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3825928694846085"
             }
         ]
     }
