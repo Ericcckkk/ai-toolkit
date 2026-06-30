@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-06-30",
+        "items": [
+            {
+                "tag": "重要产品发布",
+                "title": "马斯克宣布Grok 4.5开启SpaceX与特斯拉内部私测，性能或超越Claude Opus",
+                "summary": "马斯克于6月30日宣布Grok 4.5已在SpaceX和特斯拉内部启动私测，测试重点聚焦多模态推理与实时数据处理能力。据内部泄露的性能基准显示，Grok 4.5在部分测试中得分已接近或超越Anthropic旗下Claude Opus水平。该版本被视为Grok系列自发布以来最大幅度技术迭代，预计将于Q3向X平台 Premium+ 用户开放。这标志着马斯克正在加速将AI能力整合进其航天与汽车生态，对行业竞争格局具有深远影响。",
+                "source": "36氪 / TechCrunch",
+                "url": "https://36kr.com/p/3874911939482880?f=rss"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Sand.ai完成超亿美元融资，视频生成模型公司估值进入第一梯队",
+                "summary": "视频生成模型公司Sand.ai近日完成超亿美元新一轮融资，投资方阵容包括多家顶级美元基金。据创始人曹越透露，本轮资金将重点用于训练世界模型（World Model），他认为视频是通往物理世界理解最核心的路径。Sand.ai成立于2024年1月，其视频生成产品在国际市场增长迅速。此轮融资后，估值已进入国内AI创业公司第一梯队，对标Pika、Runway等头部玩家的竞争格局进一步升温。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3873965241931014?f=rss"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "美团发布LongCat-2.0：首个基于国产算力训练的万亿参数大模型",
+                "summary": "美团于6月30日正式发布基础大模型LongCat-2.0，该模型以1.6万亿总参数规模创下业界首例——从训练到推理全流程完全基于国产算力完成，打破了业界对国产芯片Scaling能力的质疑。测试版本此前已上线OpenRouter，总调用量跻身全球前三，其中在Hermes系列评测中表现优异。此举意味着国内大厂在算力自主可控上迈出关键一步，对阿里、字节等竞争对手的大模型商业化策略将产生直接压力。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3875068439139588?f=rss"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic与加州政府达成协议：Claude以半价服务州级政府机构",
+                "summary": "Anthropic与美国加州政府签署框架协议，将以折扣价格向加州各部门提供Claude模型服务，协议覆盖交通、福利审核、公共安全等多个政务场景。此举正值联邦政府与各州在AI采购政策上出现分歧之际，Anthropic通过\"地方包围中央\"的策略拓展B端收入。报道同时指出，OpenAI与联邦政府的关系因价格和安全性争议持续紧张，美国AI政府采购市场正在形成新的竞争格局。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/29/anthropic-and-gov-newsom-forge-deal-allowing-california-government-to-use-claude-at-half-price/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "韩国两大存储芯片巨头承诺超5500亿美元投资，\"RAMageddon\"危机下的国家押注",
+                "summary": "韩国三星电子与SK海力士宣布未来五年将在国内新增超过5500亿美元专项投资，用于扩建HBM及先进内存产能，以应对全球AI算力芯片需求激增导致的\"RAMageddon\"（内存危机）。三星计划新建三座AI内存Lab Fab，SK海力士则聚焦HBM4量产工艺突破。韩国政府将此定位为\"国家核心战略产业\"，提供税收优惠与审批绿色通道。此举将深刻影响全球AI芯片供应链格局，对英伟达、AMD等GPU厂商的HBM采购策略产生重大影响。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/29/south-korean-tech-giants-commit-over-550b-to-ease-ramageddon/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "百度OCR模型Unlimited OCR登顶HuggingFace与GitHub四榜第一",
+                "summary": "百度自主研发的OCR大模型Unlimited OCR在HuggingFace、GitHub等平台共计四个榜单同时登顶，成为首个在OCR领域达成该成绩的中国开源模型。该模型在复杂表格识别、多语言混合场景和手写体识别三项核心指标上刷新SOTA（当前最优）。百度已将其完全开源并开放API调用，此举被视为中国AI开源生态向全球开发者影响力扩张的标志性事件。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3873626425332743?f=rss"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "具身智能公司纽娲机器人完成5000万元天使轮融资，前百度自动驾驶实验室主任创业",
+                "summary": "具身智能公司纽娲机器人完成5000万元天使轮融资，由蓝湖资本领投，不同资本、共青城朴一投资跟投此前数百万美元种子轮。创始人兼CEO系前百度自动驾驶与机器人实验室主任，核心技术方向为\"机器人世界通行模型\"，即通过统一的多模态大模型让机器人具备跨场景泛化能力。具身智能是2026年AI投资最热门赛道之一，本轮融资两个月内连续完成两轮，显示资本对该方向的极高热情。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3875059110221064?f=rss"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google Gemini个性化AI图像生成正式向美国免费用户开放",
+                "summary": "Google宣布将Gemini的个性化AI图像生成功能扩展至美国地区符合条件的免费用户，用户可基于个人照片定制风格化图像，大幅降低AI图像创作门槛。该功能此前仅限Gemini Advanced付费用户使用。此举正值OpenAI、Midjourney在图像生成市场激烈竞争之际，Google通过\"免费+规模化\"策略抢占用户心智，同时将用户行为数据反哺模型迭代，对行业格局产生直接冲击。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/29/geminis-personalized-ai-image-generation-is-now-free-for-u-s-users/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "机器人灵巧手公司Proception与特斯拉达成和解，获1100万美元新融资",
+                "summary": "机器人灵巧手初创公司Proception与美国加州北区法院达成和解协议，结束与特斯拉历时一年的商业秘密诉讼。同时，公司宣布完成1100万美元新一轮融资。Proception的核心技术在于通过独特的触觉数据采集方式获取高质量训练样本，专门解决灵巧操作（dexterous manipulation）这一具身智能领域公认最难问题。本轮融资将用于扩建硬件产能并加速与头部机器人整机厂商的OEM合作。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/29/robot-hand-company-settles-tesla-trade-secret-suit-and-announces-11m-raise/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "菜鸟推出AI算力与机器人企业定制化出海物流解决方案",
+                "summary": "6月30日，菜鸟网络正式推出\"科技出海定制化全链路物流解决方案\"，专为AI算力、智能制造、机器人等科技企业的全球化布局设计，提供从国内工厂到海外数据中心/工厂的端到端物流服务。该方案涵盖超大件精密设备运输、跨境合规清关、海陆空多式联运等核心环节。菜鸟已将AI算力、高端装备、机器人等科技企业列为跨境物流重点拓展客户群，标志着物流巨头正式入局AI产业链基础设施服务赛道。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3875072469865729?f=rss"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Arena AI排行榜正式商业化，年收入突破1亿美元",
+                "summary": "AI模型评测平台Arena宣布其商业化服务自2025年9月上线以来，年化收入已突破1亿美元，ARR（年度经常性收入）达1亿美元意味着该平台已实现规模化盈利。Arena凭借免费AI排行榜积累数百万开发者用户，其商业化产品主要包括企业级模型评测API、品牌定制榜单和Benchmark授权。作为AI行业流量入口级平台，其商业化成功验证了\"社区引流+SaaS变现\"模式在AI基础设施领域的可行性。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/29/arena-the-ai-leaderboard-everyone-uses-is-now-a-100m-business/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Cursor推出移动端App，支持移动端远程监控编程AI Agent",
+                "summary": "AI编程工具Cursor发布全新移动端应用，用户可在手机端远程监控和操控AI编程Agent的工作状态，随时介入代码审查、任务重定向和异常中断。该功能主要面向需要跨设备工作的开发者以及在出差场景下保持工程节奏的团队。Cursor此前已是AI辅助编程领域增长最快的工具之一，移动端布局将进一步巩固其在Copilot和Devin之间的差异化定位。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/29/cursor-now-has-a-mobile-app-for-guiding-your-coding-agent-on-the-go/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "TIDAL宣布停止支付AI生成音乐的版税，并启动自动化清理机制",
+                "summary": "音乐流媒体平台TIDAL宣布全面停止向AI生成音乐支付版权收益，同时将部署自动化工具清理试图冒充真实艺术家的AI合成曲目。该政策对当前大量利用AI批量生成\"新型流行音乐\"并上传至流媒体平台套取版税的工作室形成直接打击。TIDAL表示将优先保护签约艺术家的权益，与Spotify此前模糊的AI音乐政策形成对比。此举料将引发行业对AI音乐版权界定新一轮讨论，并推动监管层面出台更明确的规则。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/29/tidal-cracks-down-on-ai-music-by-cutting-off-monetization/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "中咨公司战略注资中诚华隆，首度切入国产算力芯片核心赛道",
+                "summary": "中国国际工程咨询有限公司依托旗下专业基金平台，完成对国产算力芯片厂商中诚华隆的战略注资，这是该基金平台自设立以来首个芯片类投资项目。中咨公司作为国内最高级别的综合性工程咨询机构，此次入局标志着国产算力芯片赛道正式进入\"国家队\"视野，投资逻辑从财务回报向产业安全战略优先级转变。中诚华隆聚焦高性能数据中心算力芯片，融资完成后有望获得更多政府级客户资源。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3875053113824520?f=rss"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Omen AI完成3100万美元A轮融资，用AI监测数据中心冷却液与细菌风险",
+                "summary": "数据中心AI运维初创公司Omen AI宣布完成3100万美元A轮融资，由Benchmark领投。该公司核心产品为一套基于IoT传感器+AI模型的系统，可实时监测数据中心芯片冷却液温度、成分及细菌滋生情况，提前预警能避免服务器过热导致的大规模故障。Omen AI已与多家超大规模云服务商签署试点协议，数据中心AI运维是一个被忽视但规模超百亿美元的细分市场，本轮融资将加速其产品商业化落地。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/29/omen-ais-plan-to-optimize-data-centers-is-all-wet/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Vibe Coding平台Base44自研模型正式上线，AI初创公司构建护城河",
+                "summary": "Wix旗下Vibe Coding平台Base44开始全面部署自研AI模型，并计划逐步替代第三方模型以提升毛利率和差异化能力。Base44定位为面向非技术用户的AI原生应用开发平台，用户通过自然语言描述即可生成可上线应用。在AI模型同质化竞争加剧的背景下，自研模型正成为垂直应用SaaS公司的核心战略，这一趋势将持续压缩通用大模型API服务商的市场空间。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/29/vibe-coding-platform-base44-launches-own-model-as-ai-startups-seek-defensibility/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "宇树科技联手晋拓股份等成立新科技公司，注册资本3000万元布局机器人",
+                "summary": "天眼查数据显示，宇树科技联合晋拓股份等合作伙伴共同出资成立上海拓天智联科技有限公司，法定代表人为张心怡，注册资本3000万元。公司经营范围涵盖人工智能应用软件开发、智能机器人研发和技术服务等。宇树科技作为国内四足机器人头部厂商，此次牵手产业伙伴成立新实体，被视为整合产业链资源、加速具身智能商业化落地的重要信号。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3875056657044486?f=rss"
+            },
+            {
+                "tag": "行业格局",
+                "title": "宸思科技获厦门高新投独家投资，聚焦数字相控阵芯片自主可控",
+                "summary": "广州宸思通讯科技有限公司近日完成新一轮融资，由厦门高新投独家投资。该公司创始团队来自海思、中兴，核心技术方向为数字相控阵芯片，覆盖卫星通信、毫米波雷达和6G基站等高壁垒场景。本轮资金将主要用于核心技术研发和产品储备，加速数字相控阵芯片的国产替代进程。数字相控阵芯片是AI基础设施中射频前端的关键组件，国产化需求迫切。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3873806295274756?f=rss"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "华尔街对冲基金警告：AI\"超级泡沫\"已至临界点",
+                "summary": "多家中国背景的对冲基金联合发布预警报告，指出当前全球AI市场的估值膨胀已远超基本面支撑，AI\"超级泡沫\"正处于即将破裂的临界点。报告列举了AI独角兽估值与收入倍数严重倒挂、算力基础设施利用率不足30%以及大量AI应用留存率低于10%等关键数据。若泡沫破裂，将导致资本从AI领域快速撤离，资金链紧张的非盈利AI创业公司将面临大规模洗牌，行业将回归价值投资主线。",
+                "source": "Bloomberg / Hacker News",
+                "url": "https://www.bloomberg.com/news/articles/2026-06-26/chinese-hedge-funds-warn-the-ai-super-bubble-is-ready-to-burst"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Moxy摸喜发布首款AI陪伴机器人：自研柔性电子皮肤、纯触觉交互",
+                "summary": "奥感微科技旗下品牌Moxy摸喜在深圳发布首款AI陪伴机器人，核心卖点为\"无对话、无摄像头、纯触觉交互\"，首次将离电型柔性传感技术完整应用于消费级陪伴产品。该产品通过自研全域柔性电子皮肤感知用户触碰的力度、温度与位置，实现情感响应而非对话交互。情感AI陪伴是近两年消费级AI的热门方向之一，纯触觉路线避开了隐私争议和语音交互的疲劳感，有望开辟差异化细分市场。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3874015941645570?f=rss"
+            }
+        ]
+    },
+    {
         "date": "2026-06-28",
         "items": [
             {
@@ -2746,296 +2891,6 @@ const AI_NEWS_DATA = [
                 "summary": "开发者社区开源项目CHSE推出一款基于Rust语言的高性能LLM Token压缩工具，在消费级硬件上实现了每秒115万行的代码处理速度，可节省69%-91%的Token消耗。该工具针对编程场景专项优化，被视为降低AI编程工具推理成本的关键基础设施。当前GitHub Copilot转向使用量计费后，此类成本优化工具的商业价值有望显著提升。",
                 "source": "Hacker News",
                 "url": "https://news.ycombinator.com/item?id=48364338"
-            }
-        ]
-    },
-    {
-        "date": "2026-05-31",
-        "items": [
-            {
-                "tag": "大额融资/IPO",
-                "title": "软银将投资750亿欧元在法国建设数据中心，对标美国AI基础设施竞争",
-                "summary": "软银5月30日宣布将投资高达750亿欧元（约820亿美元）在法国建设数据中心，目标是开发和运营高达5吉瓦的额外数据中心容量。此举正值欧洲 AI 基础设施竞争加剧之际，该投资将使法国成为欧洲 AI 数据中心的重要枢纽。对 AI 从业者和云服务商而言，这意味着算力资源供给将显著增加，成本有望进一步下降。",
-                "source": "TechCrunch AI / TechCrunch",
-                "url": "https://techcrunch.com/2026/05/30/softbank-says-it-will-invest-up-to-e75-billion-to-build-french-data-centers/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI芯片公司Groq正洽谈6.5亿美元融资，从硬件转向AI推理服务",
-                "summary": "在英伟达提出200亿美元收购要约被拒绝后，AI芯片初创公司Groq正在寻求6.5亿美元内部融资。Groq正从硬件芯片销售向AI推理服务提供商转型，这一战略调整反映了AI芯片行业从训练向推理侧倾斜的趋势。推理芯片市场竞争将更加激烈，Groq能否在转型中找到差异化优势值得关注。",
-                "source": "TechCrunch AI / TechCrunch",
-                "url": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "GitHub Copilot推出token计费模式，开发者社区表示强烈不满",
-                "summary": "GitHub Copilot于5月30日推出全新的基于token的计费模式，引发开发者社区广泛争议。开发者抱怨新计费方式成本不透明，有人称之为\"笑话\"。此前Copilot采用按用户月费模式，新的token计费可能使实际使用成本大幅上升。这对开发团队的AI工具预算规划产生直接影响，开发者正在评估替代方案。",
-                "source": "TechCrunch AI / TechCrunch",
-                "url": "https://techcrunch.com/2026/05/30/what-a-joke-github-copilots-new-token-based-billing-spurs-consternation-among-devs/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic七位联合创始人财富翻倍至166亿美元每人，Claude企业市场竞争力凸显",
-                "summary": "据福布斯5月29日报道，Anthropic七位联合创始人个人财富已翻倍至每人166亿美元，总身家超过116亿美元。Anthropic估值已超越OpenAI成为全球最具价值AI公司。Claude在企业市场的强劲表现和Claude Code等产品的成功推动了估值大幅增长。这一变化正在重塑AI行业竞争格局。",
-                "source": "Hacker News / Forbes",
-                "url": "https://www.forbes.com/sites/richardnieva/2026/05/29/anthropics-cofounders-worth/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "乐奇AI眼镜日本众筹突破6.24亿日元，创Makuake平台13年全品类最高纪录",
-                "summary": "北京时间5月30日，乐奇AI眼镜（Rokid）在日本最大众筹平台Makuake累计销售额突破6.24亿日元，创下平台成立13年以来的全品类最高众筹纪录。该AI眼镜集成摄像头和语音交互功能，众筹破纪录表明消费级AI硬件存在真实市场需求，中国AI硬件厂商正加速出海。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3831673401190273"
-            },
-            {
-                "tag": "行业格局",
-                "title": "乘物机器人获台湾自动化龙头和椿科技战略投资，半年服务富士康营收超两千万",
-                "summary": "乘物机器人（深圳）有限公司近日完成天使轮融资，由台湾工业自动化与智能机器人解决方案龙头企业和椿科技战略投资。该公司专注于机器人智能解决方案，半年内服务富士康等客户营收已超2000万元人民币。台湾自动化龙头的战略投资将助力其拓展工业机器人市场。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3831135917107075"
-            },
-            {
-                "tag": "行业格局",
-                "title": "联想创投等入股诺仕机器人，智能协作机器人赛道获产业资本加持",
-                "summary": "36氪5月28日报道，联想创投等机构入股诺仕机器人，后者专注于智能协作机器人研发。产业资本的进入将为诺仕带来更丰富的产业资源和商业化渠道。协作机器人赛道正在成为工业自动化的核心方向，联想的布局显示其对机器人领域的长期看好。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3830194503526277"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "穿越者载人航天科技完成亿元Pre-A轮融资，头部互联网战投领投",
-                "summary": "北京穿越者载人航天科技有限公司完成Pre-A轮亿元融资，由某头部互联网战投领投，探路者集团跟投，老股东持续加注。本轮资金将重点用于可复用运载火箭\"穿越者壹号\"的研发。商业航天与AI技术的结合正在成为新风口，吸引互联网产业资本加速布局。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3830254963517318"
-            },
-            {
-                "tag": "应用落地",
-                "title": "智元机器人海外收入占比突破20%，北美欧洲日韩成为核心市场",
-                "summary": "BEYOND Expo 2026上，智元机器人合伙人姚卯青透露，公司海外收入占比从去年不到10%升至今年上半年的近20%。北美、欧洲、日韩是重点拓展市场。出海正在成为国产机器人企业的重要增长方向，海外市场的成功验证了中国机器人产品的国际竞争力。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3832506045818500"
-            },
-            {
-                "tag": "技术突破",
-                "title": "小米MiMo-V2.5实现KVCache双池等五大核心突破，API永久降价后仍可收支平衡",
-                "summary": "小米MiMo大模型团队发布技术文章，首次公开MiMo-V2.5 API永久降价背后的技术路径。该模型实现KVCache双池+SWA-aware前缀树、GCache分布式缓存、KVCaching稀疏量化等五大核心突破，在降低成本的同时实现了收支平衡。大模型价格战持续，技术优化成为竞争关键。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3832525007284097"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "传OpenAI正在开发iPhone竞品ProjectD，配备定制AI芯片和语音优先交互",
-                "summary": "据MacRumors 5月29日报道，OpenAI正在开发代号ProjectD的iPhone竞品设备，配备定制AI芯片和语音优先交互界面。该产品预计2026年发布，目标是重新定义消费电子的AI入口。继AI软件竞赛后，科技巨头开始向AI硬件入口延伸，竞争边界进一步扩大。",
-                "source": "Hacker News / MacRumors",
-                "url": "https://www.macrumors.com/2026/05/29/everything-we-know-about-openai-iphone-rival/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta正在开发AI吊坠产品，可穿戴设备布局持续推进",
-                "summary": "据TechCrunch 5月30日报道，Meta正在开发一款AI吊坠可穿戴设备，这是继Ray-Ban Meta智能眼镜后的又一硬件尝试。该设备将具备摄像头和语音交互功能。扎克伯格押注AI硬件，Meta的可穿戴设备布局正在从音频向多模态交互延伸。",
-                "source": "TechCrunch AI / TechCrunch",
-                "url": "https://techcrunch.com/2026/05/30/meta-is-reportedly-developing-an-ai-pendant/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Google推出24/7 Gemini Spark AI助手，实现全天候任务自动化",
-                "summary": "Google推出名为Gemini Spark的全天候AI助手，可在设备上24/7运行。该助手可自动处理邮件摘要、本地事件规划等日常任务，展示了Google在端侧AI和持续感知方面的技术实力。端侧AI助手正成为大厂竞争的新焦点。",
-                "source": "TechCrunch AI / TechCrunch",
-                "url": "https://techcrunch.com/2026/05/30/i-put-googles-24-7-ai-assistant-gemini-spark-to-work-and-its-actually-pretty-useful/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "苹果WWDC26将重点展示端侧AI能力，设备端智能化战略浮出水面",
-                "summary": "据36氪5月28日报道，苹果将在WWDC26全球开发者大会上重点展示端侧AI能力。苹果在AI领域采取差异化策略，强调设备端本地化AI处理而非云端计算。此举显示苹果正在将AI能力深度整合进iOS和macOS生态，端侧AI或成苹果反击的关键。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3830194503526277"
-            },
-            {
-                "tag": "应用落地",
-                "title": "星巴克放弃失败AI库存工具，无法准确统计纸杯数量导致项目终止",
-                "summary": "据Gizmodo报道，星巴克已放弃一款存在严重缺陷的AI库存工具，该工具甚至无法准确统计纸杯数量。该AI系统的失败导致星巴克在库存管理上投入大量额外成本。企业级AI应用存在重大风险，此案例警示AI落地需充分验证，不能盲目上线。",
-                "source": "Hacker News / Gizmodo",
-                "url": "https://gizmodo.com/starbucks-abandons-borked-ai-inventory-tool-that-couldnt-count-report-2000762252"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "贝恩报告：AI生成的合成买家正在改变产品测试方式",
-                "summary": "贝恩公司最新报告显示，越来越多的企业开始使用AI生成的合成买家进行产品测试和市场调研。合成买家可降低调研成本、加速测试周期，但也存在真实性存疑的局限性。该报告揭示了AI正在重塑企业决策流程的趋势。",
-                "source": "Hacker News / Bain & Company",
-                "url": "https://www.bain.com/insights/synthetic-customers-earn-their-stripes/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "科学家警告AI程序员依赖风险：不产生更好代码，反而降低程序员技能",
-                "summary": "研究人员发出警告，AI编程工具虽然提升了代码产出速度，但并不一定产生更好的代码。更令人担忧的是，程序员对AI的过度依赖可能削弱其自身技能，形成\"技能退化\"风险。AI辅助编程需把握适度原则，培养核心能力仍是关键。",
-                "source": "TechCrunch AI / TechCrunch",
-                "url": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "奥地利科学院联手Mistral AI开发古希腊文翻译AI，100万古代残片将被解读",
-                "summary": "奥地利科学院正在开发名为Apollo的AI系统，联合Mistral AI共同推进百万古希腊文残片的翻译工作。这些残片已有数千年历史，此前无法被解读。该项目展示了AI在文化遗产保护和学术研究领域的巨大潜力。",
-                "source": "Hacker News / Austrian Academy of Sciences",
-                "url": "https://www.oeaw.ac.at/en/news/austrian-academy-of-sciences-is-developing-the-ancient-greek-ai-apollo-with-mistral-ai-and-reply"
-            },
-            {
-                "tag": "技术突破",
-                "title": "开源Llama本地应用Gemma 4命名截图工具诞生，无需云端保护隐私",
-                "summary": "一款基于Google开源模型Gemma 4的macOS截图命名应用Snapname问世，所有处理均在本地完成，无需上传云端。该应用展示了开源模型在本地部署和隐私保护方面的优势，AI应用正朝着去中心化和隐私优先的方向发展。",
-                "source": "Hacker News / Snapname",
-                "url": "https://snapname.app"
-            },
-            {
-                "tag": "技术突破",
-                "title": "单张768GB Intel Optane内存条实现1万亿参数LLM推理，每秒4 tokens",
-                "summary": "有发烧友使用768GB Intel Optane内存条成功运行了1万亿参数大模型，实现约4 tokens/秒的推理速度。Optane persistent memory的特性使超大模型本地推理成为可能。该实验为边缘AI部署提供了新的内存架构思路。",
-                "source": "Hacker News / Tom's Hardware",
-                "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/enthusiast-runs-1-trillion-parameter-llm-from-768gb-of-intel-optane-dimm-memory-sticks-local-kimi-k2-5-install-achieved-roughly-4-tokens-per-second"
-            }
-        ]
-    },
-    {
-        "date": "2026-05-30",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "中国限制DeepSeek、阿里巴巴等头部私企AI人才出境",
-                "summary": "据Bloomberg报道，中国已将出境旅行限制扩大至DeepSeek、阿里巴巴等头部私企的核心AI人才。此前限制主要针对国企和高校科研人员，现延伸至掌握关键技术的私有AI企业员工。此举旨在防止核心技术外泄，但对人才国际交流和技术引进形成阻力。对国内AI企业而言，技术封闭将进一步加大与全球开源社区的割裂程度。",
-                "source": "Hacker News / Bloomberg",
-                "url": "https://www.bloomberg.com/news/articles/2026-05-26/china-expands-travel-curbs-to-top-ai-talent-at-private-firms"
-            },
-            {
-                "tag": "应用落地",
-                "title": "阿里巴巴与欧足联达成多年AI云合作，覆盖欧冠至2033年",
-                "summary": "5月29日，阿里巴巴集团与欧洲足球协会联盟在布达佩斯宣布达成合作，成为2027/28至2032/33赛季欧冠、欧联及欧协联，以及2028年欧洲杯的官方独家AI云服务合作伙伴。合作涵盖赛事数据分析、粉丝互动体验及基础设施现代化改造。这是中国科技企业首次系统性切入欧洲顶级体育赛事的技术运营。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3831187716941441"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Meta下半年可穿戴设备销量目标1000万台，年底月活目标680万",
-                "summary": "Meta正通过推出新品和拓展销售市场等举措，计划今年下半年售出1000万台可穿戴设备，目标年底实现可穿戴设备月活跃用户680万人。此外，Meta将于明年启动一款AI吊坠产品的测试工作。此举标志着Meta在Ray-Ban智能眼镜之外的又一人工智能可穿戴品类加速商业化。",
-                "source": "36氪 / 界面新闻",
-                "url": "https://36kr.com/newsflashes/3831107976013700"
-            },
-            {
-                "tag": "应用落地",
-                "title": "宇树科技具身智能体验馆亚洲首店5月31日登陆上海",
-                "summary": "宇树科技宣布，具身智能体验馆亚洲首店将于5月31日在上海开业，门店将汇聚G1人形机器人、R1人形机器人及Go2机器狗全系列C端产品。此次开店意味着宇树从B端方案商向消费级人形机器人零售市场迈出关键一步，国内人形机器人C端商业化正式启动。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3830319466522496"
-            },
-            {
-                "tag": "应用落地",
-                "title": "AI服务器需求强劲，戴尔股价大涨近33%创历史最大单日涨幅",
-                "summary": "5月29日收盘，戴尔股价大涨近33%创历史最大单日涨幅，超微电脑涨超11%，慧与科技涨近13%，AI服务器制造商涨幅居前。三家公司在AI服务器市场的出货量持续攀升，反映出企业级AI算力基础设施采购热潮仍在加速，GPU服务器以外的CPU服务器需求同样旺盛。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3831088984057732"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "苹果WWDC预计重点展示端侧AI能力，强化本地智能体验",
-                "summary": "据报道，苹果将在即将举行的WWDC全球开发者大会上重点展示端侧AI能力，进一步推动Apple Intelligence在iPhone、iPad和Mac全产品线的深度整合。苹果自研芯片的神经引擎为本地大模型推理提供算力支撑，端侧AI战略将重新定义隐私与个性化智能的边界。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3830194503526277"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OPPO Reno16系列发布，\"3D悬浮星球+实况随心贴\"引领AI潮流手机",
-                "summary": "5月25日，OPPO发布Reno16系列潮流手机，搭载\"3D悬浮星球+实况随心贴\"等AI功能，并同步推出Pad 6平板和Pad Air5学习平板。Reno系列历来定位年轻潮流市场，AI影像和AI交互功能的下沉普及，将推动中端智能手机市场全面进入AI竞争阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3830038913558147"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "穿越者载人航天完成Pre-A轮亿元融资，某头部互联网战投领投",
-                "summary": "北京穿越者载人航天科技完成Pre-A轮亿元融资，由某头部互联网战投领投，探路者集团跟投，老股东中天汇富、彬复资本持续加注，光源资本担任独家财务顾问。资金将重点用于\"穿越者壹号\"研发。商业载人航天结合AI辅助设计控制系统，赛道正吸引越来越多互联网资本布局。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3830254963517318"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI芯片独角兽Groq正在寻求6.5亿美元新一轮融资",
-                "summary": "据TechCrunch报道，AI推理芯片公司Groq正寻求6.5亿美元内部融资，公司正在进行从硬件向AI推理服务商的战略转型。此前Nvidia以约200亿美元完成对另一AI芯片公司（Run:ai）的\"非收购式\"人才整合，Groq在此时融资有望趁势抬高估值。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/29/after-nvidias-20b-not-acqui-hire-ai-chip-startup-groq-reportedly-raising-650m/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "内存壁垒AI芯片公司XCENA融资1.35亿美元，估值5.7亿美元",
-                "summary": "韩国AI芯片初创公司XCENA完成1.35亿美元融资，估值达5.7亿美元。XCENA押注AI算力的真正瓶颈不是计算能力而是内存带宽，其差异化路线吸引了资本关注。此轮融资表明，内存墙问题正从学术讨论转化为创业公司和风险资本的重点押注方向。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/29/xcena-secures-135m-at-570m-valuation-betting-on-memory-as-ais-real-bottleneck/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "中富电路定增8.5亿元，加码AI用PCB产线改扩建",
-                "summary": "中富电路公告，拟定增募资不超8.5亿元，用于鹤山中富AI用PCB产线改扩建项目、数字化升级建设项目及补充流动资金。随着AI服务器和智算中心需求激增，高频高速PCB成为算力基础设施的关键配套器件，扩产竞赛已在PCB行业全面打响。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3830344040589188"
-            },
-            {
-                "tag": "行业格局",
-                "title": "联想创投等入股诺仕机器人，加码具身智能赛道",
-                "summary": "36氪获悉，联想创投等机构战略入股诺仕机器人，布局具身智能领域。诺仕机器人专注于高精度力控机器人解决方案，在工业精密装配和医疗机器人场景有深厚积累。联想系资本的入局，意味着头部CVC对具身智能商业化节奏的预判正从观望转向加速下注。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3830194503526277"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Cognition创始人Scott Wu：AI编码代理不会取代人类程序员",
-                "summary": "Cognition创始人Scott Wu接受TechCrunch采访时表示，旗下产品Devin等AI编码代理的设计初衷是辅助而非替代人类开发者。Wu指出，当前AI在复杂系统设计和需求理解上仍有明显局限，过度依赖自动化可能导致代码质量下降和系统性风险积累，引发行业对AI工具定位的深度反思。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/29/cognitions-scott-wu-says-ai-coding-agents-shouldnt-replace-humans/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "Gartner报告：40%企业将降级或停用AI代理，因治理失当",
-                "summary": "Gartner在5月26日发布的报告中指出，到2027年约40%的企业将因统一治理政策不适配而降低AI代理优先级或直接停用。报告强调一刀切的AI管控方式正在制造系统性失败，企业需要针对不同业务场景设计差异化AI治理框架。AI代理的落地困境首次被量化预警。",
-                "source": "Hacker News / Gartner",
-                "url": "https://www.gartner.com/en/newsroom/press-releases/2026-05-26-gartner-says-applying-uniform-governance-across-ai-agents-will-lead-to-enterprise-ai-agent-failure"
-            },
-            {
-                "tag": "技术突破",
-                "title": "SpaceX完成v1.0版自研AI训练栈，采用C语言开发",
-                "summary": "马斯克透露，SpaceX已基本完成自研AI训练栈v1.0版本的开发，该训练栈完全采用C语言编写，用于支撑星舰导航、火箭回收优化及星链网络调度等核心任务的自研AI模型训练。C语言训练栈的选择表明，在超低延迟和硬件极致利用的场景下，传统系统编程语言正在AI基础设施层发挥关键作用。",
-                "source": "Hacker News / Elon Musk (X)",
-                "url": "https://xcancel.com/elonmusk/status/2059884150187053488"
-            },
-            {
-                "tag": "技术突破",
-                "title": "奥地利科学院联合Mistral AI开发古希腊语LLM，用于解读古代纸莎草",
-                "summary": "奥地利科学院宣布与Mistral AI合作，开发名为\"APOLLO\"的专用大语言模型，用于自动阅读和转录古代希腊语纸莎草文献。该项目旨在加速历史学家整理海量未解读的古希腊手稿，AI+古典学的跨学科合作开辟了专用垂直领域LLM应用的新方向。",
-                "source": "Hacker News / 奥地利科学院",
-                "url": "https://www.oeaw.ac.at/en/news/austrian-academy-of-sciences-is-developing-the-ancient-greek-ai-apollo-with-mistral-ai-and-reply"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "非程序员用5000美元和7个AI代理，21天搭建人才招聘平台",
-                "summary": "一位无编程背景的创业者分享了使用7个AI Agent、历时21天、花费约5000美元完成一个人才市场平台原型的全过程。该案例揭示了当前多Agent协作系统的成熟度已足以支撑完整商业应用构建，AI原生应用开发的门槛正以超预期速度降低。",
-                "source": "Hacker News",
-                "url": "https://www.bearhugrecruiting.com/startup-recruiting/bearhug-network-origin-story"
-            },
-            {
-                "tag": "行业格局",
-                "title": "程序员拒不用AI工作现象蔓延，专家警告技能退化风险",
-                "summary": "TechCrunch报道，越来越多程序员明确要求新雇主必须提供AI编程工具，否则拒绝入职。与此同时，研究人员警告长期依赖AI辅助可能带来基础编码能力退化和系统性思维弱化。AI与人类程序员之间的关系正从\"辅助\"滑向\"依赖\"，这对整个技术行业的人才结构提出了深层挑战。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/05/29/coders-are-refusing-to-work-without-ai-and-that-could-come-back-to-bite-them/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Flathub宣布封禁所有生成式AI制作的应用提交",
-                "summary": "开源Linux应用商店Flathub近日宣布，禁止所有使用生成式AI制作的应用上架和提交。该社区认为AI生成内容存在质量不可控、版权归属模糊等问题，社区信任体系受到冲击。此举与Linux内核等主流开源项目对AI贡献的相对开放态度形成鲜明对比，开源社区对AI工具的主流立场正在分化。",
-                "source": "Hacker News / GamingOnLinux",
-                "url": "https://www.gamingonlinux.com/2026/05/flathub-moves-to-ban-nearly-all-apps-and-submissions-made-with-generative-ai/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "AI编程支出流向：48%用于代码生成，40%用于推理思考",
-                "summary": "一份针对企业AI编程工具使用数据的分析报告显示，AI辅助编程的企业支出中，约48%流向代码自动生成任务，40%用于推理思考和调试分析，其余用于文档和代码审查。这一数据表明，当前AI在编程中最核心的价值仍是\"加速输出\"而非\"提升质量\"，与行业对AI编程工具的期望存在不小落差。",
-                "source": "Hacker News",
-                "url": "https://codeburn.app/blog/where-ai-coding-spend-goes"
             }
         ]
     }
