@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-01",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "特朗普政府解除Anthropic Fable/Mythos模型出口限制，7月1日全球上线",
+                "summary": "美国政府于6月30日正式解除对Anthropic最先进AI模型的出口管制限制，Fable 5将于7月1日在Claude平台全球恢复访问。Anthropic同时宣布将扩大\"Glasswing\"计划下Mythos 5模型的开放范围，使更多美国国内及国际合作伙伴获得使用权限。此举结束了数月来对Anthropic高级模型的国际访问限制，标志着美国AI出口政策的重要转向。",
+                "source": "Reuters / CNN / TechCrunch / Axios / Politico",
+                "url": "https://www.reuters.com/business/us-lift-export-controls-anthropics-fable-ai-model-tuesday-source-says-2026-06-30/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "英国自动驾驶公司Wayve启动8500万美元员工收购要约，估值85亿美元",
+                "summary": "英国自动驾驶AI公司Wayve宣布启动8500万美元员工股权收购要约，对应估值达85亿美元。这是AI创业公司运用员工收购作为人才保留战略工具的典型案例，反映了当前AI人才市场竞争激烈。Wayve的自动驾驶技术专注于让汽车通过体验学习适应新环境，而非依赖预编程规则。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "英伟达竞争对手Etched估值达50亿美元，AI推理芯片合同订单突破10亿美元",
+                "summary": "AI芯片初创公司Etched宣布已获得10亿美元推理系统合同订单，估值达50亿美元，成为英伟达在AI推理芯片领域的有力竞争者。Etched专注于开发专门用于AI推理的芯片，在特定任务上相较通用GPU具有性能和成本优势。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/30/nvidia-competitor-etched-hits-5b-valuation-1b-in-sales-for-ai-chip/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "前百度自动驾驶与机器人实验室主任创业，纽娲机器人获5000万元天使轮",
+                "summary": "具身智能公司纽娲机器人近日完成5000万元天使轮融资，由蓝湖资本领投，不同资本、共青城朴一投资跟投。公司致力于打造机器人\"世界通行模型\"，两个月内已完成两轮融资。创始人曾任百度自动驾驶与机器人实验室主任，在具身智能领域具备深厚技术积累。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3875059110221064"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic发布Claude Sonnet 5：更强代理能力、更低定价、更高安全性",
+                "summary": "Anthropic推出Claude Sonnet 5，定位为运行AI代理的成本更低方案。新版本带来更强的代理能力、降低的定价和提升的安全性能，进一步完善了Claude产品线。Claude Sonnet 5旨在帮助企业以更低成本部署AI工作流自动化，标志着Anthropic在企业级市场的加码。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/30/anthropic-launches-claude-sonnet-5-as-a-cheaper-way-to-run-agents/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI推理成本减半：新一代优化技术显著降低大模型部署费用",
+                "summary": "OpenAI宣布将其AI模型的推理成本降低50%，这一重大进展将显著降低企业和开发者使用大模型的门槛。成本削减主要源于底层架构优化和推理算法的改进，意味着AI应用的大规模商业化部署将更加经济可行。",
+                "source": "YouTube / Hacker News",
+                "url": "https://www.youtube.com/watch?v=OdDdIWgDdAU"
+            },
+            {
+                "tag": "行业格局",
+                "title": "DeepMind前研究员创立的EquiLibre估值超5亿美元，已为量化对冲基金盈利",
+                "summary": "由三位前DeepMind研究人员创立的EquiLibre Technologies（总部位于布拉格）已为量化对冲基金创造收益，估值超过5亿美元。公司创始团队曾主导扑克AI开发，现转向金融领域的AI量化交易。三位核心成员的学术背景涵盖强化学习和博弈论，核心技术优势可迁移至金融策略优化。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/30/the-deepmind-trio-who-built-a-poker-ai-are-now-making-money-for-quant-hedge-funds/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Claude Code Skills：Haiku模型达到Fable 5质量93%，开源AI编程工具新突破",
+                "summary": "开发者社区推出Claude Code Skills项目，涵盖98种AI架构，其中轻量级模型Haiku已达到Anthropic最新旗舰Fable 5质量的93%。这一进展表明，通过架构优化和知识蒸馏，轻量级模型可以在特定任务上接近顶级模型性能，为边缘设备和资源受限场景下的AI应用开辟了新可能。",
+                "source": "GitHub / Hacker News",
+                "url": "https://github.com/GPire/claude-skills-swarm"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic推出Claude Science：面向科学家的AI工作台",
+                "summary": "Anthropic发布Claude Science，这是专门为科研人员设计的AI工作台。该平台将帮助科学家加速研究流程，包括文献分析、实验设计、数据处理等环节。Claude Science的发布标志着AI工具正式进入专业科学研究领域。",
+                "source": "CNBC / Hacker News",
+                "url": "https://www.cnbc.com/2026/06/30/anthropic-launches-ai-drug-discovery-program-claude-science.html"
+            },
+            {
+                "tag": "技术突破",
+                "title": "研究发现LLM规模定律同样适用于传感器数据",
+                "summary": "研究表明，为大语言模型设计的规模定律同样适用于传感器数据处理。这一发现意味着在语言模型领域观察到的性能提升规律可以扩展到物联网、工业传感等更广泛的AI应用场景，为多模态AI发展提供了新的理论基础。",
+                "source": "Empirical Health Blog / Hacker News",
+                "url": "https://www.empirical.health/blog/llm-scaling-laws-hold-for-sensor-data/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "安全研究人员发现Anthropic buffa protobuf解码器高危漏洞CVE-2026-55407",
+                "summary": "安全研究机构Endor Labs发现Anthropic buffa protobuf解码器存在高危漏洞CVE-2026-55407，可导致22倍内存放大拒绝服务攻击（DoS）。该漏洞影响Anthropic多个产品的底层通信协议，攻击者可通过特制protobuf消息触发内存耗尽。Anthropic需尽快推送安全补丁。",
+                "source": "Endor Labs / Hacker News",
+                "url": "https://www.endorlabs.com/learn/endor-labs-ai-sast-finds-zero-day-cve-2026-55407-buffa"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "微软发布2026年一季度美国AI采用率报告：企业渗透率持续攀升",
+                "summary": "微软AI经济研究所发布美国AI采用率报告（2026年Q1），提供企业级AI落地的权威数据。报告显示美国企业AI渗透率持续攀升，不同行业和规模企业的AI部署程度呈现显著差异。该报告为AI从业者了解市场实际进展提供了重要参考。",
+                "source": "Microsoft / Hacker News",
+                "url": "https://www.microsoft.com/en-us/corporate-responsibility/topics/ai-economy-institute/reports/us-ai-adoption-2026-q1/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "小马智行在重庆成立新公司，注册资本3000万元",
+                "summary": "天眼查显示，小马智行在重庆成立全资子公司\"重庆小马智行科技有限公司\"，注册资本3000万元，法定代表人为张宁。经营范围涵盖网约车服务、软件开发、智能车载设备制造和新能源汽车销售等。此举表明小马智行正加速推进自动驾驶商业化落地西南市场。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3876463093592321"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google推出Nano Banana 2 Lite：更快更便宜的图像生成器",
+                "summary": "Google发布Nano Banana 2 Lite图像生成器，主打更快的生成速度和更低的成本。该产品针对创意工作者设计，在保持图像质量的同时大幅降低使用门槛。Nano Banana 2 Lite的推出加剧了AI图像生成领域的竞争。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/30/google-introduces-a-faster-cheaper-image-generator-with-nano-banana-2-lite/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Acti将AI代理直接嵌入智能手机键盘",
+                "summary": "初创公司Acti推出面向iOS和Android的AI键盘，将AI代理能力直接集成到用户日常输入界面。该产品押注智能手机键盘是AI助手的新入口，用户无需切换应用即可使用AI功能。这一创新有望改变人机交互范式。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/30/acti-puts-ai-agents-directly-into-your-smartphone-keyboard/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "《经济学人》深度分析：AI模型的价值观与人类存在显著差异",
+                "summary": "《经济学人》发布深度研究，分析当前主流AI模型的价值观与普通人类的显著差异。研究指出，AI系统对伦理问题的判断标准、风险偏好和决策逻辑与人类存在系统性偏差。这一发现对AI安全治理和价值对齐研究具有重要参考意义。",
+                "source": "The Economist / Hacker News",
+                "url": "https://www.economist.com/briefing/2026/06/25/ai-models-values-are-very-different-from-most-peoples"
+            },
+            {
+                "tag": "政策监管",
+                "title": "旧金山市议员对362页AI辅助编写的城市法规表示担忧",
+                "summary": "旧金山市议会审议一份362页由AI辅助编写的城市法规修改草案时遭遇阻力，市议员对AI参与立法过程表示质疑。该事件反映了政府机构采用AI工具时面临的透明度和问责制挑战。",
+                "source": "Mission Local / Hacker News",
+                "url": "https://missionlocal.org/2026/06/s-f-supervisors-balk-at-362-page-city-code-rewrite/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "互联网之父Vinton Cerf宣布从Google退休",
+                "summary": "互联网协议奠基人之一、Google首席互联网顾问Vinton Cerf宣布退休，结束在Google数十年的职业生涯。Cerf是TCP/IP协议的设计者之一，被誉为\"互联网之父\"。他的退休标志着互联网早期开拓者时代的结束，也为AI时代的网络基础设施发展提出了新的命题。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/30/the-father-of-the-internet-is-finally-retiring/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "KAIST研发AI手势识别系统：鼠标轨迹作为新型交互语言",
+                "summary": "韩国科学技术院（KAIST）研发出可解读鼠标移动轨迹为语义指令的AI系统，将用户的鼠标操作模式转化为可理解的语言命令。这一创新为AI人机交互开辟了新维度，有望应用于无障碍辅助、智能家居控制等场景。",
+                "source": "Nate News / Hacker News",
+                "url": "https://news.nate.com/view/20260701n15527?mid=n1101"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "开源代理程序OpenClaw正式登陆Android和iOS",
+                "summary": "开源代理程序OpenClaw正式发布移动端版本，登陆Android和iOS应用商店。该产品是免费开源的代理化程序（agentic program），其移动端上线意味着AI代理能力开始真正进入用户的日常移动设备，开启\"设备上的AI代理\"时代。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/06/30/openclaw-is-finally-available-on-android-and-ios/"
+            }
+        ]
+    },
+    {
         "date": "2026-06-30",
         "items": [
             {
