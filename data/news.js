@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-07",
+        "items": [
+            {
+                "tag": "大额融资/IPO",
+                "title": "SK海力士将在纳斯达克上市，或成今年亚洲最大美股IPO",
+                "summary": "SK海力士凭借AI驱动的高带宽内存（HBM）需求飙升，将赴美进行数十亿美元IPO，预计成为今年亚洲最大规模的美股上市项目。HBM是训练大语言模型的关键组件，SK海力士是英伟达HBM的主要供应商。此次上市将为美国投资者提供直接参与AI基础设施核心供应链的机会。",
+                "source": "TechCrunch AI / 36氪",
+                "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "银行和超大规模云商集体警告AI泡沫风险，市场或面临痛苦重定价",
+                "summary": "包括Apollo首席经济学家Torsten Slok在内的多位专业人士发出警告，科技股可能正在形成泡沫，非科技行业的AI投资回报周期远比预期更长。当前AI热潮中大量资本涌入，但实际 productivity gains 难以支撑高估值，市场情绪一旦转向可能引发痛苦的去泡沫过程。",
+                "source": "The Register / Fortune / Hacker News",
+                "url": "https://www.theregister.com/ai-and-ml/2026/07/06/even-banks-and-hyperscalers-are-now-sounding-the-alarm-about-the-ai-bubble/5266123"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "工信部：我国规上工业企业AI应用普及率已超30%，人形机器人全年产量有望破10万台",
+                "summary": "工业和信息化部科技司副司长甘小斌在7月7日上海市发布会上披露，我国规上工业企业人工智能应用普及率已超30%，制造业成为AI赋能主战场。人形机器人已开始\"进工厂、下车间\"，2026年全年整机产量有望突破10万台，大模型正加速赋能千行百业。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3884995291246599"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic发布Claude Sonnet 5：最具Agent能力的大模型，价格更亲民",
+                "summary": "Anthropic推出Claude Sonnet 5，被定位为该公司迄今最具自主行动能力（Agentic）的AI模型，同时价格较前代显著降低。该模型在复杂任务拆解、多步骤执行和工具调用方面有大幅提升，标志着Anthropic在大模型Agent能力竞争中迈出关键一步。",
+                "source": "Hacker News",
+                "url": "https://lucasaguiar.xyz/en/posts/claude-sonnet-5-2026/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "全球首例AI自主执行的勒索软件攻击曝光：JadePuffer攻击全程由AI agent自动化完成",
+                "summary": "安全公司Resecurity发现JadePuffer勒索软件组织首次使用AI agent自主完成攻击全流程，包括漏洞扫描、权限提升、文件加密等，技术执行阶段无需人工干预。这是已知的首例完全由AI驱动的真实世界勒索软件攻击，标志着网络攻击正式进入\"自动驾驶\"时代。",
+                "source": "BleepingComputer / TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "微软宣布裁员约4800人占全球员工2.1%，Xbox和商业销售部门重创",
+                "summary": "微软在周一裁员约4800人，占全球约23万员工的2.1%，涉及Xbox部门和商业销售团队。这是微软近年来一系列裁员中的最新动作，分析普遍认为AI驱动的工作流程自动化是人员优化的重要驱动因素，科技行业正加速用AI替代重复性白领工作。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "支付宝AI开放平台正式上线，向生态伙伴全面开放AI接入能力",
+                "summary": "7月7日，蚂蚁集团旗下支付宝正式上线AI开放平台，面向商家、机构、服务商、智能终端和大模型平台等生态伙伴开放AI接入能力。该平台将提供语音识别、图像理解、多模态交互等核心能力，意味着支付宝10亿级用户场景将全面向AI开发者敞开。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3884959785234689"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI发布GPT-realtime-2.1系列实时语音模型，API能力再度升级",
+                "summary": "OpenAI在API平台上推出GPT-realtime-2.1和GPT-realtime-2.1-mini两款全新实时语音模型，进一步降低延迟并提升多轮对话的上下文保持能力。新模型对语音合成和理解进行了联合优化，开发者可借此构建响应延迟低于500毫秒的语音交互应用。",
+                "source": "OpenAI Community / Hacker News",
+                "url": "https://community.openai.com/t/new-realtime-models-on-the-api-gpt-realtime-2-1-and-gpt-realtime-2-1-mini/1385896"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "IEEE调研：小型AI模型在网络不稳定地区和制药行业加速落地",
+                "summary": "IEEE Spectrum报道，小型语言模型（SLM）在网络覆盖不稳定的地区和需要数据隐私合规的制药行业获得显著增长。相比千亿参数大模型，几十亿参数的小模型部署成本低、隐私风险小，辉瑞、默克等药企已开始用SLM辅助药物分子筛选和临床文档处理。",
+                "source": "IEEE Spectrum / Hacker News",
+                "url": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "珞石机器人冲刺港股IPO：哈工大博士带队，估值或达百亿元",
+                "summary": "工业机器人公司珞石机器人已向港交所提交招股书，由哈工大在读博士主导，创始团队从三人缩减至一人，公司估值有望冲击百亿元人民币。珞石以协作机器人和四轮足机器人为核心产品，已进入比亚迪、富士康等头部客户供应链，工业AI赛道再添IPO选手。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3883708118921480"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta测试Pocket应用：用AI生成迷你游戏的实验性平台Gizmos",
+                "summary": "Meta正在测试一款名为Pocket的实验性应用，用户可通过自然语言描述生成可玩的迷你游戏（Gizmos）。该产品由Meta AI团队打造，是继生成式AI在图像、文本领域成熟后，向游戏内容创作场景延伸的首次大规模尝试，预计将降低游戏开发的门槛。",
+                "source": "gHacks / Hacker News",
+                "url": "https://www.ghacks.net/2026/07/05/meta-tests-pocket-an-experimental-app-for-ai-generated-mini-games-called-gizmos/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Google悄悄修改隐私政策：用户使用即默认授权AI训练，引发广泛争议",
+                "summary": "TechCrunch报道，Google近期修改隐私设置，扩大了用户数据用于AI模型训练的范围，用户一旦使用Google服务即可能默认授权。此举引发隐私倡导者的强烈反对，多个监管机构已表示将启动调查。用户需手动关闭相关设置才能退出数据采集。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "AMD发布Ryzen AI Halo芯片：本地AI运行更便捷，但零售价近4000美元",
+                "summary": "AMD推出Ryzen AI Halo系列处理器，专为高性能本地AI推理设计，支持70亿参数模型在无网络连接下流畅运行。该芯片面向高端创作者和AI开发者，但搭载该芯片的整机零售价接近4000美元，高门槛或将限制其初期市场渗透。",
+                "source": "The Register / Hacker News",
+                "url": "https://www.theregister.com/ai-and-ml/2026/07/06/amds-ryzen-ai-halo-makes-local-ai-look-easy-but-at-4k-easy-doesnt-come-cheap/5266711"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "x.ai推出Voice Agent Builder：马斯克旗下AI公司进军语音交互市场",
+                "summary": "马斯克旗下AI公司x.ai发布Voice Agent Builder工具，允许开发者基于Grok模型快速构建定制化语音代理。该工具支持多轮对话、流式输出和实时打断，可用于客服、导览、助手等场景。这是x.ai从文本模型向多模态语音交互拓展的首款产品级工具。",
+                "source": "x.ai / Hacker News",
+                "url": "https://x.ai/voice"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "华源智因完成千万级种子轮融资，用AI虚拟细胞预测药物效果",
+                "summary": "AI虚拟细胞（AIVC）企业华源智因宣布完成千万级人民币种子轮融资，水木创投领投。资金将用于多模态测序底层技术迭代和与头部三甲医院的合作推进。华源智因的核心技术是通过构建虚拟细胞模型模拟真实细胞行为，帮助药企在研发早期预测候选药物的有效性和毒副作用。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3883943959621634"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "千问大模型升级Fun-ASR-Realtime：实时语音识别延迟进入百毫秒时代",
+                "summary": "阿里千问大模型团队发布Fun-ASR-Realtime实时语音识别大模型升级版，将端到端延迟压缩至百毫秒级别，并大幅提升嘈杂环境下的识别准确率。该模型已在钉钉、支付宝等阿里系产品中灰度上线，标志着国产大模型在端侧实时语音交互领域取得突破。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3884024701874183"
+            },
+            {
+                "tag": "应用落地",
+                "title": "iOS 27 beta版支持自定义Siri语速和情感表达，Apple Intelligence全面加速",
+                "summary": "苹果在最新iOS 27 beta版中为Siri添加语速和情感表达的自定义功能，用户可调整助手说话的风格和节奏。此更新是苹果重建Siri体验计划的一部分，结合Apple Intelligence的个人上下文理解能力，Siri正变得更自然、更具个性化。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Reddit用LLM解决LLM生成的垃圾内容问题：平台以AI对抗AI",
+                "summary": "Reddit承认正大规模使用大语言模型自动识别和删除由AI生成的垃圾帖子和虚假账号。随着ChatGPT等工具普及，平台上的AI生成内容激增300%以上，Reddit别无选择地开启了\"以AI治AI\"的军备竞赛，内容审核的复杂性正在重塑社交平台的运营模式。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Station F加码欧洲AI创业孵化：Xavier Niel的巴黎超大型园区成为AI独角兽摇篮",
+                "summary": "全球最大创业园区Station F（位于巴黎，由法国电信大亨Xavier Niel创立）宣布推出新版加速计划，重点扶持欧洲AI早期创业公司。园区内已孵化出Mistral AI等明星项目，此次计划将提供GPU集群、算力补贴和全球市场资源，直指打造欧洲AI生态独立性的目标。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "JadePuffer勒索软件用AI agent自动化攻击全程，安全行业进入新威胁时代",
+                "summary": "安全公司Resecurity披露，JadePuffer组织使用的勒索软件已集成AI agent模块，可自主完成漏洞识别、横向移动和数据加密的全流程，无需人工操控即可完成完整攻击链。这是网络威胁领域首次出现的\"无人值守\"攻击，传统的安全防护体系面临根本性挑战。",
+                "source": "BleepingComputer / Hacker News",
+                "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/"
+            }
+        ]
+    },
+    {
         "date": "2026-07-04",
         "items": [
             {
@@ -2456,441 +2601,6 @@ const AI_NEWS_DATA = [
                 "summary": "一位年仅24岁的AI创业者获得Jane Street等知名机构投资，融资规模接近5000万美元。与传统VC路径不同，该创始人通过LP关系网络快速完成融资，展现了AI领域年轻创始人的新型资本获取模式。这一案例再次印证AI赛道对年轻创业者的强烈吸引力，也反映私募资本对AI早期项目日益激进的布局策略。",
                 "source": "MSN / Hacker News",
                 "url": "https://www.msn.com/en-us/money/markets/the-24-year-old-ai-wiz-who-counts-jane-street-as-an-investor/ar-AA256QfS"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-07",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "Anthropic呼吁全球放缓AI开发，警告模型\"自我改进\"失控风险",
-                "summary": "Anthropic联合创始人Jared Kaplan等核心研究人员公开呼吁全球AI实验室暂停或放缓前沿模型开发，尤其是具备\"自我改进\"能力的高能力AI系统。研究团队警告称，当AI能够自主修改自身代码和权重时，人类将失去对系统的有效控制，现有的安全评估框架无法应对此类风险。Anthropic正在开发能够理解自身推理过程的基础模型，Kaplan认为这是当前最紧迫的安全议题。对行业而言，这意味着前沿AI的安全门槛将被迫提升，监管介入时间窗口正在收窄。",
-                "source": "36氪 / The Verge / TechCrunch",
-                "url": "https://36kr.com/p/3840996342073604"
-            },
-            {
-                "tag": "政策监管",
-                "title": "特朗普签署行政令，要求前沿AI模型发布前通过联邦安全测试",
-                "summary": "特朗普政府签署新行政令，要求在美发布参数规模超过关键阈值的前沿AI模型前，必须向联邦政府提交安全测试结果并获得批准。该行政令设立\"AI发布前审查\"机制，覆盖能力评估、风险分级和红队测试，并首次将模型权重出口管控纳入联邦权限范围。白宫AI顾问Sriram Krishnan据报道即将离任，他的新机构将专注于继续影响特朗普的AI政策走向。行业普遍担忧审批流程将拖慢商业化节奏，但支持者认为这是防止失控的必要代价。",
-                "source": "The Zvi Substack / TechCrunch AI / 36氪",
-                "url": "https://thezvi.substack.com/p/trump-signs-executive-order-for-ai"
-            },
-            {
-                "tag": "政策监管",
-                "title": "特朗普政府正讨论持有OpenAI股权，美国政府\"入股\"AI巨头",
-                "summary": "特朗普公开表示正与AI公司洽谈政府入股事宜，核心标的指向OpenAI。他表示\"美国人民应从AI成功中获益\"，白宫正在设计一种结构让政府以股权或利润分享方式参与AI公司收益。此举若落地，将是美国政府首次以直接股权形式介入商业AI公司，可能重塑AI行业的政商关系格局。分析认为，政府入股将大幅改变AI监管走向，同时为OpenAI即将到来的IPO增添独特背景变量。",
-                "source": "TechCrunch AI / The Information",
-                "url": "https://techcrunch.com/2026/06/06/the-trump-administration-might-take-an-equity-stake-in-openai/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "豆包推出付费会员后月活减少610万，用户付费转化仍待验证",
-                "summary": "数据显示，字节跳动旗下豆包在推出付费会员服务后，月活用户从峰值下降约610万，付费用户转化率不及预期。豆包此前以免费策略快速积累用户，付费墙上线后部分用户流向竞品。行业观察认为，AI应用在从增长驱动转向商业化驱动时，用户留存和付费意愿是最大挑战，豆包需要在功能深度和定价策略上找到更优平衡点。",
-                "source": "36氪 / QuestMobile",
-                "url": "https://36kr.com/p/3840996342073604"
-            },
-            {
-                "tag": "行业格局",
-                "title": "唐文斌原力灵机获智谱、商汤、阶跃星辰投资，具身智能整合加速",
-                "summary": "硬氪独家获悉，具身智能企业\"原力灵机\"完成新一轮融资，投资方包括智谱、阶跃星辰、商汤科技三家大模型公司，以及产业资本华勤和上汽恒旭。原力灵机由唐文斌（旷视科技联合创始人）创立，主攻机器人具身智能基础模型和硬件整合。本轮融资后，原力灵机还并购了一家物流机器人公司，加速场景落地。大模型公司集体投资具身智能团队，显示出\"模型+机器人\"整合正在成为行业共识，2026年具身智能赛道整合大幕已开启。",
-                "source": "36氪硬氪",
-                "url": "https://36kr.com/p/3838835333253385"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Anthropic年化收入突破470亿美元，IPO前增速不减",
-                "summary": "Anthropic联合创始人Daniela Amodei在IPO前接受采访披露，公司年化收入已于5月突破470亿美元，过去一年增长超过10倍，主要驱动来自Claude企业版在金融、医疗和法律行业的快速渗透。Anthropic估值随之水涨船高，IPO进程进入倒计时。Amodei表示不担心市场对AI投资回报率的质疑，称Claude已在实际业务场景中证明了ROI。对于IPO估值，她拒绝透露具体目标，但强调\"AI的价值才刚刚开始兑现\"。",
-                "source": "TechCrunch AI / Financial Times",
-                "url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "GitHub Copilot正式废弃GPT-5.2和GPT-5.2-Codex，全面切换新模型",
-                "summary": "GitHub官方博客宣布，于2026年6月5日起正式废弃GPT-5.2和GPT-5.2-Codex模型，所有调用上述模型的Copilot端点停止服务。开发者需尽快迁移至新版Copilot订阅。这一更新意味着OpenAI的GPT-5.2在发布不到一年后即被主要合作伙伴弃用，反映出AI代码助手模型迭代周期正在进一步压缩，开发者需适应更频繁的模型切换节奏。GitHub Copilot同时透露新模型在长代码库理解方面有显著提升。",
-                "source": "GitHub Blog / TechCrunch",
-                "url": "https://github.blog/changelog/2026-06-05-gpt-5-2-and-gpt-5-2-codex-deprecated/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI推出Lockdown Mode，防止提示注入攻击敏感数据泄露",
-                "summary": "OpenAI发布\"Lockdown Mode\"安全功能，专门防止提示注入（Prompt Injection）攻击导致敏感数据泄露。该模式通过隔离AI与外部数据源的直接连接、增加输入验证层和运行时监控，大幅提升企业部署AI助手时的数据安全等级。OpenAI表示，Lockdown Mode特别面向处理财务、医疗和法律数据的Enterprise客户。随着AI Agent在工作流中的渗透加深，提示注入攻击面急剧扩大，这一安全功能被视为企业AI落地的必要基础设施。",
-                "source": "TechCrunch / OpenAI Blog",
-                "url": "https://techcrunch.com/2026/06/06/openai-unveils-lockdown-mode-to-protect-sensitive-data-from-prompt-injection-attacks/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Sriram Krishnan卸任白宫AI顾问，计划成立新机构影响AI政策",
-                "summary": "白宫AI顾问Sriram Krishnan宣布将于近期离任，结束在特朗普政府AI政策核心岗位的任期。据TechCrunch报道，Krishnan正在筹备成立一家新机构，目标是继续以非政府身份影响美国AI政策走向，包括推动对华芯片出口管制和联邦AI监管框架。Krishnan在任期间主导了多项AI行政令的起草，其离任被视为白宫AI政策团队的一次重要人事变动，可能影响下一阶段美国AI战略方向。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/06/sriram-krishnan-is-leaving-his-role-as-white-house-ai-advisor/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Google与SpaceX达成算力合作，每月支付9.2亿美元租用星链算力",
-                "summary": "Google与SpaceX达成算力租用协议，Google每月向SpaceX支付9.2亿美元，获取星链卫星计算基础设施和数据中心算力使用权。Google发言人表示，该合作源于近期AI服务的需求激增，现有云基础设施无法完全满足。SpaceX通过旗下Starlink和数据中心业务整合，正在成为算力市场的新兴供应商。9.2亿美元/月（约110亿美元/年）的规模使这笔交易成为有史以来最大的单一企业算力采购合同之一，标志着算力争夺进入新阶段。",
-                "source": "TechCrunch AI / The Information",
-                "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "AirTrunk承诺300亿美元在印度建设5GW AI数据中心",
-                "summary": "澳大利亚数据中心运营商AirTrunk宣布，将在印度投资300亿美元建设总容量5GW的数据中心园区，主要服务AI推理和训练负载。首批园区将于2027年投入运营，选址覆盖孟买、德里和海德拉巴三个核心城市。5GW的规模相当于约250万个家庭用电，是目前印度最大在建AI基础设施项目。此举凸显印度正快速成为全球AI数据中心的核心竞争地，中国之外的亚太算力布局加速重构。",
-                "source": "TechCrunch / Bloomberg",
-                "url": "https://techcrunch.com/2026/06/05/airtrunk-commits-30b-to-build-5gw-of-ai-data-centers-in-india/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "微信AI与华为、小米、OPPO、vivo等厂商合作，打通系统级AI助手",
-                "summary": "腾讯客服确认，微信正在与华为、小米、荣耀、OPPO、vivo等主流国产手机厂商合作，将微信的A2A助手能力接入各厂商系统级AI助手。已接入厂商的用户可通过手机系统AI助手直接发起微信音视频通话或向指定好友发送消息。这一合作使微信在手机端的入口从App层面延伸至系统层面，大幅降低了用户调用微信服务的路径成本。分析认为，这是微信在AI时代巩固超级App地位的关键一步，也意味着手机厂商与超级App的数据和流量博弈进入新阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3839575253993985"
-            },
-            {
-                "tag": "应用落地",
-                "title": "百度数字人业务升级为独立部门，慧播星升级为一镜",
-                "summary": "百度MEG（移动生态事业群）完成新一轮组织调整，合并商业部与电商事业部成立大商业事业部，同时将数字人创新业务部升级为独立部门。今年5月Create 2026百度AI开发者大会上，百度已将旗下数字人品牌\"慧播星\"升级为\"百度一镜\"。数字人业务从内部创新项目升级为独立部门，意味着百度将其视为商业化重点方向。数字人直播、虚拟客服和AI内容生成正在成为AI应用落地的重要场景，百度正在加速追赶抖音、快手在数字人电商领域的布局。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3842464225921536"
-            },
-            {
-                "tag": "行业格局",
-                "title": "韩国投资者过去一月净买入寒武纪近2000万美元，加码中国AI硬科技",
-                "summary": "数据显示，过去一个月，韩国投资者持续加码中国AI硬科技资产，寒武纪、麦格米特、宁德时代和机器人ETF华夏成为最受青睐的A股标的。其中AI芯片龙头寒武纪获得近2000万美元净买入，多只在美上市的中国科技ETF也获得显著增持。韩国机构投资者对华AI硬科技的配置升温，反映出全球资金对中国AI算力自主化进程中核心资产的长期看好，寒武纪作为国产AI芯片稀缺标的持续获得国际资金关注。",
-                "source": "36氪 / 韩国交易所数据",
-                "url": "https://36kr.com/newsflashes/3842433670941190"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "特锐德推出\"算电岛\"供电方案，智算中心Token成本可降低30%",
-                "summary": "特锐德发布算力中心高压交直流预制舱供电站\"算电岛\"，重构智算中心供电底层架构。该方案采用设备工厂模块化预制，可直接接入110/220kV高压和800V直流直供机房，建设周期压缩至150天；依托碳化硅SST技术，供电效率达98.5%；通过算电协同AI平台实现电力成本优化，Token成本可降低30%。随着AI推理需求爆发式增长，电力成本已成为限制智算中心盈利能力的关键瓶颈，算电协同成为行业新方向。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3841455348746496"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "国家队入场AI虚拟细胞，百曜科技完成数千万元融资",
-                "summary": "AI虚拟细胞（AIVC）平台公司\"百曜科技\"完成数千万元新一轮融资，由国家级国有资本运营平台中国国新旗下的国新创投基金领投，道彤资本和云启资本跟投，老股东峰瑞资本和百度风投追加投资。百曜科技专注于AI驱动的虚拟细胞建模，应用于药物发现和精准医疗。国家队资本领投此类前沿AI生物计算公司，显示出国有资本对AI+生命科学交叉领域的战略重视。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3835460873385348"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Meta确认数千个Instagram账户因AI chatbot漏洞被黑客入侵",
-                "summary": "Meta确认，其平台上的AI聊天机器人存在安全漏洞，已被黑客利用进行大规模账户劫持，数千个Instagram账户受到影响。攻击者通过在对话中注入恶意指令，诱使AI chatbot执行账户操作，从而接管账户控制权。Meta已紧急修补漏洞并通知受影响用户。此事件再次暴露了AI Agent在工作流中执行敏感操作时的安全风险，也对即将大规模部署的AI Agent系统提出警示：权限边界和输入验证是AI安全的基础防线。",
-                "source": "This Week in Security / TechCrunch",
-                "url": "https://this.weekinsecurity.com/meta-confirms-thousands-of-instagram-accounts-were-hacked-by-abusing-its-ai-chatbot/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "WWDC 2026将至，Siri大规模改版与Apple Intelligence新功能成焦点",
-                "summary": "苹果WWDC 2026将于下周开幕，Siri的\"高度期待已久的改版\"和Apple Intelligence功能更新被视为核心看点。据泄露信息，Siri将获得更深度的主屏幕和App控制能力，支持跨App的复杂任务执行，并集成多模态理解能力。Apple Intelligence方面，预计将推出下一代AI写作助手、邮件自动分类和照片智能编辑功能。苹果在AI助手领域的追赶态势将在本届WWDC迎来关键检验，开发者对Siri开放更多API的期待值极高。",
-                "source": "TechCrunch AI / Apple",
-                "url": "https://techcrunch.com/2026/06/06/what-to-expect-from-wwdc-2026-siris-highly-anticipated-revamp-and-apple-intelligence-updates/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "AI成本危机蔓延：Token经济遇冷，行业从\"烧钱扩张\"转向\"成本管控\"",
-                "summary": "据TechCrunch深度报道，AI行业正在经历从\"Token Maxxing\"（追求最大Token吞吐量）到\"成本管控\"的根本性转变。多家中型AI公司在2025年激进扩张后陷入财务困境，Token价格战压缩利润空间，推理成本居高不下。业界高层坦言：\"整个对话从'快速前进'变成了'我们必须有护栏，如何控制成本'\"。这场成本危机将加速行业洗牌，拥有自研芯片和垂直整合能力的公司优势凸显，纯模型层公司的盈利压力将持续加大。",
-                "source": "TechCrunch AI / The Information",
-                "url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "华为云押注国产化算力Tokens\"健康度\"，不追求总量和收入规模",
-                "summary": "在Token经济浪潮中，华为云选择了一条差异化路径：不在乎Token总量和收入规模，核心关注点是国产化算力系统所生产的Tokens的\"健康度\"——即这些Tokens是否真正代表生产力提升，而不仅仅是数量堆砌。华为云当前战略重心是完善国产算力生态的完整性和可靠性，为国产大模型提供稳定、高质量的推理基础设施。这一策略与国内其他云厂商追求规模扩张的路线形成对比，显示华为在国产AI生态中选择了基础设施提供者的定位。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3840016255126016"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-06",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "特朗普暗示政府入股AI实验室，科技巨头与权力关系重塑",
-                "summary": "据Bloomberg和CNBC 6月5日报道，特朗普政府正与OpenAI讨论政府持有该公司股份的可能性，释放出美国政府深度介入AI头部企业治理的信号。Anthropic同样在被讨论范围内。此举若落地，将是美国政府首次以股东身份直接参与AI公司治理，可能重塑监管与创新的边界，引发业界对政府中立性的广泛担忧。对中国AI企业而言，这意味着全球AI竞争正从技术与商业维度，全面升级为地缘政治博弈。",
-                "source": "Bloomberg / CNBC / 36氪",
-                "url": "https://www.cnbc.com/2026/06/05/trump-open-ai-altman-stake.html"
-            },
-            {
-                "tag": "应用落地",
-                "title": "谷歌与SpaceX达成9.2亿美元/月算力协议，刷新企业AI采购纪录",
-                "summary": "6月6日，谷歌与SpaceX正式达成协议，约定2026年10月至2029年6月间，谷歌每月向SpaceX支付9.2亿美元（约110亿美元/年），采购由11万块英伟达GPU等硬件组成的算力资源。这一金额已超越绝大多数AI独角兽的全年营收，标志着头部科技公司在算力储备上的军备竞赛进入新阶段。对算力供应商和数据中心REITs而言，头部客户的大额长单意味着收入确定性大幅提升。",
-                "source": "36氪 / TechCrunch / 财联社",
-                "url": "https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic冲刺IPO：年化营收超470亿美元，CEO称质疑者终将修正",
-                "summary": "Anthropic联合创始人Daniela Amodei在IPO前夕接受TechCrunch采访时透露，公司年化营收已于今年5月突破470亿美元（约47 billion），增长迅猛。她同时表示，市场对AI商业化回报的质疑声将在未来被证伪。Anthropic是当前全球AI融资额最高的企业之一，其IPO进程将是2026年最受瞩目的资本市场事件，也将直接影响同类公司的估值锚定。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/04/ahead-of-its-ipo-anthropics-daniela-amodei-shrugs-off-doubts-about-ais-returns/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AirTrunk承诺300亿美元在印度建设5GW AI数据中心",
-                "summary": "澳大利亚数据中心运营商AirTrunk宣布将在印度投资300亿美元，建设总装机容量达5GW的AI数据中心。该项目是印度市场迄今规模最大的AI基础设施承诺之一，背后反映了全球科技巨头\"去中国化\"算力布局的加速。随着美国对华芯片出口限制收紧，印度正成为承接AI算力需求转移的关键节点，相关供应链企业值得持续关注。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/05/airtrunk-commits-30b-to-build-5gw-of-ai-data-centers-in-india/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "可灵AI两周年：全球用户突破1亿，企业客户近5万家",
-                "summary": "快手可灵AI在两周年之际公布运营数据：全球用户突破1亿（较2025年底6000万增长约67%），覆盖224个国家和地区；企业客户接近5万家（较2025年底3万家增长约67%）。作为国内头部AI视频生成平台，可灵AI的用户增长和商业化进展印证了AI原生产品在全球市场的快速渗透能力，但其付费转化和变现效率仍是后续观察重点。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3840249278793985"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Mira Murati低调重返聚光灯下，前OpenAI CTO创业引关注",
-                "summary": "前OpenAI首席技术官Mira Murati近期再次出现在公众视野中，其动向引发行业广泛猜测。TechCrunch分析认为，在AI行业竞争日趋激烈的当下，\"埋头苦干\"的战略回报正在递减，关键人才的高调回归往往预示着新产品的发布或新公司的启动。Murati的下一步动作可能重塑当前由OpenAI、Anthropic、Google三方主导的竞争格局。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/04/mira-murati-steps-back-into-the-spotlight-carefully/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Airbnb CEO Chesky计划自建AI实验室，打破依赖第三方LLM现状",
-                "summary": "Airbnb CEO Brian Chesky在接受TechCrunch视频采访时透露，公司计划推出自有的AI实验室。Chesky表示，Airbnb去年未与任何大模型厂商达成合作，正是因为当时市面产品\"还不够好\"。随着AI Agent能力快速提升，Airbnb选择自建而非采购的路径，代表了大型互联网公司对AI基础设施自主可控的新趋势，将对现有LLM服务商形成潜在竞争压力。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/04/airbnbs-brian-chesky-plans-to-launch-a-new-ai-lab/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Anthropic警告：Claude编写代码比例已超80%，自我改进速度超预期",
-                "summary": "据Tom's Hardware报道，Anthropic披露其Claude模型现已自主编写超过80%的合并代码（merged code），这一比例远超公司此前预期。Anthropic同时发出警告，称AI系统的\"自我改进\"能力正以超出安全评估速度演进，呼吁全球暂缓AI开发进度。这是头部AI公司首次以如此高调的姿态公开表达对自身技术的担忧，预计将加剧各国监管机构对AI安全性的审查力度。",
-                "source": "Tom's Hardware / 36氪",
-                "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/anthropic-says-claude-now-writes-more-than-80-percent-of-its-merged-code"
-            },
-            {
-                "tag": "应用落地",
-                "title": "微信AI与华米OV等手机厂商达成A2A助手合作，系统层AI落地加速",
-                "summary": "腾讯客服确认，微信正在与华为、小米、荣耀、OPPO、vivo等主流手机厂商推进A2A（AI-to-AI）助手能力对接，用户可通过手机系统AI助手直接发起微信音视频通话或向好友发送消息。这一合作使微信AI能力首次下沉至操作系统层级，覆盖数亿台设备。对国内AI应用开发者而言，系统层级的AI集成意味着分发渠道和交互范式的根本性改变。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3839575253993985"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "原力灵机获智谱、商汤、阶跃星辰联合投资，具身智能热度不减",
-                "summary": "据硬氪独家报道，具身智能企业\"原力灵机\"完成新一轮融资，由智谱、阶跃星辰、商汤科技等三家大模型公司联合注资，华勤、上汽恒旭等产业资本跟投此前已有多轮投入。唐文斌（原旷视科技CTO）主导的这次并购整合了物流机器人资产，标志具身智能正从技术探索进入产业整合阶段。大模型公司对物理世界AI的布局提速，映射出多模态能力落地的迫切需求。",
-                "source": "36氪硬氪",
-                "url": "https://36kr.com/p/3838835333253385"
-            },
-            {
-                "tag": "技术突破",
-                "title": "英伟达Vera Rubin平台内存配置遭质疑，存储板块股价集体重挫",
-                "summary": "海外调研机构SemiAnalysis发布报告指出，英伟达新一代Vera Rubin AI服务器平台存在内存容量\"缩水\"问题，随即引发存储板块股价集体下跌。2026年以来，市场正尝试将存储公司从传统周期股重新定价为\"AI时代核心基础设施资产\"，而此次英伟达内存降配可能打断这一估值切换进程。存储配置是否满足大模型训练需求，将成为决定相关板块走势的关键变量。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3841116245854468"
-            },
-            {
-                "tag": "行业格局",
-                "title": "英诺科创三期基金完成首关15亿元，聚焦AI早期投资",
-                "summary": "英诺基金宣布旗下英诺科创三期基金完成首轮关账，规模15亿元，重点布局前沿科技及人工智能早期项目。在当前AI领域估值高企、B轮以后融资日趋困难的背景下，早期轮次正在成为VC差异化竞争的关键战场。该基金的募集规模和时间节点，折射出市场对AI底层技术和早期项目的持续看好，而非对估值泡沫的担忧。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3840267945969929"
-            },
-            {
-                "tag": "应用落地",
-                "title": "豆包付费模式上线后月活减少610万，免费产品粘性难题浮现",
-                "summary": "36氪数据显示，字节跳动旗下AI产品豆包在推出付费订阅模式后，月活跃用户数下降约610万。这一数字揭示了AI应用商业化进程中的核心矛盾：用户对价格高度敏感，单纯依靠增值付费的变现路径尚未成熟。对豆包而言，如何在付费转化与用户留存之间找到平衡，将是决定其能否维持市场份额的关键挑战。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3840996342073604"
-            },
-            {
-                "tag": "应用落地",
-                "title": "华为云选择\"第三条路\"：不在乎Token总量，重塑国产化算力价值标准",
-                "summary": "36氪独家报道，华为云当前在国产化算力布局上采取差异化策略——不追求Token总量和收入规模，而是聚焦于国产算力系统所生产Tokens的\"健康度\"，强调必须代表真实生产力提升而非仅做数量堆砌。这一理念的转变意味着国产AI算力正从\"能跑通\"向\"跑得好\"进化，对国内AI应用开发者的技术选型和生态选择具有重要参考价值。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3840016255126016"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "百曜科技完成数千万元融资，国家队入局AI虚拟细胞赛道",
-                "summary": "AI虚拟细胞（AIVC）平台公司百曜科技完成数千万元新一轮融资，由中国国新旗下的国新创投基金领投，道彤资本和云启资本跟投，老股东峰瑞资本和百度风投追加投资。国家队背景资本的进入，为AI+生命科学赛道提供了政策背书，也预示着该领域可能成为未来数年政府引导基金的重点支持方向。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3835460873385348"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "AI行业成本危机加剧：从\"Token Maxxing\"转向成本管控新阶段",
-                "summary": "TechCrunch深度报道揭示，AI行业正在经历从\"狂飙突进\"到\"成本管控\"的根本性转向。报道引述多位行业领袖观点称，\"整个对话已从Token Maxxing和'快速前进'转变为'我们需要护栏，如何控制这一切'\"。随着推理成本持续攀升，AI公司正面临商业模型可持续性的拷问，具备高效推理能力的技术方案将获得显著竞争优势。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/05/the-token-bill-comes-due-inside-the-industry-scramble-to-manage-ais-runaway-costs/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "非均匀KV Cache优化方案发布，多轮LLM服务效率有望大幅提升",
-                "summary": "研究团队在arXiv发表论文\"Unlocking Non-Uniform KV Cache for Efficient Multi-Turn LLM Serving\"，提出针对多轮对话场景的非均匀KV Cache优化方案，有望在保持模型性能的同时显著降低推理成本。KV Cache优化是当前大模型推理效率提升的核心方向之一，该研究若可落地，将对长对话AI应用的部署成本产生实质性改善。",
-                "source": "arXiv / Hacker News",
-                "url": "https://arxiv.org/abs/2606.06302"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "硅谷之外AI创新热潮兴起，\"稀缺\"驱动差异化技术路径",
-                "summary": "Rest of World发布深度报道，指出在全球AI竞争格局中，硅谷以外的创业公司正因硬件和资金\"稀缺\"而被迫探索差异化创新路径，包括更高效的资源利用、本地化数据应用和低成本部署方案。这一趋势表明，AI创新的地理分布正在多元化，中国、中东、东南亚等市场的实践可能贡献出与硅谷截然不同的技术范式。",
-                "source": "Rest of World / Hacker News",
-                "url": "https://restofworld.org/2026/scarcity-is-driving-ai-innovation-outside-silicon-valley/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "LLM软件工程测试生成研究发布，评估AI Agent代码质量新框架",
-                "summary": "arXiv发布论文\"Rethinking the Value of Generated Tests for LLM Software Engineering Agents\"，系统性地重新评估了AI Agent在软件工程任务中生成测试代码的价值与局限性。论文提出，当前主流测试生成范式存在系统性偏差，需要建立更严格的评估框架。对于正在构建AI编程工具链的团队而言，该研究提供了重要的技术方向参照。",
-                "source": "arXiv / Hacker News",
-                "url": "https://arxiv.org/abs/2602.07900"
-            },
-            {
-                "tag": "应用落地",
-                "title": "ToTra开源LLM网关发布，支持GDPR和EU AI Act合规",
-                "summary": "开发者社区推出开源项目ToTra，提供符合GDPR和EU AI Act合规要求的LLM网关解决方案。随着欧盟AI Act正式生效日期临近，合规性已从\"加分项\"变为AI产品的\"必选项\"。ToTra的开源性质和合规功能瞄准了当前市场空白——大量中小型AI应用开发者缺乏专业的法律和技术资源来满足监管要求，该项目有望获得广泛采用。",
-                "source": "GitHub / Hacker News",
-                "url": "https://github.com/SugaC-275/ToTra"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-05",
-        "items": [
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI CFO确认AI设备年底前发布，年化收入突破470亿美元",
-                "summary": "OpenAI首席财务官Sarah Friar近日透露，公司AI设备将于\"今年年底之前\"正式发布，她本人已亲自体验过该产品。同时，Anthropic联合创始人Daniela Amodei在IPO前夕接受采访时表示，公司年化收入已于5月突破470亿美元。面对外界对AI回报率的质疑，她表示Anthropic的增长\"疯狂\"且势头强劲。这两条消息同日出街，揭示了头部AI公司正加速软硬一体化扩张，同时收入规模已逼近科技巨头水平。对从业者而言，AI正从纯软件服务向\"设备+服务\"闭环演进，入口争夺战已全面开打。",
-                "source": "36氪 / TechCrunch AI",
-                "url": "https://36kr.com/p/3838652242823687"
-            },
-            {
-                "tag": "应用落地",
-                "title": "字节AI 2026年四个关键命题：年底模型性能瞄准全球SOTA",
-                "summary": "36氪独家获悉，2026年字节跳动AI有四个关键命题：一是加大世界模型训练投入，年底前模型性能需达到Google Genie等全球SOTA水平；二是AI Agent战略深化，豆包和Capcut商业化提速；三是TikTok与抖音AI能力整合进一步深入；四是AI Native应用矩阵持续扩充。知情人士透露，字节过去一年在AI基础设施上的投入已超百亿元级别。字节正以远超行业平均水平的速度推进AI战略，目标是全面嵌入旗下所有核心产品。这意味着AI竞争已进入\"全栈式\"比拼阶段，中小创业公司的空间进一步被压缩。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3838454229027072"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Alphabet创纪录完成850亿美元融资，全力押注Google AI业务",
-                "summary": "Alphabet完成850亿美元股票发售融资，规模创该公司历史纪录，同时也是AI领域迄今最大规模融资。资金将专项用于Google AI业务扩张，涵盖数据中心建设、算力基础设施扩充和AI人才招募等。CEO桑达尔·皮查伊在财报会上表示，AI驱动搜索的货币化已实质性启动，这是继OpenAI估值后的又一标志性事件。850亿美元这个数字意味着AI军备竞赛已进入\"百亿美元量级\"时代，资本门槛的急剧抬高正在重塑行业格局。对投资人和创业者而言，AI基础设施层已成为只有巨头才能参与的竞赛。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/03/alphabets-record-breaking-85b-raise-for-googles-ai-business-is-a-helluva-good-signal/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "台积电产能告急：\"我们只能支持这么多\"",
-                "summary": "全球最大芯片代工厂台积电正在竭力应对AI需求的爆发式增长，产能已严重不足以满足来自AMD、苹果、NVIDIA等客户的订单需求。台积电极其有限的芯片制造产能正成为整个人工智能产业扩张的瓶颈。尽管公司全力扩充产能，但产能爬坡速度远不及AI GPU和AI服务器需求的增速。台积电高层坦言：\"我们只能支持这么多。\"这意味着全球AI芯片短缺可能在2026年进一步加剧，算力成本下降的预期需要重新评估。对算力依赖型AI公司来说，芯片供应链已成为首要战略风险。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/tech/943066/tsmc-ai-demand-struggles"
-            },
-            {
-                "tag": "政策监管",
-                "title": "AI行业领袖罕见联手：呼吁国会对AI辅助生物武器加强监管",
-                "summary": "包括OpenAI、Anthropic、Google、Meta等多家AI行业竞争对手罕见联合发表公开信，共同呼吁美国国会加强对AI辅助生物武器研发的监管。信中指出，AI技术正在降低生物威胁的门槛，各公司虽在其他领域激烈竞争，但在防止AI被滥用于生物武器上达成空前共识。这是AI行业首次由头部企业联合发起的最高级别监管倡议。公开信的签署意味着AI安全治理已从企业自愿承诺上升到行业集体行动。对政策制定者和安全从业者而言，生物安全正成为AI监管的下一个前沿焦点。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/942956/ai-biological-weapons-open-letter-congress"
-            },
-            {
-                "tag": "应用落地",
-                "title": "腾讯今年大部分代码已由AI生成，软件工程范式根本性转变",
-                "summary": "腾讯高级执行副总裁汤道生在AI产业峰会上透露，腾讯今年大部分代码已由AI生成，工程师将更多时间用于架构设计和代码审查，把具体编码工作交给AI。这是国内大厂首次公开量化确认AI对代码编写的替代比例，标志着软件开发范式的根本性转变。汤道生同时承认腾讯不同业务线在AI推进速度上有快有慢，对外界\"腾讯慢了\"的批评持开放态度。这表明AI辅助编程已从\"实验\"进入\"规模化生产\"阶段，但技术决策权归属仍是待解难题。",
-                "source": "36氪 / 第一财经",
-                "url": "https://36kr.com/newsflashes/3839702186838530"
-            },
-            {
-                "tag": "应用落地",
-                "title": "苹果批准Poke为Messages for Business平台首个AI agent",
-                "summary": "苹果已批准初创公司Poke成为Messages for Business平台首个获批的AI agent，这意味着Poke成为首家获准在苹果官方企业通讯平台上运营的第三方AI agent。Poke允许用户通过简单短信与AI agent交互，无需下载额外应用。此举标志着苹果在AI agent生态建设上迈出关键一步，也意味着科技巨头对AI agent分发渠道的争夺已进入白热化。对开发者和创业者而言，谁掌控分发入口谁就掌握价值分配的主动权。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/04/apple-approves-poke-as-the-first-ai-agent-on-its-messages-for-business-platform/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta WhatsApp Business AI agent全球上线，按token用量收费",
-                "summary": "Meta宣布其面向WhatsApp Business的AI agent已在全球范围内正式开放使用，企业可以通过WhatsApp平台向客户提供智能客服和商业服务。WhatsApp将根据AI agent处理的token数量向企业收费，这为Meta开辟了新的企业级收入来源。Meta去年已开始测试该服务，如今正式全球化部署，意味着Meta正将WhatsApp这个拥有数十亿用户的通讯入口深度商业化。对企业用户来说，WhatsApp AI agent正在成为中小商家接入AI商业服务的低成本入口。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/03/metas-ai-agent-for-whatsapp-business-is-now-available-globally/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Lovable与Google Cloud签署多年协议，五年用量扩大五倍",
-                "summary": "AI应用开发平台Lovable与Google Cloud扩大了多年期合作协议，计划将Google Cloud使用量提升至现有水平的五倍。此前Lovable已是Google Cloud的重要客户，此次协议标志着双方合作关系的深度绑定进一步加强。知情人士透露，该协议涉及数亿美元的云资源承诺。Lovable的爆发式增长反映了AI应用开发平台赛道正处于快速扩张期。对从业者而言，底层云服务商与应用层平台之间的垂直整合趋势愈发明显。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/03/lovable-signs-multi-year-deal-with-google-cloud-to-up-usage-5x-source-says/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Coralogix融资2亿美元，打造AI agent可观测性监控基础设施",
-                "summary": "AI基础设施公司Coralogix完成2亿美元新一轮融资，致力于构建AI agent的可观测性和稳定性监控体系。Coralogix认为，随着AI系统进入生产环境，企业对AI agent运行状态的监控需求将迎来爆发式增长。公司正与Anthropic、OpenAI等主要AI提供商深度合作，将监控能力集成到AI agent的运维体系中。AI监控层正在成为基础设施赛道的新增长点，对于AI从业者来说，AI系统的可观测性和稳定性保障将是下一阶段的核心挑战。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/03/coralogix-raises-200m-in-race-to-build-the-monitoring-layer-for-ai-agents/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "原力灵机获智谱、商汤、阶跃星辰新一轮投资，具身智能持续吸金",
-                "summary": "具身智能企业「原力灵机」完成新一轮融资，资方包括智谱、阶跃星辰、商汤科技等多家大模型公司，以及华勤、上汽恒旭等产业资本。具身智能作为AI走向物理世界的重要路径，正在获得来自模型层、应用层和产业资本的全方位资金支持。原力灵机由前阿里巴巴AI Lab成员唐文斌创立，此前已并购物流机器人公司。本轮融资后，公司在具身智能领域的商业化落地进程有望加速。对具身智能从业者来说，\"模型公司+产业资本\"的双重背书正在成为行业融资的新标配。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3838835333253385"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "百曜科技完成数千万元新融资，国家队加码AI虚拟细胞赛道",
-                "summary": "AI虚拟细胞平台公司「百曜科技」完成新一轮数千万元融资，由国家级国有资本运营平台中国国新旗下的国新创投基金领投，道彤资本、云启资本跟投，峰瑞资本和百度风投追加投资。国家队与市场化基金的联合投资表明，AI+生命科学已上升为国家战略层面的投资方向。AI虚拟细胞技术通过构建虚拟细胞模型加速药物研发，正成为AI与生物医药融合的前沿赛道。对生命科学AI从业者来说，国家队的入场信号意味着政策层面的持续倾斜。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3835460873385348"
-            },
-            {
-                "tag": "行业格局",
-                "title": "百度智能云与FluxA达成战略合作，AI技能数字商品化时代开启",
-                "summary": "全球AI Agent支付基础设施提供商FluxA与百度智能云正式建立战略合作，国内一人公司（OPC）可在百度智能云云市场将AI技能、数字内容封装为可被AI agent调用和购买的商品。该合作打通了AI agent与商品定价、支付、交付的全链路，标志着国内AI商业化基础设施的重要一步。这一模式若规模化跑通，意味着每个普通人都可以成为AI技能的商品供给方，AI agent与数字商品经济的融合正在加速。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3839673465866498"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "腾讯首发效率智能体工具集覆盖20+场景，首创微信直连模式",
-                "summary": "腾讯在2026腾讯云AI产业应用大会上系统发布\"效率智能体工具集\"，面向个人、办公和企业三类场景，覆盖20余个垂直领域。其中面向个人用户的本地AI助手QClaw首创\"微信直连\"模式，直接打通腾讯生态。该工具集的发布意味着腾讯正在将通用大模型能力转化为场景化的企业级AI解决方案，深化其在企业市场的竞争优势。AI竞争正从\"模型能力\"向\"场景落地\"迁移，能够将AI能力嵌入具体业务流程的产品正在获得更大市场。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3839715093662211"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Airbnb CEO宣布将建立新AI实验室，亲自下场自研AI",
-                "summary": "Airbnb CEO布莱恩·切斯基宣布公司计划建立新的AI实验室，自研AI技术用于改造旅游和住宿体验。他表示，去年Airbnb没有与任何大模型公司达成合作，是因为当时市面上的产品\"还不够成熟\"。如今他决定亲自下场，意味着头部消费互联网公司对AI的战略判断正在从\"合作调用\"转向\"自建能力\"。对AI从业者来说，这既是人才需求的增量市场，也是对第三方AI服务商的挑战信号。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/04/airbnbs-brian-chesky-plans-to-launch-a-new-ai-lab/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "汤道生回应\"腾讯慢了\"：承认快慢不一，接受外界批评",
-                "summary": "腾讯集团高级执行副总裁汤道生在腾讯AI产业峰会上首次正面回应\"腾讯慢了\"的质疑，他承认在复杂组织中不同业务线推进速度不一，有快有慢，也有失败与探索。他表示对外界批评持开放态度，接受建议，但在\"长跑\"中模型能力会不断迭代。对于外界关心的具体业务线表现，汤道生未给出明确时间表。这是腾讯高层首次就AI战略执行力问题作出系统性回应，意味着大厂内部正在面临组织效率与AI速度双重考验。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3839712634014208"
-            },
-            {
-                "tag": "政策监管",
-                "title": "英国监管新规：出版商可选择退出Google生成式AI搜索",
-                "summary": "英国监管机构出台新规，要求Google提供工具允许网站出版商主动选择退出其生成式AI搜索功能。此前，出版商普遍反映Google的AI搜索功能无偿抓取并呈现其内容，损害了其流量和商业利益。这一新规是全球范围内首次由监管机构正式赋予出版商对AI搜索的\"拒绝权\"，将重塑AI搜索与内容生产之间的关系。对内容创作者和平台而言，版权与AI搜索的博弈已进入实质性立法阶段。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/03/publishers-will-be-able-to-opt-out-of-ai-search-thanks-to-new-regulation/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "NBA中国携手阿里巴巴上线官方AI大模型\"NBA Chat\"",
-                "summary": "NBA中国与阿里巴巴联合打造的首个官方AI大模型\"NBA Chat\"正式上线，该模型基于阿里千问大模型，结合NBA历史比赛数据、球员深度分析等内容，为球迷提供智能篮球问答服务。NBA Chat的上线是国际体育IP与AI技术融合的标志性案例，意味着顶级体育内容正成为AI落地的重要场景。对体育科技从业者而言，体育数据+AI的结合模式已从概念验证进入规模化商业运营阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3839693822085382"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "法院应对AI生成诉讼洪流：版权与AI内容争议急剧升级",
-                "summary": "MIT Technology Review发文深入分析法院系统如何应对AI生成诉讼的爆发式增长。随着生成式AI的普及，大量由AI辅助创作的內容进入法律纠纷，多国法院正面临AI生成内容的版权归属、证据效力等全新挑战。部分法官表示，AI生成材料在证据认定和版权判定上缺乏明确法律框架，导致案件审理效率大幅下降。这篇深度报道揭示了AI广泛应用后法律体系面临的前所未有的结构性压力，对AI合规从业者有重要参考价值。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/06/04/1138391/courts-coping-ai-lawsuits/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Uber四个月内AI预算耗尽，企业AI支出管控警钟敲响",
-                "summary": "Uber在鼓励员工大规模使用AI工具后，四个月内耗尽了全年AI预算，现已开始对员工AI支出设置上限。据报道，Uber此前曾主动鼓励员工\"尽可能多地使用AI\"，但失控的用量导致成本急剧膨胀。这一案例为大模型部署的企业成本管理敲响警钟：AI的实际消耗成本往往远超预期。对AI采购决策者和运维团队而言，建立AI成本管控体系已成为企业AI规模化落地的必要前提，而非可选项。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/02/uber-caps-employee-ai-spending-after-blowing-through-budget-in-four-months/"
             }
         ]
     }
