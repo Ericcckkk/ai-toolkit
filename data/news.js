@@ -2,6 +2,144 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-08",
+        "items": [
+            {
+                "tag": "应用落地",
+                "title": "Momenta港股上市：市值突破700亿港元，成为“物理AI第一股”",
+                "summary": "7月8日，物理AI公司Momenta正式在港交所挂牌上市，股票代码6880.HK，股价开盘涨超6%，总市值突破700亿港元。Momenta此次IPO定价295.6港元/股。Momenta定位为“物理AI”公司，主攻自动驾驶与具身智能领域，成为港股市场首只以该概念上市的科技股。这标志着自动驾驶赛道在一级市场融资收紧后正式进入二级市场检验阶段，对后续图森未来、小马智行等同类企业的上市节奏具有重要参考价值。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3886332173561862"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "德睿智药获5200万美元B轮融资：AI设计减肥药进入3期临床",
+                "summary": "德睿智药近期完成5200万美元B轮融资，由头部人民币和美元基金出资，凯乘资本担任独家财务顾问。融资金额将用于升级AI制药引擎Molecule Arts Platform，以及推进其AI设计的减肥药物管线进入3期临床试验。这是2026年以来国内AI制药领域单笔最大的B轮融资。随着GLP-1减肥药市场竞争加剧，AI制药引擎能否在临床效率上形成代际优势，将决定这轮融资的最终成败。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3885479689465858"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta推出Muse Image：AI图像生成工具扩增至广告、装饰等场景",
+                "summary": "Meta于7月7日正式推出Muse Image图像生成模型，这是其生成式AI工具的重大扩展。新模型可应用于广告创意、视觉装饰和创作者经济等多个场景。Meta同时宣布允许使用Instagram用户公开照片训练AI图像模型，用户需手动选择退出。这两项更新结合来看，Meta正以社交资产为燃料加速AI内容生产闭环，隐私合规压力将随之上升。",
+                "source": "Reuters / TechCrunch AI / Hacker News",
+                "url": "https://www.reuters.com/technology/meta-expands-generative-ai-tools-with-muse-image-rollout-2026-07-07/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic扩张曼哈顿：纽约AI热潮从科技圈蔓延至金融医疗",
+                "summary": "据《纽约时报》7月7日报道，Anthropic正在曼哈顿扩大办公规模，成为纽约AI热潮的重要组成部分。报道指出，纽约AI行业正从传统科技圈向金融、医疗、法律等专业服务领域快速渗透，曼哈顿中城和下城出现了明显的AI企业聚集效应。随着Claude在企业市场的口碑持续发酵，Anthropic的物理扩张本身就是行业重心转移的信号弹。",
+                "source": "纽约时报 / Hacker News",
+                "url": "https://www.nytimes.com/2026/07/07/nyregion/anthropic-ai-boom-nyc.html"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic对Abnormal提起诉讼：AI行业数据抓取边界争议升级",
+                "summary": "Anthropic已对AI安全公司Abnormal提起诉讼，这是继此前针对多家AI公司数据抓取诉讼后的最新一起。诉讼核心争议在于Abnormal是否非法使用Anthropic模型输出数据训练竞品。该案折射出AI行业底层矛盾：模型训练数据的所有权边界至今无明确法律依据，大模型公司正以诉讼代建立事实上的数据垄断。",
+                "source": "Twitter @evanreiser / Hacker News",
+                "url": "https://twitter.com/evanreiser/status/2074577564006519020"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Qualcomm收购Nexa AI并开源GenAI Runtime，剑指端侧AI算力",
+                "summary": "Qualcomm完成对Nexa AI的收购，并同步开源其GenAI Runtime推理运行时，专为Hexagon NPU优化。该举措意味着芯片厂商正在将大模型推理能力直接下沉至硬件层，试图在端侧设备（手机、汽车、IoT）上构建完整AI推理栈。随着苹果、高通、联发科相继加码端侧AI，设备端AI生态的争夺战已正式开打。",
+                "source": "Hacker News",
+                "url": "https://github.com/qualcomm/GenieX"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "德国AI初创企业数量创历史新高：上半年新增1038家，占比34%",
+                "summary": "据德国创业协会与Startupdetector最新报告，2026年上半年德国新增初创企业3053家，创历史同期最高纪录，环比增长52%。其中1038家拥有明确AI业务背景，占新增总量的34%。欧洲AI创业生态的活跃度显著提升，但与中美相比，德国在基础模型和算力基础设施上仍存在明显短板。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3886371841388551"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Discord承认AI审核bug误封用户：200余名用户受波及",
+                "summary": "Discord于7月7日确认，其AI内容审核系统存在严重bug，自5月起已错误封禁大量用户账号，额外有约200名用户在近期因此被禁言。该问题源于AI模型将无害图片错误识别为违规内容。Discord表示已开始修复并逐步解封受影响账户。此次事件再次表明，在关键业务场景部署未经充分测试的AI系统，风险远超预期。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/07/discord-admits-ai-moderation-bug-wrongfully-banned-users-over-harmless-images/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "苹果iOS 27 beta新增Siri语速与表达力自定义功能",
+                "summary": "苹果在最新的iOS 27 beta版中为Siri加入了语速和表达力自定义选项，用户可调整语音助手的说话节奏和情感表现。该更新是苹果重建Siri自然感和个性化体验的长期计划的一部分。苹果正试图以交互体验差异化对抗Google Assistant和Amazon Alexa的先发优势，但端侧AI能力仍是关键瓶颈。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "中国AI模型因成本优势加速渗透美国企业市场",
+                "summary": "据CNBC 7月7日报道，受OpenAI和Anthropic价格持续上涨影响，越来越多的美国企业开始评估并采用中国AI模型作为替代方案。阿里通义、百度文心等模型在部分benchmark上已接近GPT-4水平，但价格仅为后者的五分之一到十分之一。中国AI模型的出海窗口正在打开，但数据合规和地缘政治风险仍是企业决策的主要顾虑。",
+                "source": "CNBC / Hacker News",
+                "url": "https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html"
+            },
+            {
+                "tag": "行业格局",
+                "title": "微软加入AI降本潮：更多依赖自研模型而非OpenAI",
+                "summary": "据TechCrunch 7月7日报道，微软正在减少对OpenAI的依赖，逐步将内部产品转向使用自研模型以控制成本。这是继Google、Meta之后，又一家科技巨头选择“内部替代外部”策略。微软的转向表明，大模型采购成本已高到让巨头们宁愿自建也不想外购，这对Anthropic和OpenAI的商业模式构成结构性压力。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "开源AI浪潮为何尚未撼动Anthropic：安全合规仍是企业首选",
+                "summary": "TechCrunch分析指出，尽管Llama等开源模型生态快速壮大，Anthropic的Claude在企业市场仍保持强劲竞争力。核心原因在于大型企业更看重模型安全性、合规文档完善度和服务稳定性，而非单纯的性能价格比。开源模型在安全对齐和商业支持上的短板，客观上为Anthropic等闭源厂商赢得了缓冲期。",
+                "source": "TechCrunch / Hacker News",
+                "url": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "SK Hynix启动数十亿美元美国IPO，HBM内存需求由AI驱动",
+                "summary": "SK Hynix宣布将于近期在美国进行大规模IPO，融资目标达数十亿美元。SK Hynix是全球第二大HBM内存制造商，其业绩增长几乎完全由AI数据中心对高带宽内存的需求驱动。继三星之后，又一家韩国存储巨头进入美国资本市场，AI基础设施的核心硬件层正在成为全球资本市场的热门标的。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "欧盟发布先进AI网络安全计划，应对AI在网络安全领域的风险与机遇",
+                "summary": "欧盟委员会于7月7日发布新计划，系统性应对先进AI在网络安全领域的双面影响。计划涵盖AI驱动网络攻击的防御机制、AI安全评估框架以及成员国协调机制。欧盟正试图在AI安全领域建立类似于GDPR的全球标准话语权，这将对中国AI企业的欧洲市场准入产生深远合规影响。",
+                "source": "欧盟委员会 / Hacker News",
+                "url": "https://commission.europa.eu/news-and-media/news/new-eu-plan-address-risks-and-opportunities-advanced-ai-cybersecurity-2026-07-07_en"
+            },
+            {
+                "tag": "行业格局",
+                "title": "AI巨头向初创公司慷慨输送免费算力：锁定用户、对抗开源",
+                "summary": "《华尔街日报》7月7日揭露，OpenAI、Anthropic、Google等AI巨头正通过免费算力额度积极笼络AI初创公司，意图在云端锁定用户并压缩开源模型的生存空间。免费算力背后是云计算市场的深层垄断逻辑：一旦初创公司依赖某家云服务，后续迁移成本极高。这对独立云厂商和开源生态构成系统性挑战。",
+                "source": "华尔街日报 / Hacker News",
+                "url": "https://www.wsj.com/tech/ai/ai-giants-are-handing-out-tons-of-free-computing-power-to-grab-startup-share-c00a5c5c"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Vercel CEO倡导模型与代理分离：AI应用开发走向模块化",
+                "summary": "Vercel CEO Guillermo Rauch在接受TechCrunch采访时表示，当前AI行业存在将大模型与AI代理过度耦合的错误倾向，导致应用难以优化性能和成本。他主张将模型层和代理层解耦，让开发者能灵活替换底层模型而不影响上层逻辑。这一观点与LangChain等框架的整合思路形成对立，代表了AI应用工程层面的一次重要路线之争。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "AI数据中心需求导致美国制造业能源成本飙升",
+                "summary": "Ars Technica 7月7日分析指出，大规模AI数据中心的集中建设正推高美国制造业的电力成本，部分工业州电价已出现两位数涨幅。AI算力需求与工业用电的能源竞争格局正在形成，这可能倒逼AI基础设施向核能和可再生能源迁移，同时也为数据中心选址策略带来结构性改变。",
+                "source": "Ars Technica / Hacker News",
+                "url": "https://arstechnica.com/tech-policy/2026/07/us-manufacturers-energy-costs-soar-because-of-ai-data-center-demand/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "2026年科技行业大裁员AI成主因：从增长引擎到就业杀手",
+                "summary": "TechCrunch AI梳理了2026年主要科技公司裁员情况，包括Alphabet、Meta、微软、亚马逊等在内的头部企业在扩大AI应用的同时宣布了数万人规模裁员。裁员叙事几乎无一例外地指向AI自动化替代。这波裁员潮标志着AI对知识工作的替代效应已从实验阶段进入规模化实用阶段，从业者需重新定义自身不可替代性。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI低延迟语音AI架构揭秘：如何服务全球9亿用户",
+                "summary": "ByteByteGo深度分析了OpenAI为9亿用户提供低延迟语音AI的技术架构，揭示了端到端语音管线中从ASR到LLM推理再到TTS的完整优化路径，包括级联模型设计、边缘缓存策略和成本控制方法论。该分析表明，语音AI的大规模落地瓶颈已从模型能力转向系统工程能力，这一架构洞察对所有从事实时AI应用研发的团队具有重要参考价值。",
+                "source": "Hacker News",
+                "url": "https://blog.bytebytego.com/p/how-openai-delivers-low-latency-voice"
+            }
+        ]
+    },
+    {
         "date": "2026-07-07",
         "items": [
             {
