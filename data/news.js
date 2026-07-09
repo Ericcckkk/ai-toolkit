@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-09",
+        "items": [
+            {
+                "tag": "重要产品发布",
+                "title": "SpaceX AI发布Grok 4.5，被马斯克称为\"Opus级模型\"",
+                "summary": "马斯克旗下xAI于7月8日发布Grok 4.5，声称是一款更便宜、更高效的替代方案，马斯克本人将其描述为与Anthropic Claude Opus相当的能力水平。这是xAI在大模型竞争中的重要一步，旨在为用户提供企业级AI能力。该模型预计将整合至SpaceX生态系统中，为其太空和AI服务提供支撑。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI发布新语音模型，支持同时听说和实时翻译",
+                "summary": "OpenAI于7月8日推出全新语音模型，具备同时听说能力，这是实现自然实时对话的关键功能。新模型特别针对实时翻译场景优化，可实现低延迟的跨语言交流。此举标志着OpenAI在多模态交互领域的进一步深化，也意味着AI语音交互即将进入新阶段。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "国家超算互联网核心节点正式上线，构建全国算力统一调度体系",
+                "summary": "7月9日，2026河南省人工智能大会在郑州举行，国家超算互联网核心节点正式上线运行。该节点以构建覆盖全国的计算资源统筹调度体系为目标，承担运营管理、资源调度等核心功能，并整合供需对接、产业孵化等综合服务。这一基础设施的落地对中国AI发展具有战略意义。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3887797387344387"
+            },
+            {
+                "tag": "政策监管",
+                "title": "工信部警告Claude Code存在安全后门隐患",
+                "summary": "工信部发布安全警告，指出AI编程工具Claude Code存在安全后门隐患，危害严重。这一监管动作表明中国对AI工具安全性的高度重视，也预示着国内AI编程工具将面临更严格的合规审查。对于使用海外AI编程工具的企业来说，需要重新评估安全风险。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3887648675133960?f=rss"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国政府发布AI系统准确性抑制政策声明",
+                "summary": "美国联邦政府于7月7日发布政策声明，专门针对AI系统中的准确性抑制问题。这一政策信号表明监管机构开始关注AI模型可能被刻意压低性能的问题，对于AI开发者的合规要求将进一步明确。",
+                "source": "Hacker News / Federal Register",
+                "url": "https://www.federalregister.gov/documents/2026/07/07/2026-13628/policy-statement-concerning-the-suppression-of-accuracy-in-artificial-intelligence-systems"
+            },
+            {
+                "tag": "行业格局",
+                "title": "诺贝尔化学奖得主离开美国，将主导中国AI材料实验室",
+                "summary": "一位诺贝尔化学奖得主宣布离开美国，将前往中国主导AI材料实验室建设。这一高端人才流动反映了中国在AI领域的吸引力正在增强，也预示着AI+材料科学可能成为下一个竞争焦点。对于全球AI人才格局具有风向标意义。",
+                "source": "Hacker News / Nature",
+                "url": "https://www.nature.com/articles/d41586-026-02143-x"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Lovable正洽谈新一轮融资，估值拟翻倍至132亿美元",
+                "summary": "据报道，AI应用开发平台Lovable正在洽谈新一轮3亿美元融资，由Menlo Ventures领投，估值将从66亿美元翻倍至132亿美元。Lovable主打无需编程即可构建应用的AI平台，在AI应用开发赛道快速崛起。此轮融资若完成，将成为AI应用层的重要里程碑。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Prime Intellect获1.3亿美元A轮融资，帮企业构建AI智能体",
+                "summary": "AI基础设施公司Prime Intellect宣布完成1.3亿美元A轮融资，公司成立于2024年，目标是帮助企业组织训练自己的AI智能体系统，无需完全依赖外部大模型服务。该笔融资将加速企业级AI Agent解决方案的普及，降低企业自建AI能力的门槛。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "深度智控完成数亿元B轮融资，晶科能源和国投创新领投",
+                "summary": "物理AI企业深度智控完成数亿元人民币B轮融资，由晶科能源战略投资，国投创新、招银国际联合领投。深度智控定位为全球能源基础设施的\"大脑\"，利用AI技术优化能源设施的运行效率。本轮融资将加速其在能源AI领域的技术迭代和市场拓展。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3887726503688968?f=rss"
+            },
+            {
+                "tag": "技术突破",
+                "title": "General Intuition押注游戏数据训练机器人基础模型",
+                "summary": "机器人AI公司General Intuition认为视频游戏数据是训练物理AI基础模型的最佳数据源，计划投入数百万小时游戏数据用于训练。公司CEO认为现有互联网数据不足以支撑通用AGI的实现，游戏环境中的交互数据更能反映真实物理世界的复杂性。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "阶跃星辰AI智能体手机将由华勤技术代工生产",
+                "summary": "据知情人士透露，阶跃星辰将推出的AI智能体手机由A股上市公司华勤技术负责代工生产，双方为深度绑定合作关系而非简单贴牌代工模式。这标志着国产AI手机进入实质性量产阶段，也预示着AI硬件赛道将从概念走向落地。",
+                "source": "36氪 / 财联社",
+                "url": "https://36kr.com/newsflashes/3887763427244809"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Google Photos推出AI Video Remix工具，支持电影级重光效",
+                "summary": "Google Photos新增AI Video Remix功能，可对视频进行电影级重光效处理、替换背景等智能编辑。该工具降低了普通用户制作专业级视频内容的门槛，标志着AI视频编辑能力进一步向消费级产品渗透。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Google deepfake检测系统成功识别麦康奈尔虚假图片",
+                "summary": "Google的deepfake检测系统本周成功识别了一张关于参议员麦康奈尔的虚假医院图片，防止了虚假信息的进一步传播。随着AI生成内容泛滥，检测技术的实用价值日益凸显，也将推动更多反深度伪造技术的商业化应用。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Meta为AI眼镜增加防偷拍保护，但整体AI策略存矛盾",
+                "summary": "Meta为其AI眼镜新增防护功能以防止用户偷拍他人，但外界认为这与其整体AI战略存在矛盾。Meta一方面强调隐私保护，另一方面持续推动AI功能的侵入性扩展，反映出AI硬件厂商在用户体验和隐私合规之间的两难处境。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "易居推出地产AI专属大模型一体机，克而瑞分析师\"小瑞\"上岗",
+                "summary": "易居（中国）推出核心战略产品\"地产模数通——企业专属大模型一体机\"，同时克而瑞地产AI分析师\"小瑞\"正式上岗。这是地产行业首个垂直领域AI一体机产品，标志着大模型技术在房地产行业的深度定制化应用落地。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3886709249241349?f=rss"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "调查发现大多数护士认为AI不足以信赖用于患者护理",
+                "summary": "华盛顿邮报发布调查显示，大多数护士认为现有AI系统还不够可靠，无法信任其用于患者护理工作。这一结果反映了医疗AI面临的信任挑战，在AI快速渗透各行业的背景下，医疗等高风险领域对AI的接纳将是一个渐进过程。",
+                "source": "Hacker News / Washington Post",
+                "url": "https://www.washingtonpost.com/technology/2026/07/07/most-nurses-say-ai-isnt-good-enough-trust-with-patient-care-survey/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "布朗大学教授因AI作弊疑虑改为线下考试，学生成绩下降50%",
+                "summary": "布朗大学一名教授因怀疑学生使用AI作弊，将期末考试改为线下进行，结果学生平均成绩下降了50%。这一现象揭示了AI对学生学业评估方式的深刻冲击，也引发高校如何平衡AI工具使用与学术诚信的广泛讨论。",
+                "source": "Hacker News / Ars Technica",
+                "url": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "德国AI初创企业创纪录增长，AI推动科技行业复苏",
+                "summary": "德国AI初创企业数量创历史新高，显示出人工智能正在推动该国科技行业进入新一轮增长周期。德国作为传统制造业强国，其AI创业生态的活跃表明AI技术正加速向传统产业渗透。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3886678879727880?f=rss"
+            },
+            {
+                "tag": "技术突破",
+                "title": "研究指出Anthropic Fable模型分类器过于严格",
+                "summary": "研究人员发现Anthropic为Fable模型设置的分类器过于严格，影响了模型的实用性和用户体验。这一技术细节的披露提醒AI开发者，在安全过滤和模型实用性之间需要更好的平衡，过于保守的过滤机制可能损害AI产品的核心竞争力。",
+                "source": "Hacker News",
+                "url": "https://combine-lab.github.io/blog/2026/07/07/fable-is-not-a-useful-model.html"
+            },
+            {
+                "tag": "技术突破",
+                "title": "AI视频生成全面成熟，Seedance 2.0领衔主流工具横评",
+                "summary": "2026年AI视频生成赛道已迈入全面爆发的成熟竞速期，Seedance 2.0的出圈让AI视频变成\"全民狂欢\"。短短两年间，AI视频从最初几秒的模糊碎片画面进化到分钟级连贯叙事和真实物理世界精准还原，技术成熟度大幅提升。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3886403765596418?f=rss"
+            }
+        ]
+    },
+    {
         "date": "2026-07-08",
         "items": [
             {
