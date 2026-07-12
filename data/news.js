@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-12",
+        "items": [
+            {
+                "tag": "大额融资/IPO",
+                "title": "SK海力士融资265亿美元登陆美股，创美国史上最大外资IPO",
+                "summary": "7月10日，SK海力士成功登陆纽交所，发行价51美元/股，上市首日大涨近13%，融资265亿美元（约合1930亿元人民币），成为美国史上规模最大的外资IPO。华尔街投行合计佣金有望达1.4亿美元。AI芯片需求飙升背景下，这家韩国存储巨头市值已突破万亿美元。SK海力士同时被要求在美国建设新晶圆厂，以符合《芯片法案》相关要求。对行业而言，HBM存储已成为AI军备竞赛的关键战略资源。",
+                "source": "TechCrunch AI / 36氪",
+                "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "传腾讯20亿美元洽购Manus全部股权，中方资本组团从Meta手中回购",
+                "summary": "7月11日，有消息称腾讯正洽谈以约20亿美元估值，成为通用AI Agent公司Manus的最大股东。由腾讯牵头的中方资本组团计划从Meta手中回购Manus全部股权。另有知情人士透露，腾讯仍将保留少数股东地位，而非全资收购。腾讯方面截至发稿暂无回应。Manus是Meta于2025年收购的AI Agent明星公司，若此交易达成，将是AI Agent领域最具影响力的收购事件。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3890964192852482"
+            },
+            {
+                "tag": "行业格局",
+                "title": "苹果起诉OpenAI，指控工程师窃取硬件机密推进AI计划",
+                "summary": "苹果公司已对OpenAI提起诉讼，指控其工程师窃取苹果硬件机密以推进OpenAI的AI硬件计划。诉讼文件显示，该行为由OpenAI高管层直接指使，其中包括一名苹果前长期员工。案件暴露了硅谷科技巨头在AI人才和知识产权争夺中的深层矛盾。业内人士分析，苹果此举意在阻止OpenAI获得可能威胁其Siri和设备端AI战略的核心技术。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://www.theverge.com/tech/964350/apple-openai-lawsuit-trade-secrets"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI发布GPT-5.6并推出ChatGPT Work，剑指企业级市场",
+                "summary": "OpenAI正式发布GPT-5.6系列模型，包含GPT-5.6和Codex等变体，覆盖网络安全、代码生成等多个领域。GPT-5.6已成为微软Copilot 365的\"首选模型\"，尽管双方近期有关\"分手\"传闻，但合作仍在继续。与此同时，OpenAI宣布推出ChatGPT Work企业套件，直面Salesforce、Workday等企业软件巨头。这标志着OpenAI从API服务商向企业平台公司的战略转型进入新阶段。",
+                "source": "The Verge AI / TechCrunch AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/963464/openai-gpt-5-6-codex-chatgpt-work"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "机构预测2029年中国算力卡采购额将达1.44万亿，催生多家万亿市值企业",
+                "summary": "据央视财经引用机构预测，到2029年中国国内算力卡采购额将达到1.44万亿元（约合2000亿美元），庞大的算力需求让投资机构相信，中国将诞生多家市值万亿甚至十万亿级别的上市企业。该预测基于国内AI大模型训练和推理需求的高速增长，以及国产替代进程的加速。对AI从业者而言，算力基础设施领域的投资机会值得重点关注。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3891934990744327"
+            },
+            {
+                "tag": "行业格局",
+                "title": "智谱唐杰发布内部信：直指AGI下一个高地，不追求短期变现",
+                "summary": "7月11日，智谱创始人唐杰发布主题为《巨浪已来》的内部信，透露过去半年智谱市值较半年前上市初期涨了10倍。但他强调，智谱将不追求短期应用变现，而是直指AGI下一个高地：长程任务能力、完全自治的智能体系统、自我进化、极致安全治理。这是国内头部大模型公司首次公开明确其\"AGI优先\"战略，对行业竞争格局具有重要参考意义。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3891132709206784"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI二号人物Fidji Simo因病离职，转任兼职顾问",
+                "summary": "OpenAI CEO顾问兼AGI负责人Fidji Simo因病休养后，决定辞去全职工作，转为兼职顾问角色。Simo此前负责OpenAI的应用和产品战略，是仅次于Sam Altman的二号人物。她的离职意味着OpenAI核心管理层再次调整，目前AGI相关工作暂由Altman直接接管。知情人士称，Simo的离开与其个人健康状况相关，与公司战略分歧无关。",
+                "source": "The Verge AI / TechCrunch AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/963738/openai-fidji-simo-steps-down-ceo-advisor"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "企业级AI Agent公司Lyzr用AI Agent完成1亿美元融资轮",
+                "summary": "企业级AI Agent初创公司Lyzr宣布完成1亿美元融资轮。值得注意的是，本轮融资全程由Lyzr自研的AI Agent主导执行，从投资者筛选、材料生成到条款谈判均由AI完成。Lyzr称这是\"AI帮助AI融资\"的概念验证，旨在展示AI Agent在企业级场景的商业可行性。同期，Hugging Face CEO Clem Delangue指出开源AI正在蓬勃发展，公司已成为开发者首选的AI模型平台。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "法国AI语音初创公司Gradium获英伟达领投1亿美元种子轮",
+                "summary": "巴黎AI语音初创公司Gradium宣布完成1亿美元种子轮融资，由英伟达领投。公司将利用这笔资金在旧金山湾区设立办公室，与Salesforce合作进入企业市场，并推出面向消费者的语音AI产品。Gradium的定位是成为企业级语音AI基础设施提供商，与传统语音巨头展开竞争。英伟达的参投表明其正在语音AI领域进行战略布局。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta新型AI芯片将于9月量产，采用模块化设计应对AI演进",
+                "summary": "Meta宣布其新型AI训练和推理芯片将于9月开始生产。Meta采用模块化设计思路，以适应AI工作负载的快速演进。这是Meta在自研AI芯片领域的重大进展，旨在减少对英伟达的依赖、降低算力成本。Meta已在数据中心部署了数万台自研芯片，未来计划将这一比例进一步提高。对于AI基础设施行业而言，科技巨头自研芯片的趋势正在加速。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Google宣布强制披露AI生成广告，剑指欺骗性AI营销内容",
+                "summary": "Google宣布将在所有广告平台（包括Google搜索、Discover和YouTube）强制披露AI生成或AI编辑的广告内容。该政策旨在减少欺骗性内容，并遵守欧盟《AI法案》等全球监管要求。Google表示将提供专门的\"AI生成内容\"标签页供用户查询。尽管Google禁止误导性广告，但AI辅助创作的广告仍需明确标识，这对数字广告行业的透明度提出了新要求。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/963628/google-ai-generated-ads-label"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Anthropic发现Claude\"隐藏空间\"机制，揭示AI推理过程新线索",
+                "summary": "AI公司Anthropic开发了一项新技术，成功揭示Claude在处理复杂问题时的内部推理过程。Anthropic发现Claude的\"思考\"发生在其内部称为\"隐藏空间\"的区域内，模型会在此对概念进行处理和推敲。这一发现为AI可解释性和安全性研究提供了全新方向，也解释了为何Claude在复杂推理任务上表现优异。业内人士认为，这一成果对AI对齐和AI安全研究具有里程碑意义。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "英伟达与Hugging Face合作开发机器人开源模型",
+                "summary": "英伟达宣布与Hugging Face达成战略合作，共同开发机器人开源模型。双方计划将英伟达的机器人技术栈（包含OSMO编排工具和Isaac Lab仿真平台）与Hugging Face的大语言模型生态系统深度融合。该合作旨在降低机器人AI开发门槛，推动具身智能领域的开源生态建设。对机器人行业从业者而言，这意味着开源工具链的显著完善。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3889047503354625"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Meta因隐私争议下线Instagram AI生图功能，演员工会抗议肖像权侵犯",
+                "summary": "Meta本周推出的\"Muse Image\"功能允许用户通过@提及公开Instagram账号，利用他人公开照片生成AI图像。该功能上线时默认允许公开内容被引用，引发美国演员工会等机构对肖像权侵犯和犯罪风险的强烈抗议。上线仅数日后，Meta紧急下线该功能，并表示\"未能达到预期标准\"。Adam Mosseri随后表示\"如果你不喜欢AI，就不应该让它出现在你的信息流中\"，引发更大争议。",
+                "source": "TechCrunch AI / The Verge AI / 36氪",
+                "url": "https://www.theverge.com/tech/964416/meta-instagram-ai-muse-image-deepfakes"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "AI投资回报率争议再起，万亿美元投入能否产生3万亿美元价值",
+                "summary": "关于AI投资回报率的讨论再次升温。一项研究指出，当前企业在AI上的投入已超过万亿美元，而部分分析师预测AI可能产生3万亿美元的价值，但这一预期面临质疑。支持者认为AI将重塑所有行业，反对者则指出多数企业尚未找到可持续的商业模式。对AI从业者和投资人而言，如何衡量和实现AI的真正ROI仍是核心命题。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/can-ai-answer-the-3-trillion-question/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI推出ChatGPT智能体手机，全球备货8-10万台",
+                "summary": "OpenAI正式推出\"全球首款智能体手机\"，该产品深度集成ChatGPT智能体功能，可自主执行网页浏览、订餐、预订等长程任务。知情人士透露该产品全球备货量为8万至10万台，但随后有消息称该数字被\"辟谣\"，实际备货量可能更大。OpenAI同时关闭了其上线不到一年的AI浏览器\"Atlas\"，将部分智能体浏览功能整合至ChatGPT主应用。这标志着OpenAI在消费级智能体产品上的重大推进。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3890553690192384"
+            },
+            {
+                "tag": "行业格局",
+                "title": "三星李在镕拟7月底赴美会晤英伟达黄仁勋，讨论AI芯片合作",
+                "summary": "三星电子会长李在镕计划于7月底赴美，与英伟达CEO黄仁勋举行会晤。外界普遍预期双方将讨论AI芯片领域的合作可能，包括HBM内存供应和先进封装合作。在SK海力士抢先登陆美股并拿下英伟达HBM订单后，三星正试图收复失地。三星与英伟达的合作走向将对全球AI芯片竞争格局产生重要影响。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3890553690192384"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "他山科技完成数亿元B轮融资，上半年订单超去年四倍",
+                "summary": "北京他山科技有限公司完成数亿元B轮融资，投资方包括均胜电子、太平创新、奥克斯、鹏翎股份等。他山科技是英伟达全球首家触觉仿真合作伙伴，专注于机器人触觉传感器和仿真技术。公司上半年订单已超过去年全年的四倍，营收增速显著。触觉感知被视为具身智能从视觉向多模态演进的关键环节，市场空间正在快速打开。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3889141540370949"
+            },
+            {
+                "tag": "行业格局",
+                "title": "具身智能数据采集成新风口，一年融资44.7亿元",
+                "summary": "据36氪统计，近百家玩家涌入具身智能数据采集赛道，过去一年融资总额达44.7亿元。中国移动等巨头已在湖南郴州等地开设\"具身数据采集5S店\"，普通用户经过简单培训即可边做家务边采集机器人训练数据。首期投放的1000套设备，满产状态下每年能采集100万小时数据。数据瓶颈正在从\"够不够\"向\"质量高不高\"转移，具备高质量数据采集能力的公司将获得竞争优势。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3892027841362694"
+            },
+            {
+                "tag": "政策监管",
+                "title": "《纽约时报》指控OpenAI在版权诉讼中隐藏关键证据",
+                "summary": "《纽约时报》在针对OpenAI的版权诉讼中指控OpenAI隐瞒了可识别ChatGPT输出中受版权保护内容的工具和数据集。新闻出版商称OpenAI的行为升级了这场价值数十亿美元的版权纠纷。此案结果将决定AI训练数据的合法边界，对整个AI行业的数据采购策略产生深远影响。目前OpenAI尚未就此指控作出正式回应。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/"
+            }
+        ]
+    },
+    {
         "date": "2026-07-11",
         "items": [
             {
