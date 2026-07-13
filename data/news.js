@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-13",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "Apple起诉OpenAI窃取商业机密，称工程师为推进AI初创公司硬件计划",
+                "summary": "苹果公司正式起诉OpenAI，指控其工程师窃取苹果商业机密以推进AI初创公司的硬件计划。诉讼文件显示，不当行为由OpenAI高管层指挥，包括一名长期前苹果员工。继微软之后，苹果也加入了对OpenAI的法律攻势，凸显出硅谷巨头围绕AI核心技术的知识产权争夺已全面升级。此案可能重塑AI初创公司与科技巨头之间的技术许可与竞业边界。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/07/10/apple-sues-openai-over-alleged-trade-secret-theft/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI发布GPT-5.6系列模型，继续作为微软Copilot首选模型",
+                "summary": "OpenAI正式推出GPT-5.6系列新模型家族，承诺在网络安全等多个领域实现改进。尽管近期传出OpenAI与微软关系生变的传闻，但OpenAI明确表示新模型系列将继续为微软工作场所和生产力应用套件提供支持，定位为Microsoft Copilot 365的\"首选模型\"。GPT-5.6的发布标志着OpenAI在商业化路径上迈出关键一步，也验证了其与微软合作的稳定性。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "SK海力士融资265亿美元创美国史上最大外国IPO，受促在美建厂",
+                "summary": "AI芯片热潮催生华尔街最大规模融资时刻。SK海力士完成265亿美元融资，成为美国历史上规模最大的外国企业IPO。融资完成后，SK海力士和三星均被敦促在美国新建芯片工厂，以满足AI产业对高带宽内存（HBM）的爆炸性需求。此轮融资将强化韩国存储芯片企业在全球AI供应链中的核心地位，同时也标志着美国市场对外资芯片企业的吸引力达到新高度。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/10/sk-hynix-raises-26-5b-in-the-biggest-foreign-ipo-in-us-history-is-urged-to-build-new-us-fabs/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI二号人物Fidji Simo因病辞去AGI主管职位，转为兼职顾问",
+                "summary": "OpenAI二号高管Fidji Simo宣布辞去AGI主管的全职职位，原因是此前请病假时间超出预期，现转为\"兼职顾问\"角色。Simo此前负责OpenAI的应用和合作伙伴关系，在公司商业化关键阶段的人事变动引发市场关注。这是不到一年内OpenAI核心管理层的又一次重大人事震荡，为该公司IPO前景蒙上阴影。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "纽约时报指控OpenAI在ChatGPT版权案中隐瞒证据",
+                "summary": "新闻出版商指控OpenAI在ChatGPT版权侵权诉讼中隐瞒了可用于识别输出内容中受版权保护的新闻报道的工具和数据集，案件进一步升级。此前的版权争议主要集中在训练数据来源问题，此次新指控则直指诉讼过程中的信息披露义务。多家媒体机构联合发声，要求法院强制OpenAI公开完整的技术日志和数据处理记录。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "高盛研究称AI或引爆美国通胀，存储芯片暴涨是核心推手",
+                "summary": "高盛最新研究表明，美国很可能首当其冲受到AI引发的全球通胀浪潮冲击。由于供应受限，内存芯片和半导体等关键零部件价格被持续推高。高盛经济学家Megan Peters撰写的报告指出，AI基础设施建设的快速扩张正在制造结构性供应瓶颈，存储芯片价格已进入暴涨周期。这一判断对投资者的资产配置和科技股估值体系具有重要参考价值。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3893440881621760"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "台积电2纳米制程正式量产，谷歌新机将于8月中旬首发搭载",
+                "summary": "台积电2纳米制程已开始量产，谷歌成为台积电2纳米手机芯片的首发客户，将于8月中旬推出新机，比苹果早一个月。2纳米制程相比3纳米可在相同功耗下提升10%-15%性能，或相同性能下降低25%-30%功耗。这一进展标志着移动芯片进入新代际竞争，也意味着高通、联发科等厂商的2纳米芯片量产时间表将成为行业焦点。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3893386117806597"
+            },
+            {
+                "tag": "应用落地",
+                "title": "台积电涨价潮蔓延至成熟制程，多家IC设计厂商收到调价通知",
+                "summary": "台积电先进制程接单爆满、持续调高3纳米等报价之际，涨价潮已蔓延至成熟制程。多家IC设计业者陆续收到台积电调价通知，调涨幅度因厂商和产品线而异，预计第四季敲定、明年1月生效。AI芯片需求外溢至成熟制程的成熟制程指的是28纳米及以上的制程节点。台积电的全面涨价将进一步压缩中小型IC设计厂商利润空间，加速行业整合。",
+                "source": "36氪 / 财联社",
+                "url": "https://36kr.com/newsflashes/3893368739674884"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta全新AI芯片将于9月开始生产，采用模块化设计",
+                "summary": "Meta宣布其新一代AI芯片将于今年9月开始生产，公司采用模块化方法设计芯片，以适应AI演进过程中不断变化的需求。Meta在AI基础设施上的自研投入持续加码，此举旨在降低对英伟达等芯片供应商的依赖，并针对社交媒体和元宇宙业务场景进行深度定制。分析师预计这将推动Meta整体AI算力成本下降20%-30%。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/metas-new-ai-chips-will-begin-production-in-september/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "巴黎AI语音创企Gradium获1亿美元种子轮融资，英伟达参投",
+                "summary": "巴黎AI语音初创公司Gradium宣布获得1亿美元种子轮融资，由英伟达等知名投资者支持。公司计划利用这笔资金在湾区设立办公室并争夺当地人才，以增强其在AI语音市场的竞争地位。Gradium的融资金额在种子轮中极为罕见，表明AI语音赛道的战略价值正被顶级投资机构高度重估。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Meta移除Instagram引发争议的AI图片生成功能Muse Image",
+                "summary": "Meta近日关闭了Instagram上引发强烈抗议的AI图片生成功能Muse Image，该功能允许用户利用公开Instagram账号中的照片生成AI图像。在用户隐私保护组织和人权活动人士的强烈反对下，Meta不得不紧急撤回该功能。Instagram负责人Adam Mosseri表示\"如果你不喜欢AI，就不应该让它出现在你的信息流中\"，该言论进一步激化了平台与用户之间的矛盾。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/07/10/meta-removes-controversial-ai-feature-on-instagram-after-backlash/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "腾讯重仓云豹智能创业板IPO，选用第四套上市标准冲刺",
+                "summary": "深圳云豹智能股份有限公司创业板IPO申请正式获深交所受理，成为又一家选用创业板第四套上市标准（未盈利企业标准）申报上市的企业。腾讯为云豹智能主要股东之一，该公司聚焦云计算和AI基础设施赛道。此举表明中国科技巨头正加大对AI基础设施企业的资本支持力度，也反映出创业板对未盈利高科技企业的包容度持续提升。",
+                "source": "36氪 / 投资界PEdaily",
+                "url": "https://36kr.com/p/3892352153942530"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "人形机器人关节公司零差云控再获数亿元C++轮融资",
+                "summary": "人形机器人核心零部件企业零差云控完成C++轮数亿元融资，由同创伟业领投、国泰君安创新投资跟投，老股东华控基金追加投资。本轮资金将主要用于产能扩张和全球市场布局。作为国内头部人形机器人关节供应商，零差云控在半年内连续获得融资，反映出资本对具身智能赛道的持续追捧。",
+                "source": "36氪 / 硬氪",
+                "url": "https://36kr.com/p/3885232033378308"
+            },
+            {
+                "tag": "行业格局",
+                "title": "具身数据采集赛道涌入近百玩家，全年融资44.7亿元",
+                "summary": "具身智能数据采集正成为AI投资新风口，全年融资规模达44.7亿元，近百家企业涌入。在湖南郴州等地的中国移动营业厅，已出现\"具身数据采集5S店\"，普通用户可领取设备边做家务边采集机器人训练数据。首期投放的1000套设备满产状态下每年能采集100万小时数据。但行业普遍面临数据质量参差、变现模式不清晰等挑战，\"卖数据\"能否真正盈利仍是未知数。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3892027841362694"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Google宣布将披露哪些广告由AI生成",
+                "summary": "Google宣布将要求广告主披露哪些广告是使用AI生成的合成或数字内容。尽管Google此前已禁止误导性和欺骗性广告，但AI生成的广告仍可在不违反规则的情况下大量出现。新规旨在提升AI广告透明度，满足监管机构和用户对内容真实性的诉求。此举将对数字广告行业的创意生产流程和AI工具使用方式产生深远影响。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI关闭ChatGPT Atlas浏览器，上线不足一年即终止",
+                "summary": "OpenAI宣布关闭ChatGPT Atlas浏览器，该产品上线不足一年即宣告终止。Atlas是OpenAI推出的AI驱动浏览器，可以代用户执行网页任务。其关闭标志着OpenAI在消费级AI助手产品化路径上的一次挫折。不过OpenAI表示，部分代理浏览功能将迁移至ChatGPT主产品中，继续推进\"超级应用\"战略。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "微软2025年碳排放量同比增长25%，AI数据中心成主因",
+                "summary": "微软2026年可持续发展报告显示，公司碳排放量较去年增长25%，AI数据中心的快速扩张被认为是主要推手。微软此前承诺到2030年实现碳负排放，此次数据表明科技巨头在推进AI能力建设与气候承诺之间面临严峻平衡挑战。监管机构和投资者正密切关注科技公司AI扩张的环境成本。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/963728/microsoft-sustainability-report-2026"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Anthropic发现Claude内部隐藏空间，揭示AI概念推理机制",
+                "summary": "AI公司Anthropic开发了一种新技术，获得迄今为止最清晰的AI内部运作视角——发现了Claude用于\"思考\"概念的隐藏空间。这一发现有助于研究人员理解大语言模型如何处理复杂推理和问题解决，对AI安全性和可解释性研究具有重要意义。该成果已在arXiv发表，引发学术界对大模型内部表征机制的广泛讨论。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/07/09/1140293/anthropic-found-a-hidden-space-where-claude-puzzles-over-concepts/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta推出Muse Spark 1.1进入拥挤的AI编程市场",
+                "summary": "Meta推出Muse Spark 1.1，正式加入竞争激烈的AI编程助手市场。Meta的差异化策略强调Spark处理大规模代理工作负载、修复bug和大型代码迁移的能力。该产品的推出将使GitHub Copilot、Cursor等既有玩家面临更大竞争压力，也标志着Meta从社交AI向开发者工具领域的重大业务延伸。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI Agent企业Lyzr用自家AI Agent完成1亿美元融资轮",
+                "summary": "企业级AI Agent初创公司Lyzr宣布使用其自主开发的AI Agent完成1亿美元融资轮，展示了AI Agent在实际商业场景中的自主执行能力。该公司专门为企业构建AI Agent解决方案，此次\"用AI来融资AI\"的案例被视为AI Agent商业可行性的重要证明。Lyzr的融资表明自主AI Agent正从技术概念走向企业级应用落地。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/"
+            }
+        ]
+    },
+    {
         "date": "2026-07-12",
         "items": [
             {
