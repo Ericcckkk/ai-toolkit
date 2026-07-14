@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-14",
+        "items": [
+            {
+                "tag": "大额融资/IPO",
+                "title": "逐际动力完成2亿美元Pre-IPO轮融资，人形机器人赛道估值达150亿元",
+                "summary": "通用人形机器人公司逐际动力LimX Dynamics宣布完成近2亿美元Pre-IPO轮融资，投资方包括IDG资本、蓝思科技、GGG Group、Redstone VC、华山资本及合肥滨湖等机构。本轮融资完成后，公司投后估值达150亿元人民币。逐际动力是国内头部人形机器人企业，其技术路径聚焦于运动控制与全身协调能力。该轮融资规模在当前人形机器人赛道中处于头部位置，显示资本对具身智能商业化前景的持续看好。对于AI从业者而言，头部项目的估值攀升将进一步加剧人才争夺战。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3893976502287618"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "视频生成公司PixVerse完成4.39亿美元融资，估值突破20亿美元",
+                "summary": "视频生成初创公司PixVerse宣布完成4.39亿美元新一轮融资，估值突破20亿美元。本轮融资将用于扩展世界模型产品线和拓展全球市场。PixVerse主打AI视频生成技术，此前已推出多款面向创作者和企业用户的商业化产品。该公司是目前视频生成领域估值最高的公司之一。在Sora等竞品的激烈竞争下，PixVerse的大额融资表明资本市场仍看好视频生成赛道的商业化潜力。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI Agent开发商Nous Research正进行融资谈判，估值15亿美元",
+                "summary": "AI Agent开发商Nous Research正在进行新一轮融资谈判，估值达15亿美元，计划融资至少7500万美元。本轮融资由Robot Ventures领投，USV等知名机构参与跟投。Nous Research是开源AI Agent框架Hermes的开发商，在AI Agent开发领域拥有较高知名度。该公司此前已获得a]6o等开源模型的研发经验，此次融资将加速其商业化进程。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "字节跳动探索自动驾驶领域，由Seed世界模型团队负责",
+                "summary": "36氪独家获悉，字节跳动正在探索进入自动驾驶领域，该项目目前由Seed旗下周畅的世界模型团队负责。Seed旗下拥有多模态模型、世界模型及大语言模型等团队。自动驾驶与世界模型的技术路线存在交叠，周畅团队此前在视频生成和仿真方面积累的技术可迁移至自动驾驶场景。字节跳动的入局将为自动驾驶赛道带来新的竞争变量，其资源整合能力值得关注。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3893815451417347"
+            },
+            {
+                "tag": "行业格局",
+                "title": "苹果就商业机密泄露起诉OpenAI，指控员工越权访问",
+                "summary": "苹果正式对OpenAI提起商业机密诉讼，指控内容包括OpenAI员工开玩笑讨论未经授权访问苹果内部系统、存在数据泄露风险等。该案涉及两家AI巨头之间的深层利益冲突。苹果是OpenAI的重要合作伙伴，苹果智能功能深度集成ChatGPT。此案的发展将影响双方未来的合作走向，也可能重塑AI行业的数据安全规范。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "海关总署：上半年算力硬件进出口达5.13万亿元，同比增长56.6%",
+                "summary": "海关总署副署长王军在国新办发布会上表示，上半年我国电子元件、电脑零部件等算力硬件进出口额度达5.13万亿元，增长56.6%；眼镜、翻译器、机械外骨骼等智能产品快速迭代。AI驱动算力需求爆发式增长，带动上游硬件进出口大幅增加。这一数据印证了AI算力基础设施建设的持续高投入，对GPU、存储、服务器等产业链上下游企业形成利好。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3894861205044488"
+            },
+            {
+                "tag": "应用落地",
+                "title": "软银与Sierra达成战略合作，在日本推出AI客服服务",
+                "summary": "软银集团与AI客服平台Sierra建立战略合作伙伴关系，成为Sierra在日本的独家合作方。自7月14日起，软银旗下线上手机品牌Linemo已接入Sierra技术，后续计划将该技术推广至软银全线产品。Sierra专注于AI代理驱动的客户服务解决方案，此次合作标志着AI客服在日本市场的规模化落地。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3894788367613191"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Anthropic在印度推出本地化Claude定价，拓展最大海外市场",
+                "summary": "Anthropic开始为印度用户推出卢比计价的Claude订阅计划，印度是Claude在美国之外的全球最大市场。本地化定价将降低印度用户的使用门槛，有助于Anthropic在印度市场与本地AI企业和国际竞品展开竞争。此举显示Anthropic正在加速国际化扩张，新兴市场的重要性日益凸显。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Uber产品负责人披露机器人出租车及AI驱动战略规划",
+                "summary": "Uber首席产品官Sachin Kansal接受TechCrunch采访，披露了公司的机器人出租车计划、AI驱动功能升级及金融服务业布局。Uber正加速布局自动驾驶出租车业务，与Waymo等竞争对手正面交锋。Kansal强调Uber不希望成为\"万事通\"，而是聚焦核心出行场景的AI赋能。该访谈揭示了共享出行平台在AI时代的战略分化。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "大衍科技完成数千万元天使轮融资，专注触觉大模型研发",
+                "summary": "空间智能公司大衍科技完成数千万元天使轮融资，松禾资本领投，浙江省省金控与广州番禺创新基金参投。资金将用于触觉大模型研发、机器人数据产线建设及团队扩张。大衍科技由前博世自动驾驶算法工程师创立，采用合成数据技术构建触觉感知能力，应用于人形机器人末端执行器。该方向填补了国内触觉感知领域的创业空白。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3894821059918855"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Waze推出Gemini驱动的AI功能，强化Google生态整合",
+                "summary": "Google旗下导航应用Waze推出多项AI驱动的新功能和自定义更新，部分功能由Google Gemini AI助手提供支持。此次更新反映了Google将AI能力深度整合至旗下产品的战略意图。通过在Waze中嵌入Gemini，Google进一步扩大了其AI技术的用户触达范围，同时为导航场景引入更智能的交互体验。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "微软CEO纳德拉警告企业AI投资回报风险，引发行业讨论",
+                "summary": "微软CEO萨提亚·纳德拉向使用AI的企业发出警告，称部分企业未能从AI投资中获得预期回报。在AI投资热潮中，如何衡量和实现AI的商业价值正成为企业面临的核心挑战。纳德拉的表态反映了大模型应用落地过程中面临的实际困难，也暗示AI行业正从技术驱动转向价值驱动。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Sam Altman回应马斯克批评，坚持AI发展路线",
+                "summary": "针对马斯克称其为\"骗子\"的批评，OpenAI CEO Sam Altman回应称\"homeboy你是那个向公众市场兜售的人\"。两人围绕AI发展方向、AGI时间表及商业化路线的公开争执持续升级。Altman还就太空数据中心构想发表看法，认为该方案存在技术可行性问题。这场公开论战折射出AI行业头部玩家之间的路线分歧。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "MIT发布新方法可在不生成CSAM的前提下识别训练数据污染",
+                "summary": "MIT研究团队发布一项新安全方法，能够检测出在儿童性虐待材料（CSAM）上训练但未生成相关内容的AI模型。该方法填补了AI安全领域的一项重要空白，为模型审计和合规检测提供了新工具。随着AI训练数据合规问题日益受到监管关注，该研究对AI公司的数据治理和风险管控具有实际参考价值。",
+                "source": "Hacker News / Inside AI",
+                "url": "https://insideai.news/news/ai-safety/mits-new-method-flags-ai-models-trained-on-child-abuse-imagery-without-generating-it/3869/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "博世首家美国半导体工厂启动试生产，获2.25亿美元补贴协议",
+                "summary": "德国汽车零部件和芯片制造商博世宣布，其首家美国半导体工厂开始试生产，并已与美国商务部达成2.25亿美元协议，旨在加强碳化硅芯片的国内制造能力。在特朗普政府期间，汽车制造商和零部件供应商扩大在美布局以规避贸易风险。博世此项目将增强美国本土车规级芯片供应能力，对AI芯片和自动驾驶供应链产生影响。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3894787976756229"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "经济学家观点转变，承认AI确实在替代就业岗位",
+                "summary": "经济学家群体正逐步接受AI确实在导致就业岗位流失的观点，这与此前主流经济学界相对乐观的判断形成对比。研究将当前AI对就业的影响与工业革命时期的技术性失业进行类比。若AI驱动的结构性失业加速，将对劳动力市场政策、收入分配和AI应用监管产生深远影响。",
+                "source": "Hacker News / Quartz",
+                "url": "https://qz.com/economists-ai-job-displacement-industrial-revolution-statement-071326"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "大规模实证研究揭示AI生成代码在真实项目中的质量与安全风险",
+                "summary": "一项针对真实代码仓库的大规模实证研究显示，AI生成代码在采纳率、安全性和可维护性方面呈现复杂图景。研究发现开发者对AI代码的信任度因场景而异，且存在安全漏洞被低估的问题。该研究为AI编程辅助工具的安全使用提供了实证依据，对DevSecOps实践具有指导意义。",
+                "source": "Hacker News / arXiv",
+                "url": "https://arxiv.org/abs/2603.27130"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "MOVA LINCO完成数千万元天使融资，布局家庭AI硬件生态",
+                "summary": "威联机器人科技（深圳）有限公司完成数千万元天使融资，资金将用于AI算法底层技术研发、产品量产体系完善及全球化渠道布局。MOVA LINCO定位为AI家庭智能硬件公司，首款产品计划今年在海外上线。该公司聚焦家庭场景的AI交互与机器人化，反映了AI硬件从工具向家庭智能终端演进的趋势。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3879780282495236"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic旧金山员工薪酬引争议，高薪加剧住房危机担忧",
+                "summary": "Anthropic旧金山办公室部分岗位薪资高达6.5万美元，引发关于AI公司薪酬水平与社会公平关系的讨论。在AI企业IPO浪潮背景下，高薪工程师群体被指加剧了当地住房危机和租金上涨。该争议反映了AI产业集聚对一线城市社会问题的深层影响，引发对科技行业社会责任的反思。",
+                "source": "Hacker News / Mission Local",
+                "url": "https://missionlocal.org/2026/07/anthropic-sf-affordability-ipo-housing-evictions-rent/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "众擎机器人借壳上市传闻被否，森霸传感称不存在相关情形",
+                "summary": "有投资者在互动平台询问森霸传感是否与众擎机器人洽谈借壳上市事宜，森霸传感回应称目前不存在传闻情形，生产经营一切正常。众擎机器人是南阳籍企业，若成功借壳将加速其资本化进程。在人形机器人赛道热度持续高企的背景下，上市传闻反映了产业链企业对二级市场融资的强烈需求。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3894802904481029"
+            }
+        ]
+    },
+    {
         "date": "2026-07-13",
         "items": [
             {
@@ -3029,151 +3174,6 @@ const AI_NEWS_DATA = [
                 "summary": "36氪获悉，消费级柔性机器人公司SoulX已完成数千万元天使轮融资，由高瓴创投领投，向阳资本担任独家财务顾问。资金重点投入产品持续迭代及供应链规模化交付。首款机器人产品定位家庭场景，其核心卖点在于柔性交互设计与情感计算能力。对标电影\"大白\"的家庭机器人愿景正在从概念验证走向产品化。",
                 "source": "36氪",
                 "url": "https://36kr.com/p/3851572421432324?f=rss"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-14",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "美国政府下令Anthropic全球停用Claude 5，AI出口管制风暴来袭",
-                "summary": "美国政府6月13日下令Anthropic停止向所有外国国民提供其最新AI模型Claude 5（原名Fable/Mythos），理由是安全担忧。这是美国首次对本土AI公司实施如此广泛的出口限制。据Politico报道，整个决策过程仅在24小时内完成。Amazon CEO Andy Jassy据报在决策前提出了安全担忧。Anthropic发表声明表示强烈反对，称这一决定基于“狭隘的越狱可能性”。分析认为，此举将重塑全球AI竞争格局， Frontier AI的获取将按国籍进行分层。",
-                "source": "Al Jazeera / The Verge / TechCrunch / Politico",
-                "url": "https://www.aljazeera.com/news/2026/6/13/us-orders-anthropic-to-disable-ai-models-for-all-foreign-nationals"
-            },
-            {
-                "tag": "政策监管",
-                "title": "英国宣布15亿英镑AI硬件计划，含超级计算机与芯片投资",
-                "summary": "英国政府6月8日正式公布总额15亿英镑（约19亿美元）的AI基础设施投资计划，重点包括超级计算机建设和芯片基金。该计划旨在增强英国在AI领域的自主能力，减少对海外算力的依赖。这是英国在脱欧后最大规模的AI战略投资，标志着欧洲主要经济体加速布局AI主权基础设施。",
-                "source": "Reuters / Hacker News",
-                "url": "https://www.reuters.com/world/uk/uk-sets-out-15-billion-ai-hardware-plan-with-supercomputer-chip-funding-2026-06-08/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Meta被迫撤销20亿美元Manus交易，因北京监管要求",
-                "summary": "据TechCrunch 6月13日报道，Meta已开始拆除其20亿美元收购的Manus交易此前置基础设施，此前北京下达了要求该交易撤销的命令。Manus是中国AI agent初创公司，其收购案引发中国监管机构关注。这笔交易的终止反映了中美科技脱钩背景下，中国对关键技术外流的高度警惕，也为中国AI公司的国际化路径蒙上阴影。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "美国多州总检察长对OpenAI展开调查，涉广告政策与数据处理",
-                "summary": "据TechCrunch 6月13日援引纽约时报报道，多个美国州的总检察长正在对OpenAI展开调查，调查范围涵盖OpenAI的广告政策、数据处理方式以及AI模型安全性等关键问题。目前尚不清楚具体涉及哪些州，但调查反映了监管机构对AI行业日益严格的审查趋势，可能对OpenAI的商业模式产生深远影响。",
-                "source": "The New York Times / TechCrunch AI",
-                "url": "https://www.nytimes.com/2026/06/13/technology/states-investigating-openai.html"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Mistral据传融资30亿欧元，估值约230亿美元",
-                "summary": "据TechCrunch 6月12日报道，法国AI独角兽Mistral正在进行一轮约30亿欧元（约35亿美元）的融资，估值将达到约200亿欧元（约230亿美元）。这一估值几乎是Mistral上次C轮融资时的两倍。Mistral以其开源模型著称，若此次融资完成，将成为欧洲有史以来最大规模的AI融资事件之一，也将进一步巩固欧洲在全球AI竞争中的地位。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20b-valuation/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "SpaceX创纪录IPO融资750亿美元，市值突破2.1万亿美元",
-                "summary": "6月12日，SpaceX正式以750亿美元融资规模挂牌上市，成为史上最大IPO。马斯克当天亲赴得州星舰基地远程敲钟。上市首日进入流通的股份仅占总股本4.2%，股价短期冲高。SpaceX市销率超过112倍，远超特斯拉的15倍和英伟达的20倍。公司业务呈“一极盈利、两极亏损”格局。",
-                "source": "36氪 / TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/12/spacex-ipo-live-updates-on-everything-you-need-to-know/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta AI部门6500名员工内部动荡，被指“令人窒息”",
-                "summary": "据TechCrunch 6月12日报道，Meta旗下运营仅数月的AI部门正面临严峻内部危机。该部门拥有6500名员工，内部工程师形容工作环境“令人窒息”，团队濒临造反。报道披露了Mark Zuckerberg在员工会议中被AI部门员工打断的场景。这一事件反映了大型科技公司在快速扩张AI团队时面临的管理与文化挑战。",
-                "source": "Wired / TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic发布指数级AI增长政策框架，系统阐述安全立场",
-                "summary": "Anthropic于6月发布了其经济政策框架和AI指数增长政策框架文件，系统阐述了公司对前沿AI安全问题的立场。文件详细讨论了AI能力快速提升带来的风险，以及 Anthropic 在模型安全方面的思考。与此同时，Anthropic还发布了针对AI agent的零信任安全框架文件，为行业提供了重要的安全参考标准。",
-                "source": "Anthropic / Hacker News",
-                "url": "https://www.anthropic.com/policy-on-the-ai-exponential/epf"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "KPMG因AI幻觉撤回AI使用报告，审计行业AI应用蒙阴影",
-                "summary": "据TechCrunch 6月13日报道，四大会计师事务所KPMG撤回了一份关于AI使用情况的内部报告，原因是报告内容存在明显的AI幻觉问题。这是AI在专业领域应用的又一次翻车事件，再次证明当前AI技术尚无法可靠地处理需要精确性的工作任务。审计行业对AI的采用将面临更严格的内部审核。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Google起诉中国AI诈骗团伙，发送2.5亿条AI生成诈骗信息",
-                "summary": "据TechCrunch 6月12日报道，Google对名为\"Outsider Enterprise\"的中国网络犯罪组织提起诉讼，指控其使用AI技术诈骗“数十万受害者”，并发送超过2.5亿条AI生成的诈骗信息。这是科技巨头首次针对AI驱动的网络犯罪采取法律行动，标志着AI安全问题已上升至企业诉讼层面。",
-                "source": "The Register / TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/12/chinese-cybercrime-operation-that-used-ai-to-scam-hundreds-of-thousands-of-victims-sued-by-google/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "ClawMoat发布Fable 5后首个AI Agent运行时安全隔离方案",
-                "summary": "ClawMoat于Claude 5被禁后发布了一款针对AI agent的运行时隔离解决方案，旨在防止AI agent执行过程中的越狱和安全风险。该工具解决了AI agent在生产环境中面临的核心安全挑战，可实现对agent行为的细粒度控制和审计。",
-                "source": "Hacker News",
-                "url": "https://clawmoat.com/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "高瓴创投投资消费级柔性机器人公司SoulX，数千万元天使轮",
-                "summary": "36氪获悉，消费级柔性机器人公司SoulX完成数千万元天使轮融资，投资方为高瓴创投，向阳资本担任独家财务顾问。资金将用于产品持续迭代、技术研发及供应链建设。首款机器人产品MoY定位家庭场景，目标是将科幻电影中的“大白”带入现实。这标志着中国VC开始系统性布局消费级AI硬件赛道。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3851572421432324"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Kimi与国有银行合作，全球首张AI原生信用卡开放预约",
-                "summary": "据36氪9点1氪报道，Kimi与某国有银行达成合作，推出全球首张AI原生信用卡并开放预约。该卡深度集成AI能力，可实现智能账单管理、消费洞察和个性化金融服务。这是国产AI大模型在金融场景落地的里程碑事件，也预示着AI与金融的融合将进入新阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3850898430989577"
-            },
-            {
-                "tag": "应用落地",
-                "title": "鲸鸿动能发布“主动式营销”框架，AI加持行业解决方案",
-                "summary": "在HDC 2026鸿蒙生态商业化峰会上，鲸鸿动能系统发布了“主动式营销”框架，通过数据科学洞察广告主痛点，聚合全场景生态资源，构建AI加持的行业解决方案。该框架已在汽车、金融、文旅、快消等行业落地，帮助广告主实现确定性增长，标志着鸿蒙生态商业化进入实质阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3851524397536515"
-            },
-            {
-                "tag": "技术突破",
-                "title": "QodFlow发布AI Agent可直驱的看板工具，填补MCP生态空白",
-                "summary": "初创公司QodFlow发布了一款专为AI agent设计的看板工具，可让AI agent直接操控看板任务流，而非传统的对话式交互。该工具填补了AI agent与EVM（以太坊虚拟机）之间基础设施的空白，为多agent协作提供了新的执行框架。",
-                "source": "Hacker News",
-                "url": "https://www.qodflow.com"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Lime 2.0实现AI Agent零人工认证",
-                "summary": "Lime发布2.0版本，实现了AI agent的零人工认证功能。该工具可让AI agent自主完成身份验证、授权和管理流程，大幅降低了AI agent在企业环境中部署的门槛。这是AI agent自动化能力的重要突破。",
-                "source": "Hacker News",
-                "url": "https://lime.pics"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "36氪研究院发布AI时代留学就业白皮书：传统留学路径溢价失效",
-                "summary": "36氪研究院发布《中国留学生全球就业趋势与人才价值重塑》白皮书，指出在AI浪潮重塑全球产业逻辑的当下，传统留学路径所依赖的学历溢价与信息差正在系统性失效。大量高薪专业的基础性任务面临被AI批量化替代的风险。报告建议05后年轻一代聚焦人机协同时代的不可替代价值。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3846972367866119"
-            },
-            {
-                "tag": "技术突破",
-                "title": "江丰电子先端存储芯片用300mm硅靶批量供货",
-                "summary": "江丰电子在互动平台表示，公司是全球少数几家同时具备技术领先优势与规模化供应能力的高纯金属溅射靶材制造商。其先端存储芯片用高纯300mm硅靶已实现批量供货，超高纯钨靶、铜锰合金靶等高端品类已应用于先进存储芯片制造。这是AI算力基础设施上游的关键材料突破。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3851370635334919"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI CEO奥特曼推迟访韩计划",
-                "summary": "据36氪报道，OpenAI CEO山姆·奥特曼因个人原因推迟原定于6月14日至15日的访韩行程。该行程原计划会见三星电子、Kakao、NAVER等韩国企业负责人。奥特曼访韩的推迟可能影响OpenAI与韩国科技企业的潜在合作，但也为OpenAI在亚洲的布局增添了不确定性。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3849942472512769"
-            },
-            {
-                "tag": "技术突破",
-                "title": "LLM Token价格指数上线，实时追踪大模型API成本",
-                "summary": "LLM Token价格指数网站上线，提供主流大模型API的实时价格追踪服务。该工具为开发者和企业选择AI模型提供了透明的比价参考，有助于降低AI应用开发成本。目前已收录GPT、Claude、DeepSeek等主流模型的token定价数据。",
-                "source": "Hacker News",
-                "url": "https://tokenpriceindex.com"
             }
         ]
     }
