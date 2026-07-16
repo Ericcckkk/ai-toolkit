@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-16",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "知情人士曝DeepSeek开始筹备IPO，AI独角兽上市进程加速",
+                "summary": "据36氪报道，知情人士透露DeepSeek已启动IPO筹备工作。作为国内头部大模型公司，DeepSeek以低成本训练高性能模型著称，其技术路线曾对行业产生深远影响。若成功上市，将成为国内首个IPO的大模型独角兽，对行业格局具有标杆意义。当前一级市场融资环境趋紧，DeepSeek选择此时筹备上市，或为率先抢占资本市场窗口。",
+                "source": "36氪 / 36氪8点1氪",
+                "url": "https://36kr.com/p/3897553391978371?f=rss"
+            },
+            {
+                "tag": "应用落地",
+                "title": "蚂蚁集团战略投资薄荷健康28%股权，大厂医疗AI集体押注减重场景",
+                "summary": "蚂蚁集团宣布投资互联网医疗公司薄荷健康，持股比例超28%成为最大外部股东。薄荷健康拥有15年积累的饮食数据和减重用户运营经验此前已盈利。这已是近期字节、阿里、腾讯等大厂在医疗AI减重赛道的最新动作。减重已被视为AI医疗最快商业化的垂直场景之一，用户付费意愿强、数据积累壁垒高，大厂正以投资并购方式快速卡位。",
+                "source": "36氪 / 36kr",
+                "url": "https://36kr.com/p/3896639942592134?f=rss"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "面壁智能端侧大模型MiniCPM将搭载三星旗舰手机上市",
+                "summary": "端侧大模型公司面壁智能已与三星达成合作，其MiniCPM系列端侧模型将随数款三星旗舰机型上市。同日，网信部门宣布Apple Intelligence完成备案，三星的本地化AI合规路径也同步推进。面壁智能是国内最早实现端侧模型量产的创业公司之一，此次与全球手机巨头合作标志着国产端侧AI模型首次进入头部安卓生态。",
+                "source": "36氪《智能涌现》",
+                "url": "https://36kr.com/p/3896830362601351?f=rss"
+            },
+            {
+                "tag": "行业格局",
+                "title": "IDC报告：阿里AI编程市场份额达47.6%，Qoder服务企业超数十万家",
+                "summary": "国际咨询机构IDC发布2025年中国AI编程市场份额报告，阿里以47.6%的营收市场份额位居第一，Qoder已服务中国一汽、中信证券、亚信科技等数十万家企业，全球用户超500万。AI编程赛道今年进入商业化爆发期，阿里的先发优势和生态整合能力构成强力壁垒，企业级市场的马太效应正在加速显现。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3897689181243265?f=rss"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Vint Cerf牵头制定AI Agent开放互联网部署规范，瞄准互联网架构级变革",
+                "summary": "\"互联网之父\"Vint Cerf正在牵头制定一套让AI Agent安全部署于开放互联网的标准协议，目标是解决AI Agent在跨网站身份认证、数据交互、责任归属等方面的技术挑战。这是目前最高规格的互联网基础设施层面AI治理倡议，若形成行业标准将深刻影响未来十年AI Agent与Web生态的交互方式。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Anthropic与Blackstone押注AI落地实施为下一个万亿美元市场",
+                "summary": "AI公司Anthropic与资管巨头Blackstone联合宣布，看好企业AI落地实施（implementation）而非基础模型本身将成为下一个万亿美元级别的市场机会，计划投入巨资建设相关基础设施和服务体系。这一判断意味着AI行业的价值重心正在从模型训练向部署服务迁移，企业级AI服务市场将迎来爆发。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "微软要求销售团队主动对比贬低OpenAI和Anthropic模型",
+                "summary": "据TechCrunch报道，微软正在培训其销售团队以\"更高效、更低成本\"为话术，主动对比OpenAI和Anthropic的模型，暗示竞品性价比不足。此举发生在微软已深度投资OpenAI的情况下，反映出企业AI市场的竞争已从\"合作共生\"走向\"正面博弈\"，大厂间的AI渠道争夺进入白热化阶段。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Whatnot收购AI推荐引擎Shaped，加码实时直播购物",
+                "summary": "直播购物平台Whatnot宣布收购AI创业公司Shaped，后者专注实时个性化推荐引擎。Shaped的技术能实现毫秒级用户行为响应，将直接优化Whatnot直播间的商品推荐体验。直播电商正处于爆发期，AI推荐引擎已成为平台差异化的核心技术资产，此次收购反映出AI基础设施在电商垂直场景的战略价值持续上升。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI发布230美元实体键盘Codex，硬件生态布局深化",
+                "summary": "在卷入与苹果的硬件技术盗窃诉讼的背景下，OpenAI低调发布了一款售价230美元的物理键盘，专为AI编程工具Codex设计，支持实体快捷键与AI命令直达。这表明OpenAI正在从纯软件向软硬一体生态延伸，试图在开发者工作流中构建更深的护城河，但也让与苹果的专利纠纷更加复杂。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "黑客曝光Suno使用YouTube数据训练AI音乐模型，版权争议再度升级",
+                "summary": "一名黑客通过员工凭证获取Suno源代码，揭露该公司如何大规模抓取YouTube数十年音频数据用于模型训练，引发新一轮AI训练数据版权风暴。Suno是目前最火的AI音乐生成平台之一。此事件将加剧全球对AI训练数据合规性的监管压力，GitHub等平台已收到相关DMCA请求，行业数据采集方式面临系统性审视。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "MIT论文：AI投资存在\"投机泡沫\"特征，但技术价值不可忽视",
+                "summary": "MIT经济系发表最新论文，通过多维度数据论证当前AI投资呈现投机泡沫特征，但同时指出AI技术的真实价值同样不可忽视——部分受益行业的生产率确实出现实质性提升。论文建议政策制定者在泡沫风险与技术创新之间寻求平衡，既不应因泡沫否定AI价值，也不应放任资本过度投机。",
+                "source": "MIT Economics / Hacker News",
+                "url": "https://economics.mit.edu/sites/default/files/2026-07/speculative_growth_AI_public.pdf"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "国际清算银行报告：AI投资竞赛正在重塑全球资本配置格局",
+                "summary": "BIS（国际清算银行）发布重磅工作论文，深入分析全球AI投资竞赛如何重新分配各国资本配置、劳动力需求和贸易顺差格局。报告指出，AI资本支出密集度已超过历史任何一次技术革命，国家层面的AI政策竞争将显著影响未来十年的全球经济秩序。",
+                "source": "BIS / Hacker News",
+                "url": "https://www.bis.org/publ/work1367.pdf"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Thinking Machines发布首个开源模型Inkling，剑指通用AI适配难题",
+                "summary": "由前OpenAI核心成员创立的AI公司Thinking Machines发布首个开源模型Inkling，主打\"拒绝通用一刀切\"的理念，专注于让AI更好地适配不同行业和企业的特定需求。该模型发布前公司已低调运营18个月，融资规模和方向尚未公开，但创始团队背景让其迅速获得业内关注。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "微软安全补丁修复570个漏洞，创历史纪录，AI代码生成被指成双刃剑",
+                "summary": "微软发布月度安全更新（Patch Tuesday），一口气修复了570个安全漏洞创下历史纪录，其中部分漏洞被归因于AI辅助代码生成工具的引入降低了代码审查门槛。微软表示，AI编程工具加速了开发迭代但也带来了更多的安全债务。这一事件警示行业：AI提升开发效率的同时，安全质量控制需要同步升级。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "澳大利亚宣布设立AI专项办公室，限制数据中心能源消耗",
+                "summary": "澳大利亚政府宣布将在能源监管框架内设立专门的AI监管办公室，重点针对大规模数据中心的能源消耗进行限制。这是继欧盟AI法案之后，又一发达国家将AI基础设施的能源问题纳入系统性监管议程。随着AI算力需求爆发式增长，数据中心能源供给正成为全球AI政策博弈的新焦点。",
+                "source": "36氪8点1氪",
+                "url": "https://36kr.com/p/3897553391978371?f=rss"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "Steam平台AI应用三年追踪报告：游戏AI采用率持续攀升但质量参差不齐",
+                "summary": "一份针对Steam平台上AI相关应用的长期追踪报告显示，过去三年间游戏行业对AI工具的采用率持续攀升，涵盖AI生成美术、NPC对话、AI配音等多个维度，但用户评分普遍不高，反映出\"技术可用\"与\"体验达标\"之间仍存在显著鸿沟。报告为AI+游戏从业者提供了有价值的用户期望管理参考。",
+                "source": "Hacker News / Substack",
+                "url": "https://fragwyz.substack.com/p/three-years-of-ai-on-steam"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "前OpenAI团队推出开源AI编码Agent，代码附带机器可验证证明",
+                "summary": "初创团队Astrio Labs发布开源AI编程Agent项目Forall，其核心卖点是生成代码的同时附带机器可验证的形式化证明，从底层解决AI代码的可靠性问题。该方向被视为解决AI编程大规模落地最后一公里难题的有前途路径，已在Hacker News上引发广泛讨论。",
+                "source": "Hacker News",
+                "url": "https://github.com/astrio-labs/forall"
+            },
+            {
+                "tag": "应用落地",
+                "title": "中信证券：AI算力需求爆发叠加三重约束，数据中心REITs景气可持续",
+                "summary": "中信证券发布研报指出，AI应用驱动的算力需求正在快速放量，而IDC供给端面临核心区位稀缺、能源使用限制、资金投入巨大三重硬约束，供给增速难以匹配需求加速度。在此背景下，头部运营商通过REITs平台上市的优质IDC资产有望持续享受估值溢价，数据中心REITs板块值得关注。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3897619091736193?f=rss"
+            },
+            {
+                "tag": "应用落地",
+                "title": "庞伯特AI网球教练机器人半年内完成三轮融资，累计发球超20亿次",
+                "summary": "AI体育硬件公司庞伯特（Pongbot）宣布推出多合一AI教练机器人，半年内已完成三轮融资累计数亿元。其首款网球发球机在全球已拥有30余万用户，设备累计发球总量超20亿次。AI+体育器材的商业模式已得到初步验证，从发球机到全功能教练机器人的产品线扩展显示AI体育硬件市场潜力巨大。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3896586337978244?f=rss"
+            },
+            {
+                "tag": "行业格局",
+                "title": "瑞可达成立光子科技公司，全面布局AI芯片及集成电路业务",
+                "summary": "连接器企业瑞可达宣布全资成立四川瑞辉光子科技公司，经营范围涵盖集成电路芯片设计、AI硬件销售及AI行业应用系统集成服务。此次布局标志着又一家传统制造业企业向AI基础设施赛道延伸，光电技术在AI算力散热和高速通信中的独特价值正吸引越来越多跨界资本。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3897686690104968?f=rss"
+            }
+        ]
+    },
+    {
         "date": "2026-07-15",
         "items": [
             {
@@ -3036,151 +3181,6 @@ const AI_NEWS_DATA = [
                 "summary": "AI初创公司Flourish Labs宣布获得5亿美元种子轮融资，致力于融合神经科学研究成果重构AI基础架构与方法论。本轮融资规模在种子阶段极为罕见，表明\"类脑AI\"路线在资本层面获得了高度认可，神经科学与深度学习的交叉正在成为新热点。",
                 "source": "Hacker News / Wired",
                 "url": "https://flourishlabs.ai/flourish_wired_article.pdf"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-16",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "美国政府封禁Anthropic顶级模型Fable 5和Mythos 5，多方博弈持续",
-                "summary": "美国政府上周五下令Anthropic切断Fable 5和Mythos 5对所有外国用户的访问权。Anthropic随后宣布暂停这两款最强模型，全球用户均受影响。据悉，封禁源于Amazon CEO Andy Jassy向政府表达的安全担忧。网络安全专家团体已联署抗议，要求解除出口管制限制。多方报道指出，中国可能已获取相关模型访问权限。这场博弈暴露了美国AI出口管制政策的执行困境。",
-                "source": "The Verge / TechCrunch / 36氪",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/949553/anthropic-fable-5-mythos-5-government-national-security"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Anthropic与白宫争议持续升级，或推动非美国AI发展",
-                "summary": "Anthropic与特朗普政府围绕Fable 5和Mythos 5的争议持续发酵。Anthropic公开表达不满，称\"窄幅越狱风险不应成为封禁理由\"。多篇报道分析指出，美国政府此举可能适得其反，为非美国AI发展创造机会，加速全球AI主权竞争格局形成。印度等国已开始反思对西方AI模型的依赖问题。",
-                "source": "The Verge / TechCrunch",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/949986/anthropic-fable-mythos-shutdown-sovereign-ai"
-            },
-            {
-                "tag": "应用落地",
-                "title": "AI版支付宝正式推出，命名\"阿宝\"成全球首个全端AI化超级应用",
-                "summary": "6月16日，支付宝正式推出AI版本，命名\"阿宝\"，成为全球首个完成全端AI化的超级应用。新版本已启动邀请测试，将逐步向所有用户开放。目前平台上有上万个服务已完成AI适配，覆盖政务、出行、生活等各类场景。此举标志着超级App的AI化改造进入实质阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3855257494639874"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "世航智能完成超10亿元A轮融资，创全球海洋机器人领域单轮融资纪录",
-                "summary": "海洋具身智能公司\"世航智能\"完成A轮融资，金额超过10亿元人民币，创下全球海洋机器人领域规模最大的单轮融资纪录。本轮融资由两家芯片公司\"摩尔线程\"等参与投资。这表明具身智能赛道持续吸引头部资本关注，海洋场景正成为机器人新的增量市场。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3853011900142848"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "印度AI独角兽Sarvam获2.34亿美元融资，HCLTech领投1500万美元",
-                "summary": "印度IT服务公司HCLTech投资1500万美元领投班加罗尔AI初创公司Sarvam，使该公司估值突破10亿美元，成为印度最新AI独角兽。本轮融资总额2.34亿美元，显示印度AI生态系统正在快速成熟，头部IT服务商加速布局AI初创。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/15/sarvam-becomes-indias-newest-ai-unicorn-with-234-million-funding-round-led-by-hcltech/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "高瓴创投数千万元投资SoulX，消费级柔性机器人\"大白\"或成现实",
-                "summary": "消费级柔性机器人公司SoulX完成数千万元天使轮融资，投资方为高瓴创投，向阳资本担任独家财务顾问。资金将重点投入产品持续迭代和技术研发，加速供应链与规模化交付体系搭建。首款机器人产品MoY定位家庭场景，目标是将科幻电影中的\"大白\"搬进现实。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3851572421432324"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Salesforce宣布36亿美元收购AI客服平台Fin，强化Agentforce",
-                "summary": "Salesforce宣布以36亿美元收购AI客服平台Fin，计划将其团队和技术整合至Agentforce企业平台。Fin专注于构建AI驱动的客户服务自动化解决方案，此次收购将显著提升Salesforce在企业AI Agent领域的服务能力。这是AI客服赛道迄今最大规模的并购交易之一。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/15/salesforce-acquires-ai-customer-service-platform-fin-for-3-6b/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta应北京要求撤销20亿美元Manus收购交易",
-                "summary": "据报道，Meta正在推进撤销以20亿美元收购AI Agent公司Manus的交易，这是迄今为止最明确的遵守北京两个月前下达的 divestiture order 的举措。此举显示中国监管机构对海外AI投资的审查力度加大，可能影响更多跨境AI并购案。",
-                "source": "TechCrunch / The Verge",
-                "url": "https://techcrunch.com/2026/06/13/meta-reportedly-moves-to-unwind-2b-manus-deal-after-beijings-demand/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "美国法官驳回xAI对OpenAI商业窃密诉讼",
-                "summary": "旧金山联邦地区法官Rita Lin驳回马斯克旗下xAI对OpenAI提起的商业窃密诉讼。法官表示，xAI未能证明OpenAI诱导前xAI高级工程师Xuechen Liang窃取聊天机器人相关商业机密。这场AI巨头间的法律战以xAI败诉告终，但双方矛盾或将继续以其他形式延续。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3855284930614528"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "智谱发布最新旗舰模型GLM-5.2，支付宝政务AI助手服务突破1亿次",
-                "summary": "智谱AI正式发布最新一代旗舰模型GLM-5.2，性能进一步提升。同日披露的数据显示，支付宝政务AI助手\"晓政\"累计服务次数已突破1亿次，覆盖16000项服务事项，成功落地助力70余家部委及省级政务机构。这两条消息同时印证中国AI厂商在模型能力和应用落地上的进展。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3854486447510535"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta在Facebook推出AI Mode，从公开帖子获取信息引隐私担忧",
-                "summary": "Meta宣布在Facebook上推出新AI Mode功能，该功能可从用户公开帖子中获取信息来生成搜索结果。当用户在Facebook搜索时，AI Mode可能调用公开帖子内容作为回答依据。隐私倡导者对此提出质疑，Meta表示仅使用公开信息，但用户对其数据使用方式的担忧正在上升。",
-                "source": "TechCrunch / The Verge",
-                "url": "https://www.theverge.com/tech/950264/meta-ai-mode-search-facebook"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "大疆发布Osmo Pocket 4P口袋云台相机，向专业创作场景升级",
-                "summary": "大疆于6月15日正式发布Osmo Pocket 4P，将口袋云台相机推向更专业的创作场景。作为Pocket系列新一代旗舰产品，P4P在影像能力上进一步逼近专业设备，同时保持便携性。独立影像设备在手机影像能力不断逼近专业的背景下，正寻找差异化定位。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3854510160549124"
-            },
-            {
-                "tag": "技术突破",
-                "title": "卫星首次实现自主目标识别，地球观测进入AI自适应时代",
-                "summary": "今年4月，一颗地球观测卫星首次实现自主发现目标——在无需人工干预的情况下自主识别并锁定目标物。这是AI在太空领域的重大突破，意味着卫星将从被动观测转向主动感知，未来可应用于环境监测、灾害预警等场景，大幅提升响应速度和数据价值。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/15/a-satellite-just-learned-to-find-things-on-its-own-heres-what-that-means/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "ALS患者成为脑植入BCI\"首名高级用户\"，实现自然语言交流",
-                "summary": "Casey Harrell是一名肌萎缩侧索硬化症患者，他在近三年前接受了脑部电极植入手术，现已成为脑机接口（BCI）技术的\"首名高级用户\"。该系统能够将他的脑信号实时转换为语音，实现接近自然对话的交流速度。脑机接口正在从实验室走向真实用户的生活自理能力重建。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/06/15/1138953/man-als-first-power-user-brain-implant-speak-bci/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Google DeepMind担忧数百万AI Agent交互的潜在风险",
-                "summary": "Google DeepMind正在资助一项研究，关注当数百万个不同AI Agent开始相互交互时可能产生的潜在危险。研究聚焦于Agent间协调失败、目标漂移、信息污染等风险场景。随着AI Agent逐步进入企业工作流程，多Agent系统的安全性正成为AI安全研究的新前沿。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/06/11/1138794/google-deepmind-is-worried-about-what-happens-when-millions-of-agents-start-to-interact/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "AI裁员潮正在形成\"火药桶\"，行业分化加剧",
-                "summary": "在AI替代浪潮中，数以万计的工人正被裁员，而一小部分AI从业者却获得极高薪酬和股权回报。研究显示这种分化正在加剧：AI相关岗位需求激增，而非AI岗位持续萎缩。行业分析师警告，这种结构性失衡可能引发劳动力市场更深层次的危机。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/15/the-ai-layoff-wave-is-becoming-a-powder-keg/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "KPMG因AI幻觉撤回AI使用报告，专业机构公信力受质疑",
-                "summary": "KPMG被迫撤回一份关于AI使用情况的研究报告，原因是报告中出现了明显的AI幻觉内容——生成的数据和引用存在虚假信息。这再次证明AI在信息可靠性方面的缺陷，即使是专业机构使用AI辅助研究也存在风险。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/13/kpmg-pulls-report-on-ai-usage-due-to-apparent-hallucinations/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "印度反思AI依赖：Anthropic断供事件成产业警钟",
-                "summary": "Anthropic被迫切断顶级模型访问权限的事件引发印度科技界深度反思。印度AI领袖正在辩论这一事件是否为该国AI雄心的警钟。印度拥有全球领先的IT服务产业，但在基础模型开发上仍依赖美国公司。如何平衡技术引进与自主可控，成为印度AI政策讨论焦点。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/13/as-anthropic-suspends-access-to-new-models-india-debates-its-ai-future/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta AI部门6500名工程师深陷\"高压工厂\"，离职潮预警",
-                "summary": "据内部员工反馈，Meta旗下成立仅数月的AI部门拥有6500名员工，但工作环境被形容为\"令人崩溃的苦役营\"。多位工程师透露高压加班文化、缺乏清晰方向等问题。该部门正处于员工不满临界点，离职风险上升，可能影响Meta AI战略的执行。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/12/metas-months-old-ai-unit-is-a-soul-crushing-gulag-say-the-engineers-stuck-inside-it/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "AI公司争相上市，SpaceX IPO带动新一波科技公司融资潮",
-                "summary": "随着SpaceX成功IPO，AI初创公司正试图\"搭上这波上市浪潮\"。多位创始人表示当前市场窗口期难得，计划在未来12-18个月内完成上市。但分析师提醒，并非所有AI公司都具备支撑公开市场估值的基本面，需警惕泡沫风险。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/14/as-ai-companies-race-to-go-public-who-else-is-along-for-the-ride/"
             }
         ]
     }
