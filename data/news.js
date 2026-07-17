@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-17",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "习近平出席2026世界人工智能大会开幕式，发表AI全球治理主旨演讲",
+                "summary": "7月17日，国家主席习近平在上海出席2026世界人工智能大会暨人工智能全球治理高级别会议开幕式并发表主旨讲话，系统阐述中国AI外交愿景与全球治理主张。这是中国最高领导人首次在WAIC大会上发表主旨演讲，标志着AI治理已上升至国家顶层外交议程。对全球AI治理格局而言，中美欧三方在监管标准、数据跨境、AI安全等议题上的博弈将进入新阶段。",
+                "source": "36氪 / 新华社 / 央视新闻",
+                "url": "https://36kr.com/newsflashes/3899087542699648"
+            },
+            {
+                "tag": "应用落地",
+                "title": "智谱ARR突破10亿美元，半年内增长15倍",
+                "summary": "截至2026年7月，国内头部大模型厂商智谱的ARR（年度经常性收入）已达10亿美元，仅2026年1月至7月间便实现15倍增长，刷新国内AI公司商业化增速纪录。知情人士透露，AI Coding和Agent业务是增长核心驱动力。对标OpenAI规模，智谱已成为全球商业化最快的非美国AI公司之一，但也意味着其即将面临更大的规模化盈利压力。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3898662052693894"
+            },
+            {
+                "tag": "行业格局",
+                "title": "铠侠市值较高点腰斩，AI存储芯片泡沫担忧蔓延",
+                "summary": "日本最大存储芯片企业铠侠（Kioxia）在登顶日本市值最高企业仅一个月后，总市值直接腰斩。7月17日东京股市早盘，铠侠股价最大跌幅达14%，较上月峰值累计下跌51%，市值蒸发至少29.5万亿日元（约1817亿美元）。市场对AI驱动的存储芯片板块涨幅过高的担忧正在蔓延，半导体板块整体承压，A股算力硬件、半导体芯片方向跌幅居前。",
+                "source": "36kr",
+                "url": "https://36kr.com/newsflashes/3899005204399749"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "微软CEO批评Anthropic对Fable模型内容管控过于严苛",
+                "summary": "微软CEO萨蒂亚·纳德拉公开批评Anthropic高端模型Fable对用户查询设置过多限制，称这种做法\"毫无道理\"。纳德拉在内部面向Copilot研发团队的讲话中表示，使用过Fable的用户都会感受到这些限制的不合理性。此番表态恰逢微软与OpenAI、Anthropic在大模型企业市场的竞争白热化阶段，也反映出各厂商在内容安全策略上的路线分歧正在公开化。",
+                "source": "36kr",
+                "url": "https://36kr.com/newsflashes/3899021459834500"
+            },
+            {
+                "tag": "政策监管",
+                "title": "欧盟强制要求谷歌开放搜索数据并向竞品开放Android AI接口",
+                "summary": "欧盟正式通过监管决定，要求谷歌向竞争对手共享搜索数据，并强制Android系统向第三方AI服务商开放接口。这意味着Google Assistant及搜索默认设置在欧盟市场将面临强制开放，ChatGPT、Grok等竞品有望获得系统级入口。欧盟此举是迄今为止对AI平台垄断最直接的监管干预，全球AI分发渠道格局面临重构。",
+                "source": "Hacker News / Ars Technica",
+                "url": "https://arstechnica.com/gadgets/2026/07/its-official-eu-will-force-google-to-share-search-data-and-open-up-ai-on-android/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "具身世界模型公司日冕开物完成数亿元种子轮融资，股东阵容豪华",
+                "summary": "具身智能世界模型公司日冕开物（北京日冕机器人有限公司）完成连续两轮种子轮融资，合计金额数亿元人民币，投资方包括鼎峰科创、远图未来、百度风投和沃衍资本等。核心团队由前蔚来、华为智驾核心成员组成，聚焦具身智能世界模型研发。头部资本和产业资本同时下注，印证了具身智能在多模态世界模型方向的战略价值正在被重估。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3899081603483525"
+            },
+            {
+                "tag": "技术突破",
+                "title": "GPT-5.6满分解决IMO 2026全部6道赛题，数学推理再破人类纪录",
+                "summary": "OpenAI最新模型GPT-5.6在IMO 2026（国际数学奥林匹克）赛题测评中满分解决了全部6道高难度数学证明题，刷新了AI数学推理能力的上限。IMO赛题以高难度证明和多步逻辑推理著称，AI此前从未实现过全对。此结果将进一步巩固OpenAI在高精尖推理领域的领先地位，对数学研究、工程仿真等下游应用具有重大意义。",
+                "source": "Hacker News / Reddit",
+                "url": "https://old.reddit.com/r/ChatGPT/comments/1uyerah/gpt_56_solved_all_6_problems_from_imo_2026/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Kimi K3在Agentic知识工作基准上超越GPT-5.6",
+                "summary": "国产大模型Kimi K3（来自月之暗面）在Artificial Analysis发布的AA Briefcase Agentic知识工作评测中得分超越GPT-5.6，引发业内关注。该评测聚焦AI Agent在复杂知识任务中的实际表现，Kimi K3的表现意味着国产模型在Agent产品化维度上正在缩小与国际顶级模型的差距，是中国大模型竞争格局中的重要信号。",
+                "source": "Hacker News / Artificial Analysis",
+                "url": "https://artificialanalysis.ai/evaluations/aa-briefcase#results-tabs"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google Vids新增个性化AI Avatar，支持用户创建以自己为主角的视频",
+                "summary": "Google在Vids中推出个性化AI Avatar功能，用户可通过简单文字提示生成以自己数字形象为主角的视频内容，无需真人出镜即可完成企业培训、宣传物料等场景的制作。此功能将大幅降低视频内容生产门槛，对标Runway、Pika等AI视频工具的同时，也意味着Google正式进入AI生成视频的消费者市场竞争。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google AI Mode新增App链接交互，扩展至任务执行场景",
+                "summary": "Google将AI Mode从纯问答助手扩展为可与用户自有App深度交互的AI执行引擎，支持链接并操控用户授权的第三方应用程序。这意味着AI Mode已从信息检索工具升级为跨App的任务代理（Agent），用户可通过自然语言指令完成购物、订餐、行程规划等端到端操作，标志Google向AI Native操作系统迈出关键一步。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic被曝Fable模型 phantom charge超1600万美元",
+                "summary": "Anthropic旗下面向高端用户的Fable模型被曝存在 phantom charge（幽灵扣费）问题，涉及金额超过1660万美元。该事件与纳德拉同日公开批评Anthropic内容管控形成共振，引发用户和投资者对Anthropic商业化运营成熟度的质疑。Anthropic尚未对此作出官方回应，但Fable的定价模式和用户权益保障机制已受到市场审视。",
+                "source": "Hacker News / International Cyber Digest",
+                "url": "https://www.internationalcyberdigest.com/anthropic-tried-to-phantom-charge-16-6m/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI推出首款硬件产品ChatGPT篮球，售价99美元",
+                "summary": "OpenAI本周发布了其历史上首款硬件产品——ChatGPT Basketball，官方定价99美元，集成AI语音交互功能，可与用户进行篮球技能对话和训练指导。此举被外界解读为OpenAI从纯软件向软硬一体生态扩张的信号，但99美元的定价和有限的功能场景也引发市场对其商业逻辑的质疑。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/why-is-openai-selling-a-chatgpt-basketball/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Roblox在移动端推出AI游戏生成工具Build，单条文字提示即可生成游戏",
+                "summary": "Roblox正式在移动应用中推出\"Build\"功能，用户通过单条文字提示即可生成基础游戏关卡，大幅降低游戏创作门槛。该功能基于Roblox自研AI模型，标志着UGC平台与AI代码生成能力的深度融合。随着AI生成游戏工具的普及，游戏内容生产的边际成本将持续下降，中小型独立游戏开发者面临更激烈的竞争压力。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/roblox-launches-an-ai-powered-game-creation-feature-in-its-mobile-app/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "前DeepMind研究员创业，未发布产品即获3亿美元Pre-Seed估值",
+                "summary": "一位深耕AI领域十余年的前DeepMind研究员，在尚未正式发布产品的情况下，成功完成3亿美元Pre-Seed轮融资，估值达3亿美元。这一数字刷新了AI创业圈Pre-Seed轮融资纪录，反映了顶级AI研究背景在资本市场的超高溢价。但同时也引发行业对\"背景溢价\"泡沫化的讨论——无产品可验证的背景下，3亿美元估值的风险不容忽视。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "人形机器人ODM厂商半醒具身获千万元新一轮融资",
+                "summary": "人形机器人ODM方案商半醒具身（BXI Robotics）完成千万元级新一轮融资，投资方为A股上市公司索辰科技，资金将用于提升ODM产能和研发投入。在人形机器人赛道持续火热的背景下，专业ODM服务商作为产业链关键节点，正在获得来自产业资本和财务资本的共同关注，半醒具身此次获索辰科技注资意味着人形机器人精密制造环节的价值正在被重新定价。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3899057634363266"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI角色硬件公司酷奇奇科技完成数千万元种子轮融资",
+                "summary": "AI角色硬件公司酷奇奇科技（Coolqq.com）完成数千万元种子轮融资，由上海浦东人工智能种子基金领投，商汤科技和零以创投跟投，云杉资本担任独家财务顾问。商汤科技作为LP身份参与投资，标志着国内AI头部公司正通过基金方式系统性布局具身智能和消费级AI硬件赛道，产业资本与财务资本的协同正在加速。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3898370289846153"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Caseway与神达（MiTAC）达成战略合作，进军台湾国防AI决策智能市场",
+                "summary": "Caseway与台湾服务器及ICT基础设施巨头神达（MiTAC）达成战略合作，共同面向台湾国防及关键基础设施领域推广可信AI决策智能解决方案。该合作聚焦AI在国防安全场景的落地应用，是AI技术在亚太区域防务市场商业化的典型案例，也反映出AI决策系统在关键基础设施领域的合规出海正在成为新兴赛道。",
+                "source": "Hacker News / SUAS News",
+                "url": "https://www.suasnews.com/2026/07/caseway-and-mitac-advance-technology-partner-to-bring-trusted-ai-decision-intelligence-to-taiwans-defence-and-critical-infrastructure/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "DoorDash推出命令行订餐工具dd-cli，支持AI Agent自动化消费",
+                "summary": "DoorDash向开发者开放有限Beta版dd-cli命令行工具，支持开发者和AI Agent通过命令行搜索商家、构建订单、管理配送。该工具将消费场景以API方式暴露给AI Agent，意味着AI助手执行真实商业任务的能力正在从信息层面扩展到交易闭环层面，\"AI下单\"将从概念走向规模化应用。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/yes-you-can-now-order-doordash-from-the-command-line/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "中专生用AI创作短片播放破亿获好莱坞offer，草根叙事冲击精英叙事",
+                "summary": "来自云南玉溪的中专生姜梓瑜使用AI工具创作短片《丧尸清道夫》，全网播放量破亿，被称为\"国产爱死机\"，并收到好莱坞制作人的跨洋工作邀约。这一案例打破了AI创作领域的精英叙事定式，证明AI工具正在实质性地降低影视内容创作的技术和资金门槛。内容行业从业者需正视：AI不再只是头部玩家的专利，草根创作者借助AI正在蚕食传统影视制作公司的内容供给优势。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3898151587890824"
+            },
+            {
+                "tag": "行业格局",
+                "title": "IDC报告：百度智能云蝉联中国金融大模型市场份额第一",
+                "summary": "IDC最新报告显示，百度智能云继续以显著优势蝉联中国金融行业大模型市场份额第一，覆盖银行、保险、证券等核心金融场景的AI落地。金融行业因其对AI可解释性、数据安全的高要求，是大模型商业化难度最高的垂直领域之一，百度智能云的持续领先印证了其在该赛道的壁垒深度，也意味着金融AI市场的马太效应正在加速形成。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3896564308379525"
+            }
+        ]
+    },
+    {
         "date": "2026-07-16",
         "items": [
             {
