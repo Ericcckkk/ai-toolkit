@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-18",
+        "items": [
+            {
+                "tag": "应用落地",
+                "title": "Apple Intelligence获批在华上线，与阿里Qwen、百度文心合作",
+                "summary": "苹果公司Apple Intelligence正式获批在中国推出，将采用阿里巴巴Qwen和百度文心一言作为本地化AI能力支撑。该合作模式意味着苹果需将中国用户数据处理交由国内云服务商负责，以符合数据本地化法规。对苹果而言，中国是其全球最大消费市场之一，此次获批标志着其AI生态版图在中国市场的关键突破，但也意味着核心AI能力外包给中国合作伙伴。",
+                "source": "TechCrunch AI / 36氪",
+                "url": "https://techcrunch.com/2026/07/16/apple-intelligence-approved-for-launch-in-china-with-alibabas-qwen-ai/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI发布GPT-Red：用LLM超级黑客提升模型安全性",
+                "summary": "OpenAI推出名为GPT-Red的大语言模型，专门设计为\"红队对抗\"角色，作为模型安全训练的陪练工具。该模型通过模拟攻击性交互帮助其他模型发现漏洞、提升鲁棒性。OpenAI表示该技术已应用于GPT-4o等模型的训练流程。此举代表AI安全从人工审查向自动化红队测试的转变，对行业安全标准制定具有参考意义。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/07/15/1140514/meet-gpt-red-an-llm-super-hacker-openai-built-to-make-its-models-safer/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Apple起诉OpenAI泄露商业秘密，或影响后者IPO进程",
+                "summary": "苹果公司于上周五对OpenAI提起商业秘密诉讼，指控OpenAI在合作期间不当获取苹果技术机密。诉讼文件措辞激烈，业内认为此事对正在筹备IPO的OpenAI构成重大风险，可能导致估值重估和上市时间延后。OpenAI方面尚未公开回应。这是继微软、苹果与OpenAI复杂关系后的最新冲突。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/07/17/apples-lawsuit-couldnt-come-at-a-worse-time-for-openai/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Moonshot即将发布Kimi K3：参数达2-3万亿的中国最大开源模型",
+                "summary": "据金融时报报道，月之暗面（Moonshot）即将推出Kimi K3，参数规模在2万亿至3万亿之间，将成为迄今为止中国最大的开源AI模型。该模型预期性能将对标Anthropic的Opus 4.8。作为国内头部大模型厂商，Kimi K3的发布将进一步缩小中美大模型能力差距，同时加剧开源模型赛道竞争。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/moonshots-upcoming-kimi-3-is-expected-to-close-the-gap-with-anthropics-opus-4-8/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Databricks估值达188亿美元，成AI基础设施领域最高估值公司",
+                "summary": "数据智能平台Databricks完成新一轮融资，估值飙升至188亿美元，较上一轮大幅提升。公司已成功从传统数据仓库提供商转型为AI公司，并发布开源权重模型相关研究报告，强调开放模型的成本优势。188亿美元估值使其成为当前最具价值的AI基础设施独角兽。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "壁仞科技发布1024卡超节点方案，NPO光互连实现大规模扩展",
+                "summary": "壁仞科技在WAIC 2026上正式发布下一代NPO光互连、分布式解耦架构超节点方案，支持单个超节点1024卡Scale-up扩展。该方案针对AI大模型训练和推理的大规模算力需求设计，是国产AI芯片在互联技术上的重要突破。1000卡以上的单节点扩展能力将显著提升大规模模型训练效率。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3900457432680067"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "蔚来芯片子公司神玑发布“睿动”具身智能开发平台",
+                "summary": "安徽神玑技术有限公司（蔚来芯片子公司）首次独立参展WAIC，发布面向具身智能的\"睿动\"开发平台及分布式智能体平台。公司已形成以神玑NX9031芯片为核心的端到端智能能力，涵盖车载域控与具身智能两条产品线。具身智能开发平台的发布标志着车厂芯片业务向通用AI领域延伸。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3899667446613640"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "前DeepMind研究员创立AI公司，预种子轮估值达3亿美元",
+                "summary": "一位曾参与构建世界领先AI系统的DeepMind前研究员，在尚未发布产品的情况下完成3亿美元预种子轮融资，估值高达3亿美元。该投资反映了资本市场对顶级AI人才的疯狂追逐，以及对AGI长期价值的强烈看好。预种子轮如此高估值在行业极为罕见。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/how-a-former-deepmind-researcher-raised-at-a-300m-pre-seed-valuation-before-launching-a-product/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "模感科技完成数千万元天使轮，红杉、高瓴、智元机器人联合投资",
+                "summary": "全身多模态融合触觉解决方案公司模感科技（MoSense）完成数千万元天使轮融资，投资方包括红杉中国、高瓴创投及智元机器人。本轮融资将主要用于团队扩充和技术研发。公司创始人团队来自香港科技大学，瞄准机器人全身触觉感知这一具身智能核心赛道。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3899128277452681"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Agility Robotics在特斯拉后院设立Digit机器人训练中心",
+                "summary": "Agility Robotics宣布在加州弗里蒙特（Fremont）建立新的Digit机器人训练中心，弗里蒙特正是特斯拉工厂所在地。该选址被解读为与特斯拉在机器人领域的直接竞争意图。Digit是该公司主打的人形机器人，已在仓储和工业场景落地。新训练中心将加速其商业化部署。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "欧盟依据DMA命令Google向竞争对手开放Android和搜索",
+                "summary": "欧盟委员会依据数字市场法（DMA）裁定Google必须向竞争对手的AI助手和搜索引擎开放Android系统和Google Search的关键接口。这意味着微软Bing、 DuckDuckGo及其他AI服务将获得更多系统级入口。Google面临监管压力下的开放要求，或将重塑欧洲移动互联网竞争格局。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma"
+            },
+            {
+                "tag": "应用落地",
+                "title": "印奇在WAIC主论坛演讲：当智能体走进物理世界",
+                "summary": "阶跃星辰董事长印奇在WAIC 2026开幕式主论坛发表主题演讲，围绕\"当智能体走进物理世界\"展开论述。作为国内头部大模型公司的掌舵者，印奇的演讲预示着大模型从数字世界向物理世界延伸的行业趋势。WAIC是全球AI领域顶级盛会，演讲内容将影响行业对具身智能发展方向的认识。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3900439867147909"
+            },
+            {
+                "tag": "应用落地",
+                "title": "腾讯智能体集中亮相WAIC，发布“Hey AI Buddy”主题展示",
+                "summary": "腾讯连续第九年参展WAIC，以\"Hey，我的AI Buddy\"为主题，集中展示AI在各领域进化为生产生活伙伴的进展。展示内容涵盖腾讯混元大模型、AI助手、智能座舱等多个产品线。腾讯的参展规模和产品矩阵体现了其AI战略从基础模型向应用层延伸的整体思路。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3899736051484552"
+            },
+            {
+                "tag": "行业格局",
+                "title": "英特尔与Google Cloud宣布深化战略合作",
+                "summary": "英特尔与Google Cloud宣布深化战略合作，双方将在AI芯片、云计算基础设施、AI开发工具等领域加强协同。合作涉及英特尔Gaudi AI加速器的云端部署优化，以及双方在开源AI框架上的兼容性开发。此举反映芯片厂商与云厂商深度绑定的行业趋势。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3896564485572489"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google Vids新增AI个性化头像功能，用户可化身视频主角",
+                "summary": "Google为其视频创作工具Vids添加个性化AI头像功能，用户可以创建以自己数字形象为主角的视频。该功能基于Google DeepMind的AI视频生成技术，支持逼真的数字分身创作。这是Google在AI视频创作领域的重要功能迭代，将降低专业视频内容创作门槛。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/google-vids-now-lets-you-star-in-your-own-ai-videos/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Claude与1Password达成浏览器集成，可代为操作登录凭证",
+                "summary": "1Password推出面向Anthropic Claude的新浏览器集成，允许Claude在获得授权后访问用户存储的安全凭证并代为操作。该功能基于深度浏览器控制能力，用户可授权Claude自动填写密码、登录网站、执行需要身份验证的操作。这是AI助手与密码管理器深度整合的首批案例。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration"
+            },
+            {
+                "tag": "政策监管",
+                "title": "纽约州长宣布用AI分析州政府全部法规条文",
+                "summary": "纽约州长Kathy Hochul宣布正在使用AI系统分析该州所有法规条文，以提高政府效率和法规透明度。尽管纽约刚签署了对新AI数据中心的暂停令，但州长同时积极推动AI在政府内部的应用。该案例展示了AI在公共治理领域的落地方向。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/966647/new-york-governor-kathy-hochul-ai-policies"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI推出首款硬件产品ChatGPT篮球",
+                "summary": "OpenAI发布其首款硬件产品——一款内置AI功能的篮球。该产品内置传感器和语音交互模块，可实时分析用户投篮动作并提供语音指导。作为OpenAI首次涉足硬件领域，该产品的推出被视为其品牌延伸和AI能力具象化的尝试，但市场反应和商业前景尚待观察。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/16/why-is-openai-selling-a-chatgpt-basketball/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "2026最受投资人关注人工智能/具身智能企业50强榜单揭晓",
+                "summary": "在WAIC 2026期间，2026最受投资人关注人工智能/具身智能企业50强榜单正式揭晓。评选覆盖生成式AI、多模态交互、智能体、机器人等赛道，反映过去一年大模型能力演进和具身智能从技术探索向产业验证的转型。榜单将为投资人和行业观察者提供关键标的参考。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3899597215745664"
+            },
+            {
+                "tag": "应用落地",
+                "title": "TikTok测试AI形象检测工具，回应深度伪造担忧",
+                "summary": "TikTok正在测试一款可检测AI生成相似形象的工具，允许创作者主动报告未经授权使用其形象的AI内容。这是主流社交平台首次推出针对AI深度伪造的防护功能。该工具采用可选项设计，用户可自主选择是否启用，体现了平台在AI内容治理上的主动姿态。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool"
+            }
+        ]
+    },
+    {
         "date": "2026-07-17",
         "items": [
             {
