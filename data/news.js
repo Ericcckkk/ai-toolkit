@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-20",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "Apple正式起诉OpenAI，或影响后者IPO进程",
+                "summary": "Apple于上周五向OpenAI提起商业秘密诉讼，指控后者非法获取Apple技术用于ChatGPT开发。这是继微软之后，又一科技巨头对OpenAI发起法律挑战。诉讼时机微妙，正值OpenAI筹备IPO的关键窗口期，分析认为此案可能重塑AI公司与科技巨头之间的技术授权边界。若Apple胜诉，或将倒逼OpenAI重新评估与iOS生态的深度整合策略，AI行业的\"护城河\"逻辑也将面临重构。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "工信部将印发算力标准体系建设指南，推动算力市场化定价",
+                "summary": "7月20日，工信部信息通信发展司司长谢存在国新办发布会上表示，将印发算力标准体系建设指南，推动建立算力市场化定价等标准。近两年围绕国家算力枢纽节点已建设超70条算力大通道，节点间网络性能提升10%。截至6月底，全国算力设施整体上架率达71.4%。算力标准化是AI基础设施化的关键一步，意味着国内算力资源调度即将进入规范化、市场化阶段。",
+                "source": "36氪 / 央视新闻",
+                "url": "https://36kr.com/newsflashes/3903384861771649"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "上半年集成电路出口同比增长88.7%，AI芯片需求强劲",
+                "summary": "工信部总工程师王卫明在国新办发布会上披露，上半年以人民币计价的集成电路出口额同比增长88.7%，电子元件出口增长62.6%，风力发电机组增长35.6%。在全球AI和绿色低碳转型需求旺盛的背景下，中国半导体产业链的出口竞争力显著提升。88.7%的增速远超预期，表明国内芯片制造能力正在快速缩短与国际先进水平的差距。",
+                "source": "36氪 / 央视新闻",
+                "url": "https://36kr.com/newsflashes/3903354555893634"
+            },
+            {
+                "tag": "技术突破",
+                "title": "我国人形机器人整机产品达400余款，超全球半数",
+                "summary": "工信部7月20日发布数据显示，上半年我国人形机器人整机产品已达400余款，占全球总数的一半以上；四足机器人占全球销量份额接近70%。人工智能、半导体、新能源、生物医药等领域涌现一批具有国际竞争优势的产业。中国在人形机器人领域的规模化量产能力已形成代际优势，但核心关节模组等关键零部件的国产化率仍是下一阶段突围重点。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3903383107110785"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Meshy完成近4亿美元B轮融资，估值突破100亿元",
+                "summary": "AI 3D资产生成平台Meshy宣布完成近4亿美元B轮融资，由IDG资本、经纬中国、Monolith砺思资本等联合投资，老股东Granite Asia、红杉中国、BAI资本、源码资本超额跟投，投后估值超过100亿元人民币。这是今年以来AI 3D生成领域最大一笔融资。Meshy瞄准游戏、影视、建筑等场景的3D内容创作需求，4亿美元融资规模印证了AI生成媒体从2D向3D跃迁的赛道正在快速成熟。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3903365138270088"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "红熊AI完成数亿元A+轮融资，15个月内完成第6轮",
+                "summary": "红熊AI宣布完成数亿元人民币A+轮融资，投后估值接近30亿元，由浙江九纬私募基金、嘉兴彰元创业投资及老股东格睿丰联合投资。这是该公司在短短15个月内完成的第6轮融资。红熊AI基于\"记忆科学\"理论，从To B服务延伸至To C应用，融资金额虽不及Meshy，但融资频次之高反映出AI应用层资本仍在加速涌入。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3899612612494976"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Databricks估值达1880亿美元，AI领域最贵独角兽",
+                "summary": "Data lakehouse公司Databricks宣布最新估值达到1880亿美元，较上一轮融资估值增长显著。Databricks已成功将自身重塑为AI基础设施公司，并发布开源权重模型成本节省研究。其AI业务增长势头强劲，成为继OpenAI之后最受资本市场青睐的AI平台公司。1880亿美元估值意味着Databricks已超越Stripe成为全球估值最高的非公开市场科技公司。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/17/databricks-hits-188b-valuation-extending-its-run-as-ais-favorite-second-act/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "腾讯云ADP 4.0海外版发布，剑指全球企业级智能体市场",
+                "summary": "7月18日在WAIC 2026上，腾讯云正式发布智能体开发平台ADP 4.0海外版，同步升级智能工作台、Claw模式、Skill广场三大核心模块，围绕触达、交互、生态、连接四大能力进行升级。这是国内云厂商首个针对海外市场的企业级智能体开发平台，意味着中国AI能力开始系统性输出海外。腾讯选择在此时间点出海，反映了国内企业级AI市场的竞争已趋于激烈。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3901396207584902"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI发布GPT-Red，多模态能力再升级",
+                "summary": "OpenAI在最新一次更新中发布了代号为\"GPT-Red\"的新模型，在多模态理解和生成能力上实现显著提升。该版本特别强化了对长文本、视频和代码的综合处理能力，被认为是GPT-5正式发布前的关键过渡版本。GPT-Red的推出加剧了与Anthropic Claude、谷歌Gemini的竞争，三家头部公司的迭代周期已压缩至季度级别。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/07/16/1140600/the-download-openai-unveils-gpt-red-heat-pumps-rise-us/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google NotebookLM正式更名为Gemini Notebook，整合至Gemini生态",
+                "summary": "Google宣布将其AI笔记应用NotebookLM更名为Gemini Notebook，并整合至Gemini产品系列。这是Google AI产品线统一品牌的最新动作。NotebookLM此前凭借播客摘要和交互式问答功能积累了大量忠实用户，改名后将与Gemini App形成更清晰的定位区分，NotebookLM面向深度学习和知识管理，Gemini App面向日常助手场景。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/tech/966112/google-gemini-notebook-notebooklm"
+            },
+            {
+                "tag": "应用落地",
+                "title": "印度智能手机市场因AI热潮遭遇内存供应危机",
+                "summary": "印度智能手机市场正面临AI驱动的内存供应紧张问题。随着端侧AI功能（如本地大模型推理）在中高端手机中普及，对LPDDR5X内存的需求激增，导致供应链紧张和价格上涨。这一现象凸显了AI功能正深刻重塑消费电子产品的定价结构和需求走向，内存已从\"可选配置\"变为\"AI手机\"的硬性门槛。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/17/ai-driven-memory-crunch-jolts-indias-smmartphone-market/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "非营利组织Current AI宣布构建开源去中心化AI网络",
+                "summary": "非营利AI组织Current AI宣布正在构建一个\"AI版万维网\"，旨在打造一个对所有文化和语言都免费开放的AI基础设施。该组织已取得显著进展，其去中心化训练方案可在多种设备上运行，不依赖单一科技公司的算力垄断。Current AI的目标是从根本上改变AI能力集中在少数硅谷公司手中的现状，但如何在去中心化与模型质量之间取得平衡仍是最大挑战。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/19/nonprofit-current-ai-is-racing-to-build-the-world-wide-web-of-ai-free-for-all/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Agility Robotics在特斯拉总部附近新建Digit机器人训练中心",
+                "summary": "Agility Robotics宣布在加州弗里蒙特（Fremont）新建一个人形机器人Digit的训练中心，弗里蒙特正是特斯拉工厂所在地。此举被外界视为Agility直接与特斯拉Optimus机器人正面竞争的信号。Digit已在Amazon和GXO的仓库中部署，新训练中心将专注于提升其在复杂物流场景中的自主决策能力。人形机器人商业化落地正式进入\"贴身竞争\"阶段。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/17/agility-robotics-plants-its-flag-in-teslas-backyard/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "黄仁勋访问日本签署系列合作协议，覆盖全栈AI生态",
+                "summary": "英伟达CEO黄仁勋访问东京期间，与日本政府和产业界签署了一系列覆盖AI全栈的合作协议，涵盖GPU计算、数据中心建设和AI应用落地等多个层面。这是黄仁勋今年亚洲行程的重要组成部分，日本正加速推进AI国家战略，计划在2027年前投入约10万亿日元用于AI基础设施建设。英伟达在日本市场的深度布局，反映了AI基础设施竞争已从云厂商扩散至主权国家层面。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "1Password与Claude达成安全集成，AI可代为调用存储凭证",
+                "summary": "密码管理平台1Password推出面向Anthropic Claude的新浏览器集成，允许Claude在用户授权下直接调用存储的账户凭证和敏感信息。这是AI助手与密码管理器深度整合的首次商业化尝试，大幅简化了AI执行跨平台任务时的身份验证流程。该功能的上线意味着AI agent正在从\"问答助手\"向\"任务执行者\"加速演进，但密钥管理权归属问题也引发了安全社区的讨论。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/tech/966442/1password-anthropic-claude-browser-integration"
+            },
+            {
+                "tag": "政策监管",
+                "title": "欧盟依据DMA命令Google开放Android和搜索数据给竞争对手",
+                "summary": "欧盟委员会依据《数字市场法》（DMA）做出里程碑式裁决，要求Google向竞争对手的AI助手和搜索引擎开放Android系统和Google Search的关键数据访问权限。这标志着全球最严厉的科技反垄断监管正式触及AI领域。裁决适用范围涵盖AI搜索、语音助手和应用商店等多个维度，Google表示将上诉，但欧盟监管机构态度坚决。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/policy/966438/eu-google-android-ai-interoperability-search-data-dma"
+            },
+            {
+                "tag": "政策监管",
+                "title": "工信部：加快光子、时空信息等新兴增长点培育",
+                "summary": "工信部在国新办发布会上表示，下一步将深入推进数字中国建设，加快光子、时空信息等新兴增长点培育，加速算电一体化布局落地。围绕《电子信息制造业发展\"十五五\"规划》《新型电池产业发展\"十五五\"规划》等政策文件，工信部将强化政策规划引领。光子技术（硅光）和时空信息（北斗+AI）是支撑低空经济、具身智能等新质生产力的底层基础设施。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3903396870211207"
+            },
+            {
+                "tag": "应用落地",
+                "title": "TikTok测试AI人物相似度检测工具，赋能创作者保护",
+                "summary": "TikTok正在测试一款可选启用的AI相似度检测工具，允许创作者识别平台内使用其AI生成形象的内容，并可向平台举报。该工具采用主动 opt-in 模式，旨在平衡AI内容创作便利性与个人形象权益保护。随着AI生成内容（AIGC）的爆发，个人面部和声音的数字身份保护已成为全球监管和平台治理的焦点，TikTok的尝试或将成为行业标准的重要参考。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/tech/967486/tiktok-ai-likeness-detection-tool"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google AI Mode新增应用链接交互能力，扩展任务执行范围",
+                "summary": "Google宣布将AI Mode从单纯的问答助手扩展至任务执行层面，用户现可链接并与精选应用交互，直接完成购物、订餐、日程管理等操作。这意味着Google搜索从\"信息检索工具\"向\"任务完成引擎\"的战略转型进入实质阶段。AI Mode的应用集成将率先覆盖部分美国主流App，后续逐步扩展，Google正在将搜索入口优势转化为AI agent分发的关键节点。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/16/googles-ai-mode-now-lets-you-link-and-interact-with-select-apps/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "安顿健康发布首个生命预警表标准和七诊合参中医机器人",
+                "summary": "在WAIC 2026上，安顿健康发布两项首发成果：我国首个生命预警表标准以及行业首个七诊合参中医机器人。该机器人整合了中医舌诊、面诊、脉诊、问诊等七维诊断数据，基于多模态AI算法实现中医辨证论治的数字化。医疗AI从单点诊断向体系化诊疗的演进，标志着AI在中医药垂直领域的应用进入深水区。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3902428274427525"
+            }
+        ]
+    },
+    {
         "date": "2026-07-19",
         "items": [
             {
@@ -3326,151 +3471,6 @@ const AI_NEWS_DATA = [
                 "summary": "大西洋月刊记者亚历克斯·赖斯纳（Alex Reisner）披露，四个音乐数据集正被用于训练AI模型，并创建了可搜索的完整数据库。这一发现引发了关于AI训练数据版权和透明度的新一轮讨论。随着AI公司面临越来越多的版权诉讼，可追溯和合规的训练数据来源正成为行业必须解决的问题。",
                 "source": "The Verge",
                 "url": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-20",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "诺贝尔奖得主约翰·江珀离开谷歌DeepMind，加盟Anthropic",
-                "summary": "6月19日，2024年诺贝尔化学奖得主、AlphaFold核心开发者约翰·江珀（John Jumper）在社交平台宣布，将离开工作近九年的谷歌DeepMind，加入AI初创公司Anthropic。这是继Transformer合著者Noam Shazeer之后，又一位顶级AI科学家从谷歌出走。江珀的加盟将显著增强Anthropic在蛋白质结构预测和AI基础研究领域的竞争力，AI安全研究的人才竞争进入新阶段。",
-                "source": "36氪 / Business Insider / Hacker News",
-                "url": "https://36kr.com/p/3855480467543042"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI IPO前引入Transformer合著者Noam Shazeer及前特朗普官员",
-                "summary": "OpenAI正在为其IPO做最后的团队充实工作，将Transformer架构的共同发明人Noam Shazeer从Google DeepMind招致麾下，同时聘请了前特朗普政府官员。此前的IPO筹备中，OpenAI CEO Sam Altman已表示公司预计在2026年完成上市。在Anthropic和谷歌DeepMind持续争夺顶级AI研究人才的当下，OpenAI选择双管齐下补齐政府关系和技术短板，IPO后竞争格局将更加复杂。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI推理初创公司Baseten融资15亿美元，估值130亿美元",
-                "summary": "AI推理基础设施公司Baseten在短短数月内再次完成巨额融资轮，金额达15亿美元，估值推至130亿美元。在\"推理淘金热\"的市场环境下，推理成本优化成为企业部署大模型的核心痛点，资本市场对推理层的热情已不亚于训练层。Baseten的高估值反映出一个明确信号：推理侧的效率竞争将成为下一阶段AI商业化的主战场。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "谷歌自建AI芯片业务挑战英伟达，WSJ披露战略细节",
-                "summary": "《华尔街日报》报道，谷歌正借鉴英伟达的成功路径，将内部自研TPU芯片从仅供自用转向商业化销售，试图打造从芯片到云服务的垂直整合闭环。谷歌既是英伟达GPU的最大客户之一，也是潜在竞争者，这种竞合关系将使AI芯片市场格局面临重塑，云厂商自研芯片的趋势已不可逆转。",
-                "source": "Hacker News / WSJ",
-                "url": "https://www.wsj.com/tech/ai/google-is-using-nvidias-playbook-to-build-a-rival-ai-chip-business-1eac86f9"
-            },
-            {
-                "tag": "行业格局",
-                "title": "亚马逊AWS对外销售AI芯片，剑指500亿美元市场机会",
-                "summary": "亚马逊AWS正在与英伟达和AMD正面竞争，计划向其他数据中心客户销售其自研Trainium和Inferentia芯片。CEO安迪·贾西表示这是一个500亿美元的市场机会。此前AWS芯片仅供内部使用，此次战略转向标志着三大云厂商（谷歌、亚马逊、微软）全面进入AI芯片商业化赛道，芯片市场的多极格局正在形成。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "美国政府强制Anthropic下架Fable 5，禁令反而引发关注度激增",
-                "summary": "美国政府以安全风险为由，强制Anthropic撤下其最新旗舰模型Fable 5和Fable 5.1。然而TechCrunch分析显示，禁令消息传出后，Anthropic网站访问量不降反升，部分用户通过VPN等手段尝试访问相关模型。这一现象暴露了政府监管AI模型发布的执行困境：强制下架反而成为最有力的\"广告\"，政策效果存疑。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/19/the-us-banned-anthropics-fable-5-release-but-the-numbers-dont-seem-to-care/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "具身智能企业穹彻智能再融数亿元，上交深度参与",
-                "summary": "具身智能企业穹彻智能（Noematrix）完成新一轮数亿元融资，无锡数据集团领投，上海交通大学AI未来基金和上海创智学院跟投。穹彻自2023年成立以来持续获得融资，致力于具身智能大模型和机器人产品研发。本轮引入地方数据集团和高校基金，显示具身智能正从纯技术研发进入产业协同阶段，落地路径日益清晰。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3856708724315400"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Snap将AI视频团队分拆为Dotmo独立公司，以减轻成本压力",
-                "summary": "Snap将旗下AI视频生成团队拆分成立独立公司Dotmo，团队成员将从Snap离职加入新公司。Snap曾是AI视频赛道的先驱之一，但高额的AI研发成本迫使大厂选择分拆轻资产运营。这是继Meta、Google之后，又一互联网巨头通过分拆方式应对AI高投入压力的案例，也意味着AI视频生成领域的独立玩家竞争将更加激烈。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "芯生视界完成近亿元种子轮，北大团队入局侵入式脑机接口",
-                "summary": "侵入式脑机接口公司芯生视界完成近亿元人民币种子轮融资，由经纬创投领投，北大科研团队主导研发。侵入式脑机接口在治疗瘫痪、神经退行性疾病等领域已有临床验证，本轮融资将加速其从实验室向产品化跃迁。脑机接口已成为AI与生命科学交叉领域的最新投资热点，学术团队下场正成为该赛道的标志性特征。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3855480467543042"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "中国AI模型token消耗量超越美国，FT揭示产业格局转变",
-                "summary": "《金融时报》披露，中国AI模型在token消耗量上已超越美国竞争对手，显示中国AI产业规模扩张速度惊人。尽管在模型性能最前沿仍有差距，但中国AI厂商正通过海量应用场景和用户基础实现追赶。这一数据改变了业界对中国AI\"跟随者\"的固有认知，中美AI竞争已进入全面拉锯阶段。",
-                "source": "Hacker News / FT",
-                "url": "https://www.ft.com/content/2567877b-9acc-4cf3-a9e5-5f46c1abd13e"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Elastic收购Deductive AI，交易金额最高达8500万美元",
-                "summary": "搜索和数据库公司Elastic已同意收购AI编程辅助初创公司Deductive AI，后者利用AI技术自动检测和修复软件bug，收购价格最高达8500万美元。Deductive AI成立仅三年便获大型企业收购，显示AI编程工具赛道已进入收获期，企业软件巨头正加速通过收购补齐AI能力短板。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "印度首富安巴尼推动AI渗透5亿用户，电信+AI模式全球瞩目",
-                "summary": "印度首富穆克什·安巴尼旗下的Reliance正全面将AI整合进其服务超过5亿用户的电信生态，从通话到应用程序再到家庭场景，AI无处不在。在全球AI落地仍在探索商业模式的当下，Reliance的实践提供了一个新兴市场的大规模AI应用范本，其影响力可能远超欧美市场的小众AI产品。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "澳大利亚AI创业公司CEO因虚构AI收入被判入狱9年",
-                "summary": "澳大利亚一家AI创业公司CEO因伪造AI技术收入欺骗投资者，被判处9年监禁，成为全球首例因AI泡沫化诈骗受到重刑判决的案例。在AI投资热潮中，此类判例对打着\"AI\"旗号圈钱的行为具有强烈震慑作用，也将推动各国监管机构加强对AI企业信息披露真实性的审查。",
-                "source": "Hacker News / SMH",
-                "url": "https://www.smh.com.au/technology/australian-start-up-boss-who-faked-revenue-gets-nine-years-jail-20260618-p60847.html"
-            },
-            {
-                "tag": "政策监管",
-                "title": "美国质疑ASML最先进光刻机可能已在中国，出口管制效力再受质疑",
-                "summary": "美国政府公开质疑ASML最先进光刻机可能已被转移至中国，尽管ASML表示否认。这一事件再度暴露了美国对华芯片设备出口管制的执行漏洞。TechCrunch历史分析显示，过去30年加密软件、间谍软件等网络相关出口管制均告失败，最先进芯片制造设备的管控同样面临类似困境。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/19/the-us-says-asmls-top-chip-tool-may-be-in-china-asml-says-it-isnt/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "蔚来向18款在售车型推送世界模型智驾系统，实现跨平台部署",
-                "summary": "蔚来在6月18日向其全部18款在售车型（含NT2.0、NT2.5、NT3.0三个代际平台）同步推送自研世界模型智驾系统，首次实现同一套复杂智驾代码在完全不同代际芯片上的流畅运行。这是国内车企在全栈智驾自研和跨平台适配能力上的标志性突破，智驾竞争正从单点技术转向系统工程能力的全面较量。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3858329994875908"
-            },
-            {
-                "tag": "应用落地",
-                "title": "滴滴自动驾驶亮相伦敦MOVE 2026，展示L4级全栈技术",
-                "summary": "滴滴自动驾驶团队在伦敦MOVE 2026大会上分享了来自中国的自动驾驶落地实践，已实现L4级全栈核心技术的自主可控。此次是中国自动驾驶企业首次在欧洲顶级行业大会上系统性展示技术成果，标志着中国自动驾驶方案正式开启海外拓展进程，将与Waymo、Cruise等欧美玩家正面竞争。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3858015526704129"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "企业AI助手成为下一个产品主战场，行业格局深度分析",
-                "summary": "行业分析指出，微软Copilot、谷歌Gemini、OpenAI以及AWS和Salesforce等企业软件巨头正在企业AI助手领域展开激烈竞争。AI聊天机器人只是起点，真正的战场已转向能够自动化复杂业务流程的AI Agent产品。企业AI助手市场规模估算已达数百亿美元，谁能在企业工作流中深度嵌入AI，谁就将主导下一代企业软件格局。",
-                "source": "Hacker News / RNZ",
-                "url": "https://www.rnz.co.nz/news/science-and-technology/600928/more-than-chatbots-why-business-ai-agents-are-big-tech-s-next-product-battleground"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "Match调查显示47%美国单身用户对AI约会持负面态度",
-                "summary": "约会应用Match发布的调研数据显示，约47%的美国单身用户对在约会场景中使用AI持负面态度，但多数用户并不排斥AI辅助撰写个人简介和聊天建议。AI在约会场景的应用面临\"真实性\"与\"效率\"的根本矛盾，用户接受度远低于其他AI工具类别。对于约会应用厂商而言，如何在AI辅助与保持真实感之间找到平衡，将是产品设计的核心挑战。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/almost-half-of-u-s-singles-feel-negatively-about-ai-in-dating-match-says/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "挪威宣布禁止在K-12教育中使用生成式AI工具，全球最严厉立场",
-                "summary": "挪威政府宣布在K-12教育体系中全面禁止使用ChatGPT等生成式AI工具，成为全球对AI教育应用立场最明确、监管最严厉的国家。不同于多数国家采取\"引导使用\"的策略，挪威选择了最保守的路径。该决定将引发国际社会对AI教育边界的激烈讨论，并为其他国家制定AI教育政策提供重要参考。",
-                "source": "Hacker News / Gizmodo",
-                "url": "https://gizmodo.com/norway-says-ai-aint-for-education-2000774320"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "ZuzuZoos完成数千万元Pre-A轮融资，进军AI-Native科技潮玩赛道",
-                "summary": "AI-Native科技潮玩品牌ZuzuZoos（杭州多蓝艾梦智能科技）完成数千万元Pre-A轮融资，锦秋基金领投，复容资本跟投。创始团队来自Moody前高管与大疆技术骨干，本轮融资将用于AI大模型迭代、硬件产品扩建和全球市场拓展。科技潮玩作为AI硬件落地的新场景，正在获得资本关注，但市场验证仍需时间。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3859926114161665"
             }
         ]
     }
