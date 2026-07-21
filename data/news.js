@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-21",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "Anthropic 15亿美元版权侵权和解案正式获法院批准",
+                "summary": "联邦法官于7月20日批准了Anthropic与原告方达成的15亿美元和解协议，这是AI行业史上最大规模的版权侵权和解案。Anthropic被控在训练Claude模型时使用了大量受版权保护的材料。尽管和解已获批，但此案并未解决AI训练中使用版权作品这一根本性法律问题，预计更多诉讼将接踵而至。对行业而言，天价和解释放明确信号：AI公司必须为训练数据付出更高成本，否则将面临持续的法律风险。",
+                "source": "TechCrunch / Hacker News",
+                "url": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国政府正考虑禁止中国开源AI模型",
+                "summary": "Axios援引知情人士报道，美国政府正在评估禁止美国用户使用中国开发开源AI模型的可能性，重点针对月之暗面Kimi等中国开源LLM产品。这项禁令若实施，将是首个针对开源AI模型的出口管制措施。政策制定者担心中美开源模型差距缩小可能削弱美国AI优势，但批评者认为此类禁令在技术上难以执行，且违背开源生态原则。",
+                "source": "Axios / Hacker News",
+                "url": "https://www.axios.com/2026/07/20/ai-us-china-open-source-kimi"
+            },
+            {
+                "tag": "政策监管",
+                "title": "特朗普任命的人工智能顾问在上任数周后辞职",
+                "summary": "美国AI标准与创新中心（CAISI）负责人一职已成为\"旋转门\"，在David Sacks之后，特朗普最新任命的AI顾问已在上任数周后辞职。该职位负责协调联邦政府AI政策制定，但频繁的人事变动已引发国会质疑。业内人士担忧，美国AI监管政策缺乏连续性可能影响企业在AI领域的长期投资决策。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Alphabet正研发新型AI芯片以提升Gemini运行效率",
+                "summary": "据报道，Alphabet正在开发一款新型AI专用芯片，目标是将Gemini模型的运行效率显著提升。目前Gemini依赖英伟达GPU运行，新芯片可能采用定制设计以优化推理性能。此举表明大型科技公司正在加速摆脱对第三方芯片的依赖，预计将加剧AI芯片市场的竞争格局。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "AI行业核心协议MCP发布重要更新，大幅降低接入门槛",
+                "summary": "MCP（Model Context Protocol）是AI应用间通信的行业标准协议，Anthropic在7月20日发布重要更新。新版协议采用更松散的\"无状态\"方式处理服务器端会话ID，显著降低了开发者的集成复杂度。这一改进有望加速MCP生态扩展，吸引更多开发者构建AI Agent应用，推动行业标准化进程。",
+                "source": "TechCrunch / Hacker News",
+                "url": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Colibri项目实现1.5TB前沿级AI模型，仅需25GB内存运行",
+                "summary": "Colibri概念验证项目展示了一种创新架构，可以在仅25GB内存的硬件上运行1.5TB参数规模的前沿级AI模型。相比传统方案动辄需要数百GB内存，这一突破对本地化AI部署具有重大意义。研究团队采用稀疏注意力等技术创新，为消费级硬件运行超大模型开辟了新路径。",
+                "source": "Tom's Hardware / Hacker News",
+                "url": "https://www.tomshardware.com/tech-industry/artificial-intelligence/colibri-proof-of-concept-gains-frontier-level-1-5-tb-ai-model-novel-approach-runs-on-only-25gb-of-ram-and-shows-promise-for-local-ai-setups"
+            },
+            {
+                "tag": "技术突破",
+                "title": "光电融合芯片技术可将Token成本降低50%",
+                "summary": "在WAIC大会上，业内传出光电融合芯片技术取得突破性进展，有望将大模型推理的Token成本降低50%。光电融合芯片结合光子计算的高速低耗特性与电子计算的灵活性，被视为下一代AI基础设施的核心方向。国内多家芯片创业公司正加速推进该技术商业化落地。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3904632333862535"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI代理支付平台Natural获3000万美元融资，欲挑战Stripe",
+                "summary": "AI代理支付基础设施公司Natural宣布完成3000万美元种子轮融资，由Andreessen Horowitz领投。该公司专为AI Agent设计支付API，支持自动化微交易和实时结算。随着AI Agent经济规模扩大，传统的支付基础设施已无法满足需求，Natural看中的正是这一新兴市场的巨大潜力。",
+                "source": "TechCrunch / Hacker News",
+                "url": "https://techcrunch.com/2026/07/20/natural-raises-30m-to-reinvent-payments-for-ai-agents-and-take-on-stripe/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "月泉仿生完成数亿元Pre-A+轮融资，仿生灵巧手万台量产",
+                "summary": "36氪独家获悉，月泉仿生已完成数亿元Pre-A+轮融资，由长发基金、华控基金、华夏基金等联合投资，老股东中关村启航跟投。本轮资金将用于仿生拉压体灵巧手万台量产线和订单过亿的产能扩张。该公司聚焦仿生机器人关键技术研发，其灵巧手产品已具备规模化交付能力。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3899174356387718"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "芯天下再度冲刺港股IPO，一季度净利超去年全年近三倍",
+                "summary": "深圳存储芯片公司芯天下向港交所提交招股书，计划重启IPO进程。财务数据显示，公司一季度净利润达去年全年的近三倍，2025年总营收规模显著增长。作为国内领先的存储芯片设计企业，芯天下产品涵盖NOR Flash、SLC NAND等品类，此次IPO募资将用于先进制程研发和产能扩张。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3904785488136070"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "速腾聚创发布第二代全固态感知平台，切入具身智能数据入口",
+                "summary": "速腾聚创在WAIC期间发布第二代全固态感知平台，定位为物理AI数据入口。该平台采用纯固态方案，可实时采集高精度环境感知数据，为机器人、无人车等具身智能体提供厘米级空间理解能力。随着具身智能从Demo走向工厂、园区真实场景，该感知平台有望成为数据闭环的关键基础设施。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3903885834028931"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Anthropic Fable-5模型成功否定数学猜想，引发学界震动",
+                "summary": "Anthropic旗下Fable-5模型在形式化数学推理中取得重大突破，成功否定了具有70年历史的Jacobian猜想。数学家通过AI辅助证明发现原猜想存在反例，这是AI在纯数学研究领域的里程碑式应用。这一成果表明，AI在需要严格推理的前沿科学问题上已具备真正的原创性贡献能力。",
+                "source": "Mashable / Hacker News",
+                "url": "https://mashable.com/tech/anthropic-fable-5-disproves-jacobian-conjecture"
+            },
+            {
+                "tag": "应用落地",
+                "title": "心言集团情感陪伴App年营收数亿，进军人形家庭机器人",
+                "summary": "心言集团旗下情感陪伴App年创造数亿元营收、日均百万用户活跃，创始人任永亮宣布进军硬件领域，推出家庭机器人产品。该机器人将App积累的AI情感陪伴能力与硬件形态结合，可分析用户表情和情绪状态提供交互服务。软硬件协同战略意味着公司从工具型AI向家庭场景入口转型。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3904049563731849"
+            },
+            {
+                "tag": "行业格局",
+                "title": "深圳人形机器人产业领跑全国，2025年产值2426亿元创新高",
+                "summary": "2025年深圳机器人产业总产值达2426亿元，同比增长20.56%，产业产值、企业总数、上市公司数量和投融资事件均居全国首位。仅南山区机器人谷就集聚超200家相关企业。短短一个月内，多家深圳机器人企业集中完成大额融资，深圳正冲刺打造\"人形机器人第一城\"。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3904672876332932"
+            },
+            {
+                "tag": "行业格局",
+                "title": "摩根士丹利跃升华尔街AI债务交易头号银行",
+                "summary": "摩根士丹利已崛起为华尔街AI繁荣背后的主导融资力量，设计了面向数据中心的AI债务和股权融资新模式，自去年以来为AI基础设施建设输送数百亿美元。该行在AI基础设施融资市场的份额显著领先，反应出传统金融机构对AI算力投资的热度不减。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3903710346790535"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI坦承担忧开源权重模型，禁令争议暴露商业化困境",
+                "summary": "OpenAI最新政策文章表达了对开源权重模型崛起的担忧，称中国开源AI的快速追赶正在蚕食美国AI企业的市场优势。批评者指出OpenAI此举暴露了其商业模式的根本矛盾——既要维护闭源模型的高定价，又无力阻止开源生态的冲击。AI领域的\"国家安全\"与\"商业利益\"边界正在变得模糊。",
+                "source": "TechCrunch / Hacker News",
+                "url": "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "WAIC 2026观察：AI大模型与机器人成展会核心，国内仿生人形机器人定价24.8万",
+                "summary": "2026年世界人工智能大会在上海举行，大模型、算力与机器人占据核心展区。国内厂商推出的仿生人形机器人定价24.8万元，引发\"比彩礼都贵\"的讨论。展会上可见，大模型正加速落地具身智能场景，从舞台演示走向工厂、园区真实作业验证。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3903687507904387"
+            },
+            {
+                "tag": "应用落地",
+                "title": "小米将2026年手机出货目标上调至1.1亿部，增幅16%",
+                "summary": "从供应链获悉，小米已将2026年全年智能手机出货目标从约9000万部上调至1.1亿部，增幅约16%，增量主要来自低端机型。上调原因在于小米判断存储芯片行情有望迎来反转。智能手机市场的复苏与AI功能的下沉正在重新激活中低端市场需求。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3904739635906178"
+            },
+            {
+                "tag": "行业格局",
+                "title": "英伟达CEO黄仁勋访日成果：达成覆盖全栈科技生态的合作协议",
+                "summary": "英伟达CEO黄仁勋访问东京，成果涵盖日本整个科技生态系统，从AI芯片到自动驾驶，从数据中心到机器人领域均有合作协议落地。此行进一步巩固了英伟达在日本AI基础设施市场的领先地位，也显示日本正积极借助国际合作构建本土AI能力。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "苹果诉讼案或影响OpenAI硬件计划，合作前景添变数",
+                "summary": "OpenAI与苹果之间的合作正面临法律纠纷阴影。苹果已对OpenAI提起诉讼，业界担忧这可能影响OpenAI通过苹果设备生态扩张用户基础的战略。作为OpenAI重要的消费级入口布局，其硬件产品计划的时间表和落地路径可能因法律不确定性而被迫调整。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/07/19/can-an-apple-lawsuit-derail-openais-hardware-plans/"
+            }
+        ]
+    },
+    {
         "date": "2026-07-20",
         "items": [
             {
@@ -3326,151 +3471,6 @@ const AI_NEWS_DATA = [
                 "summary": "Anthropic的AI编程工具Claude Code月费高达200美元，而竞品Goose提供相同功能完全免费，引发行业对AI工具定价策略的广泛讨论。高定价代表Anthropic走高端企业路线，免费策略则是以用户规模换取数据飞轮。对开发者而言，这场竞争将带来更多低价或免费的选择，但也意味着市场正在快速整合。",
                 "source": "VentureBeat AI",
                 "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-21",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "Anthropic Fable 5遭美国政府强制下架",
-                "summary": "美国政府于6月20日强制Anthropic下架其最新模型Fable 5和Fable 5.5，这是AI监管收紧的标志性事件。尽管Anthropic全力恢复服务，但市场反应显示Claude下载量和搜索指数反而上升，社交媒体讨论热度增长47%。这一事件暴露了AI出口管制的执行困境——政府禁令似乎在无意中为被禁品牌带来了曝光度。",
-                "source": "TechCrunch / The Verge",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic CEO警告：AI公司需数千亿美元收入才能生存",
-                "summary": "Anthropic首席执行官达里奥·阿莫迪表示，AI公司需要实现“数千亿美元”收入，否则将面临生存风险。他指出当前AI开发成本极高，仅训练一个顶级模型就需要数十亿美元。Claude系列产品的年化收入已达数十亿美元，但距离数千亿目标仍有巨大差距。这为AI投资者敲响警钟：当前AI热潮背后的经济可持续性存疑。",
-                "source": "36氪 / 财联社",
-                "url": "https://36kr.com/newsflashes/3862373538386952"
-            },
-            {
-                "tag": "政策监管",
-                "title": "特朗普转变立场：不再将Anthropic视为国家安全威胁",
-                "summary": "美国总统特朗普在6月19日《阿克西奥斯秀》访谈中表示，他已经不再将Anthropic视为国家安全威胁。这标志着美国政府对Anthropic态度的重大转变，与此前联邦机构对Claude的禁令形成鲜明对比。外界猜测这一转变可能与Anthropic近期在AI安全领域的表态和游说努力有关。",
-                "source": "36氪 / Axios",
-                "url": "https://36kr.com/newsflashes/3861259140764678"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Reliance计划将AI嵌入5亿用户的每个通话和应用",
-                "summary": "印度首富穆克什·安巴尼旗下的Reliance Industries宣布，计划将AI能力嵌入其电信服务、流媒体平台和智能家居设备，覆盖超过5亿用户。该公司正在其服务中推出通话摘要、AI助手等功能。这一举措表明，AI在新兴市场的渗透速度可能远超预期，大规模用户基础正成为AI落地的独特优势。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "诺贝尔奖得主John Jumper离开DeepMind加入Anthropic",
-                "summary": "诺贝尔化学奖得主约翰·亨普（John Jumper）宣布离开Google DeepMind，加入竞争对手Anthropic。亨普是AlphaFold蛋白质结构预测模型的核心架构师，他的离开是继诺姆·沙泽尔之后Google AI人才的又一次重大流失。Anthropic正在成为吸引顶级AI研究人才的高地，这将进一步缩小与DeepMind的技术差距。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI招揽Transformer发明人，为IPO做准备",
-                "summary": "OpenAI正在为IPO做人才储备，成功招揽Transformer的共同发明人诺姆·沙泽尔（Noam Shazeer）从Google DeepMind加入，同时聘请前特朗普政府官员萨拉·奥赫（Sarah Oh）担任首席政策官。沙泽尔的加入将强化OpenAI在大模型架构方面的技术优势，而前政府官员的加盟则有助于应对即将到来的监管挑战。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI推理独角兽Baseten拟融资15亿美元，估值130亿",
-                "summary": "据报道，AI推理初创公司Baseten即将完成15亿美元融资轮，估值达到130亿美元，距离其上一轮大额融资仅数月时间。Baseten专注于为AI应用提供推理计算基础设施，其快速融资反映了“推理淘金热”市场的持续火热。随着模型部署规模扩大，推理成本正成为AI公司的主要支出，基础设施层的机会正在爆发。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "具身智能企业穹彻智能完成数亿元新一轮融资",
-                "summary": "具身智能企业穹彻智能（Noematrix）近日完成新一轮数亿元融资，由无锡数据集团领投，上海交通大学AI未来基金、上海创之智科技有限公司跟投。穹彻智能聚焦于具身智能大脑研发，已推出相关产品和解决方案。本轮融资将进一步加速其在具身智能领域的技术研发和商业化落地。",
-                "source": "36氪 / 硬氪",
-                "url": "https://36kr.com/p/3856708724315400"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Midjourney从图像生成扩展至医疗超声AI分析",
-                "summary": "Midjourney宣布进军医疗领域，其AI模型将用于分析超声扫描图像。这家以生成艺术闻名的公司正在将技术能力延伸至专业医疗场景。Midjourney表示，其模型在医学影像分割任务上展现出潜力，可清晰分离不同组织结构。尽管距离临床应用仍有距离，但这是AI图像生成技术在垂直领域的重要拓展尝试。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Subquadratic声称突破LLM推理内存瓶颈",
-                "summary": "迈阿密AI初创公司Subquadratic上月脱去隐身模式，宣称已解决LLM推理过程中的内存瓶颈问题。该公司表示，其技术可将推理内存需求降低一个数量级，使在消费级硬件上运行大型模型成为可能。如果claims得到验证，这将是AI效率领域的重大突破，可能改变大模型的部署经济学。MIT Technology Review正在验证其技术声明。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Elastic以最高8500万美元收购AI代码修复初创Deductive AI",
-                "summary": "搜索和分析公司Elastic宣布以最高8500万美元收购初创公司Deductive AI，后者利用AI技术自动检测并修复软件代码中的错误。Deductive AI成立于三年前，已开发出可在软件开发早期阶段捕获bug的AI系统。该收购将强化Elastic在AI驱动的开发者工具领域的布局，也反映了AI在代码质量保障方面的应用价值正在被验证。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Adobe在Photoshop和Premiere中推出AI助手功能",
-                "summary": "Adobe宣布为其Creative Cloud应用系列推出对话式AI编辑功能，Photoshop、Premiere等应用现已支持AI辅助创作。用户可通过自然语言指令完成图像编辑、视频剪辑等操作，降低专业工具使用门槛。Adobe表示，这些功能基于其Firefly AI模型，在设计工作流中集成了上下文感知能力。这是AI辅助设计工具在专业创意领域的重要进展。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch"
-            },
-            {
-                "tag": "政策监管",
-                "title": "挪威宣布禁止小学生使用生成式AI工具",
-                "summary": "挪威首相斯特勒6月19日宣布，将禁止6至13岁小学生使用生成式AI工具，14至16岁初中生可在教师监督下有限使用该技术。这是全球首批针对校园AI使用出台的全国性限制政策。挪威政府表示，此举旨在保护儿童学习能力发展，防止对认知发育产生负面影响。这与部分国家积极在校园推广AI的做法形成鲜明对比，对AI教育产品的全球市场策略产生影响。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3861257682129921"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Snap将AI视频团队分拆为独立公司Dotmo",
-                "summary": "Snap宣布将其AI视频团队分拆为独立公司Dotmo，由即将离职的Snap员工组成。这是Snap在AI领域的第二次重要分拆此前已分拆过其他业务单元。Dotmo将作为独立实体运营，Snap保留部分股份。分析认为，在AI应用开发成本不断攀升的背景下，大公司通过分拆AI团队可以更灵活地获取外部融资和拓展市场。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "特斯拉申请“Amazing Abundance”商标，深化AI和机器人战略",
-                "summary": "特斯拉已正式提交“Amazing Abundance”商标注册申请，涵盖人工智能、人形机器人、自动驾驶系统等核心业务领域。这一举动表明特斯拉正在深化其长期愿景布局，核心是通过自动化技术实现生产成本大幅下降。外界猜测该商标可能与Optimus人形机器人项目或下一代自动驾驶系统相关。",
-                "source": "36氪 / 新浪财经",
-                "url": "https://36kr.com/newsflashes/3862280121865219"
-            },
-            {
-                "tag": "应用落地",
-                "title": "滴滴自动驾驶参加伦敦MOVE 2026大会，展示L4级技术",
-                "summary": "滴滴自动驾驶受邀参加6月17至18日在伦敦举办的MOVE 2026大会，分享来自中国的自动驾驶落地实践。滴滴表示，其已实现L4级全栈核心技术的自主可控，并在硬件方面取得突破。这是中国自动驾驶企业加速海外市场布局的重要信号，从技术验证阶段迈向全球商业竞争。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3858015526704129"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "具身AI初创General Intuition洽谈3亿美元融资",
-                "summary": "具身AI和世界模型初创公司General Intuition正在洽谈3亿美元融资，估值达20亿美元。该公司使用Medal每年从1000万月活用户收集的20亿视频来训练具身AI和世界模型。获得新一轮融资后，General Intuition将进一步扩大其在具身智能领域的竞争优势，视频数据资产正成为这一赛道的核心壁垒。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/18/general-intuition-in-talks-to-raise-300m-at-around-2b-valuation/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "北大科学家创立脑机接口公司芯生视界，获近亿元种子轮",
-                "summary": "「暗涌Waves」独家获悉，侵入式脑机接口公司「芯生视界」近日完成近亿元人民币种子轮融资，由经纬创投领投，燕缘创投、水木创投跟投。芯生视界由北京大学科学家创立，聚焦侵入式脑机接口技术的研发。侵入式脑机接口已在治疗瘫痪、渐冻症等神经疾病方面展现出临床潜力，北大科学家的入局有望加速这一技术在医疗场景的商业化进程。",
-                "source": "36氪 / 暗涌Waves",
-                "url": "https://36kr.com/p/3855480467543042"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "Pew调查：63%美国人认为AI发展太快，47%对AI约会持负面态度",
-                "summary": "皮尤研究中心最新调查显示，49%的美国人报告至少偶尔使用AI聊天机器人，但高达63%认为AI发展过快。婚恋交友领域的数据更为消极：47%的单身人士对AI在约会中的应用持负面态度，仅部分用户接受AI辅助匹配和聊天。该调查揭示了AI技术渗透与公众认知之间的鸿沟，提示AI产品的公众沟通策略需要更谨慎。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "大西洋月刊创建AI训练音乐数据集可搜索数据库",
-                "summary": "大西洋月刊记者亚历克斯·赖斯纳（Alex Reisner）披露，四个音乐数据集正被用于训练AI模型，并创建了可搜索的完整数据库。这一发现引发了关于AI训练数据版权和透明度的新一轮讨论。随着AI公司面临越来越多的版权诉讼，可追溯和合规的训练数据来源正成为行业必须解决的问题。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data"
             }
         ]
     }
