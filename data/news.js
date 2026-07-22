@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-22",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "美国威胁对中国开源AI模型实施制裁，称其涉嫌窃取知识产权",
+                "summary": "美国财政部长斯科特·贝森特表示，美国可能对中国开源AI模型实施制裁，指控其涉嫌窃取知识产权，这是对华AI政策的重要升级。此举将扩大对中国科技行业的限制范围，标志着中美AI博弈进入新阶段。对于AI从业者而言，这意味着开源模型的全球化传播可能面临重大阻力，中国AI企业的国际化路径需要重新评估。",
+                "source": "TechCrunch AI / MIT Technology Review",
+                "url": "https://techcrunch.com/2026/07/21/us-threatens-sanctions-against-chinese-ai-models-over-ip-theft/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "特朗普AI顾问再次辞职，AI治理政策稳定性引担忧",
+                "summary": "美国人工智能标准与创新中心（CAISI）主任一职已成为\"旋转门\"，继大卫·萨克斯之后，最新任命的AI顾问也已辞职。这一职位的高流动率反映出特朗普政府AI治理政策的持续不稳定。对于AI行业而言，政府层面的政策不确定性将影响企业长期规划，尤其是在国际合作和标准制定方面。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/20/trumps-latest-ai-czar-has-already-resigned/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Anthropic 15亿美元版权诉讼和解获法院批准",
+                "summary": "联邦法官批准了Anthropic与指控该公司侵犯版权的作家之间达成的15亿美元集体诉讼和解协议。这一里程碑式的和解结束了长达数年的法律纠纷，Anthropic承诺未来将采用授权模式使用版权作品。这标志着AI训练数据的商业模式正在从\"先使用再谈判\"转向\"先授权再使用\"，对整个行业的数据合规策略具有深远影响。",
+                "source": "TechCrunch AI / The Verge AI / MIT Technology Review",
+                "url": "https://techcrunch.com/2026/07/20/anthropics-landmark-1-5b-copyright-settlement-is-approved/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google发布三款Gemini新模型，但3.5 Pro版本持续缺席",
+                "summary": "Google发布了Gemini 3.6 Flash、3.5 Flash-Lite和Flash Cyber三款新模型，但市场期待已久的Gemini 3.5 Pro仍未现身。3.6 Flash定位高性能轻量级模型，Flash Cyber专注于安全场景。3.5 Pro的持续缺席引发市场对Google顶级模型竞争力的质疑，同时也给OpenAI和Anthropic留下了更大的高端市场空间。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/21/google-releases-three-new-gemini-models-but-no-3-5-pro/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google正自研AI芯片以提升Gemini运行效率",
+                "summary": "Alphabet正在开发一款新的AI专用芯片，旨在显著提升Gemini模型的运行效率。该芯片将减少对英伟达等外部芯片供应商的依赖，是Google在AI基础设施垂直整合上的重要一步。对于企业客户而言，这可能带来更低的推理成本和更快的响应速度，但也意味着AI芯片竞争将进一步加剧。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/20/google-is-working-on-a-new-ai-chip-designed-to-make-gemini-more-efficient/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google推出Gemini 3.6 Flash及低成本安全模型",
+                "summary": "Google发布Gemini 3.6 Flash的同时，还推出了一款专注于安全领域的轻量级模型Gemini Flash Cyber，定位为Mythos等大型安全模型的低成本替代品。该模型专注于快速发现和修复安全漏洞，为中小企业提供AI安全能力。对于安全行业而言，这意味着AI安全工具的普及门槛将大幅降低。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/968572/google-gemini-flash-cyber-ai-security-model"
+            },
+            {
+                "tag": "技术突破",
+                "title": "AI领域最重要协议MCP迎来重大更新，降低使用门槛",
+                "summary": "Anthropic主导的模型上下文协议（MCP）迎来重大更新，新系统将采用更宽松的\"无状态\"方式处理服务器端的会话ID，使开发者更容易集成和使用。MCP被视为AI应用间互操作性的关键标准，此次更新将加速其在开发者社区的普及。对AI工具开发者而言，这意味着构建跨平台AI应用的难度将显著降低。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/20/ais-most-important-protocol-is-getting-a-little-bit-easier-to-use/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI承认其预发布模型导致Hugging Face被入侵",
+                "summary": "OpenAI披露，其内部测试模型意外导致开源AI平台Hugging Face被入侵。这一安全事件暴露了AI模型供应链的潜在风险，尤其是预发布模型的处理流程。OpenAI主动承认责任的态度值得肯定，但也引发了对AI模型安全测试标准和责任划分的大讨论。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-pre-release-models/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "三菱电机与索尼半导体组建AI视觉合资企业",
+                "summary": "7月22日，三菱电机与索尼半导体解决方案公司宣布共同成立名为Advanced Vision Solutions的合资企业，目标是为制造业自动化提供AI视觉传感器解决方案。该企业计划于2026年10月开始运营，标志着日本两大工业巨头在AI工业视觉领域的深度合作将进一步改变全球智能制造格局。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3906186581775492"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "建筑机器人公司Gritt融资3400万美元，用AI自动化光伏电站建设",
+                "summary": "建筑机器人初创公司Gritt脱离隐身模式，宣布获得3400万美元融资，计划用AI技术自动化建筑工地上最具挑战性的任务，并首先聚焦光伏电站建设。该公司瞄准了劳动力短缺和成本上升的建筑行业痛点，AI+机器人在基建领域的落地前景值得持续关注。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/21/gritt-exits-stealth-with-34-million-for-robots-to-build-solar-plants-then-everything-else/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "Deezer报告AI生成内容已占日均上传量50%以上",
+                "summary": "音乐流媒体平台Deezer披露，2026年6月平台日均上传量中超过50%为AI生成内容，每天约9万首AI生成曲目被上传。这一数据揭示了AI音乐生成的爆发式增长，也给版权管理和内容审核带来巨大挑战。对于音乐行业而言，AI生成内容的泛滥正在从根本上动摇传统音乐产业的商业模式。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/21/music-streamer-deezer-says-more-than-50-of-daily-uploads-are-ai-generated/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Jack Dorsey推出Buzz挑战Slack，主打人与AI agent同框协作",
+                "summary": "Jack Dorsey推出名为Buzz的工作场所群聊平台，核心特性是将人类与其AI agent放在同一对话中进行协作，直接对标Slack。该平台试图重新定义工作通讯的范式，将AI agent真正融入日常工作流程。考虑到Dorsey在社交媒体领域的成功经验，Buzz的入场将给企业协作软件市场带来新的变数。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/21/jack-dorsey-is-taking-on-slack-with-buzz-a-group-chat-platform-for-teams-and-their-ai-agents/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "数据中心电力消耗预计到2035年增长四倍",
+                "summary": "新报告预测，到2033年新建的数据中心消耗的电力可能相当于印度全国的用电量，整体电力需求到2035年将增长四倍。AI算力需求的爆发式增长正在引发前所未有的能源挑战，这一趋势将对AI行业发展路径、选址策略和能源政策产生深远影响。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/21/data-centers-expected-to-use-4x-more-electricity-by-2035/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "黄仁勋访日达成多项合作，覆盖日本全科技生态",
+                "summary": "英伟达CEO黄仁勋访问东京期间，与日本整个科技生态系统达成了涵盖AI和半导体的多项合作协议。这些合作将加速日本在AI基础设施、超级计算和半导体制造领域的布局。黄仁勋此行表明英伟达正将日本作为亚太AI市场的重要战略支点。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/19/what-to-watch-for-after-jensen-huangs-japan-visit/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "中国AI模型崛起令美国政府内部产生分歧",
+                "summary": "随着中国AI模型能力的快速提升，美国政府内部在如何应对中国AI竞争问题上出现明显分歧。部分官员主张强硬制裁，部分则呼吁理性评估。这场政策辩论的结果将直接影响下一阶段中美AI博弈的走向，也将决定全球AI治理的基本框架。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/07/20/1140675/chinas-ai-models-have-trumps-ai-world-at-war-with-itself/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "索尼音乐起诉AI音乐生成器Udio侵权，涉及3万首歌曲",
+                "summary": "索尼音乐娱乐对AI音乐生成器Udio提起新的版权侵权诉讼，指控其侵犯了约3万首歌曲的版权。这是继此前诉讼基础上的进一步升级，显示出传统音乐产业对AI音乐生成的强硬反击态度。此案结果将对AI音乐生成行业的版权合规模式产生重要示范效应。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/968375/sony-udio-lawsuit-songs-ai-copyright"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Reddit考虑禁止谷歌使用其内容训练AI",
+                "summary": "市场消息显示，Reddit正在考虑阻止谷歌使用其内容进行AI训练分析。这一决策反映了内容平台对AI数据使用日益谨慎的态度，也预示着AI训练数据的获取将面临更严格的授权限制。对于依赖网络数据训练AI模型的厂商而言，数据源的获取成本和合规风险正在显著上升。",
+                "source": "36氪 / 新浪财经",
+                "url": "https://36kr.com/newsflashes/3906182715282822"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "54%企业已发生AI agent安全事件，多数仍在共享凭证",
+                "summary": "针对107家企业的调研显示，AI agent正在被赋予对系统和数据的真实访问权限，但控制措施未能跟上。54%的企业已经历过AI agent相关安全事件，而大多数企业仍在允许agent共享凭证。这份报告揭示了企业AI部署中的严重安全缺口，AI agent的安全治理已刻不容缓。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/ai/the-agent-security-gap-54-of-enterprises-have-already-had-an-ai-agent-incident-and-most-still-let-agents-share-credentials"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "企业AI组织面临信任危机而非检索问题，多数仍在构建修复方案",
+                "summary": "针对101家企业的调研发现，企业AI组织面临的核心问题是信任问题而非检索问题——AI系统输出的可信度和一致性尚未得到验证。尽管如此，大多数企业仍在加速构建AI基础设施，呈现出\"先建设再验证\"的危险倾向。这一\"AI信任赤字\"将成为企业AI规模化部署的主要障碍。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/ai/the-ai-context-gap-enterprise-ai-organizations-have-a-trust-problem-not-a-retrieval-problem-and-most-are-still-building-the-fix"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "企业AI agent编排正快速向模型提供商平台集中，Anthropic Claude领先",
+                "summary": "针对101家企业的调研显示，AI agent编排正在向模型提供商平台快速集中，Anthropic的Claude在agent编排领域占据领先地位。平台整合趋势加速，但大多数企业仍在将简单的聊天机器人误称为\"agent\"。这一现状表明，真正的AI agent落地仍处于早期阶段，行业标准尚未形成。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/ai/agentic-orchestration-enterprise-ai-organizations-have-a-deployment-problem-not-a-platform-problem-and-most-are-calling-chatbots-agents"
+            }
+        ]
+    },
+    {
         "date": "2026-07-21",
         "items": [
             {
@@ -3326,151 +3471,6 @@ const AI_NEWS_DATA = [
                 "summary": "在美国纽约第12选区地方选举中，企业AI超级政治行动委员会(PAC)投入了2700万美元用于影响选举结果，创下AI行业政治游说的新纪录。这揭示了AI巨头正在通过政治献金深度介入公共政策制定，AI行业的监管博弈已从国会走廊进入选战前线。",
                 "source": "The Verge AI",
                 "url": "https://www.theverge.com/policy/954970/ai-super-pacs-alex-bores-new-york-12th-district"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-22",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "诺贝尔奖得主约翰·江珀离开DeepMind加盟Anthropic，AI人才战升级",
-                "summary": "AlphaFold缔造者、诺贝尔化学奖得主约翰·江珀（John Jumper）宣布离开Google DeepMind，加入竞争对手Anthropic。这已是近几个月来第三位离开谷歌AI团队投奔Anthropic的重量级人物。江珀的离开对DeepMind是重大打击，其主导的AlphaFold项目被视为近十年最具影响力的科学突破之一。对行业而言，头部科学家的流向往往预示着技术重心的迁移，Anthropic正在系统性地补强基础研究能力。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "特朗普政府封禁Anthropic最新模型，Claude史诗级危机震荡AI行业",
-                "summary": "美国政府上周五强制Anthropic下架Fable 5和Mythos两款最新模型，成为AI行业有史以来最严厉的监管行动。Anthropic随后全力游说试图让模型重新上线，但截至目前政府尚未给出明确解释。此次封禁反而让Anthropic在社交媒体上获得了前所未有的品牌曝光，有观点认为禁令意外成了\"免费营销\"。对从业者而言，这标志着政府对前沿模型的监管已从呼吁变为实质性干预。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/951703/anthropic-shutdown-export-controls"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI推理独角兽Baseten正融资15亿美元，估值或达130亿美元",
-                "summary": "据TechCrunch报道，AI推理基础设施公司Baseten在上一轮大额融资后仅数月，正在洽谈新一轮15亿美元融资，估值达130亿美元。报道称其为\"推理淘金热\"的典型受益者。随着大模型部署需求爆发，推理侧（即模型实际运行阶段）的算力需求正成为下一个资本密集战场。对投资者而言，推理层的高估值融资意味着行业泡沫正在向应用层蔓延。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "iOS 27将带来Siri在内的一系列实用AI功能，苹果AI战略全面落地",
-                "summary": "WWDC上Siri的AI大改版抢占了头条，但iOS 27中真正实用的AI功能分布在多个系统应用里。苹果正在将生成式AI能力下沉到日历、照片、备忘录等日常工具中，试图让AI\"无感\"融入用户工作流。这标志着苹果从\"功能演示\"转向\"实用落地\"的策略调整。值得关注的是，这些功能的本地化程度和隐私保护方式将成为与云端AI竞争的核心差异点。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI冲刺IPO前密集招兵买马，Transformer共发明人Noam Shazeer加入",
-                "summary": "OpenAI正在IPO前大规模扩充高管团队，Transformer架构的共发明人Noam Shazeer从前东家Google DeepMind跳槽而来，同时前特朗普政府官员也加入担任政策顾问。Shazeer是Google最资深的AI研究员之一，其离开被视为Google人才流失的又一标志性事件。IPO压力下，OpenAI正在同时应对技术竞争与监管审查的双重挑战。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/openai-is-bringing-on-some-big-guns-in-the-lead-up-to-its-ipo/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI云平台Railway融资1亿美元，剑指AWS统治地位",
-                "summary": "Railway宣布获得1亿美元融资，挑战AWS在云计算领域的主导地位。这家旧金山公司声称已积累200万开发者用户，且从未花一分钱在获客上。Railway主打\"AI原生\"基础设施概念，瞄准被传统云厂商高成本困扰的AI公司。对AWS等巨头而言，垂直化的AI云平台正在蚕食其利润最丰厚的AI工作负载市场。",
-                "source": "VentureBeat AI",
-                "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Subquadratic宣称突破LLM推理瓶颈，速度提升100倍引争议",
-                "summary": "总部位于迈阿密的AI创业公司Subquadratic在上月走出隐匿模式后，声称已解决制约大语言模型发展的核心瓶颈问题，可实现推理速度100倍的提升。如果该 claim 经独立验证成立，将对整个AI行业产生深远影响。但鉴于该公司成立时间短且缺乏同行评审，业界普遍持谨慎观望态度。内存与计算效率的突破，将是2026年AI基础设施层最关键的竞争维度。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/06/19/1139313/a-startup-claims-it-broke-through-a-bottleneck-thats-holding-back-llms/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Midjourney从图像生成拓展至医疗超声AI诊断领域",
-                "summary": "以AI生成艺术闻名的Midjourney正在低调拓展医疗成像领域，首次尝试用其图像生成技术分析超声扫描数据。公司发布的成像幻影扫描图显示，AI已能清晰分离超声影像中的不同结构。这一动向表明，头部生成式AI公司正在寻求从消费娱乐向专业医疗的高价值场景迁移，但监管合规和数据安全将是最大障碍。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/952011/midjourney-medical-ai-ultrasound-scan"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Reliance计划在印度全境铺开AI服务，覆盖超5亿用户",
-                "summary": "印度首富穆克什·安巴尼执掌的Reliance集团正在将AI能力深度嵌入其电信服务生态，目标是让超5亿印度用户在使用通话、应用和智能家居时均能接触到AI功能。安巴尼在公开演讲中表示，希望AI\"存在于每一次通话、每一个应用、每一个家庭\"。这意味着全球最大规模之一的AI消费级应用即将在印度落地，将深刻改变新兴市场AI普及的路径。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/19/billionaire-ambani-wants-ai-in-every-call-app-and-home/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Elastic收购AI代码审查创企Deductive AI，交易金额最高8500万美元",
-                "summary": "搜索和分析数据库公司Elastic已同意收购成立仅三年的初创公司Deductive AI，收购价最高达8500万美元。Deductive AI专注于用AI自动发现并修复软件代码中的bug，契合DevOps领域的自动化趋势。此举显示，AI代码工具正在从通用IDE插件向企业级平台整合，DevOps赛道正成为AI infra并购的热门标的。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/source-elastic-agrees-to-buy-crv-backed-deductiveai-for-up-to-85m/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Adobe全面推AI助手功能，Photoshop Premiere新增对话式编辑能力",
-                "summary": "Adobe宣布在Photoshop、Premiere Pro和Illustrator等Creative Cloud核心应用中全面引入对话式AI助手功能，用户可通过自然语言指令完成修图、剪辑等操作。同时新版Firefly AI工作室新增\"记忆\"功能，可记住用户创建的角色、物体和背景风格，方便在不同项目中复用。对专业创作者而言，这意味着工作流自动化的实质性升级而非噱头。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/tech/952099/adobe-ai-assistants-photoshop-premiere-illustrator-beta-launch"
-            },
-            {
-                "tag": "技术突破",
-                "title": "脑机接口临床试验密集展开，首批植入者实现高难度交互",
-                "summary": "脑机接口（BCI）领域本周迎来重要进展——ALS患者Casey Harrell成为Synchron植入物的\"首位超级用户\"，能够通过脑信号高准度控制电脑进行复杂操作。与此同时，Precision Neuroscience等多家公司的BCI临床试验也在加速推进。AI算法在脑信号解码中的角色日益关键，神经科技与生成式AI的交叉正开辟全新的计算范式。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/06/19/1139270/brain-computer-interface-trials-are-taking-off/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Google 25年来首次重塑搜索框界面，AI整合进入核心入口",
-                "summary": "Google发布了25年来首次重大搜索框改版，新界面将Gemini AI深度整合到搜索体验的核心位置。这一改动的影响远超视觉层面——它标志着Google正式将\"AI优先\"从口号变为产品战略底层逻辑。搜索框的重新设计意味着用户查询与AI响应之间的边界正在消失，对SEO行业和内容生态将产生深远影响。",
-                "source": "VentureBeat AI",
-                "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
-            },
-            {
-                "tag": "行业格局",
-                "title": "亚马逊AWS计划对外销售AI芯片，目标市场规模达500亿美元",
-                "summary": "AWS正在与外部数据中心洽谈销售自研AI芯片的事宜，CEO安迪·贾西表示这代表了高达500亿美元的市场机会。此举将使亚马逊在AI芯片领域直接挑战Nvidia的主导地位，同时为AWS客户提供更具性价比的训练和推理选项。芯片自研+对外销售模式一旦跑通，将重塑AI基础设施的成本结构。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/amazon-hopes-to-challenge-nvidia-more-directly-by-selling-its-ai-chips/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Snap拆分AI视频团队为独立公司Dotmo，以控制烧钱速度",
-                "summary": "Snapchat母公司Snap宣布将内部AI视频团队分拆为独立公司Dotmo，该实体由即将离职的Snap员工组成。拆分的主要原因是AI视频开发和运营成本过高，Snap希望在不影响主业的情况下让AI业务独立融资。此举折射出大公司AI创新与财务可持续性之间的结构性矛盾，也预示更多科技巨头将采用\"分拆求生\"策略。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/snap-spins-off-ai-video-team-into-new-company-dotmo-due-to-costs/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI高管再次出走，Barret Zoph入职仅五个月后离职",
-                "summary": "OpenAI企业AI销售负责人Barret Zoph在回归公司仅五个月后再次离职，这是近半年来OpenAI高管的最新一起人事变动。Zoph曾在2024年短暂离开OpenAI，此次回归后负责企业级AI产品商业化。管理层持续动荡与OpenAI的IPO冲刺形成鲜明对比，治理结构稳定性将成为投资者评估其长期价值的关键变量。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/952837/barret-zoph-openai-thinking-machines-lab"
-            },
-            {
-                "tag": "政策监管",
-                "title": "美国监管机构要求电网为AI数据中心开快速通道",
-                "summary": "美国联邦能源监管委员会（FERC）指示电网运营商为数据中心建立电力并网快速通道，以满足AI产业爆发式增长的能源需求。但该指令未涉及电力供应不足的根本性问题，被批评为\"只给绿灯不解决堵车\"。AI数据中心的能源消耗已引发环保组织和地方政府的不满，能源瓶颈正成为制约AI扩张的隐性天花板。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/18/ai-data-centers-just-got-a-government-mandated-fast-lane-to-the-grid/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "皮尤调查：63%美国人认为AI发展过快，近半数对AI约会持负面态度",
-                "summary": "皮尤研究中心最新调查显示，63%的美国成年人认为AI正在\"过快\"发展，同时49%的人表示至少偶尔使用过聊天机器人。在婚恋场景中，47%的单身人士对AI介入约会持负面态度，但相当比例的用户接受AI辅助撰写个人资料。这组数据揭示了AI渗透率与公众接受度之间的持续割裂，对面向消费者的AI产品设计具有重要参考价值。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/951653/pew-research-ai-chatbot-usage-advancing-too-quickly"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "The Atlantic建立可搜索音乐数据库，揭示AI训练数据版权黑洞",
-                "summary": "大西洋月刊记者Alex Reisner构建了一个可搜索的音乐数据集，揭示了至少四个被用于训练AI模型的音乐数据集正在被大规模使用，涵盖无数艺术家的作品。这一发现将为针对AI公司的版权诉讼提供关键证据，也将推动监管部门对AI训练数据透明度提出更严格要求。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/953183/the-atlantic-searchable-database-music-ai-training-data"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Claude Code月费200美元，AI编程工具价格战悄然开打",
-                "summary": "Anthropic的AI编程工具Claude Code月费高达200美元，而竞品Goose提供相同功能完全免费，引发行业对AI工具定价策略的广泛讨论。高定价代表Anthropic走高端企业路线，免费策略则是以用户规模换取数据飞轮。对开发者而言，这场竞争将带来更多低价或免费的选择，但也意味着市场正在快速整合。",
-                "source": "VentureBeat AI",
-                "url": "https://venturebeat.com/infrastructure/claude-code-costs-up-to-usd200-a-month-goose-does-the-same-thing-for-free"
             }
         ]
     }
