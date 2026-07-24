@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-24",
+        "items": [
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI ChatGPT Health向所有美国用户开放，支持健康数据同步",
+                "summary": "OpenAI于7月23日宣布向全体美国用户开放ChatGPT Health功能，用户可将Apple Health、Fitbit、MyFitnessPal等健康数据接入AI助手，实现健康咨询与数据联动。这是大模型在医疗健康场景规模落地的关键一步。对医疗AI赛道而言，入口级产品的普及将加速健康数据价值释放，但也意味着合规压力同步增大。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/23/openai-makes-chatgpt-health-available-to-all-u-s-users/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国国会提出AI Kill Switch Act：要求AI系统必须配备关闭开关",
+                "summary": "美国众议员刘云平和Moran于7月23日联合提出AI Kill Switch Act法案，要求所有联邦政府使用的AI系统必须内置可随时关闭的\"终止开关\"。该立法直接源于OpenAI此前Hugging Face攻击事件引发的安全担忧。法案若通过，将对所有AI产品进入联邦采购体系设立强制安全门槛，监管合规成本将显著上升。",
+                "source": "Hacker News / lieu.house.gov",
+                "url": "https://lieu.house.gov/media-center/press-releases/reps-lieu-and-moran-introduce-bill-require-kill-switch-ai-systems-can"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Nvidia发布40亿参数世界模型专为机器人设计，Physical AI再下一城",
+                "summary": "英伟达本周发布一款40亿参数的世界模型（World Model），专门用于机器人物理交互训练与仿真。该模型可在虚拟环境中预测机器人动作的物理后果，显著减少现实世界的试错成本。随着具身智能成为AI下一阶段竞争焦点，掌握世界模型底层能力将成为机器人厂商的核心壁垒。",
+                "source": "Hacker News / topicqueue.substack.com",
+                "url": "https://topicqueue.substack.com/p/nvidia-puts-a-4b-world-model-on-the"
+            },
+            {
+                "tag": "行业格局",
+                "title": "腾讯混元多模态理解负责人胡瀚离职创业，原团队或转向世界模型",
+                "summary": "据《智能涌现》7月23日独家报道，腾讯混元多模态理解负责人胡瀚已提出离职申请。胡瀚曾任微软亚洲研究院视觉计算组首席研究员，2025年初加入腾讯后主导视觉大模型研究，其团队后续或聚焦世界模型方向。高管级别技术人才出走创业往往预示新的创业方向已到成熟节点，世界模型赛道竞争将进一步加剧。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3907934819521670"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "AMD发布Helios AI机架级系统正面挑战英伟达，年内开始交付",
+                "summary": "AMD于7月23日正式发布Helios AI机架级系统，这是一款专为大规模AI训练和推理设计的端到端解决方案，直接对标英伟达的DGX产品线。Helios将于今年晚些时候向客户交付，标志着AMD从单一芯片供应商向系统级AI方案提供商转型。算力市场的竞争格局正在从\"GPU选英伟达\"向多元化格局演变。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/23/amd-takes-on-nvidia-with-its-helios-ai-rack-scale-system/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "澳大利亚出台AI监管新规：要求AI公司产出能源必须高于消耗、停止内容\"盗取\"",
+                "summary": "澳大利亚政府于7月15日宣布两项AI监管新规：其一，AI公司必须证明其AI系统产生的价值大于消耗的能源；其二，禁止未经授权抓取内容训练AI模型。此前已有多个行业协会发出类似倡议，但政府层面的强制要求尚属首例。澳大利亚或将成为全球第一个以\"能源产出比\"作为AI监管KPI的国家。",
+                "source": "Hacker News / The Register",
+                "url": "https://www.theregister.com/ai-and-ml/2026/07/15/australia-demands-ai-companies-must-produce-more-energy-than-they-consume-stop-theft-of-content/5271535"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Oracle AI战略受挫：裁员2.1万人，AI赌注未达预期",
+                "summary": "据以色列《耶路撒冷邮报》7月23日报道，Oracle在AI领域大规模押注后未能兑现预期，已裁减约21000名员工。此次裁员正值Oracle与微软、亚马逊在医疗AI和云计算AI市场的竞争白热化阶段。企业级AI落地难度被系统性低估，\"AI替代人工\"的故事在B端市场仍面临严峻现实检验。",
+                "source": "Hacker News / jpost.com",
+                "url": "https://www.jpost.com/business-and-innovation/tech-and-start-ups/article-903442"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "美国能源部启动50亿美元\"创世纪计划\"，专项支持AI驱动科学研究",
+                "summary": "美国能源部于7月23日正式启动\"Genesis Mission\"计划，承诺五年内投入50亿美元支持AI在科学研究中的应用，重点覆盖气候建模、药物研发和新材料发现等领域。DOE还宣布由SLAC国家实验室主导AI电池回收金属提取项目。该规模的国家级AI科研投入表明，美国已将AI-Enabled Science视为战略级竞争方向。",
+                "source": "Hacker News / nextplatform.com / SLAC",
+                "url": "https://www.nextplatform.com/hpc/2026/07/23/doe-fires-the-5-billion-starter-gun-for-its-ai-targeted-genesis-mission/5277061"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AegisAI完成3600万美元融资，用AI对抗精准钓鱼攻击",
+                "summary": "由前Google安全高管创立的AegisAI于7月23日宣布完成3600万美元融资。该公司开发了一套AI代理系统，能够像人类一样实时分析每条消息，识别AI驱动的高精度鱼叉式钓鱼攻击。随着大模型降低网络攻击门槛，企业安全市场对AI防御工具的需求正在进入爆发期。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/23/aegisai-founded-by-former-google-security-execs-lands-36m-to-stop-ai-driven-spear-phishing/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "DeepSeek 2026年已完成65%增资，梁文锋：唯一主线是通往AGI",
+                "summary": "据36氪7月23日报道，DeepSeek创始人梁文锋在一场4小时投资人闭门会议上明确表示\"DeepSeek只有一条主线，即通往通用人工智能（AGI）\"。消息人士透露，DeepSeek 2026年已完成65%的大幅增资。作为国内大模型头部玩家，DeepSeek的开源策略和AGI叙事正在重塑国内AI创投格局。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3908051015488640"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic升级Claude语音模式，模型能力大幅提升可代写邮件",
+                "summary": "Anthropic于7月23日宣布对Claude语音模式进行重大升级，新一代语音模型支持用户直接通过语音指令完成会议重新安排、邮件起草等复杂任务。此次更新意味着Claude在多模态实时交互能力上进一步逼近GPT-4o水平，AI语音助手的企业级应用场景正在快速成熟。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/23/anthropic-updates-claude-voice-mode-with-more-capable-models/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "谷歌正研发超高效AI芯片专供Gemini，预计2026年面世",
+                "summary": "据The Daily Compute 7月23日报道，谷歌正在开发一款专为Gemini大模型打造的超高效定制AI芯片，旨在降低推理成本并提升响应速度。谷歌此前已拥有TPU系列自研芯片，此番新芯片若量产，将进一步强化其在AI基础设施层面的垂直整合能力，对第三方芯片供应商形成更大竞争压力。",
+                "source": "Hacker News / thedailycompute.beehiiv.com",
+                "url": "https://thedailycompute.beehiiv.com/p/google-reportedly-working-on-ultra-efficient-ai-chip-for-gemini"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Runway推出AI模型路由器应对生成式媒体竞争加剧",
+                "summary": "Runway于7月23日发布Media Router工具，可根据用户请求自动选择最优的图像、视频或音频生成模型。这是生成式媒体赛道进入红海后，各厂商寻求差异化体验的重要路径。模型路由能力将成为内容创作平台的核心基础设施，也预示着\"模型中立层\"的商业机会正在浮现。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/23/runway-bets-on-ai-model-routing-as-generative-media-gets-crowded/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "马克·扎克伯格发起AI乐观主义宣传攻势，Meta发布争议性广告",
+                "summary": "Meta CEO马克·扎克伯格于7月23日宣布发起\"AI乐观主义\"宣传Campaign，同步上线一支以大卫·鲍伊歌曲《Five Years》为配乐的AI主题广告。值得注意的是，该歌曲原意为人类获知末日将至的挽歌，与Meta传递的乐观信息形成强烈反差，在社交媒体引发广泛争议。此举被视为Meta为缓解监管压力、塑造AI\"亲民\"形象的战略公关。",
+                "source": "Hacker News / TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/23/meta-launched-a-new-ai-optimism-ad-set-to-a-song-about-human-extinction/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Intel受益AI需求实现近15年来最快营收增长",
+                "summary": "英特尔于7月23日发布2026年第二季度财报，AI相关业务驱动营收实现近15年来最快增速，股价随即大幅上涨。尽管在AI GPU市场面临英伟达和AMD的激烈竞争，英特尔通过Xeon处理器和Gaudi AI加速器的组合在企业AI推理市场找到了增量空间。芯片行业复苏信号进一步确认。",
+                "source": "Hacker News / CNBC",
+                "url": "https://www.cnbc.com/2026/07/23/intel-intc-earnings-report-q2-2026.html"
+            },
+            {
+                "tag": "技术突破",
+                "title": "AI安全护栏正在妨碍进攻性网络安全研究，业内呼吁调整",
+                "summary": "TechCrunch于7月23日发布深度报道，多位网络安全研究人员反映，当前AI系统的安全护栏正在系统性阻碍他们的漏洞挖掘和红队测试工作。AI模型对特定提示词的过滤导致安全研究员无法有效测试系统的抗攻击能力。专家警告，过度保守的护栏设计可能反而削弱AI安全研究的进展，对整体AI系统安全性构成隐患。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/23/how-ai-guardrails-are-impeding-the-work-of-offensive-cybersecurity-researchers/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI内部研究员批露：中国开源权重模型正快速缩小差距",
+                "summary": "OpenAI战略研究总监Dean Ball在社交媒体上发表评论指出，以DeepSeek、Qwen为代表的中国开源权重模型正在快速缩小与闭源模型的性能差距，部分任务已实现追平。他警告OpenAI需要认真对待开源生态的竞争压力。该观点反映了当前大模型竞争格局正在从\"美国领先\"向\"中美双轨\"演变的结构性变化。",
+                "source": "Hacker News / Twitter",
+                "url": "https://twitter.com/deanwball/status/2078133895766114412"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "摄影师诉AI生成图片版权案败诉，AI创作版权边界持续模糊",
+                "summary": "美国一名狗摄影师起诉一款AI工具侵权，因后者生成的漫画版狗狗图片被指抄袭原作。法院于7月22日判决摄影师败诉，认定AI生成内容与原照片不构成足够实质性相似。随着AI生成内容在商业场景大规模应用，此类版权判例将深刻影响AI创作工具的法律风险评估和商业模式演进。",
+                "source": "Hacker News / petapixel.com",
+                "url": "https://petapixel.com/2026/07/22/dog-photographer-loses-copyright-case-over-ai-generated-comic-version-of-her-image/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "爱奇艺发布\"Q+\"创作者平台，六大服务体系全面赋能AIGC创作者",
+                "summary": "7月23日，爱奇艺正式发布创作者平台品牌\"+你，更快乐\"并上线入口\"Q+\"，推出六大服务体系全面支持AIGC创作者。目前\"Q+\"已覆盖爱奇艺App、网页版及爱奇艺号全端。头部视频平台系统化布局AIGC创作生态，意味着AI生成内容在长视频领域的商业化路径正在从概念验证走向规模化运营。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3909012732466304"
+            },
+            {
+                "tag": "技术突破",
+                "title": "新研究证明AI在非英语语言中表现更差，多语言大模型能力鸿沟显著",
+                "summary": "一项系统性研究揭示，当前主流大模型在非英语语言任务中的表现显著落后于英语，即使在同一语系内部也存在明显的能力梯度。数据显示，部分语言的推理准确率相差超过30个百分点。研究指出，这一差距源于训练数据分布不均，而非模型架构本身。对出海AI产品而言，语言本地化优化将成为差异化竞争的重要维度。",
+                "source": "Hacker News / artifipedia.com",
+                "url": "https://artifipedia.com/blog/multilingual-ai"
+            }
+        ]
+    },
+    {
         "date": "2026-07-22",
         "items": [
             {
@@ -3326,151 +3471,6 @@ const AI_NEWS_DATA = [
                 "summary": "开发者推出smolfs，为AI Agent提供跨平台记忆同步能力。用户可在笔记本和云端AI Agent之间无缝同步记忆文件，解决了多终端AI Agent协作的碎片化问题。随着AI Agent从单点工具走向工作流编排，持久化和状态管理正成为新的基础设施需求。",
                 "source": "Hacker News",
                 "url": "https://github.com/CelestoAI/smolfs"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-24",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "诺贝尔奖得主John Jumper离开DeepMind加入Anthropic",
-                "summary": "AlphaFold核心发明人、2024年诺贝尔化学奖得主John Jumper已离开谷歌DeepMind，加入竞争对手Anthropic。他是DeepMind最重要的基础研究科学家之一，其离职意味着Anthropic在蛋白质结构预测和生命科学AI领域获得了顶尖人才。该消息或引发大模型竞争格局的新一轮洗牌。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/20/nobel-laureate-john-jumper-is-leaving-deepmind-for-rival-anthropic/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic为Slack推出Claude Tag：打造企业级常驻AI队友",
-                "summary": "Anthropic在Slack中推出全新Claude Tag功能，为每位用户分配一个持续在线的AI队友，不仅处理日常生产力任务，还持续学习企业内部的沟通语境和工作流程。这意味着AI正从工具角色转向\"协作者\"角色，企业软件生态的AI化深度进一步加剧。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/23/anthropics-claude-tag-is-learning-your-company-one-slack-message-at-a-time/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "孙正义宣布软银计划收购ABB机器人业务，欲成全球第一",
-                "summary": "软银集团CEO孙正义在6月24日股东大会上表示，软银将通过整合各垂直领域顶级机器人企业成为\"压倒性世界第一的机器人公司\"，并计划于2026年完成对瑞士工业巨头ABB旗下机器人业务的收购。此举将使软银一跃成为全球工业机器人领域的核心玩家。",
-                "source": "36氪 / 界面",
-                "url": "https://36kr.com/newsflashes/3866608861139969"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "软银旗下Arm将进军芯片制造，孙正义称仍有10倍以上成长空间",
-                "summary": "孙正义在6月24日股东大会上宣布，旗下Arm将从芯片设计者向芯片制造者转型，并亲自参与制造环节。他同时透露软银持有英特尔约3000亿日元股份，并预判\"AI时代将以CPU为中心\"。Arm的制造化转型将重塑芯片产业分工逻辑。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3866599242257416"
-            },
-            {
-                "tag": "行业格局",
-                "title": "韩国三星与SK海力士新半导体集群规划进入收尾阶段",
-                "summary": "韩国总统办公室政策室长金容范6月24日表示，三星电子和SK海力士建立新半导体集群的计划已进入最后讨论阶段，将于近期正式公布。由于AI行业对芯片需求呈\"爆发式增长\"，两家公司现有龙仁半导体集群建设正在加速推进，韩国存储芯片双雄正全面扩产应对。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3866532521825286"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI芯片公司Groq确认完成6.5亿美元融资",
-                "summary": "AI推理芯片公司Groq正式确认完成6.5亿美元新一轮融资，并在此前英伟达一笔200亿美元\"非收购式招聘\"交易后完成人员重组和重新招聘。Groq正加大力度押注其neo-cloud推理业务，在AI芯片领域与英伟达形成差异化竞争。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/22/ai-chipmaker-groq-confirms-650m-raise-re-staffs-after-nvidias-20b-not-acqui-hire-deal/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "SpaceX与Reflection AI签署算力协议，每月费用达1.5亿美元",
-                "summary": "开源AI实验室Reflection AI与SpaceX签署一项重大算力协议，自2026年7月1日起至2029年，Reflection AI每月向SpaceX支付1.5亿美元，以优先获取英伟达最新GPU算力资源。这表明SpaceX正深度介入AI基础设施竞争，算力军备竞赛持续升温。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/22/spacex-inks-compute-deal-with-reflection-ai-an-open-source-ai-lab/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "谷歌DeepMind与A24达成7500万美元AI电影合作协议",
-                "summary": "谷歌DeepMind与好莱坞独立电影公司A24宣布建立战略合作，共同开发AI电影制作工具，合作金额达7500万美元。这是好莱坞与硅谷AI合作的最大单笔交易，标志着AI正在系统性渗透电影工业的核心创作环节。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/22/google-deepmind-bets-75m-on-ais-future-in-hollywood-with-a24-deal/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "iOS 27将推出Siri之外的多项AI功能更新",
-                "summary": "苹果在WWDC上公布的iOS 27除了Siri的AI大改版外，还包含一系列实用AI功能更新，涵盖照片处理、文字编辑和系统智能化等场景。这表明苹果正以\"实用优先\"策略在iPhone上推进AI功能落地，而非追求大模型叙事。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/21/beyond-siri-here-are-the-practical-ai-features-coming-to-your-iphone-in-ios-27/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "亚马逊Alexa+在印度开启测试支持印地语",
-                "summary": "亚马逊正在印度市场测试新版对话式AI助手Alexa+，并开始邀请印度用户体验印地语支持功能。此举是Alexa+首次进入美国以外市场，标志着亚马逊正加速将AI助手推向全球最大英语以外市场之一。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/22/amazon-is-testing-alexa-in-india-with-hindi-support/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "OpenAI推出开源漏洞修复计划，用AI赋能开源社区安全",
-                "summary": "OpenAI宣布推出新计划，利用AI技术帮助开源社区更好地发现和修复安全漏洞。在开源软件安全事件频发的背景下，此举既是OpenAI履行安全承诺的体现，也是在安全领域建立开源生态依赖的重要布局。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/22/openai-launches-new-initiative-to-help-find-and-patch-open-source-bugs/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "好莱坞向OpenAI低头，多家制片公司放弃抵制AI电影",
-                "summary": "Netflix、A24、Focus Features和Warner Bros.等主流制片公司据报道均决定放弃对OpenAI电影项目《Artificial》的抵制。这标志着好莱坞在内容创作中系统性引入AI工具的禁忌已被打破，AI与影视行业的合作进入实质阶段。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/entertainment/954899/luca-guadagnino-artificial-sam-altman-amazon-a24-neon-mubi-chatgpt"
-            },
-            {
-                "tag": "行业格局",
-                "title": "2026年科技公司大规模裁员中AI成主要引述原因",
-                "summary": "2026年以来，多家大型科技公司以AI为由宣布大规模裁员，科技行业正经历结构性岗位重构。这既是企业用AI提升效率的体现，也引发了对AI替代白领工作速度的广泛担忧，监管层面或将面临更大压力。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/22/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Agentic AI进入\"多循环\"时代，AI智能体持续后台协作成趋势",
-                "summary": "AI行业正在向\"loopy\"模式演进，即多个AI智能体被授权在后台持续不间断地协同工作，将Agentic AI推向新阶段。这种多循环自主协作模式若成熟，将大幅提升AI系统的复杂任务处理能力，但也带来更高的安全风险。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/22/the-ai-world-is-getting-loopy/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "软银机器人实体AI工厂已开始投产机器人",
-                "summary": "软银集团CEO孙正义宣布，软银的机器人实体人工智能工厂已正式启动机器人生产。这标志着软银从投资型机器人公司向自产型机器人制造商的转型进入实质阶段，其AI驱动的机器人制造能力开始兑现。",
-                "source": "36氪 / 新浪财经",
-                "url": "https://36kr.com/newsflashes/3866570257831175"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Nvidia推出数据中心液冷新设计，以发热换更低用水量",
-                "summary": "Nvidia发布全新Rubin架构数据中心设计，采用液冷方案减少数据中心内部用水量，但整体系统运行温度更高。该方案回应了公众对数据中心高耗水问题的批评，但批评者指出这并未从根本上解决AI带来的水资源压力。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/06/22/nvidia-wants-to-cut-data-center-water-use-but-thats-not-the-same-as-fixing-ais-water-problem/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "汇光创新完成数千万元融资，专注机器人视触觉传感器",
-                "summary": "机器人触觉传感器与触觉数据方案提供商汇光创新连续完成数千万元种子轮及天使轮融资，峰瑞资本领投。资金将主要用于视触觉传感器产品研发及工程化。触觉感知是机器人从\"看得见\"到\"摸得准\"的关键环节，国产替代空间广阔。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3866521223009542"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "港股智谱涨幅扩大至13%，总市值重回1万亿港元",
-                "summary": "港股大模型概念股智谱股价涨幅扩大至13%，总市值重返1万亿港元。智谱作为国内头部大模型公司，在港股市场获得资金持续追捧，反映出资本市场对国产大模型商业化前景的持续看好。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3866555102614535"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Fika Jobs融资400万美元，用AI面试智能体革新招聘平台",
-                "summary": "瑞典创业公司Fika Jobs宣布获得400万美元融资，专注于构建以视频为核心、AI面试智能体参与全程的招聘平台。AI正在系统性进入人力资源的核心环节——面试评估，这一趋势将大幅降低中高端岗位的招聘成本。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/23/fika-jobs-raises-4m-to-build-a-video-first-hiring-platform-where-ai-agents-interview-candidates/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "美国企业AI超级PAC在地方选举中投入2700万美元引关注",
-                "summary": "在美国纽约第12选区地方选举中，企业AI超级政治行动委员会(PAC)投入了2700万美元用于影响选举结果，创下AI行业政治游说的新纪录。这揭示了AI巨头正在通过政治献金深度介入公共政策制定，AI行业的监管博弈已从国会走廊进入选战前线。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/policy/954970/ai-super-pacs-alex-bores-new-york-12th-district"
             }
         ]
     }
