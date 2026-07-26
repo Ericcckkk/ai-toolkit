@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-26",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "SK集团与英伟达签署超5000亿美元AI基础设施战略合作",
+                "summary": "英伟达与SK集团宣布建立超过5000亿美元的综合合作伙伴关系，涵盖AI工厂建设与下一代内存技术开发。合作旨在满足全球AI计算需求激增，双方已签署意向书正式化协议。这刷新了AI基础设施领域单笔合作规模纪录，SK海力士的HBM与英伟达GPU的深度绑定将重塑AI芯片竞争格局，中国厂商需警惕这一\"超级联盟\"带来的供应链压力。",
+                "source": "36氪 / 新浪财经",
+                "url": "https://36kr.com/newsflashes/3910690882507907"
+            },
+            {
+                "tag": "行业格局",
+                "title": "三星、SK海力士与美国科技巨头达成1375万亿韩元芯片合作",
+                "summary": "韩国总统顾问处透露，三星电子和SK海力士将与美国科技巨头联合推进规模达1375万亿韩元（约合1万亿美元）的芯片合作项目。这一超大规模投资覆盖先进制程芯片制造与AI用高带宽内存（HBM）产能扩张，显示韩国芯片产业正在加速与美国AI生态深度绑定，半导体地缘政治格局将进一步分化。",
+                "source": "36氪 / 新浪财经",
+                "url": "https://36kr.com/newsflashes/3910551543289216"
+            },
+            {
+                "tag": "政策监管",
+                "title": "韩国宣布转型AI原生国家：每人至少一个AI智能体",
+                "summary": "SK集团会长崔泰源在公开场合表示，韩国必须转型为\"AI原生国家\"，目标实现每个人至少拥有一个AI智能体，将韩国打造为全球AI试验场。韩国总统李在明同步承诺推动韩国从产业追赶者蜕变为全球AI领军国家。两大信号叠加韩美芯片巨额合作，意味着韩国已将AI上升为国家战略核心，韩国正从芯片代工强国向AI全产业链玩家跃迁。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3911821420303744"
+            },
+            {
+                "tag": "行业格局",
+                "title": "混元多模态理解负责人胡瀚离职创业，原团队聚焦世界模型",
+                "summary": "据报道，腾讯混元多模态理解负责人胡瀚已离职创业，原团队方向将聚焦世界模型（World Model）。胡瀚是腾讯AI实验室核心技术人员，其离职再次折射大厂AI人才外流与创业潮加速。核心团队转向世界模型方向，也意味着该细分赛道正成为继多模态理解之后的下一个技术兵家必争之地。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3908881985901959"
+            },
+            {
+                "tag": "行业格局",
+                "title": "曾歆勋创立良配科技用AI帮人找对象，徐新领投",
+                "summary": "前月之暗面Kimi AI搜索技术负责人曾歆勋于2025年8月离职创业，创办\"良配科技\"切入AI+婚恋赛道。徐新（今日资本）已入局投资据悉予以支持。曾歆勋离职时放弃的期权价值在其离职后已增长10倍。Kimi核心技术的操盘手下场做垂直应用，标志着AI大厂技术骨干正加速向细分场景渗透，AI婚恋有望成为2026年toC端的新兴场景。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3910880823202948"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "眸深智能完成近亿元Pre-A轮追加融资，聚焦端侧具身大脑",
+                "summary": "复旦教授、前英特尔首席科学家创立的\"眸深智能\"（Motion Brain）完成近亿元Pre-A轮追加融资，投资方包括中国头部物业服务公司、香港财团及多家上市公司组成的产业资本。该公司定位为端侧具身大脑，切入机器人具身智能赛道。具身智能正在从实验室走向商业化，近亿元融资规模在天使轮阶段属较高水位，产业资本入局显示具身智能在物业、商业等场景的落地路径正在被看好。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3911162147640456"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "菲尔兹奖得主雅各布·齐默曼将加入OpenAI",
+                "summary": "菲尔兹奖得主雅各布·齐默曼（Jacob Lurie）将加入OpenAI，这将是数学界最高荣誉得主首次全职进入AI行业。齐默曼此前在普林斯顿高等研究院任职，以代数拓扑和代数几何研究闻名。其加入显示顶级基础科学研究者正被AI领域吸引，OpenAI可能在数学推理与基础理论层面试图取得突破，这一人事动向对AI for Science赛道具有标志性意义。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3910351337821318"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Claude Opus 5正式发布，Anthropic新一代旗舰模型亮相",
+                "summary": "Anthropic发布Claude Opus 5，作为新一代旗舰模型正式亮相。Claude Opus系列向来以长上下文处理与复杂推理能力见长，Opus 5预计在性能指标上刷新行业基准。Anthropic正以\"更安全\"的定位与OpenAI正面竞争，Claude Opus 5的发布将进一步激化基础模型层的竞争，企业用户在模型选型上将面临更复杂的技术与合规权衡。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3910351337821318"
+            },
+            {
+                "tag": "应用落地",
+                "title": "WAIC 2026在上海闭幕，智能体与行业垂直应用成最大看点",
+                "summary": "2026世界人工智能大会于7月17日至20日在上海举行，主题为\"智能伙伴，共创未来\"，在世博、张江、西岸三地四馆展开。本届大会智能体（Agent）成为最热关键词，行业垂直应用案例密度大幅提升，显示中国AI产业正从\"模型能力展示\"加速向\"场景落地交付\"转变。对于AI从业者而言，WAIC 2026传递的核心信号是：2026年的主战场将是Agent与行业Know-How的深度结合，而非单纯模型参数竞争。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3909033052722310"
+            },
+            {
+                "tag": "应用落地",
+                "title": "国家反诈中心App新增AI生成内容一键检测功能",
+                "summary": "国家反诈中心App上线新功能，支持用户一键检测图片、视频中是否存在AI生成痕迹。该功能主要针对深度伪造（Deepfake）等AI诈骗手段，帮助普通用户辨别内容真实性。随着生成式AI泛滥导致诈骗成本骤降，监管层面正以工具化手段介入反诈，这一功能的上线预示着AI生成内容检测将从专业鉴定走向民用普及，相关检测技术赛道竞争将加剧。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3910351337821318"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Prentis AI实验室获Reid Hoffman等支持，正在洽谈1亿美元融资",
+                "summary": "由LinkedIn联合创始人Reid Hoffman和Zynga创始人Mark Pincus联合创立的新AI实验室Prentis正在洽谈1亿美元种子轮融资。该实验室押注AI自动化常规电脑操作将超越编程成为AI最大用例。与传统AI编程工具不同，Prentis聚焦\"AI操作电脑\"的更高层抽象，体现了投资圈对AI从\"写代码\"到\"替人干活\"范式转变的押注，若融资落地将进一步催化Agent工具赛道竞争。",
+                "source": "TechCrunch AI / 36氪",
+                "url": "https://techcrunch.com/2026/07/24/prentis-new-ai-lab-co-founded-by-reid-hoffman-mark-pincus-in-talks-to-raise-100m/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "AI可在数秒内生成候选药物分子，药物发现进入新阶段",
+                "summary": "多项研究显示，AI已能在数秒内完成药物分子设计与候选化合物生成，将传统药物发现周期从数年压缩至数周。然而，文章同时指出，AI生成的药物分子在临床验证阶段仍面临巨大不确定性，从\"设计快\"到\"有效\"之间存在巨大鸿沟。AI制药正从\"能做什么\"进入\"能做成什么\"的深水区，AI生成的分子能否通过临床试验将成为2026年后的关键悬念。",
+                "source": "Hacker News",
+                "url": "https://philippdubach.com/posts/ai-can-now-design-drugs-in-seconds-we-still-cant-tell-you-if-they-work/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "斯坦福报告：AI对就业影响被过度炒作，真实冲击集中于特定领域",
+                "summary": "斯坦福大学SIEPR发布政策简报，系统梳理了AI对就业市场的实际影响。报告核心结论是：AI对就业的冲击被媒体与行业严重夸大，现实影响远不如预期那般剧烈，且高度集中于特定领域而非全面性替代。该报告为当前弥漫的\"AI失业焦虑\"提供了重要的实证锚点，对于政策制定者和企业HR的AI裁员决策具有参考意义。",
+                "source": "Hacker News / 斯坦福大学SIEPR",
+                "url": "https://siepr.stanford.edu/publications/policy-brief/what-really-happening-jobs-separating-ai-hype-reality"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "AI Agent现状全景报告：市场规模、技术栈与落地趋势",
+                "summary": "行业报告《The State of AI Agents, in Numbers》发布，揭示当前AI Agent市场规模、技术栈选型与落地现状的关键数据。报告涵盖全球主要AI Agent产品的采用率、主流技术架构以及企业部署案例，为从业者提供了客观的行业坐标参考。该报告的发布填补了Agent赛道系统性数据空白，是目前少有的兼顾宏观与微观的一手调研资料。",
+                "source": "Hacker News / GetReadyForAgents",
+                "url": "https://www.getreadyforagents.com/statistics/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "AI数据中心的单点电力故障隐患：弗吉尼亚州停电事件敲响警钟",
+                "summary": "弗吉尼亚州一处AI数据中心因单根输电线路故障险些导致大规模停电，暴露了AI算力基础设施在电网韧性方面的系统性缺陷。TechCrunch深度报道指出，随着数据中心用电量呈指数增长，现有电网基础设施远未准备好承接AI算力扩张。Cloudflare等CDN企业近期推出的AI流量优化方案也从侧面印证了AI基础设施瓶颈正从算力层向电力层延伸。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/25/one-fallen-power-line-exposed-a-growing-ai-data-center-problem-heres-how-to-fix-it/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "图书馆\"避免AI\"工作坊在美国各地爆满，反映反AI情绪蔓延",
+                "summary": "美国各地公共图书馆推出的\"避免AI\"（Avoiding AI）工作坊需求空前火爆，参与者多为对大科技公司AI扩张不满的普通民众。工作坊教授如何减少个人数据被AI采集、保护隐私的实用技巧。这一现象级的反AI亚文化兴起，折射出AI在消费市场的渗透正遭遇越来越强的民间阻力，监管机构和企业需正视这一\"AI疲劳\"群体的存在。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/25/librarians-are-hosting-viral-avoiding-ai-workshops-for-people-who-are-fed-up-with-big-tech/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Monday.com等20余家科技公司因AI裁员，科技行业失业潮持续",
+                "summary": "项目管理平台Monday.com成为最新一家公开以AI为由进行裁员的大型科技公司，TechCrunch整理的清单显示，2026年至今已有超过20家科技企业以AI为由宣布裁员。这些裁员普遍发生在重复性、流程性工作岗位，与斯坦福报告的\"AI影响集中于特定领域\"结论相互印证。对从业者而言，AI裁员已从预测变成现实，技能升级窗口期正在缩短。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/25/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "端侧AI新突破：2890万参数大模型在8美元微控制器上运行",
+                "summary": "开发者开源项目ESP32-AI展示了一种在价格仅8美元的ESP32微控制器上运行2890万参数语言模型的方案。该项目利用模型量化与神经网络优化技术，将端侧AI推理的硬件门槛降至消费电子级别，为物联网设备赋予本地化AI能力提供了可行路径。随着端侧AI成本持续下探，AI Native硬件的产品定义空间正在急剧扩大，边缘AI推理的商业化拐点或提前到来。",
+                "source": "Hacker News / GitHub",
+                "url": "https://github.com/slvDev/esp32-ai"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI模型失控事件：HuggingFace平台被用于传播被篡改模型",
+                "summary": "TIME深度调查披露，OpenAI曾在2026年经历一次模型失控事件：一个被篡改的模型版本通过HuggingFace平台被传播扩散。该事件暴露了AI开源生态中的安全治理漏洞，引发业界对模型分发链路监管缺位的广泛担忧。对于企业AI安全团队而言，供应链安全（Model Supply Chain Security）正从边缘议题上升为核心合规关注点。",
+                "source": "Hacker News / TIME",
+                "url": "https://time.com/article/2026/07/24/openai-hugging-face-attack/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "加拿大启动AI透明度推进公众征询",
+                "summary": "加拿大创新、科学与经济发展局（ISED）正式启动推进AI透明度公众征询，向全社会征集AI系统透明度标准的制定意见。此次征询覆盖AI训练数据披露、模型决策可解释性以及AI生成内容标识等核心议题，标志着加拿大正加速完善本国AI监管框架。该进程与中国、欧盟的AI立法并行推进，全球AI监管格局正在从\"原则宣言\"走向\"细则落地\"阶段。",
+                "source": "Hacker News / 加拿大政府官网",
+                "url": "https://ised-isde.canada.ca/site/ised/en/have-your-say-advancing-ai-transparency-canada"
+            }
+        ]
+    },
+    {
         "date": "2026-07-25",
         "items": [
             {
@@ -3326,151 +3471,6 @@ const AI_NEWS_DATA = [
                 "summary": "Databricks前AI负责人创立新公司，押注能通过技术创新将AI计算的功耗降低1000倍。随着AI算力需求爆发，能源消耗已成为行业瓶颈，如果功耗降低1000倍成为现实，将彻底改变AI的经济模型和应用边界，从业者需密切关注这一技术路线。",
                 "source": "TechCrunch AI",
                 "url": "https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-26",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "特朗普政府要求OpenAI推迟GPT 5.6发布，称存在国家安全风险",
-                "summary": "据Axios、CNN等多家媒体6月25日报道，白宫已要求OpenAI放缓其下一代模型GPT 5.6的发布节奏。报道称政府官员对模型的安全性表示担忧，要求该公司仅与\"特定合作伙伴\"分享模型，而非向公众全面发布。这已是本周内第二次传出白宫关注OpenAI新模型发布的消息。AI安全已成为大国博弈的焦点议题，随着模型能力逼近关键阈值，监管介入将成常态，企业的发布时间表不再完全由商业利益决定。",
-                "source": "Axios / CNN / TechCrunch",
-                "url": "https://www.axios.com/2026/06/25/trump-administration-openai-gpt-model-release"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic指控阿里巴巴实施史上最大规模AI蒸馏攻击，涉及2880万次欺诈请求",
-                "summary": "Anthropic于6月26日发布安全报告，指控阿里巴巴通过其API平台实施了针对Claude的史上最大规模蒸馏攻击，非法获取训练数据。攻击涉及2880万次虚假API调用。Anthropic已将证据提交相关机构。这标志着头部AI公司之间的数据主权争夺战正式白热化，蒸馏攻击将成为未来行业诉讼和监管的重点领域。",
-                "source": "YipZap / TechCrunch",
-                "url": "https://yipzap.com/anthropic-accuses-alibaba-of-largest-ai-distillation-attack-28-8m-fraudulent-exchanges/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "国家能源局\"十五五\"规划首次将AI算力纳入能源战略，西部要\"向外送Token\"",
-                "summary": "6月26日，国新办发布会公布\"十五五\"能源规划，国家能源局副局长万劲松表示，西部地区不仅要向外送电、送煤、送气，还要\"向外送产品、送Token（词元）\"。这标志着AI算力正式纳入国家能源战略顶层设计。随着大模型训练和推理用电激增，能源供给将成为制约AI发展的核心瓶颈，西电东送将升级为\"西算东送\"。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3869422174737672"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Adobe宣布收购Topaz Labs，强化AI图像视频增强能力",
-                "summary": "Adobe于6月25日宣布收购AI图像和视频增强工具开发商Topaz Labs，交易金额未披露。Topaz Labs以其AI降噪、超分辨率等产品闻名，拥有数百万用户。Adobe计划将Topaz的技术整合至Photoshop、Premiere Pro等产品线。在生成式AI重塑创意工具格局的当下，Adobe正通过收购快速补齐AI能力短板，创意软件战场正在被彻底改写。",
-                "source": "TechCrunch / 36氪",
-                "url": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "挪威宣布在小学全面禁止AI应用，系全球首个此类立法",
-                "summary": "挪威政府近日宣布在小学阶段全面禁止使用AI应用此前该国已禁止学生在校使用智能手机。首相索尔贝格表示，AI工具对儿童认知发展和创造力构成潜在威胁，建议中学和成人阶段审慎使用。这是全球首个针对K12阶段的AI禁令，将为其他国家青少年AI监管提供参考范本。",
-                "source": "Hacker News / AP News",
-                "url": "https://news.ycombinator.com/item?id=48680504"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Oracle因推进AI自动化裁员约21000人，员工数创三年新低",
-                "summary": "Oracle在最新财报中披露，员工总数已从约14万缩减至约12万，净减少约21000人。公司CEO表示裁员主要源于AI自动化带来的效率提升。Oracle正将大量后台工作交由AI系统处理，标志着企业级AI替代已进入实质性阶段。分析师预计更多传统软件公司将跟进裁员，AI带来的就业结构性冲击正在从科技公司向传统行业蔓延。",
-                "source": "Yahoo Finance / TechCrunch",
-                "url": "https://finance.yahoo.com/technology/ai/articles/oracle-workforce-shrinks-13-204431510.html"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "美光Q3营收415亿美元同比激增346%，AI芯片需求持续井喷",
-                "summary": "存储芯片巨头美光科技6月24日发布2026财年Q3财报，营收达415亿美元，环比增长74%，同比暴涨346%，连续第五个季度刷新历史记录，毛利率高达84.9%。HBM内存和AI服务器用存储芯片是增长核心驱动力。财报公布后投资者重拾对AI赛道的信心，多只AI概念股应声上涨。AI基础设施的军备竞赛仍在加速，上游芯片厂商率先受益。",
-                "source": "36氪 / CNN",
-                "url": "https://36kr.com/p/3868523068298499"
-            },
-            {
-                "tag": "应用落地",
-                "title": "北京头部大模型累计注册用户突破20.5亿，API服务近5万家机构",
-                "summary": "据北京市政府6月25日在全球数字经济大会发布会上披露，北京头部大模型累计注册用户已达20.5亿，面向全国近5万家机构提供API接口服务。百度AI志愿助手高考期间服务2.5亿用户、12亿人次。北京已形成大模型企业示范引领、辐射带动的产业生态，AI应用正从尝鲜走向大规模刚需。",
-                "source": "36氪 / 网信北京",
-                "url": "https://36kr.com/newsflashes/3869383394170112"
-            },
-            {
-                "tag": "应用落地",
-                "title": "腾讯云4.5个月助力印尼XLSMART完成AI全链路云转型",
-                "summary": "6月26日，印尼运营商XLSMART宣布完成大规模公有云转型，腾讯云作为核心云战略合作伙伴，将AI融入迁移全链路，4.5个月内实现平稳迁移。腾讯云团队基于代码助手CodeBuddy等工具，大幅提升迁移效率。东南亚运营商数字化进程加速，中国云厂商正成为亚太AI出海的重要载体。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3869433547216130"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "RoboScience发布Visics通用具身大模型，实现跨本体跨任务泛化",
-                "summary": "通用具身智能企业RoboScience于6月24日发布Visics大模型，首次完整披露自研VLOA（Vision-Language-Object-Action）技术架构。该模型实现了跨机器人本体、跨物体、跨任务的泛化能力，可同时操控机械臂、人形机器人等多种形态。这标志着国产具身智能在通用性上取得关键突破，工业和服务场景落地进程有望加速。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3868276479710466"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Claude付费用户份额持续攀升，Anthropic蚕食ChatGPT消费者市场",
-                "summary": "TechCrunch分析显示，尽管ChatGPT在整体用户数上保持领先，但在付费订阅用户群体中，Anthropic的Claude正赢得越来越多消费者的选择。Claude在编程、写作等专业场景的口碑优势逐渐转化为商业转化。随着两家公司的IPO临近，消费者AI市场的竞争格局正在重塑，垂直场景深耕或成破局关键。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI以铂金会员身份加入Rust基金会，并捐赠项目资金",
-                "summary": "Rust基金会宣布OpenAI正式成为铂金会员，并同步向Rust项目捐赠资金。铂金会员是基金会最高级别席位，此前主要成员包括AWS、Google、Microsoft等。OpenAI此举意在加强与Rust生态的深度绑定，为其高性能AI基础设施储备底层技术能力。",
-                "source": "Rust Foundation / Hacker News",
-                "url": "https://rustfoundation.org/media/rust-foundation-welcomes-openai-as-platinum-member-announces-donation-to-rust-project/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "General Intuition获3.2亿美元融资，用游戏数据训练AI物理世界决策",
-                "summary": "AI初创公司General Intuition宣布获得3.2亿美元新一轮融资，计划用这笔资金扩展基于游戏视频训练的AI系统。该公司押注于游戏产生的大规模动作数据可用于训练机器人在真实物理世界中的决策能力，已累计融资2.3亿美元。此轮融资表明AI训练数据来源正从互联网文本向视频游戏、模拟环境等多元形态扩展。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic成全球价值最高AI独角兽，DeepSeek跻身全球前15",
-                "summary": "据36氪6月26日汇总，Anthropic在最新一轮融资后估值突破600亿美元，成为全球价值最高的AI独角兽。与此同时，中国AI公司DeepSeek跻身全球独角兽企业前15名，估值约50亿美元。中美AI双雄格局进一步稳固，但两国企业之间的技术竞争和人才争夺也将持续加剧。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3869243269387269"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Databricks前AI负责人创立Un-0，目标削减AI算力成本1000倍",
-                "summary": "Databricks前AI主管离开后创立Un-0，宣称其技术可将AI推理的电力消耗削减1000倍。Un-0是一套图像生成系统，首次展示了其技术可复制传统扩散模型的输出质量，但能效大幅提升。如果该技术可规模化，AI推理成本将迎来数量级下降，推动AI应用真正普惠化。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI智能体测试平台Patronus AI获5000万美元B轮融资",
-                "summary": "由前Meta AI研究员创立的AI智能体测试平台Patronus AI宣布获得5000万美元B轮融资，由Sequoia领投。该公司正在构建\"数字世界\"平台，用于对AI智能体进行压力测试和安全性评估。随着企业级AI智能体部署加速，测试和合规市场正成为新的投资风口。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Netris获a16z领投1500万美元A轮融资，帮助AI云厂商快速部署网络",
-                "summary": "网络基础设施软件公司Netris宣布完成1500万美元A轮融资，由a16z领投。Netris提供运行在网络交换机上的软件平台，帮助AI云厂商（neoclouds）缩短网络部署时间、降低运维成本。随着AI算力需求爆发，新兴云服务商的基础设施建设正成为资本关注的新蓝海。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "IPO前夕竞争白热化，Anthropic与OpenAI争夺AI安全标准话语权",
-                "summary": "据FT报道，Anthropic和OpenAI均在筹备IPO，但在上市前两家公司竞争日趋激烈。Anthropic正推动AI安全评估的行业标准，而OpenAI则强调模型能力突破，双方在技术路线和商业叙事上呈现明显分歧。IPO将检验资本市场对AI公司\"安全\"与\"能力\"两条路线的真实偏好。",
-                "source": "Financial Times / Hacker News",
-                "url": "https://www.ft.com/content/8c02de04-5516-405b-941d-289e586d8eb8"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "国家能源局：\"十五五\"年均用电增量将达6000亿度，AI用电激增是主因",
-                "summary": "国家能源局电力司司长杜忠明在国新办发布会上表示，\"十五五\"时期全国年均用电增量预计达6000亿度左右，约等于每年新增一个中等经济体的全国用电量。算力用电激增、电动充电设施需求快速增长是核心驱动因素。AI基础设施的能源需求正成为影响国家能源规划和电网投资的关键变量。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3869409424823299"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "专注非侵入式神经接口的念象科技完成近千万元天使轮融资",
-                "summary": "神经接口技术研发商念象科技宣布完成近千万元天使轮融资，由永珺星芒领投，浦东创投、一村资本跟投。资金将用于产品研发、团队扩建及本土sEMG（表面肌电）数据集建设。念象科技专注于非侵入式神经接口技术，为AI人机交互提供新型数据入口，资本提前布局下一代交互入口的意图明显。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3867943030395913"
             }
         ]
     }
