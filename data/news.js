@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-07-29",
+        "items": [
+            {
+                "tag": "重要产品发布",
+                "title": "月之暗面Kimi K3正式开源，Apache许可开放商用",
+                "summary": "36氪独家获悉，AI创业公司月之暗面宣布Kimi K3正式开源，该模型为Kimi系列旗舰级产品，性能对标前沿大模型，采用Apache许可证开放商用。Kimi自发布以来保持高速增长，曾多次登顶海外AI产品排行榜榜首。开源此举将进一步降低企业级AI应用门槛，同时加剧国内开源模型竞争格局。",
+                "source": "36氪 / 月之暗面官方",
+                "url": "https://36kr.com/p/3915953688604296"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Recursive Superintelligence签署4.1亿美元算力协议，加速自进化AI研发",
+                "summary": "AI安全公司Recursive Superintelligence宣布与亚马逊签署为期数年的4.1亿美元算力协议，成为今年已公布的最大规模AI基础设施交易之一。该公司专注于自进化AI系统研发，传统上本应投入人力的预算大幅转向计算资源。AWS将为其提供专用计算集群，以支撑前沿AI研究的高强度训练需求。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/28/recursive-superintelligence-signs-400-compute-deal-with-amazon/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Ilya Sutskever创立的Safe Superintelligence宣布与英伟达达成长期合作",
+                "summary": "沉寂两年后，Ilya Sutskever创立的AI安全公司Safe Superintelligence宣布与英伟达达成长期战略合作，由英伟达为其前沿AI研究提供计算资源支持。此次合作为SSI首次公开确认的外部伙伴关系，标志着这家超级保密的AI安全实验室即将进入规模化扩展阶段，也凸显了算力巨头对安全AI路线的大力押注。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/27/ilya-sutskevers-safe-superintelligence-partners-with-nvidia-to-scale-its-ai-research/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "德塔智能完成近5亿元天使++轮融资，UCLA博士团队做人形机器人基础模型",
+                "summary": "人形机器人基础模型公司德塔智能（Delta Intelligence）完成近5亿元人民币天使++轮融资，投资方包括多家上市公司产业方和头部财务投资机构。该公司由UCLA博士团队创立，聚焦人形机器人通用基础模型研发。大额天使轮融资表明资本市场对机器人具身智能赛道的长期看好，本轮估值已进入独角兽区间。",
+                "source": "36氪硬氪首发",
+                "url": "https://36kr.com/p/3913213962540164"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic CEO Dario Amodei：支持开源权重模型但担忧中国AI竞争",
+                "summary": "Anthropic创始人兼CEO Dario Amodei公开表态称，公司并不反对开源权重模型，但对中国的AI能力增长深感担忧。他认为中国在AI领域的快速追赶正在改变全球AI安全格局，美国需要在这一窗口期内加速发展。此番言论在开源与闭源之争持续的背景下发出，被视为Anthropic对自身安全路线的最新阐释。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/27/anthropics-dario-amodei-responds-doesnt-oppose-open-weight-models-but-fears-chinese-ai/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI遭Hugging Face平台漏洞攻击，引发AI安全与对齐大讨论",
+                "summary": "OpenAI遭遇Hugging Face平台漏洞攻击事件，攻击者借此访问了OpenAI内部AI对齐研究数据，被其CEO Sam Altman形容为\"第一次让我有切身痛感的安全事故\"。该事件在AI从业者中引发关于开放生态与安全控制之间张力的激烈辩论，开放平台的安全边界问题被推至风口浪尖。",
+                "source": "TechCrunch AI / MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/07/28/1140868/the-download-openai-hack-ai-stock-sell-off/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "微软发布首个AI网络安全模型Muse Security及新型代理安全系统",
+                "summary": "微软本周发布其首个AI网络安全专用模型Muse Security，并同步推出新型代理驱动网络安全系统，整合至微软安全产品线。Muse Security针对真实攻击场景进行了专项训练，可识别复杂多阶段网络攻击并自动生成防御策略。这是继微软Copilot之后，其在AI安全垂直领域的又一次重要产品落地。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/27/microsoft-launches-its-first-cyber-model-and-a-new-agentic-cybersecurity-system/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "英伟达与微软联合SpaceX、IBM发起开放AI安全联盟，OpenAI等未加入",
+                "summary": "英伟达宣布联合微软、SpaceX、IBM等科技巨头成立开放AI安全联盟（Open Secure AI Alliance），致力于构建并共享AI安全工具与标准。该联盟明确未邀请OpenAI、Google和Anthropic加入，折射出头部AI企业之间在安全治理路线上的深层分歧。这一格局变化将对AI安全领域的标准制定权产生深远影响。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/971281/nvidia-open-secure-ai-alliance-cybersecurity"
+            },
+            {
+                "tag": "应用落地",
+                "title": "AI短剧半年市场规模突破220亿元，全年有望冲击400亿大关",
+                "summary": "DataEye最新数据显示，2026年1至5月国内AI短剧市场规模已突破220亿元，全年有望冲击400亿元，AI短剧用户规模突破6亿。AI生成技术在短剧领域的渗透正在重塑内容生产逻辑，从平台到制作方、技术提供方到内容创作者的全产业链正在发生深刻变革。",
+                "source": "36氪 / DataEye",
+                "url": "https://36kr.com/newsflashes/3916018332970372"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "Google AI搜索覆盖率达43%，AI生成答案已成默认搜索体验",
+                "summary": "最新数据显示，Google AI Overviews现已在43%的搜索查询中触发，AI生成摘要正以超预期速度成为默认搜索体验。这一数据表明，用户对传统蓝色链接结果的依赖正在快速迁移，搜索引擎的核心价值正从信息索引转向直接答案交付，数字出版和SEO行业面临根本性重构。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/27/googles-ai-search-is-rapidly-becoming-the-default-new-data-shows/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "AI成本高企引发华尔街担忧，AI相关科技股遭集中抛售",
+                "summary": "随着AI基础设施投入持续攀升，相关科技股的资本支出已引发华尔街机构投资者的广泛担忧。多家头部科技公司季度AI相关支出超预期，而商业化进展仍不明朗，导致机构投资者在最新财报季集中减持AI概念股，市场情绪正在从狂热向理性回归。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/972119/ai-stock-fall-google-capex"
+            },
+            {
+                "tag": "政策监管",
+                "title": "OpenAI、Anthropic、Google等AI领导者联名致信美国政府要求监管自动化AI",
+                "summary": "OpenAI、Anthropic、Google、Meta、Microsoft、Mistral等头部AI企业的核心员工联名签署公开信，敦促美国政府对高度自动化AI系统实施明确监管措施。这份罕见的行业内部请愿表明，即便身处AI竞赛前沿，一线从业者对AI失控风险的担忧已无法被忽视，监管立法进程有望加速。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/972161/ai-leaders-us-government-openai-anthropic-google-meta"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Sam Altman经历重大安全事件后表示\"准备好放慢脚步\"",
+                "summary": "OpenAI CEO Sam Altman在近期经历一次让他\"有切身痛感\"的安全事故后，首次公开表示愿意放慢AI发展速度。他在社交媒体和TechCrunch采访中均暗示，当前AI能力提升速度可能需要与安全投入重新平衡。此番表态与他此前对AI发展的激进立场形成明显反差，OpenAI内部文化张力引发市场关注。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/28/sam-altman-is-ready-to-decelerate/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "微软CEO Nadella：依赖单一AI系统的企业可能无法生存",
+                "summary": "微软CEO Satya Nadella在公开场合警告称，将所有业务押注于单一AI系统的企业将面临生存风险。他强调，企业需要构建自己的AI基础设施层（AI Gateway），以便在多个AI模型间灵活切换，避免被单一供应商锁定。这与微软自身的AI平台战略形成微妙呼应，也反映出市场对AI供应商锁定风险的普遍焦虑。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/27/satya-nadella-says-compas-without-ai-gateways-may-not-survive/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Fish Audio完成5200万美元种子轮融资，语音AI模型用户超800万",
+                "summary": "AI语音模型公司Fish Audio宣布完成约5200万美元种子轮融资，自去年上线以来其开源和托管版本已累计吸引超过800万用户。融资将主要用于训练更高质量的语音生成模型，并向企业级市场拓展。语音AI赛道持续火热，Fish Audio的开源策略正在挑战传统TTS市场格局。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/28/fish-audio-raises-50m-seed-to-build-ai-voice-models-for-creators-and-enterprises/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Enigma完成7100万美元种子轮融资，主打\"旋钮式\"机器人控制系统",
+                "summary": "机器人控制初创公司Enigma宣布完成7100万美元种子轮融资，由Index Ventures和Ribbit Capital领投，Sarah Guo的Conviction Partners参投。Enigma致力于让机器人控制像调节音响旋钮一样简单，无需专业编程即可实现复杂操作。该轮融资规模创机器人赛道种子轮历史纪录，反映了市场对下一代机器人交互范式的高度期待。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/27/enigma-raises-70m-to-make-controlling-a-robot-as-easy-as-adjusting-the-volume/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Claude共享聊天链接遭Google索引，用户隐私数据疑似泄露",
+                "summary": "Anthropic旗下Claude的\"共享聊天\"功能被发现存在隐私漏洞——用户通过该功能分享的聊天链接被Google爬虫索引并出现在搜索结果中，意味着未授权第三方可能通过Google搜索访问私人AI对话内容。Anthropic已确认部分共享对话被索引，建议用户立即撤销此前分享的链接。此事件对企业级Claude用户的数据安全合规提出严峻挑战。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/27/psa-your-claude-shared-chats-and-artifacts-may-have-ended-up-on-google/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Hugging Face平台被滥用于深度伪造裸体内容，引发AI伦理治理争议",
+                "summary": "调查发现，Hugging Face托管的多个AI模型正被大量用于生成深度伪造裸体图像，包括女性和儿童图像，引发严重伦理问题。尽管平台已收到大量举报，但Hugging Face的治理响应被指严重滞后。此事件再次暴露开源AI生态中内容安全治理的结构性难题，平台责任边界亟待厘清。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/971723/hugging-face-nudify-deepfake-undress-women-children"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Cursor加大印度市场本地化力度，跃升为全球第三大市场",
+                "summary": "AI编程工具Cursor宣布其在印度市场的重大推进计划，包括推出本地化定价策略和扩大本地企业销售团队。Cursor表示印度已跃升为其全球第三大市场，此举正值其即将被SpaceX收购的背景下展开。本地化价格策略有望大幅降低印度开发者接触AI编程工具的门槛。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/07/27/cursor-makes-its-biggest-india-push-yet-ahead-of-spacex-acquisition-with-localized-pricing/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "国内80.8%消费者已购买或使用至少一类AI相关硬件产品",
+                "summary": "36氪研究院发布的《2026年中国智能硬件行业发展研究报告》指出，AI技术正加速向实体经济各领域渗透，智能硬件作为AI能力落地实体场景的核心载体已步入关键发展阶段。腾讯研究院3月调研数据显示，国内已有80.8%的消费者购买或使用过至少一类AI相关硬件产品，AI硬件从尝鲜期进入普及期。",
+                "source": "36氪研究院 / 腾讯研究院",
+                "url": "https://36kr.com/p/3915066350327176"
+            }
+        ]
+    },
+    {
         "date": "2026-07-26",
         "items": [
             {
@@ -3326,151 +3471,6 @@ const AI_NEWS_DATA = [
                 "summary": "奥感微科技旗下品牌Moxy摸喜在深圳发布首款AI陪伴机器人，核心卖点为\"无对话、无摄像头、纯触觉交互\"，首次将离电型柔性传感技术完整应用于消费级陪伴产品。该产品通过自研全域柔性电子皮肤感知用户触碰的力度、温度与位置，实现情感响应而非对话交互。情感AI陪伴是近两年消费级AI的热门方向之一，纯触觉路线避开了隐私争议和语音交互的疲劳感，有望开辟差异化细分市场。",
                 "source": "36氪",
                 "url": "https://36kr.com/p/3874015941645570?f=rss"
-            }
-        ]
-    },
-    {
-        "date": "2026-06-28",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "OpenAI发布GPT-5.6遭遇白宫干预，美国AI监管进入实质博弈阶段",
-                "summary": "OpenAI于6月26日正式发布GPT-5.6，但此前特朗普政府以安全担忧为由，要求该公司分阶段发布新模型。OpenAI回应称\"不相信这种政府介入流程应成为长期常态\"，但表示将配合。白宫随后批准Anthropic的Mythos 5供超过100家美国企业和政府机构使用。这标志着美国AI监管从政策讨论进入实质性干预阶段，头部企业的模型发布节奏首次受到政府直接约束，AI安全与地缘政治博弈的边界正在被重新划定。",
-                "source": "TechCrunch AI / The Verge AI / 36氪",
-                "url": "https://techcrunch.com/2026/06/26/openai-limits-gpt-5-6-rollout-after-government-request-says-restrictions-shouldnt-be-the-norm/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic Mythos 5重返市场：白宫谈判两周后获准在100+机构部署",
-                "summary": "经过两周与特朗普政府的艰难谈判，Anthropic的Mythos 5模型已重新上线，超过100家美国企业和政府机构获授权使用，包括其非美国员工。此次危机源于政府担忧模型出口安全，最终以扩大国内部署范围达成妥协。分析认为，这是AI安全与商业利益的首次大规模碰撞，未来或有更多模型面临类似审查。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/06/26/trump-admin-releases-anthropic-mythos-to-be-used-by-more-than-100-us-companies-agencies/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "中科闻歌港股上市：开盘暴涨81%，市值190亿港元",
-                "summary": "6月26日，中科闻歌（01956.HK）正式在港交所主板敲钟上市，开盘涨81.2%报110港元，截至发稿市值达190亿港元，盘中最高125港元。该公司是一家AI大数据与智能决策服务商，依托中科院技术背景，此次上市为北京又新增一家硬科技IPO，标志着资本市场对AI企业盈利能力的认可度正在回升。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3869622921041156?f=rss"
-            },
-            {
-                "tag": "行业格局",
-                "title": "DeepSeek启动大规模扩张：计划将所有部门规模扩大至少一倍",
-                "summary": "据36氪获悉，DeepSeek正计划将所有部门规模扩大至少一倍。这家以开源大模型闻名的AI公司正在加速人才储备和业务扩张，以应对日益激烈的行业竞争。DeepSeek的扩张计划反映出中国AI头部企业正在从技术领先向生态规模全面竞争转变。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3869884559332356?f=rss"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI挖角两位高管：Vision Pro负责人与Uber印度主管相继加入",
-                "summary": "据TechCrunch报道，Apple Vision Pro头显副总裁Paul Meade已离职加入OpenAI，这是苹果核心硬件团队向AI公司的人才流失又一案例。同日，OpenAI宣布挖角Uber印度区负责人领导其在美国以外的最大市场。OpenAI正在加速全球化扩张，印度被视为其最重要的海外市场之一。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/26/openai-poaches-uber-india-chief-to-lead-its-biggest-market-outside-the-u-s/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Amazon加码印度：130亿美元AI基础设施投资落地",
-                "summary": "Amazon宣布向印度追加130亿美元AI基础设施投资，这是其在该国最大规模的单笔科技投资。随着全球科技巨头争相在印度扩建AI基础设施，亚马逊此举旨在抢占新兴市场云服务和AI算力需求。该投资将用于数据中心、算力集群和本地化AI服务建设。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/25/amazon-ups-india-bet-with-fresh-13b-ai-infrastructure-investment/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "General Intuition获3.2亿美元融资：用游戏数据训练AI Agent",
-                "summary": "AI训练数据初创公司General Intuition宣布融资3.2亿美元，计划用数百万小时的游戏视频训练AI模型。该公司押注游戏中的动作数据能教会AI在现实世界中执行复杂任务，此前已累计融资23亿美元。游戏数据因其多样性、成本低和可扩展性，正成为AI Agent训练的新燃料。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/25/general-intuitions-2-3b-bet-that-video-games-can-train-ai-agents-for-the-real-world/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Patronus AI完成5000万美元融资：构建数字世界压力测试AI Agent",
-                "summary": "AI Agent测试平台Patronus AI完成5000万美元融资，由前Meta AI研究人员创立。该公司正在构建\"数字世界\"来对AI Agent进行压力测试，市场需求几乎不可遏制。Patronus AI的崛起反映出AI Agent从概念走向生产环境后，质量保证和安全性测试正成为一个新的蓝海市场。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/25/patronus-ai-lands-50m-to-build-digital-worlds-that-stress-test-ai-agents/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "IBM发布亚1nm芯片原型：指甲盖大小集成1000亿晶体管，延续摩尔定律十年",
-                "summary": "IBM发布了采用亚1nm工艺的新型芯片原型，在指甲盖大小的面积上集成了约1000亿个晶体管，是现有最先进芯片的两倍密度。这项技术突破有望将摩尔定律再延续十年，为AI计算性能提升提供硬件基础。芯片制程进入亚1nm时代，意味着半导体行业在物理极限边缘仍在持续突破。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/06/25/1139696/ibm-unveils-sub1nm-chip/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "北京人形机器人创新中心：我悟具身世界模型通过合规备案",
-                "summary": "6月26日，北京人形机器人创新中心旗下的慧思开物平台双大脑模型\"天鹕\"和\"我悟\"同步完成北京市网信办最新一批生成式人工智能服务备案。北京人形将正式启动慧思开物全系列模型Token服务，计划分阶段面向产业客户和科研机构开放。这标志着中国具身智能领域首个通过合规备案的世界模型即将进入商业化阶段。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3871213411128577?f=rss"
-            },
-            {
-                "tag": "应用落地",
-                "title": "AI算力需求激增：功率半导体订单爆满，行业再掀涨价潮",
-                "summary": "据《科创板日报》报道，由于AI算力集群功耗激增，功率半导体正成为继存储之后的新增长引擎，行业再掀一轮涨价潮。一家功率半导体厂商人士透露：\"AI相关的电源功率订单爆满，根本做不过来。\"AI基础设施建设带动上游功率器件需求爆发，供应链瓶颈正在向上游传导。",
-                "source": "36氪 / 科创板日报",
-                "url": "https://36kr.com/newsflashes/3871215128237313?f=rss"
-            },
-            {
-                "tag": "应用落地",
-                "title": "华为途灵平台完成第三轮升级，覆盖鸿蒙智行五界全系车型",
-                "summary": "6月26日，鸿蒙智行举办华为途灵平台专场TECH DAY技术沟通会，宣布平台完成第三轮升级，已覆盖鸿蒙智行旗下五界全部车型。华为途灵平台将调校经验通过算法与软件沉淀，基于车型定位不断开放新特性快速迭代。AI与机械性能的深度融合正在重新定义智能汽车底盘技术标准。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3871321432527875?f=rss"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Adobe收购Topaz Labs：图像视频增强工具纳入创意AI全家桶",
-                "summary": "Adobe宣布收购图像和视频增强工具制造商Topaz Labs，将把其工具整合到Adobe旗下所有应用程序中。Topaz Labs以AI驱动的图像分辨率提升、噪点消除等功能著称，此次收购将强化Adobe在AI创意工具领域的竞争力，对抗新兴AI图像生成工具的冲击。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/25/adobe-acquires-image-and-video-enhancement-tool-maker-topaz-labs/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Anthropic Claude付费用户增长显著，蚕食ChatGPT消费者市场",
-                "summary": "尽管ChatGPT在消费者市场保持主导地位，但付费AI用户正越来越多地转向Anthropic的Claude。数据显示，Claude在付费消费者市场的渗透率持续上升，其在编码、写作和分析任务上的口碑正在动摇ChatGPT的用户忠诚度。AI助手市场的竞争正从通用能力转向垂直场景深度。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/25/anthropics-claude-is-winning-over-paid-consumers-a-market-owned-by-chatgpt/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "张亚勤：AI不是泡沫，但AI公司有泡沫",
-                "summary": "清华大学张亚勤院士在接受访谈时表示，AI技术本身不是泡沫，但AI公司存在泡沫。他建议对具身智能和AI投资创业热潮\"降温\"。张亚勤指出，当前AI行业存在估值过高、商业化落地不及预期等问题。对于从业者而言，这意味着需要更加关注技术可行性和真实市场需求，而非单纯追逐概念。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3866837793952769?f=rss"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta复兴Facebook Creator Studio：转型为AI伴侣应用",
-                "summary": "Meta将已停用的Facebook Creator Studio重新定位为AI伴侣应用并重新上线。新版应用整合了Meta的AI能力，为创作者提供智能化内容辅助服务。这是Meta从社交平台向AI工具平台延伸的又一动作，也反映出AI正在重塑社交平台的商业模式和用户交互方式。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/tech/956668/meta-facebook-creator-studio-ai-app-relaunch"
-            },
-            {
-                "tag": "应用落地",
-                "title": "G7易流发布货运行业首款穿戴式AI硬件：拍拍豆重30克，填平最后两米",
-                "summary": "6月25日，G7易流发布货运行业首款穿戴式AI硬件\"拍拍豆\"，克重仅30克，采用磁吸设计。当车辆熄火停稳后，司机可将设备从挡风玻璃底座取下佩戴于胸前，自动启动录制；放回底座瞬间，录制文件自动上传。该产品针对物流交付最后环节的数字化盲区，用AI视觉记录替代传统纸质单据。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3869740772316162?f=rss"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Netris完成1500万美元A轮融资：帮助AI新云厂商快速上线",
-                "summary": "网络软件公司Netris完成1500万美元A轮融资，由a16z领投。Netris提供运行在网络交换机上的软件，帮助AI新云运营商减少将基础设施投入生产的时间。随着AI基础设施需求激增，新兴云服务商面临快速部署的压力，Netris正是瞄准这一细分市场。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/25/netris-raises-15m-series-a-from-a16z-to-help-ai-neoclouds-go-live-faster/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "OpenAI Jalapeño芯片曝光：科技巨头集体自研，Nvidia主导地位受挑战",
-                "summary": "从OpenAI到SpaceX，各大科技公司正在开发自有AI芯片，挑战Nvidia的市场主导地位。OpenAI的Jalapeno芯片项目曝光，标志着AI芯片定制化浪潮加速。Nvidia多年来垄断AI芯片市场，但定制芯片可降低成本、提高特定任务效率，芯片战争正在重塑AI基础设施格局。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/video/why-everyone-from-openai-to-spacex-is-building-their-own-chips-and-turning-up-the-heat-on-nvidia/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Databricks前AI负责人押注：计划将AI功耗降低1000倍",
-                "summary": "Databricks前AI负责人创立新公司，押注能通过技术创新将AI计算的功耗降低1000倍。随着AI算力需求爆发，能源消耗已成为行业瓶颈，如果功耗降低1000倍成为现实，将彻底改变AI的经济模型和应用边界，从业者需密切关注这一技术路线。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/25/databricks-former-ai-chief-thinks-he-can-cut-ais-power-bill-by-1000x/"
             }
         ]
     }
