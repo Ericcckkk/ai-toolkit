@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-08-04",
+        "items": [
+            {
+                "tag": "应用落地",
+                "title": "DeepSeek升至全球AI调用量第一，AI行业格局生变",
+                "summary": "DeepSeek于2026年8月初已升至全球AI模型调用量第一位，成为首个登顶的中国AI实验室产品。OpenAI前董事长格雷格·布罗克曼（Greg Brockman）之子入职DeepSeek，马斯克也关注了DeepSeek的X账号。DeepSeek以开源、低成本路线快速抢占市场，对闭源大厂形成直接冲击。这一变化意味着开源模型在应用层的渗透率已超过行业预期，闭源模型的定价优势正在被蚕食。",
+                "source": "36kr",
+                "url": "https://36kr.com/p/3924467692927369?f=rss"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Horizon3.ai完成2.5亿美元融资，道德黑客雇佣服务模式获资本认可",
+                "summary": "旧金山网络安全初创公司Horizon3.ai在后期融资中筹集2.5亿美元，由NightDragon和NEA联合领投，Anthropic旗下Mythos等十余家机构跟投。该公司提供按需雇佣道德黑客服务，将AI与传统安全测试结合。本轮融资是近期AI安全领域最大规模单笔融资，显示企业安全预算正加速向AI驱动型方案倾斜，红队服务赛道有望在2026年迎来爆发。",
+                "source": "36kr",
+                "url": "https://36kr.com/newsflashes/3924513901820041?f=rss"
+            },
+            {
+                "tag": "政策监管",
+                "title": "xAI起诉被驳回，明尼苏达州\"nudify\"应用禁令继续生效",
+                "summary": "尽管xAI提起诉讼，明尼苏达州禁止\"nudify\"应用的州级法案仍可继续执行，法官驳回了xAI的临时禁令请求。该法案针对利用AI将正常照片脱衣的应用，明尼苏达州是全美首批对此类应用立法的州之一。这意味着AI生成恶意内容已正式进入州级立法监管视野，AI伦理合规风险正从软约束转向硬约束，相关产品的法律生存空间急剧收窄。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/01/judge-denies-xais-request-to-block-minnesota-ban-on-nudify-apps/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "15位州司法部长联名致函OpenAI，监管压力骤然升级",
+                "summary": "美国15位州级司法部长联合签署信函致OpenAI，要求公司对数据安全、青少年保护等议题作出回应。这是迄今为止规模最大的州级监管机构对单一AI公司发起的集体行动，意味着AI监管已从联邦层面延伸至地方合围态势。OpenAI若未能有效应对，恐引发各州分别立法的碎片化监管风险，对产品运营构成系统性挑战。",
+                "source": "Hacker News",
+                "url": "https://www.iowaattorneygeneral.gov/media/cms/08_5392C9E17791C.pdf"
+            },
+            {
+                "tag": "政策监管",
+                "title": "AI监考大规模翻车：58000名学生被迫重新参加考试",
+                "summary": "加拿大某在线考试平台部署的AI监控系统发生严重故障，导致58000名学生在考试结束后被要求重新参加考试。AI监考系统出现了大范围误判，将正常作答行为标记为作弊，且无法区分学生身份与人脸识别错误。这是AI教育应用迄今为止规模最大的公开事故，将对AI考试监控产品的商业化落地造成严重负面影响。",
+                "source": "Ars Technica / Hacker News",
+                "url": "https://arstechnica.com/culture/2026/08/an-ai-supervised-remote-exam-went-so-badly-that-58000-students-must-retake-it/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI Astra模型曝光：2000美元算力破解十项数学难题",
+                "summary": "OpenAI下一代模型Astra被曝光，该模型以2000美元的单次算力成本，成功破解了此前被认为需要人类数学家才能解决的十项高难度数学问题。这标志着AI在数学推理领域迈入新阶段，但也引发了关于\"AI研究价值\"的激烈讨论。Astra若正式发布，将对自动定理证明、药物设计等高价值领域产生直接冲击。",
+                "source": "36kr",
+                "url": "https://36kr.com/p/3924467692927369?f=rss"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "SK海力士与闪迪联合发布HBF存储标准规范，填补HBM与SSD之间空白",
+                "summary": "SK海力士与闪迪于8月4日联合发布高带宽闪存（HBF）的首个标准规范，HBF是介于HBM和固态硬盘之间的新型存储层级，兼具高速传输能力和大容量特性。这是存储行业首次为\"中间层\"存储建立统一标准，将直接影响AI推理芯片和数据中心存储架构的设计思路。对算力芯片厂商而言，HBF或将成为下一代推理卡的标准配置。",
+                "source": "36kr",
+                "url": "https://36kr.com/newsflashes/3924505733691520?f=rss"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI发布ChatGPT全双工语音技术详细架构揭秘",
+                "summary": "OpenAI官方发布长文，首次披露其如何在六个月内构建出支持\"边听边说\"的实时语音交互系统GPT-Live。技术核心在于将语音识别、LLM推理和语音合成三个环节的延迟压缩至200毫秒以内，实现真正意义的全双工对话。这一架构突破意味着AI实时交互的工程瓶颈已被突破，语音AI的产品化竞争将从\"能对话\"升级到\"像人一样自然\"的新阶段。",
+                "source": "OpenAI / Hacker News",
+                "url": "https://openai.com/index/continuous-voice-interaction-with-gpt-live/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "苹果终于修复Siri，但业界认为\"来得太晚\"",
+                "summary": "苹果在iOS更新中正式推出Siri的重大AI升级，使其具备多轮对话、屏幕感知和跨应用操作能力。这是Siri自2011年发布以来最重要的改进。然而业界评价普遍\"冷淡\"：与GPT-4o、Gemini Live相比，Siri的AI能力仍有代际差距，且发布时机已落后竞争对手至少一年。苹果在AI助手战场上从\"引领者\"沦为\"追赶者\"的趋势愈发明显。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/03/apple-finally-fixed-siri-so-why-does-it-feel-anticlimactic/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI IPO推迟至2027年，盈利能力成核心障碍",
+                "summary": "据多方消息，OpenAI可能将首次公开募股时间推迟至2027年，核心原因在于高昂的算力成本和不确定的盈利路径。尽管ChatGPT月活用户已超过数亿，但每年数十亿美元的亏损令二级市场投资人望而却步。OpenAI正在推进重组为营利性公司，若重组顺利可能为IPO扫清法律障碍，但监管审批周期或将再次延后。",
+                "source": "36kr",
+                "url": "https://36kr.com/p/3923043072634498?f=rss"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Palantir季度利润首破10亿美元，Alex Karp警告AI行业\"马克思主义\"倾向",
+                "summary": "Palantir发布财报显示季度利润首次突破10亿美元大关，同比大幅增长。然而CEO Alex Karp在财报电话会上警告AI行业存在\"马克思主义\"倾向——即忽视商业回报、盲目追求技术扩张而牺牲企业可持续性。Palantir是为数不多在AI领域实现盈利的企业级软件公司，其\"务实AI\"路线与行业烧钱换增长的普遍模式形成鲜明对比。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/03/after-killer-quarter-palantir-ceo-alex-karp-calls-ai-industry-marxist/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "奇点逃逸获千万级种子轮融资，清华00后博士做AI原生团队操作系统",
+                "summary": "AI原生团队协作操作系统研发商奇点逃逸完成千万级种子轮融资，由星连资本与水木创投联合领投，奇绩创坛跟投。创始人为清华大学00后博士，其产品Nexus致力于让人与Agent在同一份组织状态下持续协作。这是国内AI基础设施层少见的早期融资，团队协作OS被视为继AI Agent之后的下一个平台级机会。",
+                "source": "36kr",
+                "url": "https://36kr.com/p/3919025939246727?f=rss"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Design Arena获790万美元融资，专注为AI模型提供人类审美评估",
+                "summary": "AI设计平台Design Arena宣布完成790万美元种子轮融资，投资方信息未披露。该平台拥有全球530万用户，为前沿AI实验室提供关键的人类审美和品味评估服务。在AI生成内容泛滥的背景下，\"人类偏好数据\"正成为比算力更稀缺的资源，Design Arena的模式验证了AI对齐评估的商业化路径可行性。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/03/designarena-creators-raise-7-9-million-to-bring-taste-to-ai-models/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "June获2000万美元pre-seed轮融资，Marc Benioff押注AI部署难题",
+                "summary": "AI部署初创公司June在 stealth模式后现身，宣布获得2000万美元pre-seed轮融资，Salesforce CEO Marc Benioff个人参投。June旨在简化企业AI应用部署复杂度，解决企业\"有模型但无法落地\"的核心痛点。Benioff的入局表明企业软件巨头已将AI部署工具视为下一个战略高地，该赛道在2026年下半年的竞争将显著加剧。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/03/a-marc-benioff-backed-startup-thinks-ai-can-solve-the-ai-deployment-problem/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "国会办公费用记录曝光：ChatGPT成美国国会最受欢迎的付费AI工具",
+                "summary": "美国国会支出记录显示，OpenAI的ChatGPT是国会山付费AI工具中用量最大的产品，多个议员办公室依赖其处理日常文书和政策研究。这反映出AI在美国政府决策体系中的渗透速度远超预期，但同时引发了数据安全担忧——政府机构使用外部AI服务可能涉及敏感信息外流风险。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/03/congresss-favorite-ai-tool-chatgpt/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "AWS牵手Superblocks，企业级vibe-coding进入私有云时代",
+                "summary": "AWS宣布允许vibe-coding工具Superblocks嵌入AWS客户的私有云环境，这是企业级AI编程辅助工具首次实现与主流云平台的身份集成。传统AI编程工具只能作用于SaaS层面，Superblocks此次突破意味着AI代码生成正式进入企业内网合规使用场景，企业采用AI编程工具的最大障碍——数据安全与合规——正在被逐一拆除。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/03/aws-is-helping-vibe-coding-startup-superblocks-and-the-implications-are-big/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "玻璃基封装成面板厂商跨界焦点，TCL华星与京东方砸重金布局",
+                "summary": "TCL科技高级副总裁赵军在ChinaJoy期间透露，TCL华星已组建专业团队推进玻璃基封装关键工艺验证，计划下半年展示样品并筹建中试线；京东方则宣布9.93亿元专项投资玻璃基封装项目。玻璃基封装被视为突破现有有机基板性能瓶颈的关键技术，对AI芯片的高密度集成至关重要。面板厂商的集体入局标志着半导体封装战从传统OSAT向显示产业链延伸。",
+                "source": "36kr",
+                "url": "https://36kr.com/newsflashes/3924485879937413?f=rss"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Big Tech对Anthropic和OpenAI的投资正在扭曲科技股财报表现",
+                "summary": "CNBC分析指出，亚马逊、谷歌对Anthropic的数十亿美元投资，以及微软对OpenAI的持续注资，正导致主要科技公司的财务报表出现严重失真。这些AI投资按权益法或成本法记账，但市值波动巨大，使得传统财务指标无法真实反映这些公司的核心业务健康度。投资者需警惕用PE倍数等传统方法评估\"AI概念股\"时的系统性误判。",
+                "source": "CNBC / Hacker News",
+                "url": "https://www.cnbc.com/2026/08/03/big-techs-anthropic-and-openai-stakes-distort-corporate-earnings.html"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Coinbase公开AI时代工程师面试方法论：重构技术评估体系",
+                "summary": "Coinbase官方博客发布长文，分享其过去一年重建工程师面试流程的经验。核心变化在于：引入AI辅助的代码评估工具、允许候选人使用AI编程助手完成部分考核，以及将\"与AI协作能力\"纳入评估维度。Coinbase认为，AI时代的优秀工程师核心能力已从\"独立写代码\"转向\"正确使用AI并判断AI输出质量\"，传统白板算法面试的有效性正在被重新审视。",
+                "source": "Coinbase / Hacker News",
+                "url": "https://www.coinbase.com/blog/interviewing-engineers-in-the-ai-era-lessons-from-a-year-of-rebuilding"
+            },
+            {
+                "tag": "行业格局",
+                "title": "AI开源权重模型引发\"宣言战争\"，行业路线之争白热化",
+                "summary": "围绕AI开源与闭源的路线之争正在激化，以Meta的Llama系列和Mistral为代表的开源阵营，与OpenAI、Google为代表的闭源阵营之间的矛盾已从技术层上升到行业话语权层面。Axios深度报道称，多家AI实验室正在起草各自的\"AI开放宣言\"，试图在政策制定者和公众舆论中争夺定义\"负责任AI开放\"的话语权。这场博弈的结果将直接影响未来AI监管框架的走向。",
+                "source": "Axios / Hacker News",
+                "url": "https://www.axios.com/2026/08/02/ai-manifesto-open-weight-models"
+            }
+        ]
+    },
+    {
         "date": "2026-08-02",
         "items": [
             {
@@ -3471,151 +3616,6 @@ const AI_NEWS_DATA = [
                 "summary": "安全公司Resecurity披露，JadePuffer组织使用的勒索软件已集成AI agent模块，可自主完成漏洞识别、横向移动和数据加密的全流程，无需人工操控即可完成完整攻击链。这是网络威胁领域首次出现的\"无人值守\"攻击，传统的安全防护体系面临根本性挑战。",
                 "source": "BleepingComputer / Hacker News",
                 "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/"
-            }
-        ]
-    },
-    {
-        "date": "2026-07-04",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "微软宣布25亿美元AI基础设施投资，组建6000人专业部署公司",
-                "summary": "微软正式宣布成立全新AI部署公司，首期投入25亿美元（约合180亿元人民币），并规划组建6000人规模专业团队。此前亚马逊、OpenAI、Anthropic均已布局类似业务。微软此举标志着头部云厂商全面入局AI基础设施服务市场，第三方AI部署赛道竞争白热化。对从业者而言，AI部署正在从定制化服务向标准化产品转型，具备行业Know-how的集成商将面临来自云厂商的直接挤压。",
-                "source": "TechCrunch AI / 36氪",
-                "url": "https://techcrunch.com/2026/07/02/microsoft-launches-its-own-ai-deployment-company-with-2-5-billion-commitment/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "OpenAI提议向美国政府提供5%股权，换取监管信任与合作",
-                "summary": "OpenAI CEO Sam Altman据报提议向美国主权财富基金捐赠公司5%股权，以缓解与特朗普政府在AI安全政策上的紧张关系。此前拜登政府曾对前沿AI模型出口实施管制，特朗普政府立场尚不明朗。此举若落地，将开创AI公司与国家战略利益深度绑定的先例，从业者需关注监管机构参与决策可能带来的战略路径约束。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/960588/openai-government-5-percent-stake-trump"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic正与三星洽谈自研AI芯片，降低对英伟达依赖",
-                "summary": "Anthropic正在与三星电子就定制AI芯片项目展开深入洽谈，约一周前OpenAI刚宣布与博通合作开发自研芯片。Anthropic的目标是减少对英伟达GPU的依赖，降低算力成本并掌握芯片定制化主动权。这代表头部AI厂商自研芯片已成行业趋势，芯片格局将从\"英伟达一家独大\"向\"自研+代工\"多元模式演进。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/02/anthropic-is-discussing-a-new-custom-chip-with-samsung/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta拟对外出售富余算力，效仿SpaceX将AI基础设施变现",
-                "summary": "Meta正制定计划向外部客户提供云端AI算力和模型访问权限，直接效仿SpaceX的变现路径。此前德意志银行估算，Meta云业务若全面开放，2027年可额外带来最高300亿美元收入。这标志着头部科技公司从\"AI能力自用\"向\"AI能力外销\"的战略转向，算力过剩议题将被重新定价，AI云服务市场格局面临重塑。",
-                "source": "TechCrunch AI / 36氪",
-                "url": "https://techcrunch.com/2026/07/01/meta-like-spacex-looks-to-turn-excess-ai-compute-into-cash/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta承认AI Agent进展未达预期，Llama系列研发节奏引内部质疑",
-                "summary": "Meta CEO马克·扎克伯格在内部会议上向员工表示，AI Agent的开发进度未达到此前的预期目标。据此前报道，Meta的AI Agent路线图存在多次延期，Llama系列模型的商业化路径也在内部引发讨论。这一表态为AI Agent赛道的炒作周期敲响警钟，Agent落地难度远超表面宣传，从业者应更审慎评估相关技术成熟度。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/02/mark-zuckerberg-tells-staff-that-ai-agents-havent-progressed-as-quickly-as-hed-hoped/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "隐私优先AI平台Venice AI完成6500万美元A轮融资，晋升独角兽",
-                "summary": "主打隐私保护的AI平台Venice AI宣布完成6500万美元A轮融资，估值突破10亿美元大关，跻身独角兽行列。CEO Erik Voorhees透露平台已实现盈利，年化经常性收入超7000万美元。隐私赛道持续获得资本认可，随着监管收紧和数据合规成本上升，不收集用户数据的AI平台差异化优势将进一步凸显。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/01/venice-ai-becomes-a-unicorn-with-65m-series-a-as-its-privacy-first-ai-platform-takes-off/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic发布Claude Science平台，正式进军AI驱动药物研发",
-                "summary": "Anthropic在\"AI for Science\"活动上正式发布Claude Science——一个面向科学研究场景的AI工作台，首个落地方向为药物研发。该平台整合了文献检索、实验设计、数据分析等科研全流程工具，Anthropic还宣布将自主开发新药。AI for Science正从学术研究进入商业化深水区，药物研发有望成为大模型落地的下一个爆点。",
-                "source": "The Verge AI / MIT Technology Review",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/961311/anthropic-claude-science-ai-drug-development"
-            },
-            {
-                "tag": "政策监管",
-                "title": "特朗普政府解除对Anthropic Fable 5模型的出口管制限制",
-                "summary": "经过数周与特朗普政府的谈判，Anthropic旗下被限制的Fable 5模型终获批准解除出口管制。这与此前另一款Mythos模型获解禁形成呼应，表明Anthropic在政策博弈中取得阶段性胜利。监管不确定性的消除将加快Anthropic前沿模型的商业化节奏，也为行业与政府的互动模式提供了重要参考。",
-                "source": "The Verge AI / TechCrunch AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/958964/anthropic-claude-fable-5-is-back"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Gemini Spark登陆Mac平台，Google 24小时AI助手实现全终端覆盖",
-                "summary": "Google正式将Gemini Spark——一款24小时在线的代理式AI助手——引入Mac平台，并同步推出实时追踪等新功能。这是Google Home Speaker硬件的配套AI能力延伸，标志着Google在AI助手领域从移动端向桌面及家居全场景覆盖的战略推进。AI助手正加速从聊天工具向\"数字代理人\"角色升级。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/01/gemini-spark-googles-agentic-assistant-is-now-available-on-mac/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta低调上线Pocket：一款通过 vibe coding 生成互动小游戏的AI应用",
-                "summary": "Meta悄然推出一款名为Pocket的实验性AI应用，用户可通过自然语言描述生成并分享互动小游戏，主打 vibe coding（氛围编程）概念。该应用定位为Meta AI能力在娱乐场景的轻量化落地，也是Meta探索AI生成内容（AIGC）产品化的最新尝试。AI生成游戏门槛正在被大幅降低，游戏开发民主化趋势加速。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/02/meta-quietly-launches-vibe-coded-gaming-app-pocket/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Cloudflare要求AI公司付费使用内容训练数据，否则封禁爬虫",
-                "summary": "Cloudflare发布新政策，要求AI公司必须在9月15日前区分用于搜索的爬虫和用于AI训练的爬虫，否则将封禁其访问。该政策实质上是要求AI公司为训练数据向内容出版商付费，将显著改变AI行业的训练数据采购模式。内容变现与AI训练之间的利益分配问题正从个案诉讼走向平台级制度性约束。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/01/cloudflares-new-policy-pushes-ai-companies-to-pay-for-publishers-content/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "具身智能第一股：证监会同意宇树科技科创板IPO注册",
-                "summary": "证监会正式同意宇树科技科创板IPO注册申请，宇树科技由此成为\"具身智能第一股\"。宇树科技以四足机器人和人形机器人闻名，产品广泛应用于工业巡检、科研教育等场景。公司2025年营收同比增长约90%。机器人赛道在AI驱动下进入IPO密集期，具身智能正从概念走向规模化商业落地。",
-                "source": "36氪 / TechCrunch AI",
-                "url": "https://36kr.com/p/3878550357946625?f=rss"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Google搜索框25年来首次改版：AI搜索时代的产品逻辑重构",
-                "summary": "Google宣布对搜索框进行25年来首次重大改版，新界面将深度集成Gemini AI能力，从传统结果列表向生成式答案和对话式交互转型。这是Google面对Perplexity等AI搜索竞品压力的直接回应，也预示着搜索产品从\"索引-匹配\"向\"理解-生成\"的根本范式转移。对内容创作者和SEO从业者而言，流量入口逻辑正在发生根本性变化。",
-                "source": "VentureBeat AI",
-                "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "英国自动驾驶公司Wayve发起8500万美元员工回购，估值达85亿美元",
-                "summary": "英国自动驾驶公司Wayve宣布发起8500万美元员工股权回购，回购价格对应公司估值为85亿美元。该员工竞购要约正值AI自动驾驶领域融资热度回升，Wayve以此作为吸引和保留核心人才的手段。在Waymo、Cruise等美国玩家收缩的背景下，Wayve的逆势高估值反映资本市场对端到端自动驾驶路线的持续看好。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/06/30/wayve-launches-85m-employee-tender-offer-at-8-5b-valuation/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "斯坦福研究揭示大模型陷入\"群体思维\"困境，创新能力存系统性缺陷",
-                "summary": "斯坦福大学研究团队发现，当前主流大语言模型（包括GPT-4、Claude、Gemini）在独立任务中倾向于产生高度相似的输出，存在系统性\"群体思维\"问题。研究通过随机数生成、语义关联等测试验证了这一现象，指出问题根源在于RLHF对齐训练削弱了模型的探索性思维。这一发现对当前AI Agent依赖LLM做决策的架构提出深层质疑。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/07/01/1140003/llms-are-stuck-in-a-groupthink-rut-this-startup-is-trying-to-get-them-out/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Google NotebookLM新增TikTok风格AI视频摘要功能",
-                "summary": "Google AI笔记工具NotebookLM上线新功能，可将长篇研究资料自动转换为TikTok风格的竖屏AI视频摘要，便于用户快速传播和社交分享。该功能已在移动端推送，意在将AI辅助研究与社交媒体传播打通。AI工具正从\"效率工具\"向\"传播媒介\"延伸，内容消费模式正在被AI生成能力重新定义。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/tech/959778/google-notebooklm-ai-clips"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "一硅科技完成近亿元Pre-A轮融资，剑桥副教授创业切入硅光子芯片",
-                "summary": "由剑桥大学副教授创立的硅基光电子集成芯片公司光引科技宣布完成近亿元Pre-A轮融资，投资方包括光子强链基金、中科创星等多家机构。硅光子芯片被视为AI数据中心光互联的核心技术方向，可显著提升算力传输效率。随着AI算力需求爆发，光电融合芯片赛道正进入加速期。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3879991356157952?f=rss"
-            },
-            {
-                "tag": "行业格局",
-                "title": "阿里内部全面禁用Claude Code，数据安全与国产替代双轮驱动",
-                "summary": "据36氪报道，阿里巴巴内部已全面禁用Anthropic的Claude Code编程工具。此举正值国内科技企业加速推进AI编程工具国产替代的背景之下，字节跳动豆包平台此前已上线类似功能。数据安全考量与供应链自主可控的双重压力下，中美AI工具生态正在加速脱钩，国内AI开发工具市场将迎来更大空间。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3880629882679301?f=rss"
-            },
-            {
-                "tag": "应用落地",
-                "title": "豆包智能体功能7月15日下线，字节跳动调整AI Agent产品策略",
-                "summary": "字节跳动旗下豆包平台宣布，智能体（Agent）功能将于2026年7月15日正式下线，用户数据将于10月15日后依据隐私政策清除。该功能上线时间并不长便宣布停止，反映出豆包在AI Agent产品化路径上仍在探索。豆包的调整表明，当前AI Agent从技术原型到稳定商业产品之间仍存在显著鸿沟，平台方正在收缩战线聚焦核心能力。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3880708060901641?f=rss"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "袁进辉新公司成立不到三年冲刺港股IPO，一硅时代剑指AI基础设施",
-                "summary": "由前OneFlow创始人袁进辉创办的AI基础设施公司已向港交所提交IPO申请，公司成立不足三年。袁进辉在分布式深度学习框架领域具有深厚积累，其公司聚焦大模型训练和推理优化。AI基础设施公司密集冲刺资本市场，反映出2024-2025年AI投资热潮中形成的一批优质标的正集中进入退出周期。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3879814941437956?f=rss"
             }
         ]
     }
