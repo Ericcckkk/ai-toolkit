@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-08-05",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "白宫将AI网络安全框架列为机密，排除公众监督与开源模型",
+                "summary": "白宫正在将AI网络安全框架列为机密，排除开源模型并限制公众参与审查。知情人士透露，该框架将要求闭源AI系统提交安全评估报告。此举反映政府内部对AI安全风险存在严重分歧，意味着企业需承担更多自主安全评估责任，监管透明度降低将增加合规难度。",
+                "source": "Hacker News / Wired / Axios",
+                "url": "https://www.axios.com/2026/08/04/trump-ai-framework-open-models"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "DeepSeek重启融资，投前估值5000亿元加速冲刺",
+                "summary": "据多名交易人士透露，DeepSeek已启动第二轮融资，计划募资500亿元，投前估值约5000亿元，计划8月下旬完成签约。该公司今年4月开启首轮融资、6月完成500亿元交割时估值超3500亿元。这意味着DeepSeek一年内估值增长超40%至约714亿美元，成为全球估值最高的AI独角兽之一。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3925968796514432"
+            },
+            {
+                "tag": "政策监管",
+                "title": "OpenAI支付320万美元和解，涉歧视美国工人案件",
+                "summary": "OpenAI已支付320万美元和解美国司法部对其歧视美国工人的调查。劳工部指控OpenAI在H-1B签证申请中更倾向外国工人，并在L-1签证程序中存在不当行为。司法部要求OpenAI建立合规体系并接受后续审计。此案对所有依赖H-1B签证的AI公司是警示，需重新审视招聘合规政策。",
+                "source": "Hacker News / Reuters / 美国司法部",
+                "url": "https://www.reuters.com/business/openai-pays-32-million-us-probe-over-hiring-foreign-workers-2026-08-04/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic签署100亿美元云合作大单，对抗微软Azure绑定",
+                "summary": "Anthropic已与AI云初创公司Volta签署价值100亿美元的战略合作协议，这是AI基础设施领域最大规模投资之一。Volta由AWS支持，此次合作将使Anthropic获得长期算力承诺。Anthropic近月来持续扩张云合作伙伴网络，此举被视作对抗OpenAI与微软深度绑定的战略布局。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "哲源科技融资近2亿元，押注AI for Science生命科学赛道",
+                "summary": "哲源科技完成近2亿元A2轮融资，由圣湘生物产业基金领投，中科创星持续跟投。本轮融资将用于高价值创新IP产出与全球资产布局，以及基于生命世界模型驱动的AI4S（AI for Science）研发。哲源科技将AI能力与基础科学研究深度结合，生命科学正成为AI落地的新蓝海。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3925940167325829"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "玻璃基板涨价270%背后，巽霖科技半年内再融近2亿元",
+                "summary": "电子级玻纤布价格较2025年低点翻倍、FR-4覆铜板涨幅超270%，AI封装载板部分交期拉长至6个月以上。玻璃基板领军企业巽霖科技宣布完成近2亿元B轮融资——这是该公司半年内完成的第二轮融资，累计金额近2亿元，将用于扩充高端封装产能。AI驱动的硬件需求激增正重塑封装材料供应链。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3924953058605444"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "若创科技融资近亿美元，大疆前高管All in个人出行机器人",
+                "summary": "AI智能硬件与机器人企业若创科技（Strutt）完成Pre-A+轮融资，累计融资金额近亿美元。本轮获得全球领先出行科技企业注资，由大疆前高管创立，押注个人出行机器人赛道。累计近亿美元融资规模表明资本市场对末端出行机器人的商业化前景高度看好。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3926003098843272"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "陶世智能融资超亿元估值破10亿，精密减速器成机器人核心资产",
+                "summary": "精密减速器企业陶世智能完成超亿元融资，估值突破10亿元，成为该领域新晋独角兽。本轮由国创集团、海川聚义等参与投资。陶世已为果链、头部灵巧手等厂商供货，精密减速器是人形机器人等智能硬件的核心零部件，其技术壁垒直接决定整机性能。资本加速布局机器人核心零部件，议价能力正在显著提升。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3924628805351811"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Kimi K3与DeepSeek V4正面交锋，原生多模态成决胜关键",
+                "summary": "36氪深度对比评测发现，Kimi K3与DeepSeek V4在长链推理任务上差距明显，核心差异在于原生多模态能力。多模态研究员指出，视觉反馈比代码反馈更精准、更贴近用户意图，可有效避免长任务中误差累积导致的效果崩塌。原生多模态正成为大模型能力分水岭。",
+                "source": "36氪",
+                "url": "https://36kr.com/p/3924826666301831"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "阿里云发布Qwen-Image-3.0，4K图像生成能力对标DALL-E 3",
+                "summary": "阿里云正式上线千问图像生成模型Qwen-Image-3.0，面向所有用户开放使用。旗舰版Qwen-Image-3.0-Pro与标准版Standard同时开放API，支持4K分辨率图像生成，文生图能力达业界领先水平。国内大厂在图像生成领域新一轮竞争开启，价格战或将来临。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3926001579980936"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "京东开源实时流式视频编辑模型JoyAI-Video-Edit",
+                "summary": "京东宣布开源自研的实时流式视频编辑模型JoyAI-Video-Edit，用户可一边观看视频一边修改人物与场景，实现从\"先有素材再修改\"到\"实时互动编辑\"的创作模式变革。该模型降低了视频后期门槛，为AIGC工具链再添利器。",
+                "source": "36氪 / 京东黑板报",
+                "url": "https://36kr.com/newsflashes/3925977640777857"
+            },
+            {
+                "tag": "应用落地",
+                "title": "A股存储芯片与MLCC概念爆发，AI硬件牛市进行时",
+                "summary": "A股三大指数全线翻红，存储芯片、先进封装、MLCC概念等方向涨幅居前，全市场上涨个股超3500只。MLCC概念指数收涨5.22%，19只概念股年内平均涨幅67%。全球AI硬件需求正向产业链上游传导，从GPU到被动元件的全供应链景气度持续上升。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3925976152963457"
+            },
+            {
+                "tag": "应用落地",
+                "title": "AI应用下沉五大场景，商业化价值闭环加速形成",
+                "summary": "A股AI应用再度爆发，传智教育、优刻得等领涨。产业层面显示，AI已下沉至AIGC创作、政企软件、AI教育、智能制造、智能医疗等五大场景，多家公司披露商业化进展。市场对AI应用盈利预期的升温，正推动资金从纯模型层向应用层轮动。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3925916589881476"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "华泰证券：大模型价格战进入深水区，推理成本成核心战场",
+                "summary": "华泰证券研报指出，OpenAI于7月30日将Terra和Luna价格分别下调20%和80%，次日DeepSeek V4 Flash 0731也将价格降至新低。大模型竞争正从\"能力排名\"转向\"同等智能成本\"竞争，推理成本将成为差异化关键。价格屠夫策略将加速AI应用普及，但也压缩中小厂商生存空间。",
+                "source": "36氪 / 华泰证券",
+                "url": "https://36kr.com/newsflashes/3925914734066049"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "中信证券：美股应用软件估值修复开启，AI叙事正在被证伪",
+                "summary": "中信证券研报表示，\"AI吞噬软件\"叙事正被逐步证伪：龙头厂商收入与在手订单保持稳健增长，AI嵌入CRM、ERP等既有工作流推进企业级落地，传统软件基本面未出现结构性失速。应用软件板块估值修复窗口已打开，建议关注AI变现能力验证。",
+                "source": "36氪 / 中信证券",
+                "url": "https://36kr.com/newsflashes/3925919120259207"
+            },
+            {
+                "tag": "行业格局",
+                "title": "三星与SK海力士评估中国中微半导体设备，或改写采购格局",
+                "summary": "韩国三星电子和SK海力士正在评估中国中微半导体的芯片制造设备，考虑将其用于旗下中国工厂。中微半导体在刻蚀设备等领域已具备国际竞争力，若获韩系大厂认可，将是中国半导体设备的重要突破，但地缘政治因素仍存变数。",
+                "source": "36氪 / 财联社",
+                "url": "https://36kr.com/newsflashes/3926000181213315"
+            },
+            {
+                "tag": "行业格局",
+                "title": "SpaceX今年采购3.29亿美元Megapacks，AI基础设施成本压力骤增",
+                "summary": "SpaceX今年已购买价值3.29亿美元的Tesla Megapacks，用于数据中心和星舰发射设施供电。内部人士透露AI成本正在侵蚀利润，致部分股东考虑减持。这标志着AI基础设施投入正从云厂商向芯片设计、算力部署等全产业链传导，AI竞争进入基础设施军备竞赛阶段。",
+                "source": "Hacker News / NBC News / TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/04/spacex-has-bought-329m-worth-of-tesla-megapacks-so-far-this-year/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "开源模型能力逼近前沿，但安全防护差距持续扩大",
+                "summary": "SaferAI报告显示，Z.ai开源权重模型GLM-5.2已接近前沿AI能力水平，但在关键安全防护措施上存在明显不足。开源模型的能力与安全之间的GAP正在扩大，这对依赖开源模型的企业级部署提出严峻挑战，也引发对开源AI安全性的新一轮讨论。",
+                "source": "TechCrunch AI / Hacker News",
+                "url": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Nvidia牵头成立Open Secure AI Alliance，一周内扩至120家公司",
+                "summary": "Nvidia牵头成立的Open Secure AI Alliance于一周前成立，现已扩展至超过120家公司，首批安全提案已提交。该组织旨在为AI系统建立统一安全标准。Nvidia快速搭建行业联盟的效率表明，算力主导者正试图通过生态标准巩固话语权。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "MLCC概念股业绩预喜比例100%，日韩大厂涨价15%~30%",
+                "summary": "MLCC景气度高企，概念股业绩预喜比例100%。村田、三星电机、太阳诱电等日韩头部厂商先后针对AI服务器及车规高端高容MLCC上调价格，涨幅15%～30%。19只MLCC概念股年内股价平均上涨67%。AI驱动的硬件需求爆发正重塑上游供应链格局，从GPU到被动元件的全链条景气度持续上升。",
+                "source": "36氪",
+                "url": "https://36kr.com/newsflashes/3925918166907266"
+            }
+        ]
+    },
+    {
         "date": "2026-08-04",
         "items": [
             {
