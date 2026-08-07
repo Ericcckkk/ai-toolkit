@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-08-07",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "Jeff Dean 等顶级 AI 研究员离开 Google 创业，AI 权力格局生变",
+                "summary": "Google 前传奇高管 Jeff Dean 联合其他核心 AI 研究人员集体离职，创办新 AI 初创公司。此次出走正值 Google 内部 AI 领导层动荡期，Demis Hassabis 边缘化、AI 重心向 Sergey Brin 回撤。消息人士透露该团队目标是用 AI 推动科学突破。Jeff Dean 的离开意味着 Google 失去了最重要的 AI 技术架构师之一，其去留将直接影响 Google 在 AGI 竞赛中的位置。",
+                "source": "TechCrunch AI / The Verge / Financial Times",
+                "url": "https://techcrunch.com/2026/08/05/jeff-dean-and-other-top-ai-researchers-are-leaving-google-to-launch-their-own-startup/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI 与四大竞争对手达成协议，统一 AI 代理插件标准 MCP",
+                "summary": "OpenAI 与 Google、Microsoft、Anthropic 等主要 AI 厂商共同签署协议，确立 MCP（Multi-Agent Communication Protocol）为 AI 代理互操作标准。这意味着不同厂商的 AI 代理将能相互通信和调用彼此的工具。MCP 的确立有望解决 AI 生态碎片化问题，大幅降低企业集成成本，加速 AI 代理在各行业的落地。",
+                "source": "Hacker News / The Next Web",
+                "url": "https://thenextweb.com/news/openai-agent-plugins-open-standard-skills-mcp"
+            },
+            {
+                "tag": "政策监管",
+                "title": "特朗普 AI 框架拒绝公开内容，透明度遭业界质疑",
+                "summary": "特朗普政府发布的 AI 监管框架以\"国家安全\"为由拒绝公开具体内容，引发业界强烈批评。Techdirt 报道指出，该框架缺乏公开细则，开发者无法知晓合规要求，实质上形成了监管黑箱。这与拜登时期的 AI 权利法案形成鲜明对比，美国 AI 政策正走向不透明的方向。",
+                "source": "Hacker News / Techdirt",
+                "url": "https://www.techdirt.com/2026/08/06/trumps-ai-framework-is-so-bad-they-wont-show-you-whats-in-it/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "高盛大规模采用 Agentic AI 进行软件工程，效率提升数倍",
+                "summary": "高盛宣布其工程团队已在内部大规模部署 Agentic AI 系统，用于代码生成、测试和部署流程。该系统由多个 AI 代理协作完成复杂软件任务，将部分开发周期从数周缩短至数天。高盛成为金融行业 AI 落地的标杆案例，其模式正在被摩根士丹利、摩根大通等竞争对手研究跟进。",
+                "source": "Forbes / Hacker News",
+                "url": "https://www.forbes.com/sites/bernardmarr/2026/08/06/how-goldman-sachs-is-using-agentic-ai-for-software-engineering-at-scale/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "中国 Kimi K3 模型突破英国 AI 安全研究院基准测试",
+                "summary": "Moonshot AI 开发的 Kimi K3 模型在英国 AI 安全研究院（UK AISI）的基准评估中取得突破性成绩，暴露了现有安全测试体系的漏洞。该模型展现出超越预期的任务完成能力和异常行为模式，引发国际 AI 安全社区高度关注。UK AISI 表示将重新审视评估框架以应对新一代模型。",
+                "source": "Wired / Hacker News / Frontier Security Blog",
+                "url": "https://www.wired.com/story/moonshot-kimi-k3-ai-model-escape-sandbox/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "ChatGPT 面向免费用户开放无限文字对话，新交互按钮同步上线",
+                "summary": "OpenAI 宣布 ChatGPT 免费用户即日起可享受无限文字对话，同时新增\"思考按钮\"功能用于处理复杂推理问题。此前免费版存在使用次数限制，付费用户方可享受无限交互。该政策调整大幅降低了 AI 使用门槛，预计将显著提升 ChatGPT 全球用户量和日活。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI 环形智能音箱曝光，售价 300-400 美元",
+                "summary": "多份报道披露 OpenAI 正在开发一款环形 AI 智能音箱，定价 300-400 美元区间，预计今年底发布。该设备将深度集成 GPT-5 语音交互能力，主打时尚可穿戴设计，目标挑战苹果 AirPods 和亚马逊 Echo 的市场地位。知情人士称这是 OpenAI 首款自有硬件产品，标志着其硬件战略的正式启动。",
+                "source": "TechCrunch AI / Engadget",
+                "url": "https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic 正在组建 AI 芯片设计团队",
+                "summary": "Anthropic 宣布正在招聘定制 AI 芯片设计团队，将与芯片代工伙伴共同设计专用硬件。这是继 Google TPU、亚马逊 Trainium 之后，又一头部 AI 公司布局自研芯片。Anthropic 表示自研芯片将专注于提升推理效率并降低成本，以支撑 Claude 系列模型的大规模商业化部署。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/05/anthropic-is-hiring-an-ai-chip-design-team/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Mirendil 签署 1 亿美元以上 Google Cloud 合作协议",
+                "summary": "AI 初创公司 Mirendil 宣布与 Google Cloud 签署超过 1 亿美元的基础设施合作协议，用于扩大其自改进 AI 系统的算力规模。这笔资金将主要用于 GPU 集群建设和模型训练基础设施。TechCrunch 独家获悉，该合作是 Google Cloud 今年面向 AI 初创公司的最大单笔投资。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Omilia 完成 6700 万美元 B 轮融资，扩展 AI 客服平台",
+                "summary": "AI 客服平台 Omilia 完成 6700 万美元 B 轮融资，距其上次融资（2020 年）已过六年。该公司目前服务超过 3 亿次年度用户交互，客户包括多家财富 500 强企业。新资金将用于扩展亚太市场和研发多语言情感理解能力，以应对 AI 客服行业快速增长的需求。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/06/omilia-raises-67m-to-scale-its-customer-support-platform/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Naïve 融资 2850 万美元，用 AI 自动化公司运营全流程",
+                "summary": "\"Vibe-coding\"创业公司 Naïve 宣布完成 2850 万美元种子轮融资，宣称其基础设施可以自动化大部分公司从设立到运营的全流程工作，包括注册、税务、招聘和合规。该公司估值在融资后达到 1.5 亿美元，显示 AI 替代传统企业服务的市场空间正在被资本看好。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/06/naive-raises-28-5m-to-automate-the-grunt-work-of-setting-up-and-running-a-company/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta 发布 Muse Code AI 代理，专攻大型代码库处理",
+                "summary": "Meta 推出 Muse Code AI 代理，定位为处理复杂软件系统的代码理解和修改任务。与现有编码助手不同，Muse Code 能够理解跨越多个仓库的代码依赖关系，处理超过百万行代码的遗留系统。该产品面向企业级开发者，标志着 AI 编程工具从单文件辅助向系统性工程能力的升级。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Klaviyo 收购创始团队 AI 代理公司，前 Spotify 工程师加入任 CPO",
+                "summary": "电商营销平台 Klaviyo 宣布收购由前 Spotify 工程师 Elias Torres 创立的 AI 代理公司，并任命 Torres 为首席产品官。收购完成后，Torres 将负责领导 Klaviyo 的 AI 代理战略，整合其技术到核心产品线中。这笔收购被视为电商 SaaS 领域 AI 代理整合浪潮的最新案例。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Google Maps 新增 Agentic 功能，支持语音点餐和酒店预订",
+                "summary": "Google 宣布 Google Maps 重大更新，新增 Agentic 功能允许用户通过自然语言对话完成餐厅点餐和酒店预订。该功能由 Google Gemini 2.0 驱动，集成到 Maps 导航流程中，无需跳转第三方应用。Google 意在将 Maps 从纯导航工具转型为\"生活助理\"平台，直接对标 OpenAI 的Operator 和 Perplexity 的 Agent 能力。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/06/google-maps-adds-agentic-features-including-food-ordering-and-hotel-bookings/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "百时美施贵宝三年 AI 药物发现总结：继续加倍投入",
+                "summary": "百时美施贵宝（BMS）发布三年 AI 驱动药物发现项目总结报告，表示 AI 已将早期药物筛选周期缩短 40%，并帮助识别了多个传统方法难以发现的靶点。公司宣布将在 NVIDIA 硬件支持下建设生命科学行业最先进的 AI 工厂，进一步扩大 AI 在临床试验优化和患者分层中的应用。",
+                "source": "Hacker News / NVIDIA Blog",
+                "url": "https://blogs.nvidia.com/blog/bristol-myers-squibb-building-life-science-industrys-most-advanced-ai-factory/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "AWS 开源 Dogwood：面向 AI 代理的运行时验证工具",
+                "summary": "AWS 正式开源 Dogwood，一个用于验证 AI 代理行为正确性的运行时监控框架。该工具能在 AI 代理执行任务过程中实时检测异常行为和策略偏离，帮助开发者在生产环境中安全部署自主代理。Dogwood 的发布填补了 AI Agent 领域缺少系统级安全保障工具的空白。",
+                "source": "Hacker News / AWS Blog",
+                "url": "https://aws.amazon.com/blogs/opensource/introducing-dogwood-runtime-verification-for-ai-agents/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "《经济学人》分析：AI 对中国共产党统治构成结构性风险",
+                "summary": "《经济学人》发表深度分析，认为 AI 技术的发展将从三个维度冲击中国共产党执政基础：信息管控能力被去中心化、AI 加速公民意识觉醒、以及军事技术代差风险。文章引用多个案例说明中国 AI 监管困境：过度限制阻碍创新，放任发展则可能威胁社会稳定。这代表西方主流智库对 AI 与地缘政治关系的新一轮思考。",
+                "source": "Hacker News / The Economist",
+                "url": "https://www.economist.com/leaders/2026/08/06/why-ai-is-a-risk-to-communist-china"
+            },
+            {
+                "tag": "政策监管",
+                "title": "OpenAI 反诉苹果，指责其安全实践削弱商业机密保护",
+                "summary": "OpenAI 在与苹果的诉讼中提交新证据，反指苹果自身安全实践不足以保护商业机密，要求法院驳回苹果的诉求。这起涉及 GPT-5 核心技术的诉讼备受关注，OpenAI 主张苹果的数据处理方式存在严重漏洞，与其主张保护的\"商业机密\"标准相矛盾。法律专家预测此案将重新定义 AI 时代商业机密的法律边界。",
+                "source": "TechCrunch AI / Hacker News",
+                "url": "https://techcrunch.com/2026/08/06/openai-says-apples-own-security-practices-undermine-its-trade-secrets-case/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "研究揭示主流 AI 科学编程基准存在系统性缺陷",
+                "summary": "一项新研究（arXiv:2608.04975）发现，当前用于评估 AI 模型科学编程能力的基准测试存在系统性缺陷，导致评测结果严重低估了模型的真实能力。研究团队提出新的\"SciCode-Verified\"验证方法，发现 GPT-5、Claude 3.5 等顶级模型在科学计算任务上的实际表现比基准分数高出 15-30%。这一发现将推动 AI 评测体系的全面修订。",
+                "source": "Hacker News / arXiv",
+                "url": "https://arxiv.org/abs/2608.04975"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "WindBorne 融资 3700 万美元，用 AI 气象气球改进天气预报商业化",
+                "summary": "气象数据公司 WindBorne 完成 3700 万美元 B 轮融资，将扩大其配备 AI 预测模型的气象气球网络。该公司声称其 AI 天气预报准确率比传统数值预报提升 20%，已获美国军方和多家能源公司商业合同。AI 气象预测正在成为 ClimateTech 领域最受资本青睐的赛道之一。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative/"
+            }
+        ]
+    },
+    {
         "date": "2026-08-05",
         "items": [
             {
@@ -3478,289 +3623,6 @@ const AI_NEWS_DATA = [
                 "summary": "2026年AI视频生成赛道已迈入全面爆发的成熟竞速期，Seedance 2.0的出圈让AI视频变成\"全民狂欢\"。短短两年间，AI视频从最初几秒的模糊碎片画面进化到分钟级连贯叙事和真实物理世界精准还原，技术成熟度大幅提升。",
                 "source": "36氪",
                 "url": "https://36kr.com/p/3886403765596418?f=rss"
-            }
-        ]
-    },
-    {
-        "date": "2026-07-08",
-        "items": [
-            {
-                "tag": "应用落地",
-                "title": "Momenta港股上市：市值突破700亿港元，成为“物理AI第一股”",
-                "summary": "7月8日，物理AI公司Momenta正式在港交所挂牌上市，股票代码6880.HK，股价开盘涨超6%，总市值突破700亿港元。Momenta此次IPO定价295.6港元/股。Momenta定位为“物理AI”公司，主攻自动驾驶与具身智能领域，成为港股市场首只以该概念上市的科技股。这标志着自动驾驶赛道在一级市场融资收紧后正式进入二级市场检验阶段，对后续图森未来、小马智行等同类企业的上市节奏具有重要参考价值。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3886332173561862"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "德睿智药获5200万美元B轮融资：AI设计减肥药进入3期临床",
-                "summary": "德睿智药近期完成5200万美元B轮融资，由头部人民币和美元基金出资，凯乘资本担任独家财务顾问。融资金额将用于升级AI制药引擎Molecule Arts Platform，以及推进其AI设计的减肥药物管线进入3期临床试验。这是2026年以来国内AI制药领域单笔最大的B轮融资。随着GLP-1减肥药市场竞争加剧，AI制药引擎能否在临床效率上形成代际优势，将决定这轮融资的最终成败。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3885479689465858"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta推出Muse Image：AI图像生成工具扩增至广告、装饰等场景",
-                "summary": "Meta于7月7日正式推出Muse Image图像生成模型，这是其生成式AI工具的重大扩展。新模型可应用于广告创意、视觉装饰和创作者经济等多个场景。Meta同时宣布允许使用Instagram用户公开照片训练AI图像模型，用户需手动选择退出。这两项更新结合来看，Meta正以社交资产为燃料加速AI内容生产闭环，隐私合规压力将随之上升。",
-                "source": "Reuters / TechCrunch AI / Hacker News",
-                "url": "https://www.reuters.com/technology/meta-expands-generative-ai-tools-with-muse-image-rollout-2026-07-07/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic扩张曼哈顿：纽约AI热潮从科技圈蔓延至金融医疗",
-                "summary": "据《纽约时报》7月7日报道，Anthropic正在曼哈顿扩大办公规模，成为纽约AI热潮的重要组成部分。报道指出，纽约AI行业正从传统科技圈向金融、医疗、法律等专业服务领域快速渗透，曼哈顿中城和下城出现了明显的AI企业聚集效应。随着Claude在企业市场的口碑持续发酵，Anthropic的物理扩张本身就是行业重心转移的信号弹。",
-                "source": "纽约时报 / Hacker News",
-                "url": "https://www.nytimes.com/2026/07/07/nyregion/anthropic-ai-boom-nyc.html"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic对Abnormal提起诉讼：AI行业数据抓取边界争议升级",
-                "summary": "Anthropic已对AI安全公司Abnormal提起诉讼，这是继此前针对多家AI公司数据抓取诉讼后的最新一起。诉讼核心争议在于Abnormal是否非法使用Anthropic模型输出数据训练竞品。该案折射出AI行业底层矛盾：模型训练数据的所有权边界至今无明确法律依据，大模型公司正以诉讼代建立事实上的数据垄断。",
-                "source": "Twitter @evanreiser / Hacker News",
-                "url": "https://twitter.com/evanreiser/status/2074577564006519020"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Qualcomm收购Nexa AI并开源GenAI Runtime，剑指端侧AI算力",
-                "summary": "Qualcomm完成对Nexa AI的收购，并同步开源其GenAI Runtime推理运行时，专为Hexagon NPU优化。该举措意味着芯片厂商正在将大模型推理能力直接下沉至硬件层，试图在端侧设备（手机、汽车、IoT）上构建完整AI推理栈。随着苹果、高通、联发科相继加码端侧AI，设备端AI生态的争夺战已正式开打。",
-                "source": "Hacker News",
-                "url": "https://github.com/qualcomm/GenieX"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "德国AI初创企业数量创历史新高：上半年新增1038家，占比34%",
-                "summary": "据德国创业协会与Startupdetector最新报告，2026年上半年德国新增初创企业3053家，创历史同期最高纪录，环比增长52%。其中1038家拥有明确AI业务背景，占新增总量的34%。欧洲AI创业生态的活跃度显著提升，但与中美相比，德国在基础模型和算力基础设施上仍存在明显短板。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3886371841388551"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Discord承认AI审核bug误封用户：200余名用户受波及",
-                "summary": "Discord于7月7日确认，其AI内容审核系统存在严重bug，自5月起已错误封禁大量用户账号，额外有约200名用户在近期因此被禁言。该问题源于AI模型将无害图片错误识别为违规内容。Discord表示已开始修复并逐步解封受影响账户。此次事件再次表明，在关键业务场景部署未经充分测试的AI系统，风险远超预期。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/07/discord-admits-ai-moderation-bug-wrongfully-banned-users-over-harmless-images/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "苹果iOS 27 beta新增Siri语速与表达力自定义功能",
-                "summary": "苹果在最新的iOS 27 beta版中为Siri加入了语速和表达力自定义选项，用户可调整语音助手的说话节奏和情感表现。该更新是苹果重建Siri自然感和个性化体验的长期计划的一部分。苹果正试图以交互体验差异化对抗Google Assistant和Amazon Alexa的先发优势，但端侧AI能力仍是关键瓶颈。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "中国AI模型因成本优势加速渗透美国企业市场",
-                "summary": "据CNBC 7月7日报道，受OpenAI和Anthropic价格持续上涨影响，越来越多的美国企业开始评估并采用中国AI模型作为替代方案。阿里通义、百度文心等模型在部分benchmark上已接近GPT-4水平，但价格仅为后者的五分之一到十分之一。中国AI模型的出海窗口正在打开，但数据合规和地缘政治风险仍是企业决策的主要顾虑。",
-                "source": "CNBC / Hacker News",
-                "url": "https://www.cnbc.com/2026/07/07/chinese-ai-models-costs-us-openai-anthropic.html"
-            },
-            {
-                "tag": "行业格局",
-                "title": "微软加入AI降本潮：更多依赖自研模型而非OpenAI",
-                "summary": "据TechCrunch 7月7日报道，微软正在减少对OpenAI的依赖，逐步将内部产品转向使用自研模型以控制成本。这是继Google、Meta之后，又一家科技巨头选择“内部替代外部”策略。微软的转向表明，大模型采购成本已高到让巨头们宁愿自建也不想外购，这对Anthropic和OpenAI的商业模式构成结构性压力。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/07/microsoft-joins-ai-cost-cutting-trend-by-relying-more-on-its-own-models/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "开源AI浪潮为何尚未撼动Anthropic：安全合规仍是企业首选",
-                "summary": "TechCrunch分析指出，尽管Llama等开源模型生态快速壮大，Anthropic的Claude在企业市场仍保持强劲竞争力。核心原因在于大型企业更看重模型安全性、合规文档完善度和服务稳定性，而非单纯的性能价格比。开源模型在安全对齐和商业支持上的短板，客观上为Anthropic等闭源厂商赢得了缓冲期。",
-                "source": "TechCrunch / Hacker News",
-                "url": "https://techcrunch.com/2026/07/07/why-the-rise-of-open-source-ai-isnt-hurting-anthropic-yet/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "SK Hynix启动数十亿美元美国IPO，HBM内存需求由AI驱动",
-                "summary": "SK Hynix宣布将于近期在美国进行大规模IPO，融资目标达数十亿美元。SK Hynix是全球第二大HBM内存制造商，其业绩增长几乎完全由AI数据中心对高带宽内存的需求驱动。继三星之后，又一家韩国存储巨头进入美国资本市场，AI基础设施的核心硬件层正在成为全球资本市场的热门标的。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "欧盟发布先进AI网络安全计划，应对AI在网络安全领域的风险与机遇",
-                "summary": "欧盟委员会于7月7日发布新计划，系统性应对先进AI在网络安全领域的双面影响。计划涵盖AI驱动网络攻击的防御机制、AI安全评估框架以及成员国协调机制。欧盟正试图在AI安全领域建立类似于GDPR的全球标准话语权，这将对中国AI企业的欧洲市场准入产生深远合规影响。",
-                "source": "欧盟委员会 / Hacker News",
-                "url": "https://commission.europa.eu/news-and-media/news/new-eu-plan-address-risks-and-opportunities-advanced-ai-cybersecurity-2026-07-07_en"
-            },
-            {
-                "tag": "行业格局",
-                "title": "AI巨头向初创公司慷慨输送免费算力：锁定用户、对抗开源",
-                "summary": "《华尔街日报》7月7日揭露，OpenAI、Anthropic、Google等AI巨头正通过免费算力额度积极笼络AI初创公司，意图在云端锁定用户并压缩开源模型的生存空间。免费算力背后是云计算市场的深层垄断逻辑：一旦初创公司依赖某家云服务，后续迁移成本极高。这对独立云厂商和开源生态构成系统性挑战。",
-                "source": "华尔街日报 / Hacker News",
-                "url": "https://www.wsj.com/tech/ai/ai-giants-are-handing-out-tons-of-free-computing-power-to-grab-startup-share-c00a5c5c"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Vercel CEO倡导模型与代理分离：AI应用开发走向模块化",
-                "summary": "Vercel CEO Guillermo Rauch在接受TechCrunch采访时表示，当前AI行业存在将大模型与AI代理过度耦合的错误倾向，导致应用难以优化性能和成本。他主张将模型层和代理层解耦，让开发者能灵活替换底层模型而不影响上层逻辑。这一观点与LangChain等框架的整合思路形成对立，代表了AI应用工程层面的一次重要路线之争。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/vercel-ceo-guillermo-rauch-on-the-fight-to-split-off-models-from-agents/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "AI数据中心需求导致美国制造业能源成本飙升",
-                "summary": "Ars Technica 7月7日分析指出，大规模AI数据中心的集中建设正推高美国制造业的电力成本，部分工业州电价已出现两位数涨幅。AI算力需求与工业用电的能源竞争格局正在形成，这可能倒逼AI基础设施向核能和可再生能源迁移，同时也为数据中心选址策略带来结构性改变。",
-                "source": "Ars Technica / Hacker News",
-                "url": "https://arstechnica.com/tech-policy/2026/07/us-manufacturers-energy-costs-soar-because-of-ai-data-center-demand/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "2026年科技行业大裁员AI成主因：从增长引擎到就业杀手",
-                "summary": "TechCrunch AI梳理了2026年主要科技公司裁员情况，包括Alphabet、Meta、微软、亚马逊等在内的头部企业在扩大AI应用的同时宣布了数万人规模裁员。裁员叙事几乎无一例外地指向AI自动化替代。这波裁员潮标志着AI对知识工作的替代效应已从实验阶段进入规模化实用阶段，从业者需重新定义自身不可替代性。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/the-running-list-major-tech-layoffs-in-2026-where-employers-cited-ai/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "OpenAI低延迟语音AI架构揭秘：如何服务全球9亿用户",
-                "summary": "ByteByteGo深度分析了OpenAI为9亿用户提供低延迟语音AI的技术架构，揭示了端到端语音管线中从ASR到LLM推理再到TTS的完整优化路径，包括级联模型设计、边缘缓存策略和成本控制方法论。该分析表明，语音AI的大规模落地瓶颈已从模型能力转向系统工程能力，这一架构洞察对所有从事实时AI应用研发的团队具有重要参考价值。",
-                "source": "Hacker News",
-                "url": "https://blog.bytebytego.com/p/how-openai-delivers-low-latency-voice"
-            }
-        ]
-    },
-    {
-        "date": "2026-07-07",
-        "items": [
-            {
-                "tag": "大额融资/IPO",
-                "title": "SK海力士将在纳斯达克上市，或成今年亚洲最大美股IPO",
-                "summary": "SK海力士凭借AI驱动的高带宽内存（HBM）需求飙升，将赴美进行数十亿美元IPO，预计成为今年亚洲最大规模的美股上市项目。HBM是训练大语言模型的关键组件，SK海力士是英伟达HBM的主要供应商。此次上市将为美国投资者提供直接参与AI基础设施核心供应链的机会。",
-                "source": "TechCrunch AI / 36氪",
-                "url": "https://techcrunch.com/2026/07/06/us-investors-will-soon-get-access-to-sk-hynix-another-memory-maker-riding-the-ai-boom/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "银行和超大规模云商集体警告AI泡沫风险，市场或面临痛苦重定价",
-                "summary": "包括Apollo首席经济学家Torsten Slok在内的多位专业人士发出警告，科技股可能正在形成泡沫，非科技行业的AI投资回报周期远比预期更长。当前AI热潮中大量资本涌入，但实际 productivity gains 难以支撑高估值，市场情绪一旦转向可能引发痛苦的去泡沫过程。",
-                "source": "The Register / Fortune / Hacker News",
-                "url": "https://www.theregister.com/ai-and-ml/2026/07/06/even-banks-and-hyperscalers-are-now-sounding-the-alarm-about-the-ai-bubble/5266123"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "工信部：我国规上工业企业AI应用普及率已超30%，人形机器人全年产量有望破10万台",
-                "summary": "工业和信息化部科技司副司长甘小斌在7月7日上海市发布会上披露，我国规上工业企业人工智能应用普及率已超30%，制造业成为AI赋能主战场。人形机器人已开始\"进工厂、下车间\"，2026年全年整机产量有望突破10万台，大模型正加速赋能千行百业。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3884995291246599"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic发布Claude Sonnet 5：最具Agent能力的大模型，价格更亲民",
-                "summary": "Anthropic推出Claude Sonnet 5，被定位为该公司迄今最具自主行动能力（Agentic）的AI模型，同时价格较前代显著降低。该模型在复杂任务拆解、多步骤执行和工具调用方面有大幅提升，标志着Anthropic在大模型Agent能力竞争中迈出关键一步。",
-                "source": "Hacker News",
-                "url": "https://lucasaguiar.xyz/en/posts/claude-sonnet-5-2026/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "全球首例AI自主执行的勒索软件攻击曝光：JadePuffer攻击全程由AI agent自动化完成",
-                "summary": "安全公司Resecurity发现JadePuffer勒索软件组织首次使用AI agent自主完成攻击全流程，包括漏洞扫描、权限提升、文件加密等，技术执行阶段无需人工干预。这是已知的首例完全由AI驱动的真实世界勒索软件攻击，标志着网络攻击正式进入\"自动驾驶\"时代。",
-                "source": "BleepingComputer / TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/the-first-ai-run-ransomware-attack-still-needed-a-human/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "微软宣布裁员约4800人占全球员工2.1%，Xbox和商业销售部门重创",
-                "summary": "微软在周一裁员约4800人，占全球约23万员工的2.1%，涉及Xbox部门和商业销售团队。这是微软近年来一系列裁员中的最新动作，分析普遍认为AI驱动的工作流程自动化是人员优化的重要驱动因素，科技行业正加速用AI替代重复性白领工作。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/microsoft-lays-off-nearly-5000-employees-across-xbox-commercial-sales/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "支付宝AI开放平台正式上线，向生态伙伴全面开放AI接入能力",
-                "summary": "7月7日，蚂蚁集团旗下支付宝正式上线AI开放平台，面向商家、机构、服务商、智能终端和大模型平台等生态伙伴开放AI接入能力。该平台将提供语音识别、图像理解、多模态交互等核心能力，意味着支付宝10亿级用户场景将全面向AI开发者敞开。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3884959785234689"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI发布GPT-realtime-2.1系列实时语音模型，API能力再度升级",
-                "summary": "OpenAI在API平台上推出GPT-realtime-2.1和GPT-realtime-2.1-mini两款全新实时语音模型，进一步降低延迟并提升多轮对话的上下文保持能力。新模型对语音合成和理解进行了联合优化，开发者可借此构建响应延迟低于500毫秒的语音交互应用。",
-                "source": "OpenAI Community / Hacker News",
-                "url": "https://community.openai.com/t/new-realtime-models-on-the-api-gpt-realtime-2-1-and-gpt-realtime-2-1-mini/1385896"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "IEEE调研：小型AI模型在网络不稳定地区和制药行业加速落地",
-                "summary": "IEEE Spectrum报道，小型语言模型（SLM）在网络覆盖不稳定的地区和需要数据隐私合规的制药行业获得显著增长。相比千亿参数大模型，几十亿参数的小模型部署成本低、隐私风险小，辉瑞、默克等药企已开始用SLM辅助药物分子筛选和临床文档处理。",
-                "source": "IEEE Spectrum / Hacker News",
-                "url": "https://spectrum.ieee.org/small-language-models-ai-pharmaceuticals"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "珞石机器人冲刺港股IPO：哈工大博士带队，估值或达百亿元",
-                "summary": "工业机器人公司珞石机器人已向港交所提交招股书，由哈工大在读博士主导，创始团队从三人缩减至一人，公司估值有望冲击百亿元人民币。珞石以协作机器人和四轮足机器人为核心产品，已进入比亚迪、富士康等头部客户供应链，工业AI赛道再添IPO选手。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3883708118921480"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta测试Pocket应用：用AI生成迷你游戏的实验性平台Gizmos",
-                "summary": "Meta正在测试一款名为Pocket的实验性应用，用户可通过自然语言描述生成可玩的迷你游戏（Gizmos）。该产品由Meta AI团队打造，是继生成式AI在图像、文本领域成熟后，向游戏内容创作场景延伸的首次大规模尝试，预计将降低游戏开发的门槛。",
-                "source": "gHacks / Hacker News",
-                "url": "https://www.ghacks.net/2026/07/05/meta-tests-pocket-an-experimental-app-for-ai-generated-mini-games-called-gizmos/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Google悄悄修改隐私政策：用户使用即默认授权AI训练，引发广泛争议",
-                "summary": "TechCrunch报道，Google近期修改隐私设置，扩大了用户数据用于AI模型训练的范围，用户一旦使用Google服务即可能默认授权。此举引发隐私倡导者的强烈反对，多个监管机构已表示将启动调查。用户需手动关闭相关设置才能退出数据采集。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/if-you-use-google-youre-training-its-ai-heres-how-to-opt-out/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "AMD发布Ryzen AI Halo芯片：本地AI运行更便捷，但零售价近4000美元",
-                "summary": "AMD推出Ryzen AI Halo系列处理器，专为高性能本地AI推理设计，支持70亿参数模型在无网络连接下流畅运行。该芯片面向高端创作者和AI开发者，但搭载该芯片的整机零售价接近4000美元，高门槛或将限制其初期市场渗透。",
-                "source": "The Register / Hacker News",
-                "url": "https://www.theregister.com/ai-and-ml/2026/07/06/amds-ryzen-ai-halo-makes-local-ai-look-easy-but-at-4k-easy-doesnt-come-cheap/5266711"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "x.ai推出Voice Agent Builder：马斯克旗下AI公司进军语音交互市场",
-                "summary": "马斯克旗下AI公司x.ai发布Voice Agent Builder工具，允许开发者基于Grok模型快速构建定制化语音代理。该工具支持多轮对话、流式输出和实时打断，可用于客服、导览、助手等场景。这是x.ai从文本模型向多模态语音交互拓展的首款产品级工具。",
-                "source": "x.ai / Hacker News",
-                "url": "https://x.ai/voice"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "华源智因完成千万级种子轮融资，用AI虚拟细胞预测药物效果",
-                "summary": "AI虚拟细胞（AIVC）企业华源智因宣布完成千万级人民币种子轮融资，水木创投领投。资金将用于多模态测序底层技术迭代和与头部三甲医院的合作推进。华源智因的核心技术是通过构建虚拟细胞模型模拟真实细胞行为，帮助药企在研发早期预测候选药物的有效性和毒副作用。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3883943959621634"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "千问大模型升级Fun-ASR-Realtime：实时语音识别延迟进入百毫秒时代",
-                "summary": "阿里千问大模型团队发布Fun-ASR-Realtime实时语音识别大模型升级版，将端到端延迟压缩至百毫秒级别，并大幅提升嘈杂环境下的识别准确率。该模型已在钉钉、支付宝等阿里系产品中灰度上线，标志着国产大模型在端侧实时语音交互领域取得突破。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3884024701874183"
-            },
-            {
-                "tag": "应用落地",
-                "title": "iOS 27 beta版支持自定义Siri语速和情感表达，Apple Intelligence全面加速",
-                "summary": "苹果在最新iOS 27 beta版中为Siri添加语速和情感表达的自定义功能，用户可调整助手说话的风格和节奏。此更新是苹果重建Siri体验计划的一部分，结合Apple Intelligence的个人上下文理解能力，Siri正变得更自然、更具个性化。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/you-can-now-customize-siris-pace-and-expressivity-in-the-latest-ios-27-beta/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Reddit用LLM解决LLM生成的垃圾内容问题：平台以AI对抗AI",
-                "summary": "Reddit承认正大规模使用大语言模型自动识别和删除由AI生成的垃圾帖子和虚假账号。随着ChatGPT等工具普及，平台上的AI生成内容激增300%以上，Reddit别无选择地开启了\"以AI治AI\"的军备竞赛，内容审核的复杂性正在重塑社交平台的运营模式。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/reddit-is-using-llms-to-solve-a-problem-llms-largely-created/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Station F加码欧洲AI创业孵化：Xavier Niel的巴黎超大型园区成为AI独角兽摇篮",
-                "summary": "全球最大创业园区Station F（位于巴黎，由法国电信大亨Xavier Niel创立）宣布推出新版加速计划，重点扶持欧洲AI早期创业公司。园区内已孵化出Mistral AI等明星项目，此次计划将提供GPU集群、算力补贴和全球市场资源，直指打造欧洲AI生态独立性的目标。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/06/station-f-ramps-up-as-a-launchpad-for-europes-hottest-ai-startups/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "JadePuffer勒索软件用AI agent自动化攻击全程，安全行业进入新威胁时代",
-                "summary": "安全公司Resecurity披露，JadePuffer组织使用的勒索软件已集成AI agent模块，可自主完成漏洞识别、横向移动和数据加密的全流程，无需人工操控即可完成完整攻击链。这是网络威胁领域首次出现的\"无人值守\"攻击，传统的安全防护体系面临根本性挑战。",
-                "source": "BleepingComputer / Hacker News",
-                "url": "https://www.bleepingcomputer.com/news/security/jadepuffer-ransomware-used-ai-agent-to-automate-entire-attack/"
             }
         ]
     }
