@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-08-09",
+        "items": [
+            {
+                "tag": "重要产品发布",
+                "title": "ChatGPT向免费用户开放无限文字对话，并新增复杂问题处理按钮",
+                "summary": "OpenAI于8月6日宣布，ChatGPT免费用户和Go用户将获得无限文字聊天功能，不再受消息数量限制。同时推出\"思考\"按钮，帮助处理复杂查询。这是OpenAI首次向免费用户开放核心能力，将显著扩大用户基数并加速AI普及。该策略旨在对抗Google Gemini等竞争对手的免费策略，同时为付费订阅提供更多差异化价值。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/08/06/openai-brings-unlimited-chatgpt-text-chats-to-free-users/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI因安全顾虑暂停Astra模型开发，为业界首次主动叫停前沿模型",
+                "summary": "OpenAI于8月7日宣布暂停代号为Astra的内部AI模型开发，称该模型已接近\"关键网络安全阈值\"，具备造成实质性网络攻击的能力，但安全框架尚不完善。这是AI行业首次有公司主动因安全风险暂停前沿模型开发，标志着AI安全治理进入新阶段。Astra的能力边界问题将成为监管机构关注的焦点。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI收购演示文稿初创公司NextSlide，团队并入ChatGPT产品线",
+                "summary": "OpenAI于8月8日确认收购演示文稿AI工具NextSlide，团队成员已开始参与ChatGPT相关工作。这是OpenAI近期一系列收购中的最新动作，旨在强化ChatGPT的办公套件能力，直接对标Google Slides和Microsoft PowerPoint的AI功能。NextSlide的技术可能将被整合进GPT-4o的多模态能力中。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/08/openai-acquires-presentation-startup-nextslide/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Jony Ive联手OpenAI打造智能音箱，定价300-400美元瞄准高端市场",
+                "summary": "OpenAI与前苹果设计总监Jony Ive合作开发的AI设备曝光，定位为\"无屏幕智能音箱\"，大小类似冰球。该设备定价300-400美元，配备电池和定制AI功能，将是继Rabbit R1和Ai Pin后又一款AI原生硬件。业内分析认为，OpenAI意在复制iPod时代的成功，将AI能力嵌入消费硬件生态。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/08/06/openais-new-ai-smart-speaker-will-reportedly-sell-for-between-300-and-400/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国新墨西哥州法院追加判决Meta赔偿5.67亿美元，儿童安全案总罚金近10亿",
+                "summary": "新墨西哥州法院于8月7日再次判决Meta额外支付5.67亿美元，至此该案总赔偿已达9.42亿美元。案件涉及Meta旗下平台对未成年用户数据保护不当、算法推送有害内容等违规行为。此判决将成为全球监管AI平台儿童安全责任的标志性案例，预计将引发更多州级和国家级调查。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/07/new-mexico-court-orders-meta-to-pay-additional-567m-in-child-safety-case/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "苹果官宣国行AI牵手阿里千问，Mac产品线全面接入中国大模型",
+                "summary": "苹果于8月9日正式发布Apple Intelligence中国版本，宣布与阿里云通义千问达成战略合作，为国行iPhone、Mac和iPad提供本地化AI能力。这是苹果首次明确选择中国本土大模型合作伙伴，标志着海外科技公司在华AI服务必须本土化的趋势。对于苹果而言，失去AI功能曾是iPhone 16在中国市场的重大短板，此次合作将显著改善其竞争力。",
+                "source": "智东西",
+                "url": "https://news.google.com/rss/articles/CBMiRkFVX3lxTE9XYk44aUNmN285eUNVSDZVaVpIUC1mVkd6OGd5S0F5X000M2U2VXhweklLWVR0TjQzN2p5Ym1fclFtMTFNWEE"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Google AI团队动荡：Jeff Dean卸任，新负责人推动架构重组",
+                "summary": "Google本周完成AI部门重大人事调整，多名核心高管调换岗位，包括传奇工程师Jeff Dean不再担任核心职务。这是Google应对OpenAI和Anthropic竞争压力的最新举措。内部人士透露，新架构将更强调产品导向，DeepMind与Google Brain的整合仍在深化，但团队协作效率问题尚未解决。",
+                "source": "The Verge AI / MIT Technology Review",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/976948/openai-astra-model-pause-critical-cyber-capabilities"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta推出Muse Code：面向大型代码库的AI编程代理",
+                "summary": "Meta于8月5日发布Muse Code AI编程代理，专为处理大型复杂代码库设计，可完成跨文件重构、多模块调试等高难度任务。该工具定位与GitHub Copilot和Cursor不同，强调企业级代码库场景。Meta将其开源策略从模型扩展到开发工具，意图在AI编程市场抢占份额。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/05/meta-launches-muse-code-an-ai-agent-for-large-code-bases/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Google Maps新增代理功能：支持外卖点餐和酒店预订",
+                "summary": "Google于8月6日宣布Maps产品重大升级，新增基于AI代理的食物订购和酒店预订功能。用户可直接在地图应用中完成交易，无需跳转至第三方App。这是Google将Maps从导航工具转型为\"生活助手\"的核心战略一步。分析认为此举将对美团、Uber Eats等本地生活服务形成直接冲击。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/06/google-maps-adds-agentic-features-including-food-ordering-and-hotel-bookings/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic推出Cowork：无需编码的Claude桌面代理",
+                "summary": "Anthropic于8月5日发布Cowork功能，将Claude Desktop扩展为可直接操作本地文件的AI代理，无需用户编写代码。该功能面向非技术用户，可自动化文档处理、数据整理、邮件撰写等日常任务。Cowork的推出标志着AI助手从问答工具向行动代理的转变，定价策略尚待公布。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Railway融资1亿美元挑战AWS，打造AI原生云基础设施",
+                "summary": "云平台Railway于8月6日宣布获得1亿美元融资，已累计吸引200万开发者使用且未花任何营销费用。该公司定位为\"AI原生\"云服务，主打GPU资源弹性调度和容器化部署，直接对标AWS、Azure和GCP的企业级市场。在AI算力需求爆发背景下，Railway试图从传统云厂商手中争夺中小型AI应用开发商。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Mirendil签署1亿美元+ Google Cloud合作，扩展自进化AI算力基础设施",
+                "summary": "AI初创公司Mirendil于8月6日与Google Cloud签署超过1亿美元的战略合作协议，用于扩展其自进化AI模型的计算基础设施。这是本周第二笔超过1亿美元的AI云服务合同，显示大模型公司对算力资源的持续高投入。Mirendil的自进化技术被视为减少人工微调成本的关键方向。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/06/exclusive-mirendil-inks-100m-google-cloud-deal-to-scale-self-improving-ai/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Rippling推出AI Spend Console：帮助企业追踪AI投入ROI",
+                "summary": "HR平台Rippling在自身AI支出\"数月内烧掉数百万美元\"后，于8月7日推出AI Spend Console产品。该工具可追踪员工个人的AI工具使用情况和产出效率，帮助企业评估AI投资回报率。Rippling的内部教训反映了企业AI采购的普遍痛点，ROI评估工具或将成为企业软件新赛道。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/07/after-rippling-blew-millions-on-ai-in-months-it-built-an-employee-roi-tool/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "SoftBank向特朗普图书馆捐款50万美元，数月后获批俄亥俄数据中心项目",
+                "summary": "The Verge调查显示，SoftBank在向特朗普总统图书馆项目捐款50万美元后数月，即获得美国联邦政府批准的俄亥俄州数据中心项目。该数据中心将获得美国能源部支持，建设用地已确定。批评者质疑这笔捐款与随后的政府批准之间存在关联，引发关于AI基础设施政治化的担忧。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/policy/976138/softbank-trump-library-data-center-ohio"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国AI数据中心的选址困境：左右两派罕见联手反对",
+                "summary": "美国多地出现反对AI数据中心建设的跨党派运动。右派担忧能源成本上升和电网负荷，左派则关注土地使用和移民劳工问题。佛罗里达州、弗吉尼亚州等地已出现大规模抗议活动。这一趋势可能延缓AI基础设施扩张速度，对AWS、Microsoft、Google和Meta的数据中心建设计划形成阻力。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/podcast/971855/ai-data-center-backlash-protests-florida-bipartisan"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Cloudflare推出Kitesurf：面向AI代理的云端浏览器",
+                "summary": "Cloudflare于8月7日发布Kitesurf，这是一款专为AI代理设计的云托管浏览器，相比Chromium减少90%计算资源占用。该产品解决了AI代理在执行网页操作时的高成本问题，可用于自动化数据采集、表单填写和跨平台操作。Kitesurf将与Cloudflare Workers深度集成，成为其AI基础设施生态的关键组件。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/07/cloudflare-launches-kitesurf-a-browser-built-for-ai-agents/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Klaviyo收购创始人大卫·托雷斯代理公司，前OpenTable CTO加盟任CPO",
+                "summary": "电商数据平台Klaviyo于8月5日完成对Elias Torres AGENCY的收购，后者由连续创业者、Salsforce高管Elias Torres创办。Torres本人将加入Klaviyo担任CPO，主导AI代理产品战略。这是继Salesforce推出Slackbot之后，企业SaaS整合AI代理人才的最新案例，显示AI Agent正在重塑企业软件行业格局。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/05/klaviyo-acquires-elias-torres-agency-in-full-circle-reunion-for-tech-founders/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国加速AI芯片出口管制，中国AI发展面临更严封锁",
+                "summary": "美国政府持续收紧AI芯片出口管制政策，进一步限制中国获取高端GPU和AI训练设备。尽管政策层层加码，中国AI产业对DeepSeek等国产模型的热情不减，呈现出\"越堵越热\"的态势。分析认为，芯片限制短期有效但长期将倒逼中国加速自主芯片研发，可能重塑全球AI产业链格局。",
+                "source": "群众新闻网",
+                "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE81WVR0M0VjWnFqamFESlVzX0F5aTBmR3lWUTBESXd0TzZySEtZNWJidDB3R19BNG5GWW9ZWlBCZXAteVRGR09Hd2lWRmV2WnR1Wk1CcU16U2lMdmhMUF95U1kyU28teG1TQmx3"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Airbnb测试AI驱动的全新搜索体验，目标提升功能发布速度",
+                "summary": "Airbnb于8月7日宣布正在测试基于AI的新型搜索功能，用户可通过自然语言描述需求获得个性化房源推荐。Airbnb表示AI正在帮助其团队\"更快发布功能\"，开发周期显著缩短。该功能预计将整合进现有App，作为.toggle切换选项供用户体验。这是AI重塑旅行预订体验的最新案例。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/07/airbnb-says-ai-is-helping-it-ship-features-faster-as-it-tests-a-new-search-function/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google 25年来首次重新设计搜索框，AI时代交互范式变革",
+                "summary": "Google于8月6日宣布25年来首次重新设计搜索框界面，新设计强调AI生成的摘要和对话式交互，减少传统蓝色链接的展示权重。这一变化标志着Google从\"搜索引擎\"向\"答案引擎\"的战略转型，可能对SEO行业和内容生态产生深远影响。对于用户而言，搜索将从信息检索变为任务执行。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
+            }
+        ]
+    },
+    {
         "date": "2026-08-07",
         "items": [
             {
@@ -3333,296 +3478,6 @@ const AI_NEWS_DATA = [
                 "summary": "经济学人在2026年6月发布的深度研究简报中指出，当前主流AI语言模型的价值观体系与普通人群存在系统性差异。研究通过大规模问卷和行为实验发现，AI模型在政治倾向、风险偏好、道德判断等多个维度上均表现出与大众的显著背离。这一发现对AI对齐（Alignment）研究具有重要参考价值，也意味着在AI深度介入社会决策之前，价值对齐问题的解决远比想象中更为紧迫。",
                 "source": "Hacker News / The Economist",
                 "url": "https://www.economist.com/briefing/2026/06/25/ai-models-values-are-very-different-from-most-peoples"
-            }
-        ]
-    },
-    {
-        "date": "2026-07-10",
-        "items": [
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI推出GPT-5.6新模型系列，主打网络安全与跨任务能力",
-                "summary": "OpenAI于7月9日正式发布GPT-5.6系列模型，这是该公司最新的旗舰产品线。新模型在网络安全、复杂推理和多模态任务处理方面有显著提升。GPT-5.6将成为微软Copilot 365的“首选模型”，继续为微软的工作场所和生产力应用套件提供支持。此举正值OpenAI与微软关系微妙之际，有分析认为双方正在重新评估合作模式。对于开发者而言，GPT-5.6的API现已支持跨对话保持推理能力，不再每次丢弃思考过程，这将大幅提升连续任务的效率。",
-                "source": "TechCrunch / Hacker News / Reuters",
-                "url": "https://techcrunch.com/2026/07/09/openai-launches-its-new-family-of-models-with-gpt-5-6/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI二号高管Fidji Simo离职，管理层持续动荡",
-                "summary": "OpenAI应用负责人、Fidji Simo于7月9日宣布辞去全职职务，此前她的医疗休假比预期更长。Simo是CEO Sam Altman之下的二号人物，负责将OpenAI技术商业化的核心战略。这一离职是OpenAI近期最重大的人事变动之一，加上此前多位高管的离开，暴露出这家AI独角兽在快速扩张中面临的管理挑战。消息人士透露，OpenAI内部正在经历从研究导向向商业化转型的阵痛期。",
-                "source": "TechCrunch / WSJ / Reuters",
-                "url": "https://techcrunch.com/2026/07/09/fidji-simo-steps-down-from-openais-no-2-role/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "美联储前主席伯南克加入Anthropic监督信托委员会",
-                "summary": "美联储前主席Ben Bernanke已加入AI安全公司Anthropic新成立的Oversight Trust委员会。该委员会旨在为Anthropic的AI安全实践提供独立监督，确保公司在追求技术突破的同时遵守安全准则。Anthropic由前OpenAI研究人员创立，其Claude模型是ChatGPT的主要竞争对手。伯南克的加入表明AI安全已上升为需要顶级公共政策智慧的议题。",
-                "source": "Anthropic官网 / Hacker News",
-                "url": "https://www.anthropic.com/news/ben-bernanke"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI智能体初创公司Lyzr用AI agent完成1亿美元融资",
-                "summary": "企业级AI智能体初创公司Lyzr宣布完成1亿美元新一轮融资，更引人注目的是该公司透露其整个融资过程均由自己的AI agent主导完成。这被视作AI智能体技术实用价值的有力证明。Lyzr主要为大型企业提供定制化的AI智能体解决方案，服务于金融服务、医疗保健和制造业等领域。CEO表示，使用自研agent处理募资流程展示了“agentic AI”在复杂业务流程自动化中的成熟度。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/09/an-ai-agent-startup-just-let-its-agent-run-its-100-million-fundraise/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "巴黎AI语音公司Gradium获1亿美元种子轮融资，Nvidia参投",
-                "summary": "巴黎AI语音初创公司Gradium宣布完成1亿美元种子轮融资，由Nvidia领投。本轮资金将用于在湾区设立办公室并争夺当地顶尖人才。Gradium专注于开发下一代AI语音技术，包括实时语音克隆、多语言合成和情感语音生成。其技术可应用于播客制作、视频配音、语音助手等多个场景。获得Nvidia投资表明这家法国初创公司已具备与大型科技公司竞争的实力。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/09/paris-based-ai-voice-startup-gradium-raises-100m-seed-backed-by-nvidia/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "蚂蚁灵波发布LingBot-VA 2.0，首创具身原生世界动作模型",
-                "summary": "7月10日，蚂蚁集团旗下蚂蚁灵波发布业界首个具身原生世界动作模型LingBot-VA 2.0。该模型代表了具身智能发展的关键路线选择：机器人“大脑”不再依托数字世界模型能力的“嫁接”，而是从动态建模、因果预测、实时执行等与环境交互的原始需求出发构建。蚂蚁灵波表示，这一架构能让机器人在真实物理环境中实现更自然、更适应性更强的动作序列，对于推动具身智能商业化落地具有里程碑意义。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3889229963934217"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta推出Muse Spark 1.1，正式进军AI编程赛道",
-                "summary": "Meta于7月9日发布Muse Spark 1.1，正式加入拥挤的AI编程辅助市场。这是Meta首次面向开发者推出专门的代码生成和调试工具。Meta的差异化定位是Spark处理大型智能体工作负载的能力，包括大规模代码重构和多文件批量修复。该工具现已向开发者开放测试。AI编程助手赛道已有GitHub Copilot、Cursor、Cody等多个强劲玩家，Meta的入局将加剧竞争。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/09/meta-enters-the-crowded-ai-coding-battle-with-muse-spark-1-1/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "他山科技完成B轮数亿元融资，上半年订单超去年四倍",
-                "summary": "北京他山科技有限公司已完成B轮数亿元融资，投资方包括均胜电子、太平创新、奥克斯、鹏翎股份等。他山科技是英伟达全球首家触觉仿真合作伙伴，专注于触觉传感器和仿真技术研发。公司上半年订单已超过去年全年的四倍，呈现爆发式增长态势。本轮融资将加速其触觉AI技术在机器人、医疗设备、汽车座舱等领域的商业化落地。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3889141540370949"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "昇视唯盛完成数亿元B轮融资，专注工业焊接具身智能",
-                "summary": "工业制造具身智能机器人企业昇视唯盛宣布完成数亿元B轮融资，由上海半导体产投、金桥基金领投。本轮资金将主要用于焊接具身智能大脑模型研发和商业化推广。昇视唯盛选择以“智能焊工”切入工业制造赛道，其自研的焊接具身大脑模型能适应复杂多变的工业现场环境。工业机器人是具身智能最快实现商业回报的场景之一，该融资表明资本持续看好这一方向。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3887871679347208"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "英伟达与Hugging Face合作开发机器人开源模型",
-                "summary": "英伟达宣布将与Hugging Face合作，共同开发面向机器人领域的开源模型。这一合作将结合英伟达在硬件和机器人仿真平台方面的优势，与Hugging Face在开源模型生态和开发者社区的影响力。合作目标是降低机器人AI应用的开发门槛，推动具身智能技术的民主化。英伟达近期动作频频，包括投资他山科技、参投Gradium等，显示出其全面布局AI软硬件生态的战略意图。",
-                "source": "36氪 / TechCrunch",
-                "url": "https://36kr.com/p/3889047503354625"
-            },
-            {
-                "tag": "应用落地",
-                "title": "万勋科技发布“柔韧充”自动充电机器人，实现零秒容差",
-                "summary": "7月9日，万勋科技在北京发布行业首个覆盖公用、专用、家用全场景的“柔韧充”自动充电通用服务引擎。该产品具备“0.000s无极容差应变”技术特性，能在混沌环境下实现精准稳定的充电操作。区别于传统充电机器人需要精确对准车位和充电口，万勋科技的方案可适应不同车型、不同充电桩的差异，大幅提升自动充电的成功率和适用性。电动汽车充电自动化是具身智能的重要落地场景。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3888567864851204"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI关闭Atlas浏览器但AI浏览器野心仍在推进",
-                "summary": "OpenAI宣布停止运营独立的AI浏览器ChatGPT Atlas，将部分智能体浏览功能整合到主ChatGPT应用中。Atlas浏览器上线不足一年即被关闭，反映出OpenAI在产品方向上的快速迭代和战略调整。尽管关闭了独立浏览器产品，OpenAI并未放弃AI浏览和智能体交互领域，而是选择将相关能力集成到更成熟的平台中。这一决策对正在探索AI原生应用的开发者具有参考意义。",
-                "source": "TechCrunch / OpenAI Help Center",
-                "url": "https://techcrunch.com/2026/07/09/openai-is-shutting-down-atlas-but-its-ai-browser-ambitions-are-still-growing/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "《纽约时报》指控OpenAI在版权诉讼中隐瞒关键证据",
-                "summary": "《纽约时报》在一份法庭文件中指控OpenAI在ChatGPT版权侵权诉讼中隐瞒了可用于识别受版权保护新闻内容的工具和数据集。原告出版商表示，OpenAI掌握的技术能够追踪ChatGPT输出内容中是否包含受版权保护的文章，但故意不向法庭披露。这一指控升级了出版业与AI公司之间的法律冲突，可能对生成式AI的版权合规框架产生深远影响。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/09/new-york-times-says-openai-hid-evidence-in-chatgpt-copyright-trial/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Google将要求披露AI生成的广告内容",
-                "summary": "Google宣布将从即日起要求广告主披露哪些广告使用了AI生成内容。虽然Google此前已禁止误导性和欺骗性广告，但AI生成的合成或数字内容广告仍可在不声明的情况下投放。新政策要求广告主明确标识使用了AI生成技术的广告素材，以保护用户的知情权。此举是主要互联网平台加强AI内容监管的又一重要举措，可能对数字广告行业的AI应用方式产生广泛影响。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/09/google-will-now-disclose-which-ads-are-made-with-ai/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Elon Musk称赞Fable公司，Anthropic面临40亿美元收入抉择",
-                "summary": "Elon Musk在社交媒体上公开称赞AI研究公司Fable及其Mythos项目，同时暗示不会“切断”对Anthropic的支持。Anthropic目前年收入约40亿美元，主要来自向企业客户提供Claude API服务。Musk的表态发生在AI行业竞争日趋激烈的背景下，Fable在CIFAR Speedrun基准测试中创下SOTA成绩，成为新兴力量。对于Anthropic而言，如何在Musk的复杂表态和商业利益之间保持平衡是新的考验。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/09/elon-musk-praises-mythos-fable-promises-not-to-cut-off-anthropic/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "克利夫兰联储主席警告AI可能加剧通胀，不排除加息可能",
-                "summary": "克利夫兰联储主席Hammack在6月30日表示，人工智能的发展可能导致通胀加剧，可能需要进一步加息以抑制价格压力。Hammack指出，AI带来的生产力提升在短期内可能刺激总需求，而非立即压低物价；如果AI投资热潮推高资产价格和消费支出，通胀粘性可能超出预期。这一表态与部分乐观派观点形成对比，提醒市场不应过度押注于AI的“反通胀”效应。",
-                "source": "CNBC / Hacker News",
-                "url": "https://www.cnbc.com/2026/06/30/cleveland-fed-president-hammack-sees-ai-fueling-inflation-says-rate-hikes-may-be-necessary.html"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Fable在CIFAR Speedrun创下SOTA，AI研发自动化获突破",
-                "summary": "AI研究公司Fable宣布其在CIFAR Speedrun基准测试中达到SOTA（state-of-the-art）水平，引发行业关注。CIFAR Speedrun是评估AI模型进行科学发现和实验自动化能力的测试，Fable的表现证明了其Mythos项目在AI驱动科学研究方面的潜力。Fable的研究方向聚焦于让AI自主进行假设生成、实验设计和数据分析，减少人类科学家在重复性工作上的时间投入。",
-                "source": "Fulcrum / Hacker News",
-                "url": "https://fulcrum.inc/2026/07/09/fable-cifar-speedrun.html"
-            },
-            {
-                "tag": "技术突破",
-                "title": "GPT-5.6 Sol在代码评测中以61%更低成本达到76%准确率",
-                "summary": "AI初创公司DataCurve发布评测报告显示，GPT-5.6 Sol模型在DeepSWE代码评测基准中达到76%的准确率，同时成本比Fable方案低61%。DeepSWE是评估LLM在软件工程任务表现的权威基准。这一结果表明OpenAI新模型在代码生成领域继续保持竞争力，而成本优势可能吸引更多企业客户采用GPT-5.6替代方案。",
-                "source": "DataCurve / Hacker News",
-                "url": "https://deepswe.datacurve.ai/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "广东发布通信业\"十五五\"规划，加快6G和卫星通信技术攻关",
-                "summary": "广东省信息通信业“十五五”规划征求意见稿于近日发布，提出加快6G、光通信、卫星通信等关键前沿领域的技术攻关。规划支持基础电信企业和龙头企业依托鹏城国家实验室等战略科技力量，建立健全全过程创新生态链。这一政策信号表明，中国在下一代通信技术竞争中将继续保持高强度投入，AI所需的通信基础设施将是重点发展方向。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3889202354076161"
-            },
-            {
-                "tag": "行业格局",
-                "title": "揭秘Momenta：马斯克式CEO曹旭东的AI执念与量产机器人战略",
-                "summary": "36氪深度报道揭示自动驾驶公司Momenta创始人曹旭东的管理风格和商业战略。曹旭东将特斯拉CEO马斯克视为标杆，每当特斯拉FSD迭代新版本，他都会亲自飞往美国体验并与相关人员交流。Momenta采取“量产自动驾驶+无人驾驶运营”双轨战略，已与多家主流车企达成合作。与纯粹的L4技术路线不同，Momenta通过可量产的海量数据驱动技术迭代，被视为更具商业可行性的路径。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3888180493318921"
-            }
-        ]
-    },
-    {
-        "date": "2026-07-09",
-        "items": [
-            {
-                "tag": "重要产品发布",
-                "title": "SpaceX AI发布Grok 4.5，被马斯克称为\"Opus级模型\"",
-                "summary": "马斯克旗下xAI于7月8日发布Grok 4.5，声称是一款更便宜、更高效的替代方案，马斯克本人将其描述为与Anthropic Claude Opus相当的能力水平。这是xAI在大模型竞争中的重要一步，旨在为用户提供企业级AI能力。该模型预计将整合至SpaceX生态系统中，为其太空和AI服务提供支撑。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/08/spacexai-releases-grok-4-5-which-elon-describes-as-an-opus-class-model/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI发布新语音模型，支持同时听说和实时翻译",
-                "summary": "OpenAI于7月8日推出全新语音模型，具备同时听说能力，这是实现自然实时对话的关键功能。新模型特别针对实时翻译场景优化，可实现低延迟的跨语言交流。此举标志着OpenAI在多模态交互领域的进一步深化，也意味着AI语音交互即将进入新阶段。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/08/openai-releases-new-voice-models-for-more-natural-live-conversations/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "国家超算互联网核心节点正式上线，构建全国算力统一调度体系",
-                "summary": "7月9日，2026河南省人工智能大会在郑州举行，国家超算互联网核心节点正式上线运行。该节点以构建覆盖全国的计算资源统筹调度体系为目标，承担运营管理、资源调度等核心功能，并整合供需对接、产业孵化等综合服务。这一基础设施的落地对中国AI发展具有战略意义。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3887797387344387"
-            },
-            {
-                "tag": "政策监管",
-                "title": "工信部警告Claude Code存在安全后门隐患",
-                "summary": "工信部发布安全警告，指出AI编程工具Claude Code存在安全后门隐患，危害严重。这一监管动作表明中国对AI工具安全性的高度重视，也预示着国内AI编程工具将面临更严格的合规审查。对于使用海外AI编程工具的企业来说，需要重新评估安全风险。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3887648675133960?f=rss"
-            },
-            {
-                "tag": "政策监管",
-                "title": "美国政府发布AI系统准确性抑制政策声明",
-                "summary": "美国联邦政府于7月7日发布政策声明，专门针对AI系统中的准确性抑制问题。这一政策信号表明监管机构开始关注AI模型可能被刻意压低性能的问题，对于AI开发者的合规要求将进一步明确。",
-                "source": "Hacker News / Federal Register",
-                "url": "https://www.federalregister.gov/documents/2026/07/07/2026-13628/policy-statement-concerning-the-suppression-of-accuracy-in-artificial-intelligence-systems"
-            },
-            {
-                "tag": "行业格局",
-                "title": "诺贝尔化学奖得主离开美国，将主导中国AI材料实验室",
-                "summary": "一位诺贝尔化学奖得主宣布离开美国，将前往中国主导AI材料实验室建设。这一高端人才流动反映了中国在AI领域的吸引力正在增强，也预示着AI+材料科学可能成为下一个竞争焦点。对于全球AI人才格局具有风向标意义。",
-                "source": "Hacker News / Nature",
-                "url": "https://www.nature.com/articles/d41586-026-02143-x"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Lovable正洽谈新一轮融资，估值拟翻倍至132亿美元",
-                "summary": "据报道，AI应用开发平台Lovable正在洽谈新一轮3亿美元融资，由Menlo Ventures领投，估值将从66亿美元翻倍至132亿美元。Lovable主打无需编程即可构建应用的AI平台，在AI应用开发赛道快速崛起。此轮融资若完成，将成为AI应用层的重要里程碑。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/08/lovable-reportedly-in-talks-to-double-its-valuation-to-13-2b/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Prime Intellect获1.3亿美元A轮融资，帮企业构建AI智能体",
-                "summary": "AI基础设施公司Prime Intellect宣布完成1.3亿美元A轮融资，公司成立于2024年，目标是帮助企业组织训练自己的AI智能体系统，无需完全依赖外部大模型服务。该笔融资将加速企业级AI Agent解决方案的普及，降低企业自建AI能力的门槛。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/08/prime-intellect-raises-130m-series-a-to-help-enterprises-build-their-own-ai-agents/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "深度智控完成数亿元B轮融资，晶科能源和国投创新领投",
-                "summary": "物理AI企业深度智控完成数亿元人民币B轮融资，由晶科能源战略投资，国投创新、招银国际联合领投。深度智控定位为全球能源基础设施的\"大脑\"，利用AI技术优化能源设施的运行效率。本轮融资将加速其在能源AI领域的技术迭代和市场拓展。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3887726503688968?f=rss"
-            },
-            {
-                "tag": "技术突破",
-                "title": "General Intuition押注游戏数据训练机器人基础模型",
-                "summary": "机器人AI公司General Intuition认为视频游戏数据是训练物理AI基础模型的最佳数据源，计划投入数百万小时游戏数据用于训练。公司CEO认为现有互联网数据不足以支撑通用AGI的实现，游戏环境中的交互数据更能反映真实物理世界的复杂性。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/08/this-startup-thinks-robotics-is-about-to-have-its-chatgpt-moment/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "阶跃星辰AI智能体手机将由华勤技术代工生产",
-                "summary": "据知情人士透露，阶跃星辰将推出的AI智能体手机由A股上市公司华勤技术负责代工生产，双方为深度绑定合作关系而非简单贴牌代工模式。这标志着国产AI手机进入实质性量产阶段，也预示着AI硬件赛道将从概念走向落地。",
-                "source": "36氪 / 财联社",
-                "url": "https://36kr.com/newsflashes/3887763427244809"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Google Photos推出AI Video Remix工具，支持电影级重光效",
-                "summary": "Google Photos新增AI Video Remix功能，可对视频进行电影级重光效处理、替换背景等智能编辑。该工具降低了普通用户制作专业级视频内容的门槛，标志着AI视频编辑能力进一步向消费级产品渗透。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/08/google-photos-adds-a-new-ai-video-remix-tool/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Google deepfake检测系统成功识别麦康奈尔虚假图片",
-                "summary": "Google的deepfake检测系统本周成功识别了一张关于参议员麦康奈尔的虚假医院图片，防止了虚假信息的进一步传播。随着AI生成内容泛滥，检测技术的实用价值日益凸显，也将推动更多反深度伪造技术的商业化应用。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/08/googles-deepfake-detector-system-used-to-debunk-mcconnell-hoax-pic/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Meta为AI眼镜增加防偷拍保护，但整体AI策略存矛盾",
-                "summary": "Meta为其AI眼镜新增防护功能以防止用户偷拍他人，但外界认为这与其整体AI战略存在矛盾。Meta一方面强调隐私保护，另一方面持续推动AI功能的侵入性扩展，反映出AI硬件厂商在用户体验和隐私合规之间的两难处境。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/08/meta-wants-its-ai-glasses-to-seem-less-creepy-its-ai-strategy-says-otherwise/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "易居推出地产AI专属大模型一体机，克而瑞分析师\"小瑞\"上岗",
-                "summary": "易居（中国）推出核心战略产品\"地产模数通——企业专属大模型一体机\"，同时克而瑞地产AI分析师\"小瑞\"正式上岗。这是地产行业首个垂直领域AI一体机产品，标志着大模型技术在房地产行业的深度定制化应用落地。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3886709249241349?f=rss"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "调查发现大多数护士认为AI不足以信赖用于患者护理",
-                "summary": "华盛顿邮报发布调查显示，大多数护士认为现有AI系统还不够可靠，无法信任其用于患者护理工作。这一结果反映了医疗AI面临的信任挑战，在AI快速渗透各行业的背景下，医疗等高风险领域对AI的接纳将是一个渐进过程。",
-                "source": "Hacker News / Washington Post",
-                "url": "https://www.washingtonpost.com/technology/2026/07/07/most-nurses-say-ai-isnt-good-enough-trust-with-patient-care-survey/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "布朗大学教授因AI作弊疑虑改为线下考试，学生成绩下降50%",
-                "summary": "布朗大学一名教授因怀疑学生使用AI作弊，将期末考试改为线下进行，结果学生平均成绩下降了50%。这一现象揭示了AI对学生学业评估方式的深刻冲击，也引发高校如何平衡AI工具使用与学术诚信的广泛讨论。",
-                "source": "Hacker News / Ars Technica",
-                "url": "https://arstechnica.com/ai/2026/07/we-cannot-choose-to-become-idiots-the-ai-cheating-scandal-roiling-brown-university/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "德国AI初创企业创纪录增长，AI推动科技行业复苏",
-                "summary": "德国AI初创企业数量创历史新高，显示出人工智能正在推动该国科技行业进入新一轮增长周期。德国作为传统制造业强国，其AI创业生态的活跃表明AI技术正加速向传统产业渗透。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3886678879727880?f=rss"
-            },
-            {
-                "tag": "技术突破",
-                "title": "研究指出Anthropic Fable模型分类器过于严格",
-                "summary": "研究人员发现Anthropic为Fable模型设置的分类器过于严格，影响了模型的实用性和用户体验。这一技术细节的披露提醒AI开发者，在安全过滤和模型实用性之间需要更好的平衡，过于保守的过滤机制可能损害AI产品的核心竞争力。",
-                "source": "Hacker News",
-                "url": "https://combine-lab.github.io/blog/2026/07/07/fable-is-not-a-useful-model.html"
-            },
-            {
-                "tag": "技术突破",
-                "title": "AI视频生成全面成熟，Seedance 2.0领衔主流工具横评",
-                "summary": "2026年AI视频生成赛道已迈入全面爆发的成熟竞速期，Seedance 2.0的出圈让AI视频变成\"全民狂欢\"。短短两年间，AI视频从最初几秒的模糊碎片画面进化到分钟级连贯叙事和真实物理世界精准还原，技术成熟度大幅提升。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3886403765596418?f=rss"
             }
         ]
     }
