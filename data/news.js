@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-08-13",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "OpenAI COO Brad Lightcap离职创业，曾任职8年",
+                "summary": "OpenAI首席运营官Brad Lightcap宣布离职，将创办新公司，这是该公司最高级别高管近期最新一次离职。Lightcap自2018年加入OpenAI，曾负责特别项目及日常运营，伴随CEO奥特曼度过了公司扩张期。消息人士称其离职前已筹备数月。继CTO、首席科学家等高管相继离开后，OpenAI正经历最大规模人才流失期，公司治理和战略连续性面临考验。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/08/11/brad-lightcap-openais-longtime-coo-is-leaving-to-start-something-new/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Google Gemini月活突破10亿，63%用户直接对话",
+                "summary": "Google在Made by Google 2026活动上宣布，Gemini应用月活用户已达10亿，成为Google第14款达成此里程碑的产品。同时披露用户使用数据：63%用户直接与Gemini对话，35%用户使用进阶功能。这一数据表明Google在消费级AI产品上已追平OpenAI的ChatGPT（同样10亿用户），双雄格局正式确立，Google正将Gemini深度整合进Pixel和Android生态。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/08/11/googles-gemini-app-surges-to-one-billion-users/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Anthropic未发布模型在黎曼猜想上取得重大进展",
+                "summary": "Anthropic一款尚未公开发布的AI模型在数学界最著名的未解难题之一——黎曼猜想上取得实质性进展。该猜想自1859年提出，悬赏金额高达100万美元。Anthropic未披露具体模型名称及技术细节，但表示内部测试显示显著进步。这一进展若经独立验证，将是AI for Science领域的里程碑级别突破，证明当前LLM在纯数学推理上已超越此前预期。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "xAI联合创始人创办的River AI估值超10亿美元",
+                "summary": "由xAI联合创始人Igor Babuschkin创立的AI初创公司River AI宣布完成11亿美元A轮融资，由General Catalyst领投，公司估值突破10亿美元。River AI成立仅2个月即获超大额融资，定位为个人AI Agent平台，旨在打造能主动管理用户数字生活的智能助手。本轮融资规模和速度均创AI领域纪录，反映出风投对AI Agent赛道的极高热情。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/11/general-catalyst-leads-1-1b-round-into-2-month-old-river-ai/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google发布Pixel 11系列、AirTag竞品Pixel Tag及大量Gemini功能",
+                "summary": "Google在2026 Made by Google大会上发布Pixel 11系列智能手机（搭载Tensor G5芯片和升级影像系统）、Pixel Watch 5（深度集成Gemini AI和健康监测）以及Pixel Tag（对标Apple AirTag的蓝牙追踪器）。Gemini在Android系统中的整合进一步深化，包括实时通话翻译、AI摄影增强和设备端推理能力。Google正以硬件为载体加速AI能力落地。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/08/12/google-unveils-pixel-11-lineup-new-airtag-rival-and-gemini-features-at-made-by-google-2026/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Anthropic宣布为所有AI生成文本添加水印，用户强烈反对",
+                "summary": "Anthropic宣布将为Claude生成的所有文本添加AI水印，用户无法关闭，且正在将支持扩展至旧模型。此举旨在打击AI辅助作弊和虚假信息，但在社交媒体引发强烈反弹，大量用户抱怨这将\"抓包\"其在工作和课堂使用AI的情况。Anthropic表示这是负责任AI的必要一步。隐私倡导者警告，水印机制可能被用于监控用户行为，引发合规与隐私之间的深层冲突。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/11/anthropic-says-it-will-watermark-text-generated-by-its-ai-models/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Twitch默认使用主播内容训练Amazon AI，现已开放退出选项",
+                "summary": "Amazon旗下Twitch宣布，从默认opt-out（退出式）改为允许主播选择退出AI训练，引发争议。Twitch首席产品官Mike Minton在直播中坦承：\"如果是opt-in，没人会主动加入。\"Twitch已更新隐私设置，主播现可手动拒绝其内容被用于训练Amazon生成式AI模型。这一事件反映出平台在用户数据权益和AI训练需求之间的持续博弈，监管压力正在推动行业逐步转向opt-in模式。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "DeepSeek V4 Pro正式版深夜发布，多项测试逼近Fable 5",
+                "summary": "中国AI公司DeepSeek发布V4 Pro正式版，在多项基准测试中表现逼近Fable 5和Grok 4.6等顶级闭源模型。DeepSeek V4 Pro主打高效率推理和低成本部署，在数学、代码和逻辑推理任务上提升显著。作为中国开源大模型代表，DeepSeek持续对标GPT-4和Claude等头部模型，进一步压缩闭源模型的性能优势空间，对全球AI竞争格局产生深远影响。",
+                "source": "华尔街见闻",
+                "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFBERU9zZHNuRmhsVDRBakVhZUI3aHMxYUQ1WjQ3YmVya0V3aW9zNjRtQXBDYmNjang2Zi1JYkFRNjBIT3ZSSFdiSjAzTnhlVTdNVE1j"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Lovable完成4亿美元融资，估值达133亿美元ARR突破5亿美元",
+                "summary": "AI代码生成平台Lovable确认以133亿美元估值完成4亿美元新融资，此前6月其ARR已突破5亿美元。公司提供基于自然语言的Web应用开发平台，去年估值仅数亿美元，增长迅猛。本轮融资由顶级风投参投，将用于扩展企业级功能和深化集成生态。Lovable的爆发式增长表明AI Coding赛道已进入商业化成熟期，市场格局快速固化。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/12/lovable-confirms-new-13-3b-valuation-raises-another-400m/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Cognition正以400亿美元估值洽谈新融资，数月前估值260亿",
+                "summary": "据报道，AI编程初创公司Cognition已启动新一轮融资谈判，估值达400亿美元，距离其上轮融资（估值260亿美元、募资10亿美元）仅过去数月。Cognition旗下产品Devin被视为AI软件工程的重要突破，估值在不到一年内涨幅超50%。若本轮完成，将成为AI Coding领域最高估值公司之一，反映出市场对其技术领先性的持续看好。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Thrive Holdings获20亿美元融资企业级AI，OpenAI参投",
+                "summary": "Thrive Holdings宣布完成20亿美元融资，估值达120亿美元，SoftBank和D1 Capital等参投，OpenAI亦参与其中。Thrive Holdings专注于将AI能力落地到企业场景，提供定制化AI解决方案。本轮融资规模显示企业AI市场仍获资本青睐，且AI与传统行业解决方案的融合正在成为下一个增长极，大额资金将加速企业AI部署竞赛。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Hinton、李飞飞、吴恩达三大先驱为AI开放开源辩护",
+                "summary": "在Ai4大会上，Geoffrey Hinton、李飞飞和吴恩达三位全球最具影响力的AI专家同台激辩AI安全与开放的关系。Hinton呼吁更严格的监管但反对全面封闭；李飞飞强调开源对学术研究和民主化AI的不可或缺；吴恩达则警告过度监管将损害创新和小公司。三个不同立场的碰撞折射出AI行业当前最核心的分歧：安全风险与开放生态之间如何平衡？",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Railway融资1亿美元挑战AWS，主打AI原生云基础设施",
+                "summary": "云平台Railway宣布完成1亿美元新一轮融资，挑战AWS在云基础设施领域的主导地位。Railway拥有200万开发者用户，零营销投入实现有机增长，主打AI原生架构和开发者友好的部署体验。在AI推理需求爆发式增长背景下，GPU计算和低延迟部署成为新战场，Railway的崛起代表着一股以开发者体验为核心的新势力正在撼动传统云格局。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic发布Cowork：无需编码的Claude桌面Agent",
+                "summary": "Anthropic发布Cowork功能，将Claude Code的AI Agent能力以无需编码的方式嵌入Claude Desktop，用户可直接让AI操作本地文件、执行复杂多步骤任务。Cowork降低了AI Agent的使用门槛，使非技术用户也能享受自动化工作流的效率提升。此举标志着Anthropic从模型提供商向平台生态的进一步扩张，Cowork有望成为Claude Pro订阅的新核心卖点。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Salesforce推出全新Slackbot AI Agent，正面挑战微软和Google",
+                "summary": "Salesforce发布全面重构的Slackbot AI助手，将其工作场所AI能力提升至Agent级别，可主动执行跨应用任务、生成会议摘要和自动跟进流程。此举标志着Salesforce在企业AI领域全面出击，直接对标微软Copilot和Google Workspace AI。凭借Slack的通信入口优势和Salesforce的CRM数据积累，Slackbot有望在企业工作流AI市场抢占有利位置。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and"
+            },
+            {
+                "tag": "应用落地",
+                "title": "晶泰科技发布\"零幻觉\"AI化学引擎，引领研发新范式",
+                "summary": "中国AI药物研发公司晶泰科技发布全新\"零幻觉\"AI化学引擎，主打自进化AI范式，声称通过多层级验证机制大幅降低AI生成化学分子结构中的错误率，显著提升药物研发ROI。该引擎整合了量子化学计算和大规模实验数据，有望将药物先导化合物筛选周期压缩。当前AI制药赛道竞争加剧，\"零幻觉\"能力或成为行业新标杆。",
+                "source": "美通社",
+                "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE01SFlsQ1lCWmdEaGRjMVgxaldyellZS3ZydnpHbWxuekhyYlJtNWZhcEpKS1cycmRRbUFmY3d2UkM1MlQ0YWs2MzZRTGItODZLb2NkY0Z4Yw"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Spotify强制标注AI生成艺人，已排除相关音乐推荐",
+                "summary": "Spotify宣布对AI生成的艺人档案（AI Persona）实施强制标注政策，并将此类音乐内容排除在平台推荐算法之外。经过数周争议，D'Addario等音乐公司已承认在宣传视频中使用AI音乐，引发版权和真实性讨论。Spotify此举旨在平衡AI内容创作与人类艺人的利益，维护平台音乐生态的真实性，但也可能推动AI音乐向独立分发渠道分流。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/08/11/spotify-will-label-ai-persona-profiles-and-exclude-their-music-from-recommendations/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Nous Research开源NousCoder-14B，剑指Claude Code市场",
+                "summary": "开源AI公司Nous Research发布NousCoder-14B代码模型，定位为Claude Code的开源替代方案，在多项代码生成和调试基准测试中表现优异。该模型由加密风投Paradigm支持，完全开源可本地部署，为企业提供了规避月费200美元订阅成本的选择。随着Claude Code高定价争议持续发酵，开源替代方案正在迅速填补市场空白，可能倒逼Anthropic调整定价策略。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/nous-researchs-nouscoder-14b-is-an-open-source-coding-model-landing-right-in"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "MIT报告：AI Agent规模化落地需解决数据可信度问题",
+                "summary": "MIT Technology Review发布重磅行业分析，指出企业正加速采用AI Agent但面临数据可信度和安全性的双重挑战。报告调研显示，78%的企业决策者对Agent输出的可靠性存疑，56%已部署的Agent项目因数据质量不达标而效果打折。报告建议企业建立\"数据治理+人类监督\"的混合机制，强调Agentic AI的成功不仅取决于模型能力，更取决于底层数据的可信度。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/08/12/1141032/scaling-ai-agents-with-trustworthy-data/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Blacksmith AI代码测试公司估值年增10倍至5.5亿美元",
+                "summary": "AI代码验证初创公司Blacksmith宣布最新估值达5.5亿美元，在不到一年内增长近10倍。公司主打AI驱动的自动化代码测试和质量保障，帮助开发团队在CI/CD流程中实时发现漏洞和性能问题。Blacksmith透露其年收入在过去一年增长超过10倍，客户包括多家顶级科技公司。AI Coding工具链正从代码生成向代码质量全生命周期延伸，细分赛道持续升温。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/12/blacksmiths-valuation-jumps-10x-to-550m-as-ai-coding-fuels-software-validation/"
+            }
+        ]
+    },
+    {
         "date": "2026-08-12",
         "items": [
             {
@@ -3188,151 +3333,6 @@ const AI_NEWS_DATA = [
                 "summary": "中信证券发布研报，全面看好国产算力产业链发展前景。报告指出，从先进制程芯片到IC设计公司，再到超节点均将迎来放量机会。先进制程、先进封装、先进存储及配套产业链有望迎来强劲增长动能。国产算力订单预期清晰度显著增强，供应链备货热情高涨。该报告代表了主流券商对国内AI基础设施投资的最新判断。",
                 "source": "36氪",
                 "url": "https://36kr.com/newsflashes/3896189224781440"
-            }
-        ]
-    },
-    {
-        "date": "2026-07-14",
-        "items": [
-            {
-                "tag": "大额融资/IPO",
-                "title": "逐际动力完成2亿美元Pre-IPO轮融资，人形机器人赛道估值达150亿元",
-                "summary": "通用人形机器人公司逐际动力LimX Dynamics宣布完成近2亿美元Pre-IPO轮融资，投资方包括IDG资本、蓝思科技、GGG Group、Redstone VC、华山资本及合肥滨湖等机构。本轮融资完成后，公司投后估值达150亿元人民币。逐际动力是国内头部人形机器人企业，其技术路径聚焦于运动控制与全身协调能力。该轮融资规模在当前人形机器人赛道中处于头部位置，显示资本对具身智能商业化前景的持续看好。对于AI从业者而言，头部项目的估值攀升将进一步加剧人才争夺战。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3893976502287618"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "视频生成公司PixVerse完成4.39亿美元融资，估值突破20亿美元",
-                "summary": "视频生成初创公司PixVerse宣布完成4.39亿美元新一轮融资，估值突破20亿美元。本轮融资将用于扩展世界模型产品线和拓展全球市场。PixVerse主打AI视频生成技术，此前已推出多款面向创作者和企业用户的商业化产品。该公司是目前视频生成领域估值最高的公司之一。在Sora等竞品的激烈竞争下，PixVerse的大额融资表明资本市场仍看好视频生成赛道的商业化潜力。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/13/video-generation-startup-pixverse-raises-439m-valuation-soars-past-2b/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI Agent开发商Nous Research正进行融资谈判，估值15亿美元",
-                "summary": "AI Agent开发商Nous Research正在进行新一轮融资谈判，估值达15亿美元，计划融资至少7500万美元。本轮融资由Robot Ventures领投，USV等知名机构参与跟投。Nous Research是开源AI Agent框架Hermes的开发商，在AI Agent开发领域拥有较高知名度。该公司此前已获得a]6o等开源模型的研发经验，此次融资将加速其商业化进程。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/13/hermes-agent-maker-nous-research-in-talks-for-new-funding-at-1-5b-valuation/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "字节跳动探索自动驾驶领域，由Seed世界模型团队负责",
-                "summary": "36氪独家获悉，字节跳动正在探索进入自动驾驶领域，该项目目前由Seed旗下周畅的世界模型团队负责。Seed旗下拥有多模态模型、世界模型及大语言模型等团队。自动驾驶与世界模型的技术路线存在交叠，周畅团队此前在视频生成和仿真方面积累的技术可迁移至自动驾驶场景。字节跳动的入局将为自动驾驶赛道带来新的竞争变量，其资源整合能力值得关注。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3893815451417347"
-            },
-            {
-                "tag": "行业格局",
-                "title": "苹果就商业机密泄露起诉OpenAI，指控员工越权访问",
-                "summary": "苹果正式对OpenAI提起商业机密诉讼，指控内容包括OpenAI员工开玩笑讨论未经授权访问苹果内部系统、存在数据泄露风险等。该案涉及两家AI巨头之间的深层利益冲突。苹果是OpenAI的重要合作伙伴，苹果智能功能深度集成ChatGPT。此案的发展将影响双方未来的合作走向，也可能重塑AI行业的数据安全规范。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/13/the-wildest-allegations-in-apples-trade-secrets-lawsuit-against-openai/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "海关总署：上半年算力硬件进出口达5.13万亿元，同比增长56.6%",
-                "summary": "海关总署副署长王军在国新办发布会上表示，上半年我国电子元件、电脑零部件等算力硬件进出口额度达5.13万亿元，增长56.6%；眼镜、翻译器、机械外骨骼等智能产品快速迭代。AI驱动算力需求爆发式增长，带动上游硬件进出口大幅增加。这一数据印证了AI算力基础设施建设的持续高投入，对GPU、存储、服务器等产业链上下游企业形成利好。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3894861205044488"
-            },
-            {
-                "tag": "应用落地",
-                "title": "软银与Sierra达成战略合作，在日本推出AI客服服务",
-                "summary": "软银集团与AI客服平台Sierra建立战略合作伙伴关系，成为Sierra在日本的独家合作方。自7月14日起，软银旗下线上手机品牌Linemo已接入Sierra技术，后续计划将该技术推广至软银全线产品。Sierra专注于AI代理驱动的客户服务解决方案，此次合作标志着AI客服在日本市场的规模化落地。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3894788367613191"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Anthropic在印度推出本地化Claude定价，拓展最大海外市场",
-                "summary": "Anthropic开始为印度用户推出卢比计价的Claude订阅计划，印度是Claude在美国之外的全球最大市场。本地化定价将降低印度用户的使用门槛，有助于Anthropic在印度市场与本地AI企业和国际竞品展开竞争。此举显示Anthropic正在加速国际化扩张，新兴市场的重要性日益凸显。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/13/anthropic-starts-localizing-claude-pricing-for-india-its-biggest-market-after-the-us/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Uber产品负责人披露机器人出租车及AI驱动战略规划",
-                "summary": "Uber首席产品官Sachin Kansal接受TechCrunch采访，披露了公司的机器人出租车计划、AI驱动功能升级及金融服务业布局。Uber正加速布局自动驾驶出租车业务，与Waymo等竞争对手正面交锋。Kansal强调Uber不希望成为\"万事通\"，而是聚焦核心出行场景的AI赋能。该访谈揭示了共享出行平台在AI时代的战略分化。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/13/ubers-product-chief-on-hotels-robotaxis-and-why-the-company-doesnt-want-to-be-everything-for-everyone/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "大衍科技完成数千万元天使轮融资，专注触觉大模型研发",
-                "summary": "空间智能公司大衍科技完成数千万元天使轮融资，松禾资本领投，浙江省省金控与广州番禺创新基金参投。资金将用于触觉大模型研发、机器人数据产线建设及团队扩张。大衍科技由前博世自动驾驶算法工程师创立，采用合成数据技术构建触觉感知能力，应用于人形机器人末端执行器。该方向填补了国内触觉感知领域的创业空白。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3894821059918855"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Waze推出Gemini驱动的AI功能，强化Google生态整合",
-                "summary": "Google旗下导航应用Waze推出多项AI驱动的新功能和自定义更新，部分功能由Google Gemini AI助手提供支持。此次更新反映了Google将AI能力深度整合至旗下产品的战略意图。通过在Waze中嵌入Gemini，Google进一步扩大了其AI技术的用户触达范围，同时为导航场景引入更智能的交互体验。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/13/waze-adds-new-ai-powered-features-and-customization-updates/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "微软CEO纳德拉警告企业AI投资回报风险，引发行业讨论",
-                "summary": "微软CEO萨提亚·纳德拉向使用AI的企业发出警告，称部分企业未能从AI投资中获得预期回报。在AI投资热潮中，如何衡量和实现AI的商业价值正成为企业面临的核心挑战。纳德拉的表态反映了大模型应用落地过程中面临的实际困难，也暗示AI行业正从技术驱动转向价值驱动。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/13/satya-nadella-has-issued-a-shocking-warning-to-companies-using-ai/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Sam Altman回应马斯克批评，坚持AI发展路线",
-                "summary": "针对马斯克称其为\"骗子\"的批评，OpenAI CEO Sam Altman回应称\"homeboy你是那个向公众市场兜售的人\"。两人围绕AI发展方向、AGI时间表及商业化路线的公开争执持续升级。Altman还就太空数据中心构想发表看法，认为该方案存在技术可行性问题。这场公开论战折射出AI行业头部玩家之间的路线分歧。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/07/13/sam-altmans-space-data-center-trash-talk-is-what-most-experts-already-believe/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "MIT发布新方法可在不生成CSAM的前提下识别训练数据污染",
-                "summary": "MIT研究团队发布一项新安全方法，能够检测出在儿童性虐待材料（CSAM）上训练但未生成相关内容的AI模型。该方法填补了AI安全领域的一项重要空白，为模型审计和合规检测提供了新工具。随着AI训练数据合规问题日益受到监管关注，该研究对AI公司的数据治理和风险管控具有实际参考价值。",
-                "source": "Hacker News / Inside AI",
-                "url": "https://insideai.news/news/ai-safety/mits-new-method-flags-ai-models-trained-on-child-abuse-imagery-without-generating-it/3869/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "博世首家美国半导体工厂启动试生产，获2.25亿美元补贴协议",
-                "summary": "德国汽车零部件和芯片制造商博世宣布，其首家美国半导体工厂开始试生产，并已与美国商务部达成2.25亿美元协议，旨在加强碳化硅芯片的国内制造能力。在特朗普政府期间，汽车制造商和零部件供应商扩大在美布局以规避贸易风险。博世此项目将增强美国本土车规级芯片供应能力，对AI芯片和自动驾驶供应链产生影响。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3894787976756229"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "经济学家观点转变，承认AI确实在替代就业岗位",
-                "summary": "经济学家群体正逐步接受AI确实在导致就业岗位流失的观点，这与此前主流经济学界相对乐观的判断形成对比。研究将当前AI对就业的影响与工业革命时期的技术性失业进行类比。若AI驱动的结构性失业加速，将对劳动力市场政策、收入分配和AI应用监管产生深远影响。",
-                "source": "Hacker News / Quartz",
-                "url": "https://qz.com/economists-ai-job-displacement-industrial-revolution-statement-071326"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "大规模实证研究揭示AI生成代码在真实项目中的质量与安全风险",
-                "summary": "一项针对真实代码仓库的大规模实证研究显示，AI生成代码在采纳率、安全性和可维护性方面呈现复杂图景。研究发现开发者对AI代码的信任度因场景而异，且存在安全漏洞被低估的问题。该研究为AI编程辅助工具的安全使用提供了实证依据，对DevSecOps实践具有指导意义。",
-                "source": "Hacker News / arXiv",
-                "url": "https://arxiv.org/abs/2603.27130"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "MOVA LINCO完成数千万元天使融资，布局家庭AI硬件生态",
-                "summary": "威联机器人科技（深圳）有限公司完成数千万元天使融资，资金将用于AI算法底层技术研发、产品量产体系完善及全球化渠道布局。MOVA LINCO定位为AI家庭智能硬件公司，首款产品计划今年在海外上线。该公司聚焦家庭场景的AI交互与机器人化，反映了AI硬件从工具向家庭智能终端演进的趋势。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3879780282495236"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic旧金山员工薪酬引争议，高薪加剧住房危机担忧",
-                "summary": "Anthropic旧金山办公室部分岗位薪资高达6.5万美元，引发关于AI公司薪酬水平与社会公平关系的讨论。在AI企业IPO浪潮背景下，高薪工程师群体被指加剧了当地住房危机和租金上涨。该争议反映了AI产业集聚对一线城市社会问题的深层影响，引发对科技行业社会责任的反思。",
-                "source": "Hacker News / Mission Local",
-                "url": "https://missionlocal.org/2026/07/anthropic-sf-affordability-ipo-housing-evictions-rent/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "众擎机器人借壳上市传闻被否，森霸传感称不存在相关情形",
-                "summary": "有投资者在互动平台询问森霸传感是否与众擎机器人洽谈借壳上市事宜，森霸传感回应称目前不存在传闻情形，生产经营一切正常。众擎机器人是南阳籍企业，若成功借壳将加速其资本化进程。在人形机器人赛道热度持续高企的背景下，上市传闻反映了产业链企业对二级市场融资的强烈需求。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3894802904481029"
             }
         ]
     }
