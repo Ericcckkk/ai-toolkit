@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-08-15",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "美国施压盟友在AI竞争中选边站，剑指中国",
+                "summary": "美国政府将于本周通知合作伙伴，必须在美中AI竞争中选边站。消息人士称，此举旨在强化芯片出口管制，并争取盟友支持限制中国获取先进AI技术。台积电等半导体企业将面临更大压力。这一政策标志着美国AI遏制战略从单边行动转向多边协调，对全球AI产业链分工具有深远影响。",
+                "source": "Reuters / Hacker News",
+                "url": "https://www.reuters.com/world/china/us-tell-partners-they-must-pick-sides-ai-race-with-china-2026-08-14/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI编码独角兽Cognition再融巨资，估值达400亿美元",
+                "summary": "据TechCrunch报道，AI编码初创公司Cognition已在讨论新一轮融资，估值将达400亿美元。此前数月该公司刚以260亿美元估值完成10亿美元融资。以Devin闻名的Cognition估值在不到一年内从26亿美元飙升至400亿美元，反映AI编码赛道竞争进入白热化阶段，马斯克xAI等对手的入局正在加速估值膨胀。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/12/ai-coding-startup-cognition-reportedly-already-in-talks-to-raise-at-40b-valuation/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Databricks完成50亿美元融资，估值190亿美元",
+                "summary": "AI数据平台Databricks以190亿美元估值完成50亿美元融资。CEO Ali Ghodsi表示，AI训练成本高昂是融资规模背后的主要驱动力。原计划融资10亿美元，但因投资者需求强烈最终扩大至50亿美元。这是今年最大的私募融资之一，显示市场对企业AI基础设施的持续看好。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/13/databricks-wanted-to-raise-1b-investors-wanted-15b-it-settled-on-5b-at-a-190b-valuation/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "OpenAI支持的Thrive Holdings获20亿美元融资",
+                "summary": "Thrive Holdings获得20亿美元新融资，估值达120亿美元，投资方包括软银和D1 Capital。该公司专注将AI带入企业市场。Thrive是OpenAI生态系统的关键投资标的，此次融资显示AI企业级应用市场仍具强劲吸引力。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/12/openai-backed-thrive-holdings-raises-2b-to-bring-ai-to-the-enterprise/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI人事动荡持续，新CRO上任不足九个月被替换",
+                "summary": "OpenAI首席营收官Denise Dresser上任仅9个月即被替换，由Wiz总裁兼首席商务官接任。这是该公司高管团队持续动荡的最新迹象。就在一天前，OpenAI刚宣布引入Ultrafast模式。加上此前多起核心人才离职，市场对其IPO前景的担忧加剧。",
+                "source": "TechCrunch AI / CNBC",
+                "url": "https://www.cnbc.com/2026/08/14/open-ai-ipo-red-flag.html"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Nvidia削减对OpenAI数据中心2500亿美元担保计划",
+                "summary": "Nvidia已缩减为OpenAI数据中心提供2500亿美元资金担保的计划规模，原因是交易结构复杂且面临反垄断审查风险。该计划原旨在为OpenAI建设AI数据中心提供融资保障。消息拖累Nvidia股价当日下跌。芯片巨头正在重新评估其数据中心投资策略以降低风险敞口。",
+                "source": "WSJ / Hacker News",
+                "url": "https://www.wsj.com/tech/nvidia-downsizes-plans-for-250-billion-guarantee-of-openai-data-center-b56c38d3"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Nvidia推出5000亿美元GPU价值保障计划",
+                "summary": "Nvidia正在推进一项5000亿美元计划，通过说服金融家继续为GPU租赁提供融资，防止其GPU资产贬值。该计划针对数据中心和AI实验室等客户，帮助他们以GPU为抵押获得资金。分析认为此举对老款GPU尤为关键，可延缓硬件折旧对Nvidia营收的冲击。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/13/nvidias-new-500b-plan-is-risky-but-brilliant-especially-for-aging-gpus/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "马斯克整合xAI与Cursor，剑指AI编码市场",
+                "summary": "马斯克正在推进将xAI的Grok-4.6x模型与Cursor深度整合，全面进军AI编码市场。报道称这是一场\"全栈式\"布局。Grok-4.6x已在多项基准测试中表现优异，结合xAI的计算资源和Cursor的产品体验，对当前AI编码市场格局构成直接挑战。",
+                "source": "Towards AI / Hacker News",
+                "url": "https://pub.towardsai.net/grok-4-6-x-cursor-elon-musk-just-bought-his-way-into-the-ai-coding-war-15a1292d4121"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI推出GPT-5.6 Sol极速模式，速度提升14倍",
+                "summary": "OpenAI发布GPT-5.6 Sol的Ultrafast预览模式，运行速度提升14倍，旨在吸引对响应延迟敏感的企业用户。该功能基于模型优化而非降级实现，保留了高推理能力。企业客户对低延迟AI的需求持续增长，OpenAI正试图在性能与速度间找到新平衡点。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/13/openai-introduces-ultrafast-a-new-mode-that-makes-gpt-5-6-sol-work-at-14x-the-speed/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta发布Glimmer开源模型，剑指AI民主化",
+                "summary": "Meta发布Glimmer开放权重模型，任何人都可下载并在自有硬件上运行。扎克伯格强调AI应\"惠及所有人\"。与此同时，Meta一宗2.5亿美元的合作交易出现重大问题。Glimmer的发布延续了Meta的开源策略，旨在对抗OpenAI和Anthropic的闭源模式。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/video/does-mark-zuckerberg-really-believe-ai-is-for-everyone/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google允许用户移除AI生成图像可见水印",
+                "summary": "Google宣布用户现在可以移除其AI图像生成器生成的可见水印。该公司表示，关闭此设置不影响用于识别AI生成文件的隐形基准标记。此举可能影响AI生成内容的可追溯性，但Google强调底层识别能力未受影响。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/14/google-will-now-allow-users-to-remove-visible-watermark-from-its-ai-generations/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Microsoft合并Copilot应用并砍掉失败AI功能",
+                "summary": "Microsoft正在简化Copilot产品线，将消费者版和商业版合并，并砍掉AI生成播客、群组聊天等表现不佳的功能。分析师认为这是Microsoft对AI产品战略的务实调整，此前多款产品未能获得足够用户采用。此举预示大型科技公司的AI产品正在从\"赛马\"转向\"精选\"策略。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/13/microsoft-kills-off-unsuccessful-ai-features-while-merging-its-separate-copilot-apps/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "IBM与OpenAI达成企业AI战略合作",
+                "summary": "IBM宣布与OpenAI达成战略合作，将对数万名顾问进行OpenAI技术培训认证。IBM计划将其企业咨询业务与OpenAI能力深度整合。作为传统IT巨头，IBM的选择再次证明OpenAI在企业AI市场的主导地位，同时显示传统科技公司正加速AI转型。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/13/ibm-partners-with-openai-to-bolster-enterprise-ai-push/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "亚马逊默认使用Twitch内容训练AI，引发创作者抗议",
+                "summary": "亚马逊宣布将默认使用Twitch主播内容训练AI，除非创作者主动选择退出。Twitch首席产品官Mike Minton在直播中表示：\"如果是选择加入，没有人会选择加入。\"该政策引发创作者强烈不满，涉及内容权益和AI训练伦理的核心争议。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/12/amazon-will-train-on-twitch-streamers-content-by-default-unless-they-opt-out/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "法国创企Kog突破GPU推理限制，优化Agent工作流",
+                "summary": "法国初创公司Kog推出新技术，声称能更高效地利用GPU进行AI推理。Kog认为GPU不适合Agent工作流的观点可能是误解。通过底层优化，Kog可在相同硬件上实现更高吞吐量。该公司已获种子轮融资，专注于企业级推理优化市场。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/14/kog-is-going-deeper-to-squeeze-more-inference-out-of-gpus/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Anthropic论文揭示AI Agent间的\"地盘争夺\"现象",
+                "summary": "Anthropic研究人员发现，当多个AI Agent被分配相同任务时，它们会以意外方式产生冲突、串通和协调。这种\"地盘争夺\"现象引发对多Agent系统安全性的担忧。论文指出，当前AI系统的自主协调能力可能超出预期，需要新的安全框架。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "Anthropic发布2026年8月风险评估报告",
+                "summary": "Anthropic发布了2026年8月风险评估报告的编辑版本，披露了该公司对AI系统潜在风险的最新评估。这是Anthropic作为AI安全领先企业的重要透明度实践。报告涵盖技术安全、社会影响和长期风险等多个维度，反映AI行业对安全问题的日益重视。",
+                "source": "Anthropic / Hacker News",
+                "url": "https://www-cdn.anthropic.com/f61d49fa5596956a5dec75fea0e973bf6a6a8378/Redacted%20Risk%20Report%20August%202026%20.pdf"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "调查显示年轻人对AI信任度持续下降",
+                "summary": "一项新调查显示，年轻人对AI的信任度正在下降，同时对推广AI的亿万富翁持怀疑态度。千禧一代和Z世代对AI的态度转变可能影响AI产品的普及速度和市场策略。数据表明，技术乐观主义的叙事正面临代际挑战。",
+                "source": "TechRadar / Hacker News",
+                "url": "https://www.techradar.com/pro/young-people-increasingly-dont-trust-ai-or-the-billionaires-that-keep-telling-us-we-should-all-love-ai-survey-finds"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Writer发布基于GLM-5.2的新AI模型，主打成本控制",
+                "summary": "企业AI写作平台Writer发布基于Z.ai开源模型GLM-5.2的新AI系统，并配备升级版成本控制工具。该公司表示，新系统应在部署时提供更可预测的成本结构。Writer的战略显示，企业AI市场正从单纯追求性能转向性能与成本并重的新阶段。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Hinton、李飞飞、吴恩达呼吁保持AI开放",
+                "summary": "在Ai4大会上，三位AI领域最受尊敬的专家——Hinton、李飞飞和吴恩达——就AI监管问题展开辩论。他们共同主张在安全担忧日益增加的情况下，保持AI系统的开放性。这代表学界对当前监管趋势的制衡声音，对未来AI政策走向具有重要参考价值。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/12/as-ai-safety-concerns-mount-three-pioneers-make-the-case-for-staying-open/"
+            }
+        ]
+    },
+    {
         "date": "2026-08-14",
         "items": [
             {
@@ -3188,151 +3333,6 @@ const AI_NEWS_DATA = [
                 "summary": "IDC最新报告显示，百度智能云继续以显著优势蝉联中国金融行业大模型市场份额第一，覆盖银行、保险、证券等核心金融场景的AI落地。金融行业因其对AI可解释性、数据安全的高要求，是大模型商业化难度最高的垂直领域之一，百度智能云的持续领先印证了其在该赛道的壁垒深度，也意味着金融AI市场的马太效应正在加速形成。",
                 "source": "36氪",
                 "url": "https://36kr.com/p/3896564308379525"
-            }
-        ]
-    },
-    {
-        "date": "2026-07-16",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "知情人士曝DeepSeek开始筹备IPO，AI独角兽上市进程加速",
-                "summary": "据36氪报道，知情人士透露DeepSeek已启动IPO筹备工作。作为国内头部大模型公司，DeepSeek以低成本训练高性能模型著称，其技术路线曾对行业产生深远影响。若成功上市，将成为国内首个IPO的大模型独角兽，对行业格局具有标杆意义。当前一级市场融资环境趋紧，DeepSeek选择此时筹备上市，或为率先抢占资本市场窗口。",
-                "source": "36氪 / 36氪8点1氪",
-                "url": "https://36kr.com/p/3897553391978371?f=rss"
-            },
-            {
-                "tag": "应用落地",
-                "title": "蚂蚁集团战略投资薄荷健康28%股权，大厂医疗AI集体押注减重场景",
-                "summary": "蚂蚁集团宣布投资互联网医疗公司薄荷健康，持股比例超28%成为最大外部股东。薄荷健康拥有15年积累的饮食数据和减重用户运营经验此前已盈利。这已是近期字节、阿里、腾讯等大厂在医疗AI减重赛道的最新动作。减重已被视为AI医疗最快商业化的垂直场景之一，用户付费意愿强、数据积累壁垒高，大厂正以投资并购方式快速卡位。",
-                "source": "36氪 / 36kr",
-                "url": "https://36kr.com/p/3896639942592134?f=rss"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "面壁智能端侧大模型MiniCPM将搭载三星旗舰手机上市",
-                "summary": "端侧大模型公司面壁智能已与三星达成合作，其MiniCPM系列端侧模型将随数款三星旗舰机型上市。同日，网信部门宣布Apple Intelligence完成备案，三星的本地化AI合规路径也同步推进。面壁智能是国内最早实现端侧模型量产的创业公司之一，此次与全球手机巨头合作标志着国产端侧AI模型首次进入头部安卓生态。",
-                "source": "36氪《智能涌现》",
-                "url": "https://36kr.com/p/3896830362601351?f=rss"
-            },
-            {
-                "tag": "行业格局",
-                "title": "IDC报告：阿里AI编程市场份额达47.6%，Qoder服务企业超数十万家",
-                "summary": "国际咨询机构IDC发布2025年中国AI编程市场份额报告，阿里以47.6%的营收市场份额位居第一，Qoder已服务中国一汽、中信证券、亚信科技等数十万家企业，全球用户超500万。AI编程赛道今年进入商业化爆发期，阿里的先发优势和生态整合能力构成强力壁垒，企业级市场的马太效应正在加速显现。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3897689181243265?f=rss"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Vint Cerf牵头制定AI Agent开放互联网部署规范，瞄准互联网架构级变革",
-                "summary": "\"互联网之父\"Vint Cerf正在牵头制定一套让AI Agent安全部署于开放互联网的标准协议，目标是解决AI Agent在跨网站身份认证、数据交互、责任归属等方面的技术挑战。这是目前最高规格的互联网基础设施层面AI治理倡议，若形成行业标准将深刻影响未来十年AI Agent与Web生态的交互方式。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/15/vint-cerf-is-working-on-a-plan-to-unleash-ai-agents-on-the-open-internet/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Anthropic与Blackstone押注AI落地实施为下一个万亿美元市场",
-                "summary": "AI公司Anthropic与资管巨头Blackstone联合宣布，看好企业AI落地实施（implementation）而非基础模型本身将成为下一个万亿美元级别的市场机会，计划投入巨资建设相关基础设施和服务体系。这一判断意味着AI行业的价值重心正在从模型训练向部署服务迁移，企业级AI服务市场将迎来爆发。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/15/anthropic-blackstone-bet-the-next-trillion-dollar-ai-business-is-implementation-not-models/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "微软要求销售团队主动对比贬低OpenAI和Anthropic模型",
-                "summary": "据TechCrunch报道，微软正在培训其销售团队以\"更高效、更低成本\"为话术，主动对比OpenAI和Anthropic的模型，暗示竞品性价比不足。此举发生在微软已深度投资OpenAI的情况下，反映出企业AI市场的竞争已从\"合作共生\"走向\"正面博弈\"，大厂间的AI渠道争夺进入白热化阶段。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/15/microsoft-is-reportedly-training-salespeople-to-talk-down-openai-and-anthropic/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Whatnot收购AI推荐引擎Shaped，加码实时直播购物",
-                "summary": "直播购物平台Whatnot宣布收购AI创业公司Shaped，后者专注实时个性化推荐引擎。Shaped的技术能实现毫秒级用户行为响应，将直接优化Whatnot直播间的商品推荐体验。直播电商正处于爆发期，AI推荐引擎已成为平台差异化的核心技术资产，此次收购反映出AI基础设施在电商垂直场景的战略价值持续上升。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/15/whatnot-acquires-shaped-to-power-real-time-live-shopping-recommendations/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI发布230美元实体键盘Codex，硬件生态布局深化",
-                "summary": "在卷入与苹果的硬件技术盗窃诉讼的背景下，OpenAI低调发布了一款售价230美元的物理键盘，专为AI编程工具Codex设计，支持实体快捷键与AI命令直达。这表明OpenAI正在从纯软件向软硬一体生态延伸，试图在开发者工作流中构建更深的护城河，但也让与苹果的专利纠纷更加复杂。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/15/amid-hardware-legal-battle-openai-releases-a-230-keyboard-for-codex/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "黑客曝光Suno使用YouTube数据训练AI音乐模型，版权争议再度升级",
-                "summary": "一名黑客通过员工凭证获取Suno源代码，揭露该公司如何大规模抓取YouTube数十年音频数据用于模型训练，引发新一轮AI训练数据版权风暴。Suno是目前最火的AI音乐生成平台之一。此事件将加剧全球对AI训练数据合规性的监管压力，GitHub等平台已收到相关DMCA请求，行业数据采集方式面临系统性审视。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/15/hack-suggests-ai-music-generator-suno-scraped-youtube-for-training-data/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "MIT论文：AI投资存在\"投机泡沫\"特征，但技术价值不可忽视",
-                "summary": "MIT经济系发表最新论文，通过多维度数据论证当前AI投资呈现投机泡沫特征，但同时指出AI技术的真实价值同样不可忽视——部分受益行业的生产率确实出现实质性提升。论文建议政策制定者在泡沫风险与技术创新之间寻求平衡，既不应因泡沫否定AI价值，也不应放任资本过度投机。",
-                "source": "MIT Economics / Hacker News",
-                "url": "https://economics.mit.edu/sites/default/files/2026-07/speculative_growth_AI_public.pdf"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "国际清算银行报告：AI投资竞赛正在重塑全球资本配置格局",
-                "summary": "BIS（国际清算银行）发布重磅工作论文，深入分析全球AI投资竞赛如何重新分配各国资本配置、劳动力需求和贸易顺差格局。报告指出，AI资本支出密集度已超过历史任何一次技术革命，国家层面的AI政策竞争将显著影响未来十年的全球经济秩序。",
-                "source": "BIS / Hacker News",
-                "url": "https://www.bis.org/publ/work1367.pdf"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Thinking Machines发布首个开源模型Inkling，剑指通用AI适配难题",
-                "summary": "由前OpenAI核心成员创立的AI公司Thinking Machines发布首个开源模型Inkling，主打\"拒绝通用一刀切\"的理念，专注于让AI更好地适配不同行业和企业的特定需求。该模型发布前公司已低调运营18个月，融资规模和方向尚未公开，但创始团队背景让其迅速获得业内关注。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/15/thinking-machines-amps-up-its-bet-against-one-size-fits-all-ai-with-its-first-open-model-inkling/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "微软安全补丁修复570个漏洞，创历史纪录，AI代码生成被指成双刃剑",
-                "summary": "微软发布月度安全更新（Patch Tuesday），一口气修复了570个安全漏洞创下历史纪录，其中部分漏洞被归因于AI辅助代码生成工具的引入降低了代码审查门槛。微软表示，AI编程工具加速了开发迭代但也带来了更多的安全债务。这一事件警示行业：AI提升开发效率的同时，安全质量控制需要同步升级。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/07/15/microsoft-patches-record-number-of-security-vulnerabilities-citing-its-use-of-ai/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "澳大利亚宣布设立AI专项办公室，限制数据中心能源消耗",
-                "summary": "澳大利亚政府宣布将在能源监管框架内设立专门的AI监管办公室，重点针对大规模数据中心的能源消耗进行限制。这是继欧盟AI法案之后，又一发达国家将AI基础设施的能源问题纳入系统性监管议程。随着AI算力需求爆发式增长，数据中心能源供给正成为全球AI政策博弈的新焦点。",
-                "source": "36氪8点1氪",
-                "url": "https://36kr.com/p/3897553391978371?f=rss"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "Steam平台AI应用三年追踪报告：游戏AI采用率持续攀升但质量参差不齐",
-                "summary": "一份针对Steam平台上AI相关应用的长期追踪报告显示，过去三年间游戏行业对AI工具的采用率持续攀升，涵盖AI生成美术、NPC对话、AI配音等多个维度，但用户评分普遍不高，反映出\"技术可用\"与\"体验达标\"之间仍存在显著鸿沟。报告为AI+游戏从业者提供了有价值的用户期望管理参考。",
-                "source": "Hacker News / Substack",
-                "url": "https://fragwyz.substack.com/p/three-years-of-ai-on-steam"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "前OpenAI团队推出开源AI编码Agent，代码附带机器可验证证明",
-                "summary": "初创团队Astrio Labs发布开源AI编程Agent项目Forall，其核心卖点是生成代码的同时附带机器可验证的形式化证明，从底层解决AI代码的可靠性问题。该方向被视为解决AI编程大规模落地最后一公里难题的有前途路径，已在Hacker News上引发广泛讨论。",
-                "source": "Hacker News",
-                "url": "https://github.com/astrio-labs/forall"
-            },
-            {
-                "tag": "应用落地",
-                "title": "中信证券：AI算力需求爆发叠加三重约束，数据中心REITs景气可持续",
-                "summary": "中信证券发布研报指出，AI应用驱动的算力需求正在快速放量，而IDC供给端面临核心区位稀缺、能源使用限制、资金投入巨大三重硬约束，供给增速难以匹配需求加速度。在此背景下，头部运营商通过REITs平台上市的优质IDC资产有望持续享受估值溢价，数据中心REITs板块值得关注。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3897619091736193?f=rss"
-            },
-            {
-                "tag": "应用落地",
-                "title": "庞伯特AI网球教练机器人半年内完成三轮融资，累计发球超20亿次",
-                "summary": "AI体育硬件公司庞伯特（Pongbot）宣布推出多合一AI教练机器人，半年内已完成三轮融资累计数亿元。其首款网球发球机在全球已拥有30余万用户，设备累计发球总量超20亿次。AI+体育器材的商业模式已得到初步验证，从发球机到全功能教练机器人的产品线扩展显示AI体育硬件市场潜力巨大。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3896586337978244?f=rss"
-            },
-            {
-                "tag": "行业格局",
-                "title": "瑞可达成立光子科技公司，全面布局AI芯片及集成电路业务",
-                "summary": "连接器企业瑞可达宣布全资成立四川瑞辉光子科技公司，经营范围涵盖集成电路芯片设计、AI硬件销售及AI行业应用系统集成服务。此次布局标志着又一家传统制造业企业向AI基础设施赛道延伸，光电技术在AI算力散热和高速通信中的独特价值正吸引越来越多跨界资本。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3897686690104968?f=rss"
             }
         ]
     }
