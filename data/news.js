@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-08-22",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "美国司法部对a16z展开调查，或重塑风投行业格局",
+                "summary": "美国司法部正对 Andreessen Horowitz（a16z）展开调查，涉及该风投两位合伙人同时担任存在竞争关系公司董事的潜在利益冲突问题。此次调查发生在 OpenAI 即将 IPO 的关键节点，监管层对科技投资领域的审查显著升温。这对整个 VC 行业具有示范效应——合伙人交叉任职的风险合规将受到更严格审视，中小型风投可能趁机争夺优质案源。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/podcast/the-doj-is-investigating-a16z-what-does-this-mean-for-venture-capital/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic 推出 Cowork：Claude Desktop 智能体，无编程门槛",
+                "summary": "Anthropic 于周一发布 Cowork，这是其 Claude Desktop 的全新智能体功能，允许用户直接通过自然语言操控本地文件，无需编写任何代码。该产品将 Claude 的强大能力从浏览器端延伸至桌面工作流，标志着 AI 助手从「对话工具」向「数字员工」的角色跃迁。随着 Claude 商业用户数量快速攀升，Cowork 或将成为 Anthropic 深化企业渗透的核心抓手。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/anthropic-launches-cowork-a-claude-desktop-agent-that-works-in-your-files-no"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Railway 融资1亿美元挑战AWS，AI原生云赛道升温",
+                "summary": "云平台 Railway 宣布获得 1 亿美元融资，目前该平台已积累 200 万开发者且零营销投入。Railway 主打 AI 原生基础设施，定位为 AWS 的挑战者。随着企业加速将 AI 工作负载从传统云迁移，专门化的 AI 云基础设施赛道正快速成熟，AWS 和 Azure 的垄断格局面临实质性冲击。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/infrastructure/railway-secures-usd100-million-to-challenge-aws-with-ai-native-cloud"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Stripe 收购 AI 模型路由平台 OpenRouter，深化支付智能化",
+                "summary": "支付巨头 Stripe 宣布收购 AI 模型路由初创公司 OpenRouter，后者平台可连接 GPT、Claude、Llama 等多种模型。Stripe 明确表示此举核心目标是提升自身支付智能化水平，而非押注「技术奇点」。这笔交易将加速支付产业与 AI 基础设施的深度整合，OpenRouter 作为独立路由平台的独立性走向值得关注。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/19/stripe-didnt-really-buy-openrouter-because-of-the-singularity/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Salesforce 重塑 Slackbot，推出企业级 AI Agent 迎战微软谷歌",
+                "summary": "Salesforce 于周二发布了全面重构的 Slackbot，将其工作场所助手升级为真正的 AI Agent，支持自动化工作流编排、跨应用任务执行。此举正值微软 Copilot 和 Google Workspace AI 在企业市场激战之际，Salesforce 试图凭借 Slack 的天然协作入口优势夺回失地，企业协同办公 AI 的竞争进入白热化阶段。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/salesforce-rolls-out-new-slackbot-ai-agent-as-it-battles-microsoft-and"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Starcloud 融资2.5亿美元布局轨道数据中心，抢占太空算力",
+                "summary": "太空数据中心初创公司 Starcloud 宣布完成 2.5 亿美元融资，在地面发射选项日趋紧张的背景下押注轨道算力基础设施。该公司计划在低地球轨道部署数据中心，以应对 AI 数据中心对电力和冷却的爆炸式需求。SpaceX 和 Blue Origin 的发射排期争夺只是前奏，一场围绕「太空算力」的全新军备竞赛已悄然开启。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/21/starcloud-raises-200-million-for-orbital-data-centers-as-launch-options-dry-up/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "谷歌25年来首次重新设计搜索框，AI时代搜索入口大变",
+                "summary": "谷歌宣布对搜索框进行 25 年来首次重大重新设计，新界面将 AI 对话能力深度嵌入搜索体验。这是谷歌面对 ChatGPT、Perplexity 等 AI 搜索挑战者的直接回应。搜索框作为互联网最重要的流量分发节点，其形态变化将深刻影响内容生态、广告体系和用户行为，SEO 和内容创作者需要重新思考流量获取策略。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/google-just-redesigned-the-search-box-for-the-first-time-in-25-years-heres-why-it-matters-more-than-you-think"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Micro1 AI数据收入爆发在即：年化收入达5亿美元",
+                "summary": "AI 训练数据初创公司 Micro1 在 AI 训练需求爆发中实现年化总收入（gross run rate）突破 5 亿美元。随着大模型厂商对高质量数据的需求激增，数据层的战略价值持续凸显，Micro1 及其竞争对手正处于卖方市场，优质数据资产的稀缺性将进一步推高定价并加速行业整合。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/20/ai-data-startup-micro1-reaches-500m-gross-run-rate-amid-ai-training-boom/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Nvidia 研究证明：AI Agent 稳定性靠的是「马具」而非模型本身",
+                "summary": "Nvidia 研究团队发表论文，展示通过精细调优（fine-tuning）而非依赖更强基础模型，即可让 AI Agent 高效执行任务且不「失控」。该研究暗示在 Agent 能力竞赛中，推理框架和训练技巧的重要性已不亚于底层大模型本身。对于依赖第三方模型的 Agent 开发者和企业而言，这降低了 AI 应用的技术门槛。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/21/nvidia-just-showed-that-the-harness-not-the-ai-model-is-now-the-real-hero/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Inertia Enterprises 聚变燃料填充速度提升50倍，清洁能源迎突破",
+                "summary": "聚变能源初创公司 Inertia Enterprises 成功将燃料填充流程从一周缩短至数小时，这是实现商业聚变的关键技术里程碑之一。该公司是当前约 40 家聚变创业公司之一，燃料处理效率的突破意味着聚变发电的商业化时间表可能大幅提前，能源密集型的 AI 数据中心或将迎来终极清洁电力解决方案。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/20/inertia-enterprises-finds-a-way-to-make-its-fusion-fuel-fast/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Greg Brockman 权力扩大，OpenAI 进入「Brockman 时代」",
+                "summary": "OpenAI 联合创始人 Greg Brockman 在公司内部的角色和影响力显著扩大，就在公司面临与 Elon Musk 诉讼战、IPO 压力和 Anthropic 强势竞争的关键一年。这一人事变动暗示 OpenAI 的战略重心可能从「科研优先」转向「执行优先」，对于关注 OpenAI 上市进度的投资者和依赖其 API 的开发者而言，公司稳定性信号至关重要。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/982774/greg-brockman-openai-role-expansion"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "ChatGPT 发布后三分之一新网页由AI生成，Web 内容生态剧变",
+                "summary": "一项新研究显示，自 ChatGPT 发布以来，互联网上约三分之一的新增网页包含 AI 创作痕迹。AI 内容正在以前所未有的速度渗透网络生态，对搜索引擎排名、内容平台信任机制和数字广告分配都产生深远影响。内容原创者、SEO 从业者和平台方都需要正视这一结构性变化。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta AI Mac 版应用发布，支持屏幕感知与全应用语音操控",
+                "summary": "Meta 推出 Meta AI 的 macOS 原生应用，具备屏幕内容感知和全应用语音转文字功能，直接对标 Wispr Flow、Superwhisper 等效率工具。加上同期的 Pocket「氛围编程」应用在美区上线，Meta 正在 Mac 生态中建立 AI 入口级产品的矩阵。对于 macOS 开发者而言，多平台 AI 工具的竞争加剧将带来更优质的选择。",
+                "source": "The Verge AI / TechCrunch AI",
+                "url": "https://www.theverge.com/tech/982270/meta-ai-mac-app"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Listen Labs 融资6900万美元，AI 用户访谈市场快速崛起",
+                "summary": "AI 用户研究平台 Listen Labs 完成 6900 万美元融资，此前该公司曾因在纽约街头竖立「工程师招聘」 billboard 而走红网络刷屏。该轮融资表明企业级 AI 应用场景正从效率工具向核心业务决策层渗透，用户访谈的 AI 化将显著降低消费洞察成本，DTC 品牌和市场研究行业面临重塑。",
+                "source": "VentureBeat AI",
+                "url": "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic「神级」模型扩大全球内测范围，已发现上万高危漏洞",
+                "summary": "Anthropic 的旗舰模型（代号「神级」）扩大全球内测覆盖，已累计在测试中发现上万处高危安全漏洞。这一数据表明前沿大模型在代码安全审计和漏洞挖掘方面展现出超越传统工具的能力，Anthropic 正将其定位为 AI 安全领域的杀手级应用，对传统安全公司构成潜在威胁。",
+                "source": "财联社",
+                "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1XYnVMZDRzeUwzU3gyM3d5cUJIdmc0T3pIRDM4VUx2MGkyeU1MbDE1Q1BXUWZpRDlFSm5qSDN4QWxqZi1EQ1JKNA"
+            },
+            {
+                "tag": "应用落地",
+                "title": "LinkedIn「疑似AI内容」按钮点击量破百万，用户对AI噪音强烈反弹",
+                "summary": "LinkedIn 于7月30日上线的「Seems like AI slop」按钮已获得超过 100 万次点击，反映用户对平台上 AI 生成低质量内容的高度不满。LinkedIn 作为职业社交核心场景，其内容质量危机将倒逼平台强化 AI 内容标识和推荐算法调整，对依赖 LinkedIn 做 B2B 营销的从业者而言，原创高质量内容的价值将进一步凸显。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/983502/linkedin-ai-slop-button-one-million-people-message"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Nvidia 联手数据中心开发商 Cloverleaf，算力军备赛持续加码",
+                "summary": "Nvidia 与数据中心开发商 Cloverleaf 达成合作，持续向 AI 基础设施领域注入资金——而 AI 数据中心的大量采购反过来又反哺 Nvidia 的收入增长。Nvidia 正从「卖铲人」向「生态织网者」角色演进，数据中心选址、供电和冷却基础设施的战略价值被进一步放大，电力公司正成为 AI 产业链的关键新玩家。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/21/nvidia-partners-with-data-center-developer-cloverleaf/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "谷歌推出「首选来源」按钮，帮助出版商对抗AI流量损失",
+                "summary": "谷歌为出版商推出一键「首选来源」功能，读者可将其设为跨 Search、Discover 和 Google News 的首选内容源。这是谷歌在 AI 搜索摘要大量截流用户点击之后，对出版商压力的直接回应。功能效果仍待验证，但它标志着平台与内容创作者之间的权力博弈进入新阶段，AI 时代的内容分发规则仍在持续重写。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/20/google-gives-publishers-a-new-way-to-fight-ai-driven-traffic-losses/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "广州海珠发布教育垂类大模型，AI+教育场景加速落地",
+                "summary": "广州海珠区举办教育垂类大模型发布暨产学研生态战略合作签约大会，标志区域教育 AI 化进入规模化阶段。与通用大模型不同，垂直行业大模型在特定场景的数据密度和合规要求上更具优势，教育赛道正成为国内 AI 落地的重点方向之一，硬件+模型+数据的垂直整合模式正在各地快速复制。",
+                "source": "搜狐网",
+                "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSzJDLWhTeWlfUXZ3cXR3ZkcwZ2dmcmNIMVpXc01SUUx2UTE5UFJxVXJOcVZPVHZCMVV2Q2R1NFNZYU90TWtvLVprVVNDSWkwZGdIRUp4NHEydEpnQlI2VWFnWFM0Si1QTFlHNkFiN0FFelVZUktOSS1CNXJJLVc3YVRpVE8yWTZF"
+            },
+            {
+                "tag": "行业格局",
+                "title": "小红书开源发布自有大模型，内容平台自建AI底座成趋势",
+                "summary": "小红书悄悄开源发布了自研大模型，成为又一家不依赖外部模型、内容平台自建 AI 底座的厂商。从抖音到快手再到小红书，内容平台正在将 AI 能力内化，以提升内容理解、推荐和生成效率。这预示着 AI 模型层将从「头部通用寡头」向「行业垂直分化」加速演进，中型平台的自研模型将成为标配而非选项。",
+                "source": "极客公园",
+                "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1EM1habDRNTTdUbVhwUnBMR0tTUVVPLS01eGd3QjFUNHQyazVTOWNtYlBOLXB5WGRQVmtidE5oaDRPZWI3QjhRWlBKVjY"
+            }
+        ]
+    },
+    {
         "date": "2026-08-21",
         "items": [
             {
