@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-08-26",
+        "items": [
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI自研Jalapeño芯片发布：700W功耗超越1400W英伟达旗舰GPU",
+                "summary": "OpenAI在Hot Chips 2026上发布Jalapeño ASIC芯片，功耗仅700W却超越功耗1400W的英伟达GB300旗舰GPU。SemiAnalysis基准测试显示，Jalapeño在吞吐量每千瓦时产生更多tokens，同时用户并发量更高。该芯片专为LLM大规模推理设计，采用台积电5nm工艺，是OpenAI全栈AI战略的关键组成部分。对英伟达在AI芯片市场的主导地位构成直接挑战。",
+                "source": "Tom's Hardware / TechCrunch / OpenAI官方博客",
+                "url": "https://www.tomshardware.com/tech-industry/semiconductors/openai-says-its-jalapeno-chip-beats-nvidias-gb300"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Hugging Face据传正洽谈被收购，估值130亿美元",
+                "summary": "据TechCrunch报道，AI开源社区Hugging Face正在与潜在收购方洽谈，公司估值约130亿美元。作为全球最大的AI开源模型平台，Hugging Face托管超过100万个模型和数据集，其生态系统对全球AI开发者至关重要。若交易完成，将成为AI基础设施领域最大收购案之一，对开源AI生态产生深远影响。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/24/hugging-face-reportedly-in-talks-to-be-acquired-for-13b/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "机器人AI公司Generalist融资2亿美元，估值达30亿美元",
+                "summary": "物理AI初创公司Generalist宣布获得2亿美元融资扩展，估值从2个月前的20亿美元飙升至30亿美元。该公司专注于构建能让AI代理在物理空间移动的基础模型，核心技术涉及机器人具身智能。距离其上轮融资仅数周即实现估值跳跃，反映出资本对物理世界AI应用的高度追捧。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI数据中心负责人离职，明星高管持续流失",
+                "summary": "OpenAI基础设施团队关键人物、数据中心负责人Malone离开公司，这是继联合创始人John Schulman、产品负责人Kevin Weil之后又一位高管离职。此前OpenAI已调整基础设施组织架构，将Malone汇报线移出总裁办公室。在Stargate等超算项目密集推进期，核心基础设施人才流失对公司的执行力提出挑战。",
+                "source": "Wall Street Journal / TechCrunch",
+                "url": "https://www.wsj.com/tech/ai/openais-head-of-data-centers-has-left-company-6d24fd83"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Stability AI完成7600万美元新融资，累计融资达2.32亿美元",
+                "summary": "AI图像生成公司Stability AI宣布获得7600万美元新资金，使其历史融资总额达到2.32亿美元。作为Stable Diffusion开源模型的开发商，Stability AI在图像生成领域面临Midjourney、DALL-E等竞争，此次融资表明投资人对生成式AI商业化仍有信心。公司表示新资金将用于扩大企业客户和模型开发。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/25/stability-ai-maker-of-image-generator-stable-diffusion-raises-76-million-in-fresh-funding/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "通用AI初创公司General Intuition获6亿美元融资，估值60亿美元",
+                "summary": "General Intuition宣布获得由Valor和Point72领投的新一轮融资，估值达到60亿美元。该公司正在构建一个用于训练通用AI代理在物理空间中移动的基础模型，核心技术覆盖空间智能和具身AI。Point72创始人Steve Cohen的参与表明传统对冲基金正加大对AI基础设施的投资力度。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/24/valor-point72-back-general-intuition-at-6b-valuation-as-ai-startup-pushes-into-robotics/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Anthropic为Claude引入跨会话共享记忆功能",
+                "summary": "Anthropic推出Claude Cowork的跨聊天记忆功能，用户在对话中告知Claude的信息将自动同步到Cowork工作区，无需重复背景介绍。该功能解决了AI助手“失忆”痛点，使Claude在长期工作场景中更加实用。Anthropic产品负责人表示，记忆将是2026年AI助手的核心差异化功能。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "AI对冲基金Situational Awareness遭SEC调查，曾濒临崩盘",
+                "summary": "曾被誉为“华尔街最火爆AI基金”的Situational Awareness现正接受美国SEC调查，面临联邦传票。该基金利用AI分析卫星图像和社交媒体数据进行投资决策，一年前估值数十亿美元但随后险些崩盘。SEC调查标志着监管机构对AI驱动型金融机构的审查进入新阶段。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/24/situational-awareness-star-ai-hedge-fund-that-nearly-imploded-now-being-probed-by-the-sec/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI搜索引擎初创Keenable融资2600万美元，为AI代理建索引",
+                "summary": "Keenable以2600万美元种子轮走出隐模式，正在构建针对AI代理优化的大规模Web搜索索引。该公司认为现有搜索引擎面向人类设计，对AI代理的信息需求支持不足。其索引涵盖网站结构、交互元素等机器可读信息，帮助AI更高效地导航和理解网页内容。Accel领投。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/25/accel-backed-keenable-is-indexing-the-web-for-ai-agents/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "OpenAI产品负责人详述AI代理战略：从工程师走向普通用户",
+                "summary": "OpenAI产品负责人Thibault Sottiaux接受TechCrunch专访，阐述公司从专业开发者向大众用户推广AI代理的战略。他表示2026年是“AI代理元年”，OpenAI正在为研究、编程、购物等场景构建专用代理。但他也坦承可靠性和安全性仍是最大挑战，目前仅有20%的任务可完全自动化完成。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/24/openai-is-building-an-ai-agent-for-everything-will-everyone-use-them/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "AI助手Instinct因隐私安全问题引发用户担忧",
+                "summary": "新型AI助手Instinct因过于强大的系统访问权限和宽泛的服务条款引发早期测试者隐私担忧。该工具可访问用户邮件、文件、通讯录等敏感数据，创始人虽承诺不用于模型训练，但安全专家警告其数据处理方式缺乏透明度。随着AI助手功能边界不断扩展，用户隐私保护将成为持续争议焦点。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/24/instincts-powerful-ai-assistant-is-raiseing-privacy-and-security-concerns/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "AMD MI300X与英伟达H100实现跨厂商字节级一致推理",
+                "summary": "学术研究团队在Zenodo发布论文，证实72B参数LLM在AMD MI300X和英伟达H100上可实现跨厂商字节级完全一致的推理结果。这一突破对需要异构计算的企业意义重大，意味着AI部署不再受单一厂商绑定。研究同时发现AMD MI300X在特定批量推理场景下成本更低，能效更高。",
+                "source": "Zenodo / Hacker News",
+                "url": "https://zenodo.org/records/19882078"
+            },
+            {
+                "tag": "政策监管",
+                "title": "AI正加速关键基础设施网络攻击，能源水利成重点目标",
+                "summary": "Axios调查发现，AI工具正被大规模用于攻击电网、水处理厂、天然气管道等关键基础设施。攻击者利用AI生成钓鱼邮件、识别漏洞、自动化入侵流程，使攻击速度提升10倍以上。美国CISA报告显示2026年上半年关键基础设施网络事件同比增加47%，AI驱动型攻击占六成以上。",
+                "source": "Axios / Hacker News",
+                "url": "https://www.axios.com/2026/08/25/ai-critical-infrastructure-cyberattacks"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Instant团队全员加入OpenAI",
+                "summary": "协同数据库公司Instant团队宣布整体加入OpenAI。Instant开发了一款以即时本地优先为特色的数据库产品，在开发者社区获得好评。其创始人在博客中表示，加入OpenAI后将致力于“让AI原生应用开发更简单”。这已是近半年内第三家被OpenAI收购的初创团队。",
+                "source": "Instant官方博客 / Hacker News",
+                "url": "https://www.instantdb.com/essays/instant_team_joins_openai"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI完成超过万亿参数新模型训练？业内传言四起",
+                "summary": "多位AI行业观察者在社交媒体上爆料称OpenAI已完成超过10万亿参数的新模型训练，若属实将成为史上最大语言模型之一。OpenAI官方尚未确认此消息，但内部动向显示公司正加速下一代模型研发。Sam Altman近期暗示“比你想象的更快”将有重大发布。参数规模竞赛再度升温。",
+                "source": "Twitter / Hacker News",
+                "url": "https://twitter.com/synthwavedd/status/2092326145270456377"
+            },
+            {
+                "tag": "政策监管",
+                "title": "欧盟1088个网站AI披露调查：仅21%符合DMA透明度要求",
+                "summary": "研究机构Disclosure Proof对欧盟主要网站AI聊天组件进行调查，分析1088个样本后发现仅21%符合《数字市场法》AI披露要求。大多数网站未告知用户其正在与AI系统交互，也未提供退出选项。研究指出Meta、Google等大平台合规率相对较高，但中小型网站合规意识严重不足。",
+                "source": "Disclosure Proof / Hacker News",
+                "url": "https://disclosureproof.com/research/state-of-ai-disclosure/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "神秘新模型Ox Alpha引发AI圈猜测，开发者社区热议",
+                "summary": "一款名为Ox Alpha的“隐身模型”在社交媒体引发热议，因其测试表现异常优异且开发者身份不明。知情人士透露该模型在多项基准测试中超越现有最强模型，但拒绝透露训练数据来源和架构细节。OpenAI、Anthropic、DeepMind均否认与该项目有关，Ox Alpha成为AI界最大悬案之一。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/08/23/whos-behind-the-new-stealth-model-ox-alpha/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Codeberg更新服务条款：拒绝托管主要用途为AI的项目",
+                "summary": "开源平台Codeberg宣布更新服务条款，明确拒绝托管主要用途为训练AI模型的代码仓库和数据。此政策针对大规模爬取平台内容用于AI训练的行为，与GitHub、GitLab等平台形成对比。Codeberg表示此决定旨在保护贡献者权益，但批评者认为这将阻碍开源社区与AI领域的融合。",
+                "source": "Codeberg / Hacker News",
+                "url": "https://codeberg.org/Codeberg/org/compare/17bdb39b0c1ecd0e423f3ba592650ce57fcdfbf5..71149c7fc95ccfeae36109b5cddca339e4aa1473"
+            },
+            {
+                "tag": "技术突破",
+                "title": "微软Maia 200 AI加速器亮相Hot Chips 2026",
+                "summary": "微软在Hot Chips 2026上展示Maia 200 AI加速器，这是其自研数据中心芯片系列的第二代产品。Maia 200针对Azure AI工作负载优化，支持大规模Transformer模型训练和推理。微软表示内部测试显示该芯片在特定AI任务上能效优于同等功耗的GPU方案，但未公布详细性能数据。",
+                "source": "ServeTheHome / Hacker News",
+                "url": "https://www.servethehome.com/microsofts-maia-200-accelerator-at-hot-chips-2026/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Google收购Spirit Airlines破产资产获取训练数据",
+                "summary": "据彭博法律报道，Google在Spirit Airlines破产程序中收购其数据资产，分析师猜测此举旨在获取大量客户交互数据用于AI模型训练。航空公司数据包含用户偏好、投诉记录、行程模式等结构化信息。监管专家质疑此类破产资产出售是否应适用更严格的数据隐私审查。",
+                "source": "Bloomberg Law / Hacker News",
+                "url": "https://news.bloomberglaw.com/bankruptcy-law/google-aims-to-boost-ai-with-purchase-of-spirit-airlines-data"
+            }
+        ]
+    },
+    {
         "date": "2026-08-25",
         "items": [
             {
