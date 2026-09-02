@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-09-02",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "加州立法者通过规范律师使用AI的法案，2027年起生效",
+                "summary": "加州议会于9月1日通过了一项针对律师使用AI的法案，要求在诉讼文件中披露AI使用情况并保留生成记录。该法案将于2027年正式生效，成为美国首个针对法律行业AI使用的强制性规定。违规律师可能面临纪律处分。这一立法动向表明，监管机构正从通用AI治理转向行业垂直监管，律师等专业人士需要重新审视其AI工具使用流程和合规文档管理。",
+                "source": "Reuters / Hacker News",
+                "url": "https://www.reuters.com/legal/government/california-lawmakers-pass-bill-governing-lawyers-use-ai-2026-09-01/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI预览Astra模型：专注网络攻防能力，安全性成发布前提",
+                "summary": "OpenAI在9月1日预览了其最新模型Astra，该模型在侵入计算机系统和网络攻防方面展现出显著能力。鉴于此前Hugging Face遭黑客攻击事件，OpenAI已推迟Astra的正式发布，正加强网络安全防护措施。消息人士透露，Astra的代码执行和漏洞利用能力已接近专业黑客水平。OpenAI选择\"先安全后发布\"的策略，反映了AI安全与能力之间的持续张力。",
+                "source": "TechCrunch AI / The Verge / Hacker News",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/987695/openai-astra-unreleased-model-cybersecurity-delay"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Apple起诉前员工窃取机密给OpenAI，案件涉及数据销毁证据",
+                "summary": "Apple于8月31日向法院提交证据，指控一名前员工在得知内部调查后销毁了窃取公司数据的证据。Apple声称该员工将机密技术文件提供给OpenAI，涉及核心AI研发相关内容。这是继之前的商业机密纠纷后，Apple与OpenAI之间的又一次直接法律对抗。硅谷AI人才和数据争夺战的法律边界正在被重新定义。",
+                "source": "TechCrunch AI / Hacker News",
+                "url": "https://techcrunch.com/2026/08/31/apple-shares-shocking-evidence-against-former-employee-accused-of-stealing-company-data-for-openai/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI训练初创AfterQuery成YC最快独角兽，估值32亿美元",
+                "summary": "据TechCrunch报道，AI模型训练初创公司AfterQuery在成立仅5个月后便获得新一轮融资，估值达到32亿美元，成为Y Combinator历史上最快达成独角兽地位的初创公司。该公司专注于AI模型的训练数据处理和优化，在大模型军备竞赛中扮演关键基础设施角色。这一里程碑反映了资本市场对AI基础设施层的持续热情。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/01/afterquery-reportedly-becomes-y-combinators-fastest-ever-unicorn-now-valued-at-3-2b/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Nvidia向MediaTek投资35亿美元，布局Big Tech定制AI芯片",
+                "summary": "Nvidia宣布向台湾芯片制造商MediaTek投资35亿美元，这笔交易揭示了Nvidia在AI芯片市场的长期战略：即使大客户如Google、Microsoft、亚马逊都在自研芯片，Nvidia仍希望通过定制合作保持其不可或缺地位。分析认为，Nvidia正从GPU供应商向AI芯片生态系统整合者转型，应对定制芯片浪潮的冲击。",
+                "source": "TechCrunch AI / Barron's / Hacker News",
+                "url": "https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Nvidia与Anthropic投资关系引\"循环融资\"争议",
+                "summary": "据Barron's分析，Nvidia对Anthropic的投资关系引发市场对其\"循环融资\"模式的质疑。Anthropic购买Nvidia芯片、Nvidia投资Anthropic的模式被指可能存在利益捆绑。尽管两家公司均未公开回应，但这一争议凸显了AI芯片供应链中投资方与被投方的复杂利益关系。对其他AI芯片竞争者而言，这种合作模式可能形成不公平竞争壁垒。",
+                "source": "Barron's / Hacker News",
+                "url": "https://www.barrons.com/articles/nvidia-stock-price-anthropic-deal-ai-circular-financing-6be908a3"
+            },
+            {
+                "tag": "应用落地",
+                "title": "ChatGPT Health接入Epic系统，临床医生可读取患者数据",
+                "summary": "OpenAI于9月1日宣布ChatGPT Health新增与电子医疗记录巨头Epic的集成功能，允许临床医生以只读权限导入患者健康记录。这标志着AI助手正式进入美国医院核心诊疗流程。首批支持的医院系统覆盖超过5000万患者。尽管数据安全仍是关注焦点，但医疗AI应用的合规落地正在加速。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/01/chatgpt-health-adds-epic-integration-for-clinicians-to-import-patient-data/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AIR融资5000万美元，帮企业审核AI代理技能与插件安全",
+                "summary": "AI代理编排平台AIR宣布完成5000万美元融资，其核心功能是帮助企业发现运行中的AI代理，并持续审核其使用的第三方技能和插件，阻止存在安全风险的扩展运行。随着企业AI代理数量激增，缺乏统一安全管控成为重大隐患，AIR瞄准了这一企业AI治理的空白市场。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/01/air-raises-50m-to-help-companies-vet-the-skills-and-add-ons-ai-agents-use/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic发布Fable 5.1：成本降低、限制减少",
+                "summary": "Anthropic于9月1日发布了Fable 5.1版本，该版本在两个关键维度进行了优化：一是降低Token成本，据称降幅达40%；二是减少了误报导致的过度限制，让模型在实际应用场景中更加实用。Fable 5.1还增强了长文本处理能力和复杂推理表现。这是Anthropic在API定价战中的一次主动出击。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Instagram限制未披露AI账号传播，AI网红\"透明化\"监管开始",
+                "summary": "Meta旗下Instagram于8月31日宣布，将对未明确标注为AI生成的账号施加传播限制措施，包括降低内容推荐权重和限制互动功能。随着AI生成网红引发公众反感加剧，平台开始强制AI内容创作者进行身份披露。这可能重塑人机混合内容生态的商业模式。",
+                "source": "TechCrunch AI / Hacker News",
+                "url": "https://techcrunch.com/2026/08/31/instagram-puts-new-limits-on-undisclosed-ai-profiles/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google发布Gemini 3.8 Flash，编程能力差距进一步缩小",
+                "summary": "据华尔街日报报道，Google于近期发布了Gemini 3.8 Flash版本，该模型在编程任务上的表现显著提升，与GPT-4和Claude的差距已缩小至个位数百分比。在HumanEval等主流编程基准测试中，Gemini 3.8 Flash已接近顶级闭源模型的水平。Google正以高频小版本迭代策略争夺AI编程市场。",
+                "source": "Wall Street Journal / Hacker News",
+                "url": "https://www.wsj.com/tech/ai/new-google-ai-model-said-to-narrow-gap-on-coding-ability-264c6052"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google推出Pics挑战Canva，用AI提示替代传统设计",
+                "summary": "Google在9月1日发布了Pics，这是一款对标Canva的AI创意工具，其核心差异在于用户通过自然语言提示而非传统设计工具来创作图文内容。Pics整合了Google最新的图像生成模型，支持多语言提示和品牌风格一致性保持。这一发布标志着Google正式进军价值数百亿美元的创意软件市场。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/01/googles-answer-to-canva-is-an-ai-tool-where-you-prompt-instead-of-design/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Perplexity为Mac推出混合计算功能，本地隐私与云端能力兼顾",
+                "summary": "Perplexity于9月1日为Mac用户推出\"混合计算\"AI功能，该功能将敏感数据处理保留在本地设备，同时利用云端算力处理复杂查询。在隐私优先的前提下，用户可获得接近全云端的AI能力体验。这是端侧AI与云端AI融合的一次具体产品化尝试。",
+                "source": "9to5Mac / Hacker News",
+                "url": "https://9to5mac.com/2026/09/01/perplexity-launches-privacy-minded-hybrid-compute-ai-feature-for-mac/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Empirik获2100万美元融资，用AI预测IT基础设施故障",
+                "summary": "Sequoia孵化的初创公司Empirik正式发布并获得2100万美元种子轮融资，其目标是\"做IT基础设施领域的Cursor\"——通过AI主动预测系统故障而非被动响应。该公司宣称其预测准确率已达85%，可提前平均4小时预警。传统IT运维正从被动响应向智能预测转型。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/01/sequoia-incubated-empirik-launches-with-21m-to-predict-outages-before-they-happen/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "视频AI搜索独角兽Clipto估值2.5亿美元，已实现盈利",
+                "summary": "成立仅3年的AI视频搜索公司Clipto宣布获得1500万美元新融资，估值达到2.5亿美元。Clipto透露其ARR已达1500万美元且已实现盈利，其技术可对TB级视频内容进行语义搜索。该公司选择在盈利状态下融资，显示了其对长期独立发展的信心，也证明了垂直AI应用的商业可行性。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/31/three-year-old-ai-media-search-startup-clipto-hits-a-250m-valuation/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "研究人员用AI民主化3D打印高价值金属合金",
+                "summary": "华盛顿州立大学的研究团队在8月24日发表论文，宣布利用AI加速了镍基高温合金的3D打印工艺优化。该合金是航空发动机和核反应堆的关键材料，传统工艺需数年试错，AI将这一周期缩短至数月。这一成果有望降低先进制造的门槛，使中小企业也能生产高性能金属部件。",
+                "source": "Washington State University News / Hacker News",
+                "url": "https://news.wsu.edu/news/2026/08/24/researchers-use-ai-to-democratize-3d-printing-of-crucial-metal-alloy/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Google启动全球首个双盲AI评估体系",
+                "summary": "Google DeepMind于近期发布了双盲AI评估体系的试点方案，评估者与被评估模型均不知道对方身份，旨在消除评估过程中的主观偏差和\"作弊\"可能。这一方法借鉴自医学临床试验，目前已在多任务基准测试中显示出与传统评估显著不同的结果分布。双盲评估可能成为未来AI能力认证的新标准。",
+                "source": "Google DeepMind Blog / Hacker News",
+                "url": "https://deepmind.google/blog/piloting-the-worlds-first-double-blind-ai-evaluations/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "本地AI状态报告：开源模型性能逼近闭源，但商业落地仍存差距",
+                "summary": "BaseCompute于9月1日发布的《本地AI状态报告》显示，2026年上半年开源模型的平均性能提升达47%，已逼近GPT-4级别闭源模型。然而，在企业级部署场景中，本地AI的运维复杂度和成本控制仍是主要障碍。报告显示，70%的企业开发者对本地部署持观望态度，主要担忧数据安全和更新维护成本。",
+                "source": "BaseCompute / Hacker News",
+                "url": "https://www.basecompute.co/stateoflocalai"
+            },
+            {
+                "tag": "行业格局",
+                "title": "美国国防部上线本土版ChatGPT和Grok，纳入政府AI工具中心",
+                "summary": "五角大楼于8月31日宣布，其政府AI工具门户新增基于OpenAI ChatGPT和SpaceX Grok的定制版本，加上已有的Google Gemini，五角大楼已构建起覆盖三大AI厂商的政府专用AI生态。这一布局意味着美国军方正加速AI能力整合，同时减少对单一供应商的依赖。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/08/31/the-pentagon-now-has-its-own-version-of-chatgpt-and-grok/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Google Android更新集成AI功能：晕动症缓解与无障碍增强",
+                "summary": "Google于9月1日发布了Android系统更新，其中AI驱动的晕动症缓解功能可通过分析屏幕内容和用户运动状态动态调整显示参数，减少乘车时的手机眩晕感。同时，无障碍功能新增AI实时字幕和语音导航增强。此次更新显示，AI正从应用层向系统底层渗透，成为移动操作系统的标配能力。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/01/googles-android-update-tackles-motion-sickness-accessibility-and-more/"
+            }
+        ]
+    },
+    {
         "date": "2026-09-01",
         "items": [
             {
