@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-09-04",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "英伟达确认以129亿美元收购Hugging Face，强化AI开发生态控制",
+                "summary": "英伟达已同意以129亿美元收购全球最大的AI模型托管平台Hugging Face，后者托管超过300万个模型，拥有超1800万开发者用户。这笔交易将英伟达的GPU硬件优势与Hugging Face的平台生态深度整合，使其在AI开发工具链的关键环节占据主导地位。交易仍需监管审批，分析认为将面临反垄断审查挑战。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI发布GPT-6 Astra模型，宣称进入AGI时代",
+                "summary": "OpenAI正式发布GPT-6 Astra，将其定位为\"能力代际飞跃\"，在网络安全、编码等领域超越前代。该模型采用\"循环深度\"技术，可脱离传统序列限制运行，引发安全专家担忧此前沿能力失控风险。Sam Altman称\"欢迎来到AGI大分工时代\"，但未透露具体技术细节。",
+                "source": "The Verge AI / 爱范儿 / 新浪财经",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Crusoe完成30亿美元融资估值达300亿，获130亿数据中心合同",
+                "summary": "AI数据中心开发商Crusoe宣布完成30亿美元融资，估值达300亿美元。知情人士透露，该公司此前已与Jane Street签订130亿美元数据中心建设合同。该轮融资规模在当前融资环境下格外显眼，显示市场对AI基础设施需求的持续看好。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Accel领投Thinking Machines 10亿美元融资，估值400亿",
+                "summary": "据报道，Accel正在领投AI明星创业公司Thinking Machines新一轮10亿美元融资，公司估值达400亿美元。该公司年收入运行率已超1亿美元。作为行业高潜力选手，其估值倍数凸显投资人对头部AI团队的高度溢价预期。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "美国政府表态支持OpenAI，称训练LLM使用版权内容合法",
+                "summary": "特朗普政府在美国司法部文件中明确表态，支持OpenAI在版权诉讼中的立场，称美国\"有强烈利益继续开发强大且具竞争力的人工智能产业\"，暗示用版权材料训练大模型合法。此举直接介入纽约时报诉OpenAI版权侵权案，可能影响未来AI训练数据的法律框架走向。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Palo Alto Networks以5亿美元收购Console，强化AI安全布局",
+                "summary": "据知情人士透露，Palo Alto Networks已支付5亿美元收购Thrive支持的Console公司。这笔交易将使Sequoia支持的Serval成为AI IT服务自动化领域的实际领导者。收购反映了安全厂商对AI工作负载安全防护的迫切需求，企业正在加速构建AI原生安全产品组合。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "谷歌发布WeatherNext 3全球AI天气预报模型，准确率大幅提升",
+                "summary": "谷歌推出WeatherNext 3，这是深度学习气象学变革的最新成果。新模型在极端天气预报精度上显著提升，减少用户\"忘记带伞\"的尴尬。谷歌同时更新了基于卫星数据的预测算法，气象预测正从传统数值模式快速转向AI驱动方案。",
+                "source": "TechCrunch AI / The Verge AI / 新浪财经",
+                "url": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "英伟达推出免费Personal AI Router工具，聚合闲置算力构建本地AI数据中心",
+                "summary": "英伟达发布Personal AI Router（PAIR）免费工具，可将家庭多台电脑的闲置算力整合，用于本地大模型推理和训练任务。该工具支持RTX显卡和MacBook等设备，打破高端GPU的算力门槛，让普通开发者也能构建\"个人AI超算\"，加速本地AI应用普及。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "谷歌推出Gemini 3.8 Flash，声称\"更努力工作\"但可能成本更高",
+                "summary": "谷歌发布Gemini 3.8 Flash，距上一代仅数周之隔。新模型号称\"工作更努力\"，推理能力增强，但开发者发现其API调用成本可能上升。谷歌正以高频迭代策略与OpenAI GPT系列竞争，但定价策略的透明度引发社区质疑。",
+                "source": "The Verge AI / AIBase",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "谷歌为Gmail、Docs、Keep上线Gemini语音助手，支持语音控制办公",
+                "summary": "谷歌正在Gmail、Docs和Keep中全面上线AI驱动的语音助手模式，用户可通过语音指令管理邮件、编辑文档和整理笔记。这是Google Workspace全面AI化的一部分，标志着AI助手从对话玩具向实际生产力工具的实质性落地。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini"
+            },
+            {
+                "tag": "应用落地",
+                "title": "亚马逊购物AI新增诈骗识别功能，帮你鉴别钓鱼邮件真伪",
+                "summary": "亚马逊在其购物AI助手Alexa中新增诈骗检测功能，可分析可疑邮件、短信和其他消息，判断其是否为冒充亚马逊的钓鱼攻击。随着AI生成钓鱼攻击泛滥，该功能直击消费者痛点，也是电商平台提升用户信任度的差异化竞争手段。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/09/02/psa-amazons-shopping-ai-can-now-tell-you-if-that-message-is-a-scam/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "HiddenLayer融资1亿美元，瞄准企业AI部署安全蓝海",
+                "summary": "AI安全公司HiddenLayer完成1亿美元融资，估值大幅提升。企业正加速部署AI系统和Agent，但传统安全工具难以监控AI工作流中的工具链和插件风险。HiddenLayer瞄准这一空白，专为AI基础设施提供安全监控和防护服务，市场需求正在爆发。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "李飞飞World Labs发布Atlas：几张照片即可重建3D真实世界",
+                "summary": "李飞飞创立的AI实验室World Labs发布Atlas模型，仅需数张照片即可重建完整的3D场景。该技术突破传统NeRF类方法的局限，可生成可交互的3D数字孪生世界，在游戏、影视、机器人训练等领域有巨大应用前景，再次展示空间智能的突破性进展。",
+                "source": "OSCHINA",
+                "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBpVDZ4ZXhvVzlRejFXeVdyNzdXT21EZGJaOWdPVksyWFUzVk5fcVlBUm1WQzJyYzU5TDNLbG1oOHphOFBITEtKV25xT0dLTG5PTzJfRG1nUXoyVFpwTUs4T3J5ZGk"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Wonderful估值半年内翻倍至50亿美元，完成5.5亿美元C轮融资",
+                "summary": "AI基础设施公司Wonderful在不到6个月内估值翻倍至50亿美元，完成5.5亿美元C轮融资。公司表示将加速产品开发、扩大FDE团队并满足客户激增需求。该公司的高速增长反映了企业AI基础设施赛道的持续热度。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI Astra模型\"循环深度\"技术引安全专家警告",
+                "summary": "OpenAI新发布的Astra模型采用\"循环深度\"技术，允许模型在处理任务时突破传统固定深度限制，引发AI安全专家高度警觉。该技术使模型能力边界更难预测，外部监控更加困难，安全团队在模型发布前数周持续进行\"安全加固\"，但具体措施未公开。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "AI绘制比邻星之旅：非营利组织宣布发送星际探测器",
+                "summary": "非营利组织Fermi Explorer Mission宣布计划发射前往比邻星的探测器，整个任务路径由AI算法设计。这标志着AI在深空任务规划中的前沿应用，AI不仅能优化地球任务，还开始承担星际航线的计算挑战，为太空探索开启新范式。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/09/01/1143247/ai-interstellar-journey-alpha-centauri/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Anthropic\"神话\"模型扩大内测范围，已发现逾万高危漏洞",
+                "summary": "Anthropic的旗舰\"神话\"模型正扩大全球内测范围，测试中已帮助用户发现超过1万个高危软件漏洞。该模型在代码安全分析领域展现超预期能力，凸显AI在网络安全领域的实用价值正快速兑现。",
+                "source": "财联社",
+                "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1XYnVMZDRzeUwzU3gyM3d5cUJIdmc0T3pIRDM4VUx2MGkyeU1MbDE1Q1BXUWZpRDlFSm5qSDN4QWxqZi1EQ1JKNA"
+            },
+            {
+                "tag": "应用落地",
+                "title": "印度首富押注11美元改造老旧电脑为AI终端",
+                "summary": "印度首富穆克什·安巴尼旗下Jio宣布，可将老旧电脑改造为AI就绪终端，月费仅约11美元。该服务瞄准印度及新兴市场海量存量PC，意图以超低门槛让数十亿用户接入AI能力，若成功将重塑发展中国家的AI普惠格局。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/09/02/indias-richest-man-now-wants-to-turn-aging-computers-into-ai-ready-pcs/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "企业Agentic AI从试点到规模化部署的路径挑战",
+                "summary": "MIT Technology Review最新报告指出，Agentic AI正从实验阶段走向企业级部署，但规模化面临核心挑战：如何让AI Agent在企业工作流中可靠协作、如何处理跨系统权限、如何确保可审计性。报告建议企业先小范围闭环验证，再逐步扩展边界。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "博通财报超预期，AI大模型实验室加码定制芯片",
+                "summary": "博通最新季度财报超预期，AI大模型实验室正在加大对定制芯片（ASIC）的投入。随着模型规模膨胀，通用GPU成本高昂，定制AI芯片成为头部企业的优化方向。博通预计AI芯片需求将持续强劲，定制化趋势加速半导体行业洗牌。",
+                "source": "至顶网",
+                "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAzb2k1YVYtY1p1X2pwTEFJdHU0Y05LOEw3U0JYSGFOX0N2M3U1bE5jZ2lwWktueldncG84dlkyVFFWQkx1S05FTkFwdG9ncXh0ZENWVEJZWTNrSmV3TXRSZ1p3"
+            }
+        ]
+    },
+    {
         "date": "2026-09-03",
         "items": [
             {
@@ -3623,151 +3768,6 @@ const AI_NEWS_DATA = [
                 "summary": "气象数据公司 WindBorne 完成 3700 万美元 B 轮融资，将扩大其配备 AI 预测模型的气象气球网络。该公司声称其 AI 天气预报准确率比传统数值预报提升 20%，已获美国军方和多家能源公司商业合同。AI 气象预测正在成为 ClimateTech 领域最受资本青睐的赛道之一。",
                 "source": "TechCrunch AI",
                 "url": "https://techcrunch.com/2026/08/05/ai-makes-weather-prediction-better-can-windborne-make-it-lucrative/"
-            }
-        ]
-    },
-    {
-        "date": "2026-08-05",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "白宫将AI网络安全框架列为机密，排除公众监督与开源模型",
-                "summary": "白宫正在将AI网络安全框架列为机密，排除开源模型并限制公众参与审查。知情人士透露，该框架将要求闭源AI系统提交安全评估报告。此举反映政府内部对AI安全风险存在严重分歧，意味着企业需承担更多自主安全评估责任，监管透明度降低将增加合规难度。",
-                "source": "Hacker News / Wired / Axios",
-                "url": "https://www.axios.com/2026/08/04/trump-ai-framework-open-models"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "DeepSeek重启融资，投前估值5000亿元加速冲刺",
-                "summary": "据多名交易人士透露，DeepSeek已启动第二轮融资，计划募资500亿元，投前估值约5000亿元，计划8月下旬完成签约。该公司今年4月开启首轮融资、6月完成500亿元交割时估值超3500亿元。这意味着DeepSeek一年内估值增长超40%至约714亿美元，成为全球估值最高的AI独角兽之一。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3925968796514432"
-            },
-            {
-                "tag": "政策监管",
-                "title": "OpenAI支付320万美元和解，涉歧视美国工人案件",
-                "summary": "OpenAI已支付320万美元和解美国司法部对其歧视美国工人的调查。劳工部指控OpenAI在H-1B签证申请中更倾向外国工人，并在L-1签证程序中存在不当行为。司法部要求OpenAI建立合规体系并接受后续审计。此案对所有依赖H-1B签证的AI公司是警示，需重新审视招聘合规政策。",
-                "source": "Hacker News / Reuters / 美国司法部",
-                "url": "https://www.reuters.com/business/openai-pays-32-million-us-probe-over-hiring-foreign-workers-2026-08-04/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic签署100亿美元云合作大单，对抗微软Azure绑定",
-                "summary": "Anthropic已与AI云初创公司Volta签署价值100亿美元的战略合作协议，这是AI基础设施领域最大规模投资之一。Volta由AWS支持，此次合作将使Anthropic获得长期算力承诺。Anthropic近月来持续扩张云合作伙伴网络，此举被视作对抗OpenAI与微软深度绑定的战略布局。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/08/04/anthropic-signs-10-billion-deal-with-ai-cloud-startup-volta/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "哲源科技融资近2亿元，押注AI for Science生命科学赛道",
-                "summary": "哲源科技完成近2亿元A2轮融资，由圣湘生物产业基金领投，中科创星持续跟投。本轮融资将用于高价值创新IP产出与全球资产布局，以及基于生命世界模型驱动的AI4S（AI for Science）研发。哲源科技将AI能力与基础科学研究深度结合，生命科学正成为AI落地的新蓝海。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3925940167325829"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "玻璃基板涨价270%背后，巽霖科技半年内再融近2亿元",
-                "summary": "电子级玻纤布价格较2025年低点翻倍、FR-4覆铜板涨幅超270%，AI封装载板部分交期拉长至6个月以上。玻璃基板领军企业巽霖科技宣布完成近2亿元B轮融资——这是该公司半年内完成的第二轮融资，累计金额近2亿元，将用于扩充高端封装产能。AI驱动的硬件需求激增正重塑封装材料供应链。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3924953058605444"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "若创科技融资近亿美元，大疆前高管All in个人出行机器人",
-                "summary": "AI智能硬件与机器人企业若创科技（Strutt）完成Pre-A+轮融资，累计融资金额近亿美元。本轮获得全球领先出行科技企业注资，由大疆前高管创立，押注个人出行机器人赛道。累计近亿美元融资规模表明资本市场对末端出行机器人的商业化前景高度看好。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3926003098843272"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "陶世智能融资超亿元估值破10亿，精密减速器成机器人核心资产",
-                "summary": "精密减速器企业陶世智能完成超亿元融资，估值突破10亿元，成为该领域新晋独角兽。本轮由国创集团、海川聚义等参与投资。陶世已为果链、头部灵巧手等厂商供货，精密减速器是人形机器人等智能硬件的核心零部件，其技术壁垒直接决定整机性能。资本加速布局机器人核心零部件，议价能力正在显著提升。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3924628805351811"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Kimi K3与DeepSeek V4正面交锋，原生多模态成决胜关键",
-                "summary": "36氪深度对比评测发现，Kimi K3与DeepSeek V4在长链推理任务上差距明显，核心差异在于原生多模态能力。多模态研究员指出，视觉反馈比代码反馈更精准、更贴近用户意图，可有效避免长任务中误差累积导致的效果崩塌。原生多模态正成为大模型能力分水岭。",
-                "source": "36氪",
-                "url": "https://36kr.com/p/3924826666301831"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "阿里云发布Qwen-Image-3.0，4K图像生成能力对标DALL-E 3",
-                "summary": "阿里云正式上线千问图像生成模型Qwen-Image-3.0，面向所有用户开放使用。旗舰版Qwen-Image-3.0-Pro与标准版Standard同时开放API，支持4K分辨率图像生成，文生图能力达业界领先水平。国内大厂在图像生成领域新一轮竞争开启，价格战或将来临。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3926001579980936"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "京东开源实时流式视频编辑模型JoyAI-Video-Edit",
-                "summary": "京东宣布开源自研的实时流式视频编辑模型JoyAI-Video-Edit，用户可一边观看视频一边修改人物与场景，实现从\"先有素材再修改\"到\"实时互动编辑\"的创作模式变革。该模型降低了视频后期门槛，为AIGC工具链再添利器。",
-                "source": "36氪 / 京东黑板报",
-                "url": "https://36kr.com/newsflashes/3925977640777857"
-            },
-            {
-                "tag": "应用落地",
-                "title": "A股存储芯片与MLCC概念爆发，AI硬件牛市进行时",
-                "summary": "A股三大指数全线翻红，存储芯片、先进封装、MLCC概念等方向涨幅居前，全市场上涨个股超3500只。MLCC概念指数收涨5.22%，19只概念股年内平均涨幅67%。全球AI硬件需求正向产业链上游传导，从GPU到被动元件的全供应链景气度持续上升。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3925976152963457"
-            },
-            {
-                "tag": "应用落地",
-                "title": "AI应用下沉五大场景，商业化价值闭环加速形成",
-                "summary": "A股AI应用再度爆发，传智教育、优刻得等领涨。产业层面显示，AI已下沉至AIGC创作、政企软件、AI教育、智能制造、智能医疗等五大场景，多家公司披露商业化进展。市场对AI应用盈利预期的升温，正推动资金从纯模型层向应用层轮动。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3925916589881476"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "华泰证券：大模型价格战进入深水区，推理成本成核心战场",
-                "summary": "华泰证券研报指出，OpenAI于7月30日将Terra和Luna价格分别下调20%和80%，次日DeepSeek V4 Flash 0731也将价格降至新低。大模型竞争正从\"能力排名\"转向\"同等智能成本\"竞争，推理成本将成为差异化关键。价格屠夫策略将加速AI应用普及，但也压缩中小厂商生存空间。",
-                "source": "36氪 / 华泰证券",
-                "url": "https://36kr.com/newsflashes/3925914734066049"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "中信证券：美股应用软件估值修复开启，AI叙事正在被证伪",
-                "summary": "中信证券研报表示，\"AI吞噬软件\"叙事正被逐步证伪：龙头厂商收入与在手订单保持稳健增长，AI嵌入CRM、ERP等既有工作流推进企业级落地，传统软件基本面未出现结构性失速。应用软件板块估值修复窗口已打开，建议关注AI变现能力验证。",
-                "source": "36氪 / 中信证券",
-                "url": "https://36kr.com/newsflashes/3925919120259207"
-            },
-            {
-                "tag": "行业格局",
-                "title": "三星与SK海力士评估中国中微半导体设备，或改写采购格局",
-                "summary": "韩国三星电子和SK海力士正在评估中国中微半导体的芯片制造设备，考虑将其用于旗下中国工厂。中微半导体在刻蚀设备等领域已具备国际竞争力，若获韩系大厂认可，将是中国半导体设备的重要突破，但地缘政治因素仍存变数。",
-                "source": "36氪 / 财联社",
-                "url": "https://36kr.com/newsflashes/3926000181213315"
-            },
-            {
-                "tag": "行业格局",
-                "title": "SpaceX今年采购3.29亿美元Megapacks，AI基础设施成本压力骤增",
-                "summary": "SpaceX今年已购买价值3.29亿美元的Tesla Megapacks，用于数据中心和星舰发射设施供电。内部人士透露AI成本正在侵蚀利润，致部分股东考虑减持。这标志着AI基础设施投入正从云厂商向芯片设计、算力部署等全产业链传导，AI竞争进入基础设施军备竞赛阶段。",
-                "source": "Hacker News / NBC News / TechCrunch AI",
-                "url": "https://techcrunch.com/2026/08/04/spacex-has-bought-329m-worth-of-tesla-megapacks-so-far-this-year/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "开源模型能力逼近前沿，但安全防护差距持续扩大",
-                "summary": "SaferAI报告显示，Z.ai开源权重模型GLM-5.2已接近前沿AI能力水平，但在关键安全防护措施上存在明显不足。开源模型的能力与安全之间的GAP正在扩大，这对依赖开源模型的企业级部署提出严峻挑战，也引发对开源AI安全性的新一轮讨论。",
-                "source": "TechCrunch AI / Hacker News",
-                "url": "https://techcrunch.com/2026/08/04/open-weight-ai-models-are-catching-up-to-the-frontier-the-safety-gap-remains/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Nvidia牵头成立Open Secure AI Alliance，一周内扩至120家公司",
-                "summary": "Nvidia牵头成立的Open Secure AI Alliance于一周前成立，现已扩展至超过120家公司，首批安全提案已提交。该组织旨在为AI系统建立统一安全标准。Nvidia快速搭建行业联盟的效率表明，算力主导者正试图通过生态标准巩固话语权。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/08/04/nvidia-doesnt-mess-around-a-week-after-open-ai-industry-group-formed-its-already-showing-progress/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "MLCC概念股业绩预喜比例100%，日韩大厂涨价15%~30%",
-                "summary": "MLCC景气度高企，概念股业绩预喜比例100%。村田、三星电机、太阳诱电等日韩头部厂商先后针对AI服务器及车规高端高容MLCC上调价格，涨幅15%～30%。19只MLCC概念股年内股价平均上涨67%。AI驱动的硬件需求爆发正重塑上游供应链格局，从GPU到被动元件的全链条景气度持续上升。",
-                "source": "36氪",
-                "url": "https://36kr.com/newsflashes/3925918166907266"
             }
         ]
     }
