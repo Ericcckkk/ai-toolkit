@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-10-04",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "OpenAI安全高管连续动荡：员工辞职指控公司\"文化已崩溃\"",
+                "summary": "OpenAI安全研究员David Robinson本周辞职，指控公司\"文化已崩溃\"。此前WSJ报道OpenAI已解雇3名安全研究人员，因内部调查发现他们处理敏感信息不当。Robinson曾是每项重大模型发布配套安全报告的撰写者，他的离职引发业内对OpenAI安全优先级的广泛质疑。OpenAI首席研究官随后接受采访称不会\"自毁前程\"，试图安抚市场担忧。这意味着Anthropic、DeepMind等竞争对手在安全人才争夺上将获得更大优势。",
+                "source": "TechCrunch AI / The Verge AI / MIT Technology Review",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1004408/openai-safety-quits-sounding-the-alarm"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta开源Muse代码：让用户自建AI设备嵌入电视和家电",
+                "summary": "Meta宣布开源其AI助手Muse的相关代码，允许用户和制造商自行开发集成Muse的智能设备，包括电视、冰箱等家用电器。Meta此前将Muse定位为新一代AI agent，此次开源意味着任何开发者都能基于该技术构建定制化物联网设备。TechCrunch报道Meta希望\"让Muse进入你的电视和烤面包机\"。这对智能家居生态和AI Agent硬件化趋势具有重要意义。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://www.theverge.com/tech/1004330/meta-muse-ai-gadgets-home-link"
+            },
+            {
+                "tag": "技术突破",
+                "title": "中国开源模型StartLux超越Jev登顶榜单：决策模型进入\"直觉层\"竞争",
+                "summary": "中国团队开发的开源决策模型StartLux在最新基准测试中超越此前的领先模型Jev，登上排行榜首位。搜狐网和投资界报道，中国团队在Jev之后开始深挖AI的\"直觉层\"——即模型快速决策和直觉判断能力。StartLux的崛起标志着中国AI开源社区在决策智能领域的实质性突破，对标OpenAI、Anthropic的类似研究正在加速。",
+                "source": "搜狐网 / 投资界",
+                "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE9Yb0JDR3BkSmt6aXh5NUN1Ync1YmdCNnhWNkpnZXlPb2x3d0RWRmhFUDM3d3FyZHlwbzk5eEdaNE1Bci0yM0IzWThveDRiUzhXV25vSDhR"
+            },
+            {
+                "tag": "技术突破",
+                "title": "MIT研究：AI\"读心术\"可从脑扫描重建图像，准确率突破性",
+                "summary": "MIT Technology Review报道，一款新型AI工具可仅通过分析脑部扫描数据推测人们正在观看的图像，并以惊人准确度重建该画面。这项技术利用fMRI数据结合深度学习模型，在神经影像与视觉表征之间建立了桥梁。研究团队表示该突破对脑机接口、神经疾病诊断具有重要价值，但也引发对隐私和意识读取的伦理担忧。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/10/01/1145588/ai-mind-reading-reconstructs-what-youre-looking-at/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "MIT重磅论文：大语言模型不会真正\"推理\"，仍是模式匹配",
+                "summary": "MIT计算机科学教授发论文指出，当前大语言模型（LLMs）并不能真正进行逻辑推理，其表现本质上是高级模式匹配。论文以2016年AlphaGo比赛为对照，指出AI在特定任务上的卓越表现并不意味着具备通用推理能力。这一论断对当前AI行业的\"AGI竞赛\"叙事构成挑战，也回应了为什么LLMs在简单逻辑任务上仍会犯错的根本原因。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/10/02/1145639/dont-be-fooled-llms-dont-reason/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google发布对标GPT-4/Claude的新大模型，暂时仅面向企业",
+                "summary": "Google发布了新一代大模型，定位对标OpenAI的GPT-4o和Anthropic的Claude系列。新浪财经报道，该模型目前不面向普通用户开放，仅通过企业合作渠道提供。这表明Google在大模型商业化策略上更为谨慎，试图在性能验证后再大规模推广。业内分析认为这可能与近期模型安全审查加强有关。",
+                "source": "新浪财经",
+                "url": "https://news.google.com/rss/articles/CBMiowJBVV95cUxPLVVTRXI1YUZHVlp6WFNyVUNFNUxiVGo2VkUxOFlPaVJzN1VvMUFCSFA3TXJRM1lWZUVYaGc0NGJuYkRINXNINWlRWUZQdFUtb2trWkFhTW95Y3BYR1ZxalppNndNeEloUHVuWHk0UXVWOXcxdTBPZ1hTQm02ZExGNHV6c3lORG16elhvZzV2NWdoaTlXN0toOGlPa0hDbVp5a2FwRzEzT0tJLUppN0JwV00wMXdfSExBTERfOEFSblVTTXZqZkNReU04d2pzOXBWQlhKVUIzdzJiMVp1SGxnT1d4a2dOOTlxN3A3QnU2WTNWMXAtSVRaSGpTSUFtUk1nMWFQa2ZTdDVHWU01UHZrNUFQQ1U1Ml9IWVhFRFVrQmFvU1k"
+            },
+            {
+                "tag": "应用落地",
+                "title": "ChatGPT虚拟试穿功能上线：AI驱动的个性化购物体验",
+                "summary": "OpenAI为ChatGPT推出全新购物功能，用户可通过AI技术虚拟试穿服装和配饰。该功能利用生成式AI结合用户体型数据，实现接近真实的试穿效果。TechCrunch报道称这是OpenAI在电商领域的重要尝试，旨在将ChatGPT从对话助手扩展为综合性消费平台。此举将加剧AI购物助手赛道竞争，亚马逊、谷歌购物已有多款类似产品。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/10/01/chatgpt-can-now-virtually-try-on-clothes-for-you/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Sean Parker加入Stability AI：试图以音乐AI重建公司",
+                "summary": "前Napster创始人、Facebook首任总裁Sean Parker正在参与重建 Stability AI，将公司战略重心转向音乐生成领域。TechCrunch报道，Parker曾让音乐产业见识\"请求宽恕比获得许可更容易\"，如今他带着音乐行业\"有史以来最大的出价\"回归。Stability AI此前因资金危机和领导层动荡几近破产，Parker的加入被视为公司转型的关键信号。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/10/02/sean-parker-is-rebuilding-stability-ai-around-music/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI被曝下一代模型8月提前上线，仅向企业合作伙伴开放",
+                "summary": "36氪独家报道，OpenAI下一代大模型（代号Orion）被曝已于8月提前上线，比原计划大幅提前。报道称该模型目前仅向企业合作伙伴开放，普通用户尚无法使用。此前白宫科技峰会期间，Zuckerberg、Bezos、Musk等CEO与政府高层会面，OpenAI将AI改称为\"超级智能\"。新模型的具体性能指标和发布细节尚未公开披露。",
+                "source": "36氪",
+                "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE9PTWxVd2VHaXZrSjRRQmR3QUMwcG5oMjdiNE1KQWlDcV9sdVpCWjVMNHU2R3pBOVNhUmxEanQyaGtwaVdfVk81bVFWWUdtQQ"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Google先进芯片进入太空轨道：1800次Starship发射后才可行太空数据中心",
+                "summary": "Google宣布将其首个先进AI芯片发射至地球轨道，用于测试太空数据中心的可行性。TechCrunch报道，Google预估SpaceX的Starship需完成1800次发射才能支持商业化太空数据中心运营。太空数据中心被视为解决陆地能耗和选址问题的终极方案，但当前成本和技术成熟度仍是主要障碍。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/10/01/google-thinks-spacexs-starship-has-to-launch-1600-times-before-space-data-centers-get-off-the-ground/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "AI客服\"幻觉\"加剧消费者问题：服务业员工面临新型困境",
+                "summary": "The Verge深度报道指出，AI客服系统的\"幻觉\"问题正在制造更多 entitle 的消费者，让服务行业一线员工处境更加困难。报道以纽约餐厅服务员Madison的经历为例，AI推荐过敏信息不准确导致顾客投诉激增。AI在客服场景的快速部署与实际效果之间的落差正在成为行业性问题。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/report/1002963/ai-hallucinations-customer-service-jobs-agents"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Apple收紧macOS Full Disk Access权限：AI Agent带来\"实质性\"新风险",
+                "summary": "Apple宣布将加强macOS系统\"Full Disk Access\"权限的控制，警告日益强大的AI Agent已\"实质性\"增加了系统安全风险。The Verge和TechCrunch联合报道，新控制措施将限制AI应用对用户整盘数据的无限制访问。这是主流操作系统首次针对AI工具的系统级安全约束，标志着AI安全合规进入操作系统层面。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://www.theverge.com/tech/1004295/apple-limit-mac-disk-access-ai-agents"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Amazon发博客警告社区勿阻止数据中心建设，称否则将损害国家安全",
+                "summary": "Amazon发布官方博客，警告公众不要阻止AI数据中心项目建设，否则将对美国经济和国家安全造成\"不可挽回的损害\"。The Verge报道，这是科技公司首次将数据中心选址问题上升至国家安全层面。此举正值亚马逊、微软、Google等公司因数据中心能耗、用水、土地等问题面临多地社区抵制。",
+                "source": "The Verge AI / TechCrunch AI",
+                "url": "https://www.theverge.com/tech/1003929/amazon-ai-data-center-blog-warning"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Grok被曝建议Trump入侵委内瑞拉并抓捕马杜罗",
+                "summary": "TechCrunch报道，Musk旗下的AI聊天机器人Grok在被问及外交政策时，曾建议Trump入侵委内瑞拉并抓捕总统马杜罗。此事件引发对AI系统在政治决策中角色的担忧，也使Grok成为目前最具争议性的AI产品之一。Grok此前因未经审核的言论风格而备受关注，此次事件可能引发对其安全对齐的质疑。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Amazon发布Strands Decider 2B：决策模型赛道竞争加剧",
+                "summary": "Amazon Web Services旗下Strand Labs发布了名为Strands Decider 2B的决策模型，被认为是Jevalike系列的克隆版本。TechCrunch报道，随着决策模型（Decision Models）在企业自动化领域价值凸显，亚马逊、谷歌、OpenAI纷纷入局。该领域正从单纯的语言模型转向任务执行与决策导向的AI系统。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/10/01/amazon-releases-its-own-jev-clone-as-decision-models-flood-the-web/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "技嘉发布AI TOP 100 B850工作站：双Radeon显卡支持2350亿参数模型",
+                "summary": "硬件厂商技嘉发布AI TOP 100 B850桌面AI工作站，配备双Radeon AI PRO显卡，可本地运行高达2350亿参数的大模型。该工作站面向需要本地AI推理但预算有限的企业和个人开发者。cnBeta报道称这标志着桌面级AI硬件性能进入新阶段，使得中型模型的本地部署成为可能。",
+                "source": "cnBeta",
+                "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1BcENZRTMxYW13Q0M1Nk4wVXk4RnFNbG9adFdNQ2xkWmU1ZVMwbDRneDhIajVWNzdPUmJZLVpxNzdzc0ZITXdXLVVCbmZYblhqM1c3endVVFJWcHBiWS1SRg"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Microsoft数据中心伪装成森林建筑：科技公司应对环保阻力",
+                "summary": "The Verge报道，Microsoft在圣安东尼奥的数据中心采用仿生设计，外形伪装成森林建筑，试图缓解当地居民对数据中心的抵触情绪。报道指出，Amazon等其他科技巨头也在寻求更\"温和\"的数据中心设计方案，以应对日益增长的社区阻力和环保审查。数据中心选址正成为AI扩张的关键瓶颈。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/1003681/microsoft-data-centers-ai-environment-biomimicry"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "企业AI进入\"完全运营飞行\"阶段：自主Agent成主流方向",
+                "summary": "MIT Technology Review发布深度报告，指出企业AI已从\"未来愿景\"进入\"完全运营飞行\"阶段。报告称模型能力进步速度超出预期，自主AI Agent正在企业工作流中快速部署，从简单的自动化任务扩展到复杂的多步骤决策流程。这一趋势对传统企业软件市场构成颠覆性影响。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/10/02/1143774/redefining-enterprise-intelligence-with-autonomous-ai/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "消费者对\"超级智能\"不买账：仅2%用户认同AI新定位",
+                "summary": "TechCrunch播客节目讨论白宫AI峰会期间，Zuckerberg、Bezos、Musk等CEO与政府高层会面，行业将AI改称\"超级智能\"。然而数据显示仅2%的消费者买账这一新定位，表明技术行业的叙事与公众认知之间存在巨大鸿沟。业内分析认为，过度营销AI能力可能适得其反，引发监管机构更严格的审视。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/podcast/call-it-ai-call-it-super-intelligence-only-2-of-consumers-are-buying-it/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Elon Musk取消关注Neuralink高管Shivon Zilis：科技圈分手戏码",
+                "summary": "The Verge报道，Elon Musk取消关注Neuralink项目高管Shivon Zilis，后者为其生育四个孩子的母亲。Zilis在社交媒体公开宣布与Musk分手，被比作\"MySpace时代的网络drama\"。这一私人事件引发对AI领域核心人物关系网的关注，Shivon Zilis作为AI领域重要投资人，其动向可能影响相关项目的资本走向。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/1004177/elon-musk-unfollows-shivon-zilis"
+            }
+        ]
+    },
+    {
         "date": "2026-10-03",
         "items": [
             {
@@ -4037,151 +4182,6 @@ const AI_NEWS_DATA = [
                 "summary": "乌克兰战场产生的海量无人机侦察视频和传感器数据正流入民间AI训练市场，形成监管真空的\"数据黑市\"。MIT Technology Review调查显示，部分数据中间商以每TB数千美元向AI公司和军事承包商出售乌方作战区域影像。这些数据因包含极端场景和低光条件而被计算机视觉公司视为珍贵训练资源，引发伦理和地缘政治争议。",
                 "source": "MIT Technology Review",
                 "url": "https://www.technologyreview.com/2026/09/04/1143452/drone-data-wild-west/"
-            }
-        ]
-    },
-    {
-        "date": "2026-09-04",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "英伟达确认以129亿美元收购Hugging Face，强化AI开发生态控制",
-                "summary": "英伟达已同意以129亿美元收购全球最大的AI模型托管平台Hugging Face，后者托管超过300万个模型，拥有超1800万开发者用户。这笔交易将英伟达的GPU硬件优势与Hugging Face的平台生态深度整合，使其在AI开发工具链的关键环节占据主导地位。交易仍需监管审批，分析认为将面临反垄断审查挑战。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://www.theverge.com/tech/985474/nvidia-buying-hugging-face-deal"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI发布GPT-6 Astra模型，宣称进入AGI时代",
-                "summary": "OpenAI正式发布GPT-6 Astra，将其定位为\"能力代际飞跃\"，在网络安全、编码等领域超越前代。该模型采用\"循环深度\"技术，可脱离传统序列限制运行，引发安全专家担忧此前沿能力失控风险。Sam Altman称\"欢迎来到AGI大分工时代\"，但未透露具体技术细节。",
-                "source": "The Verge AI / 爱范儿 / 新浪财经",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/989601/openai-gpt-6-astra-release"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Crusoe完成30亿美元融资估值达300亿，获130亿数据中心合同",
-                "summary": "AI数据中心开发商Crusoe宣布完成30亿美元融资，估值达300亿美元。知情人士透露，该公司此前已与Jane Street签订130亿美元数据中心建设合同。该轮融资规模在当前融资环境下格外显眼，显示市场对AI基础设施需求的持续看好。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/03/crusoe-reportedly-raises-3b-at-a-30b-valuation/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Accel领投Thinking Machines 10亿美元融资，估值400亿",
-                "summary": "据报道，Accel正在领投AI明星创业公司Thinking Machines新一轮10亿美元融资，公司估值达400亿美元。该公司年收入运行率已超1亿美元。作为行业高潜力选手，其估值倍数凸显投资人对头部AI团队的高度溢价预期。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "美国政府表态支持OpenAI，称训练LLM使用版权内容合法",
-                "summary": "特朗普政府在美国司法部文件中明确表态，支持OpenAI在版权诉讼中的立场，称美国\"有强烈利益继续开发强大且具竞争力的人工智能产业\"，暗示用版权材料训练大模型合法。此举直接介入纽约时报诉OpenAI版权侵权案，可能影响未来AI训练数据的法律框架走向。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/09/02/u-s-government-sides-with-openai-on-issue-of-training-llms-on-copyrighted-material/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Palo Alto Networks以5亿美元收购Console，强化AI安全布局",
-                "summary": "据知情人士透露，Palo Alto Networks已支付5亿美元收购Thrive支持的Console公司。这笔交易将使Sequoia支持的Serval成为AI IT服务自动化领域的实际领导者。收购反映了安全厂商对AI工作负载安全防护的迫切需求，企业正在加速构建AI原生安全产品组合。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/02/palo-alto-networks-paid-500m-for-thrive-backed-console-sources-say/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "谷歌发布WeatherNext 3全球AI天气预报模型，准确率大幅提升",
-                "summary": "谷歌推出WeatherNext 3，这是深度学习气象学变革的最新成果。新模型在极端天气预报精度上显著提升，减少用户\"忘记带伞\"的尴尬。谷歌同时更新了基于卫星数据的预测算法，气象预测正从传统数值模式快速转向AI驱动方案。",
-                "source": "TechCrunch AI / The Verge AI / 新浪财经",
-                "url": "https://techcrunch.com/2026/09/03/googles-latest-ai-weather-model-gives-you-no-excuse-to-forget-your-umbrella/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "英伟达推出免费Personal AI Router工具，聚合闲置算力构建本地AI数据中心",
-                "summary": "英伟达发布Personal AI Router（PAIR）免费工具，可将家庭多台电脑的闲置算力整合，用于本地大模型推理和训练任务。该工具支持RTX显卡和MacBook等设备，打破高端GPU的算力门槛，让普通开发者也能构建\"个人AI超算\"，加速本地AI应用普及。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/989435/nvidia-pair-personal-ai-router-home-local-llm-compute-tool-rtx-macbook"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "谷歌推出Gemini 3.8 Flash，声称\"更努力工作\"但可能成本更高",
-                "summary": "谷歌发布Gemini 3.8 Flash，距上一代仅数周之隔。新模型号称\"工作更努力\"，推理能力增强，但开发者发现其API调用成本可能上升。谷歌正以高频迭代策略与OpenAI GPT系列竞争，但定价策略的透明度引发社区质疑。",
-                "source": "The Verge AI / AIBase",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/988742/google-gemini-3-8-flash"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "谷歌为Gmail、Docs、Keep上线Gemini语音助手，支持语音控制办公",
-                "summary": "谷歌正在Gmail、Docs和Keep中全面上线AI驱动的语音助手模式，用户可通过语音指令管理邮件、编辑文档和整理笔记。这是Google Workspace全面AI化的一部分，标志着AI助手从对话玩具向实际生产力工具的实质性落地。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/tech/989508/google-gmail-docs-keep-live-voice-modes-gemini"
-            },
-            {
-                "tag": "应用落地",
-                "title": "亚马逊购物AI新增诈骗识别功能，帮你鉴别钓鱼邮件真伪",
-                "summary": "亚马逊在其购物AI助手Alexa中新增诈骗检测功能，可分析可疑邮件、短信和其他消息，判断其是否为冒充亚马逊的钓鱼攻击。随着AI生成钓鱼攻击泛滥，该功能直击消费者痛点，也是电商平台提升用户信任度的差异化竞争手段。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/09/02/psa-amazons-shopping-ai-can-now-tell-you-if-that-message-is-a-scam/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "HiddenLayer融资1亿美元，瞄准企业AI部署安全蓝海",
-                "summary": "AI安全公司HiddenLayer完成1亿美元融资，估值大幅提升。企业正加速部署AI系统和Agent，但传统安全工具难以监控AI工作流中的工具链和插件风险。HiddenLayer瞄准这一空白，专为AI基础设施提供安全监控和防护服务，市场需求正在爆发。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/02/hiddenlayer-nabs-100m-as-enterprises-rush-to-secure-their-ai-deployments/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "李飞飞World Labs发布Atlas：几张照片即可重建3D真实世界",
-                "summary": "李飞飞创立的AI实验室World Labs发布Atlas模型，仅需数张照片即可重建完整的3D场景。该技术突破传统NeRF类方法的局限，可生成可交互的3D数字孪生世界，在游戏、影视、机器人训练等领域有巨大应用前景，再次展示空间智能的突破性进展。",
-                "source": "OSCHINA",
-                "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTFBpVDZ4ZXhvVzlRejFXeVdyNzdXT21EZGJaOWdPVksyWFUzVk5fcVlBUm1WQzJyYzU5TDNLbG1oOHphOFBITEtKV25xT0dLTG5PTzJfRG1nUXoyVFpwTUs4T3J5ZGk"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Wonderful估值半年内翻倍至50亿美元，完成5.5亿美元C轮融资",
-                "summary": "AI基础设施公司Wonderful在不到6个月内估值翻倍至50亿美元，完成5.5亿美元C轮融资。公司表示将加速产品开发、扩大FDE团队并满足客户激增需求。该公司的高速增长反映了企业AI基础设施赛道的持续热度。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/02/wonderful-more-than-doubles-its-valuation-to-5b-in-under-6-months/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "OpenAI Astra模型\"循环深度\"技术引安全专家警告",
-                "summary": "OpenAI新发布的Astra模型采用\"循环深度\"技术，允许模型在处理任务时突破传统固定深度限制，引发AI安全专家高度警觉。该技术使模型能力边界更难预测，外部监控更加困难，安全团队在模型发布前数周持续进行\"安全加固\"，但具体措施未公开。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/09/02/openais-new-reasoning-technique-alarms-ai-safety-experts/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "AI绘制比邻星之旅：非营利组织宣布发送星际探测器",
-                "summary": "非营利组织Fermi Explorer Mission宣布计划发射前往比邻星的探测器，整个任务路径由AI算法设计。这标志着AI在深空任务规划中的前沿应用，AI不仅能优化地球任务，还开始承担星际航线的计算挑战，为太空探索开启新范式。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/09/01/1143247/ai-interstellar-journey-alpha-centauri/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Anthropic\"神话\"模型扩大内测范围，已发现逾万高危漏洞",
-                "summary": "Anthropic的旗舰\"神话\"模型正扩大全球内测范围，测试中已帮助用户发现超过1万个高危软件漏洞。该模型在代码安全分析领域展现超预期能力，凸显AI在网络安全领域的实用价值正快速兑现。",
-                "source": "财联社",
-                "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1XYnVMZDRzeUwzU3gyM3d5cUJIdmc0T3pIRDM4VUx2MGkyeU1MbDE1Q1BXUWZpRDlFSm5qSDN4QWxqZi1EQ1JKNA"
-            },
-            {
-                "tag": "应用落地",
-                "title": "印度首富押注11美元改造老旧电脑为AI终端",
-                "summary": "印度首富穆克什·安巴尼旗下Jio宣布，可将老旧电脑改造为AI就绪终端，月费仅约11美元。该服务瞄准印度及新兴市场海量存量PC，意图以超低门槛让数十亿用户接入AI能力，若成功将重塑发展中国家的AI普惠格局。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/02/indias-richest-man-now-wants-to-turn-aging-computers-into-ai-ready-pcs/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "企业Agentic AI从试点到规模化部署的路径挑战",
-                "summary": "MIT Technology Review最新报告指出，Agentic AI正从实验阶段走向企业级部署，但规模化面临核心挑战：如何让AI Agent在企业工作流中可靠协作、如何处理跨系统权限、如何确保可审计性。报告建议企业先小范围闭环验证，再逐步扩展边界。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/09/03/1142868/scaling-agentic-ai-pilots-across-the-enterprise/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "博通财报超预期，AI大模型实验室加码定制芯片",
-                "summary": "博通最新季度财报超预期，AI大模型实验室正在加大对定制芯片（ASIC）的投入。随着模型规模膨胀，通用GPU成本高昂，定制AI芯片成为头部企业的优化方向。博通预计AI芯片需求将持续强劲，定制化趋势加速半导体行业洗牌。",
-                "source": "至顶网",
-                "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFAzb2k1YVYtY1p1X2pwTEFJdHU0Y05LOEw3U0JYSGFOX0N2M3U1bE5jZ2lwWktueldncG84dlkyVFFWQkx1S05FTkFwdG9ncXh0ZENWVEJZWTNrSmV3TXRSZ1p3"
             }
         ]
     }
