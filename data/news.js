@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-10-23",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "美国银行封堵第三方AI代理访问账户，代理金融安全失守",
+                "summary": "10月22日，Axios披露美国多家银行发现未经授权的AI代理访问客户账户，Reuters随后证实银行已拦截相关连接。事件暴露2个核心风险：代理授权边界模糊，以及转账、支付等操作难以追责。代理金融已从效率议题升级为银行核心风控问题，身份验证和责任追踪必须先于自动执行落地。",
+                "source": "Axios / Reuters",
+                "url": "https://www.axios.com/2026/10/22/ai-agents-banks-unauthorized-accounts-access"
+            },
+            {
+                "tag": "政策监管",
+                "title": "上诉法院更换AI错误案法官，公共决策程序边界重划",
+                "summary": "10月22日，美国联邦上诉法院解除对密西西比州禁止州政府使用AI决策措施的禁令，并要求更换1名相关法官，理由是其处理AI错误争议时存在利益冲突问题。案件将影响政府采用AI时的审查独立性与司法问责，也向监管方释放明确信号：技术采购不能替代程序正义和可审计决策链。",
+                "source": "Reuters",
+                "url": "https://www.reuters.com/legal/government/appeals-court-lifts-block-mississippis-dei-ban-ejects-judge-over-ai-errors-2026-10-22/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "OpenAI筹资300亿美元估值1.25万亿美元，IPO前冲刺",
+                "summary": "OpenAI据报正筹备300亿美元新融资，拟以1.25万亿美元估值推进上市准备；Financial Times称公司因市场定价压力下调此前更高的估值目标，显示投资者仍有分歧。若融资完成，这将成为AI领域规模最大的资本事件之一，并检验收入增长能否支撑万亿美元预期，也会重估同业融资成本。",
+                "source": "TechCrunch / Financial Times",
+                "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "DeepSeek据报完成150亿美元融资，美国限制后资本加码",
+                "summary": "TechCrunch 10月22日报道，DeepSeek据称在美国实施限制后数日完成150亿美元融资，可能成为中国规模最大的AI融资轮次之一。巨额资本将支持模型训练、算力采购和全球团队扩张，也表明企业投资者并未因出口或准入限制停止下注。竞争焦点正从单次模型发布转向持续投入和供应链自主能力。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Uber向3万名员工全面开放ChatGPT Work，企业代理规模化落地",
+                "summary": "10月22日，Uber宣布把ChatGPT Work从此前的小规模试点扩展至全部30000名员工，覆盖日常办公、编程和业务任务等企业场景。此举标志生成式AI从部门级辅助工具转向全员工作入口，企业部署重点也随之从许可证管理转向权限隔离、数据治理和产出质量评估。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Canva发布首款自研图像模型，生成前先完成设计规划",
+                "summary": "Canva于10月22日发布1款自研图像生成模型，并开始向全部用户开放，新系统会先规划版式、层次与视觉方案，再执行图像生成。公司称此举可提高结果可控性，并降低持续修改和推理成本。图像竞争正从单次生成质量转向专业工作流，成熟设计资产与编辑协同将成为平台护城河。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1017151/canva-craft-in-house-ai-model"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI全球开放新决策模型，正面竞逐Jev决策赛道",
+                "summary": "10月22日，TechCrunch报道OpenAI开始面向全球推出1款新决策模型，正与被广泛视为决策模型标杆的Jev展开竞争，目标覆盖复杂选择和策略规划任务。发布意味着前沿模型厂商正把推理从回答问题推向持续决策，企业选型的指标也将从单纯准确率扩展至工具调用、成本、稳定性与结果可控性。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "英伟达推出Minerva，以生成式AI监控AI数据中心故障",
+                "summary": "英伟达发布1套Minerva生成式AI运维系统，用于监控超大型AI数据中心，并在生产受到影响前识别芯片、互联和基础设施异常。该产品把AI用于运营AI工厂，形成模型运维的自举闭环，也推动英伟达从GPU供应商进一步转向整机、软件和服务平台。预测性维护将成为算力扩张速度的新约束。",
+                "source": "The Next Web",
+                "url": "https://thenextweb.com/news/nvidia-minerva-aiops-ai-factory-monitoring"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Cerebras部署1万亿参数模型，推理基础设施挑战前沿规模",
+                "summary": "Cerebras披露其部署1万亿参数级前沿AI模型的方法，通过专用晶圆级系统、并行执行和软硬件协同处理超大参数规模。突破重点不只是模型能否运行，而是如何控制通信、延迟、内存和部署成本。若路线得到验证，专用AI基础设施将进一步挑战以通用GPU集群为主的算力配置逻辑。",
+                "source": "Cerebras",
+                "url": "https://www.cerebras.ai/blog/how-we-deploy-trillion-parameter-frontier-models-on-cerebras"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "1Password推出代理免密登录，密钥管理转向机器身份",
+                "summary": "1Password于10月22日推出1项面向AI代理的认证功能，允许代理代表用户登录服务，但无需向代理暴露原始密码。凭证通过受控授权和临时访问机制完成传递，试图在自动化效率与密码安全之间建立兼容层。代理大规模执行任务后，机器身份和可撤销授权将成为企业安全栈的新基础设施。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "GM拟两年内推无方向盘AI汽车，自动驾驶竞争加速",
+                "summary": "General Motors计划在2年内推出支持“眼睛离开道路”驾驶体验的AI动力汽车，并以中国市场作为重点验证市场之一。若目标按期落地，通用汽车将把竞争维度从辅助驾驶功能推进到更高等级自动驾驶，责任认定和监管准入也将成为规模化障碍。传统车企的AI差距将直接反映在产品定义权上。",
+                "source": "The New York Times",
+                "url": "https://www.nytimes.com/2026/10/21/business/gm-ai-electric-vehicles-china.html"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Meta称Muse用户超1000万，购物成为代理应用高频场景",
+                "summary": "Meta在10月21日财报沟通中表示，AI应用Muse已拥有超过1000万用户，购物是用户采用率最高的活动之一，个人生产力也形成重要使用场景。数据说明社交平台正在把生成式AI从内容创作工具转向消费决策入口。对广告与电商业务而言，代理购物可能重构商品发现、推荐和交易入口的价值分配。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Meta拟设新类别股票，为大规模AI基础设施投入融资",
+                "summary": "Meta计划推出1类新的股票融资工具，为覆盖模型、数据中心和AI服务的广泛建设提供资金；Wall Street Journal称其巨额AI资本需求已引发投资者紧张。新结构可能扩大长期资本供给，但也会增加复杂度和治理争议。Meta能否把基础设施承诺转化为收入增长，将决定该策略是护城河还是估值枷锁。",
+                "source": "TechCrunch / The Wall Street Journal",
+                "url": "https://techcrunch.com/2026/10/21/meta-wants-to-pay-for-its-broad-ai-buildout-with-a-newly-created-class-of-stock/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Recursive发布Flint代码模型，研发流程主要由AI自建",
+                "summary": "Recursive于10月21日发布1款名为Flint的免费笔记本级代码模型，并称其研发流程主要由公司自有AI研究系统完成。产品面向本地运行和实际软件工程任务，核心卖点不是扩大参数规模，而是用较低部署门槛完成代码生成与修改。自建模型驱动自建模型正成为AI研发公司的资本效率优势。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/21/recursive-launches-flint-a-laptop-coding-model-it-says-was-largely-built-by-ai/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Blacksmith完成6600万美元C轮，红杉领投晋升独角兽",
+                "summary": "AI代码测试与优化平台Blacksmith于10月21日宣布完成6600万美元C轮融资，由红杉资本领投，公司由此晋升独角兽。资金将用于扩大企业级AI代码评估、测试和自动化能力。代码代理若要进入生产环境，可验证性与持续评测将成为和生成效果同等重要的采购指标。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/21/blacksmith-hits-unicorn-valuation-after-sequoia-leads-series-c/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic推出Claude Duet，双人协作模式押注代理交互",
+                "summary": "Anthropic推出Claude Duet应用，通过用户与代理协同完成任务，目前仅向Pro和Max共2档订阅用户开放候补名单。该产品把Claude从独立聊天工具改造成持续协作型工作代理，重点争夺高价值业务流程。对模型厂商而言，谁能承担多步执行和状态管理，谁就更有机会掌握企业代理入口。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "微软医疗AI击败全科医生，医学超级智能路线加速",
+                "summary": "微软10月22日称，其医疗诊断系统在1项发表于《Science》的研究中，于疑难病例场景中击败普通全科医生，并据此推进“医学超级智能”路线。结果展示了多模态模型在复杂诊断中的潜力，但研究环境与真实临床仍有差距。医疗AI的竞争门槛正从问答准确率转向临床验证、责任和监管准入。",
+                "source": "TechCrunch / Science",
+                "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "平台实测117款模型显存，GPU选型告别人工猜测",
+                "summary": "Quantized于10月22日上线模型显存数据库，在真实硬件上测量117款LLM的VRAM占用，并按硬件与量化条件整理结果。数据把模型参数、上下文长度和精度需求转化为可直接比较的部署约束。对创业团队而言，这类实测比厂商标称更具选型价值，也可能降低因显存误配造成的推理成本浪费。",
+                "source": "Hacker News / Quantized",
+                "url": "https://quantized.uk/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "MIT让13个AI困在虚拟岛，自发游戏与悼念引发讨论",
+                "summary": "MIT研究人员于10月22日披露1项实验，将13个AI代理单独置于虚拟岛屿环境，观察其在缺少外部任务时的自发行为。代理随后创造游戏、寻找物品，并围绕遗失物表现出悼念等类似行为。实验并未证明模型具有意识，却揭示了代理在无目标环境中可能产生难以预测的社会性行为。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "30万美元竞赛悬赏劫持AI代理，智能体安全攻防升温",
+                "summary": "AI Engineering Report于10月22日披露1项总奖金30万美元的竞赛，目标是寻找能够劫持或操纵AI代理的安全漏洞。随着代理获得浏览器、邮箱和代码执行权限，攻击面已从提示注入扩展到真实工具链。竞赛将把研究重点推向量产环境，企业部署前必须验证权限边界和异常操作拦截。",
+                "source": "AI Engineering Report / Hacker News",
+                "url": "https://www.aiengineering.report/p/inside-the-300k-competition-to-hijack"
+            }
+        ]
+    },
+    {
         "date": "2026-10-22",
         "items": [
             {
@@ -4044,151 +4189,6 @@ const AI_NEWS_DATA = [
                 "summary": "阿里巴巴发布Qwen-Audio-3.1系列语音大模型，进一步强化多语言语音理解和对话能力。作为国内开源大模型的重要力量，千问系列持续迭代语音模型有助于降低语音AI应用开发门槛。阿里云栖大会即将开幕，此次发布被视为大会前的技术预热。",
                 "source": "mrjjxw.com / caiwennews.com",
                 "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAyRmZhZHRFZG9RU1Y3TzZRSlBEWVl0djRSamFIbmZiY0d0N0xFanQ4SjB2N0NWWG9sNTFnX1IzdkFELWRIbEdBcXBpR01tQURMY1NSVmpzTGJSWGNRTmkxYUUzR093dw?oc=5"
-            }
-        ]
-    },
-    {
-        "date": "2026-09-23",
-        "items": [
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI发布GPT-6 Sol和Luna：成本更低、错误更少",
-                "summary": "OpenAI于9月22日发布两款新模型GPT-6 Sol和Luna，与Astra同属一个系列。官方表示新产品在成本控制和错误率方面均有显著优化。这两款模型延续了OpenAI近期的高频率发布节奏，意味着大模型竞争已从性能比拼转向效率与成本的综合较量。对开发者而言，这意味着AI应用开发成本将进一步下降。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic发布Claude Opus 5.5：性能最强、价格更低",
-                "summary": "Anthropic在9月22日发布Claude Opus 5.5，官方称之为\"迄今为止测试过的最强性能模型\"。新版本在保持Fable级性能的同时大幅降价，并强化了网络安全防护。这与OpenAI的GPT-6发布撞车，两家头部公司同日交锋预示着AI模型价格战进入新阶段，预计将压缩中小厂商的生存空间。",
-                "source": "TechCrunch AI / The Verge AI / 腾讯新闻",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/998868/anthropic-claude-opus-5-5-cybersecurity"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "阿里平头哥发布AI芯片真武V900：性能提升三倍",
-                "summary": "阿里巴巴旗下平头哥在云栖大会上发布新一代AI芯片真武V900，性能提升至上一代的三倍。同时阿里将2032年数据中心容量目标从原计划提升至20GW，显示出其在大模型军备竞赛中的野心。此举正值国产AI芯片加速替代的关键期，将对英伟达等国际厂商形成挑战。",
-                "source": "华尔街日报中文网 / 金融界 / 紫牛新闻",
-                "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9CS0NsZmtRVVRDZXlRblg5ZTFZNXhZamFKRDFudU5TZ2RtYWhjdjBoUU02OVFZcklXYVVuTVlVN2RUcEF0Ymw4bzZmbG8xbDA"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Snorkel AI完成3.5亿美元E轮融资，估值达15亿美元",
-                "summary": "成立七年的Snorkel AI完成3.5亿美元E轮融资，估值翻三倍至15亿美元。本轮资金将用于强化其数据即服务（data-as-a-service）模式。随着AI训练数据需求爆发性增长，专业数据标注和训练平台的价值正在被重新评估，这对数据基础设施赛道是重大利好。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "加州签署七项AI数据中心法案，阻止公用事业成本转嫁",
-                "summary": "加州州长纽森签署七项法案，专门针对AI数据中心进行监管。新规将阻止数据中心将水电等公用事业成本转嫁给普通消费者，这是美国首个系统性限制AI数据中心能源消耗的州级立法。反映出AI基础设施的能源问题已从技术议题上升为公共政策焦点。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/998453/california-ai-data-center-bills"
-            },
-            {
-                "tag": "政策监管",
-                "title": "特朗普在联合国提议将AI改名为\"超级智能\"",
-                "summary": "特朗普在联合国大会演讲中提议将人工智能改称为\"超级智能\"（Super Intelligence），并批评伊朗、全球主义者和气候变化议题。此举属于政治表态性质，实际政策影响有限，但反映出美国政治层面对AI命名的关注度上升。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/998816/donald-trump-ai-super-intelligence"
-            },
-            {
-                "tag": "政策监管",
-                "title": "联合国AI专家组呼吁各国立即行动，不能等待科学确定性",
-                "summary": "联合国AI专家组在最新报告中指出，各国政府必须现在就采取监管措施，而不能等待获得充分的科学确定性后再行动。该报告是对近期Hugging Face被黑客入侵等AI安全事件的回应。意味着全球AI治理正从讨论阶段进入立法实操阶段。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Meta Muse移动端增速超越ChatGPT早期，但被Amazon封锁",
-                "summary": "Meta的新AI助手Muse在美加市场的移动端下载量和日活用户数已超越ChatGPT早期表现，增长速度令人瞩目。然而Amazon已禁止Muse访问其网站，这反映出科技巨头之间AI agent的生态博弈。Muse暴露的零日漏洞已修复，但企业级AI agent的安全问题值得警惕。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/09/21/metas-muse-is-outpacing-chatgpts-early-mobile-launch/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Apple支付2.5亿美元和解Siri升级失败诉讼",
-                "summary": "苹果公司同意支付2.5亿美元和解一起集体诉讼，该诉讼指控苹果未能交付承诺的AI升级版Siri功能。符合条件的iPhone用户现在可以提交索赔。这表明AI功能虚假宣传的法律风险正在上升，对整个行业的产品发布策略具有警示意义。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/tech/998191/apple-siri-ai-iphone-16-class-action-lawsuit-settlement"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "高通发布两款新手机芯片，可本地运行300亿参数模型",
-                "summary": "高通在9月22日发布两款新一代智能手机芯片，其中旗舰芯片可在本地运行300亿参数的混合专家模型。这一能力意味着端侧AI应用将迎来爆发，设备端AI助手、图像生成等功能将不再依赖云端，对移动AI生态具有里程碑意义。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "千问办公发布企业级Agent产品及AI硬件QwenNote A2",
-                "summary": "阿里千问办公在云栖大会发布\"企业上下文\"功能，号称业内首个企业级Agent产品，并同步推出AI硬件QwenNote A2。这标志着大模型厂商从通用工具向垂直行业深度定制的转型，企业级AI agent市场的竞争正式开始。",
-                "source": "华尔街见闻",
-                "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE50VVA2bTc0VkZLdS16ZzZkV2ZncGdlenZGc1VkdGRnTHlmSVdtdXBUUHoxd2VnQ2ZDa1dFbHd5eFpCV1gyWjljVXpUcWJYOU9WcHJN"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "英国AI数据中心开发商Nscale递交IPO申请",
-                "summary": "英国AI数据中心开发商Nscale已递交招股说明书，计划在美股上市，这将检验华尔街对集中押注AI概念股的投资者胃口。Nscale的收入严重依赖微软和Anthropic两大客户，存在较高的大客户集中度风险。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/22/nscales-ipo-will-test-wall-streets-appetite-for-concentrated-ai-bets-once-again/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "a16z与Palantir、Google、Meta合作推出AI学院",
-                "summary": "顶级风投Andreessen Horowitz宣布推出AI Academy教育项目，与Palantir、Google、Meta等科技巨头建立合作。该项目面向年轻人，提供AI技能培训但无作业要求。这是vc通过教育培训渗透AI人才生态的创新尝试，将影响未来AI人才的培养模式。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/998813/andreessen-horowitz-ai-academy"
-            },
-            {
-                "tag": "技术突破",
-                "title": "OpenAI成立数学顾问小组，AI已解决超100个开放数学问题",
-                "summary": "OpenAI宣布成立数学顾问小组，旨在为其数学研究提供专业指导。该公司透露其AI系统已解决超过100个开放数学问题，证明AI在数学推理领域的能力正在快速逼近人类顶尖水平。但顾问组无权阻止或改变OpenAI的研究方向。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/999167/openai-elite-mathematicians-panel"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Rabbit推出可独立运行的AI代理OS3",
-                "summary": "Rabbit公司发布OS3，这是一款可独立运行的AI代理系统，用户无需购买其此前推出的R1硬件设备。OS3的推出意味着Rabbit从硬件公司向软件AI平台转型，这对该公司的商业模式是重大调整，也反映出AI agent的软硬件分离趋势。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/999094/rabbit-ai-agent-os3"
-            },
-            {
-                "tag": "技术突破",
-                "title": "AstroForge将AI置于太空探测器指挥位置",
-                "summary": "AstroForge宣布其下一艘太空探测器将采用小型transformer架构的AI模型作为核心控制系统。这标志着AI自主控制首次深度介入深空探测任务，如果成功将为太空探索的成本和效率带来革命性变化。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/22/astroforge-is-putting-ai-in-command-of-its-next-spacecraft/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "MIT研究：AI最新突破与恐惧可能过度炒作",
-                "summary": "MIT Technology Review发表评论文章指出，今年夏天AI领域的多项\"突破\"和\"威胁警告\"可能存在过度炒作嫌疑。以Anthropic声称Claude Mythos超越人类为例，相关测试方法论存在争议。提醒从业者需要区分真实进展与营销叙事。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/09/22/1144867/dont-be-fooled-summer-ai-hype/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "羚羊工业大模型3.5发布，三大智能体亮相世界制造业大会",
-                "summary": "羚羊工业互联网平台在2026世界制造业大会上发布羚羊工业大模型3.5版本，并推出三大智能体应用。该模型专注于工业场景，标志着国产AI大模型正在加速向制造业渗透，工业AI的落地竞争进入新阶段。",
-                "source": "中国科技网",
-                "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE9SaHdMQjNBQm9FajFsWWpwR0RtZWVXNlRycllrdFFPZ2J4V255V2tmakg3RE8tNW1Qay1paFZrd1BXc3c0cUdxMURybUdrZ09zSW9Lci1LZlBuNXk5UDl5cTU5V2gxN3g3bTZtdnZ6SEE"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta承认Muse灵感来源OpenClaw，AI助手相似度极高",
-                "summary": "Meta承认其AI助手Muse并非完全原创，而是\"深度借鉴\"了OpenClaw的设计，包括交互方式等细节。Meta坚称Muse是从零构建，但相似度极高的事实引发业界对AI产品创新边界的讨论。反映出AI助手市场同质化竞争的激烈程度。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/22/meta-admits-muses-likeness-to-openclaw-isnt-a-coincidence/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "阿里云发布新一代自研存储：AI存储成本大降69%",
-                "summary": "阿里云发布新一代自研存储系统，专为百万卡GPU集群设计，可为大规模AI训练提供高速存储支持。该系统将AI存储成本大幅降低69%，直击大模型训练的核心痛点，将加速国内AI基础设施的普及和成本优化。",
-                "source": "驱动之家",
-                "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFB1WFFqcG1rdEk3VERESHV3VWJtRk5Zd3BNWUtQekVUQjQtZENYeWw0Smw2RmpzVi1fYXFkUk03aFNnSDMxblVoTmVtd2FhTmw2T3VOOS1mc2g"
             }
         ]
     }
