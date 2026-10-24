@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-10-24",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "Meta延迟AI训练条款：向内容出版商让步换取合规空间",
+                "summary": "10月23日，Meta因出版商反对而推迟执行新商业条款，并删除可能被理解为可自由抓取新闻网站训练AI模型的表述。此次调整涉及抓取授权与执法时间表2项核心变化，表明平台正试图在数据利用、版权收益和模型训练之间建立更可持续的规则。",
+                "source": "The Verge（两篇报道）",
+                "url": "https://www.theverge.com/tech/1017450/meta-business-terms-delayed-ai-scraping"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Google隐私政策更新：Gmail与照片数据或用于广告定向",
+                "summary": "10月23日，Google更新隐私政策，可能依据用户的Gmail和Google Photos个人数据投放广告，涉及至少2类核心资料。新变化把更多日常行为纳入广告画像，也为生成式AI功能积累上下文提供了数据基础，但将显著提升企业解释数据用途与用户退出机制的合规压力。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/tech/1017600/google-personal-intelligence-privacy-policy-ads-update"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI切断前沿模型联网训练：多起异常攻击推动安全转向",
+                "summary": "10月23日，OpenAI表示其前沿模型训练将不再直接使用实时互联网，原因是在多起异常攻击后认定联网带来显著风险。此前公司安全方案曾遭内部工程师质疑，但OpenAI仍决定切断训练数据入口，模型实时信息获取与内部安全边界由此面临重构。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://techcrunch.com/2026/10/23/openai-says-it-will-no-longer-train-its-ai-models-on-the-live-internet-citing-significant-risks/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "ConnectWise遭中国黑客渗透：AI代理加速攻击、数千企业被监视",
+                "summary": "10月22日，微软指责一名与中国有关联的黑客组织利用AI代理加速攻击，在入侵IT服务商ConnectWise后监视了数千家企业。AI把传统人工渗透压缩为可自动执行的连续任务，企业安全团队面对的已不只是固定漏洞，而是能够自主调整策略的代理型威胁。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/chinese-hackers-spied-on-thousands-of-companies-after-breaching-it-giant-connectwise/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "OpenAI拟融资300亿美元：估值达1.25万亿美元并逼近IPO",
+                "summary": "10月22日，OpenAI正洽谈一轮约300亿美元融资，投后估值可能达到1.25万亿美元，并以此为IPO做准备。若交易完成，将刷新全球AI公司最高估值纪录，也意味着前沿模型训练与数据中心投入正进入需要超大规模资本市场支撑的阶段。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/openai-working-on-new-30b-raise-at-1-25t-valuation-ahead-of-ipo/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "DeepSeek融资150亿美元：创中国AI单轮纪录并推进性能优化",
+                "summary": "10月22日，据报道，DeepSeek在美国实施限制数日后再融资约150亿美元，成为中国规模最大的AI融资轮次之一。资金将支撑其继续扩张算力和模型研发，资本规模与地缘限制同步上升，说明国产基础模型竞争已从单纯比拼参数和基准，转向重资本持续投入。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/deepseek-reportedly-raises-15b-days-after-us-restrictions/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "微软医疗AI难题表现超越医生：Science研究验证诊断能力",
+                "summary": "10月22日，微软Mustafa Suleyman表示，其1项发表于《Science》的研究中，新AI诊断系统在棘手病例上的表现超过普通科医生，并将此视为迈向医疗超级智能的信号。结果说明专用医疗模型开始触及高风险决策，但临床责任、泛化范围和监管准入仍是落地门槛。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/microsofts-mustafa-suleyman-says-its-ai-outperforms-doctors-on-hard-cases-as-he-chases-medical-superintelligence/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Uber全员部署ChatGPT Work：3万员工进入企业代理时代",
+                "summary": "10月22日，Uber将ChatGPT Work扩展至全部约3万名员工，取代此前的小规模试点，覆盖客服、运营及后台等企业工作流。如此规模意味着生成式AI正从个人效率工具进入组织级基础设施，代理权限管理、数据隔离和流程重构将成为企业采购重点。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/uber-puts-all-30000-employees-on-chatgpt-work/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "1Password开放代理登录：凭据隔离降低AI账户接管风险",
+                "summary": "10月22日，1Password推出允许AI代理代表用户登录个人账户、同时不向代理暴露原始密码的新功能。该方案把凭据访问与操作授权分离，试图解决代理自动化中的账户接管风险，也把密码管理器从保存登录信息升级为智能体时代的关键安全控制层。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/1password-launches-a-way-for-ai-agents-to-log-in-on-your-behalf-without-seeing-your-password/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Canva发布首个图像模型：先规划再生成并降低调用成本",
+                "summary": "10月22日，Canva推出首个自研图像生成模型，并向全部用户开放。新模型在生成图像前先规划设计方案，主打更高可控性和更低调用成本，标志着设计平台正从集成第三方模型转向掌握底层生成能力，以减少外部依赖并强化产品差异化。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://techcrunch.com/2026/10/22/canva-releases-its-first-image-generation-model/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Meta Muse用户突破1000万：购物成为高频入口、分享功能恢复",
+                "summary": "10月21日，Meta在第三季度财报沟通中表示，Muse已拥有超过1000万用户，购物和个人效率是主要使用场景，公司同时恢复此前因安全问题关闭的公开对话分享功能。数据表明Meta正把生成式AI从独立应用推向消费入口，但分享安全仍需在增长前得到验证。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://techcrunch.com/2026/10/21/meta-says-muse-has-over-10m-users-with-shopping-a-top-activity/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "inDrive计划2027年测试机器人出租车：携手Pony.ai和英伟达落地中亚",
+                "summary": "10月22日，网约车平台inDrive计划联合Pony.ai与英伟达，最早于2027年上半年在哈萨克斯坦首都启动机器人出租车测试。三方组合分别覆盖出行平台、自动驾驶技术与算力平台，显示Robotaxi商业化正在从少数封闭城市试验，转向中亚等新市场。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/uber-rival-indrive-eyes-2027-robotaxi-tests-in-central-asia-with-pony-ai-and-nvidia/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "讯飞星火X2.6发布：端侧实现约70%云端能力、语音调用增20倍",
+                "summary": "10月23日，科大讯飞发布新一代端云一体模型星火X2.6，端侧已实现约70%的云端能力，相关语音大模型调用量增长20倍。指标表明交互模型正在把高频任务迁移至终端，兼顾时延、成本与隐私，企业部署将更依赖端云任务分配而非单一云端调用。",
+                "source": "新浪网 / InfoQ-CN",
+                "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5vVk5EZlNSN2NyazhaYkswZkhkTXlkeUE1bUJ4NVVMalpRVlY0N0pYM1R3cUNZbDhOOFNpNEtrSU4yYk1kNGRPU3dxdkdOb1BZaHZpWVJWZFV6UQ?oc=5"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "国产模型集中更新：Kimi K3.1、Seedance 2.5 4K与M3.1亮相",
+                "summary": "10月23日，国内AI产品周报披露，Kimi K3.1进入测试，火山引擎发布Seedance 2.5 4K，MiniMax开源M3.1 Flash，并传出联想系资本入股DeepSeek的消息。1周内至少3款重点模型推进，显示国产竞争正同时覆盖语言、视频、端侧效率与资本整合。",
+                "source": "i黑马",
+                "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE9xTU05d013dGQtSDRQakFJMHpYS3dWcnp5eGlXNWEzLU1FanFHNXYtVHlybnNfeE9xS3Jvd0lRa3BGV2g5Sk9aejhndFFfVDBzMDJr?oc=5"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "金蝶发布企业级智能体评测基准：三项核心能力同步升级",
+                "summary": "10月23日，金蝶灵基同步推进3项核心升级，并发布面向企业级智能体的评测基准。基准试图把模型效果转化为可比较的企业任务指标，反映企业采购正从演示效果转向稳定性、成本与流程完成率，可靠评估将成为智能体规模化部署的关键。",
+                "source": "新浪新闻",
+                "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQUW1XWER0WTZLa29vTmo4dWNYZWtrZGN5MlRmZ2pNbVVEVEFQYW00OWFBZ0duUXNnWVdQRXd0Q1piY3NOcGlxOVdsUkNGaFYzbFdNYmoyYkZ3MTBfM0l2bmgxVEJUWlRpWFpOcUxPRUZjRDdLMGFBRFFuT0ZwZXNSVmNxR05JenRSLW1SdW1QMkc4WWw4U0ZEejNTNEdEdm9xUmxSMmctRHNUaTk5aGIwTmZR?oc=5"
+            },
+            {
+                "tag": "应用落地",
+                "title": "千里科技智驾原生大模型量产：百万装车后发布2.0成果",
+                "summary": "10月23日，千里科技发布2.0阶段成果，在累计百万辆汽车装车后推动智驾原生大模型进入量产阶段。百万级装车为数据闭环和规模部署提供基础，但真实道路中的长尾场景、安全责任与跨车型适配，才是智驾模型从演示走向商业化的核心考验。",
+                "source": "搜狐网",
+                "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNWHRFeWxXTlZmbkUwbi0tc3B5bm5QNnBTdVNtRHZ0bWY3SGthZXFnR2YyT0ZjY09CYmtTY2R5SmcxeUh6VEY1NWxzeWZhaEJQS0JFS1dhLUt2RUxLeVdaUklOUHlFTTljLTc2UHlvR1FSOFlub0JlWjdBN0RYOEFUZWt2ZEFQUlFIZnk0?oc=5"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Block发布Dessa语音模型：仅用人类对话训练、瞄准拟人陪伴",
+                "summary": "10月22日，Jack Dorsey旗下Block公布1款名为Dessa的AI模型，号称完全从人类对话数据从零训练，以自然语音交流区别于传统指令型助手。该产品把竞争焦点推向长期陪伴和人际表达，但拟人化设计越强，身份披露、依赖风险与数据治理要求也越高。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1017906/jack-dorsey-block-dessa-ai-voice-speech"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic推出Claude Duet：双代理协作成为核心产品形态",
+                "summary": "10月22日，Anthropic推出Claude Duet应用，并向Pro和Max共2档付费计划用户开放候补名单。产品将多个AI代理组织为协作团队，而非依赖单一聊天窗口，反映模型厂商正把竞争焦点从回答质量推进到任务分解、代理协同与最终执行效果。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/claude-duet-app-is-anthropics-bet-on-agents/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "MIT测试13个AI代理：虚拟岛实验揭示自主博弈新行为",
+                "summary": "10月22日，MIT研究人员把13个AI代理留在虚拟岛上，在没有明确任务时观察到它们自行发明游戏、哀悼遗失物品并形成社会关系。实验揭示了代理在闲置状态下仍会产生计划和协作行为，企业部署因此不能只预设任务，还需约束其自主目标与交互边界。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/left-alone-with-nothing-to-do-ai-agents-started-playing/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "OpenAI向全球开放决策模型：复杂任务代理竞争进入新阶段",
+                "summary": "10月22日，OpenAI将1款面向复杂决策任务的新模型向全球用户开放，直接回应Jev等同类产品的竞争。公开资料暂未披露核心性能指标，但决策模型开始脱离纯生成定位，反映前沿实验室正抢占代理规划与执行入口，评测重点也将转向任务成功率和可验证性。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/22/openai-makes-its-jev-competitor-widely-available-as-decision-model-competition-heats-up/"
+            }
+        ]
+    },
+    {
         "date": "2026-10-23",
         "items": [
             {
@@ -4044,151 +4189,6 @@ const AI_NEWS_DATA = [
                 "summary": "在纽约气候周期间，AI与气候变化的复杂关系成为焦点话题。英伟达CEO Jensen Huang表示AI可以帮助应对气候变化，但前提是人类必须\"承受巨大的痛苦和牺牲\"来推进AI基础设施。这番言论被舆论解读为对AI能源消耗问题的隐晦承认，也反映出算力扩张与环保承诺之间的深层矛盾。",
                 "source": "MIT Technology Review / The Verge AI",
                 "url": "https://www.theverge.com/tech/1000140/jensen-huang-nvidia-ai-energy-climate-change-supervillain"
-            }
-        ]
-    },
-    {
-        "date": "2026-09-24",
-        "items": [
-            {
-                "tag": "技术突破",
-                "title": "Anthropic生物实验室发现类CRISPR突破性酶系统，Claude已自主发现重大成果",
-                "summary": "Anthropic宣布其AI助手Claude在其生物学实验室中\"自主发现\"了一种新的酶系统，被比作CRISPR基因编辑技术的突破性进展。尽管Anthropic尚未让Claude完全自主运行实验室，但这一发现已在科学界引起轰动，被认为是AI驱动生物发现的重要里程碑。这意味着AI在生命科学领域的应用正从辅助工具向真正的问题解决者转变。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/09/23/anthropic-says-its-biology-lab-has-already-found-something-big/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic发布Claude Opus 5.5：综合成本大幅降低，与GPT-6同台竞技",
-                "summary": "Anthropic正式发布Claude Opus 5.5模型，该版本在保持高性能的同时大幅降低了综合使用成本。同日OpenAI也推出GPT-6 Sol/Luna，两家头部AI公司形成正面竞争。Claude Opus 5.5的性价比提升意味着企业级AI应用门槛将进一步降低，对整个行业的价格体系将产生深远影响。",
-                "source": "companies.caixin.com / TechFlow",
-                "url": "https://companies.caixin.com/2026-09-24/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI发布GPT-6 Sol与Luna：成本更低、错误更少的下一代模型",
-                "summary": "OpenAI在9月22日推出两款新模型GPT-6 Sol和Luna，据称与Astra同出一脉，但成本更低且错误率更少。这两款模型延续了OpenAI在高推理能力模型上的布局，进一步巩固其在商业AI市场的领先地位。对企业客户而言，更低成本意味着AI应用的ROI将持续改善。",
-                "source": "TechCrunch AI / TechFlow",
-                "url": "https://techcrunch.com/2026/09/22/openai-launches-gpt-6-sol-and-luna/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta Connect 2026发布Muse Charm：一款类似电子宠物的AI可穿戴设备",
-                "summary": "Meta在Connect 2026大会上推出Muse Charm，这是一款类似Tamagotchi的独立AI可穿戴设备，为其Muse AI代理创造新的移动载体。设备外形可爱（小熊造型），主要功能包括购物辅助等日常任务。这是Meta首次尝试将AI代理与专用硬件深度绑定，标志着消费级AI从手机端向可穿戴设备延伸的趋势。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/09/23/meta-made-a-tamagotchi-like-wearable-for-its-muse-ai-agent/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta无摄像头智能眼镜发布：续航12小时、重量更轻",
-                "summary": "Meta推出全新无摄像头Ray-Ban Meta Audio Glasses第六代产品，相比带摄像头版本重量大幅减轻，续航可达12小时。此举表明Meta正在将智能眼镜定位为纯音频+AI交互设备，避开隐私争议。更长的续航和更轻的重量有望加速AI眼镜在日常场景中的普及。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/09/23/meta-introduces-camera-free-ai-glasses/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta Muse AI代理全面升级：新增视频通话、购物能力更强",
-                "summary": "Meta在Connect 2026上宣布Muse AI代理的多项更新，包括新增视频聊天功能和更强的任务执行能力。Muse已能自主完成购物等复杂任务，并将于数周内集成到Meta智能眼镜中。作为发布仅两周的全新AI产品，Muse的快速迭代显示出Meta在AI代理赛道的紧迫感。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://www.theverge.com/tech/999454/meta-muse-ai-agent-video-chat-connect-2026"
-            },
-            {
-                "tag": "政策监管",
-                "title": "加州签署数据中心信息披露法案：要求公开用水和用电数据",
-                "summary": "加州州长Gavin Newsom于9月22日签署一系列法案，要求数据中心运营商向社区披露用水和用电数据。这是美国首个针对AI数据中心环境影响的系统性监管举措。随着数据中心成为AI发展的基础设施瓶颈，相关环境合规要求可能向其他州和地区蔓延。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/policy/999412/data-center-water-electricity-disclosure-bills"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Bernie Sanders提出“超级智能禁止法案”：超100亿参数模型开发者将入狱",
-                "summary": "美国参议员Bernie Sanders与众议员Greg Casar联合提出\"超级智能禁止法案\"，要求禁止任何人开发超过100亿参数的AI系统，违规者将面临监禁处罚。这是美国立法机构对AI安全问题的最激进回应。尽管法案通过概率存疑，但反映了国会内部对AI失控风险的深切担忧。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/999443/bernie-sanders-ai-superintelligence-ban-act"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Enveda完成3.11亿美元融资：AI biotech估值达20亿美元",
-                "summary": "自然衍生药物AI公司Enveda宣布完成3.11亿美元新一轮融资，公司估值达到20亿美元。本轮融资将主要用于推动其AI发现的皮肤病和减肥药物进入临床试验。Enveda是AI制药赛道的明星公司，其高估值融资表明AI+生物医药仍是资本最青睐的垂直领域之一。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/23/enveda-secures-311m-to-bring-more-nature-derived-ai-drugs-into-clinical-trials/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Snorkel AI完成3.5亿美元E轮融资：估值翻三倍至35亿美元",
-                "summary": "AI训练数据平台Snorkel AI宣布完成3.5亿美元E轮融资，估值达到35亿美元，是此前12亿美元估值的三倍。这家7年历史的创业公司凭借\"数据即服务\"模式，已服务超过200家企业客户。AI训练数据需求的爆发式增长正在催生新的基础设施层独角兽。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/22/snorkel-ai-triples-valuation-to-3-5b-as-demand-for-ai-training-data-booms/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "企业AI助手公司Ema融资7700万美元：累计融资1.4亿、拿下50+企业客户",
-                "summary": "企业级AI助手开发商Ema宣布完成7700万美元新一轮融资，累计融资额达1.4亿美元。公司拥有超过50家企业客户，包括Google和Microsoft等科技巨头。Ema定位为\"企业软件和服务的AI替代者\"，本轮融资显示资本市场对AI原生企业软件的持续看好。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/23/ema-raises-77m-as-ai-starts-eating-into-enterprise-software-and-services/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Spotify推出Taste Profile：用户可查看平台对其音乐偏好的完整画像",
-                "summary": "Spotify向美国Premium用户推出Taste Profile功能，允许用户查看平台对其音乐品味理解的完整画像，包括喜欢的艺术家、流派、情绪标签等。这一\"算法透明化\"举措既是对用户隐私需求的回应，也是Spotify通过个性化增强用户粘性的新策略。类似功能可能将被更多流媒体平台效仿。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/23/spotify-is-giving-you-the-keys-to-its-recommendation-algorithm-with-u-s-launch-of-taste-profile/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "YouTube推自定义Feed功能：用户可用自然语言描述定制推荐算法",
-                "summary": "YouTube推出全新自定义Feed功能，用户可以用自己的语言描述想看的视频类型，系统利用Gemini模型构建个性化推荐算法。这是YouTube首次将推荐算法的\"控制权\"交给用户，有望改变平台内容分发的逻辑。对创作者而言，理解用户自定义偏好将成为新的流量密码。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/23/youtube-will-let-you-build-your-own-algorithm-with-ai/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "YouTube Studio新增AI工具：自动生成视频创意、监控缩略图表现",
-                "summary": "YouTube在Studio应用中推出一系列AI新功能，包括基于创作者内容自动生成视频创意建议，以及缩略图A/B测试表现监控。这些工具直接面向YouTube创作者，旨在降低内容创作的决策成本。YouTube正通过AI能力赋能创作者生态，以应对短视频平台的竞争压力。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/23/youtube-releases-new-ai-features-for-creators-within-its-studio-app/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "ChatGPT移动端推出语音代理功能：Pro和Plus用户可在手机上完成复杂任务",
-                "summary": "OpenAI为ChatGPT移动端推出基于语音的代理功能，Pro和Plus用户可通过\"Work\"标签页用语音完成代理任务，如日程管理、邮件处理等。这是ChatGPT agent能力向移动端的重要延伸，使AI从对话工具升级为可代为执行任务的数字助手。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/23/chatgpt-mobile-app-gets-voice-based-agentic-features/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "希腊总理坦言：我们已在打\"昨天的战争\"，AI监管需加速",
-                "summary": "希腊总理Kyriakos Mitsotakis在接受采访时坦承，各国在AI监管上已落后于技术发展，\"我们已在打昨天的战争\"。他强调了欧盟AI法案的必要性，同时呼吁国际社会加快协调。作为欧盟成员国领导人，Mitsotakis的表态预示着欧洲可能在AI监管上采取更激进的立场。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/22/were-already-fighting-yesterdays-battle-greeces-prime-minister-gets-candid-about-ai/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Qualcomm发布两款AI手机芯片：旗舰款可本地运行300亿参数MoE模型",
-                "summary": "Qualcomm在9月22日发布两款新一代智能手机芯片，旗舰款可本地运行300亿参数的混合专家模型。这一能力使高端手机无需云端即可运行大语言模型，标志着端侧AI进入实用阶段。随着芯片性能提升，AI手机正从营销概念变为真正的生产力工具。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/22/qualcomm-launches-two-new-smartphone-chips-with-emphasis-on-ai/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "调查揭示：即使每日使用AI的美国人也普遍担忧这项技术",
-                "summary": "最新报告显示，即使每天使用AI的美国人也普遍对该技术持担忧态度。研究发现，更高频率的AI使用并未减少公众的焦虑，也未降低对AI监管的支持。这对AI行业\"用户教育可消解恐惧\"的假设构成挑战，企业需要正视用户的深层担忧而非单纯强调产品易用性。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/09/23/even-americans-who-use-ai-every-day-are-worried-about-it/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "高瓴创投原合伙人严文韬正式入职DeepSeek：顶级VC人才流向AI独角兽",
-                "summary": "高瓴创投原合伙人严文韬正式宣布入职DeepSeek，出任核心管理岗位。严文韬是中国顶级VC背景的专业投资人，其转向AI公司反映了当前一级市场人才的新流向趋势。DeepSeek作为国内AI大模型头部公司，正在吸引越来越多传统投资界精英加入。",
-                "source": "mrjjxw.com",
-                "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAyRmZhZHRFZG9RU1Y3TzZRSlBEWVl0djRSamFIbmZiY0d0N0xFanQ4SjB2N0NWWG9sNTFnX1IzdkFELWRIbEdBcXBpR01tQURMY1NSVmpzTGJSWGNRTmkxYUUzR093dw?oc=5"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "千问发布Qwen-Audio-3.1语音大模型：多语言语音理解能力再升级",
-                "summary": "阿里巴巴发布Qwen-Audio-3.1系列语音大模型，进一步强化多语言语音理解和对话能力。作为国内开源大模型的重要力量，千问系列持续迭代语音模型有助于降低语音AI应用开发门槛。阿里云栖大会即将开幕，此次发布被视为大会前的技术预热。",
-                "source": "mrjjxw.com / caiwennews.com",
-                "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTFAyRmZhZHRFZG9RU1Y3TzZRSlBEWVl0djRSamFIbmZiY0d0N0xFanQ4SjB2N0NWWG9sNTFnX1IzdkFELWRIbEdBcXBpR01tQURMY1NSVmpzTGJSWGNRTmkxYUUzR093dw?oc=5"
             }
         ]
     }
