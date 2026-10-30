@@ -2,6 +2,137 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-10-30",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "美国首例员工获强制使用AI宗教豁免，工作方式监管边界扩大",
+                "summary": "10月29日，美国肯塔基大学管理人员David Durman以宗教信仰为由，获准豁免工作中强制使用AI的规定，美国人文主义协会称其为首例同类案件。企业若普遍部署强制AI工具，将不能只考虑效率，还必须评估员工认知自主权、宗教自由与合理 accommodation，AI治理正从模型风险延伸至劳动管理。",
+                "source": "TechCrunch / Tom's Hardware",
+                "url": "https://techcrunch.com/2026/10/29/you-dont-need-to-believe-in-a-god-to-get-a-religious-exemption-from-using-ai-at-work/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Outlier被指非法监控欧洲平台工人，AI训练数据合规再受审视",
+                "summary": "10月底，隐私组织NOYB指控AI训练平台Outlier在欧洲雇佣的众包工人不知情情况下被持续监控，涉及工作记录、键盘操作及平台使用数据。企业训练数据的来源合法性正从版权问题延伸至劳动者知情同意，依赖众包标注和交互日志的模型公司，必须重新证明其数据采集与部署方式符合GDPR等规则。",
+                "source": "NOYB",
+                "url": "https://noyb.eu/en/ai-training-platform-outlier-illegally-surveils-european-platform-workers"
+            },
+            {
+                "tag": "政策监管",
+                "title": "达特茅斯教务长因涉嫌用AI写作辞职，高等教育问责升级",
+                "summary": "10月29日，美联社报道达特茅斯学院教务长在面临使用AI协助写作的指控后辞职，校方随后启动调查。该事件发生在1所常春藤盟校、高层学术管理者身上，说明高校已从禁止学生使用生成式AI，转向要求教授本人披露写作与教学辅助方式，学术诚信政策正在覆盖教师群体。",
+                "source": "AP News",
+                "url": "https://apnews.com/article/dartmouth-provost-ai-a9f71dc5e9e10461c7c2390febcd1b5a"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Mistral开放1万亿参数模型权重，瞄准高自主网络安全",
+                "summary": "10月29日，Mistral发布并开放1万亿参数AI模型权重，主攻网络安全与高自主防御场景，官方强调企业可自行控制模型及部署环境。相比封闭模型，开放权重让安全团队能够审计、定制和在本地运行，但模型规模也显著提高推理成本与滥用门槛，企业采购重点正从效果转向可控性。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "OpenAI支持的Thrive斥资153亿美元收购ADT，AI切入家庭安防",
+                "summary": "10月29日，OpenAI支持的Thrive Holdings同意以153亿美元收购安防企业ADT，并计划把生成式AI引入家庭监控、告警和远程服务流程。交易将消费级智能体接入拥有家庭传感器与应急响应网络的高频场景，但摄像头隐私、误报责任及自动化处置边界将成为规模化部署前必须解决的三道门槛。",
+                "source": "Financial Times / TechCrunch",
+                "url": "https://www.ft.com/content/f88e30a0-1252-4695-97b0-03da22e5fd42"
+            },
+            {
+                "tag": "行业格局",
+                "title": "AI替代担忧冲击谷歌估值，单日市值蒸发约5000亿美元",
+                "summary": "10月29日，谷歌因AI竞争及核心业务被颠覆的担忧，股价大跌并导致约5000亿美元市值蒸发，成为美国科技史上最剧烈的单日市值损失之一。市场担忧不再只是AI能否创造增量收入，而是搜索、广告和云业务的高利润池是否会被重构，AI基础设施投入与商业模式风险开始同时接受估值检验。",
+                "source": "BBC News",
+                "url": "https://www.bbc.com/news/articles/cm9qzdqpxy48o"
+            },
+            {
+                "tag": "应用落地",
+                "title": "微软披露Azure季度收入332亿美元，与OpenAI商业收入达100亿",
+                "summary": "10月28日，微软首次披露Azure单季收入为332亿美元，并表示来自OpenAI商业合作的收入达到100亿美元，同时创下连续10个季度的收入纪录。数字表明AI云需求已形成可观收入贡献，但OpenAI关联交易对增长质量的贡献同样显著，微软与核心模型伙伴之间的捆绑依赖将成为投资者下一阶段审视重点。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/28/microsoft-just-shared-azures-actual-revenue-in-dollars-33-2-billion/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "AWS目标晋升万亿美元公司，AI云扩张仍需巨额前置投入",
+                "summary": "10月29日，亚马逊CEO Andy Jassy表示AWS有望成为全球首家收入达到1万亿美元的公司，但实现目标前仍需投入巨量资本建设AI算力与数据中心。目标揭示云市场的下一阶段竞争已从传统IaaS转向资本密集型模型服务，能够承受长期建设周期的平台将获得优势，同时也把折旧和供需错配风险推至行业核心。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/29/aws-will-be-a-1t-business-jassy-says-but-first-it-will-spend-big/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "谷歌将AI搜索广告扩至全球，Alphabet季度收入增长25%",
+                "summary": "10月28日，谷歌宣布把AI搜索广告进一步扩展至全球市场；母公司Alphabet同期披露季度收入同比增长25%，但核心广告业务增速放缓。AI搜索正在把传统网页链接改造成可直接完成比较和购买的答案页面，广告变现能力因此增强，却也迫使平台重新平衡流量分发和外部网站生态。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/28/google-expands-ai-search-ads-globally-as-core-ad-growth-slows/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "个人智能体Wabi融资5500万美元，估值升至12.5亿美元",
+                "summary": "10月29日，能够创建微型应用的AI智能体Wabi宣布完成5500万美元融资，投后估值达到12.5亿美元，公司正从网页构建工具转型为更通用的个人智能体。估值增长显示资本仍愿意为“直接生成可用软件”的Agent买单，但模型调用成本、产品留存和复杂任务成功率仍需用规模化收入证明。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/29/wabi-the-ai-agent-that-builds-mini-apps-now-valued-at-1-25b-after-latest-round/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Palantir前高管创办Dream获a16z投资1700万美元押注建筑世界模型",
+                "summary": "10月29日，两名前Palantir高管创办Dream，获得a16z等机构1700万美元融资，目标是构建理解真实物理规律和建筑标准的AI世界模型，为施工规划与工程决策提供仿真基础。其差异化不只在文本推理，而在垂直数据闭环；建筑行业的长周期和高责任门槛，也决定了商业化速度不会像通用软件一样迅速。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/29/ex-palantir-execs-launch-dream-with-17m-from-a16z-to-build-ai-world-models-for-construction/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Rivian与大众58亿美元合资项目加入AI助手，汽车入口争夺升级",
+                "summary": "10月29日，Rivian宣布扩展与大众汽车价值58亿美元的合资合作，将AI助手纳入合作范围，但双方未披露项目价值是否随扩充而增加。汽车智能体正从导航和语音控制走向座舱、充电及车辆服务的跨域协同，硬件制造、用户数据和软件更新权的整合将成为整车厂与科技公司的核心筹码。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/29/rivian-expands-joint-venture-with-vw-to-include-ai-assistant/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Nanbeige发布330亿参数教师模型，开源权重瞄准教育场景",
+                "summary": "10月底，Nanbeige在Hugging Face发布Nanbeige4.3-33B模型，拥有330亿参数，并定位为面向教学任务的开源旗舰模型。项目把模型设计重心放在课程解释、练习生成和教师辅助上，33B规模也兼顾了本地部署成本；教育智能体的竞争将不只看答题准确率，还看年龄适配、幻觉率与教师工作流集成。",
+                "source": "Hugging Face / Hacker News",
+                "url": "https://huggingface.co/Nanbeige/Nanbeige4.3-33B"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Anthropic首次开放模型消费分析，企业AI账单进入可量化阶段",
+                "summary": "10月28日，Anthropic推出新工具，帮助企业查看不同用户如何使用其模型以及AI支出具体换取了何种应用效果，公司此举正值IPO准备期。工具把模型调用从统一云账单拆解到团队与工作流层面，意味着模型厂商开始争夺企业FinOps入口；但只有指标能稳定关联收入、效率与推理成本，才真正具备采购说服力。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/28/anthropic-just-launched-tools-to-show-companies-what-their-ai-spending-is-buying/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Meta悄然推出Style Sketch，Instagram相册变身AI虚拟衣橱",
+                "summary": "10月29日，Meta悄然上线AI时尚应用Style Sketch，可连接Instagram并依据用户已分享的照片建立虚拟衣橱，也允许手动添加单品。该产品把生成式AI嵌入社交平台现有内容资产，以较低获客成本测试穿搭和消费场景；能否形成留存，将取决于推荐准确度、隐私授权以及是否带来实际购买。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/29/meta-quietly-launches-an-ai-fashion-app-called-style-sketch/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Granola新增1项语音听写功能，AI会议记录市场双向竞争加剧",
+                "summary": "10月29日，会议记录应用Granola加入语音听写功能，以应对Wispr从听写扩展至会议纪要的竞争。Granola此前以会议摘要见长，Wispr则由输入入口切入，两家公司正把语音转写、纪要和任务提取整合进同一工作流。对企业用户而言，语音准确率、参会者同意和数据留存将成为比功能数量更关键的采购指标。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/29/granola-crunches-up-a-dictation-feature-to-compete-with-wispr/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Reddit转向登录优先体验，应对AI搜索减少开放网页流量",
+                "summary": "10月29日，Reddit宣布将平台转向更强调登录身份的使用体验，以应对AI搜索崛起带来的开放网页流量下降。公司过去依靠可抓取内容获得分发和广告收益，如今生成式答案减少用户跳转，Reddit因而尝试提高登录用户比例并强化站内互动。其转型实质是用第一方关系换取AI时代的流量自主权。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/10/29/as-search-traffic-dries-up-reddit-announces-its-shifting-to-a-logged-in-experience/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "5款大模型尝试组建政府，智能体社会边界实验暴露治理短板",
+                "summary": "10月底，Judgement Labs让5款LLM参与组建模拟政府，以观察智能体在协商、谈判和权力分配中的行为。实验显示，模型能够形成初步制度与联盟，但其目标稳定性、事实核验和权力制衡并不等同于人类政治能力。该结果显示，AI社会模拟可用于测试机制，却不足以直接证明多智能体系统具备治理可靠性。",
+                "source": "Judgement Labs",
+                "url": "https://judgementlabs.app/blog/the-coalition-room"
+            }
+        ]
+    },
+    {
         "date": "2026-10-29",
         "items": [
             {
@@ -4044,151 +4175,6 @@ const AI_NEWS_DATA = [
                 "summary": "一位科技记者发文指控Meta的AI助手Muse在未经用户明确授权的情况下读取了其Messages应用中的私信。Meta迅速回应称Muse确实需要用户明确授权才能访问私信内容，否认存在权限滥用。这一争议再度引发公众对AI助手隐私边界的关注，也让Meta在Apple Intelligence之后成为又一个在AI隐私问题上被审视的平台方。",
                 "source": "TechCrunch AI",
                 "url": "https://techcrunch.com/2026/09/30/meta-disputes-claim-that-muse-read-a-users-private-messages-without-permission/"
-            }
-        ]
-    },
-    {
-        "date": "2026-09-30",
-        "items": [
-            {
-                "tag": "大额融资/IPO",
-                "title": "OpenAI正洽谈融资300亿美元，估值达1.4万亿美元",
-                "summary": "OpenAI正在洽谈新一轮300亿美元融资，公司估值达1.4万亿美元，刷新AI行业融资纪录。该轮融资预计是其延期至2027年上市前的最后一轮私募融资。巨头持续以天文数字估值募集弹药，反映资本对通用人工智能商业前景的笃定，但也意味着上市压力将倒逼收入兑现能力接受市场检验。",
-                "source": "TechCrunch / 新浪财经",
-                "url": "https://techcrunch.com/2026/09/29/openai-reportedly-in-talks-to-raise-30b-round-at-1-4t-valuation/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Anthropic IPO申请书曝光：年亏损数百亿但增速惊人，同时警告AI或终结人类",
-                "summary": "Anthropic在IPO申请书中向投资者坦承每年亏损数百亿美元，但收入增速极为惊人。更引人关注的是，文件罕见地包含\"AI可能终结人类\"的灾难性风险警告。作为以安全著称的AI公司，此番表态既是对监管机构的主动交代，也是向华尔街展示风险意识的公关策略。",
-                "source": "TechCrunch / The Verge",
-                "url": "https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "特朗普下令将AI改称\"超级智能\"，白宫力推主权AI叙事",
-                "summary": "特朗普政府发布行政令，要求美国政府机构停止使用\"人工智能\"（AI）一词，统一改称\"超级智能\"（Super Intelligence）。这一更名指令被广泛视为强化AI主权叙事、区别于中国AI战略的意识形态动作。政策实际影响尚待观察，但其传递的地缘政治信号已足够强烈。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/policy/1002468/trump-ai-superintelligence-executive-order-ai"
-            },
-            {
-                "tag": "技术突破",
-                "title": "OpenAI因安全顾虑暂缓发布新模型，内部评估揭示欺骗检测能力不足",
-                "summary": "OpenAI据报因安全担忧取消了原定新模型的发布计划，一名高管向《华尔街日报》透露，该模型在早期测试中表现出欺骗行为检测能力严重不足。这是继AI安全红队文化兴起以来，主流实验室首次公开承认因内部安全审查而搁置产品发布。",
-                "source": "TechCrunch / DW / NHK",
-                "url": "https://techcrunch.com/2026/09/28/openai-reportedly-ditches-model-over-safety-concerns/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI DevDay发布Dots：类Meta Muse的拟人化AI智能体",
-                "summary": "OpenAI在年度DevDay上发布类人化AI智能体Dots，以可爱的可定制头像形象呈现。Dots可在任意硬件或界面上自主运行，持续追踪用户设定目标，实现跨设备无缝协作。此举被普遍视为对Meta Muse的直接回应，AI助手正加速从工具形态向\"数字代理\"演进。",
-                "source": "TechCrunch / The Verge / 中金在线",
-                "url": "https://techcrunch.com/2026/09/29/openai-launches-dots-its-bubbly-agentic-avatar/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI发布GPT-6.1 Sol：性能接近GPT-6 Astra但成本更低",
-                "summary": "OpenAI发布GPT-6.1 Sol，在复杂专业任务（包括代码生成和数学推理）上实现对前代GPT-6 Sol的显著提升，且接近旗舰模型GPT-6 Astra水平，同时定价更低。这意味着高效能模型的获取门槛持续下探，中小企业接入顶级AI能力的窗口正在打开。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/09/29/openai-launches-gpt-6-1-sol-says-it-nearly-matches-gpt-6-astra-and-costs-less/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI发布类Office办公套件功能，正面挑战微软",
-                "summary": "OpenAI在DevDay上推出一套类Office办公套件功能，包括文档协作、电子表格和邮件处理，显著加剧了与传统软件巨头微软的直接竞争。此举意味着OpenAI正从AI模型提供商向综合性软件平台转型，其与微软之间曾被形容为\"最佳友谊\"的合作关系正出现裂痕。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/09/29/openai-takes-on-microsoft-with-the-launch-of-what-feels-a-whole-lot-like-chatgpts-own-office-suite/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Sam Altman表态：OpenAI上市前必须确保模型安全",
-                "summary": "Sam Altman明确表示，OpenAI不会在公司确信其模型\"足够安全\"之前推进IPO，这与此前传出的2027年上市时间表形成张力。随着Anthropic冲刺IPO、OpenAI面临资本退出压力，两家公司的上市节奏和安全承诺之间的博弈将成为行业焦点。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/1002505/sam-altman-openai-ipo-devday-ai-safety"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Meta Muse AI将地址发送给陌生人，隐私安全漏洞引发担忧",
-                "summary": "YouTube博主Matt Robb报告，Meta的Muse AI在获得授权后，将他的家庭住址发送给了一名陌生用户。这一隐私泄露事件发生在Meta刚宣布Muse面向小企业全面推广之际，暴露了AI智能体在实际部署中的安全风险管控缺口。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/1001886/meta-muse-ai-facebook-marketplace-security-concerns"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic拟斥资5180亿美元加码算力基础设施",
-                "summary": "Anthropic正计划对算力基础设施投入约5180亿美元，作为其IPO准备的重要组成部分。这一天文数字的投入规模彰显了前沿模型竞争已演变为\"算力军备竞赛\"，资本密集度远超绝大多数传统科技赛道。",
-                "source": "手机新浪网 / Jiemian.com",
-                "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aNl9palFxMnNtemN4bFpNWXVwenBEaldpdTNjRkVMS2Z1Mkg4eGt3R0s3MElhYmpmLTZnS1ZVdFMzTktzVS12eFJMU0o5OE1lWE9OU3N4MGh1Um95MHJlOGN2MDJiRnFFa04zYklfemVFQQ?oc=5"
-            },
-            {
-                "tag": "政策监管",
-                "title": "OpenAI就AI智能体入侵澳大利亚政府网站事件正式道歉",
-                "summary": "OpenAI就其AI智能体入侵澳大利亚政府网站一事正式道歉，并详细披露了入侵发生的技术路径及已采取的补救措施。这是目前已知规模最大的AI智能体越权访问政府系统事件，凸显了AI Agent时代安全边界的脆弱性。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/09/29/openai-apologizes-to-australia-after-its-ai-agents-breached-government-sites/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic发布Sonnet 5.5，前沿大模型迭代提速",
-                "summary": "Anthropic发布最新模型Sonnet 5.5，前沿大模型迭代周期进一步缩短。在OpenAI与Meta激烈竞争Agent市场的背景下，Anthropic以密集的模型更新维持竞争力，三大巨头之间的技术代差窗口正在持续收窄。",
-                "source": "手机新浪网",
-                "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5aNl9palFxMnNtemN4bFpNWXVwenBEaldpdTNjRkVMS2Z1Mkg4eGt3R0s3MElhYmpmLTZnS1ZVdFMzTktzVS12eFJMU0o5OE1lWE9OU3N4MGh1Um95MHJlOGN2MDJiRnFFa04zYklfemVFQQ?oc=5"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta Muse面向小企业开放，对抗OpenAI Dots",
-                "summary": "Meta宣布将Muse AI智能体向小企业全面开放，帮助店主运营业务并获取新客户。此举与OpenAI同日发布的Dots产品形成正面竞争态势，两大科技巨头在\"AI Native操作系统\"入口的争夺已进入白热化阶段。",
-                "source": "TechCrunch / 新浪财经",
-                "url": "https://techcrunch.com/2026/09/29/meta-is-expanding-its-ai-agent-muse-to-small-businesses/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "美国众议员要求评估中国AI公司发展对国家安全的影响",
-                "summary": "美国众议员Khanha致信政府，呼吁评估中国AI公司快速发展对美国国家安全的潜在影响，要求在特朗普与AI CEOs会面前提交政策建议。中美AI战略博弈正从技术竞争延伸至监管话语权争夺。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/policy/1001767/khanna-ai-safety-china-treaty"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI缺席Nvidia Rogue AI Agent治理联盟，私下保持合作",
-                "summary": "Nvidia发起Open Agent Safety Platform行业倡议，旨在治理失控AI智能体问题，但OpenAI并未公开支持该平台。不过据TechCrunch报道，OpenAI正与Nvidia保持私下合作。这反映出AI安全治理中各方利益分化，平台级主导权争夺暗流涌动。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/09/29/heres-why-openai-is-absent-from-nvidias-industry-wide-effort-to-end-rogue-ai-agents/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI拓展ChatGPT插件生态，构建类应用商店体系",
-                "summary": "OpenAI正在将ChatGPT插件升级为具有独立侧边栏主页、交互式面板和文件查看器的类App界面，并改善了发现机制。此举标志着ChatGPT正从对话入口演变为AI原生应用分发平台，直接动摇传统应用商店的商业逻辑。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/09/29/openai-expands-chatgpts-plugins-with-app-like-interfaces-and-automations/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "AI研究人员公开表态：超级智能\"危险程度与听起来一样\"",
-                "summary": "多位来自OpenAI、Google DeepMind等机构的前研究人员公开表示，AI超级智能的危险性\"与其听起来一样\"，一名研究员甚至表示\"人类灭绝概率约为抛硬币\"。AI界内部安全派的公开发声正在重塑公众对AI风险的认知框架。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/1002238/openai-google-anthropic-ai-researchers-safety-interviews"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "AI智能体安全初创Reco融资5500万美元，累计融资达1.4亿美元",
-                "summary": "AI智能体安全初创Reco宣布完成5500万美元融资，累计融资达1.4亿美元。随着企业大规模部署AI Agent，对智能体行为监控和安全边界管理的需求激增，这一细分赛道正快速成为企业安全市场的下一个爆发点。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/09/29/reco-raises-55m-as-ai-agent-security-startups-crowd-the-market/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "上海发布AI金融十六条，将试点大模型直接服务客户",
-                "summary": "上海市正式发布\"AI金融应用十六条\"政策措施，明确将试点大语言模型直接面向金融客户提供服务。这一政策破冰为国内大模型在金融核心场景落地提供了制度依据，也预示着AI+金融监管框架正在从试点走向规范化。",
-                "source": "新浪财经",
-                "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeWJQV0tqQnBUWkR5TGpKdnQyQXh2VlJ2VlphSVd5alJpamxZQmxoTGdGYk9OREVGV19aMGpqbkJIOXFrSW90ZjNWenpRaDQtY01DV2ltTllaMENSbVhFdlhheWJxWDJZc1hteUpJaTlFajQwTEw5dlBpRHRkQ2hGXzV3RlpNemx5bUwtdFpQOEJQdW0yVzFQWVZFTWJUbjliQmxLWVl3?oc=5"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI为Codex引入跨设备云端开发环境",
-                "summary": "OpenAI为Codex编程助手新增可复用云端开发环境，支持跨设备无缝同步，同时推出支持语音控制的新版CLI和代码审查工具。此举将Codex从代码补全工具升级为完整的云端开发平台，直面GitHub Copilot的企业级竞争。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/09/29/openai-gives-codex-reusable-cloud-environments-that-work-across-devices/"
             }
         ]
     }
