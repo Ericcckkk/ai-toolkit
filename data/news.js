@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-11-05",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "中期选举后数据中心监管收紧：建设阻力跨党派上升",
+                "summary": "2026年美国中期选举后，数据中心建设议题呈现跨党派反对上升，科技公司可能面临更严格的审批和地方限制。电力消耗、土地与社区利益已成为选战焦点，这意味着AI基础设施扩张正从资本问题转变为政治许可风险。",
+                "source": "TechCrunch / The Verge / 财新国际 / 金融界",
+                "url": "https://techcrunch.com/2026/11/04/after-the-midterms-a-bigger-clash-over-data-centers-could-be-coming/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "AI政治行动委员会投入数百万美元游说美国中期选举",
+                "summary": "在2026年美国中期选举中，AI行业政治行动委员会投入数百万美元影响国会选举，但部分投入未取得预期结果；OpenAI已着手为2028年选举设计AI治理方案。巨额游说回报不稳，意味着科技公司的政治资本仍是高风险押注。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/04/ai-pacs-spent-millions-trying-to-shape-congress-heres-how-they-fared/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Google拟关闭限制AI学校的搜索服务，遭政界反对",
+                "summary": "Google计划对限制学生使用AI的学校关闭其Search服务，纽约市长Zohran Mamdani与前FTC主席Lina Khan等人士批评此举可能构成市场胁迫。1项平台政策正把教育AI治理推向审查与反垄断争议，企业采购需预留合规弹性。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://techcrunch.com/2026/11/04/google-faces-backlash-for-plan-that-would-turn-off-search-for-schools-that-restrict-ai/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Nexus Mods强制新模组披露AI使用，重塑游戏内容规则",
+                "summary": "全球规模最大的PC游戏模组平台Nexus Mods开始要求新上传模组强制披露AI使用情况，未标明生成或修改内容来源的作品可能受限。1个头部平台率先建立内容标签，意味着AI生成内容的披露标准正从倡议转为平台准入规则。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/games/1026085/nexus-mods-ai-disclosures"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Uber季度仅4单由AI代理完成，Agent商业化仍远未兑现",
+                "summary": "Uber披露，2026年第三季度最繁忙的一周仅有4名用户通过第三方AI代理叫车，显示代理式交易尚未形成规模化需求。当前市场高估了Agent对既有平台入口的替代速度，服务商必须先用可量化收益证明自动化价值，而非只展示技术演示。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://www.theverge.com/transportation/1026306/uber-ai-agents-q3-earnings-disintermediation"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Netflix推出AI发现页，按用户当下心情生成观看推荐",
+                "summary": "Netflix上线实验性AI Discover标签页，首个功能可根据用户当前心情生成影视推荐，把内容发现从长期观看历史扩展至即时意图。该1个新入口强化了生成式推荐在消费平台的应用，但能否提升留存仍取决于推荐准确度及用户授权范围。",
+                "source": "The Verge",
+                "url": "https://techcrunch.com/2026/11/03/netflixs-new-ai-discover-tab-helps-you-find-something-to-watch-based-on-your-mood/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "AT&T智能安防接入Gemini for Home，扩展家庭AI入口",
+                "summary": "AT&T宣布其Connected Life智能家居安防系统接入Gemini for Home，把生成式AI能力带入家庭安全和联网设备场景。此次1个运营商级平台落地表明，AI助手竞争正从独立应用转向硬件、账户与家庭数据的组合入口。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/tech/1026787/att-gemini-for-home-connected-life-security-system"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Nothing预告12月发布首款无屏AI设备，具体定位仍未知",
+                "summary": "Nothing CEO Carl Pei表示，公司首款AI设备将于2026年12月发布，新机采用无屏设计，但截至11月4日尚未公布具体品类与参数。提前1个月预告可强化市场关注，不过缺乏清晰使用场景时，硬件创新仍难转化为消费级AI入口。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1026586/nothing-screen-free-ai-device-carl-pei"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "ChatGPT上线动态GIF生成，图像模型版本推进至2.6",
+                "summary": "OpenAI为ChatGPT加入动态GIF生成能力，用户既可通过文字提示制作，也可上传照片生成动画，相关更新随Images 2.6推出。1项多媒体能力进入通用聊天入口，意味着图像模型竞争正从静态输出扩展到轻量动态内容生产。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1026474/openai-chatgpt-animated-gifs-images-2-6"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "腾讯混元大模型正式发布，股价单日上涨6%创三周新高",
+                "summary": "腾讯正式发布混元AI大模型，消息推动公司股价单日上涨6%，并触及近3周高位。模型与资本市场同步获得关注，显示中国头部平台正试图通过基础模型与云服务扩大AI生态；不过材料未披露完整基准，最终竞争力仍取决于调用成本和开发者采用。",
+                "source": "Investing.com / 京报网",
+                "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTFBOSzVZRHFVTS1vVDZsb3RaUElVdjB3c28zUF9NUWVhY0UyM1lUUVIzeHR1NVV3cFhvaFRQdnhYR1o2QUF6NVpUREJWVzdRZ3NiWUg5d2UxNE1jeFBrci00U0xJd2c1MlNWRXZQNTF3dGU?oc=5"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "360发布元认知模型，瞄准AI产业应用交付瓶颈",
+                "summary": "360在乌镇峰会发布1款元认知模型，重点处理AI产业应用中的交付与落地难题，主攻方向由单纯生成能力转向任务完成和结果交付。国产大模型厂商开始强化元认知与产业闭环，但缺少公开基准，客户续费与部署成本将决定其真实价值。",
+                "source": "品玩 / 中国经营网",
+                "url": "https://news.google.com/rss/articles/CBMiSEFV3lxTE95ZXZZRVEwbGxTQXhpc29VMnJialctVmdWT21OQ0Y4SDNxMDlsMjllNjBpRmNOaUduY0NIbFh2UDYtbUpiaUNPSA?oc=5"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "商汤发布SenseNova 6.8 Flash，强化企业级任务交付",
+                "summary": "商汤发布SenseNova 6.8 Flash，将产品定位从生成内容推进到企业任务可交付，并聚焦更低推理成本和稳定执行。版本号6.8是此次更新的核心标识，反映国产模型竞争已进入性能、成本与落地效率综合比拼，而非只追逐参数规模。",
+                "source": "证券之星",
+                "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1EbFlwRkZ3WGEwTVppbWpnRHZuQ3IxR21qRXBJZjNUQjlWbkltTkxGTmJ5UWlqcm1IdVlIMEItQmlsOFdFR3Z6QkJZejl1T0FjWXFBTXUxaURJb2YwMUU1Rg?oc=5"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "小鹏联合高校发布GroundingPI，感知跑分超过GPT-6 Astra",
+                "summary": "小鹏联合北京大学、香港大学发布多模态感知模型GroundingPI，公开报道显示其感知跑分超过GPT-6 Astra。汽车厂商将外部通用模型能力转化为具身感知成果，说明垂直模型竞争已进入统一基准阶段，但实际落地仍取决于车端算力与安全验证。",
+                "source": "凤凰网",
+                "url": "https://news.google.com/rss/articles/CBMiUkFVX3lxTFBnQXVnVVZJQ19sQURKblpXMmtQbmtsbk1Xejl0X0lDQmFiR0lrYUJrSmFyOXJWcFJBN21mWnZCaF9mR3JZWjN0ek1sOGtpYjk0UWc?oc=5"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Anthropic研发FlashProve，为大模型身份验证提供新方案",
+                "summary": "Anthropic正在研发名为FlashProve的1套身份验证系统，允许用户检查某条AI响应是否确实来自其声称的模型。该方案针对冒名模型、代理劫持和API响应伪造等风险，若能形成通用标准，将为Agent生态补上关键可信层。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/03/anthropic-is-working-on-a-system-to-prove-ai-models-identity/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Meta收购AI编程公司Conductor，引入多代理协作能力",
+                "summary": "Meta收购AI编程初创公司Conductor，交易金额尚未披露；后者可让软件工程师并行部署多个代理，分别处理项目不同工作。1项收购把多代理开发能力带入Meta平台，编程工具正成为科技巨头争夺开发者入口和AI工作流控制权的核心战场。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI推理平台Fal融资13亿美元，估值翻倍至160亿美元",
+                "summary": "成立5年的AI推理基础设施公司Fal完成13亿美元融资，由Bessemer领投，公司估值翻倍至160亿美元。巨额资本押注说明模型调用需求快速增长，但推理层同时面临云厂商降价和开源替代压力，收入质量将决定其高估值能否维持。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/03/ai-inference-startup-fal-doubles-its-valuation-to-16b-as-demand-surges/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Ballistic Ventures拟募资4.9亿美元，押注AI安全热潮",
+                "summary": "专注网络安全的Ballistic Ventures计划募集4.9亿美元，包括3.6亿美元旗舰基金和1.3亿美元后续基金，押注AI驱动的安全需求增长。资金规模显示投资人正把AI安全视为独立投资赛道，但模型攻击面扩大也会同步抬高产品验证门槛。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/03/ted-schleins-ballistic-ventures-seeks-490m-for-new-funds-amid-ai-driven-cybersecurity-boom/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Anthropic披露Linux系统级高危漏洞，AI安全再受关注",
+                "summary": "据智源社区报道，Anthropic团队披露了1项影响Linux系统的高危漏洞，并称相关工作与模型发布同步完成。该案例表明头部模型公司正把系统安全研究延伸至基础设施层，但公开材料缺少漏洞编号和修复细节，行业仍需更透明的披露标准。",
+                "source": "智源社区",
+                "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1adS1wR1VYYWN4RDJXdGwwN1NDVm5ob0R1VzRha2VNMUI0N3FoRUZEeFhXNktzOXdzR3pNQkR4QnRTTHRUbS1fVQ?oc=5"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "反向博弈理论用于约束强模型，AI对齐引入激励设计",
+                "summary": "MIT Technology Review介绍1套“反向博弈理论”机制，通过设计奖励与约束，让强大模型倾向于遵守指定行为，而不是仅依赖训练阶段的人类反馈。该思路把对齐扩展至部署环境，但激励漏洞也可能诱导模型钻规则空子，仍需独立审计。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/11/03/1147934/reverse-game-theory-mechanism-design-ai-alignment/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "中国AI推理数据量首次超过训练数据，需求转向应用侧",
+                "summary": "万联证券行业跟踪称，中国人工智能推理数据量首次超过训练数据量，产业需求重心正由模型训练向应用推理延伸。这一结构性拐点意味着算力采购、芯片调度和推理优化将获得更多预算，但报告未披露样本规模，仍需警惕口径差异。",
+                "source": "万联证券 / 新浪财经",
+                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA2OE1oTWNSMXZCejU3a2wxYWNaQ3JYb1FXRXViTDhKR3NEZS1saG1COWxiazhDZ0Z3WWJ6S0c3aU1jWTd2X0RtXzFGaDc5VnpjVF9ueWZlcnVJdVA1NTdYSWEzZEJxUV9ScnJiUDNjRW8tanpabG85MGE2OTJJMTA?oc=5"
+            }
+        ]
+    },
+    {
         "date": "2026-11-04",
         "items": [
             {
