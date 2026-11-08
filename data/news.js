@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-11-08",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "美国中期选举改写AI政策预期：未来两年监管与数据中心阻力上升",
+                "summary": "美国2026年中期选举后，民主党取得历史性胜利，AI监管与数据中心扩张面临更强政治阻力，多家媒体判断行业将经历约2年的政策摇摆。Meta也警告，选民针对算力项目的反弹可能拖延AI投资。对企业而言，合规、能源和社区许可已从软性成本变成扩张硬约束。",
+                "source": "TechCrunch / The Verge / MIT Technology Review",
+                "url": "https://techcrunch.com/2026/11/07/after-the-midterms-things-are-looking-rocky-for-elon-musk-and-data-centers/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "英伟达对华芯片交易疑点曝光：至少1家空壳办公室获许可",
+                "summary": "美国政府此前允许英伟达向中国出售AI芯片，但交易接收方疑似一家至少1家几乎没有实际运营的空壳办公室，商务部与英伟达均被质疑未充分尽调。事件显示，现有出口许可机制仍可能被用于规避针对先进芯片的监管。对合规团队而言，最终用户与实际用途核查已成为核心风险点。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1029483/nvidia-ai-chips-china-blacklist-government"
+            },
+            {
+                "tag": "政策监管",
+                "title": "中国情报机构被指招募1名高管刺探黄仁勋，商业间谍风险升温",
+                "summary": "美国情报备忘录称，中国国家安全部曾招募Megaspeed女高管Alice Huang，试图刺探英伟达CEO黄仁勋及芯片供应链信息，1名科技企业高管由此进入国家安全调查视野。事件凸显半导体行业人才流动与商业秘密保护的敏感度，跨境高管合作和AI芯片情报可能面临更严格审查。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://techcrunch.com/2026/11/07/chinese-exec-was-recruited-to-spy-on-nvidia-ceo-according-to-us-intelligence-memo/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "OpenAI再融资110亿美元：估值升至1.25万亿美元，2027年考虑IPO",
+                "summary": "OpenAI据报完成尚未正式收口的融资轮，新增资金110亿美元，估值达到1.25万亿美元；公司总裁格雷格·布罗克曼同时表示，公司最快可在2027年达到IPO准备状态。巨额资本将继续支撑模型、算力和人才投入，但也把上市前收入增长与治理透明度推到聚光灯下。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1029380/openai-1-25-trillion-investment-valuation"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Palo Alto拟5亿美元收购Clutch：AI代理安全赛道估值跃升",
+                "summary": "Palo Alto Networks正洽谈以5亿美元收购AI代理安全公司Clutch，后者由Lightspeed和SignalFire支持，最近一次估值仅8500万美元，潜在交易溢价接近5倍。企业安全巨头并购标的价格明显高于一级市场估值，说明代理身份、权限和运行行为监控正成为网络安全的下一个高价值入口。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/05/palo-alto-networks-in-talks-to-buy-ai-agent-security-startup-clutch-for-500m/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "OpenAI推出网络安全专用模型：实验室AI防护能力再升级",
+                "summary": "OpenAI发布1款新的网络安全专用模型，针对AI实验室保护数字基础设施的任务提供专门能力，但公开报道尚未披露完整基准成绩。与此同时，数百台暴露公网的Artex服务器正被用于渗透测试，攻防两侧同步升级。对安全团队而言，模型能力必须与资产隔离和持续验证结合才能形成有效防线。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/05/openai-released-a-new-cybersecurity-model-is-that-enough/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "百台Artex渗透测试服务器暴露公网：AI黑客工具链风险扩散",
+                "summary": "安全研究人员发现数百台运行Artex渗透测试工具的服务器直接暴露在互联网，任何访问者都可能利用其测试或攻击目标，形成大规模AI辅助攻击面。该事件表明，合法安全工具正被自动化犯罪快速武器化。企业应清理公网测试环境，并为高危端口、凭证和扫描行为建立持续监控。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/06/hundreds-of-artex-ai-hacking-tools-found-publicly-exposed-to-the-web/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "企业AI支出增速降至零附近：使用量攀升却难改预算停滞",
+                "summary": "Ramp支出数据呈现明显背离：企业AI使用量继续增长，但整体支出增速已降至约0%，尤其在Anthropic临近IPO之际，大客户通过降价和成本控制抑制扩容。调用量增长已无法直接转化为预算增长，AI公司必须证明付费需求与单位经济性，而非依赖流量和估值叙事。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/06/ramp-data-shows-ai-spending-stalling-just-as-anthropic-nears-its-ipo/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "谷歌接手Crusoe怀俄明数据中心：超大型AI算力项目受挫",
+                "summary": "谷歌收购Crusoe旗下陷入困境的怀俄明数据中心项目，交易金额未披露，涉及至少1处面向超大规模AI训练的设施。资产转手凸显大型算力项目在并网、审批和融资上的持续难度，也说明科技巨头正通过接手成熟资产缩短建设周期，而非从零开发全部基础设施。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/06/crusoe-sells-troubled-wyoming-data-center-project-to-google/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Qwen3.5 9B无审查版发布：蒸馏DeepSeek-V4-Pro，仅3%提示拒答",
+                "summary": "Qwen3.5 9B无审查版本上线，模型据称蒸馏自DeepSeek-V4-Pro，并在100条测试提示中仅拒绝3条，拒答率约为3%。这一结果强化了开放权重模型在低资源部署和减少安全拒答方面的吸引力，但对开发者而言，版本来源、基准复现与合规责任仍需逐项验证。",
+                "source": "Pasquale Pillitteri / Google News",
+                "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNNUJNa0F6c3doSTVDcXFmMndBMDBXZ1REOXpqNFdiQjVwOU5Wc3pCWTZ5dGtHd2VRcEU2TDh2eG1XeWFTX09YUlZ1bEdTb0EwMWZYX1l6MU5OemdhdFR3elpMVFVPdENCbmliTzdfaURWMVRDUFZpdGJ0clkxclJMaWhhLWJVLVNrR0RQc09B?oc=5"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Meta Muse推出Spaces与视频化身：AI代理进入可定制协作阶段",
+                "summary": "Meta为Muse代理新增2项核心能力：可创建定制化应用式Spaces，以及通过可自定义动画化身进行视频通话，美国用户已开始使用。Meta还计划推出类似电子宠物的配套可穿戴设备。竞争焦点正从聊天质量转向长期交互、个性化和多终端入口，代理能否形成留存将比演示效果更重要。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://techcrunch.com/2026/11/06/meta-introduces-spaces-a-new-way-to-collaborate-with-your-muse-agent/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "32MB语音模型同时生成语音和音乐：端侧多模态能力再压缩",
+                "summary": "初创公司Underdog展示1款仅32MB的语音模型，在极小体积下同时支持语音与音乐生成。该指标说明端侧音频模型正从单一识别任务转向统一生成，但公开演示尚未覆盖延迟、稳定性及多语言等关键指标。对开发者而言，压缩红利已经出现，真实端侧体验仍需独立测试。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/06/underdog-shows-off-a-32mb-speech-model-in-new-demo/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Physicl融资1000万美元：用商品数据缩小机器人仿真到现实鸿沟",
+                "summary": "机器人数据公司Physicl完成1000万美元融资，试图把其电商商品数据管线改造成高保真物理世界数据，用于缩小仿真训练与真实机器人执行之间的差距。此举把消费互联网积累的数据资产转化为物理AI基础设施，若验证有效，将提升机器人模型迁移效率并降低真实世界采集成本。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/06/physicl-raises-10m-to-make-the-digital-world-real-enough-for-robots/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Airbnb明年上半年推出AI旅行代理：行程比价与订房将一体化",
+                "summary": "Airbnb宣布将在2027年上半年推出AI旅行代理，覆盖行程规划、选项比较、预订管理和出行协助等完整链路，服务预计分阶段上线。平台掌握大量房源、价格与用户偏好数据，优势不只是生成答案，而是直接完成交易。旅行代理竞争将由聊天入口转向可执行、可承担责任的预订闭环。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/05/airbnb-says-its-launching-an-ai-travel-agent-in-the-first-half-of-2027/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "亚马逊Alexa开放短信购物：数百万用户将获AI导购入口",
+                "summary": "亚马逊在封禁Meta Muse后，改为允许用户通过短信调用Alexa完成购物，官方称该功能将在未来数周覆盖数百万用户。此举把通用AI助手争议转化为入口竞争，Alexa试图以交易闭环守住购物场景。对商户而言，商品数据、库存和优惠信息的实时质量将决定导购转化率。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/06/after-blocking-muse-amazon-now-lets-users-text-alexa-to-help-them-shop/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Claude上线个人财务工具：可连接银行与银行卡分析支出",
+                "summary": "Anthropic为Claude推出Personal Finance工具，用户可通过Plaid连接2类账户，即银行账户与银行卡，再以自然语言查询消费和支出情况。金融代理由此进入高敏感度数据场景，准确性、权限隔离和用户授权将成为体验底线。对Claude而言，分析能力只是起点，支付与建议功能仍需严格风控。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/05/claude-can-now-analyze-your-spending-with-its-new-personal-finance-tool/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "Axiom Math押注形式化验证：用AI代理拦截数学界的低质证明",
+                "summary": "面对AI生成数学证明激增、错误和低质量内容泛滥的问题，初创公司Axiom Math让AI代理采用形式化验证流程检查证明，避免仅依靠模型互评。其1套自动审查方案把数学正确性从生成问题转向可执行证明问题。若验证成本持续下降，将为科研代理建立更可靠的质量门槛。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/05/axiom-math-wants-to-keep-ai-slop-out-of-mathematics/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "德州曾是AI数据中心增长极：能源与政治风险或令扩张失速",
+                "summary": "德州已从1个新兴地区成长为美国增速最快的AI数据中心市场，并承接多家科技巨头的大型算力项目，但能源供应、电网约束和地方政治反弹正在削弱其优势。算力扩张已从土地和资本问题转变为公用事业治理问题，能源合同将成为数据中心选址与融资的核心变量。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/11/04/1148043/texas-was-the-new-epicenter-of-the-ai-data-center-buildout-that-might-be-kaput/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "润达医疗联合华西、华为发布3类医疗智能体：临床场景加速落地",
+                "summary": "润达医疗联合四川大学华西医院与华为发布3类医疗智能体，推动大模型能力进入医院具体业务流程，而非停留在问答演示。合作同时覆盖医疗数据、临床场景和算力平台，体现医疗AI由单点模型向多方协同交付转变。能否形成可审计、可追责的临床价值，将比参数规模更重要。",
+                "source": "新浪 / Google News",
+                "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBkUTZlZnZsVjdTY3p2OEhVWi1vMXlnVTJlaFJ0U2Z5RE5heVR6cEhJbGhhd0VweEE1Q3FrbjVQVnk2UWdvSHVjQ25VQnNPcldpcWxFb052UEJPS3c4YjJyTjdjS2g0Q0lMc0dNTk80S0hodw?oc=5"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "物理AI产业仍处早期：三大瓶颈制约机器人从仿真走向现实",
+                "summary": "行业分析指出，物理AI虽持续升温，但至少3类瓶颈仍未解决，包括高质量真实世界数据、仿真到现实迁移，以及规模化部署成本，产业整体处于早期爬坡阶段。机器人厂商的竞争重点正从原型演示转向数据闭环和单位任务经济性，短期估值预期可能快于商业化兑现。",
+                "source": "澎湃新闻 / Google News",
+                "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFB0clJhT25BRlVlVWtMaDU4VGpIQnFFNXNsOGFpWDNVUlM3cUEyVWV5Z3ZhLTBvREhmRzFoR2UyZERnSGp0VXBPT2tTT1lMdHlSSHdPVXNJQWJsTUtEdOUNDSg?oc=5"
+            }
+        ]
+    },
+    {
         "date": "2026-11-07",
         "items": [
             {
@@ -3754,144 +3899,6 @@ const AI_NEWS_DATA = [
                 "summary": "Epoch AI发布的研究报告评估了AI自动化AI研发的现状，结论是当前AI尚无法可靠地自动化自身的研究与开发过程。AI在特定任务上表现出色，但在原创性假设生成、跨领域类比和长期研究战略规划上仍显著依赖人类。该研究为\"AI将自我迭代\"的乐观论调提供了重要的实证降温。",
                 "source": "Epoch AI",
                 "url": "https://epoch.ai/publications/innovationeval"
-            }
-        ]
-    },
-    {
-        "date": "2026-10-09",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "OpenAI安全研究员发公开信反驳解雇理由，警告行业\"寒蝉效应\"",
-                "summary": "OpenAI三位被解雇的安全研究员在公开信中反驳公司指控，称其因\"处理敏感信息不当\"被开除的说法站不住脚，同时警告此举将对整个AI安全社区产生\"寒蝉效应\"。这是继去年多起安全团队动荡后，OpenAI面临的又一次重大人才危机。该事件暴露了AI实验室在安全优先级与商业目标之间的深层矛盾，对于从业者而言，安全与合规团队的话语权正在被持续压缩。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/08/fired-openai-safety-researchers-dispute-misconduct-claims-warn-of-chilling-effect/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Anthropic更新使用政策：禁止滥用模型和选举干预",
-                "summary": "Anthropic宣布更新Claude使用政策，首次明确禁止用户\"反复滥用\"模型及选举干预行为，违规将追踪到账户层面，标志其首次在政策层面将模型滥用列为重点违规类型。此举意味着Anthropic对模型滥用采取比以往更严格的执法立场，也预示着在大选年AI平台正面临更强的监管压力，为行业提供了AI合规使用的新标杆。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/10/08/anthropic-changes-usage-policy-to-ban-model-abuse-and-election-interference/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "USA Today加入出版商阵营，起诉OpenAI侵犯版权",
-                "summary": "USA Today集团及旗下多家地方报纸向法院提起诉讼，指控OpenAI在训练数据中\"大量复制\"受版权保护的内容。此前Hachette等出版商已对OpenAI发起类似诉讼，若OpenAI败诉可能面临巨额赔偿。该案件将成为AI版权争议的里程碑式判例，直接影响未来大模型训练的数据采购策略，每一位依赖AI内容生成的从业者都应密切关注此案走向。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/1008198/usa-today-openai-copyright-lawsuit"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Google Gemini企业版全面升级为AI Agent，可自主跨应用执行任务",
-                "summary": "Google在I/O大会上正式宣布将Gemini打造为可跨企业应用自主执行复杂任务的AI Agent，支持在Gmail、Slack、Salesforce等应用间协同工作。该工具被定位为微软Copilot的直接竞争对手，预计年底前向企业用户开放。随着头部厂商纷纷推出端到端Agent平台，AI从\"Copilot辅助工具\"向\"自主执行者\"的范式转移已全面加速，企业AI应用格局正在被重写。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/10/08/google-brings-agentic-ai-to-gemini-starting-with-businesses/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic面向开源项目推出免费AI代码安全扫描工具",
-                "summary": "Anthropic发布OSS Scan服务，利用Claude模型帮助开源项目免费检测代码库中的安全漏洞，成为继GitHub Copilot后又一款面向开发者的大规模AI安全工具。该服务直接切入开源生态中最薄弱的安全环节，有望显著提升整个行业的安全基线，也意味着Anthropic正从模型提供商向开发者生态平台深度延伸。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/1008521/anthropic-open-source-oss-scanner"
-            },
-            {
-                "tag": "应用落地",
-                "title": "OpenAI年收入较预期缺口达200亿美元，AI变现难题显现",
-                "summary": "据多方报道，OpenAI年度化收入约为500亿美元，而非此前盛传的700亿美元，缺口高达200亿美元。在算力成本高企、竞争加剧的背景下，AI商业化变现远未达到外界的高期望值。这对整个AI行业的估值逻辑和融资环境都是一个警示信号：即使是最头部的AI实验室，也难以在短期内实现规模与利润的平衡，投资人需重新校准对AI商业化的时间预期。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/08/openais-revenue-is-reportedly-20-billion-less-than-previously-projected/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Manus完成超5亿美元首轮融资，脱离字节跳动后获腾讯、红杉支持",
-                "summary": "中国AI Agent公司Manus宣布完成超过5亿美元首轮融资，由博裕资本和IDG Capital领投，现有股东腾讯、红杉中国（HSG）等跟投，这是其与字节跳动分拆后首次对外融资。Manus此轮估值规模在国内外AI创业公司中处于领先梯队，显示出资本对中国市场AI Agent赛道的持续押注，也意味着字节系AI资产的独立化进程进入新阶段。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/08/chinas-manus-raises-over-500m-in-first-funding-round-since-split-with-meta/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "LMArena估值10个月翻倍至31亿美元，完成2亿美元融资",
-                "summary": "全球最受欢迎的AI模型评测平台LMArena背后的公司宣布完成2亿美元融资，由Lightspeed和Khosla领投，估值从17个月前的约16亿美元飙升至31亿美元。该平台月活用户超过2000万，已成大模型厂商发布成绩的必争之地，成为AI行业公认的权威Benchmark提供方。此轮融资后其估值增速在整个AI行业中名列前茅，显示AI基础设施层的投资热度仍在持续。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/08/popular-ai-leaderboard-arena-nearly-doubles-valuation-to-3-1b-valuation-in-10-months/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Nous Research确认估值达15亿美元，推商业化AI Agent产品",
-                "summary": "Nous Research宣布完成9000万美元B轮融资，估值达15亿美元，成为全球估值最高的开源模型创业公司之一。其推出的Hermes Agent正式面向企业用户开放，标志着开源模型社区从纯研究向商业化落地迈出关键一步。随着开源AI Agent在性能和成本上的竞争力快速提升，传统闭源模型厂商将面临更大的价格和生态压力。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/07/nous-research-confirms-it-hit-1-5b-valuation-launches-ai-agents-for-business-users/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta Muse AI月内完成移动端到iPad全平台覆盖",
-                "summary": "Meta面向消费者的AI Agent Muse在发布仅一个月后登陆iPad，并同步扩展至Android平台此前覆盖iPhone。此举表明Meta正以极快速度推进Muse的平台扩张，目标是在苹果和谷歌的应用生态中抢占AI Agent入口。该策略与OpenAI的Dots形成正面竞争，消费级AI Agent的平台卡位战正在进入白热化阶段。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/07/metas-muse-launches-on-ipad-just-a-month-after-its-mobile-debut/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "微软发布Surface Laptop Ultra，搭载英伟达AI芯片起售价2499美元",
-                "summary": "微软发布全新Surface Laptop Ultra，起售价2499美元，搭载专为此类设备优化的英伟达AI芯片，并配合重新设计的Windows 11操作系统，内置Copilot等AI功能。这一定价和配置表明微软正全力推动\"AI PC\"概念落地，将AI计算能力下沉至消费级硬件。该产品的市场表现将成为AI PC能否真正进入主流的关键检验。",
-                "source": "TechCrunch AI / finance.sina.com.cn",
-                "url": "https://techcrunch.com/2026/10/07/microsoft-releases-new-nvidia-chip-ai-pcs-with-revamped-windows-11/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Google发布完全离线的AI会议笔记应用，支持端侧转录",
-                "summary": "Google发布一款实验性AI笔记应用AI Edge Foresight，支持在完全没有网络连接的条件下完成会议音频的实时转录。该应用完全运行在设备端，保护商业会议隐私，与Granola等竞品形成直接竞争。离线能力的突破意味着AI应用正在向数据敏感型企业场景深度渗透，端侧AI的商业价值正在被加速验证。",
-                "source": "The Verge AI / TechCrunch AI",
-                "url": "https://www.theverge.com/tech/1007985/google-ai-notetaking-app-transcribe-offline"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "OpenAI为ChatGPT推出全新视觉化界面，引入图片图表交互",
-                "summary": "OpenAI正式为ChatGPT推出全新\"智能界面\"，在回复中引入可交互的图片、图表和按钮，彻底告别纯文本输出模式。这是ChatGPT自发布以来最大规模的一次界面改版，适用于网页、iOS和Android全平台。该更新意味着AI对话正从\"文字问答\"向\"多模态交互助手\"演进，交互体验的竞争将成为留存用户的新战场。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/10/07/chatgpt-is-getting-a-lot-more-visual-with-the-launch-of-a-new-interface/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Liquid AI发布Open d1决策模型：零Token输出、8ms超低延迟",
-                "summary": "Liquid AI发布开源决策模型Open d1，核心创新为零Token输出架构，端到端推理延迟仅8毫秒，专为自动驾驶、金融交易等实时决策场景优化。相比传统LLM基于Token生成的方式，Open d1的跳过生成直接输出决策思路在延迟敏感型应用中具有颠覆性优势。若性能得到验证，将开启\"LLM+实时决策\"的新技术路径。",
-                "source": "SmartHey",
-                "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4tUG9jYl9DdXJNNGQyT2Z5SEpQTUFwb2kwWGtQdUhwZUxHZkVwN2xyN1hRVi11eFpheGQ2RGI4cXA3MkYtaXBMVU1xQk5ENGNJNUtrRExPbGJpTjNmNWc"
-            },
-            {
-                "tag": "行业格局",
-                "title": "SpaceX AI向Omarchy项目注资150万美元计算资源",
-                "summary": "SpaceX AI宣布向Omarchy Linux发行版项目提供价值150万美元的算力支持，Omarchy由知名开发者David Heinemeier Hansson主导，得到了马斯克生态系统的背书。此举意味着开源基础设施正在成为AI巨头战略布局的新棋子，算力资源的分配背后是生态系统的控制权之争，Linux开源社区的格局可能因此生变。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/tech/1008148/spacexai-omarchy-grok-david-heinemeier-hansson"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Anthropic与OpenAI同日发布新品：抢入口与拼低价双线竞争",
-                "summary": "Anthropic和OpenAI在同一天分别发布产品更新：Anthropic推出新版Claude（性能增强），OpenAI上线GPT-5.5，价格大幅下调，两家公司在模型能力和定价两个维度同时展开竞争。这是大模型厂商竞争烈度升级的标志性事件，价格战与性能战同步开打，中小模型厂商的生存空间正被进一步压缩，行业整合信号愈发明显。",
-                "source": "新浪财经",
-                "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNenhoaUJmMzdCQU44Q3M5NEs5dkVqcjRnOW50TW1jcERlWWZwRHE0aC0yZklKMklRNVVEeXZ3a1J0MkljTFFCOU5LT0VFazJDUURhdTVzUXhxenFWc3B3cXRqQWZOZHBWT1NIOUtYSk95SGU5c0JzYnN6YU5pSDhIRE1FWlhqZlJDNGM2QU1XT2xoX19YVXZiWFE1RlZod3BsZDQ5MDM2bU5NZS1FaEJEb1hn"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "生数科技发布Vidu Q4 Preview旗舰模型，定位高表现力视频生成",
-                "summary": "生数科技发布Vidu Q4 Preview预览版旗舰视频生成模型，在动作流畅度、画面一致性和情感表达等维度进行了大幅提升，主打影视级创作场景。随着视频生成赛道竞争加剧（OpenAI Sora、Pika、Runway），生数科技试图以高表现力差异化和中国本土市场为切入点，在全球视频生成市场中争夺一席之地。",
-                "source": "投资界",
-                "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE5sU0xEVFFIWGk3VzZuaEZqQXlFSS1aOS1mOUNYamZjRVZ1ajlxTXVzSVp2a1JGZE50b0hrOVJBSlFYTkpXYnJPZUNKRHJ1QVpNeUVqQU9B"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Cal AI 19岁创始人再创业，AI个人助手项目获千万美元融资",
-                "summary": "Cal AI卡路里追踪应用联合创始人Zach Yadegari（19岁）在卸任后创立全新AI个人助手创业公司，已完成1000万美元种子轮融资。继上一款产品积累数百万用户之后，这位年轻创始人再次获得资本青睐，反映出AI应用层创业的窗口期仍在，年轻人主导的AI消费产品正在打破传统创业路径。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/08/cal-ais-19-year-old-founder-just-raised-10m-for-his-new-ai-startup/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "MIT报告：机器人AI突破短期难以改变普通人生活",
-                "summary": "MIT Technology Review与Aventine联合发布深度调研报告，指出当前机器人领域的AI突破在真实物理世界的落地面临成本、可靠性和安全性等多重瓶颈，近期内不会对普通消费者生活产生实质性改变。报告与当下火热的具身智能投资热潮形成对冲，提醒行业在期待与现实之间仍存在巨大鸿沟。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/10/08/1145923/ai-breakthroughs-in-robotics-wont-change-your-life-any-time-soon/"
             }
         ]
     }
