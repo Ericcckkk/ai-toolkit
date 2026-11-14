@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-11-14",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "美国国会启动英伟达调查，黄仁勋同意作证并面临两项调查",
+                "summary": "11月12日，美国民主党议员启动对英伟达中国销售及其与特朗普政府往来的调查，并致函质疑黄仁勋的安排；黄仁勋随后同意赴国会作证，这已是第2项相关调查。事件把商业芯片出口与国家安全交易推向正式问责，芯片合规不再只是技术议题。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/12/democrats-launch-nvidia-investigation-write-scathing-letter-on-huangs-scheme-with-trump/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "联合航空封禁AI代理订票，航空公司以网络安全为由限制自动化",
+                "summary": "11月12日，联合航空宣布禁止客户使用AI代理预订机票及管理已有预订，理由是此类自动化操作存在网络安全和账户控制风险。这不是对AI应用的全面否定，而是限定高风险交易必须由用户亲自确认，代理经济将面临首类规模化行业准入规则。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/12/united-airlines-blocks-ai-agents-from-booking-flights-citing-cybersecurity-risks/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "英伟达私下确认可追踪出口芯片，议员获技术可行性承诺",
+                "summary": "11月12日，英伟达代表私下向1名伊利诺伊州众议员确认，追踪受出口管制芯片在技术上可行，以回应行业对芯片序列追踪方案复杂度的质疑。内部表态尚未转化为公开部署，政策价值在于为海关执法提供依据，但也可能增加合法用户的合规成本。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "中国顶尖模型依赖禁售英伟达芯片，研究揭示出口管制漏洞",
+                "summary": "11月13日公布的一项研究称，中国部分最先进的AI模型曾使用受到美国出口限制的英伟达芯片训练，显示管制落地与最终算力来源之间存在时间差和交易漏洞。结果将迫使政策制定者从单纯限制芯片出货，转向追踪服务器、云计算网络和采购链条。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Muse向美国商家开放AI外呼，代理电话能力改为付费服务",
+                "summary": "11月12日，Muse开始允许AI代表用户致电美国企业，但这项新增外呼能力采取付费模式，而非免费进入其代理工具链。产品把语音代理从内部演示推进到真实商业联络场景，也把接通率、授权边界和呼叫成本变成服务商必须解决的核心指标。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/12/muse-can-now-place-calls-to-u-s-businesses-if-you-pay/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Nectar推出品牌营销代理，覆盖创作者发现、联络与合作3类流程",
+                "summary": "11月12日，Nectar发布面向品牌的1款AI代理，可自动完成创作者发现、联络沟通和合作管理等3类工作，将影响者营销从人工检索转向持续运营。代理能否替代判断质量与品牌安全，仍取决于数据覆盖和错误触达责任，行业价值大于短期替代人数。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/12/nectar-launches-an-ai-agent-to-automate-creator-discovery-and-outreach-for-brands/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "谷歌推出Gemini 4 Hydrogen，复杂搜索与开发工具同步升级",
+                "summary": "11月12日，谷歌将Gemini 4 Hydrogen接入Search AI Mode，用于理解包含多重约束和上下文关联的复杂问题，并同步更新免费开发工具。此次升级以模型版本4为核心抓手，但素材未披露基准分数，搜索效果能否真正提升仍要取决于后续用户测试与引用准确率。",
+                "source": "The Verge AI / TechCrunch AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "ChatGPT Wallet开放代理支付，OpenAI补齐智能体交易闭环",
+                "summary": "11月13日，OpenAI推出1款ChatGPT Wallet，允许Dots智能体代表用户挑选商品并完成结账，首批向美国Pro订阅用户限量开放。钱包层把模型从提供建议推进到执行交易，但代理型支付也将资金授权、退款责任和误操作保护推到产品核心。",
+                "source": "The Verge AI / TechCrunch AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1033425/openai-chatgpt-wallet"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Claude推出Duet协作智能体，主打边工作边辅助与任务执行",
+                "summary": "11月13日，Anthropic公开测试Claude Duet，这1款智能体可在用户工作时主动协助整理信息、撰写内容和执行任务。产品体现交互范式从聊天窗口转向实时协作，但频繁提示和主动介入也可能打断注意力，效率提升取决于代理能否准确判断介入时机。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1032518/claude-duet-ai-agent-hands-on"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "亚马逊筹划全球商品数据索引，AI购物搜索争夺上游入口",
+                "summary": "11月13日报道称，亚马逊计划建设覆盖全网商品的1个数据图谱，把各类电商和非亚马逊零售商品纳入统一索引，供AI搜索与购物发现使用。此举意在把亚马逊从交易平台升级为商品数据入口，但数据授权、实时价格和商家竞争将成为规模化障碍。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/tech/1033697/amazon-world-product-graph-ai-search"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "百度发布大模型交易平台词元所，首月日均调用超7000亿词元",
+                "summary": "11月13日，百度发布大模型交易平台“词元所”，主打验真与征信2项能力，首月日均调用量超过7000亿词元。平台试图把模型调用从价格竞争转向质量可核验、供应商可追踪的批发市场，行业将更关注交易标准而非单纯降价。",
+                "source": "电子工程专辑EE Times China / 智慧城市行业分析",
+                "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFAyM055Q1pWTld2Z0EyNkdOTFhXdmtIcTlkOGFHa1NZYkNHTXpnR3FPdTN0OTczbWlmMDhqdXZad3NzbzBoSDFrRHhlWGhwNnZYTUpB?oc=5"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "大晓发布ACE-CaP-0，具身模型任务探索从小时级降至分钟级",
+                "summary": "11月12日，大晓发布具身模型ACE-CaP-0，将机器人任务从探索、验证到执行的时间由数小时压缩至分钟级，并面向通用模型提供操作能力底座。效率提升决定具身智能能否进入真实生产环境，但泛化稳定性与硬件成本仍需经过大规模部署验证。",
+                "source": "雷峰网",
+                "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE1VRzY5R3gwSDlwdnM0VzJ2NC1zaFlzM2Rna2Rid0prMldfVEVrSXNNS1BPQW9oYVRtNmFWZ0s5SFBpUlRHZkpfSllOTy1WZkl0TGVhYV84TlJvQ0l2VWZKUjlpYU9ZRzQ?oc=5"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "腾讯混元推出Hy Realtime语音模型，交互延伸至唱歌与任务执行",
+                "summary": "11月13日报道，腾讯混元发布1款Hy Realtime语音模型，使AI可在实时对话中进一步完成歌唱和任务执行，并接入混元产品体系。实时语音正从“能说”转向“边听边做”，但低延迟、打断处理和复杂环境识别决定其能否成为大众应用入口。",
+                "source": "驱动之家",
+                "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxE9FTS0wNmFlSUhVZ0prMFhMbmhVNzdoQ1prRkVhbkdyMlkxTmVuQ3pELVBqUmQ1VHVOMnZ4eVYyaHV3NnVSNnBtdkNreGlXcS1tVmJfbFgzSlk?oc=5"
+            },
+            {
+                "tag": "行业格局",
+                "title": "英伟达CEO黄仁勋离职，数百亿美元AI生态布局面临重估",
+                "summary": "11月13日报道称，黄仁勋离开英伟达后，创业公司和风投机构开始重新评估由其主导的数百亿美元AI创业投资。芯片、模型与初创企业原本围绕同一技术领袖形成的资本网络将被打散，英伟达下一阶段更依赖组织和资本市场的制度化能力。",
+                "source": "TechCrunch AI / The Verge AI",
+                "url": "https://techcrunch.com/2026/11/13/jensen-huangs-departure-blasts-big-hole-in-ai-startup-funding-vcs-and-founders-say/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "英伟达开源支持生变，Hugging Face承诺继续押注开放生态",
+                "summary": "11月12日，黄仁勋离职后，英伟达对开放AI的支持前景引发担忧，Hugging Face首席执行官则承诺继续投入开放模型生态。相关争议还牵涉英伟达约12亿美元的Hugging Face收购安排，开源战略若无稳定治理支持，资本收购并不等于生态承诺。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/12/hugging-face-ceo-vows-to-keep-fighting-for-open-source-ai-after-jensen-huangs-exit/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "LangChain估值升至30亿美元，智能体平台客户达到7000家",
+                "summary": "11月13日，AI代理初创公司LangChain估值达到30亿美元，并称其模型无关的智能体管理平台LangSmith已服务7000家客户。公司不直接绑定单一模型，以托管和观测层切入企业工作流，这反映资本正从基础模型转向跨模型应用基础设施。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Nebius拟投入400亿美元扩张AI基础设施，以预付款和贷款筹资",
+                "summary": "11月12日，Nebius计划投入400亿美元扩张AI基础设施，并尝试通过客户预付款和贷款组合筹资，以验证“新云”重资产模式。巨额资本开支反映算力供给仍稀缺，但融资成本、交付延迟和客户集中度将决定其能否复制云巨头路径。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "软银预购燃气轮机损失超30亿美元，AI数据中心能源瓶颈加剧",
+                "summary": "11月12日报道，软银为满足AI数据中心电力需求而预购燃气轮机，相关交易造成超过30亿美元损失。案例表明模型扩张已从GPU采购传导至发电设备，电力和天然气供应链正成为AI投资的新瓶颈，基础设施估值不能再只看芯片成本。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/12/softbanks-billion-dollar-loss-may-have-put-a-cap-on-ais-natural-gas-ambitions/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "三大AI聊天机器人推荐假零售网站，购物引用风险暴露",
+                "summary": "11月13日发布的一项研究显示，Gemini、ChatGPT和Perplexity等3类AI聊天机器人，在商品研究场景中可能推荐仿冒零售网站或错误卖家。研究将购物推荐从“搜索质量”问题升级为信任与交易安全问题，平台必须加强商家验证并明确引用责任。",
+                "source": "The Verge AI",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1032020/gemini-chatgpt-perplexity-shopping-test-risky-fake-websites-citations"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "脑机接口试验提出更强自主与更少保密两项要求，伦理规则面临调整",
+                "summary": "11月13日报道，脑机接口试验参与者提出2项核心诉求，即获得更强的自主控制权，并减少研究者与受试者之间的保密安排。志愿者态度正在推动伦理治理从机构单方设计转向参与者共同决策，这会直接影响数据归属、退出机制和临床试验审批。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/"
+            }
+        ]
+    },
+    {
         "date": "2026-11-12",
         "items": [
             {
@@ -3609,296 +3754,6 @@ const AI_NEWS_DATA = [
                 "summary": "AI监控摄像头公司Flock正面临 ACLU（美国公民自由联盟）和多位国会议员的持续施压。争议核心在于Flock的ALPR（自动车牌识别）系统是否构成过度监控。Flock CEO公开表示系统\"仅检测枪声\"，但其网站描述与此矛盾，进一步加剧信任危机。此案折射出AI监控技术在商业化进程中隐私合规风险的普遍性，监管框架亟待完善。",
                 "source": "TechCrunch AI / The Verge",
                 "url": "https://techcrunch.com/2026/10/14/flock-ceo-says-its-microphones-detect-just-gunshots-its-website-says-different/"
-            }
-        ]
-    },
-    {
-        "date": "2026-10-15",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "Anthropic季度营收跃升至168亿美元，IPO前估值飙升",
-                "summary": "据彭博社10月14日报道，Anthropic在IPO前的最后一个季度营收达到168亿美元，呈现爆发式增长态势。这一数字标志着Claude系列模型背后公司已跻身顶级AI商业化阵营。对于正在筹备上市的Anthropic而言，强劲的营收数据将为其IPO定价提供有力支撑，同时也预示着AI行业头部玩家的变现能力已得到市场验证，竞争格局将进一步向头部集中。",
-                "source": "Bloomberg",
-                "url": "https://www.bloomberg.com/news/articles/2026-10-14/anthropic-revenue-jumps-to-16-8-billion-in-quarter-before-ipo"
-            },
-            {
-                "tag": "政策监管",
-                "title": "多州检察长联合起诉OpenAI，指控其用户安全措施不力",
-                "summary": "据Politico 10月14日披露，一个跨党派州检察长联盟已对OpenAI提起诉讼，指控该公司未能充分保护用户安全。这是美国各州对AI公司监管收紧的最新信号，反映出联邦层面立法停滞背景下，地方政府正在主动填补监管空白。随着诉讼推进，OpenAI可能面临更严格的合规要求和潜在的产品整改压力。",
-                "source": "Politico / Hacker News",
-                "url": "https://www.politico.com/news/2026/10/14/openai-user-safety-lawsuits-01119138"
-            },
-            {
-                "tag": "行业格局",
-                "title": "FBI逮捕OpenAI沙特籍员工，涉嫌在机密会议室安装窃听设备",
-                "summary": "据Ars Technica 10月报道和司法部官方公告，FBI已逮捕一名沙特籍OpenAI员工，该员工被指控在OpenAI顶级机密会议室的纸巾盒中安装隐蔽录音设备。这是AI公司内部安全漏洞首次以刑事案件形式曝光，引发业界对AI企业物理安全防护的高度关注。此事件可能促使各大AI实验室重新审视访客管理和办公区域安全协议。",
-                "source": "Ars Technica / Financial Times / 美国司法部",
-                "url": "https://www.justice.gov/opa/pr/saudi-national-arrested-installing-surreptitious-audio-recording-device-openai"
-            },
-            {
-                "tag": "政策监管",
-                "title": "黄仁勋称英伟达将切断从事不安全AI开发客户的供应",
-                "summary": "英伟达CEO黄仁勋10月14日在彭博社采访中明确表示，若客户将GPU用于构建不安全的人工智能系统，英伟达将停止供货。这是英伟达首次公开表态将安全标准纳入客户筛选条件。鉴于英伟达在AI训练芯片市场的主导地位，此举被视为芯片巨头试图在AI安全治理中扮演更重要角色，可能对行业安全规范形成倒逼效应。",
-                "source": "Bloomberg / Hacker News",
-                "url": "https://www.bloomberg.com/news/articles/2026-10-14/nvidia-ceo-says-he-would-cut-off-customers-who-build-unsafe-ai"
-            },
-            {
-                "tag": "政策监管",
-                "title": "联邦法官要求OpenAI交出涉苹果机密招聘记录",
-                "summary": "据TechCrunch 10月13日披露，一名联邦法官裁定苹果可获取OpenAI涉及前苹果员工的面试材料及相关文件。此命令源于苹果与OpenAI之间的商业秘密纠纷案。该案件不仅涉及人才竞争，也反映出AI行业核心人才和知识产权争夺的激烈程度。对从业者而言，这意味着AI公司之间的竞业协议和员工流动将面临更严格的法律审查。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "OpenAI被起诉涉嫌使用儿童数据训练ChatGPT",
-                "summary": "CNET报道称，OpenAI因涉嫌在训练ChatGPT时使用儿童数据而面临诉讼。此案与多州起诉OpenAI事件形成呼应，共同指向AI公司数据来源合规性问题。随着全球对未成年人数据保护法规日趋严格，AI企业需重新审视其训练数据集的合法性，这对整个行业的成本结构和数据采购策略将产生深远影响。",
-                "source": "CNET / Hacker News",
-                "url": "https://www.cnet.com/tech/services-and-software/chatgpt-accused-using-childrens-data/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "亚洲芯片股暴跌，AI融资担忧引发科技板块抛售",
-                "summary": "10月15日，SK海力士、三星、软银等亚洲科技股集体下挫，CNBC分析指出AI行业融资环境趋紧是主要诱因之一。SK海力士跌幅显著，三星电子同样承压。这一轮抛售反映出投资者对AI基础设施投入回报周期的担忧正在升温，可能影响2026年下半年的AI startup融资节奏和估值水平。",
-                "source": "CNBC / Hacker News",
-                "url": "https://www.cnbc.com/2026/10/15/sk-hynix-samsung-softbank-stocks-asia-tech-rout-ai-funding-worries.html"
-            },
-            {
-                "tag": "行业格局",
-                "title": "科技公司纷纷布局，AI生成音乐标签功能成平台标配",
-                "summary": "YouTube Music宣布推出AI生成音乐识别标签，Deezer也将上线AI内容过滤开关。TechCrunch 10月14日报道显示，流媒体平台正加速应对AI生成内容泛滥带来的版权和用户体验挑战。YouTube Music的标签功能将在播放器页面直接显示歌曲的AI参与程度，Deezer的过滤功能预计年底前上线。这意味着AI生成内容管理正在从行业倡议走向平台级产品功能。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Stargardt眼病患者接受Science Corp视觉恢复芯片植入手术",
-                "summary": "据TechCrunch 10月13日报道，Neuralink联合创始人Max Hodak创立的Science Corporation完成了首例Stargardt疾病患者的视觉恢复芯片植入手术。该公司致力于开发面向失明和视力障碍患者的脑机接口解决方案，目前正利用AI加速神经接口设计。这一进展标志着AI与医疗硬件的融合进入临床验证阶段，为相关从业者指明了一条可落地的商业化路径。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "量化LLM供应链存验证缺口，研究揭示分发环节安全风险",
-                "summary": "arXiv发表论文（编号2610.19498）指出，当前量化LLM供应链存在严重的可验证性缺口。研究发现，模型量化过程中引入的后门风险难以被下游用户察觉，可能导致恶意修改的模型权重在分发环节被大规模部署。这一发现对AI基础设施安全敲响警钟，企业在引入外部LLM模型时需加强供应链审查和签名验证机制。",
-                "source": "arXiv / Hacker News",
-                "url": "https://arxiv.org/abs/2610.19498"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Pluto Security融资4200万美元，AI工具滥用成企业安全新痛点",
-                "summary": "Pluto Security在TechCrunch Disrupt 2026期间宣布获得4200万美元融资。该公司指出，AI工具的大规模引入导致企业数据泄露风险急剧上升，员工以非预期方式使用AI应用正成为新的安全威胁。这笔融资表明，AI安全正从模型层面向应用层延伸，企业级AI安全市场有望成为下一个创投热点。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Scimplify融资2500万美元，用AI挑战中国关键材料供应主导权",
-                "summary": "Scimplify获得2500万美元融资，致力于利用AI技术重构关键材料供应链，减少对中国供应的依赖。TechCrunch报道显示，该公司年化营收已从年初的三分之一增长至2亿美元，增长迅猛。随着地缘政治风险持续影响科技供应链，AI驱动的材料供应链优化赛道正获得资本重新审视。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/14/scimplify-raises-25m-to-challenge-chinas-grip-on-critical-materials-with-ai/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Cerebras CEO预言家庭AI助手将成标配，同场反驳末日论",
-                "summary": "Cerebras CEO Andrew Feldman在TechCrunch Disrupt 2026上表示，个人AI助手将像家用电器一样普及。同时他公开反驳AI末日论者的言论，认为散布恐慌对行业发展弊大于利。这一表态与Anthropic、OpenAI等公司高管的谨慎论调形成鲜明对比，反映出AI产业界对安全风险评估仍存在显著分歧。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Industrial Next要让工厂机器人在几分钟内切换任务",
-                "summary": "Industrial Next正在开发使工业机器人在数分钟内完成任务切换的技术，远快于传统工业自动化所需的数周调试时间。该公司旨在帮助制造商实现复杂、精细工序的自动化，降低对人工的依赖。随着劳动力成本上升和柔性制造需求增加，这一技术方向有望重塑制造业自动化的经济模型。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Capsem推出Rust虚拟机沙箱，实现AI智能体气隙隔离",
-                "summary": "Capsem发布基于Rust开发的新型虚拟机沙箱技术，可对AI智能体进行气隙隔离（air-gapped）运行。该项目在Hacker News上获得关注，旨在解决AI智能体执行高风险操作时的安全问题。对于需要处理敏感数据的企业而言，气隙隔离方案提供了在不牺牲安全性的前提下利用AI智能体的可能性。",
-                "source": "Hacker News",
-                "url": "https://capsem.org/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Ricursive Intelligence用AI设计芯片，获新一轮融资",
-                "summary": "Ricursive Intelligence宣布将开发可自主设计芯片的AI系统，通过迭代学习持续优化设计流程。公司已获得新一轮融资支持，以应对当前AI计算资源紧张的瓶颈。若AI辅助芯片设计能够缩短研发周期、降低设计成本，将对整个半导体产业格局产生深远影响，为更多AI初创公司提供定制化芯片解决方案的可能。",
-                "source": "TechCrunch / Hacker News",
-                "url": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "《经济学人》调查揭示AI行业数字可信度危机",
-                "summary": "《经济学人》10月14日发表调查报道，指出AI行业正面临一场“不可靠数字”流行病。文章揭示众多AI公司在基准测试、能耗数据、模型性能等方面存在夸大或不可验证的问题。这一危机的蔓延可能损害投资者信心和监管机构信任，对AI行业的可持续发展构成系统性风险。",
-                "source": "The Economist / Hacker News",
-                "url": "https://www.economist.com/business/2026/10/14/the-ai-boom-is-threatened-by-an-epidemic-of-unreliable-numbers"
-            },
-            {
-                "tag": "行业格局",
-                "title": "银行科技新趋势：BoA增派千名合同工修补AI暴露的软件漏洞",
-                "summary": "Bank of America据报道新增1000名合同工，专门负责修补因AI工具引入而暴露的软件安全漏洞。这一案例揭示了企业AI应用的一个隐性成本——现有系统与AI工具对接后产生的新安全债。对于企业技术管理者而言，AI规模化部署带来的技术债务清理工作量和成本远超预期。",
-                "source": "RuntimeWire / Hacker News",
-                "url": "https://runtimewire.com/article/bank-of-america-mythos-contractors-software-patching"
-            },
-            {
-                "tag": "行业格局",
-                "title": "ICE计划利用AI监控被拘押者通话及移动轨迹",
-                "summary": "美国移民和海关执法局（ICE）正推进AI系统用于监控被拘押者的通话内容和移动轨迹。这一计划引发隐私倡导者的强烈反对，被视为AI技术在政府执法领域的争议性应用。随着AI监控工具在各政府部门的扩散，数据隐私与执法效率之间的张力将成为持续的社会议题。",
-                "source": "Washington Sun / Hacker News",
-                "url": "https://www.washingtonsun.com/immigration/ice-ai-monitor-detainees"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Meta推出Instagram「你的算法」功能，扩大AI个性化控制范围",
-                "summary": "Meta宣布将Instagram的「Your Algorithm」功能扩展至Facebook平台，允许用户更细致地控制平台推荐算法。TechCrunch报道称，这是主流社交平台首次将AI推荐系统的透明度控制权交还给用户。该功能的上线可能对内容分发效率产生一定影响，但也反映了用户对算法主导权诉求上升背景下的产品策略调整。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/"
-            }
-        ]
-    },
-    {
-        "date": "2026-10-14",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "Character.AI 申请破产，迪士尼 2000 万美元收购部分资产",
-                "summary": "成立仅五年的 AI 角色聊天平台 Character.AI 已向法院申请 Chapter 11 破产保护，迪士尼同日宣布以 2000 万美元收购其部分资产。该平台高峰期 MAU 达数千万，主要用户为 18-25 岁年轻人，曾融资超 1.5 亿美元但持续亏损。迪士尼的收购价格不足其估值的三十分之一，反映出 AI 情感陪伴赛道的商业化困境。对行业而言，头部消费级 AI 应用如何实现正向现金流仍是悬而未决的核心问题。",
-                "source": "TechCrunch / CNBC",
-                "url": "https://techcrunch.com/2026/10/13/just-5-years-in-interactive-chatbot-platform-character-ai-files-for-bankruptcy/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI 沙特籍员工被 FBI 逮捕，涉嫌在办公室安装窃听设备",
-                "summary": "一名 OpenAI 员工因涉嫌在其旧金山办公室安装非法录音设备于本周被 FBI 逮捕，司法部指控其试图窃取公司机密。该嫌疑人据报道为沙特籍公民，在 OpenAI 负责数据标注工作。案件正值 OpenAI 完成新一轮融资、公司估值突破 3000 亿美元之际，安全漏洞引发行业对 AI 企业内部威胁的高度关注。",
-                "source": "The Verge / WSJ / DecodingVibes",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/1010642/openai-employee-arrested-recording-device"
-            },
-            {
-                "tag": "行业格局",
-                "title": "苹果诉 OpenAI 案：法官下令后者交出涉前员工招聘记录",
-                "summary": "加州联邦法官裁决要求 OpenAI 向苹果交出涉及前苹果员工的面试材料及相关记录。苹果指控 OpenAI 在招聘时系统性地挖掘其机密技术信息，尤其是涉及 Vision Pro 和 AI 功能相关岗位。此案是苹果首次对人才流失引发的技术泄露风险采取法律行动，料将推动 AI 行业竞业协议的重新审视。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/judge-orders-openai-to-turn-over-hiring-records-in-apple-trade-secrets-case/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Amex 推出 AI Agent 购物授权框架，防止未经授权交易",
-                "summary": "美国运通在 TechCrunch Disrupt 2026 上发布了全球首个面向 AI Agent 的交易授权框架。该框架允许用户为 AI 助手预设消费规则和预算上限，商家可在结算前验证交易是否在授权范围内。Amex 预计到 2027 年 AI 代理完成的线上交易将占电商 GMV 的 8%。随着 Agent 经济爆发，金融支付层的适配成为企业级 AI 部署的关键基础设施。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/amex-introduces-a-framework-to-prevent-ai-agents-from-making-unauthorized-purchases/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta 发布首个前沿级多模态模型 Muse Wonder，剑指专业创作者",
-                "summary": "Meta 正式发布其首个前沿级模型系列 Muse Wonder，相比此前定位轻量的 Muse Spark，新系列参数规模更大，支持高分辨率图像生成、实时视觉推理和复杂场景理解。该模型已被整合至 Meta AI全家桶，预计首先面向创作者和专业用户开放 API。Meta 此前已开源多个模型，此次突入闭源前沿战场意味着其商业化策略的重大转向。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Anthropic 发布 2026 年使用政策更新，强化安全边界",
-                "summary": "Anthropic 于本周发布其 2026 年使用政策更新版本，对 Claude 系列产品的使用限制和内容边界进行了调整。新政策扩大了对高风险应用的审查范围，包括涉及生物威胁、网络攻击指导等内容。新版 AUP 通常被视为 Anthropic 为下一代 Claude 模型发布进行合规准备的信号，预计新产品将于年内面世。",
-                "source": "Anthropic / Hacker News",
-                "url": "https://www.anthropic.com/news/2026-usage-policy-update"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Cerebras CEO 预言三年内每人家中都将拥有个人 AI 助手",
-                "summary": "Cerebras CEO Andrew Feldman 在 TechCrunch Disrupt 2026 上表示，个人 AI 助手将在三年内像微波炉一样普及到千家万户。他同时驳斥了 AI 末日论警告，认为过度的恐惧叙事正在损害行业发展。Cerebras 拥有全球最大芯片 wafer-scale engine，其言论反映出身处算力基础设施一线的从业者对 AI 落地速度的乐观判断。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/cerebras-ceo-says-were-nearing-a-future-where-everyone-has-a-personal-ai-assistant-at-home/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Science Corporation 植入全球首个 Stargardt 病视觉恢复芯片",
-                "summary": "由前 Neuralink 联合创始人 Max Hodak 创立的 Science Corporation 在 TechCrunch Disrupt 上宣布，已成功为一名 Stargardt 遗传性黄斑变性患者植入其视觉恢复芯片。该设备通过绕过受损的光感受器直接刺激视神经，为此前无法治疗的失明患者提供功能性视觉。此为全球首例同类手术，Neuralink 模式的技术延伸正在打开眼科神经调控的新赛道。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/science-corporation-implants-its-vision-restoring-chip-in-its-first-stargardt-disease-patient/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Pluto Security 完成 4200 万美元 A 轮融资，专攻企业 AI 安全",
-                "summary": "企业 AI 安全初创公司 Pluto Security 宣布完成 4200 万美元 A 轮融资，由红杉资本领投。Pluto 的平台帮助企业监控员工使用 AI 工具时的数据流向，检测越权访问和敏感信息泄露等问题。随着 AI 在企业中的普及，超过 60% 的安全事件与影子 AI 使用相关，该赛道正在快速成长为网络安全的新支柱。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/pluto-security-raises-42m-as-ai-gives-enterprise-security-teams-a-new-headache/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Satlyt 获 800 万美元融资，做卫星轨道的 AI 计算 Android",
-                "summary": "由前 Google 和 SpaceX 产品经理创立的 Satlyt 宣布获得 800 万美元种子轮融资，致力于成为卫星端 AI 计算的开放平台。该公司软件可部署在任何厂商的卫星和飞行器上，在轨道完成 AI 推理任务，从而大幅降低卫星数据的传输延迟。SpaceX 和 Google 均曾拒绝其合作提案，最终其软件随 SpaceX 火箭升空、与 Google 卫星数据共存。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/satlyt-founded-by-a-former-google-and-spacex-product-manager-raises-8m-to-run-ai-on-satellites/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "IMF 警告 AI 泡沫破裂可能拖累全球经济",
-                "summary": "国际货币基金组织在最新报告中发出警告称，AI 相关资产的估值膨胀可能正在形成泡沫，一旦破裂将对全球经济产生连锁反应。报告指出当前 AI 领域的融资估值与实际收入产出之间存在显著脱节，部分 AI 公司估值已达营收的 100 倍以上。IMF 呼吁投资者和政策制定者关注 AI 投资的风险集中度问题。",
-                "source": "The Register",
-                "url": "https://www.theregister.com/ai-and-ml/2026/10/13/ai-bubble-could-burst-and-take-global-economy-with-it-imf-warns/5302781"
-            },
-            {
-                "tag": "行业格局",
-                "title": "SpaceX 将 X Premium、Grok 和 Cursor 打包为统一订阅服务",
-                "summary": "SpaceX 推出全新 X Subscription 订阅服务，将 X 平台（原 Twitter）付费功能与 Grok AI 助手及 AI 编程工具 Cursor 打包，最低档每月 8 美元。此举标志着 SpaceX 正式将 AI 工具整合进社交平台生态，旨在通过 AI 功能差异化和用户付费率提升改变 X 平台的变现困境。Cursor 此前为独立 AI 编程工具，被整合后用户规模有望显著扩大。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/spacexsi-bundles-x-premium-grok-and-cursor-into-one-subscription/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Google Play 开放「氛围编程」私人应用，无需审核即可安装",
-                "summary": "Google 宣布 Play Store 新增对 AI「氛围编程」（vibe coding）生成的私人应用的支持。用户可通过 AI 工具快速创建仅供个人使用的 Android 应用，无需提交审核流程，也不必在商店中公开展示。这一更新大幅降低了个人定制化应用的门槛，Google 正试图将 AI 编程浪潮引入移动生态的核心场景。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/google-play-now-supports-private-vibe-coded-apps-built-just-for-you/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Shopify 开放商品目录 API，支持更多 AI Agent 代理购物",
-                "summary": "Shopify 宣布扩大其平台对 AI Agent 的开放程度，商家现可授权第三方 AI 助手直接访问商品目录、库存和价格数据，完成选品推荐、比价和下单等端到端购物流程此前仅支持少数合作伙伴。这意味着 AI Agent 经济的基础设施层正在快速成熟，有望推动电商行业进入真正的「代理商务」时代。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/news/1010365/shopify-opens-its-catalog-up-to-more-ai-agents"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Industrial Next 获融资，欲将工厂机器人任务切换时间从数周压缩至数分钟",
-                "summary": "工业机器人 AI 公司 Industrial Next 在 TechCrunch Disrupt 2026 上展示其最新技术，核心卖点是将自动化产线切换新产品所需时间从传统的数周压缩至数分钟。该公司利用视觉 AI 和力控算法让机器人快速学习新任务，解决了制造业大规模定制的核心瓶颈。丰田和富士康已参与其试点项目。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/industrial-next-wants-factory-robots-to-switch-tasks-in-minutes-not-weeks/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "微软总裁称英国最适合主导全球 AI 监管",
-                "summary": "微软总裁 Brad Smith 在 TechCrunch Disrupt 上公开表示，英国在监管 AI 方面拥有独特优势，有潜力成为全球标准制定者。他援引对比数据称，目前牛奶和洗衣机的监管框架都比 AI 更为完善，呼吁各国政府加快立法进程。史密斯同时重申微软将加大对英国 AI 基础设施的投资。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/12/microsoft-president-says-uk-is-best-placed-to-drive-ai-regulation/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "科学界联名发表公开信，呼吁加强 AI 与网络安全的交叉治理",
-                "summary": "来自全球顶尖高校和科研机构的数百名科学家联名发表 AI 与网络安全公开信，呼吁建立跨学科的 AI 安全治理框架，重点关注 AI 系统被用于网络攻击的防御与应对。信件指出当前 AI 安全研究主要由企业主导，缺乏独立的学术声音和同行评审机制。公开信已获得超 500 名研究者联署。",
-                "source": "Hacker News / ai-security-letter.org",
-                "url": "https://ai-security-letter.org/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Laplace Intelligence 用红队测试和仿真技术为机器人和自动驾驶「压力测试」",
-                "summary": "密歇根大学分拆公司 Laplace Intelligence 宣布其 AI Agent 驱动的仿真平台已完成 200 款机器人和 15 家自动驾驶公司的安全测试。该系统可在虚拟环境中模拟极端场景和对抗性攻击，提前发现系统漏洞。该公司已与多家主流车企签订年度测试合约，安全测试正成为 AI 系统商业化的必经门槛。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/laplace-intelligence-red-teams-robots-and-self-driving-cars-before-they-hit-the-real-world/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "SimulacraBench 发布：首个评估 AI 预测人类行为能力的基准测试",
-                "summary": "研究团队发布 SimulacraBench，这是首个系统性评估大语言模型预测人类决策和行为准确性的基准测试，覆盖心理测试、谈判场景和社交推断等维度。初步测试显示 GPT-4.5 在共情预测上得分显著优于开源模型，但在高压力决策场景中表现欠佳。该基准有望成为 AI 心理理论研究的标准化工具。",
-                "source": "SimulacraBench / Hacker News",
-                "url": "https://simulacrabench.org/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Meta 推出「你的算法」功能，让用户自定义信息流推荐逻辑",
-                "summary": "Meta 在 Facebook 平台上线「你的算法」（Your Algorithm）功能，允许用户选择信息流的推荐策略，包括优先显示好友内容、热门话题或兴趣标签等维度。该功能此前已在 Instagram 测试，是主要社交平台首次向用户开放算法控制权。随着 AI 推荐系统受到越来越多监管审视，主动赋予用户选择权或成为行业新标准。",
-                "source": "TechCrunch",
-                "url": "https://techcrunch.com/2026/10/13/facebook-is-giving-users-more-control-over-their-algorithm/"
             }
         ]
     }
