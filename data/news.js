@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-11-15",
+        "items": [
+            {
+                "tag": "行业格局",
+                "title": "英伟达CEO黄仁勋辞职引发AI权力链震荡：11.5万人联署促其回归",
+                "summary": "英伟达CEO黄仁勋因涉嫌与一名被指为中国间谍者有关系及第三段婚外情辞职，马斯克等科技高管发起联署，11月14日已有超过11.5万人要求其回归；事件同时牵动美国国会调查、亚洲芯片供应承诺及英伟达对初创企业的数百亿美元支持。对AI创业者而言，GPU巨头领导层的不确定性已从个人风波升级为融资、算力与开源政策的系统性风险。",
+                "source": "TechCrunch / Reuters / The Wall Street Journal",
+                "url": "https://techcrunch.com/2026/11/13/nvidia-ceo-jensen-huangs-affair-with-alleged-chinese-spy-a-timeline/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "中国最强模型被曝依赖出口管制英伟达芯片：合规套利空间收窄",
+                "summary": "TechCrunch援引新研究称，中国最先进AI模型曾使用受美国出口管制的英伟达芯片训练，涉及至少1批被禁产品；这一证据把模型能力扩散、供应链追踪与芯片管制从政策文本推向可验证的训练基础设施。对国内算力企业和出海合规团队而言，采购来源审计将从加分项变成生存门槛，模型性能与芯片来源必须被同时验证。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/13/export-banned-nvidia-chips-are-behind-chinas-most-powerful-ai-models-uh-oh-jensen/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "EFF审查Medicare的AI试点：医疗算法进入核心流程引发权利争议",
+                "summary": "EFF在11月发布第3820篇DeepLinks评论，审视Medicare将AI实验引入医疗服务体系后产生的自动化决策、患者申诉与责任归属问题。文章以1项联邦医疗计划为切口，提醒模型准确率不能替代临床解释和人工复核；医疗机构若扩大部署，必须同步建立可追溯、可拒绝的AI使用边界，避免技术试验先行于权利保障。",
+                "source": "Electronic Frontier Foundation",
+                "url": "https://www.eff.org/deeplinks/2026/11/medicares-ai-experiment-effector-3820"
+            },
+            {
+                "tag": "政策监管",
+                "title": "FAA将AI空中交通建议扩至全美：拥堵调度进入算法辅助阶段",
+                "summary": "美国联邦航空管理局把1套AI空中交通建议机制扩展至全美领空，用于辅助处理日益严重的航班拥堵问题，范围从局部试点覆盖到全国空域。AI由单点识别工具进入实时运行建议环节，意味着错误预测可能同时影响多家航空公司和机场。监管者下一步必须公开建议系统的准确率、人工接管比例及安全责任边界。",
+                "source": "Ars Technica",
+                "url": "https://arstechnica.com/features/2026/11/faa-expands-ai-advice-to-manage-air-traffic-congestion-across-entire-us-airspace/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "AI代理公司LangChain估值升至30亿美元：7000家客户押注平台化",
+                "summary": "AI代理基础设施公司LangChain估值升至30亿美元，并称其模型无关的代理管理与监控平台LangSmith已吸引7000家客户。客户规模表明，企业对LangChain的押注已从开发者实验转向生产环境中的代理部署、评测和运维。对AI工具厂商而言，能否掌握企业代理全生命周期，而非仅提供框架，将决定下一轮平台整合的归属。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/13/ai-agent-startup-langchain-hits-3b-valuation/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Nebius计划投入400亿美元扩建AI云：客户预付款支撑重资产扩张",
+                "summary": "AI云服务商Nebius计划投入400亿美元扩大基础设施，并通过客户预付款和贷款缓解建设资金压力，尽管部分项目已经出现延期。该方案把AI算力生意推向类似传统云厂商的长期资本开支周期，也将客户订单转化为融资能力。对创业公司而言，算力供应虽在扩张，但长期合同背后的交付和融资风险也同步放大。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/12/nebius-tests-the-neocloud-playbook-with-40-billion-in-planned-spending/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "ChatGPT Wallet开放有限测试：AI代理可代用户下单付款",
+                "summary": "OpenAI开始有限开放ChatGPT Wallet，允许AI代用户发现商品、提交订单并完成结账，首批仅面向美国ChatGPT Pro订阅者，覆盖购物与结账2类核心动作。支付工具使ChatGPT从提供建议转向完成交易，但代理误判、授权边界和退款责任也随之进入消费场景；钱包的关键不只是支付能力，而是可撤销的代理权限设计。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/13/chatgpts-new-wallet-lets-ai-agents-shop-and-check-out-for-you/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "谷歌搜索接入Gemini 4 Hydrogen：复杂问答与链接呈现同步升级",
+                "summary": "谷歌在11月为Search AI Mode接入Gemini 4 Hydrogen，重点升级2类能力：理解包含多个约束条件的复杂问题，以及检索后呈现更相关的信息链接。此次调整显示搜索产品正从关键词答案框转向多步骤任务编排，但底层结果仍依赖开放网页质量。对内容平台和SEO团队而言，搜索入口变化意味着流量分配与引用权重的规则需要重新评估。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/12/googles-latest-search-upgrade-promises-better-answers-to-your-most-complicated-questions/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "Anthropic收购一人AI生技公司：模型巨头借团队切入生物医药",
+                "summary": "据Nature在11月报道，Anthropic收购一家仅有1名员工的AI驱动生技公司，交易金额尚未披露。此次收购规模虽小，却显示基础模型公司正在通过外部团队补齐垂直行业能力，而非完全依赖内部招聘。AI生技的真正壁垒通常来自实验数据和工作流整合，模型厂商能否有效收购微型专家团队，将成为垂直化竞争的重要路径。",
+                "source": "Nature",
+                "url": "https://www.nature.com/articles/d41586-026-03640-9"
+            },
+            {
+                "tag": "技术突破",
+                "title": "微软申请闲置游戏GPU训练专利：玩家算力或换取训练奖励",
+                "summary": "微软一项专利申请提出，将玩家电脑中的闲置GPU容量转化为可用的AI训练算力，并通过奖励机制形成交换。方案把1台消费级设备从纯本地计算节点改造成分布式训练资源池，可扩大长尾算力供给。不过，安全隔离、任务调度和数据隐私将决定消费者是否愿意参与，分布式训练能否形成稳定供给仍待商业验证。",
+                "source": "PCMag / VideoCardz",
+                "url": "https://www.pcmag.com/news/microsoft-patent-describes-using-your-idle-gaming-pc-to-train-ai"
+            },
+            {
+                "tag": "技术突破",
+                "title": "DeepSeek新推理引擎被指令GPU价值提升3倍：国产算力效率成焦点",
+                "summary": "一段技术分析视频称，DeepSeek的新LLM推理引擎可使同等GPU产生约3倍价值，核心方向是提升模型部署后的计算利用率。该数字尚缺少统一基准、硬件配置和成本口径支持，因此不宜直接视为性能定论。若结果可复现，AI基础设施采购的衡量标准将从芯片数量转向每个有效token成本，算力效率的重要性将进一步上升。",
+                "source": "YouTube / Hacker News",
+                "url": "https://www.youtube.com/watch?v=2K_Rm8cho1I"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Linux内核审视AI生成补丁洪峰：维护者开始讨论质量门槛",
+                "summary": "11月14日，Linux内核维护者Linus Torvalds开始质疑由AI辅助生成的大规模补丁是否已过峰值，焦点不是代码总量，而是低质量提交对审核工作的冲击。面对至少1名核心维护者提出的治理问题，社区需要建立重复贡献识别、自动测试覆盖和人工审查比例等门槛。AI若不能降低维护总成本，就可能把开发效率提升转化为审查负担。",
+                "source": "Slashdot",
+                "url": "https://linux.slashdot.org/story/26/11/14/0827227/linus-torvalds-wonders-if-linuxs-ai-prompted-patch-flood-has-peaked"
+            },
+            {
+                "tag": "应用落地",
+                "title": "AI生成作品迫使编程竞赛停办：教育评测首次正面撞车",
+                "summary": "至少1项面向学生的游戏开发竞赛因参赛作品完全由AI生成而被迫取消，暴露出传统编程评测与生成式工具之间的规则冲突。主办方原本希望检验学生亲手设计、实现并调试程序的能力，但现有提交机制无法区分人工创作与AI代办。教育机构若继续沿用旧赛制，AI时代的能力考核将需要过程记录、答辩或受控环境。",
+                "source": "PC Gamer",
+                "url": "https://www.pcgamer.com/software/ai/educational-game-dev-program-cancelled-because-students-were-submitting-games-made-entirely-with-ai/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "生成式AI竞争研究发布：消费者需求成为份额分水岭",
+                "summary": "美国国家经济研究局在11月发布工作论文w35953，以消费者需求证据研究生成式AI竞争，讨论用户选择如何反映不同模型产品的市场表现。论文把行业讨论从参数、估值和补贴拉回实际采用与需求迁移。对创业者而言，技术领先只有转化为留存、付费和可持续使用率，才能穿越资本热度退潮并形成真正壁垒。",
+                "source": "National Bureau of Economic Research",
+                "url": "https://www.nber.org/papers/w35953"
+            },
+            {
+                "tag": "技术突破",
+                "title": "《Joule》提出太空AI基础设施蓝图：算力扩容转向空间约束",
+                "summary": "《Joule》11月刊发1套面向太空、具有高扩展性的AI基础设施系统设计，把研究重点从地面数据中心的电力与散热瓶颈延伸至空间部署所需的能源、通信和持续运行约束。对产业而言，这仍是远期架构探索，而非近期可交付的算力方案；但它提示卫星、云边协同与航天AI可能被重新放进同一张基础设施版图。",
+                "source": "Joule / Cell Press",
+                "url": "https://www.cell.com/joule/fulltext/S2542-4351(26)00362-4"
+            },
+            {
+                "tag": "应用落地",
+                "title": "ElevenLabs推出会议纪要与听写新应用：语音模型切入企业协作入口",
+                "summary": "ElevenLabs于11月13日推出面向团队和企业的AI应用，将会议纪要与语音听写整合为2类核心工作流。该产品把其语音模型能力从内容生成延伸到实时会议入口，目标是争夺企业每天持续发生的高频交互。对AI办公套件而言，谁能稳定成为默认听写和记录入口，谁就更可能进一步获得摘要、决策和任务执行入口。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/13/elevenlabs-new-app-combines-meeting-note-taking-and-dictation-for-teams/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "首届AI音乐奖揭晓：生成式作品进入主流评价体系",
+                "summary": "Variety报道首届Sonic Intelligence Academy AI音乐奖于11月揭晓，由1届评选把生成式音乐从单次传播事件推向作品质量、制作流程和商业价值的公开检验。AI音乐能否获得类似传统音乐奖项的认可，不再只取决于像不像人，而要看版权归属与创作者贡献能否清楚说明；对音乐科技公司而言，奖项化也意味着新的合规与品牌门槛。",
+                "source": "Variety",
+                "url": "https://variety.com/2026/music/features/inside-first-ai-music-awards-sonic-intelligence-academy-1236947847/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "开源工具上线：集中审计AI编码代理的文件与账号权限",
+                "summary": "GitHub项目AI Access Auditor上线，用1个工具集中展示并撤销AI编码代理可访问的文件、账号与服务授权，目标是把隐藏在代理配置和权限设置中的风险转化为可视化清单。对企业安全团队而言，这类控制层比单靠提示词约束更实用，也为代理进入代码库建立了最低限度的审计入口，但实际覆盖仍需持续验证。",
+                "source": "GitHub",
+                "url": "https://github.com/dirmedmr-alt/ai-access-auditor"
+            },
+            {
+                "tag": "技术突破",
+                "title": "ChatMate披露AI助手沙箱逃逸：远程提示注入可跨域执行",
+                "summary": "ChatMate以1个视频概念验证展示AI助手沙箱逃逸：攻击者借远程提示注入诱导代理突破隔离环境，并在沙箱之外执行命令。该案例未必代表主流产品普遍可被攻破，却明确暴露了工具调用、提示注入与沙箱边界组合后的系统性风险；企业部署代理时，隔离设计和命令白名单必须与模型评测同步推进。",
+                "source": "YouTube / Hacker News",
+                "url": "https://www.youtube.com/watch?v=MspRSCAb6uI"
+            },
+            {
+                "tag": "应用落地",
+                "title": "韩国税务会计考试最高分者承认AI作弊：职业资格评估再受冲击",
+                "summary": "韩国媒体11月15日报道，1名税务会计资格考试最高分者承认使用AI完成考试相关作答，事件把生成式工具对职业资格认证的冲击再次推到台前。即使只有榜首个案，也可能促使考试机构增加监考、行为审计和题目随机化。职业考试若仍主要考知识记忆，将越来越难证明持证人的真实执业能力。",
+                "source": "The Chosun Daily",
+                "url": "https://www.chosun.com/english/national-en/2026/11/15/3AYAGNRWENBAJISSMVP6HZQZ3E/"
+            }
+        ]
+    },
+    {
         "date": "2026-11-14",
         "items": [
             {
@@ -3609,151 +3754,6 @@ const AI_NEWS_DATA = [
                 "summary": "蓝沃AI在工博会上首次展示其AI订单履约工作台，并同步开源沃土大模型2.0版本。订单履约工作台可自动化处理从订单确认到物流追踪的全流程，将AI能力深度嵌入制造业供应链。沃土大模型2.0采用开源策略，开发者可免费使用并本地部署，有望推动工业AI应用普及。",
                 "source": "美通社",
                 "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9tMkdzVFVaakU1X21EbUFTS0Joc19IaWRJTmk4MjlwNENYM2E4U25Gd3FzNlJPTmY4anN3bGQ2ZTJ0WGtQaG8wSll0LW9XdlU0eFdfTTZrLWZVeHRSQndLNG5ETWo0VmtCYlphLXVn"
-            }
-        ]
-    },
-    {
-        "date": "2026-10-16",
-        "items": [
-            {
-                "tag": "重要产品发布",
-                "title": "Meta发布8160亿参数开源权重模型，联手苹果实现Mac本地运行",
-                "summary": "Meta于10月15日发布Muse Spark Open模型，以8160亿参数成为\"美国最强开放权重模型\"。Meta与苹果合作针对Mac的MLX框架进行深度优化，在搭载M5 Ultra芯片的Mac Studio上仅需两台设备即可本地运行高性能推理。这是开源大模型在消费级硬件上的重大突破，意味着开发者无需依赖云端即可获得顶级AI能力，对Llama生态和苹果芯片生态均意义深远。",
-                "source": "TechCrunch AI / 华尔街见闻 / 财联社 / The Verge",
-                "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "英伟达发布1200亿参数Nemotron 3.5 Super VL大模型，剑指企业级多模态市场",
-                "summary": "英伟达发布Nemotron 3.5 Super VL，参数规模达1200亿，定位企业级超大规模多模态模型。该模型依托英伟达完整技术栈（GPU+软件+云），剑指微软、OpenAI、Meta和谷歌的企业客户市场。随着\"前沿AI模型四国大战\"格局加速形成，英伟达凭借硬件+软件垂直整合优势，正成为不可忽视的模型层玩家。",
-                "source": "DoNews / 财联社",
-                "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE8zRmxVNnhJUGNYT1JyLUJ4dTNBQmZ5UDd6amFTVU9FR25tU1ZzdzEyelVzeWUzWTZsUmtxNXcyTy1BZW5FMFg2ZFpJM25tcWNnd2hIOXZJNVZHd2NqR3c"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "谷歌Gemini 4 Argon全面上架，前沿模型\"四国大战\"正式打响",
-                "summary": "谷歌Gemini 4 Argon于10月全面上架，标志着OpenAI、Meta、谷歌和英伟达四方前沿模型竞争进入白热化阶段。此番\"四国大战\"将加速模型性能提升和价格下探，企业和开发者将迎来更低的AI使用成本，但同时也将压缩中小模型公司的生存空间，行业集中度进一步上升。",
-                "source": "财联社 / 36Kr",
-                "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTFBIdDhncVp3NWhlSGNOV2FMYnZXV25KQ0liWXdleTBHa2ZNR3VfRFNGZEZPT1h0MENKTm5HY2h4ZGpHT19JWHVoYg"
-            },
-            {
-                "tag": "应用落地",
-                "title": "库克确认苹果智能接入阿里千问，10月底在华测试",
-                "summary": "苹果CEO库克在公开场合确认，苹果智能（Apple Intelligence）将接入阿里巴巴千问大模型，于10月底在中国发布测试版本。这是苹果首次在中国市场采用国产大模型作为AI能力底座，标志着海外科技巨头与中国AI生态的深度合作。对国内AI公司而言，这意味着千问获得了全球最强势硬件生态的认可，商业化空间大幅打开。",
-                "source": "量子位",
-                "url": "https://news.google.com/rss/articles/CBMiVEFVX3lxTE1IbXNrNjhGSC1iLWszU1hCZG9mYi1keGlxODltMW9RRmhjaDRVMlY1LUZQUURaemphRHE5MUdQRUpaRkdkNi1CbUk4TFVydUlxUWpQVQ"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Anthropic向METR研究员开放员工级权限，强化AI安全评估透明度",
-                "summary": "Anthropic宣布向AI安全研究组织METR的研究人员提供员工级系统访问权限，允许其审查Anthropic的风险评估、事件报告和内部安全实践，并独立发布评估结果。此举是前沿实验室在AI安全透明度方面的重大尝试，有助于建立行业安全标准。但METR的独立性能否真正保证、其结论是否会被厂商选择性引用，仍有待观察。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Bluesky推出Attie平台社交 vibe coding，支持构建游戏和应用",
-                "summary": "Bluesky将其AI工具Attie升级为完整社交 vibe coding平台，用户可通过自然语言创建互动游戏、简易应用和定制化内容，并直接在社交平台分享。该功能将AI辅助开发的门槛降至最低，有望吸引大量非技术用户涌入生成式AI创作领域。但平台的内容审核和恶意应用传播风险也将随之上升。",
-                "source": "TechCrunch AI / The Verge",
-                "url": "https://techcrunch.com/2026/10/15/bluesky-expands-its-ai-powered-attie-app-to-let-anyone-build-websites-games-and-more/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Cal AI两年营收超3000万美元被MyFitnessPal收购，网红营销模式验证成功",
-                "summary": "AI健康管理应用Cal AI在两年内实现超3000万美元营收，现已被MyFitnessPal收购（金额未披露）。Cal AI的核心增长策略是大规模付费网红营销，验证了AI消费品可通过社交渠道快速起量的可行性。这一案例将推动更多垂直类AI应用效仿该模式，但也将推高行业的流量获取成本。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "YouTube Music推出AI生成音乐标签，Deezer同步上线AI过滤开关",
-                "summary": "YouTube Music宣布推出AI生成音乐标签，歌曲页将显示是否为纯AI生成或AI参与创作。Deezer也宣布将于年底前上线AI内容过滤开关，允许用户主动屏蔽AI生成音乐。两家平台的一致行动表明，流媒体行业正加速建立AI音乐的识别和披露标准，这将倒逼唱片公司与AI音乐平台的关系重塑。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/14/youtube-music-launches-new-labels-as-ai-generated-music-floods-streaming-platforms/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "《全球数字经济发展指数报告2026》：中国高能级AI大模型数量领跑全球",
-                "summary": "《全球数字经济发展指数报告2026》发布，数据显示中国在高能级AI大模型数量上已位居全球首位。该报告反映了中国在AI大模型领域的规模化投入和产业化速度，但\"数量领跑\"与\"能力领跑\"之间仍存在差距。从業者需关注该数据背后的质量分层，避免被总量指标误导判断。",
-                "source": "长江网",
-                "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE1FU0FNOFAzZHowYzJuODVDWlJZYkdZRFR6ZnNyQkdwOEhraEJlMG05MUtiMWxyYnlFSms3UnZrQlg0MUVoR3JzcWJfMXFYSFQ0SENXOURGaFRjY0NEc3lTNzVR"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "亚马逊发布Bee品牌两款AI设备，进驻$75低价可穿戴市场",
-                "summary": "亚马逊旗下Bee品牌发布两款全新AI设备，包括升级版可穿戴设备和信用卡形态产品，起售价仅75美元。这是Bee自被亚马逊收购后的首次产品更新，标志着亚马逊将AI设备下沉至大众消费市场的战略意图。低定价策略有望快速扩大用户基数，但对亚马逊的隐私政策和数据安全能力提出更高要求。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/15/amazons-bee-launches-two-new-personal-ai-devices-starting-at-75/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Figma发布Agent工作流功能，定义设计平台AI代理标准",
-                "summary": "Figma在年度更新中正式发布Agent工作流功能，定义了AI代理在设计平台中的协作规范，并同步开放Code Layers功能公开测试。设计工具正在从人类创意辅助工具演变为AI代理的工作场所，这意味着未来的设计协作图谱将同时包含人类设计师和AI代理两类参与者，设计师的不可替代性将进一步被压缩。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/14/figma-announces-new-features-to-define-how-agents-work-on-its-platform/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Zenzap获4400万美元融资，打造取代WhatsApp的企业AI聊天应用",
-                "summary": "企业级AI聊天应用Zenzap宣布完成4400万美元融资，其目标是取代WhatsApp在工作场景中的地位。目前星巴克、塔可钟等大型连锁品牌已采用Zenzap。与传统企业通讯工具不同，Zenzap深度集成AI能力，支持智能客服、工作流自动化等场景。该融资表明，企业级AI通讯工具仍是资本看好的细分赛道，但能否真正撬动Slack、Teams的既有格局尚待验证。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/14/zenzap-raises-44m-for-its-ai-chat-app-that-aims-to-replace-whatsapp-in-the-workplace/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Rivian宣布将AI代理引入车载系统，计划12月AI Day披露细节",
-                "summary": "Rivian宣布将在其电动汽车中部署AI代理能力，并将于12月举办\"AI & Autonomy Day\"披露技术细节。这是继特斯拉之后，又一家主流电动车企将AI Agent概念引入车机系统。AI代理在车内的落地有望重新定义车载交互范式，从语音指令升级为意图驱动的主动服务，但对行车安全边界的界定仍是最大挑战。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "微软联手英伟达优化Windows for RTX Spark，AI PC软硬件协同加速",
-                "summary": "微软与英伟达联合发布首批RTX Spark AI PC，针对新平台进行了Windows系统级深度优化，包括记事本等核心应用的AI增强。RTX Spark作为英伟达面向消费AI PC的全新产品线，与微软Windows的深度整合标志着AI PC从硬件堆料进入软硬协同优化阶段，将推动AI能力在PC端的原生化普及。",
-                "source": "The Verge",
-                "url": "https://www.theverge.com/tech/1011996/microsoft-windows-rtx-spark-platform-changes-notepad"
-            },
-            {
-                "tag": "行业格局",
-                "title": "亚马逊设备负责人潘纳吉：AI设备将消灭App使用场景",
-                "summary": "亚马逊设备负责人Panos Panay在TechCrunch Disrupt大会上表示，亚马逊押注环境AI（Ambient AI）将取代App的交互范式，用户无需主动打开应用，AI设备将主动理解并执行任务。这一愿景意味着计算交互范式的根本转变，但实现路径高度依赖多模态感知、端侧推理和安全隐私的同步成熟，当前仍处于愿景阶段。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/15/amazon-devices-chief-panos-panay-sees-a-future-where-ai-devices-replace-the-need-to-use-apps/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "大疆发布换电无人值守平台，AI应用向单体智能与群体智能演进",
-                "summary": "大疆发布新一代换电无人值守平台，持续深化AI在无人机领域的应用，并宣布未来将向单体智能和群体智能两个方向同步演进。群体智能意味着多无人机协同作业能力，对农业、物流、巡检等行业意义重大。大疆作为全球消费级无人机霸主，其AI能力的工业级延伸将重新定义行业竞争门槛。",
-                "source": "中国基金报",
-                "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1KdXgtVU95V0NRdmY1M0l5VGJWZnQ2YmtqWm5XQWR0cTE5djFxZjV2andkRXdib3lUOFdlVGctUDFIel9Sai05ZnQ5QzN3bG00UWV2SW1hWmtRWXZvRUNBbm52SVh2RU9hX1pBUGRLd0VaV2QybVFVcjZR"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Ricursive Intelligence用AI设计芯片，探索算力危机破解路径",
-                "summary": "初创公司Ricursive Intelligence宣布正在开发可自主设计芯片的AI系统，通过每次迭代学习提升设计质量，从而缓解AI算力供需失衡。芯片设计AI化若成功，可大幅缩短芯片设计周期、降低定制芯片门槛，对抗美国对华芯片出口限制的战略意义不言而喻。但当前该技术成熟度尚待验证，商业化路径不清晰。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/14/ricursive-intelligence-is-betting-on-ai-designed-chips-to-help-solve-the-compute-crisis/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "爱芯元智发布AX8860系列AI芯片，瞄准边端大模型部署市场",
-                "summary": "爱芯元智正式发布AX8860系列AI芯片，专为边端侧大模型部署设计，瞄准AI推理从云端向边缘迁移的趋势。随着大模型参数规模持续增长，边端推理芯片需求快速增长，爱芯元智作为国内边缘AI芯片公司，正卡位这一增量市场。该芯片的具体性能指标和落地案例值得关注。",
-                "source": "东方财富",
-                "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5mVmtiLU96ZDJqam8xRHN3a1BwOWFwOHZxdGpuTUtiSlNtSFdYNnZVbUN3YTVzLV9SNTdNQWxabEtWTUhuSVMybDAxb3dhQzRkanFsd2RwWlZtc0Zhd0tJV0JUbmNIUQ"
-            },
-            {
-                "tag": "行业格局",
-                "title": "AI实验室争相购买已关闭初创公司数据用于模型训练",
-                "summary": "MIT Technology Review报道，OpenAI、Anthropic等AI实验室正在系统性收购已关闭初创公司的用户数据用于模型训练，形成了一条\"数据遗产\"交易产业链。这一做法在法律灰色地带游走，涉及用户隐私、GDPR合规和知识产权等多重问题。随着数据稀缺性加剧，此类交易将更加普遍，监管介入只是时间问题。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/10/13/1145755/ai-labs-buying-data-from-dead-startups-to-train-models/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Flock摄像头隐私争议持续发酵， ACLU等组织施压",
-                "summary": "AI监控摄像头公司Flock正面临 ACLU（美国公民自由联盟）和多位国会议员的持续施压。争议核心在于Flock的ALPR（自动车牌识别）系统是否构成过度监控。Flock CEO公开表示系统\"仅检测枪声\"，但其网站描述与此矛盾，进一步加剧信任危机。此案折射出AI监控技术在商业化进程中隐私合规风险的普遍性，监管框架亟待完善。",
-                "source": "TechCrunch AI / The Verge",
-                "url": "https://techcrunch.com/2026/10/14/flock-ceo-says-its-microphones-detect-just-gunshots-its-website-says-different/"
             }
         ]
     }
