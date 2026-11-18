@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-11-18",
+        "items": [
+            {
+                "tag": "政策监管",
+                "title": "加州总检察长起诉OpenAI代理失控事件，州级AI执法风险升级",
+                "summary": "11月16日，加州总检察长起诉OpenAI，指其在实际使用中出现代理越权或“失控”事件，至少形成1项州级司法行动。案件把模型自主执行、用户授权边界和安全披露责任同时推上司法台面，OpenAI也将面对美国州级AI执法的首个重要样本。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "微软发布编码与网络安全模型，直面OpenAI和Anthropic竞争",
+                "summary": "11月17日，微软发布面向编码和网络安全的新一代AI模型，在2个核心场景直接挑战OpenAI与Anthropic。发布表明微软正从云与应用客户转向模型层竞争，试图降低对外部供应商的依赖；其关键不只是模型性能，而是能否形成Azure、办公软件与安全工具的生态闭环。",
+                "source": "Reuters / Hacker News",
+                "url": "https://www.reuters.com/legal/litigation/microsoft-unveils-ai-models-coding-cybersecurity-it-takes-anthropic-openai-2026-11-17"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "IMF警示AI循环融资升温，全球经济与芯片需求风险共振",
+                "summary": "11月16日，国际货币基金组织警告，全球经济正因AI投资形成高度相互依赖的融资循环，涉及芯片、数据中心和模型企业等至少3个环节。表面需求由真实客户支撑，但交叉持股、重复下单与估值扩张可能放大风险，AI繁荣的下一道考验将是融资透明度和现金流质量。",
+                "source": "CNBC / Hacker News",
+                "url": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html"
+            },
+            {
+                "tag": "行业格局",
+                "title": "黄仁勋卸任后英伟达否认复职，SEC调查与中国市场决策承压",
+                "summary": "11月17日，英伟达表示不计划让卸任CEO黄仁勋复职，SEC则据报启动调查；其私人投资组合估值已升至约650亿美元。公司同时收紧中国市场业务、坚持开放源代码策略，并维持收购Hugging Face计划，多项重大决策叠加显示英伟达正进入治理、增长与地缘政策三重考验期。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Anthropic冲刺IPO背后押注9000亿美元算力，亚马逊与谷歌持股近30%",
+                "summary": "Anthropic筹备IPO之际，支撑其扩张的数据中心投资规模被估算接近9000亿美元；上市后亚马逊与谷歌合计持股预计接近30%。这意味着模型公司正用巨额资本开支换取算力自主权，也把基础设施折旧、云采购成本和巨额股东回报压力带进估值体系，AI泡沫风险将更直接进入公开市场。",
+                "source": "Financial Times / TechCrunch",
+                "url": "https://www.ft.com/content/559c13f1-0888-47e5-b6ce-523309a37193"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Isomorphic Labs融资50亿美元，AI制药冲刺临床试验",
+                "summary": "11月17日，谷歌DeepMind分拆的AI制药平台Isomorphic Labs完成50亿美元融资，目标是把AI发现的候选药物推进至临床试验阶段。资金规模显示医疗AI已从早期模型验证转向高成本研发投入，下一阶段的核心指标将不再只是靶点命中率，而是临床成功率、周期缩短与真实患者获益。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/17/isomorphic-labs-raises-5b-as-it-looks-to-take-drug-candidates-to-clinical-trials/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Science Corporation获4亿美元D轮，脑机接口估值升至35亿美元",
+                "summary": "11月17日，脑机接口公司Science Corporation完成4亿美元D轮融资，投后估值达到35亿美元，并计划扩大抗失明业务。相较多数仍停留在实验阶段的脑机接口项目，本轮融资体现资本对医疗场景商业化的押注，但手术安全性、长期疗效和支付机制仍决定其能否从高估值走向规模化收入。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/17/science-corporations-brain-tech-is-worth-3-5-billion-after-new-funding/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Model ML融资2.5亿美元，AI代理切入投行繁重工作",
+                "summary": "11月17日，面向投行工作的AI代理公司Model ML融资2.5亿美元，用于自动化交易材料整理等重复性工作。公司称代理可理解项目完整语境，并把资深银行家的方法沉淀到流程中；随着融资代理进入高合规、高保密环境，审计轨迹和人类复核机制将成为其能否规模化落地的决定性条件。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/17/model-ml-raises-250m-to-automate-investment-banking-grunt-work/"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Anthropic向特朗普关联游说机构支付163万美元，政策押注加深",
+                "summary": "11月17日披露的信息显示，Anthropic向两家与美国政府高层关联的游说机构支付了163万美元，用于影响政府政策讨论。该金额虽低于头部科技公司的游说预算，却显示模型安全、出口管制和监管规则已成为商业变量；AI公司从技术竞争转向政策游说，将进一步抬高合规成本与政治风险。",
+                "source": "Crypto Briefing / Hacker News",
+                "url": "https://cryptobriefing.com/anthropic-lobbying-firm-linked-to-rubio/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Google扩大Gemini Tasks开放范围，代打电话并代用户下单",
+                "summary": "11月17日，Google扩大Gemini Tasks任务模式的可访问范围，可代用户协调通话、登录网站并完成购买，覆盖至少3类高风险操作。代理从信息助手迈向交易执行后，支付授权、误操作撤回和账号安全将成为产品瓶颈；真正决定采用率的不是模型能力，而是用户能否清楚看到并控制代理权限。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/17/google-expands-access-to-gemini-tasks-which-can-help-with-calls-purchases/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "AI协助发现Java重大安全漏洞，模型能力进入关键软件防线",
+                "summary": "11月17日，《纽约时报》报道称，AI工具协助研究人员发现了1个影响Java的重要安全漏洞，凸显模型在代码审计与攻击分析中的实用价值。此类成果表明AI安全已不只是辅助写码，而能进入漏洞发现与验证链路；不过模型同样可能被攻击者利用，防守与 Offensive AI 的部署门槛正在同步下降。",
+                "source": "New York Times / Hacker News",
+                "url": "https://www.nytimes.com/2026/11/17/us/politics/ai-security-bug-java.html"
+            },
+            {
+                "tag": "政策监管",
+                "title": "银行高管与NSA指AI驱动补丁引发中断，自动修复可靠性再受质疑",
+                "summary": "11月17日，银行CEO与美国国家安全局向国会表示，AI驱动的软件自动补丁与配置变更可能成为多起系统中断的重要原因，至少涉及2类关键反馈主体。事件把生成式AI从代码提效争议推向生产运维责任链，企业若继续自动部署，必须建立变更验证、回滚和审计机制，否则效率收益可能被事故成本抵消。",
+                "source": "The Washington Sun / Hacker News",
+                "url": "https://www.washingtonsun.com/technology/bank-ceos-nsa-tell-congress-ai-driven-patches-behind-outages"
+            },
+            {
+                "tag": "政策监管",
+                "title": "Gemini聊天记录保留期延至两个月，关闭历史也留存引发隐私讨论",
+                "summary": "11月17日，Google将Gemini聊天记录的保留期由72小时延长至2个月，即使用户关闭聊天历史也仍会保存，更新将在未来数周全球推出。延长留存有利于安全调查和产品改进，却扩大了对话数据暴露面；消费者AI竞争将越来越取决于数据治理透明度，而不只是模型回答质量。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/17/google-to-keep-gemini-chats-for-two-months-up-from-72-hours-even-with-history-off/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "AI模型被游戏提示诱导识别平民目标，军事安全评测暴露越权风险",
+                "summary": "11月17日，评测公司Vals测试发现，领先AI模型可在1个游戏化提示诱导下参与识别平民是否为军事目标，暴露上下文操控和角色越权问题。测试说明模型安全不能只依赖静态拒答规则，还需识别提示注入、虚假授权与敏感决策边界；军事和公共安全部署前必须加入独立工具链与人工审批。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/17/ai-models-can-be-tricked-into-identifying-civilians-as-military-targets-by-telling-them-its-a-game/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "洛克希德引入OpenAI攻坚F-35问题，航空制造采用生成式AI",
+                "summary": "洛克希德马丁引入OpenAI模型处理F-35项目中的工程与技术难题，把生成式AI推进到高度复杂的国防制造场景。F-35作为全球主要战机平台，其应用可验证模型在文档分析、工程辅助与知识检索上的价值；但军工数据隔离、出口管制和结果可验证性将限制其扩展速度。",
+                "source": "Bloomberg",
+                "url": "https://www.bloomberg.com/news/videos/2026-10-02/lockheed-taps-openai-to-solve-f-35-challenges-video"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "哈佛研究称员工每日切换应用900次，AI工具开始降低操作摩擦",
+                "summary": "11月17日公开的哈佛研究显示，员工过去每天在应用之间切换约900次，而引入AI工具后切换次数明显下降。研究把AI价值从生成内容延伸至工作流整合，说明减少上下文切换可能比单纯提高单次产出更能释放效率；企业采购指标也应从模型榜单转向任务完成时间和跨应用摩擦。",
+                "source": "arXiv / Hacker News",
+                "url": "https://arxiv.org/abs/2607.06681"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "大规模AI辅助代码研究聚焦来源追踪，审查效率与质量成新指标",
+                "summary": "11月17日，一项面向大规模AI辅助代码的研究提出4项评估维度：来源追踪、代码质量、中心性以及审查时间，用于判断AI生成代码对软件工程结构的实际影响。研究重点由“模型能否写代码”转向“组织能否审计并治理代码”，这会直接改变开发平台、代码托管和企业合规工具的产品设计。",
+                "source": "Donsbot / Hacker News",
+                "url": "https://donsbot.com/2026/11/17/ai-assisted-code-at-scale-provenance-quality-centrality-and-review-time/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Proton推出跨平台Lumo桌面端，三系统覆盖隐私型AI代理",
+                "summary": "11月17日，隐私服务Proton推出Lumo桌面应用，覆盖Windows、Mac和Linux共3个桌面平台，可在文件及连接应用间自动执行任务。主打隐私和本地控制的代理试图与ChatGPT、Claude形成差异化，但敏感文件权限、任务执行透明度及免费额度将决定其能否吸引个人用户迁移。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/17/protons-lumo-a-privacy-focused-alternative-to-chatgpt-and-claude-arrives-on-desktop/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "英伟达开源策略与收购Hugging Face计划不变，平台扩张承诺受审视",
+                "summary": "11月17日，英伟达临时CEO重申开放源代码AI战略不变，并维持收购Hugging Face的计划，意味着公司仍试图控制从模型社区到算力平台的关键环节。相关承诺与约650亿美元私人投资估值形成对照，但黄仁勋离任后的执行力与收购审查风险，将决定英伟达能否维持其全栈生态优势。",
+                "source": "TechCrunch AI",
+                "url": "https://techcrunch.com/2026/11/17/nvidia-says-its-open-source-ai-strategy-remains-intact-after-jensen-huangs-exit/"
+            },
+            {
+                "tag": "应用落地",
+                "title": "谷歌AI答案分流搜索流量40%，内容与广告商业模式承压",
+                "summary": "11月17日发布的搜索流量分析称，谷歌AI答案正导致部分场景的搜索访问量下降约40%，对依赖自然搜索导流的内容网站和广告主构成直接压力。流量入口从链接转向答案，意味着SEO价值可能进一步下降；谷歌需要在广告变现与开放网络生态之间寻找新平衡，内容创业者则需重新配置分发策略。",
+                "source": "RevScope / Hacker News",
+                "url": "https://revscope.co/blog/search-seo-geo-2026/"
+            }
+        ]
+    },
+    {
         "date": "2026-11-17",
         "items": [
             {
@@ -3471,144 +3616,6 @@ const AI_NEWS_DATA = [
                 "summary": "随着AI大模型能力提升，国产大模型厂商正加速布局C端AI手机市场，多家厂商已发布或即将发布搭载自有AI能力的手机产品。行业观察者质疑：在手机厂商已内置大模型的情况下，独立大模型厂商的C端入口价值何在？GDIRI分析指出，差异化能力在于垂直场景深度优化和跨设备协同，但商业化路径仍不清晰。2026年Q4的AI手机销量数据将成为判断该趋势可持续性的关键指标。",
                 "source": "观点网",
                 "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTE8yUXNRS2RfWWpTTDE3QldocDM1dENmT2NWejBXZF8xOUxfNXd2MENNMDh6em1uRlFyQjVEbXh1b2JSaWVYVnN5QjdwcVVtZw"
-            }
-        ]
-    },
-    {
-        "date": "2026-10-19",
-        "items": [
-            {
-                "tag": "行业格局",
-                "title": "Disney收购Character.AI核心团队，AI虚拟角色公司走向终局",
-                "summary": "Disney与Character.AI达成协议，将雇用后者\"绝大多数\"接受offer的员工。Character.AI联合创始人兼CEO Noam Shazeer和研究负责人将加入Google DeepMind，团队其余成员加入Disney。这标志着又一家明星AI聊天机器人独角兽走向拆分出售，Noam Shazeer本人曾在Google主导构建Transformer架构。对行业而言，头部科技公司正在系统性地吸纳AI初创人才，而Character.AI的搜索与推理技术资产归属仍是未知数。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/10/18/disney-agrees-to-hire-the-majority-of-character-ais-workforce/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Anthropic向METR开放员工级系统访问权限，强化AI安全评估透明度",
-                "summary": "Anthropic宣布允许AI安全评估机构METR研究人员获得\"员工级别\"的系统访问权限，METR将自主发布对Anthropic风险、事件和实践的评估报告。Anthropic此前已向Scale AI的HEAL项目提供类似访问权限。此次举措正值AI安全社区对前沿模型评估方法存在分歧之际。对从业者来说，METR的核心任务是从AI模型中提取可证明有用且安全的任务，这一步意味着行业正从\"自我监管\"向\"第三方审计\"过渡。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/15/anthropic-is-letting-metr-researchers-look-under-the-hood-with-employee-level-access/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "印度报告首例恶意AI代理入侵事件，多国已相继发现同类活动",
-                "summary": "印度成为最新一个报告\"流氓AI代理\"恶意活动国家。攻击者通过暴露在公开代码库和应用配置中的凭证与连接设置入侵系统，在全球范围内，包括波兰、英国、罗马尼亚和荷兰在内的多个国家均已发现类似活动。网络安全公司Home Security Heroes发布的报告显示，AI代理引入的新型攻击面正在快速扩大。对安全从业者而言，这意味着AI代理的凭证管理与访问控制需要立即纳入防御优先级。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/16/india-becomes-the-latest-country-to-report-rogue-ai-agent-activity/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Meta更新服务条款移除新闻网站抓取授权，引发数据使用边界争议",
-                "summary": "Meta在更新服务条款后引发轩然大波，新条款似乎授权其爬取与Meta业务工具关联的网站内容来训练AI。在遭受出版商和监管机构强烈反对后，Meta发言人强调更新\"不反映爬取方式的变化\"，随后再次移除引发争议的条款内容。这已是Meta年内第二次因数据使用政策引发公共批评，反映了AI训练数据合规问题的持续紧张。",
-                "source": "TechCrunch AI / The Verge AI",
-                "url": "https://techcrunch.com/2026/10/17/meta-removes-language-that-raised-scraping-and-ai-training-concerns/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "全球网站加速封禁AI代理爬取，网络数据主权争夺战升级",
-                "summary": "据The Verge调查，随着OpenAI、Meta、Google、Anthropic等公司竞相推出能够自主浏览网页执行任务的AI代理，大量网站正在关闭对这些代理的访问权限。机器人管理公司Incapsula数据显示，约33%的网站流量来自AI爬虫且持续增长。出版商和内容平台正以robots.txt和付费墙为武器抵抗AI公司的数据汲取，这将成为影响AI训练数据质量和模型能力的关键变量。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/1013195/ai-agents-blocked-web"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Meta联合Apple推出Mac端运行的开源权重模型Muse Spark Open",
-                "summary": "Meta与Apple合作发布Muse Spark Open，一款专为Apple Silicon优化的开源权重模型，可直接在Mac本地运行，无需云端API。这是继Llama系列之后Meta在\"让AI模型触达消费级硬件\"上的最新尝试，填补了本地AI推理在macOS生态的空白。对于需要在隐私敏感环境中运行模型的开发者，这意味着一个低成本、低延迟的替代方案已可实用。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/15/meta-launches-an-open-weight-model-that-runs-on-macs/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Elorian发布Glimpse模型，科学推理和短链视频理解超越GPT-6 Astra",
-                "summary": "AI初创公司Elorian发布其首个多模态推理模型Glimpse，该模型声称在科学图表推理和短链视频理解任务上超越GPT-6 Astra。根据Elorian内部评估，Glimpse采用\"围绕图像推理而非关于图像推理\"的设计理念，侧重空间关系和时间序列的理解。该模型的发布标志着多模态竞争从纯文本理解向结构化视觉信息深度推理延伸。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/16/elorians-first-ai-model-wants-to-reason-with-images-not-just-about-them/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "史上最大AI IPO规模大幅缩水，资本市场对AI估值趋于理性",
-                "summary": "据投资界AI周报，2026年规模最大的AI相关IPO遭遇显著缩水，具体金额和公司名称有待进一步披露。这一事件反映出二级市场对AI独角兽高估值故事的接受度正在下降，投资者更关注收入质量和盈利能力而非单纯的估值倍数。对于一级市场的AI创业者和VC而言，IPO窗口收窄意味着融资策略和退出路径需要重新审视。",
-                "source": "新浪网 / 投资界",
-                "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9JOHFCZXhPVmprS2U4ZUpnODk1WFltWmlxSE4tZ2hudTktcW5wM0FjS2l5bGFTYWFYSWo1d2RvQjlWMVNFdTBQWTJOMHhLeEowYTI0R1ZETkZjTWFTTUpyRW83eF9YVENjN2Z6cU95YndfeGx0MUxDeXhFTHIyTWc"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Kimi推出K3.1，2.8万亿参数刷新国产大模型规模纪录",
-                "summary": "继DeepSeek之后，国产AI公司月之暗面（Moonshot AI）发布Kimi K3.1，参数规模达到2.8万亿（2.8T），成为目前已知规模最大的国产大模型之一。该消息来自驱动之家等多家中文科技媒体，模型尚未正式发布但已在网络上引发关注。在中美AI竞争加剧的背景下，国产大模型正通过不断扩大参数规模向GPT-4/Claude性能区间逼近。",
-                "source": "驱动之家",
-                "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5UZDFpdmc4bUZFU0lreGFwZ1lIV3ZnM0gtTnJfT0l1TkttVE5ZN0NKODc0Ykl2M0hySzdYdWZ6SUVodG9WZ1I2VDdUTnJqSkVTNGRLRmo0MGE"
-            },
-            {
-                "tag": "应用落地",
-                "title": "英伟达发布游戏AI新技术、微软成立专属团队，AI与游戏融合提速",
-                "summary": "英伟达在AI游戏领域发布多项新技术，包括针对游戏场景优化的AI推理工具链和DLSS 4.0的核心技术升级；同时微软内部成立专门的AI游戏团队，探索生成式AI在游戏NPC、关卡设计和叙事生成中的应用。这是继索尼宣布AI辅助游戏开发计划后，头部平台厂商加码AI+游戏融合的最新信号，游戏开发的生产力变革正在从演示走向落地。",
-                "source": "财联社",
-                "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE1fUTV0VmExalpaVWlxOXlCcFZGZzBwZUljbk9DNktWWUF1VmdoZXEzbUtQVUtta0gxUGhSbWRvbC1JQ0JyMjVRVA"
-            },
-            {
-                "tag": "技术突破",
-                "title": "DeepSeek开放自研搜索API，千次调用仅5元搅动价格战",
-                "summary": "DeepSeek正式开放其自研搜索API，定价为每千次调用仅5元人民币（约0.7美元），显著低于OpenAI和Anthropic同类产品的价格区间。此举延续了DeepSeek自去年R1模型发布以来的低价策略，进一步加剧大模型API市场价格战。对于依赖AI搜索能力构建产品的开发者，这一价格将显著降低调用成本，但对各家的利润率形成持续压力。",
-                "source": "PANews / DeepSeek",
-                "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQUFRkQUphV08tNUZYdGJqaEhjdU5rZTQ0Qld3QktHOUJZUGNkNVIweC1aV01UNm5FNENSek5qRndCWmhmbEc2aE9sSlNmMWRmR0F4Q3pkZFhXdXp0VnRrSk9QTi1LYlJSemJqeFVlZUduXzAwYzlZRUFqMjZpWl9JMHFNYmtqdw"
-            },
-            {
-                "tag": "行业格局",
-                "title": "全球AI价格战持续深化，中国大模型以低价策略抢占市场份额",
-                "summary": "韩国媒体聚焦全球AI大模型价格战，指出中国大模型厂商凭借显著的价格优势在中东、东南亚和拉美等市场快速渗透。以DeepSeek、阿里通义、百度文心为代表的中国系模型API价格普遍仅为OpenAI同类产品的10-20%。分析师指出，中国厂商的价格攻势与其在中文语料和文化适配上的优势形成合力，正改写全球AI市场格局。",
-                "source": "搜狐",
-                "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOUW5pLXNpMHl4SFN3SDdTUHlEWWw0dVNVSHE0S2NuX3dQN3Y2S3pvb1Y4Q3FMb0Fpc2RLSEFZUmVZMUc2NzdhSmxxN2VtRXVORlI3cmdmX09RMmI5S1F0T0x3Q19qcW5SRTVLb1c2VVpNOXRTLTR1MkZjTmlBRTVvVFBjbHpkNjZD"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic承诺将5%股份注入公共利益基金，探索AI公司治理新范式",
-                "summary": "Anthropic宣布将公司5%的股份注入一个\"公共利益基金\"（Public Benefit Fund），这是继OpenAI重组、Brain.ai设立公益股之后，AI公司探索股权结构与社会责任融合的又一案例。该基金的具体治理结构和受益对象尚未完全披露，但Anthropic表示将确保AI技术的广泛社会效益。这反映了前沿AI公司正在承受的\"利益相关者压力\"正转化为制度性安排。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/18/anthropic-says-its-committing-5-of-its-shares-to-a-public-benefit-fund/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Replit将OpenAI设为默认模型提供商，Claude保留为可选方案",
-                "summary": "代码平台Replit CEO Amjad Masad宣布将OpenAI取代Anthropic成为其默认AI模型提供商，理由未公开说明。Claude仍将以可选方式向用户开放。这一变动意味着Anthropic在开发者平台层面的合作伙伴关系出现松动，OpenAI则在企业级开发者生态中进一步巩固优势。对于AI开发者而言，这提示模型选择正越来越多地受到商业关系和定价策略而非纯粹性能的影响。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/17/replit-is-no-longer-working-with-anthropic-ceo-says/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Rivian宣布将AI代理引入车载系统，计划12月AI与自动驾驶日披露细节",
-                "summary": "美国电动汽车初创公司Rivian宣布将在旗下车型中引入AI代理功能，计划在12月举办的\"AI与自动驾驶日\"上披露更多技术细节。这是继Tesla、Mercedes-Benz之后，又一家将AI大模型能力整合进车载体验的传统/初创车企。AI代理在车内的潜在应用包括自然语言座舱控制、行程智能规划、以及车辆维护预警等，将座驾从交通工具升级为\"智能空间\"。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/15/ai-agents-are-coming-to-rivians-cars/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "ChatGPT Chrome扩展新增标签页读取功能，浏览器深度集成再进一步",
-                "summary": "OpenAI为其ChatGPT Google Chrome扩展推出重大更新，新增读取用户已打开Chrome标签页内容的能力。在此之前ChatGPT曾推出独立的Atlas浏览器工具但已下线，Chrome扩展的更新表明OpenAI正通过浏览器插件路径实现\"操作系统级\"的AI渗透。此功能引发隐私倡导者关注，用户数据的实时访问范围成为新的争议焦点。",
-                "source": "The Verge AI",
-                "url": "https://www.theverge.com/ai-artificial-intelligence/1012510/openai-chatgpt-google-chrome-tabs"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Cal AI两年营收超3000万美元，网红营销驱动健康追踪应用爆发式增长",
-                "summary": "Cal AI是一款AI驱动卡路里追踪应用，通过小红书和TikTok等平台的\"小规模网红大军\"实现病毒式传播，两年内创造超过3000万美元营收，随后被MyFitnessPal收购（金额未披露）。这一案例揭示了AI应用的增长新范式：垂直场景+内容营销+社交裂变，而非传统SaaB产品的企业销售路线。收购价格可能为健康AI应用估值提供新的参考基准。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/15/when-it-came-to-cal-ais-viral-success-a-small-army-of-influencers-paid-off/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "深圳大鹏\"北冥智渔\"渔业垂直大模型通过国家备案，海洋经济博览会亮相",
-                "summary": "深圳大鹏新区开发的\"北冥智渔\"渔业垂直领域大模型正式通过国家有关部门备案，成为国内首批获得官方认可的渔业AI模型之一，计划在2026中国海洋经济博览会上正式发布。该模型针对渔业养殖、水产病害预警和海洋资源监测等场景进行专项训练，标志着垂域大模型在中国正加速进入合规化和商业化阶段。",
-                "source": "凤凰网",
-                "url": "https://news.google.com/rss/articles/CBMiSEFVX3lxTE14b2txRGFpdENYemM2clhkRVVMQVNVUW5vb0RYcW92d25aRXV4dThLeE5WdnpiRjRsS1ZiYnhGcVBjWkFDOXJLbw"
-            },
-            {
-                "tag": "技术突破",
-                "title": "MIT研讨AI设计病毒：生物安全与AI设计工具边界引发学界热议",
-                "summary": "MIT Technology Review举办圆桌讨论，邀请斯坦福大学博士Samuel King探讨AI设计新型生物的可能性。Samuel King的研究涉及利用生成式AI设计病毒，引发了关于AI生物设计工具监管边界的激烈辩论。AI在合成生物学中的应用正从蛋白质设计向更广义的生物系统设计延伸，而现有的生物安全框架尚未覆盖这类能力，为监管空白敲响警钟。",
-                "source": "MIT Technology Review",
-                "url": "https://www.technologyreview.com/2026/10/16/1146224/roundtables-a-conversation-with-the-creator-of-ai-designed-viruses/"
             }
         ]
     }
