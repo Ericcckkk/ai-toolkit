@@ -2,6 +2,151 @@
 // 每天 20 条，按重要性排序：政策监管 > 应用落地 > 重要产品发布 > 行业格局变动 > 大额融资/IPO > 技术突破 > 研究报告
 const AI_NEWS_DATA = [
     {
+        "date": "2026-11-20",
+        "items": [
+            {
+                "tag": "大额融资/IPO",
+                "title": "Anthropic以83美元每股登陆纳斯达克，首日涨33%",
+                "summary": "11月19日，Anthropic以每股83美元在纳斯达克上市，按全面摊薄口径估值约1.5万亿美元，较预期区间更高；首日交易价升至111美元，涨幅约33%，公司融资超过800亿美元。七名创始人套现合计接近20亿美元，Dario Amodei同时重申控制AI开发节奏。史上最大AI上市将检验前沿模型的资本需求，也迫使投资者重新审视循环融资风险。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://techcrunch.com/2026/11/19/anthropic-hits-nasdaq-exchanges-at-110-27-above-ipo-price/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "黄仁勋辞职震动英伟达，AI芯片龙头权力结构生变",
+                "summary": "英伟达CEO黄仁勋因婚外情及涉嫌中国间谍的指控辞职，任命Colette Kress临时接掌公司，并一度延迟提交常规SEC报告，令管理层诚信与美国国家安全审查同时受到关注。马斯克将其离任形容为“赶走迈克尔·乔丹”，微软则公开表示对继任者有信心。个人治理风险已从私人丑闻升级为芯片供应和AI基础设施的关键变量。",
+                "source": "TechCrunch / The Verge / MIT Technology Review",
+                "url": "https://techcrunch.com/2026/11/19/the-unfolding-jensen-huang-scandal-a-timeline/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "苹果招聘AI代理工程师，Mac或迎跨应用自主执行",
+                "summary": "苹果近期招聘负责自主AI代理的工程师，招聘信息显示，该产品至少需要支持浏览网页、跨应用协作和代表用户完成多步骤任务，可能深度接入Mac系统能力。苹果目前尚未正式公布产品名称、发布时间或模型来源。招聘动作表明苹果正从调用外部模型转向自研执行层，Mac有望成为其争夺个人代理入口的首个平台。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://www.theverge.com/tech/1038227/apple-ai-agent-engineer-job-listing"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Gemini登陆Mac并获电脑操作权，可执行多步骤任务",
+                "summary": "谷歌为macOS版Gemini加入计算机操作能力，用户可授权其整理本地文件、填写网页表单并连续执行多步骤任务，代理开始从对话建议升级为直接操控桌面应用。更新把Gemini的竞争范围直接推向操作系统入口，也对Mac原有多任务效率工具形成压力。电脑使用能力的安全授权边界，将成为消费级代理能否规模商用的关键。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://www.theverge.com/tech/1037902/google-gemini-macos-ai-computer-use"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Meta Muse被曝混淆对话并泄露隐私，企业级代理风险升高",
+                "summary": "据TechCrunch援引内部报告，Meta AI代理Muse存在混淆不同用户会话和暴露私人信息的风险，报告点名了托育请求与职业建议等至少2类敏感场景，可能涉及员工对话内容。若问题未被及时修复，企业将难以放心授予代理邮件、消息和日历权限。Muse事件说明，代理的记忆隔离与权限审计已从技术选项变成采购门槛。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/19/metas-ai-agent-muse-is-mixing-up-conversations-and-exposing-private-data-report-says/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Meta Muse Charm硬件曝光，定价约300美元押注随身AI入口",
+                "summary": "Meta即将推出的Muse Charm被曝定价约300美元，设备配备小型屏幕，主要用途是与AI代理Muse进行语音或文本交互。Meta尚未否认价格信息，仅表示将公布更多细节。该产品意在绕开手机应用限制，把代理变成随身硬件入口，但300美元定价能否被用户接受，仍取决于独立价值而非手机功能复制。",
+                "source": "TechCrunch / The Verge",
+                "url": "https://www.theverge.com/tech/1038087/meta-muse-charm-ai-price"
+            },
+            {
+                "tag": "应用落地",
+                "title": "ChatGPT上线实时听写，语音交互延迟进一步压缩",
+                "summary": "OpenAI为ChatGPT加入Live Dictation实时听写功能，用户通过麦克风讲话时，系统会即时接收并转写语音内容，随后直接交给聊天模型处理。该功能把语音输入、实时转写和对话执行整合为2段连续流程，并提升长指令录入效率。实时听写将成为移动办公代理的基础交互层，但准确率、权限提示与多说话人识别仍决定实际体验。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1037634/openai-chatgpt-live-dictation"
+            },
+            {
+                "tag": "应用落地",
+                "title": "谷歌搜索首页加入AI聊天入口，搜索与助手边界前移",
+                "summary": "谷歌正在搜索首页增加AI搜索与聊天入口，将生成式交互从独立产品进一步前移到用户打开搜索的第一屏，并把AI Overviews与对话式探索连接起来。此次调整至少涉及搜索首页和结果呈现2个核心环节，意在承接用户从关键词检索向任务型提问迁移。搜索流量入口的变化，将迫使广告、内容出版和流量分发平台重新计算AI代理带来的价值损失。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/tech/1038059/google-search-homepage-ai-chats"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "Canva加入生成式AI总开关，用户可彻底关闭相关功能",
+                "summary": "Canva新增1个生成式AI控制选项，允许用户关闭平台的生成式AI功能，为设计创作保留非AI工作流。此次更新回应了设计师对版权、风格控制权和内容来源的长期担忧，也使Canva在专业创意工具竞争中补上隐私控制短板。企业级创意软件能否被广泛采用，将越来越取决于退出机制，而不仅是AI生成效果。",
+                "source": "The Verge",
+                "url": "https://www.theverge.com/ai-artificial-intelligence/1037126/canva-ai-features-off-button"
+            },
+            {
+                "tag": "应用落地",
+                "title": "Superhuman将Go扩展至文档和邮件，邮件代理竞争升温",
+                "summary": "Superhuman正把AI助手Go升级为核心代理，并将其接入Docs和Mail等至少3个主要工作界面，让邮件处理、文档编辑与信息获取形成连续流程。更新显示其战略已从单点效率工具转向统一办公代理，但官方尚未披露活跃用户、付费规模或任务成功率。Go能否挑战现有邮件和协作套件，取决于跨应用执行是否稳定，以及用户是否愿意让代理直接修改核心内容。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/19/superhuman-pushes-its-go-assistant-everywhere/"
+            },
+            {
+                "tag": "行业格局",
+                "title": "微软向6万名员工提供买断，组织重构继续加速",
+                "summary": "微软CEO Satya Nadella解释，公司在10月向约6万名员工提供自愿买断方案，以推动组织结构持续精简，避免传统裁员造成被动重组。背景是AI资本开支上升、云业务扩张和软件团队重新配置，岗位调整已成为科技巨头把算力投入转化为效率的现实手段。6万人规模表明，AI转型不再只影响研发岗位，也开始系统性重塑整个企业组织。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/18/microsoft-ceo-satya-nadella-explains-why-he-asked-60k-employees-to-quit/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "纳德拉警告关键基础设施难修补，AI网络风险被低估",
+                "summary": "微软CEO Satya Nadella在谈及近期Outlook服务中断时表示，部分关键基础设施已经难以通过传统补丁方式修复，并承认AI既创造机会也扩大网络攻击面。该判断至少涉及1次大型生产力平台故障和2类结构性风险，即资产老化与AI增强攻击。AI代理扩大自动化攻击面的速度，可能快于企业修复系统的速度，安全预算需要从补丁采购转向韧性建设。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/18/amidst-fears-of-ai-cyberattacks-satya-nadella-says-lots-of-critical-infrastructure-is-unpatchable/"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "纳德拉预测AI代理重塑网页经济，广告模式面临重构",
+                "summary": "微软CEO Satya Nadella表示，AI代理可能重排网页经济，迫使亚马逊等依赖流量和广告的平台重新思考商业模式，并可能影响至少广告主、流量平台和用户3方关系。传统模式依赖用户逐页浏览与点击广告，而代理更倾向直接汇总信息并完成决策。网页流量价值可能因此下降，内容供给方、搜索平台和代理入口方将展开新一轮控制权争夺。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/18/satya-nadella-predicts-ai-agents-will-reshuffle-the-economics-of-the-web/"
+            },
+            {
+                "tag": "技术突破",
+                "title": "AI嗅觉公司称达到人类水平，30名嗅探员参与验证",
+                "summary": "新泽西州AI嗅觉初创公司Osmo宣称，其AI鼻子在部分气味识别任务上已达到人类水平，并在纽瓦克机场附近实验室组织约30名经验丰富的嗅探员建立对照数据。若结果在大规模盲测中保持稳定，AI将能承担气味检测、质量控制和危险品筛查等难以用视觉解决的任务。气味领域缺少通用数据集和行业标准，商业化仍需更多第三方验证。",
+                "source": "MIT Technology Review",
+                "url": "https://www.technologyreview.com/2026/11/18/1148816/smell-startup-osmo-ai-nose-good-as-humans/"
+            },
+            {
+                "tag": "大额融资/IPO",
+                "title": "Everful融资4850万美元，连接零售商与中国工厂供应链",
+                "summary": "前阿里巴巴高管创办的Everful完成4850万美元融资，用于扩展工厂直采平台，帮助海外零售商直接对接中国制造商。此次融资规模低于1亿美元门槛，但交易直指跨境采购中的信息不对称、库存积压和交付效率问题。随着生成式AI降低选品和匹配成本，供应链代理能否形成真实交易闭环，将比单纯融资额更能决定其长期价值。",
+                "source": "TechCrunch",
+                "url": "https://techcrunch.com/2026/11/19/former-alibaba-execs-everful-raises-48-5m-to-connect-retailers-with-chinese-factories/"
+            },
+            {
+                "tag": "重要产品发布",
+                "title": "海南首个备案文旅大模型发布，智能体落地荣山寮",
+                "summary": "海南首个完成备案的文旅大模型于11月18日发布，并同步推出鱼多多智能体，落地荣山寮等文旅场景，以知识问答、行程规划和服务导览为主要方向。地方文旅模型获得备案，意味着生成式AI开始进入官方服务和目的地运营体系。区域文旅竞争将不再只比拼景点数量，数据质量、跨机构内容接入和实际转化率更决定产品价值。",
+                "source": "观点网",
+                "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFBFZWhtcVEtQ18zQ09sV1Fkb19nYTE5dWNVZE5naW9keEw4akVuMVRNVU03dlRHaGJLU25iTFJTSUFIQWVYUHBablFaY3J0QnpoSXUwWWh4RXdmNE5vV0t1RzN3?oc=5"
+            },
+            {
+                "tag": "技术突破",
+                "title": "百图生科发布AI药物安全评价系统，推进虚拟猴验证",
+                "summary": "百图生科正式发布1套AI药物安全性评价系统，将验证路径从虚拟细胞进一步推进到虚拟动物层面，目标是模拟药物对复杂生物组织的潜在影响，覆盖2个主要研发阶段。系统试图在临床前阶段减少动物实验和研发周期，但准确率、可解释性及监管认可度仍是落地门槛。药物安全若能由虚拟模型先行筛查，将显著改变高失败率环节的成本结构。",
+                "source": "雷峰网",
+                "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1xRmZrcVg1cks1NUxFYWF4U1hoVUFkQ2l5Z2xPNVlRdm1XMFRfS2lwQjJtRFBvUW5UV3dPTUxKRmZUd2VNZDBfU3FjemZyWFZoeUF2bUVxckoybHVvMkUxX05lOXdWS3N4b3IwdGRKSE8wdWFMU09z?oc=5"
+            },
+            {
+                "tag": "技术突破",
+                "title": "忆联联合英特尔发布KV Cache G3.5存储节点方案",
+                "summary": "忆联与英特尔联合发布KV Cache G3.5极简存储节点最佳实践方案，重点优化大模型推理过程中键值缓存的容量、传输和部署效率。新版本G3.5面向持续扩张的上下文窗口，试图缓解GPU显存瓶颈并提升推理集群资源利用率。材料未披露性能提升比例，但这一方向表明，AI基础设施竞争已从单卡算力扩展到缓存、存储和网络的全栈协同。",
+                "source": "中华网",
+                "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE4zWGZGOFRsUGd4ME5vTjN4TmhaY2xRQ18yQjVadzJYOUNfTTg5WG1ydVYydnc1THZoSG1BaHItNkNSTnFrMS1TWEJ2QmJXdkZrVHMtbEJfZXpON0tGLWc?oc=5"
+            },
+            {
+                "tag": "应用落地",
+                "title": "龙软科技唐安时空大模型落地，AI业务确认收入超2000万元",
+                "summary": "龙软科技11月19日表示，唐安时空大模型已落地多家客户，相关AI业务确认收入超过2000万元，公司同时将其定位为通用产品方案而非单一行业定制。财务数字说明大模型业务已跨过纯试点阶段，但与公司整体规模相比仍属早期增量。通用时空模型能否复制销售，将决定其究竟是项目型收入还是可规模化的软件产品。",
+                "source": "证券之星",
+                "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5YZVJtc1RCZTF2bnRGN01LNUc2ZmVfdDktb0d5OFNlenRtOUZERnJQZS1US2h5NjI0MkVDNjJaTXZCcEtEaXYzeXFhcWZMbC1hZVgyQ3dyUkxKRGk4MmI5UGVB?oc=5"
+            },
+            {
+                "tag": "研究/报告",
+                "title": "嘉定集中发布102项科创项目，探索成果转化新模式",
+                "summary": "上海嘉定集中发布102项优质科创项目，围绕AI等前沿技术探索成果转化新模式，试图缩短实验室技术从论文、样机到产业订单的周期。单项材料未披露完整投资额或收入规模，但102项集中供给体现了区域科技产业加速进入规模化成果转化阶段。模型和算力供给日益充足后，地方竞争的关键将转向场景开放、资本接续与首批商业客户验证。",
+                "source": "上观新闻",
+                "url": "https://news.google.com/rss/articles/CBMiWkFVX3lxTE1ZQkwwCFBPemRGdVpzeDZpZXhrUEpLVF9iRUxEeW1pQU5wa3pLNkNVbXBxdXh5TGk3Zndia1RVMXcwN1dZbW15VDZyUGNrNkpUb0c3NXYtdjJ3UQ?oc=5"
+            }
+        ]
+    },
+    {
         "date": "2026-11-19",
         "items": [
             {
@@ -3471,151 +3616,6 @@ const AI_NEWS_DATA = [
                 "summary": "Figma联合创始人Dylan Field表示，MCP并不是解决所有智能体互操作问题的完美协议，公司计划支持尽可能多的标准，同时避免暴露全部产品数据。1个协议难以独立承担身份、权限、支付和工具调用等复杂职责，企业将从单标准押注转向网关层与多协议兼容。",
                 "source": "TechCrunch",
                 "url": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/"
-            }
-        ]
-    },
-    {
-        "date": "2026-10-21",
-        "items": [
-            {
-                "tag": "政策监管",
-                "title": "美国政府下令联邦机构从系统中移除中国DeepSeek AI",
-                "summary": "美国已下令联邦民用机构移除DeepSeek产品及使用其技术构建的第三方服务。这是拜登政府离任前推出的AI安全禁令之一，旨在防止中国AI技术渗透联邦系统。该命令适用于联邦民用机构使用或维护的涉及DeepSeek的IT系统及第三方服务。Alphabet等大型云服务商已开始配合执行。对于AI从业者而言，这意味着企业级AI采购将面临更严格的地缘政治审查，国产AI出海企业需重新评估其国际化战略路径。",
-                "source": "TechCrunch / TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/us-orders-federal-agencies-to-remove-chinas-deepseek-ai-from-their-systems/"
-            },
-            {
-                "tag": "政策监管",
-                "title": "Anthropic推动AI安全法案：若模型或致50+人死亡则应被阻止",
-                "summary": "Anthropic向加州立法机构提交了一份引发争议的AI安全法案提案，核心条款规定如果AI系统\"在单次操作中可能导致50人或更多人丧生\"，则该模型应被阻止发布。该法案还要求AI公司在发布前进行第三方安全评估，但批评者指出该法案实际上禁止联邦机构干预，削弱了现有监管能力。Hugging Face政策负责人也对\"嵌入式评估器\"方案表示质疑，认为在AI组织内部安插\"中立\"第三方观察者并非可行方案。",
-                "source": "TechCrunch AI / The Zvi Substack",
-                "url": "https://techcrunch.com/2026/10/20/anthropic-pitches-ai-safety-bill-that-may-block-a-model-if-50-people-could-be-killed/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Anthropic被曝今年上半年净亏损达800亿美元，财务压力巨大",
-                "summary": "据Polymarket预测及市场报道，Anthropic在2026年上半年录得约800亿美元的惊人净亏损，主要源于大规模计算基础设施投入。作为AI安全领域估值最高的创业公司之一，Anthropic正面临前所未有的资金压力。雪上加霜的是，其云服务商合作关系正变得\"混乱\"，AWS、谷歌等厂商日益将Anthropic视为竞争对手，导致计算资源获取困难。这家曾被视为OpenAI最强劲挑战者的公司，其商业可持续性正受到严重质疑。",
-                "source": "Polymarket / YouTube (WSJ报道)",
-                "url": "https://twitter.com/Polymarket/status/2112634886070919426"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Nscale与Anthropic洽谈450亿美元计算资源新协议",
-                "summary": "据TechCrunch报道，Nscale正与Anthropic就另一笔450亿美元的计算资源交易进行深入谈判。若达成协议，这将是Anthropic在过去一段时间内达成的最新一笔巨型计算合同。此前Anthropic已与多家云服务商达成类似规模交易，主要目的是确保其在训练下一代模型时有足够的GPU算力支撑。此类交易也反映出AI军备竞赛中算力资源的战略稀缺性。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/19/nscale-and-anthropic-are-reportedly-in-talks-for-yet-another-45-billion-compute-deal/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "OpenAI收购Orchestra Bio强化生物技术业务",
-                "summary": "OpenAI宣布收购生物技术初创公司Orchestra Bio，将后者的团队和技术整合至其生命科学研究AI模型Rosalind项目中。这是OpenAI在AI+生物医药领域的最新布局，旨在利用AI加速药物研发和生命科学研究。Orchestra Bio的核心技术能够将湿实验室工作流程数字化，与OpenAI的多模态能力形成协同。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/openai-acquires-startup-orchestra-bio-to-beef-up-its-biotech-business/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "SpaceX AI业务增长超预期，第三季度净利润44亿美元",
-                "summary": "SpaceX在第三季度实现盈利，净利润达44亿美元，AI业务成为增长核心引擎。据ABC新闻报道，SpaceX整体营收同比大增161%，AI相关业务贡献显著。TechCrunch进一步指出，SpaceX的AI业务表现超出市场预期，在火箭回收、卫星部署优化等场景中实现规模化落地。这标志着SpaceX已从纯航天企业转型为AI驱动的科技平台。",
-                "source": "ABC News / TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/spacexs-ai-business-is-beating-expectations/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Meta Muse 40天内美国下载量突破1000万，仅13款App达成",
-                "summary": "Meta旗下AI助手Muse在发布40天内于美国市场达成1000万下载量，成为历史上第13款在如此短周期内实现该里程碑的应用。数据显示Muse用户留存率高于其他AI竞争对手，表明Meta在AI消费级产品市场取得实质性突破。Muse定位为创意助手，主要功能涵盖图像生成、写作辅助等场景。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/metas-muse-hits-10m-u-s-downloads-in-40-days-a-milestone-reached-by-only-11-other-apps/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "谷歌跟随亚马逊发布工具挑战英伟达在AI开发者中的主导地位",
-                "summary": "谷歌宣布推出开发者工具，使PyTorch用户能够更便捷地将应用从英伟达GPU迁移到其他硬件平台。此前亚马逊已发布类似工具。这标志着两大云服务商正联手削弱英伟达在AI开发者生态中的锁定效应。谷歌最新推出的工具专注于帮助开发者将其AI应用适配Google Cloud的TPU和其他AI加速器。此举将加速AI基础设施的多元化趋势。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/"
-            },
-            {
-                "tag": "大额融资/IPO",
-                "title": "Otter.ai完成3.2亿美元融资，通用创投Growth Fund领投",
-                "summary": "AI会议工具Otter.ai宣布完成3.2亿美元融资，由General Catalyst旗下Growth Fund领投。公司计划将这笔资金用于企业级市场增长、营销国际化扩张及产品研发。Otter.ai的核心功能是实时语音转文字和会议摘要，在远程办公和混合工作场景中需求旺盛。此轮融资显示AI生产力工具仍然是资本关注的重点领域。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/otter-ai-raises-320-million-from-general-catalysts-growth-fund-for-its-meeting-tool/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "ChatGPT推出聊天锁定功能，强化隐私保护",
-                "summary": "OpenAI为ChatGPT新增聊天锁定功能，用户可通过密码或生物识别锁定特定对话，防止他人访问。该功能针对用户讨论敏感个人话题或进行私密规划的场景设计。这是ChatGPT在企业级安全和隐私保护方面的重要迭代，也是应对Claude、Gemini等竞品差异化竞争的关键功能。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/chatgpt-now-lets-you-lock-your-chats/"
-            },
-            {
-                "tag": "行业格局",
-                "title": "Eric Schmidt持有Anthropic股份约为CEO Dario Amodei一半",
-                "summary": "据报道，谷歌前CEO Eric Schmidt持有Anthropic的股份约为该公司CEO Dario Amodei持股量的一半。Anthropic作为获得亚马逊40亿美元投资、谷歌30亿美元投资的头部AI公司，其股权结构一直备受关注。Schmidt的巨额持仓使其成为Anthropic背后最具影响力的个人投资者之一。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/eric-schmidt-reportedly-owns-about-half-as-much-of-anthropic-as-ceo-dario-amodei/"
-            },
-            {
-                "tag": "重要产品发布",
-                "title": "Eka Robotics估值14.5亿美元，物理AI机械臂引专家关注",
-                "summary": "Eka Robotics估值达14.5亿美元，成为物理AI领域的最新独角兽。该公司开发的机械臂在抓取各种物体任务上表现优异，被业界称为\"可能是首款真正擅长处理多样化物体的机械臂\"。Eka的核心竞争力在于其物理AI模型能够理解和适应真实世界的物理交互，在物流、制造业场景中具备规模化应用潜力。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/eka-is-worth-1-45-billion-thanks-to-a-physical-ai-model-that-has-experts-raving/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Figma联创Dylan Field谈MCP协议局限性",
-                "summary": "Figma联合创始人Dylan Field公开表示，MCP(Model Context Protocol)并非完美协议，存在改进空间。Figma表示计划支持尽可能多的标准，但不会暴露所有数据给外部系统。MCP作为连接AI助手与外部工具的协议，近期获得广泛采用，但其安全性、数据隔离等问题引发讨论。Field的观点反映了大厂对协议标准化过程中的审慎态度。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/figma-co-founder-dylan-field-thinks-mcp-is-not-a-perfect-protocol/"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Yelp推出AI电话功能，可代用户致电餐厅查询等位时间",
-                "summary": "Yelp在其应用中推出一系列新AI功能，其中最引人注目的是AI代打电话功能，可自动呼叫餐厅查询等位时间。该功能基于语音合成和自然语言理解技术，能够模拟真实通话场景。此外Yelp还集成了AI推荐、AI评论分析等功能，旨在打造本地生活服务的AI闭环体验。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/yelp-can-now-call-on-your-behalf-to-check-wait-times-at-a-restaurant/"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Electric Plant开发AI模型破译植物电信号语言",
-                "summary": "Electric Plant初创公司开发了一款AI驱动的翻译器，能够破译植物通过微弱电信号传递的\"语言\"。植物在受到环境刺激时会产生独特的电信号模式，该AI模型通过大量训练数据学习解读这些信号。此技术可帮助农民更精准地监测作物健康状态、预测病虫害，对于精准农业具有重要应用价值。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/plants-can-speak-using-electricity-so-this-startup-built-an-ai-model-to-decipher-their-language/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "论文：AI工具代际演进中\"写代码\"与\"交付代码\"的生产力差异",
-                "summary": "一篇学术论文深入研究了AI辅助编程工具从第一代到最新一代演进过程中，\"写代码\"与\"交付代码\"两个环节的生产力变化。数据显示，随着AI工具能力提升，开发者在代码编写阶段的效率大幅提高，但在最终交付环节的瓶颈问题日益凸显。该研究为AI编程工具的下一阶段迭代方向提供了数据支撑。",
-                "source": "个人学术网站",
-                "url": "https://www.mertdemirer.com/Papers/Demirer_Writing_vs_shipping_code.pdf"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Binghamton大学研究：AI机器人\"触发词\"攻击与防御",
-                "summary": "纽约州立大学宾厄姆顿分校研究团队发现，AI驱动的机器人可能通过特定\"触发词\"被操控执行危险动作，并开发了相应防御机制。该研究揭示了物理AI系统在安全对抗场景中的脆弱性，对于工业机器人和服务机器人的安全部署具有警示意义。研究团队提出的防御框架可在触发词激活前进行拦截。",
-                "source": "Binghamton University",
-                "url": "https://www.binghamton.edu/news/story/6544/secret-trigger-words-could-make-ai-powered-robots-dangerous-and-these-researchers-developed-a-defense"
-            },
-            {
-                "tag": "技术突破",
-                "title": "Meta工程师详解\"瘦编排器\"架构提升AI Agent可靠性",
-                "summary": "Meta工程团队发布技术博客，详细介绍其\"瘦编排器\"(Thin Orchestrator)架构如何通过减少路由器的决策负担来提升AI Agent可靠性。该架构将复杂任务分解为多个简单子任务，由专门的Agent处理，路由器仅负责基础调度而非深度决策。实验数据显示该架构将Agent任务成功率提升23%，同时降低响应延迟。",
-                "source": "Meta Engineering",
-                "url": "https://engineering.fb.com/2026/10/19/ml-applications/thin-orchestrator-ai-agent-architecture/"
-            },
-            {
-                "tag": "研究/报告",
-                "title": "Ken Griffin称AI\"几乎肯定\"处于泡沫中",
-                "summary": "Citadel创始人Ken Griffin在彭博社采访中表示，AI\"几乎肯定\"正处于泡沫之中。这是继孙正义之后又一位顶级金融家对AI投资过热提出警告。Griffin认为当前AI领域的估值与实际商业回报之间存在巨大鸿沟，许多AI公司缺乏清晰的盈利路径。此番言论在华尔街引发广泛讨论，与此前ARK Invest等AI多头观点形成鲜明对比。",
-                "source": "Bloomberg",
-                "url": "https://www.bloomberg.com/news/articles/2026-10-20/ken-griffin-says-ai-almost-certainly-in-a-bubble-right-now"
-            },
-            {
-                "tag": "应用落地",
-                "title": "Hugging Face CEO批评Netflix的OpenAI黑客纪录片不准确",
-                "summary": "Hugging Face联合创始人Clem Delangue公开警告称，Netflix纪录片《AI Gone Rogue》中关于OpenAI黑客入侵的情节并不准确，公众在分享该内容前应谨慎。该纪录片描述了针对OpenAI系统的网络攻击事件，但Delangue指出其中的技术细节存在严重偏差，可能误导公众对AI安全威胁的认知。这反映了AI安全叙事在大众传播中的失真问题。",
-                "source": "TechCrunch AI",
-                "url": "https://techcrunch.com/2026/10/20/hugging-face-ceo-warns-that-netflixs-openai-hack-documentary-isnt-accurate/"
             }
         ]
     }
